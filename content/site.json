@@ -2,7 +2,7 @@
   "name": "PetPilot",
   "tagline": "Know what's safe for your pet",
   "description": "PetPilot helps North American pet owners instantly check whether human foods, plants, and everyday items are safe for dogs and cats.",
-  "base_url": "https://petpilot.io",
+  "base_url": "https://petpilot-mvp.vercel.app",
   "author": "PetPilot",
   "contact_email": "hello@petpilot.io",
   "social_links": [
