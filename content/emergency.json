@@ -1,0 +1,46 @@
+{
+  "title": "Pet Emergency Guide",
+  "subtitle": "If you suspect your pet has eaten something toxic, act quickly.",
+  "hotlines": [
+    {
+      "name": "ASPCA Animal Poison Control Center",
+      "phone": "(888) 426-4435",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control",
+      "available": "24/7",
+      "cost": "Fee may apply"
+    },
+    {
+      "name": "Pet Poison Helpline",
+      "phone": "(855) 764-7661",
+      "url": "https://www.petpoisonhelpline.com/",
+      "available": "24/7",
+      "cost": "Fee may apply"
+    }
+  ],
+  "when_to_call": [
+    "Your pet ate chocolate, grapes, raisins, onions, garlic, xylitol, or macadamia nuts",
+    "Your pet is vomiting repeatedly, having seizures, or difficulty breathing",
+    "You suspect poisoning but are not sure what was ingested",
+    "Your pet is lethargic, unresponsive, or in obvious pain"
+  ],
+  "common_toxins": [
+    "grapes",
+    "chocolate",
+    "onions",
+    "garlic",
+    "xylitol",
+    "avocado",
+    "macadamia-nuts",
+    "alcohol",
+    "coffee",
+    "raw-bread-dough"
+  ],
+  "steps": [
+    "Stay calm and remove your pet from the source.",
+    "Check the packaging or take a photo of what was eaten.",
+    "Estimate how much was consumed and when.",
+    "Call the ASPCA Poison Control Center or your vet immediately.",
+    "Do not induce vomiting unless instructed by a professional."
+  ],
+  "disclaimer": "This emergency guide is for informational purposes only and is not a substitute for professional veterinary advice. If you believe your pet is having a medical emergency, contact a veterinarian or poison control center immediately."
+}

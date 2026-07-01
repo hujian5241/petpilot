@@ -1,0 +1,2799 @@
+{
+  "raw-meat": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Raw meat may carry pathogens that can aggravate inflammatory bowel disease."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Raw meat can harbor bacteria that upset sensitive stomachs."
+    }
+  ],
+  "rolled-oats": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "rosemary": [],
+  "rutabaga": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "rye-bread": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "salad-dressing": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    }
+  ],
+  "salami": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Purines can increase uric acid and stone risk in susceptible pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High purine content can trigger urate crystal/stone formation."
+    }
+  ],
+  "salmon": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "salt": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    }
+  ],
+  "salted-nuts": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nut/seed ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "sandwich": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    }
+  ],
+  "sardines": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Purines can increase uric acid and stone risk in susceptible pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High purine content can trigger urate crystal/stone formation."
+    }
+  ],
+  "sausage": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Purines can increase uric acid and stone risk in susceptible pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High purine content can trigger urate crystal/stone formation."
+    }
+  ],
+  "sesame-seeds": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nut/seed ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "shrimp": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Shellfish ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "skim-milk": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "snap-peas": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "soda": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    }
+  ],
+  "sour-cream": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "sourdough-bread": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "spaghetti-squash": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "spinach": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oxalates and kidney-stress compounds are poorly tolerated in chronic kidney disease."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate the GI lining in sensitive individuals."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oxalates can contribute to calcium oxalate stone formation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate a sensitive gastrointestinal tract."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High oxalate content promotes calcium oxalate urolithiasis."
+    }
+  ],
+  "sports-drinks": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    }
+  ],
+  "starfruit": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oxalates and kidney-stress compounds are poorly tolerated in chronic kidney disease."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars can affect glycemic control; portion size matters."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate the GI lining in sensitive individuals."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oxalates can contribute to calcium oxalate stone formation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate a sensitive gastrointestinal tract."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High oxalate content promotes calcium oxalate urolithiasis."
+    }
+  ],
+  "steel-cut-oats": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "strawberries": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars can affect glycemic control; portion size matters."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    }
+  ],
+  "string-cheese": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "stuffing": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    }
+  ],
+  "sugar": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    }
+  ],
+  "sunflower-seeds": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nut/seed ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "sweet-potato": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "tacos": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seasonings, fat, and additives can irritate the GI tract in IBD."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can alter urinary mineral balance."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty, or seasoned foods commonly cause GI upset."
+    }
+  ],
+  "tamarind": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars can affect glycemic control; portion size matters."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate the GI lining in sensitive individuals."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "thyme": [],
+  "tilapia": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "tomatoes": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate the GI lining in sensitive individuals."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "trout": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "tuna": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium load can worsen hypertension and fluid balance in CKD."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium can worsen hypertension and fluid retention."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Purines can increase uric acid and stone risk in susceptible pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High purine content can trigger urate crystal/stone formation."
+    }
+  ],
+  "turkey-breast": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "turkey": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "turmeric": [],
+  "turnips": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "vanilla-extract": [
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Contains alcohol, which is hepatotoxic."
+    }
+  ],
+  "vanilla-ice-cream": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "venison": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Protein ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Purines can increase uric acid and stone risk in susceptible pets."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High purine content can trigger urate crystal/stone formation."
+    }
+  ],
+  "walnut-butter": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nut/seed ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "walnuts": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nut/seed ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "watercress": [],
+  "watermelon": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars can affect glycemic control; portion size matters."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    }
+  ],
+  "wheat-berries": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "whipped-cream": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "white-chocolate": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar content can cause blood glucose spikes."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can exacerbate GI inflammation."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugars feed oral bacteria and contribute to dental disease."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat may irritate a sensitive gastrointestinal tract."
+    }
+  ],
+  "white-rice": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    }
+  ],
+  "whitefish": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish ingredients are common allergens; reactions are individual."
+    }
+  ],
+  "whole-milk": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus and protein, which are typically restricted in chronic kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat intake can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can be hard on a compromised liver."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy fat and lactose can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content worsens hyperlipidemia."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose, which many adult pets cannot digest well."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy can cause diarrhea and gas in sensitive pets."
+    }
+  ],
+  "whole-wheat-bread": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "whole-wheat-pasta": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat ingredients are common allergens; reactions are individual."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "wild-rice": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may be poorly tolerated in some IBD patients."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may cause gas or loose stool in sensitive pets."
+    }
+  ],
+  "yuca": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starch/carbohydrate content can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; excess can contribute to weight gain."
+    }
+  ],
+  "zucchini": []
+}

@@ -1,0 +1,1430 @@
+{
+  "mixed-nuts": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Mixed nuts are high in fat and commonly contain salt, chocolate, raisins, or macadamia nuts."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can worsen lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Calorie-dense and high in fat and salt."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Often contains added salt and seasoned or toxic ingredients."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Salt content and potential toxic additives increase renal risk."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Nuts are a common allergen and mixes may contain multiple potential triggers."
+    }
+  ],
+  "mozzarella-cheese": [
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy product; monitor for diarrhea or gas even though mozzarella is lower in lactose."
+    }
+  ],
+  "nectarines": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit flesh is sugary and should be restricted for diabetic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars add calories with limited satiety."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit can contribute to dental plaque."
+    }
+  ],
+  "okra": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High fiber and slimy texture may aggravate sensitive bowels."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fiber and mucilage can cause gas or mild diarrhea in sensitive pets."
+    }
+  ],
+  "orange-juice": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High in natural sugars and lacks fiber to slow absorption."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Liquid calories from sugar with little nutritional benefit."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Acidic and sugary liquids can affect dental health."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Citrus acidity can cause stomach upset or diarrhea in sensitive pets."
+    }
+  ],
+  "oranges": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars that should be restricted for diabetic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar adds extra calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary and acidic flesh can contribute to dental issues."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Citrus oils and acidity may upset sensitive stomachs."
+    }
+  ],
+  "oregano": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Strong herbs may cause vomiting or diarrhea in sensitive pets."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Aromatic herbs may irritate an inflamed GI tract."
+    }
+  ],
+  "pancakes": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High in refined carbohydrates and sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Empty calories that can contribute to weight gain."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Typically contains milk or dairy, which may cause digestive upset."
+    }
+  ],
+  "papaya": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit flesh contains natural sugars that should be restricted for diabetic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars add calories with limited satiety."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit can contribute to dental plaque."
+    }
+  ],
+  "paprika": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Can irritate the digestive tract and stain fur."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Irritant spice may aggravate inflamed bowels."
+    }
+  ],
+  "parmesan-cheese": [
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Aged cheese is very high in sodium."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium content is poorly tolerated by kidneys."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High sodium and aged dairy require veterinary guidance."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy product; though low in lactose, some pets may react."
+    }
+  ],
+  "parsley": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Large or frequent amounts may cause kidney stress; keep portions tiny."
+    }
+  ],
+  "parsnips": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sweet, starchy root vegetable can raise blood sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starchy vegetable is calorie-dense."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High fiber content may aggravate sensitive bowels."
+    }
+  ],
+  "passion-fruit": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds can be hard to digest and may cause stomach upset."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds and acidity may irritate an inflamed GI tract."
+    }
+  ],
+  "pasta-sauce": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tomato acidity plus garlic and onion seasonings can irritate the stomach."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Acidic tomatoes and alliums may worsen IBD symptoms."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Commercial and homemade sauces usually contain added salt."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Salt content and acidic tomatoes can stress compromised kidneys."
+    }
+  ],
+  "peaches": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit should be limited for diabetic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugar adds calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit can contribute to dental plaque."
+    }
+  ],
+  "peanut-butter": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat spread can trigger pancreatitis in susceptible pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content can worsen lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense treat that can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Peanuts are a potential allergen for some pets."
+    }
+  ],
+  "peanuts": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat legume can cause pancreatitis in large amounts."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content is problematic for hyperlipidemic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and easy to overfeed."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Peanuts can trigger allergic reactions in sensitive pets."
+    }
+  ],
+  "pears": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars that should be limited for diabetics."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar adds extra calories."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fiber content may aggravate IBD in some animals."
+    }
+  ],
+  "peas": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains phosphorus, which may need to be restricted in kidney disease."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fiber and plant protein may not suit all IBD patients."
+    }
+  ],
+  "pecans": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High-fat nuts can cause pancreatitis and GI upset; may also contain harmful molds."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high fat content worsens lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Calorie-dense and high in fat."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts are a potential allergen."
+    }
+  ],
+  "pepperoni": [
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high in sodium."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium and processed preservatives stress the kidneys."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Extremely high in fat and spices."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High saturated fat content."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Calorie-dense fatty processed meat."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High fat and sodium require veterinary guidance."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Spicy, fatty cured meat commonly causes stomach upset."
+    }
+  ],
+  "persimmon": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Ripe flesh is sugary and should be restricted for diabetics."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar adds calories."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds can cause intestinal blockage and stomach upset."
+    }
+  ],
+  "pine-nuts": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat seeds can trigger pancreatitis if overfed."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content is unsuitable for hyperlipidemic pets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and easy to overfeed."
+    }
+  ],
+  "pineapple": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars that should be limited for diabetics."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar adds calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit can contribute to plaque formation."
+    }
+  ],
+  "pistachios": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat nuts can cause pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content worsens lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense treat."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Salted pistachios contribute to sodium intake."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Salt content is a concern for kidney health."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts are a potential allergen."
+    }
+  ],
+  "pizza": [
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Cheese and sauce contribute significant sodium."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sodium from cheese and sauce is poorly tolerated."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fatty cheese and meat toppings can trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content from cheese and toppings."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and high in fat and carbohydrates."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Cheese can cause digestive upset in lactose-intolerant pets."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Garlic, onion, herbs, and dairy can irritate sensitive stomachs."
+    }
+  ],
+  "plain-bagel": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dense, high-carbohydrate food can affect blood sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dense and calorie-rich with low nutritional value."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat/gluten may trigger reactions in allergic pets."
+    }
+  ],
+  "plain-bread": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Refined carbohydrates can raise blood sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Empty calories can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat/gluten may be an allergen for some pets."
+    }
+  ],
+  "plain-cereal": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Processed carbohydrates can affect glycemic control."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Low-nutrient calories can contribute to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Grain or gluten ingredients may trigger allergies."
+    }
+  ],
+  "plain-oatmeal": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Carbohydrate content should be accounted for in diabetic diets."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense grain that can contribute to weight gain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fiber content may not be appropriate for all IBD patients."
+    }
+  ],
+  "plain-pasta": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High in refined carbohydrates."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and low in satiety."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat/gluten may trigger allergic reactions."
+    }
+  ],
+  "plain-popcorn": [],
+  "plain-yogurt": [
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy product; even plain yogurt may upset lactose-intolerant pets."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains lactose sugars that affect blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense dairy treat."
+    }
+  ],
+  "plantains": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starchy vegetable can raise blood sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense starch."
+    }
+  ],
+  "plums": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit should be limited for diabetics."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Natural sugars add calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit can contribute to dental plaque."
+    }
+  ],
+  "polenta": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Cornmeal is high in carbohydrates."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense grain with low protein."
+    }
+  ],
+  "pomegranate": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds can be hard to digest and may cause stomach upset."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds may irritate an inflamed GI tract."
+    }
+  ],
+  "pork-chops": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fatty preparations and breading can trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fatty pork can worsen lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Often fried or fatty and calorie-dense."
+    }
+  ],
+  "pork": [],
+  "potatoes": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starchy vegetable can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-carbohydrate vegetable adds calories."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Raw or green potatoes contain solanine and nightshade compounds that can irritate the gut."
+    }
+  ],
+  "prunes": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dried fruit is high in sugar."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Concentrated sugars make prunes calorie-dense."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very high fiber can worsen diarrhea in IBD."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber and sugar commonly cause diarrhea."
+    }
+  ],
+  "pumpkin-seeds": [
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense seeds can contribute to weight gain."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Seeds contain fat that may affect lipid levels."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Seeds can be an allergen for some pets."
+    }
+  ],
+  "pumpkin": [],
+  "quinoa": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Saponins and fiber may cause gas or loose stool in sensitive pets."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fiber and plant protein may not suit all IBD patients."
+    }
+  ],
+  "rabbit": [],
+  "radishes": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Peppery flavor can cause stomach upset in sensitive animals."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Peppery compounds may irritate inflamed bowels."
+    }
+  ],
+  "ramen": [
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Broth and seasoning are extremely high in sodium."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high sodium content is dangerous for kidney disease."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oily, fatty broth and processed noodles can trigger pancreatitis."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High sodium and fat require veterinary guidance."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Garlic, onion, and high salt content commonly cause GI upset."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Oily, fatty broth and processed noodles can worsen lipid disorders."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High-calorie, fatty, salty broth and noodles offer empty calories."
+    }
+  ],
+  "raspberries": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars that should be restricted for diabetics."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar adds calories, though lower than many fruits."
+    }
+  ],
+  "raw-eggs": [
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Raw eggs carry Salmonella and E. coli risk that can cause serious GI illness."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Eggs are a common allergen for some pets."
+    }
+  ]
+}

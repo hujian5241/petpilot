@@ -1,0 +1,1794 @@
+{
+  "acorn-squash": [],
+  "almond-butter": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can trigger or worsen pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very high in fat, which can raise blood lipid levels."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense; contributes to weight gain."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts are a potential allergen in some pets."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can aggravate gastrointestinal inflammation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, fatty foods may cause diarrhea or vomiting."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Almonds are high in oxalates, which are concentrated in almond butter."
+    }
+  ],
+  "almond-milk": [],
+  "almonds": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content may trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat nuts can worsen elevated blood lipids."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and easy to overfeed."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts are a potential allergen."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Almonds are high in oxalates, which can contribute to calcium oxalate urolithiasis."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat and fiber can irritate the gut."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Hard to digest and may cause upset stomach."
+    }
+  ],
+  "anchovies": [
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high sodium when salted or oil-packed, which worsens hypertension and heart disease."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium, phosphorus, and protein burden damaged kidneys."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Small oily fish are high in purines."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High purine and sodium content may promote certain stones and urinary issues."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish is a common dietary allergen for some pets."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Oil-packed varieties are high in fat."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Fish can be high in iodine, which may affect thyroid management.",
+      "notes": "Applies to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "apple-juice": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Concentrated sugar without fiber causes rapid blood glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar adds empty calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugary liquid coats teeth and promotes decay."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugar can cause diarrhea and stomach upset."
+    }
+  ],
+  "apple-slices": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars that affect blood glucose."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit residue can contribute to dental plaque."
+    }
+  ],
+  "apricots": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fruit sugar can raise blood glucose."
+    }
+  ],
+  "artichoke": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber and tough leaves can irritate the gut."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber-rich and can cause gas or diarrhea."
+    }
+  ],
+  "artificial-sweeteners": [
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Xylitol, a common artificial sweetener, is hepatotoxic and can cause acute liver failure."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Sugar-free products vary in composition and may still affect glucose or contain toxic sweeteners."
+    }
+  ],
+  "asparagus": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber and potential to cause gas may worsen IBD signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Raw asparagus is tough and may cause digestive upset."
+    }
+  ],
+  "bacon": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Extremely high in fat and a classic trigger for pancreatitis."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high sodium worsens hypertension and heart disease."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and fatty."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High saturated fat raises blood lipids."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sodium, phosphorus, and protein burden compromised kidneys."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Fatty, processed meat often triggers GI flare-ups."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat and salt commonly cause vomiting or diarrhea."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Pork proteins can be allergenic for some pets."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat and salt are poorly tolerated by diseased livers."
+    }
+  ],
+  "bananas": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High in natural sugars and carbohydrates."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense relative to many fruits."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Soft, sugary fruit can stick to teeth."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High potassium may need to be restricted in advanced kidney disease.",
+      "notes": "Restriction depends on disease stage and blood potassium levels."
+    }
+  ],
+  "barley": [
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Grains/gluten can be allergenic for some pets."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-carbohydrate grain affects blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense carbohydrate source."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may worsen diarrhea during flare-ups."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber and gluten can cause gas or loose stools in sensitive pets."
+    }
+  ],
+  "basil": [],
+  "basmati-rice": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-glycemic carbohydrate can raise blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense and easy to overfeed."
+    }
+  ],
+  "beef-broth": [],
+  "beef-heart": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Organ muscle meat is high in protein and phosphorus."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Beef is a common protein allergen."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Organ meats can be richer in fat than lean muscle."
+    }
+  ],
+  "beef-kidney": [
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high phosphorus and protein burden failing kidneys."
+    },
+    {
+      "condition": "Purine metabolism disorders",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Organ meats are among the highest purine sources."
+    },
+    {
+      "condition": "Urinary tract disease/bladder stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High purines can promote urate stone formation."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Beef proteins can trigger allergic reactions."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich organ meat can be fatty."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich organ meats may trigger GI upset."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich and can cause diarrhea or vomiting."
+    }
+  ],
+  "beef-liver": [
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High vitamin A and copper can stress a compromised liver."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High phosphorus, vitamin A, and protein are not suitable for failing kidneys."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich and moderately fatty; can aggravate pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich organ meat is high in fat and cholesterol."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Beef is a common allergenic protein."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very rich and may cause GI upset."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Richness can lead to diarrhea or vomiting."
+    }
+  ],
+  "beef": [
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Beef is one of the most common food allergens in dogs and cats."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High-quality animal protein and phosphorus may need restriction in CKD.",
+      "notes": "Amount depends on CKD stage and veterinary therapeutic diet."
+    }
+  ],
+  "beets": [
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Beets contain moderate oxalates."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Beets are relatively high in natural sugars."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber and pigments may aggravate diarrhea."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber can cause stomach upset or diarrhea."
+    }
+  ],
+  "bell-peppers": [],
+  "bison": [
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Novel proteins can still trigger immune reactions in sensitized pets."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "High protein and phosphorus may need restriction in CKD."
+    }
+  ],
+  "black-pepper": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Irritating to the GI tract and may worsen inflammation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Can irritate the stomach lining and cause vomiting or diarrhea."
+    }
+  ],
+  "blackberries": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars."
+    }
+  ],
+  "blueberries": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars, though low in calories."
+    }
+  ],
+  "bok-choy": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Cruciferous vegetables can produce gas and irritate the gut."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber and sulfur compounds may cause gas or bloating."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Cruciferous vegetables contain goitrogens that may interfere with thyroid function when fed in large amounts.",
+      "notes": "Relevant to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "brazil-nuts": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Extremely high in fat."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high fat content raises blood lipids."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts can be allergenic."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Nuts are high in oxalates."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can worsen GI signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very fatty and hard to digest."
+    }
+  ],
+  "broccoli": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Gas-producing fiber can worsen IBD signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Cruciferous vegetables commonly cause gas and bloating."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Contains goitrogens that may affect thyroid function in large amounts.",
+      "notes": "Relevant to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "brown-rice": [
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Grains can be allergenic or excluded in elimination diets."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-carbohydrate grain affects blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense carbohydrate."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Higher fiber than white rice and may worsen diarrhea during flares."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber can cause gas or loose stools in sensitive pets."
+    }
+  ],
+  "brussels-sprouts": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Strongly gas-producing and may worsen GI discomfort."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very likely to cause gas and bloating."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Cruciferous vegetables contain goitrogens.",
+      "notes": "Relevant to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "bulgur": [
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Wheat/grain ingredient can be allergenic or excluded in elimination diets."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-carbohydrate grain raises blood glucose."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense grain."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber may aggravate diarrhea during flares."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Wheat fiber can cause gas or loose stools."
+    }
+  ],
+  "burgers": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can trigger pancreatitis."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Often high in sodium and saturated fat."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High saturated fat raises blood lipids."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High protein, phosphorus, and sodium burden compromised kidneys."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Beef and bun/wheat ingredients can be allergenic."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fatty meat and additives can trigger GI signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat and seasonings may cause upset stomach."
+    }
+  ],
+  "butter": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Almost pure saturated fat; high pancreatitis risk."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high saturated fat and cholesterol."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense with no nutritional benefit."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Dairy product; may cause diarrhea in lactose-intolerant pets."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy proteins can be allergenic."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can worsen GI inflammation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich dairy fat commonly causes diarrhea."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat intake is difficult for a compromised liver."
+    }
+  ],
+  "butternut-squash": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starchy vegetable raises blood glucose."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber content may worsen diarrhea in some individuals."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber can cause loose stools in sensitive pets."
+    }
+  ],
+  "cabbage": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Gas-producing cruciferous vegetable."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Frequently causes gas and bloating."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Contains goitrogens that may affect thyroid function in large amounts.",
+      "notes": "Relevant to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "cake": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High sugar and refined carbohydrates cause rapid glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Very high in calories, sugar, and fat."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugary, sticky residue promotes tooth decay."
+    },
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat and sugar raise blood lipids."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Usually contains dairy."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "May contain wheat, dairy, eggs, or other allergens."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat and sugar can worsen GI signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich and sugary; commonly causes diarrhea or vomiting."
+    },
+    {
+      "condition": "Liver disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat and sugar are poorly tolerated by diseased livers."
+    }
+  ],
+  "candy": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Pure sugar causes rapid glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Empty calories."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sugary residue promotes decay."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "May contain dairy, wheat, or other allergens."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar commonly causes diarrhea or vomiting."
+    }
+  ],
+  "cantaloupe": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Sugary fruit residue can contribute to plaque."
+    }
+  ],
+  "caramel": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Concentrated sugar causes glucose spikes."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High-calorie sugar."
+    },
+    {
+      "condition": "Dental disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Sticky sugar adheres to teeth and promotes decay."
+    },
+    {
+      "condition": "Lactose intolerance",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Typically contains dairy butter."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Dairy ingredients can be allergenic."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High sugar and dairy commonly cause diarrhea."
+    }
+  ],
+  "carrots": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Contains natural sugars and starch."
+    }
+  ],
+  "cashew-butter": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat nut butter raises blood lipids."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts can be allergenic."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Cashews are high in oxalates."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High phosphorus load."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can worsen GI inflammation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich and fatty; may cause diarrhea."
+    }
+  ],
+  "cashews": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "High fat content can trigger pancreatitis."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High-fat nuts raise blood lipids."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Tree nuts can be allergenic."
+    },
+    {
+      "condition": "Calcium oxalate stones",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Cashews are high in oxalates."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High phosphorus load."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat can worsen GI inflammation."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Very fatty and hard to digest."
+    }
+  ],
+  "casserole": [
+    {
+      "condition": "Pancreatitis",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Often contains high-fat dairy, meat, and oils."
+    },
+    {
+      "condition": "Heart disease/hypertension",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Often high in sodium."
+    },
+    {
+      "condition": "Obesity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Calorie-dense mixed dish."
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fat content."
+    },
+    {
+      "condition": "Chronic kidney disease",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Variable sodium, phosphorus, and protein content can burden kidneys."
+    },
+    {
+      "condition": "Food allergies",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Multiple ingredients make it hard to avoid allergens."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Mixed high-fat and high-fiber ingredients can trigger GI signs."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Rich, variable ingredients commonly cause upset stomach."
+    },
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Often contains carbohydrate-rich ingredients."
+    }
+  ],
+  "cauliflower": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Gas-producing cruciferous vegetable."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Often causes gas and bloating."
+    },
+    {
+      "condition": "Hyperthyroidism (cats)/Hypothyroidism (dogs)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "consult_vet",
+      "reason": "Contains goitrogens that may affect thyroid function in large amounts.",
+      "notes": "Relevant to cats with hyperthyroidism and dogs with hypothyroidism."
+    }
+  ],
+  "cayenne-pepper": [
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Spicy irritant that can worsen GI inflammation and pain."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "avoid",
+      "reason": "Cayenne irritates the mouth, esophagus, and stomach."
+    }
+  ],
+  "celeriac": [
+    {
+      "condition": "Diabetes mellitus",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Starchy root vegetable raises blood glucose."
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "Fiber content may worsen diarrhea."
+    },
+    {
+      "condition": "Gastrointestinal sensitivity",
+      "appliesTo": [
+        "dogs",
+        "cats"
+      ],
+      "recommendation": "limit",
+      "reason": "High fiber can cause gas or loose stools."
+    }
+  ],
+  "celery": []
+}

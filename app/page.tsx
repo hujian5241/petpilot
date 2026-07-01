@@ -1,65 +1,134 @@
-import Image from "next/image";
+import { Suspense } from "react";
+import Link from "next/link";
+import { Search } from "lucide-react";
 
-export default function Home() {
+import { SearchBar } from "@/components/search/SearchBar";
+import { FoodCard } from "@/components/food/FoodCard";
+import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
+import { getAllCategories, getAllFoods, getSiteConfig } from "@/lib/content";
+
+export default async function HomePage() {
+  const [config, foods, categories] = await Promise.all([
+    getSiteConfig(),
+    getAllFoods(),
+    getAllCategories(),
+  ]);
+
+  const popularSlugs = [
+    "grapes",
+    "chocolate",
+    "blueberries",
+    "carrots",
+    "onions",
+    "xylitol",
+    "apple-slices",
+    "garlic",
+  ];
+
+  const popularFoods = popularSlugs
+    .map((slug) => foods.find((food) => food.slug === slug))
+    .filter((food): food is NonNullable<typeof food> => food !== undefined);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex-1">
+      <section className="bg-gradient-to-b from-primary-light to-background px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            {config.tagline}
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-4 text-lg text-muted-foreground">
+            Instantly check whether human foods are safe for your dog or cat.
           </p>
+          <div className="mt-8">
+            <Suspense fallback={<div className="h-14 w-full animate-pulse rounded-full bg-muted" />}>
+              <SearchBar size="large" />
+            </Suspense>
+          </div>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground">
+            <span>Popular:{" "}</span>
+            {popularFoods.slice(0, 6).map((food, index) => (
+              <span key={food.slug}>
+                <Link
+                  href={`/foods/${food.slug}`}
+                  className="text-primary hover:text-primary-dark hover:underline"
+                >
+                  {food.name}
+                </Link>
+                {index < Math.min(5, popularFoods.length - 1) && ", "}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <EmergencyBanner />
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-semibold text-foreground">Browse Categories</h2>
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
+          {categories.map((category) => (
+            <Link
+              key={category.slug}
+              href={`/categories/${category.slug}`}
+              className="flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md"
+            >
+              <Search className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">{category.name}</span>
+            </Link>
+          ))}
         </div>
-      </main>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-semibold text-foreground">Popular Searches</h2>
+          <Link href="/search" className="text-sm font-medium text-primary hover:text-primary-dark">
+            View all
+          </Link>
+        </div>
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {popularFoods.map((food) => (
+            <FoodCard key={food.slug} food={food} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="rounded-2xl bg-primary/5 px-6 py-12 text-center">
+          <h2 className="text-2xl font-semibold text-foreground">Why Trust PetPilot?</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            <div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <Search className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="mt-4 font-semibold">Fast Answers</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Get clear safety information in seconds, especially in urgent moments.
+              </p>
+            </div>
+            <div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <Search className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="mt-4 font-semibold">Vet-Reviewed</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Content based on authoritative sources like ASPCA and Pet Poison Helpline.
+              </p>
+            </div>
+            <div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <Search className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="mt-4 font-semibold">Always Free</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                No login required. Access our database anytime, anywhere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

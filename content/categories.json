@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fruits",
+    "name": "Fruits",
+    "slug": "fruits",
+    "description": "Sweet and juicy options for pets, from berries to melons.",
+    "icon": "Apple",
+    "sort_order": 1
+  },
+  {
+    "id": "vegetables",
+    "name": "Vegetables",
+    "slug": "vegetables",
+    "description": "Crunchy greens and roots that can be healthy treats.",
+    "icon": "Carrot",
+    "sort_order": 2
+  },
+  {
+    "id": "proteins",
+    "name": "Proteins",
+    "slug": "proteins",
+    "description": "Meat, fish, eggs, and alternatives for carnivorous pets.",
+    "icon": "Beef",
+    "sort_order": 3
+  },
+  {
+    "id": "grains",
+    "name": "Grains & Starches",
+    "slug": "grains",
+    "description": "Rice, bread, pasta, and cereals.",
+    "icon": "Wheat",
+    "sort_order": 4
+  },
+  {
+    "id": "dairy",
+    "name": "Dairy",
+    "slug": "dairy",
+    "description": "Milk, cheese, yogurt, and alternatives.",
+    "icon": "Milk",
+    "sort_order": 5
+  },
+  {
+    "id": "nuts",
+    "name": "Nuts & Seeds",
+    "slug": "nuts",
+    "description": "High-fat snacks and spreads.",
+    "icon": "Cherry",
+    "sort_order": 6
+  },
+  {
+    "id": "sweets",
+    "name": "Sweets & Desserts",
+    "slug": "sweets",
+    "description": "Sugary treats and baked goods.",
+    "icon": "Cookie",
+    "sort_order": 7
+  },
+  {
+    "id": "spices",
+    "name": "Herbs & Spices",
+    "slug": "spices",
+    "description": "Flavor enhancers and seasonings.",
+    "icon": "Leaf",
+    "sort_order": 8
+  },
+  {
+    "id": "beverages",
+    "name": "Beverages",
+    "slug": "beverages",
+    "description": "Drinks and liquids.",
+    "icon": "Coffee",
+    "sort_order": 9
+  },
+  {
+    "id": "human-foods",
+    "name": "Human Foods",
+    "slug": "human-foods",
+    "description": "Prepared meals and fast food items.",
+    "icon": "UtensilsCrossed",
+    "sort_order": 10
+  },
+  {
+    "id": "houseplants",
+    "name": "Houseplants",
+    "slug": "houseplants",
+    "description": "Common indoor plants that may be toxic or safe for pets.",
+    "icon": "Leaf",
+    "sort_order": 11
+  },
+  {
+    "id": "outdoor-plants",
+    "name": "Outdoor Plants",
+    "slug": "outdoor-plants",
+    "description": "Garden, yard, and wild plants that pets may encounter.",
+    "icon": "TreePine",
+    "sort_order": 12
+  }
+]

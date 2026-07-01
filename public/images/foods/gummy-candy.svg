@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f59e0b"/>
+  <circle cx="200" cy="120" r="80" fill="white" fill-opacity="0.12"/>
+  
+    <svg x="170" y="90" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22c4.97-4.97 8-9.13 8-13.5A7.5 7.5 0 0012 1 7.5 7.5 0 004 8.5C4 12.87 7.03 17.03 12 22z"/>
+      <circle cx="12" cy="9" r="2"/>
+    </svg>
+  <text x="200" y="190" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700" fill="white">Gummy Candy</text>
+  <text x="200" y="225" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="white" fill-opacity="0.9">Pet Plant Guide</text>
+  <text x="200" y="260" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="white" fill-opacity="0.75">PetPilot.com</text>
+</svg>

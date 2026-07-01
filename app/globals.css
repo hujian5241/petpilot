@@ -1,26 +1,186 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+
+  /* PetPilot Brand Colors */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
+  /* Safety Status Colors */
+  --color-status-safe: var(--status-safe);
+  --color-status-safe-bg: var(--status-safe-bg);
+  --color-status-safe-border: var(--status-safe-border);
+  --color-status-limited: var(--status-limited);
+  --color-status-limited-bg: var(--status-limited-bg);
+  --color-status-limited-border: var(--status-limited-border);
+  --color-status-toxic: var(--status-toxic);
+  --color-status-toxic-bg: var(--status-toxic-bg);
+  --color-status-toxic-border: var(--status-toxic-border);
+  --color-status-unknown: var(--status-unknown);
+  --color-status-unknown-bg: var(--status-unknown-bg);
+  --color-status-unknown-border: var(--status-unknown-border);
+
+  /* Emergency */
+  --color-emergency: var(--emergency);
+  --color-emergency-light: var(--emergency-light);
+
+  /* shadcn mappings */
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #f9fafb;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+
+  /* Primary Blue */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --primary-dark: #1d4ed8;
+  --primary-light: #dbeafe;
+
+  --secondary: #f3f4f6;
+  --secondary-foreground: #111827;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #f3f4f6;
+  --accent-foreground: #111827;
+  --destructive: #dc2626;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #2563eb;
+  --radius: 0.5rem;
+
+  /* Safety Status */
+  --status-safe: #166534;
+  --status-safe-bg: #dcfce7;
+  --status-safe-border: #86efac;
+  --status-limited: #854d0e;
+  --status-limited-bg: #fef9c3;
+  --status-limited-border: #fde047;
+  --status-toxic: #991b1b;
+  --status-toxic-bg: #fee2e2;
+  --status-toxic-border: #fca5a5;
+  --status-unknown: #374151;
+  --status-unknown-bg: #f3f4f6;
+  --status-unknown-border: #d1d5db;
+
+  /* Emergency */
+  --emergency: #dc2626;
+  --emergency-light: #fef2f2;
+
+  /* shadcn sidebar defaults */
+  --sidebar: #f9fafb;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #111827;
+  --sidebar-primary-foreground: #f9fafb;
+  --sidebar-accent: #f3f4f6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #2563eb;
+  --chart-1: #2563eb;
+  --chart-2: #16a34a;
+  --chart-3: #ca8a04;
+  --chart-4: #dc2626;
+  --chart-5: #6b7280;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  html {
+    @apply font-sans;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Typography for content pages */
+.prose-pet {
+  @apply text-foreground;
+}
+
+.prose-pet h1 {
+  @apply text-3xl font-bold tracking-tight text-foreground mb-6;
+}
+
+.prose-pet h2 {
+  @apply text-2xl font-semibold tracking-tight text-foreground mt-10 mb-4;
+}
+
+.prose-pet h3 {
+  @apply text-xl font-semibold tracking-tight text-foreground mt-8 mb-3;
+}
+
+.prose-pet p {
+  @apply text-base leading-7 mb-4;
+}
+
+.prose-pet ul {
+  @apply list-disc pl-6 mb-4 space-y-2;
+}
+
+.prose-pet ol {
+  @apply list-decimal pl-6 mb-4 space-y-2;
+}
+
+.prose-pet li {
+  @apply leading-7;
+}
+
+.prose-pet a {
+  @apply text-primary hover:text-primary-dark underline underline-offset-2;
+}
+
+.prose-pet strong {
+  @apply font-semibold text-foreground;
 }
