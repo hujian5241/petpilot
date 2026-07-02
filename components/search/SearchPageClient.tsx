@@ -25,9 +25,16 @@ export function SearchPageClient({
   const fuse = useMemo(
     () =>
       new Fuse(initialIndex, {
-        keys: ["name", "aliases", "categories", "summary"],
-        threshold: 0.4,
+        keys: [
+          { name: "name", weight: 0.45 },
+          { name: "aliases", weight: 0.35 },
+          { name: "summary", weight: 0.2 },
+        ],
+        threshold: 0.25,
         includeScore: true,
+        minMatchCharLength: 2,
+        ignoreLocation: true,
+        findAllMatches: false,
       }),
     [initialIndex]
   );
