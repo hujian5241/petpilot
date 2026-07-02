@@ -12,9 +12,9 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
     },
     sitemap: [
       `${config.base_url}/sitemap.xml`,
-      `${config.base_url}/sitemap-static`,
-      `${config.base_url}/sitemap-foods`,
-      `${config.base_url}/sitemap-plants`,
+      `${config.base_url}/sitemap-static.xml`,
+      `${config.base_url}/sitemap-foods.xml`,
+      `${config.base_url}/sitemap-plants.xml`,
     ],
   };
 }

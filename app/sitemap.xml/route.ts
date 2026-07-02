@@ -10,9 +10,9 @@ export async function GET(): Promise<Response> {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>${baseUrl}/sitemap-static</loc></sitemap>
-  <sitemap><loc>${baseUrl}/sitemap-foods</loc></sitemap>
-  <sitemap><loc>${baseUrl}/sitemap-plants</loc></sitemap>
+  <sitemap><loc>${baseUrl}/sitemap-static.xml</loc></sitemap>
+  <sitemap><loc>${baseUrl}/sitemap-foods.xml</loc></sitemap>
+  <sitemap><loc>${baseUrl}/sitemap-plants.xml</loc></sitemap>
 </sitemapindex>`;
 
   return new Response(xml, {
