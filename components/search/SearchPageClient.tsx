@@ -21,28 +21,45 @@ export function SearchPageClient({
 }: SearchPageClientProps) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
+  const trimmedQuery = query.trim().toLowerCase();
 
-  const fuse = useMemo(
+  const nameFuse = useMemo(
     () =>
       new Fuse(initialIndex, {
-        keys: [
-          { name: "name", weight: 0.45 },
-          { name: "aliases", weight: 0.35 },
-          { name: "summary", weight: 0.2 },
-        ],
-        threshold: 0.25,
+        keys: ["name", "aliases"],
+        threshold: 0.3,
         includeScore: true,
         minMatchCharLength: 2,
-        ignoreLocation: true,
+        ignoreLocation: false,
         findAllMatches: false,
+        useExtendedSearch: true,
       }),
     [initialIndex]
   );
 
   const results = useMemo(() => {
-    if (!query.trim()) return [];
-    return fuse.search(query.trim()).map((result) => result.item);
-  }, [query, fuse]);
+    if (!trimmedQuery) return [];
+
+    // 1. Exact/prefix matches in name or aliases
+    const exactMatches = initialIndex.filter((item) => {
+      const queryParts = trimmedQuery.split(/\s+/);
+      return queryParts.every((part) => {
+        const nameMatch = item.name.toLowerCase().includes(part);
+        const aliasMatch = item.aliases.some((a) =>
+          a.toLowerCase().includes(part)
+        );
+        return nameMatch || aliasMatch;
+      });
+    });
+
+    if (exactMatches.length > 0) {
+      return exactMatches;
+    }
+
+    // 2. Fuzzy fallback on name and aliases only (not summary)
+    const fuzzyResults = nameFuse.search(trimmedQuery);
+    return fuzzyResults.map((result) => result.item);
+  }, [trimmedQuery, initialIndex, nameFuse]);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
