@@ -10,7 +10,8 @@
     "type-check": "tsc --noEmit",
     "test": "vitest --run",
     "test:watch": "vitest",
-    "content:validate": "tsx scripts/validate-content.ts"
+    "content:validate": "tsx scripts/validate-content.ts",
+    "sitemap:generate": "tsx scripts/generate-sitemaps.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

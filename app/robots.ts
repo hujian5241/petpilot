@@ -10,11 +10,6 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: [
-      `${config.base_url}/sitemap.xml`,
-      `${config.base_url}/sitemap-static.xml`,
-      `${config.base_url}/sitemap-foods.xml`,
-      `${config.base_url}/sitemap-plants.xml`,
-    ],
+    sitemap: `${config.base_url}/sitemap.xml`,
   };
 }
