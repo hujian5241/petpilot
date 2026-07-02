@@ -1,11 +1,18 @@
-import Link from "next/link";
-
+import { Link } from "@/i18n/routing";
 import { getSiteConfig, getEmergencyInfo } from "@/lib/content";
+import { getTranslations } from "next-intl/server";
+import type { Locale } from "@/lib/i18n";
 
-export async function Footer() {
-  const config = await getSiteConfig();
-  const info = await getEmergencyInfo();
+interface FooterProps {
+  locale: Locale;
+}
+
+export async function Footer({ locale }: FooterProps) {
+  const config = await getSiteConfig(locale);
+  const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
+  const t = await getTranslations("Footer");
+  const d = await getTranslations("Disclaimer");
 
   return (
     <footer className="border-t border-border bg-muted">
@@ -16,14 +23,14 @@ export async function Footer() {
             <p className="mt-2 text-sm text-muted-foreground">{config.tagline}</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold">Quick Links</h4>
+            <h4 className="text-sm font-semibold">{t("quickLinks")}</h4>
             <ul className="mt-2 space-y-2 text-sm">
               <li>
                 <Link
                   href="/search"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Search
+                  {t("search")}
                 </Link>
               </li>
               <li>
@@ -31,7 +38,7 @@ export async function Footer() {
                   href="/emergency"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Emergency
+                  {t("emergency")}
                 </Link>
               </li>
               <li>
@@ -39,7 +46,7 @@ export async function Footer() {
                   href="/about"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  About
+                  {t("about")}
                 </Link>
               </li>
               <li>
@@ -47,7 +54,7 @@ export async function Footer() {
                   href="/terms"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Terms
+                  {t("terms")}
                 </Link>
               </li>
               <li>
@@ -55,13 +62,13 @@ export async function Footer() {
                   href="/privacy"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Privacy
+                  {t("privacy")}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold">Emergency</h4>
+            <h4 className="text-sm font-semibold">{t("emergency")}</h4>
             <div className="mt-2 space-y-2 text-sm text-muted-foreground">
               {aspca && (
                 <p>
@@ -90,35 +97,11 @@ export async function Footer() {
         </div>
         <div className="mt-8 border-t border-border pt-8">
           <div className="rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            <strong className="block text-amber-950">Medical Disclaimer</strong>
-            {config.name} provides educational information only and is not a substitute for
-            professional veterinary advice, diagnosis, or emergency care. Always consult a licensed
-            veterinarian or call{" "}
-            {aspca ? (
-              <a
-                href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-                className="font-semibold underline"
-              >
-                {aspca.name} {aspca.phone}
-              </a>
-            ) : (
-              "ASPCA Poison Control"
-            )}
-            {" or "}
-            {pph ? (
-              <a
-                href={`tel:${pph.phone.replace(/\D/g, "")}`}
-                className="font-semibold underline"
-              >
-                {pph.name} {pph.phone}
-              </a>
-            ) : (
-              "Pet Poison Helpline"
-            )}
-            {" for medical concerns."}
+            <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
+            {d("text")}
           </div>
           <p className="mt-4 text-xs text-muted-foreground">
-            © {new Date().getFullYear()} {config.name}. All rights reserved.
+            © {new Date().getFullYear()} {config.name}. {t("allRightsReserved")}
           </p>
         </div>
       </div>

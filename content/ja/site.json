@@ -1,0 +1,15 @@
+{
+  "name": "PetPilot",
+  "tagline": "ペットに安全なものがすぐわかる",
+  "description": "PetPilotは北米のペットオーナーが、人間の食べ物、植物、身の回りのものが犬や猫にとって安全かどうかをすぐに確認できるようにします。",
+  "base_url": "https://petpilot-mvp.vercel.app",
+  "author": "PetPilot",
+  "contact_email": "hello@petpilot.io",
+  "social_links": [
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/petpilot"
+    }
+  ],
+  "default_og_image": "/images/og-default.svg"
+}

@@ -1,0 +1,167 @@
+{
+  "Header": {
+    "home": "ホーム",
+    "search": "検索",
+    "foods": "食材",
+    "plants": "植物",
+    "emergency": "緊急",
+    "about": "このサイトについて"
+  },
+  "Footer": {
+    "quickLinks": "クイックリンク",
+    "emergency": "緊急",
+    "medicalDisclaimer": "医療免責事項",
+    "allRightsReserved": "All rights reserved.",
+    "search": "検索",
+    "about": "このサイトについて",
+    "terms": "利用規約",
+    "privacy": "プライバシー"
+  },
+  "HomePage": {
+    "heroSubtitle": "人間の食材が愛犬・愛猫にとって安全かどうか、すぐに確認できます。",
+    "popularLabel": "人気：",
+    "browseCategories": "カテゴリーから探す",
+    "popularSearches": "人気の検索",
+    "viewAll": "すべて見る",
+    "whyTrustTitle": "PetPilotが信頼できる理由",
+    "whyTrust": {
+      "fastAnswers": {
+        "title": "すぐに答えがわかる",
+        "description": "特に急いでいるときでも、わかりやすい安全性情報を数秒で確認できます。"
+      },
+      "vetReviewed": {
+        "title": "獣医師監修の情報",
+        "description": "ASPCAやPet Poison Helplineなどの信頼できる情報源に基づいています。"
+      },
+      "alwaysFree": {
+        "title": "いつでも無料",
+        "description": "ログイン不要。いつでもどこでもデータベースにアクセスできます。"
+      }
+    }
+  },
+  "SearchPage": {
+    "title": "検索",
+    "placeholder": "食材を検索（例：ぶどう、チョコレート、にんじん...）",
+    "loading": "検索中です...",
+    "resultsFor": "{count} 件の結果{count, plural, one {} other {}}：「{query}」",
+    "noResults": "「{query}」に一致する結果はありません",
+    "noResultsDescription": "検索した食材や植物は見つかりませんでした。",
+    "suggestItem": "項目を提案する",
+    "emptyState": "上の検索ボックスに食材や植物名を入力すると、愛犬・愛猫にとっての安全性を確認できます。",
+    "alsoKnownAs": "別名：{alias}",
+    "foodTag": "食材",
+    "plantTag": "植物"
+  },
+  "FoodsPage": {
+    "title": "犬と猫のための食材安全ガイド",
+    "description": "獣医師監修のデータベースから、愛犬・愛猫にとって安全な食材、制限すべき食材、有毒な食材を調べられます。",
+    "quickSafetyOverview": "安全性の概要",
+    "browseByCategory": "カテゴリーから探す",
+    "allFoods": "すべての食材",
+    "foods": "食材",
+    "statusSafe": "安全",
+    "statusLimited": "制限あり",
+    "statusToxic": "有毒",
+    "statusUnknown": "不明"
+  },
+  "PlantsPage": {
+    "title": "植物",
+    "description": "観葉植物、庭木、野生植物など、愛犬・愛猫にとって安全かどうかを調べられます。",
+    "houseplants": "観葉植物",
+    "outdoorPlants": "屋外の植物"
+  },
+  "EmergencyPage": {
+    "poisonControlHotlines": "毒物管理センターの電話番号",
+    "whenToCall": "すぐに電話する状況",
+    "stepsToTake": "対処法",
+    "commonToxicFoods": "よくある有毒食材",
+    "visitWebsite": "ウェブサイトを見る"
+  },
+  "EmergencyBanner": {
+    "title": "ペットが何か有毒なものを食べたかもしれませんか？",
+    "call": "{name}に電話：",
+    "or": "または",
+    "viewEmergencyGuide": "緊急ガイドを見る"
+  },
+  "Disclaimer": {
+    "important": "重要：",
+    "text": "PetPilotは一般的な情報を提供するものであり、獣医師による専門的なアドバイスの代替ではありません。愛犬・愛猫が体調不良、けが、または有毒なものを食べた可能性がある場合は、すぐに獣医師または動物毒物管理センターにご連絡ください。"
+  },
+  "FoodDetail": {
+    "canDogsEat": "犬は{name}を食べても大丈夫ですか？",
+    "subtitle": "犬と猫にとって{name}が安全かどうか調べます。",
+    "safeForDogs": "犬にとって{name}は安全ですか？",
+    "safeForCats": "猫にとって{name}は安全ですか？",
+    "preparationNotes": "与え方の注意点",
+    "recommendedAmount": "推奨量",
+    "howOften": "どのくらいの頻度で？",
+    "symptoms": "注意すべき症状",
+    "whatIfAte": "もしペットが{name}を食べたら？",
+    "call": "{name}に電話",
+    "healthConditions": "病気や体質の注意点",
+    "healthConditionsIntro": "{name}が一般的に安全な食材であっても、特定の病気や体質を持つペットには適さないことがあります。以下のような診断を受けている場合は、必ず獣医師に相談してください。",
+    "forDogs": "犬の場合",
+    "forCats": "猫の場合",
+    "avoid": "避ける",
+    "limit": "制限する",
+    "consultVet": "獣医師に相談",
+    "safeAlternatives": "安全な代替食材",
+    "sources": "情報源",
+    "vetsNote": "獣医師からの注意",
+    "vetsNoteText": "PetPilotは、教育目的で一般的な情報を提供しています。信頼できる獣医機関の情報を参考にしていますが、このページは、個別のペットのために獣医師が確認したものではありません。年齢、体重、品種、健康状態、摂取量などにより、個々の動物の反応は異なることがあります。特に愛犬・愛猫が体調不良、けが、妊娠・授乳中、または薬を服用中の場合は、個別のアドバイスを得るために必ず獣医師または毒物管理センターにご相談ください。",
+    "medicalDisclaimer": "医療免責事項",
+    "medicalDisclaimerText": "このページの内容は、獣医師による専門的な診断、治療、または緊急医療の代替ではありません。愛犬・愛猫が何か有害なものを食べた可能性があると思われる場合は、すぐに獣医師に連絡するか、<aspca>ASPCA Poison Control</aspca>または<pph>Pet Poison Helpline</pph>に電話してください。"
+  },
+  "PlantDetail": {
+    "isSafeForPets": "ペットにとって{name}は安全ですか？",
+    "subtitle": "犬と猫にとって{name}が安全かどうか調べます。",
+    "safeForDogs": "犬にとって{name}は安全ですか？",
+    "safeForCats": "猫にとって{name}は安全ですか？",
+    "symptoms": "注意すべき症状",
+    "whatIfAte": "もしペットが{name}を食べたら？",
+    "safeAlternatives": "安全な代替植物",
+    "sources": "情報源",
+    "vetsNote": "獣医師からの注意",
+    "vetsNoteText": "PetPilotは、教育目的で一般的な情報を提供しています。信頼できる獣医機関の情報を参考にしていますが、このページは、個別のペットのために獣医師が確認したものではありません。年齢、体重、品種、健康状態、摂取量などにより、個々の動物の反応は異なることがあります。特に愛犬・愛猫が体調不良、けが、妊娠・授乳中、または薬を服用中の場合は、個別のアドバイスを得るために必ず獣医師または毒物管理センターにご相談ください。",
+    "medicalDisclaimer": "医療免責事項",
+    "medicalDisclaimerText": "このページの内容は、獣医師による専門的な診断、治療、または緊急医療の代替ではありません。愛犬・愛猫が何か有害なものを食べた可能性があると思われる場合は、すぐに獣医師に連絡するか、<aspca>ASPCA Poison Control</aspca>または<pph>Pet Poison Helpline</pph>に電話してください。"
+  },
+  "SafetyBadge": {
+    "safe": "安全",
+    "limited": "制限あり",
+    "toxic": "有毒",
+    "unknown": "不明",
+    "dogs": "犬",
+    "cats": "猫"
+  },
+  "Breadcrumb": {
+    "home": "ホーム"
+  },
+  "NotFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは見つかりませんでした。食材や植物を検索するか、カテゴリーをご覧ください。",
+    "goHome": "ホームに戻る",
+    "search": "検索",
+    "emergency": "緊急",
+    "ifEmergency": "もし緊急の場合",
+    "emergencyText": "獣医師に連絡するか、すぐに<aspca>ASPCA Poison Control</aspca>または<pph>Pet Poison Helpline</pph>に電話してください。"
+  },
+  "LegalPages": {
+    "lastUpdated": "最終更新日：{date}",
+    "privacyDescription": "{name}のプライバシーポリシーです。個人情報を尊重し、個人データを販売することはありません。",
+    "termsDescription": "{name}の利用規約です。教育的なペットの安全性情報を提供しており、獣医師のアドバイスではありません。"
+  },
+  "ReportIssue": {
+    "button": "問題を報告",
+    "title": "問題を報告",
+    "description": "{item}の改善にご協力ください。情報が正しくない、古い、または不足している場合はお知らせください。",
+    "incorrectSafety": "安全性情報が正しくない",
+    "incorrectSafetyDetail": "安全性の状態や症状が誤っているように思われます。",
+    "missingInfo": "情報が不足している",
+    "missingInfoDetail": "重要な情報が含まれていません。",
+    "typoOrLink": "タイプミスまたはリンク切れ",
+    "typoOrLinkDetail": "テキストの誤りやリンクの問題があります。",
+    "other": "その他",
+    "otherDetail": "その他の問題です。"
+  }
+}

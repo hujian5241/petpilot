@@ -1,0 +1,167 @@
+{
+  "Header": {
+    "home": "Home",
+    "search": "Search",
+    "foods": "Foods",
+    "plants": "Plants",
+    "emergency": "Emergency",
+    "about": "About"
+  },
+  "Footer": {
+    "quickLinks": "Quick Links",
+    "emergency": "Emergency",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "allRightsReserved": "All rights reserved.",
+    "search": "Search",
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "HomePage": {
+    "heroSubtitle": "Instantly check whether human foods are safe for your dog or cat.",
+    "popularLabel": "Popular:",
+    "browseCategories": "Browse Categories",
+    "popularSearches": "Popular Searches",
+    "viewAll": "View all",
+    "whyTrustTitle": "Why Trust PetPilot?",
+    "whyTrust": {
+      "fastAnswers": {
+        "title": "Fast Answers",
+        "description": "Get clear safety information in seconds, especially in urgent moments."
+      },
+      "vetReviewed": {
+        "title": "Vet-Reviewed",
+        "description": "Content based on authoritative sources like ASPCA and Pet Poison Helpline."
+      },
+      "alwaysFree": {
+        "title": "Always Free",
+        "description": "No login required. Access our database anytime, anywhere."
+      }
+    }
+  },
+  "SearchPage": {
+    "title": "Search",
+    "placeholder": "Search a food, e.g., grapes, chocolate, carrots...",
+    "loading": "Loading search...",
+    "resultsFor": "{count} result{count, plural, one {} other {s}} for \"{query}\"",
+    "noResults": "No results for \"{query}\"",
+    "noResultsDescription": "We couldn't find any foods or plants matching your search.",
+    "suggestItem": "Suggest an item",
+    "emptyState": "Enter a food or plant above to see if it's safe for your pet.",
+    "alsoKnownAs": "Also known as: {alias}",
+    "foodTag": "Food",
+    "plantTag": "Plant"
+  },
+  "FoodsPage": {
+    "title": "Food Safety Guide for Dogs & Cats",
+    "description": "Browse our vet-reviewed database of human foods and learn what is safe, limited, or toxic for your pets.",
+    "quickSafetyOverview": "Quick Safety Overview",
+    "browseByCategory": "Browse by Category",
+    "allFoods": "All Foods",
+    "foods": "foods",
+    "statusSafe": "Safe",
+    "statusLimited": "Limited",
+    "statusToxic": "Toxic",
+    "statusUnknown": "Unknown"
+  },
+  "PlantsPage": {
+    "title": "Plants",
+    "description": "Browse common houseplants, garden plants, and wild plants to see if they are safe for your pets.",
+    "houseplants": "Houseplants",
+    "outdoorPlants": "Outdoor Plants"
+  },
+  "EmergencyPage": {
+    "poisonControlHotlines": "Poison Control Hotlines",
+    "whenToCall": "When to Call Immediately",
+    "stepsToTake": "Steps to Take",
+    "commonToxicFoods": "Common Toxic Foods",
+    "visitWebsite": "Visit website"
+  },
+  "EmergencyBanner": {
+    "title": "Think your pet ate something toxic?",
+    "call": "Call {name}:",
+    "or": "or",
+    "viewEmergencyGuide": "view emergency guide"
+  },
+  "Disclaimer": {
+    "important": "Important:",
+    "text": "PetPilot provides general information only and is not a substitute for professional veterinary advice. If your pet is sick, injured, or may have eaten something toxic, contact your veterinarian or an animal poison control center immediately."
+  },
+  "FoodDetail": {
+    "canDogsEat": "Can Dogs Eat {name}?",
+    "subtitle": "Find out if {name} is safe for dogs and cats.",
+    "safeForDogs": "Is {name} Safe for Dogs?",
+    "safeForCats": "Is {name} Safe for Cats?",
+    "preparationNotes": "Preparation Notes",
+    "recommendedAmount": "Recommended Amount",
+    "howOften": "How Often?",
+    "symptoms": "Symptoms to Watch For",
+    "whatIfAte": "What If My Pet Ate {name}?",
+    "call": "Call {name}",
+    "healthConditions": "Health Condition Considerations",
+    "healthConditionsIntro": "Even if {name} is generally safe, it may not be appropriate for pets with certain medical conditions. Always check with your veterinarian if your pet has been diagnosed with any of the following.",
+    "forDogs": "For Dogs",
+    "forCats": "For Cats",
+    "avoid": "Avoid",
+    "limit": "Limit",
+    "consultVet": "Consult your vet",
+    "safeAlternatives": "Safe Alternatives",
+    "sources": "Sources",
+    "vetsNote": "Vet's Note",
+    "vetsNoteText": "PetPilot provides general information for educational purposes. While we reference authoritative veterinary organizations, this page has not been individually reviewed by a veterinarian for your specific pet. Individual animals may react differently based on age, weight, breed, health conditions, and amount consumed. Always consult your veterinarian or a poison control center for personalized advice, especially if your pet is ill, injured, pregnant, nursing, or on medication.",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "medicalDisclaimerText": "The content on this page is not a substitute for professional veterinary diagnosis, treatment, or emergency care. If you suspect your pet has eaten something harmful, contact your veterinarian or call <aspca>ASPCA Poison Control</aspca> or <pph>Pet Poison Helpline</pph> immediately."
+  },
+  "PlantDetail": {
+    "isSafeForPets": "Is {name} Safe for Pets?",
+    "subtitle": "Find out if {name} is safe for dogs and cats.",
+    "safeForDogs": "Is {name} Safe for Dogs?",
+    "safeForCats": "Is {name} Safe for Cats?",
+    "symptoms": "Symptoms to Watch For",
+    "whatIfAte": "What If My Pet Ate {name}?",
+    "safeAlternatives": "Safe Alternatives",
+    "sources": "Sources",
+    "vetsNote": "Vet's Note",
+    "vetsNoteText": "PetPilot provides general information for educational purposes. While we reference authoritative veterinary organizations, this page has not been individually reviewed by a veterinarian for your specific pet. Individual animals may react differently based on age, weight, breed, health conditions, and amount consumed. Always consult your veterinarian or a poison control center for personalized advice, especially if your pet is ill, injured, pregnant, nursing, or on medication.",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "medicalDisclaimerText": "The content on this page is not a substitute for professional veterinary diagnosis, treatment, or emergency care. If you suspect your pet has eaten something harmful, contact your veterinarian or call <aspca>ASPCA Poison Control</aspca> or <pph>Pet Poison Helpline</pph> immediately."
+  },
+  "SafetyBadge": {
+    "safe": "Safe",
+    "limited": "Limited",
+    "toxic": "Toxic",
+    "unknown": "Unknown",
+    "dogs": "Dogs",
+    "cats": "Cats"
+  },
+  "Breadcrumb": {
+    "home": "Home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "We couldn't find the page you were looking for. Try searching for a food, plant, or browse our categories.",
+    "goHome": "Go home",
+    "search": "Search",
+    "emergency": "Emergency",
+    "ifEmergency": "If this is an emergency",
+    "emergencyText": "Contact your veterinarian or call <aspca>ASPCA Poison Control</aspca> or <pph>Pet Poison Helpline</pph> immediately."
+  },
+  "LegalPages": {
+    "lastUpdated": "Last updated: {date}",
+    "privacyDescription": "Privacy Policy for {name}. We respect your privacy and do not sell personal data.",
+    "termsDescription": "Terms of Service for {name}. Educational pet safety information only, not veterinary advice."
+  },
+  "ReportIssue": {
+    "button": "Report an issue",
+    "title": "Report an issue",
+    "description": "Help us improve {item}. Let us know if something is incorrect, outdated, or missing.",
+    "incorrectSafety": "Incorrect safety info",
+    "incorrectSafetyDetail": "The safety status or symptoms seem wrong.",
+    "missingInfo": "Missing information",
+    "missingInfoDetail": "Something important is not covered.",
+    "typoOrLink": "Typo or broken link",
+    "typoOrLinkDetail": "There is a text error or link issue.",
+    "other": "Other",
+    "otherDetail": "Something else."
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fruits",
+    "name": "Obst",
+    "slug": "fruits",
+    "description": "Süße und saftige Optionen für Haustiere, von Beeren bis Melonen.",
+    "icon": "Apple",
+    "sort_order": 1
+  },
+  {
+    "id": "vegetables",
+    "name": "Gemüse",
+    "slug": "vegetables",
+    "description": "Knackiges Grünzeug und Wurzelgemüse, die als gesunde Leckereien geeignet sind.",
+    "icon": "Carrot",
+    "sort_order": 2
+  },
+  {
+    "id": "proteins",
+    "name": "Proteine",
+    "slug": "proteins",
+    "description": "Fleisch, Fisch, Eier und Alternativen für fleischfressende Haustiere.",
+    "icon": "Beef",
+    "sort_order": 3
+  },
+  {
+    "id": "grains",
+    "name": "Getreide & Stärke",
+    "slug": "grains",
+    "description": "Reis, Brot, Nudeln und Getreide.",
+    "icon": "Wheat",
+    "sort_order": 4
+  },
+  {
+    "id": "dairy",
+    "name": "Milchprodukte",
+    "slug": "dairy",
+    "description": "Milch, Käse, Joghurt und Alternativen.",
+    "icon": "Milk",
+    "sort_order": 5
+  },
+  {
+    "id": "nuts",
+    "name": "Nüsse & Samen",
+    "slug": "nuts",
+    "description": "Fettreiche Snacks und Aufstriche.",
+    "icon": "Cherry",
+    "sort_order": 6
+  },
+  {
+    "id": "sweets",
+    "name": "Süßigkeiten & Desserts",
+    "slug": "sweets",
+    "description": "Zuckerhaltige Leckereien und Backwaren.",
+    "icon": "Cookie",
+    "sort_order": 7
+  },
+  {
+    "id": "spices",
+    "name": "Kräuter & Gewürze",
+    "slug": "spices",
+    "description": "Geschmacksverstärker und Würzmittel.",
+    "icon": "Leaf",
+    "sort_order": 8
+  },
+  {
+    "id": "beverages",
+    "name": "Getränke",
+    "slug": "beverages",
+    "description": "Trinken und Flüssigkeiten.",
+    "icon": "Coffee",
+    "sort_order": 9
+  },
+  {
+    "id": "human-foods",
+    "name": "Menschliche Nahrungsmittel",
+    "slug": "human-foods",
+    "description": "Zubereitete Mahlzeiten und Fast-Food-Artikel.",
+    "icon": "UtensilsCrossed",
+    "sort_order": 10
+  },
+  {
+    "id": "houseplants",
+    "name": "Zimmerpflanzen",
+    "slug": "houseplants",
+    "description": "Häufige Zimmerpflanzen, die für Haustiere giftig oder unbedenklich sein können.",
+    "icon": "Leaf",
+    "sort_order": 11
+  },
+  {
+    "id": "outdoor-plants",
+    "name": "Gartenpflanzen",
+    "slug": "outdoor-plants",
+    "description": "Garten-, Hof- und Wildpflanzen, denen Haustiere begegnen können.",
+    "icon": "TreePine",
+    "sort_order": 12
+  }
+]

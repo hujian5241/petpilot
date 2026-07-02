@@ -9,126 +9,195 @@ import remarkRehype from "remark-rehype"
 import rehypeStringify from "rehype-stringify"
 
 import type { Category, EmergencyInfo, FoodEntry, PlantEntry, SiteConfig } from "./types"
+import { defaultLocale, type Locale } from "./locales"
 
-const CONTENT_DIR = path.join(process.cwd(), "content")
-
-export async function getSiteConfig(): Promise<SiteConfig> {
-  const filePath = path.join(CONTENT_DIR, "site.json")
-  const content = await fs.readFile(filePath, "utf-8")
-  return JSON.parse(content) as SiteConfig
+function contentDir(locale: Locale): string {
+  return path.join(process.cwd(), "content", locale)
 }
 
-export async function getAllCategories(): Promise<Category[]> {
-  const filePath = path.join(CONTENT_DIR, "categories.json")
-  const content = await fs.readFile(filePath, "utf-8")
-  const categories = JSON.parse(content) as Category[]
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath)
+    return true
+  } catch {
+    return false
+  }
+}
+
+async function readFileWithFallback(
+  locale: Locale,
+  relativePath: string
+): Promise<string | undefined> {
+  const localizedPath = path.join(contentDir(locale), relativePath)
+  if (await fileExists(localizedPath)) {
+    return fs.readFile(localizedPath, "utf-8")
+  }
+
+  if (locale !== defaultLocale) {
+    const fallbackPath = path.join(contentDir(defaultLocale), relativePath)
+    if (await fileExists(fallbackPath)) {
+      return fs.readFile(fallbackPath, "utf-8")
+    }
+  }
+
+  return undefined
+}
+
+async function readJsonWithFallback<T>(locale: Locale, relativePath: string): Promise<T> {
+  const content = await readFileWithFallback(locale, relativePath)
+  if (!content) {
+    throw new Error(`Missing content file: ${relativePath} for locale ${locale}`)
+  }
+  return JSON.parse(content) as T
+}
+
+export async function getSiteConfig(locale: Locale = defaultLocale): Promise<SiteConfig> {
+  return readJsonWithFallback<SiteConfig>(locale, "site.json")
+}
+
+export async function getAllCategories(locale: Locale = defaultLocale): Promise<Category[]> {
+  const categories = await readJsonWithFallback<Category[]>(locale, "categories.json")
   return categories.sort((a, b) => a.sort_order - b.sort_order)
 }
 
-export async function getCategoryBySlug(slug: string): Promise<Category | undefined> {
-  const categories = await getAllCategories()
+export async function getCategoryBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<Category | undefined> {
+  const categories = await getAllCategories(locale)
   return categories.find((category) => category.slug === slug)
 }
 
-export async function getEmergencyInfo(): Promise<EmergencyInfo> {
-  const filePath = path.join(CONTENT_DIR, "emergency.json")
-  const content = await fs.readFile(filePath, "utf-8")
-  return JSON.parse(content) as EmergencyInfo
+export async function getEmergencyInfo(locale: Locale = defaultLocale): Promise<EmergencyInfo> {
+  return readJsonWithFallback<EmergencyInfo>(locale, "emergency.json")
 }
 
-export async function getAllFoods(): Promise<FoodEntry[]> {
-  const foodsDir = path.join(CONTENT_DIR, "foods")
-  const files = await fs.readdir(foodsDir)
-  const mdFiles = files.filter((file) => file.endsWith(".md"))
+async function getSlugs(
+  type: "foods" | "plants",
+  locale: Locale = defaultLocale
+): Promise<string[]> {
+  const dir = path.join(contentDir(locale), type)
 
-  const foods = await Promise.all(
-    mdFiles.map(async (file) => {
-      const slug = file.replace(/\.md$/, "")
-      return getFoodBySlug(slug)
-    })
-  )
+  if (!(await fileExists(dir))) {
+    return []
+  }
+
+  const files = await fs.readdir(dir)
+  return files.filter((file) => file.endsWith(".md")).map((file) => file.replace(/\.md$/, ""))
+}
+
+export async function getFoodSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  // Use default locale as the source of truth for available slugs so all locales
+  // share the same slug set and fall back cleanly when a translation is missing.
+  return getSlugs("foods", defaultLocale)
+}
+
+export async function getPlantSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  return getSlugs("plants", defaultLocale)
+}
+
+export async function getAllFoods(locale: Locale = defaultLocale): Promise<FoodEntry[]> {
+  const slugs = await getFoodSlugs(locale)
+  const foods = await Promise.all(slugs.map((slug) => getFoodBySlug(slug, locale)))
 
   return foods
     .filter((food): food is FoodEntry => food !== undefined)
     .sort((a, b) => a.name.localeCompare(b.name))
 }
 
-export async function getFoodBySlug(slug: string): Promise<FoodEntry | undefined> {
-  const foodsDir = path.join(CONTENT_DIR, "foods")
-  return processMarkdownFile<FoodEntry>(foodsDir, slug)
+export async function getFoodBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<FoodEntry | undefined> {
+  const content = await readFileWithFallback(locale, path.join("foods", `${slug}.md`))
+  if (!content) return undefined
+
+  const { data, content: body } = matter(content)
+
+  const processedContent = await remark()
+    .use(gfm)
+    .use(remarkRehype)
+    .use(sanitize)
+    .use(rehypeStringify)
+    .process(body)
+
+  return {
+    ...(data as Omit<FoodEntry, "content">),
+    slug,
+    content: processedContent.toString(),
+  } as FoodEntry
 }
 
-export async function getFoodsByCategory(categorySlug: string): Promise<FoodEntry[]> {
-  const foods = await getAllFoods()
+export async function getFoodsByCategory(
+  categorySlug: string,
+  locale: Locale = defaultLocale
+): Promise<FoodEntry[]> {
+  const foods = await getAllFoods(locale)
   return foods.filter((food) => food.categories.includes(categorySlug))
 }
 
-export async function getFoodSlugs(): Promise<string[]> {
-  const foodsDir = path.join(CONTENT_DIR, "foods")
-  const files = await fs.readdir(foodsDir)
-  return files.filter((file) => file.endsWith(".md")).map((file) => file.replace(/\.md$/, ""))
-}
-
-export function getCategoryDisplayName(categories: Category[], slug: string): string {
-  return categories.find((c) => c.slug === slug)?.name ?? slug
-}
-
-async function processMarkdownFile<T extends { slug: string; content?: string }>(
-  dir: string,
-  slug: string
-): Promise<T | undefined> {
-  const filePath = path.join(dir, `${slug}.md`)
-
-  try {
-    const fileContent = await fs.readFile(filePath, "utf-8")
-    const { data, content } = matter(fileContent)
-
-    const processedContent = await remark()
-      .use(gfm)
-      .use(remarkRehype)
-      .use(sanitize)
-      .use(rehypeStringify)
-      .process(content)
-
-    return {
-      ...(data as Omit<T, "content">),
-      slug,
-      content: processedContent.toString(),
-    } as T
-  } catch {
-    return undefined
-  }
-}
-
-export async function getAllPlants(): Promise<PlantEntry[]> {
-  const plantsDir = path.join(CONTENT_DIR, "plants")
-  const files = await fs.readdir(plantsDir)
-  const mdFiles = files.filter((file) => file.endsWith(".md"))
-
-  const plants = await Promise.all(
-    mdFiles.map(async (file) => {
-      const slug = file.replace(/\.md$/, "")
-      return getPlantBySlug(slug)
-    })
-  )
+export async function getAllPlants(locale: Locale = defaultLocale): Promise<PlantEntry[]> {
+  const slugs = await getPlantSlugs(locale)
+  const plants = await Promise.all(slugs.map((slug) => getPlantBySlug(slug, locale)))
 
   return plants
     .filter((plant): plant is PlantEntry => plant !== undefined)
     .sort((a, b) => a.name.localeCompare(b.name))
 }
 
-export async function getPlantBySlug(slug: string): Promise<PlantEntry | undefined> {
-  const plantsDir = path.join(CONTENT_DIR, "plants")
-  return processMarkdownFile<PlantEntry>(plantsDir, slug)
+export async function getPlantBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<PlantEntry | undefined> {
+  const content = await readFileWithFallback(locale, path.join("plants", `${slug}.md`))
+  if (!content) return undefined
+
+  const { data, content: body } = matter(content)
+
+  const processedContent = await remark()
+    .use(gfm)
+    .use(remarkRehype)
+    .use(sanitize)
+    .use(rehypeStringify)
+    .process(body)
+
+  return {
+    ...(data as Omit<PlantEntry, "content">),
+    slug,
+    content: processedContent.toString(),
+  } as PlantEntry
 }
 
-export async function getPlantSlugs(): Promise<string[]> {
-  const plantsDir = path.join(CONTENT_DIR, "plants")
-  const files = await fs.readdir(plantsDir)
-  return files.filter((file) => file.endsWith(".md")).map((file) => file.replace(/\.md$/, ""))
-}
-
-export async function getPlantsByCategory(categorySlug: string): Promise<PlantEntry[]> {
-  const plants = await getAllPlants()
+export async function getPlantsByCategory(
+  categorySlug: string,
+  locale: Locale = defaultLocale
+): Promise<PlantEntry[]> {
+  const plants = await getAllPlants(locale)
   return plants.filter((plant) => plant.categories.includes(categorySlug))
+}
+
+export function getCategoryDisplayName(categories: Category[], slug: string): string {
+  return categories.find((c) => c.slug === slug)?.name ?? slug
+}
+
+export async function getPageMarkdown(
+  locale: Locale,
+  page: "about" | "terms" | "privacy"
+): Promise<{ title: string; content: string } | undefined> {
+  const raw = await readFileWithFallback(locale, path.join("pages", `${page}.md`))
+  if (!raw) return undefined
+
+  const { data, content: body } = matter(raw)
+
+  const processedContent = await remark()
+    .use(gfm)
+    .use(remarkRehype)
+    .use(sanitize)
+    .use(rehypeStringify)
+    .process(body)
+
+  return {
+    title: (data.title as string) ?? page,
+    content: processedContent.toString(),
+  }
 }

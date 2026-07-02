@@ -1,14 +1,16 @@
 import Image from "next/image";
-import Link from "next/link";
 
+import { Link } from "@/i18n/routing";
 import { CompactSafetyBadge } from "./SafetyBadge";
 import type { FoodEntry } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 interface FoodCardProps {
   food: FoodEntry;
+  locale: Locale;
 }
 
-export function FoodCard({ food }: FoodCardProps) {
+export function FoodCard({ food, locale }: FoodCardProps) {
   return (
     <Link
       href={`/foods/${food.slug}`}

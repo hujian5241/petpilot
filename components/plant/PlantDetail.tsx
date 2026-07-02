@@ -1,48 +1,54 @@
-import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, Phone } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
+import { Link } from "@/i18n/routing";
 import { SafetyBadge } from "@/components/food/SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
 import { getEmergencyInfo } from "@/lib/content";
 import type { PlantEntry } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 interface PlantDetailProps {
   plant: PlantEntry;
+  locale: Locale;
 }
 
-export async function PlantDetail({ plant }: PlantDetailProps) {
+export async function PlantDetail({ plant, locale }: PlantDetailProps) {
   const isUrgent =
     plant.safety.dogs.status === "toxic" ||
     plant.safety.cats.status === "toxic" ||
     plant.safety.dogs.status === "limited" ||
     plant.safety.cats.status === "limited";
 
-  const info = await getEmergencyInfo();
+  const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
 
-  const pageUrl = `/plants/${plant.slug}`;
+  const pageUrl = `/${locale}/plants/${plant.slug}`;
+  const t = await getTranslations("PlantDetail");
+  const tNav = await getTranslations("Header");
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
       <Breadcrumb
+        locale={locale}
         items={[
-          { label: "Plants", href: "/plants" },
+          { label: tNav("plants"), href: "/plants" },
           { label: plant.name },
         ]}
       />
 
       <header className="mt-6">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          Is {plant.name} Safe for Pets?
+          {t("isSafeForPets", { name: plant.name })}
         </h1>
         {plant.scientific_name && (
           <p className="mt-2 text-lg italic text-muted-foreground">{plant.scientific_name}</p>
         )}
         <p className="mt-2 text-lg text-muted-foreground">
-          Find out if {plant.name.toLowerCase()} is safe for dogs and cats.
+          {t("subtitle", { name: plant.name.toLowerCase() })}
         </p>
       </header>
 
@@ -60,33 +66,33 @@ export async function PlantDetail({ plant }: PlantDetailProps) {
       )}
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
-        <SafetyBadge species="dogs" status={plant.safety.dogs.status} />
-        <SafetyBadge species="cats" status={plant.safety.cats.status} />
+        <SafetyBadge species="dogs" status={plant.safety.dogs.status} locale={locale} />
+        <SafetyBadge species="cats" status={plant.safety.cats.status} locale={locale} />
       </div>
 
       {isUrgent && (
         <div className="mt-6">
-          <EmergencyBanner />
+          <EmergencyBanner locale={locale} />
         </div>
       )}
 
       <div className="prose-pet mt-8">
         <div dangerouslySetInnerHTML={{ __html: plant.content ?? "" }} />
 
-        <h2>Is {plant.name} Safe for Dogs?</h2>
+        <h2>{t("safeForDogs", { name: plant.name })}</h2>
         <p>{plant.safety.dogs.summary}</p>
 
-        <h2>Is {plant.name} Safe for Cats?</h2>
+        <h2>{t("safeForCats", { name: plant.name })}</h2>
         <p>{plant.safety.cats.summary}</p>
 
-        <h2>Symptoms to Watch For</h2>
+        <h2>{t("symptoms")}</h2>
         <ul>
           {plant.symptoms.map((symptom) => (
             <li key={symptom}>{symptom}</li>
           ))}
         </ul>
 
-        <h2>What If My Pet Ate {plant.name}?</h2>
+        <h2>{t("whatIfAte", { name: plant.name })}</h2>
         <p>{plant.what_to_do}</p>
         <div className="not-prose my-4 flex flex-wrap gap-3">
           {aspca && (
@@ -95,7 +101,7 @@ export async function PlantDetail({ plant }: PlantDetailProps) {
               className="inline-flex items-center gap-2 rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              {aspca.name}
+              {t("call", { name: aspca.name })}
             </a>
           )}
           {pph && (
@@ -109,7 +115,7 @@ export async function PlantDetail({ plant }: PlantDetailProps) {
           )}
         </div>
 
-        <h2>Safe Alternatives</h2>
+        <h2>{t("safeAlternatives")}</h2>
         <ul>
           {plant.alternatives.map((alt) => (
             <li key={alt}>
@@ -126,7 +132,7 @@ export async function PlantDetail({ plant }: PlantDetailProps) {
           ))}
         </ul>
 
-        <h2>Sources</h2>
+        <h2>{t("sources")}</h2>
         <ul>
           {plant.sources.map((source) => (
             <li key={source.name}>
@@ -147,46 +153,38 @@ export async function PlantDetail({ plant }: PlantDetailProps) {
           ))}
         </ul>
 
-        <h2>Vet&apos;s Note</h2>
-        <p>
-          PetPilot provides general information for educational purposes. While we reference
-          authoritative veterinary organizations, this page has not been individually reviewed by a
-          veterinarian for your specific pet. Individual animals may react differently based on age,
-          weight, breed, health conditions, and amount consumed. Always consult your veterinarian or
-          a poison control center for personalized advice, especially if your pet is ill, injured,
-          pregnant, nursing, or on medication.
-        </p>
+        <h2>{t("vetsNote")}</h2>
+        <p>{t("vetsNoteText")}</p>
       </div>
 
       <div className="mt-8 space-y-4">
-        <ReportIssue itemName={plant.name} pageUrl={pageUrl} />
+        <ReportIssue itemName={plant.name} pageUrl={pageUrl} locale={locale} />
         <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <strong className="block text-amber-950">Medical Disclaimer</strong>
-          The content on this page is not a substitute for professional veterinary diagnosis,
-          treatment, or emergency care. If you suspect your pet has eaten something harmful, contact
-          your veterinarian or call{" "}
-          {aspca ? (
-            <a
-              href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-              className="font-semibold underline"
-            >
-              {aspca.name} {aspca.phone}
-            </a>
-          ) : (
-            "ASPCA Poison Control"
-          )}
-          {" or "}
-          {pph ? (
-            <a
-              href={`tel:${pph.phone.replace(/\D/g, "")}`}
-              className="font-semibold underline"
-            >
-              {pph.name} {pph.phone}
-            </a>
-          ) : (
-            "Pet Poison Helpline"
-          )}
-          {" immediately."}
+          <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
+          {t.rich("medicalDisclaimerText", {
+            aspca: (chunks) =>
+              aspca ? (
+                <a
+                  href={`tel:${aspca.phone.replace(/\D/g, "")}`}
+                  className="font-semibold underline"
+                >
+                  {chunks}
+                </a>
+              ) : (
+                <>{chunks}</>
+              ),
+            pph: (chunks) =>
+              pph ? (
+                <a
+                  href={`tel:${pph.phone.replace(/\D/g, "")}`}
+                  className="font-semibold underline"
+                >
+                  {chunks}
+                </a>
+              ) : (
+                <>{chunks}</>
+              ),
+          })}
         </div>
       </div>
     </article>

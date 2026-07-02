@@ -1,0 +1,46 @@
+{
+  "title": "ペット緊急ガイド",
+  "subtitle": "ペットが有毒なものを食べたと思われる場合は、すぐに行動してください。",
+  "hotlines": [
+    {
+      "name": "ASPCA Animal Poison Control Center",
+      "phone": "(888) 426-4435",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control",
+      "available": "24時間365日",
+      "cost": "料金がかかる場合があります"
+    },
+    {
+      "name": "Pet Poison Helpline",
+      "phone": "(855) 764-7661",
+      "url": "https://www.petpoisonhelpline.com/",
+      "available": "24時間365日",
+      "cost": "料金がかかる場合があります"
+    }
+  ],
+  "when_to_call": [
+    "チョコレート、ブドウ、レーズン、玉ねぎ、にんにく、キシリトール、マカダミアナッツを食べた場合",
+    "繰り返し嘔吐、けいれん、呼吸困難がある場合",
+    "毒を疑うが、何を摂取したか不明な場合",
+    "ペットが無気力、反応がない、明らかな痛みを示している場合"
+  ],
+  "common_toxins": [
+    "grapes",
+    "chocolate",
+    "onions",
+    "garlic",
+    "xylitol",
+    "avocado",
+    "macadamia-nuts",
+    "alcohol",
+    "coffee",
+    "raw-bread-dough"
+  ],
+  "steps": [
+    "落ち着いて、ペットをその場から遠ざけます。",
+    "パッケージを確認するか、食べたものの写真を撮ります。",
+    "どのくらいの量を、いつ食べたかを見積もります。",
+    "すぐにASPCA Poison Control Centerまたは獣医師に電話します。",
+    "専門家の指示がない限り、嘔吐を促さないでください。"
+  ],
+  "disclaimer": "この緊急ガイドは情報提供のみを目的としており、専門的な獣医師の助言を代替するものではありません。ペットに医療上の緊急事態が起きていると思われる場合は、すぐに獣医師または中毒相談センターに連絡してください。"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fruits",
+    "name": "フルーツ",
+    "slug": "fruits",
+    "description": "ベリーからメロンまで、ペット用の甘くてジューシーな選択肢。",
+    "icon": "Apple",
+    "sort_order": 1
+  },
+  {
+    "id": "vegetables",
+    "name": "野菜",
+    "slug": "vegetables",
+    "description": "ヘルシーなおやつにできる、シャキシャキの葉物や根菜。",
+    "icon": "Carrot",
+    "sort_order": 2
+  },
+  {
+    "id": "proteins",
+    "name": "タンパク質",
+    "slug": "proteins",
+    "description": "犬猫などの肉食動物向けの肉、魚、卵、およびその代替品。",
+    "icon": "Beef",
+    "sort_order": 3
+  },
+  {
+    "id": "grains",
+    "name": "穀物 & 炭水化物",
+    "slug": "grains",
+    "description": "米、パン、パスタ、シリアルなど。",
+    "icon": "Wheat",
+    "sort_order": 4
+  },
+  {
+    "id": "dairy",
+    "name": "乳製品",
+    "slug": "dairy",
+    "description": "牛乳、チーズ、ヨーグルト、およびその代替品。",
+    "icon": "Milk",
+    "sort_order": 5
+  },
+  {
+    "id": "nuts",
+    "name": "ナッツ & 種",
+    "slug": "nuts",
+    "description": "高脂肪のスナックやペースト。",
+    "icon": "Cherry",
+    "sort_order": 6
+  },
+  {
+    "id": "sweets",
+    "name": "菓子 & デザート",
+    "slug": "sweets",
+    "description": "甘いお菓子や焼き菓子。",
+    "icon": "Cookie",
+    "sort_order": 7
+  },
+  {
+    "id": "spices",
+    "name": "ハーブ & 香辛料",
+    "slug": "spices",
+    "description": "風味を引き立てる調味料。",
+    "icon": "Leaf",
+    "sort_order": 8
+  },
+  {
+    "id": "beverages",
+    "name": "飲み物",
+    "slug": "beverages",
+    "description": "飲料や液体。",
+    "icon": "Coffee",
+    "sort_order": 9
+  },
+  {
+    "id": "human-foods",
+    "name": "人間用食品",
+    "slug": "human-foods",
+    "description": "調理済みの食事やファストフード。",
+    "icon": "UtensilsCrossed",
+    "sort_order": 10
+  },
+  {
+    "id": "houseplants",
+    "name": "観葉植物",
+    "slug": "houseplants",
+    "description": "ペットにとって有毒または安全である可能性のある、一般的な室内植物。",
+    "icon": "Leaf",
+    "sort_order": 11
+  },
+  {
+    "id": "outdoor-plants",
+    "name": "屋外植物",
+    "slug": "outdoor-plants",
+    "description": "ペットが遭遇する可能性のある庭、庭先、野生の植物。",
+    "icon": "TreePine",
+    "sort_order": 12
+  }
+]

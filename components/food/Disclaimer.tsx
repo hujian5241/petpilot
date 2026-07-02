@@ -1,10 +1,16 @@
+import { getTranslations } from "next-intl/server";
+
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/lib/i18n";
 
 interface DisclaimerProps {
+  locale?: Locale;
   className?: string;
 }
 
-export function Disclaimer({ className }: DisclaimerProps) {
+export async function Disclaimer({ locale = "en", className }: DisclaimerProps) {
+  const t = await getTranslations("Disclaimer");
+
   return (
     <div
       className={cn(
@@ -12,10 +18,8 @@ export function Disclaimer({ className }: DisclaimerProps) {
         className
       )}
     >
-      <strong className="text-foreground">Important:{" "}</strong>
-      PetPilot provides general information only and is not a substitute for professional veterinary
-      advice. If your pet is sick, injured, or may have eaten something toxic, contact your
-      veterinarian or an animal poison control center immediately.
+      <strong className="text-foreground">{t("important")}{" "}</strong>
+      {t("text")}
     </div>
   );
 }

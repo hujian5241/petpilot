@@ -1,14 +1,16 @@
 import Image from "next/image";
-import Link from "next/link";
 
+import { Link } from "@/i18n/routing";
 import { SafetyBadge } from "@/components/food/SafetyBadge";
 import type { PlantEntry } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 interface PlantCardProps {
   plant: PlantEntry;
+  locale: Locale;
 }
 
-export function PlantCard({ plant }: PlantCardProps) {
+export function PlantCard({ plant, locale }: PlantCardProps) {
   return (
     <Link
       href={`/plants/${plant.slug}`}

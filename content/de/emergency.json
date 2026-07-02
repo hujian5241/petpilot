@@ -1,0 +1,46 @@
+{
+  "title": "Notfallleitfaden für Haustiere",
+  "subtitle": "Wenn Sie vermuten, dass Ihr Haustier etwas Giftiges gefressen hat, handeln Sie schnell.",
+  "hotlines": [
+    {
+      "name": "ASPCA Animal Poison Control Center",
+      "phone": "(888) 426-4435",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control",
+      "available": "24/7",
+      "cost": "Gebühren können anfallen"
+    },
+    {
+      "name": "Pet Poison Helpline",
+      "phone": "(855) 764-7661",
+      "url": "https://www.petpoisonhelpline.com/",
+      "available": "24/7",
+      "cost": "Gebühren können anfallen"
+    }
+  ],
+  "when_to_call": [
+    "Ihr Haustier hat Schokolade, Weintrauben, Rosinen, Zwiebeln, Knoblauch, Xylitol oder Macadamianüsse gefressen",
+    "Ihr Haustier erbricht sich wiederholt, hat Krampfanfälle oder Atembeschwerden",
+    "Sie vermuten eine Vergiftung, sind sich aber nicht sicher, was aufgenommen wurde",
+    "Ihr Haustier ist lethargisch, reagiert nicht oder hat offensichtliche Schmerzen"
+  ],
+  "common_toxins": [
+    "grapes",
+    "chocolate",
+    "onions",
+    "garlic",
+    "xylitol",
+    "avocado",
+    "macadamia-nuts",
+    "alcohol",
+    "coffee",
+    "raw-bread-dough"
+  ],
+  "steps": [
+    "Bleiben Sie ruhig und entfernen Sie Ihr Haustier von der Quelle.",
+    "Prüfen Sie die Verpackung oder machen Sie ein Foto von dem, was gefressen wurde.",
+    "Schätzen Sie ab, wie viel verzehrt wurde und wann.",
+    "Rufen Sie sofort das ASPCA Poison Control Center oder Ihren Tierarzt an.",
+    "Lösen Sie Erbrechen nur aus, wenn dies von einem Fachmann angeordnet wurde."
+  ],
+  "disclaimer": "Dieser Notfallleitfaden dient nur zu Informationszwecken und ersetzt keine tierärztliche Beratung. Wenn Sie glauben, dass Ihr Haustier einen medizinischen Notfall hat, wenden Sie sich sofort an einen Tierarzt oder ein Giftinformationszentrum."
+}

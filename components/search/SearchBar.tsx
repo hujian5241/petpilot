@@ -2,25 +2,29 @@
 
 import { useState, FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { Search, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/lib/i18n";
 
 interface SearchBarProps {
+  locale?: Locale;
   size?: "default" | "large";
   className?: string;
 }
 
-export function SearchBar({ size = "default", className }: SearchBarProps) {
+export function SearchBar({ locale = "en", size = "default", className }: SearchBarProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
+  const t = useTranslations("SearchPage");
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const trimmed = query.trim();
     if (trimmed) {
-      router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+      router.push(`/${locale}/search?q=${encodeURIComponent(trimmed)}`);
     }
   };
 
@@ -42,7 +46,7 @@ export function SearchBar({ size = "default", className }: SearchBarProps) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search a food, e.g., grapes, chocolate, carrots..."
+          placeholder={t("placeholder")}
           className={cn(
             "h-full w-full rounded-full bg-transparent pl-12 pr-10 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20",
             size === "large" ? "text-lg" : "text-base"

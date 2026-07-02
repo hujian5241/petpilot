@@ -7,6 +7,7 @@ import {
   getPlantSlugs,
   getSiteConfig,
 } from "../lib/content";
+import { locales, defaultLocale } from "../lib/i18n";
 
 function escapeXml(value: string): string {
   return value
@@ -19,15 +20,37 @@ function escapeXml(value: string): string {
 
 interface UrlEntry {
   loc: string;
+  path: string;
   priority: number;
 }
 
-function buildUrlSet(urls: UrlEntry[]): string {
+function buildAlternateLinks(baseUrl: string, path: string): string {
+  const links = locales
+    .map(
+      (locale) =>
+        `    <xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml(
+          `${baseUrl}/${locale}${path}`
+        )}" />`
+    )
+    .join("\n");
+
+  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(
+    `${baseUrl}/${defaultLocale}${path}`
+  )}" />`;
+
+  return `${links}\n${xDefault}`;
+}
+
+function buildUrlSet(urls: UrlEntry[], baseUrl: string): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls
   .map(
-    (u) => `  <url>\n    <loc>${escapeXml(u.loc)}</loc>\n    <priority>${u.priority}</priority>\n  </url>`
+    (u) =>
+      `  <url>\n    <loc>${escapeXml(u.loc)}</loc>\n${buildAlternateLinks(
+        baseUrl,
+        u.path
+      )}\n    <priority>${u.priority}</priority>\n  </url>`
   )
   .join("\n")}
 </urlset>`;
@@ -35,10 +58,10 @@ ${urls
 
 async function main() {
   const [config, categories, foodSlugs, plantSlugs] = await Promise.all([
-    getSiteConfig(),
-    getAllCategories(),
-    getFoodSlugs(),
-    getPlantSlugs(),
+    getSiteConfig(defaultLocale),
+    getAllCategories(defaultLocale),
+    getFoodSlugs(defaultLocale),
+    getPlantSlugs(defaultLocale),
   ]);
 
   const baseUrl = config.base_url.endsWith("/")
@@ -48,61 +71,63 @@ async function main() {
   const outDir = path.join(process.cwd(), "public", "sitemaps");
   await fs.mkdir(outDir, { recursive: true });
 
-  const staticUrls: UrlEntry[] = [
-    { loc: `${baseUrl}/`, priority: 1 },
-    { loc: `${baseUrl}/foods`, priority: 0.9 },
-    { loc: `${baseUrl}/plants`, priority: 0.9 },
-    { loc: `${baseUrl}/search`, priority: 0.9 },
-    { loc: `${baseUrl}/emergency`, priority: 0.8 },
-    { loc: `${baseUrl}/about`, priority: 0.5 },
-    { loc: `${baseUrl}/terms`, priority: 0.3 },
-    { loc: `${baseUrl}/privacy`, priority: 0.3 },
-    ...categories.map((c) => ({
-      loc: `${baseUrl}/categories/${c.slug}`,
-      priority: 0.7,
-    })),
-  ];
+  for (const locale of locales) {
+    const localePrefix = `/${locale}`;
 
-  const foodUrls: UrlEntry[] = foodSlugs.map((slug) => ({
-    loc: `${baseUrl}/foods/${slug}`,
-    priority: 0.8,
-  }));
+    const staticUrls: UrlEntry[] = [
+      { loc: `${baseUrl}${localePrefix}/`, path: "/", priority: 1 },
+      { loc: `${baseUrl}${localePrefix}/foods`, path: "/foods", priority: 0.9 },
+      { loc: `${baseUrl}${localePrefix}/plants`, path: "/plants", priority: 0.9 },
+      { loc: `${baseUrl}${localePrefix}/search`, path: "/search", priority: 0.9 },
+      { loc: `${baseUrl}${localePrefix}/emergency`, path: "/emergency", priority: 0.8 },
+      { loc: `${baseUrl}${localePrefix}/about`, path: "/about", priority: 0.5 },
+      { loc: `${baseUrl}${localePrefix}/terms`, path: "/terms", priority: 0.3 },
+      { loc: `${baseUrl}${localePrefix}/privacy`, path: "/privacy", priority: 0.3 },
+      ...categories.map((c) => ({
+        loc: `${baseUrl}${localePrefix}/categories/${c.slug}`,
+        path: `/categories/${c.slug}`,
+        priority: 0.7,
+      })),
+    ];
 
-  const plantUrls: UrlEntry[] = plantSlugs.map((slug) => ({
-    loc: `${baseUrl}/plants/${slug}`,
-    priority: 0.8,
-  }));
+    const foodUrls: UrlEntry[] = foodSlugs.map((slug) => ({
+      loc: `${baseUrl}${localePrefix}/foods/${slug}`,
+      path: `/foods/${slug}`,
+      priority: 0.8,
+    }));
 
-  await fs.writeFile(
-    path.join(outDir, "sitemap-static.xml"),
-    buildUrlSet(staticUrls),
-    "utf-8"
-  );
-  await fs.writeFile(
-    path.join(outDir, "sitemap-foods.xml"),
-    buildUrlSet(foodUrls),
-    "utf-8"
-  );
-  await fs.writeFile(
-    path.join(outDir, "sitemap-plants.xml"),
-    buildUrlSet(plantUrls),
-    "utf-8"
-  );
+    const plantUrls: UrlEntry[] = plantSlugs.map((slug) => ({
+      loc: `${baseUrl}${localePrefix}/plants/${slug}`,
+      path: `/plants/${slug}`,
+      priority: 0.8,
+    }));
+
+    const allUrls = [...staticUrls, ...foodUrls, ...plantUrls];
+
+    await fs.writeFile(
+      path.join(outDir, `sitemap-${locale}.xml`),
+      buildUrlSet(allUrls, baseUrl),
+      "utf-8"
+    );
+  }
 
   const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>${baseUrl}/sitemaps/sitemap-static.xml</loc></sitemap>
-  <sitemap><loc>${baseUrl}/sitemaps/sitemap-foods.xml</loc></sitemap>
-  <sitemap><loc>${baseUrl}/sitemaps/sitemap-plants.xml</loc></sitemap>
+${locales
+  .map(
+    (locale) =>
+      `  <sitemap><loc>${escapeXml(`${baseUrl}/sitemaps/sitemap-${locale}.xml`)}</loc></sitemap>`
+  )
+  .join("\n")}
 </sitemapindex>`;
 
   await fs.writeFile(path.join(process.cwd(), "public", "sitemap.xml"), indexXml, "utf-8");
 
   console.log("Generated static sitemaps:");
-  console.log(`- public/sitemap.xml (${3} sub-sitemaps)`);
-  console.log(`- public/sitemaps/sitemap-static.xml (${staticUrls.length} URLs)`);
-  console.log(`- public/sitemaps/sitemap-foods.xml (${foodUrls.length} URLs)`);
-  console.log(`- public/sitemaps/sitemap-plants.xml (${plantUrls.length} URLs)`);
+  console.log(`- public/sitemap.xml (${locales.length} sub-sitemaps)`);
+  for (const locale of locales) {
+    console.log(`- public/sitemaps/sitemap-${locale}.xml`);
+  }
 }
 
 main().catch((err) => {

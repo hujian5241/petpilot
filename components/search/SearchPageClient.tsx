@@ -1,14 +1,15 @@
 "use client";
 
-import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Fuse from "fuse.js";
 import { Search, Leaf, UtensilsCrossed } from "lucide-react";
 
+import { Link } from "@/i18n/routing";
 import { SearchBar } from "@/components/search/SearchBar";
 import { CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import type { SearchIndexItem } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 interface SearchResult {
   item: SearchIndexItem;
@@ -17,33 +18,32 @@ interface SearchResult {
 }
 
 interface SearchPageClientProps {
+  locale: Locale;
   initialIndex: SearchIndexItem[];
   contactEmail?: string;
 }
 
 export function SearchPageClient({
+  locale,
   initialIndex,
   contactEmail = "hello@petpilot.io",
 }: SearchPageClientProps) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
   const trimmedQuery = query.trim().toLowerCase();
+  const t = useTranslations("SearchPage");
 
-  const nameFuse = useMemo(
-    () =>
-      new Fuse(initialIndex, {
-        keys: ["name", "aliases"],
-        threshold: 0.3,
-        includeScore: true,
-        minMatchCharLength: 2,
-        ignoreLocation: false,
-        findAllMatches: false,
-        useExtendedSearch: true,
-      }),
-    [initialIndex]
-  );
+  const nameFuse = new Fuse(initialIndex, {
+    keys: ["name", "aliases"],
+    threshold: 0.3,
+    includeScore: true,
+    minMatchCharLength: 2,
+    ignoreLocation: false,
+    findAllMatches: false,
+    useExtendedSearch: true,
+  });
 
-  const results = useMemo((): SearchResult[] => {
+  const results: SearchResult[] = (() => {
     if (!trimmedQuery) return [];
 
     const queryParts = trimmedQuery.split(/\s+/);
@@ -74,19 +74,19 @@ export function SearchPageClient({
     // 2. Fuzzy fallback on name and aliases only (not summary)
     const fuzzyResults = nameFuse.search(trimmedQuery);
     return fuzzyResults.map((result) => ({ item: result.item, matchType: "fuzzy" }));
-  }, [trimmedQuery, initialIndex, nameFuse]);
+  })();
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-foreground">Search</h1>
+      <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
       <div className="mt-6">
-        <SearchBar />
+        <SearchBar locale={locale} />
       </div>
 
       {query && (
         <div className="mt-8">
           <p className="text-sm text-muted-foreground">
-            {results.length} result{results.length !== 1 && "s"} for &quot;{query}&quot;
+            {t("resultsFor", { count: results.length, query })}
           </p>
 
           {results.length > 0 ? (
@@ -103,11 +103,11 @@ export function SearchPageClient({
                       <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
                         {item.type === "food" ? (
                           <>
-                            <UtensilsCrossed className="h-3 w-3" aria-hidden="true" /> Food
+                            <UtensilsCrossed className="h-3 w-3" aria-hidden="true" /> {t("foodTag")}
                           </>
                         ) : (
                           <>
-                            <Leaf className="h-3 w-3" aria-hidden="true" /> Plant
+                            <Leaf className="h-3 w-3" aria-hidden="true" /> {t("plantTag")}
                           </>
                         )}
                       </span>
@@ -115,13 +115,13 @@ export function SearchPageClient({
                     <p className="mt-1 text-sm text-muted-foreground">{item.summary}</p>
                     {matchType === "alias" && matchedAlias && (
                       <p className="mt-1 text-xs text-primary">
-                        Also known as: {matchedAlias}
+                        {t("alsoKnownAs", { alias: matchedAlias })}
                       </p>
                     )}
                   </div>
                   <div className="flex flex-col gap-1">
-                    <CompactSafetyBadge species="dogs" status={item.safetyDogs} />
-                    <CompactSafetyBadge species="cats" status={item.safetyCats} />
+                    <CompactSafetyBadge species="dogs" status={item.safetyDogs} locale={locale} />
+                    <CompactSafetyBadge species="cats" status={item.safetyCats} locale={locale} />
                   </div>
                 </Link>
               ))}
@@ -132,10 +132,10 @@ export function SearchPageClient({
                 <Search className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
               </div>
               <h2 className="mt-4 text-lg font-semibold text-foreground">
-                No results for &quot;{query}&quot;
+                {t("noResults", { query })}
               </h2>
               <p className="mt-2 text-muted-foreground">
-                We couldn&apos;t find any foods or plants matching your search.
+                {t("noResultsDescription")}
               </p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
                 {["grapes", "chocolate", "lilies", "blueberries", "carrots"].map((suggestion) => (
@@ -149,12 +149,12 @@ export function SearchPageClient({
                 ))}
               </div>
               <p className="mt-6 text-sm text-muted-foreground">
-                Think something is missing?{" "}
+                {t("suggestItem")}:{" "}
                 <a
                   href={`mailto:${contactEmail}?subject=Search%20suggestion`}
                   className="text-primary hover:underline"
                 >
-                  Suggest an item
+                  {t("suggestItem")}
                 </a>
                 .
               </p>
@@ -166,7 +166,7 @@ export function SearchPageClient({
       {!query && (
         <div className="mt-8 rounded-lg border border-border bg-card p-8 text-center">
           <p className="text-muted-foreground">
-            Enter a food or plant above to see if it&apos;s safe for your pet.
+            {t("emptyState")}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             {["apple", "tulips", "onions", "spider plant"].map((suggestion) => (

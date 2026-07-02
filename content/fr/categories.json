@@ -1,0 +1,98 @@
+[
+  {
+    "id": "fruits",
+    "name": "Fruits",
+    "slug": "fruits",
+    "description": "Options sucrées et juteuses pour les animaux, des baies aux melons.",
+    "icon": "Apple",
+    "sort_order": 1
+  },
+  {
+    "id": "vegetables",
+    "name": "Légumes",
+    "slug": "vegetables",
+    "description": "Légumes croquants et racines qui peuvent faire de bons snacks sains.",
+    "icon": "Carrot",
+    "sort_order": 2
+  },
+  {
+    "id": "proteins",
+    "name": "Protéines",
+    "slug": "proteins",
+    "description": "Viande, poisson, œufs et alternatives pour les animaux carnivores.",
+    "icon": "Beef",
+    "sort_order": 3
+  },
+  {
+    "id": "grains",
+    "name": "Céréales & Féculents",
+    "slug": "grains",
+    "description": "Riz, pain, pâtes et céréales.",
+    "icon": "Wheat",
+    "sort_order": 4
+  },
+  {
+    "id": "dairy",
+    "name": "Produits laitiers",
+    "slug": "dairy",
+    "description": "Lait, fromage, yaourt et alternatives.",
+    "icon": "Milk",
+    "sort_order": 5
+  },
+  {
+    "id": "nuts",
+    "name": "Noix & Graines",
+    "slug": "nuts",
+    "description": "Collations riches en graisses et tartinades.",
+    "icon": "Cherry",
+    "sort_order": 6
+  },
+  {
+    "id": "sweets",
+    "name": "Sucreries & Desserts",
+    "slug": "sweets",
+    "description": "Friandises sucrées et pâtisseries.",
+    "icon": "Cookie",
+    "sort_order": 7
+  },
+  {
+    "id": "spices",
+    "name": "Herbes & Épices",
+    "slug": "spices",
+    "description": "Rehausseurs de goût et assaisonnements.",
+    "icon": "Leaf",
+    "sort_order": 8
+  },
+  {
+    "id": "beverages",
+    "name": "Boissons",
+    "slug": "beverages",
+    "description": "Boissons et liquides.",
+    "icon": "Coffee",
+    "sort_order": 9
+  },
+  {
+    "id": "human-foods",
+    "name": "Aliments humains",
+    "slug": "human-foods",
+    "description": "Repas préparés et produits de restauration rapide.",
+    "icon": "UtensilsCrossed",
+    "sort_order": 10
+  },
+  {
+    "id": "houseplants",
+    "name": "Plantes d'intérieur",
+    "slug": "houseplants",
+    "description": "Plantes d'intérieur courantes qui peuvent être toxiques ou sûres pour les animaux.",
+    "icon": "Leaf",
+    "sort_order": 11
+  },
+  {
+    "id": "outdoor-plants",
+    "name": "Plantes d'extérieur",
+    "slug": "outdoor-plants",
+    "description": "Plantes de jardin, de cour et sauvages que les animaux peuvent rencontrer.",
+    "icon": "TreePine",
+    "sort_order": 12
+  }
+]

@@ -1,7 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, Phone } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
+import { Link } from "@/i18n/routing";
 import { SafetyBadge } from "./SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -9,12 +10,14 @@ import { ReportIssue } from "@/components/feedback/ReportIssue";
 import { buildFoodFaqSchema } from "@/lib/jsonld";
 import { getEmergencyInfo } from "@/lib/content";
 import type { FoodEntry } from "@/lib/types";
+import type { Locale } from "@/lib/i18n";
 
 interface FoodDetailProps {
   food: FoodEntry;
+  locale: Locale;
 }
 
-export async function FoodDetail({ food }: FoodDetailProps) {
+export async function FoodDetail({ food, locale }: FoodDetailProps) {
   const isUrgent =
     food.safety.dogs.status === "toxic" ||
     food.safety.cats.status === "toxic" ||
@@ -27,10 +30,18 @@ export async function FoodDetail({ food }: FoodDetailProps) {
   const catWarnings =
     food.condition_warnings?.filter((w) => w.appliesTo.includes("cats")) ?? [];
 
-  const info = await getEmergencyInfo();
+  const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
 
-  const pageUrl = `/foods/${food.slug}`;
+  const pageUrl = `/${locale}/foods/${food.slug}`;
+  const t = await getTranslations("FoodDetail");
+  const tNav = await getTranslations("Header");
+
+  const recommendationLabel = (value: string) => {
+    if (value === "avoid") return t("avoid");
+    if (value === "limit") return t("limit");
+    return t("consultVet");
+  };
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -41,18 +52,19 @@ export async function FoodDetail({ food }: FoodDetailProps) {
         }}
       />
       <Breadcrumb
+        locale={locale}
         items={[
-          { label: "Foods", href: "/foods" },
+          { label: tNav("foods"), href: "/foods" },
           { label: food.name },
         ]}
       />
 
       <header className="mt-6">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          Can Dogs Eat {food.name}?
+          {t("canDogsEat", { name: food.name })}
         </h1>
         <p className="mt-2 text-lg text-muted-foreground">
-          Find out if {food.name.toLowerCase()} is safe for dogs and cats.
+          {t("subtitle", { name: food.name.toLowerCase() })}
         </p>
       </header>
 
@@ -70,54 +82,54 @@ export async function FoodDetail({ food }: FoodDetailProps) {
       )}
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
-        <SafetyBadge species="dogs" status={food.safety.dogs.status} />
-        <SafetyBadge species="cats" status={food.safety.cats.status} />
+        <SafetyBadge species="dogs" status={food.safety.dogs.status} locale={locale} />
+        <SafetyBadge species="cats" status={food.safety.cats.status} locale={locale} />
       </div>
 
       {isUrgent && (
         <div className="mt-6">
-          <EmergencyBanner />
+          <EmergencyBanner locale={locale} />
         </div>
       )}
 
       <div className="prose-pet mt-8">
         <div dangerouslySetInnerHTML={{ __html: food.content ?? "" }} />
 
-        <h2>Is {food.name} Safe for Dogs?</h2>
+        <h2>{t("safeForDogs", { name: food.name })}</h2>
         <p>{food.safety.dogs.summary}</p>
 
-        <h2>Is {food.name} Safe for Cats?</h2>
+        <h2>{t("safeForCats", { name: food.name })}</h2>
         <p>{food.safety.cats.summary}</p>
 
         {food.preparation_notes && (
           <>
-            <h2>Preparation Notes</h2>
+            <h2>{t("preparationNotes")}</h2>
             <p>{food.preparation_notes}</p>
           </>
         )}
 
         {food.safe_amount && (
           <>
-            <h2>Recommended Amount</h2>
+            <h2>{t("recommendedAmount")}</h2>
             <p>{food.safe_amount}</p>
           </>
         )}
 
         {food.frequency && (
           <>
-            <h2>How Often?</h2>
+            <h2>{t("howOften")}</h2>
             <p>{food.frequency}</p>
           </>
         )}
 
-        <h2>Symptoms to Watch For</h2>
+        <h2>{t("symptoms")}</h2>
         <ul>
           {food.symptoms.map((symptom) => (
             <li key={symptom}>{symptom}</li>
           ))}
         </ul>
 
-        <h2>What If My Pet Ate {food.name}?</h2>
+        <h2>{t("whatIfAte", { name: food.name })}</h2>
         <p>{food.what_to_do}</p>
         <div className="not-prose my-4 flex flex-wrap gap-3">
           {aspca && (
@@ -126,7 +138,7 @@ export async function FoodDetail({ food }: FoodDetailProps) {
               className="inline-flex items-center gap-2 rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              Call {aspca.name}
+              {t("call", { name: aspca.name })}
             </a>
           )}
           {pph && (
@@ -142,26 +154,19 @@ export async function FoodDetail({ food }: FoodDetailProps) {
 
         {(dogWarnings.length > 0 || catWarnings.length > 0) && (
           <>
-            <h2>Health Condition Considerations</h2>
+            <h2>{t("healthConditions")}</h2>
             <p>
-              Even if {food.name.toLowerCase()} is generally safe, it may not be appropriate for pets
-              with certain medical conditions. Always check with your veterinarian if your pet has
-              been diagnosed with any of the following.
+              {t("healthConditionsIntro", { name: food.name.toLowerCase() })}
             </p>
             {dogWarnings.length > 0 && (
               <>
-                <h3>For Dogs</h3>
+                <h3>{t("forDogs")}</h3>
                 <ul>
                   {dogWarnings.map((w) => (
                     <li key={w.condition}>
                       <strong>{w.condition}</strong>{" "}
                       —{" "}
-                      {w.recommendation === "avoid"
-                        ? "Avoid"
-                        : w.recommendation === "limit"
-                          ? "Limit"
-                          : "Consult your vet"}
-                      : {w.reason}
+                      {recommendationLabel(w.recommendation)}: {w.reason}
                       {w.notes && (
                         <span className="mt-1 block text-sm text-muted-foreground">{w.notes}</span>
                       )}
@@ -172,18 +177,13 @@ export async function FoodDetail({ food }: FoodDetailProps) {
             )}
             {catWarnings.length > 0 && (
               <>
-                <h3>For Cats</h3>
+                <h3>{t("forCats")}</h3>
                 <ul>
                   {catWarnings.map((w) => (
                     <li key={w.condition}>
                       <strong>{w.condition}</strong>{" "}
                       —{" "}
-                      {w.recommendation === "avoid"
-                        ? "Avoid"
-                        : w.recommendation === "limit"
-                          ? "Limit"
-                          : "Consult your vet"}
-                      : {w.reason}
+                      {recommendationLabel(w.recommendation)}: {w.reason}
                       {w.notes && (
                         <span className="mt-1 block text-sm text-muted-foreground">{w.notes}</span>
                       )}
@@ -195,7 +195,7 @@ export async function FoodDetail({ food }: FoodDetailProps) {
           </>
         )}
 
-        <h2>Safe Alternatives</h2>
+        <h2>{t("safeAlternatives")}</h2>
         <ul>
           {food.alternatives.map((alt) => (
             <li key={alt}>
@@ -212,7 +212,7 @@ export async function FoodDetail({ food }: FoodDetailProps) {
           ))}
         </ul>
 
-        <h2>Sources</h2>
+        <h2>{t("sources")}</h2>
         <ul>
           {food.sources.map((source) => (
             <li key={source.name}>
@@ -233,46 +233,38 @@ export async function FoodDetail({ food }: FoodDetailProps) {
           ))}
         </ul>
 
-        <h2>Vet&apos;s Note</h2>
-        <p>
-          PetPilot provides general information for educational purposes. While we reference
-          authoritative veterinary organizations, this page has not been individually reviewed by a
-          veterinarian for your specific pet. Individual animals may react differently based on age,
-          weight, breed, health conditions, and amount consumed. Always consult your veterinarian or
-          a poison control center for personalized advice, especially if your pet is ill, injured,
-          pregnant, nursing, or on medication.
-        </p>
+        <h2>{t("vetsNote")}</h2>
+        <p>{t("vetsNoteText")}</p>
       </div>
 
       <div className="mt-8 space-y-4">
-        <ReportIssue itemName={food.name} pageUrl={pageUrl} />
+        <ReportIssue itemName={food.name} pageUrl={pageUrl} locale={locale} />
         <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <strong className="block text-amber-950">Medical Disclaimer</strong>
-          The content on this page is not a substitute for professional veterinary diagnosis,
-          treatment, or emergency care. If you suspect your pet has eaten something harmful, contact
-          your veterinarian or call{" "}
-          {aspca ? (
-            <a
-              href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-              className="font-semibold underline"
-            >
-              {aspca.name} {aspca.phone}
-            </a>
-          ) : (
-            "ASPCA Poison Control"
-          )}
-          {" or "}
-          {pph ? (
-            <a
-              href={`tel:${pph.phone.replace(/\D/g, "")}`}
-              className="font-semibold underline"
-            >
-              {pph.name} {pph.phone}
-            </a>
-          ) : (
-            "Pet Poison Helpline"
-          )}
-          {" immediately."}
+          <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
+          {t.rich("medicalDisclaimerText", {
+            aspca: (chunks) =>
+              aspca ? (
+                <a
+                  href={`tel:${aspca.phone.replace(/\D/g, "")}`}
+                  className="font-semibold underline"
+                >
+                  {chunks}
+                </a>
+              ) : (
+                <>{chunks}</>
+              ),
+            pph: (chunks) =>
+              pph ? (
+                <a
+                  href={`tel:${pph.phone.replace(/\D/g, "")}`}
+                  className="font-semibold underline"
+                >
+                  {chunks}
+                </a>
+              ) : (
+                <>{chunks}</>
+              ),
+          })}
         </div>
       </div>
     </article>

@@ -1,0 +1,46 @@
+{
+  "title": "Guide d'urgence pour animaux",
+  "subtitle": "Si vous pensez que votre animal a mangé quelque chose de toxique, agissez rapidement.",
+  "hotlines": [
+    {
+      "name": "ASPCA Animal Poison Control Center",
+      "phone": "(888) 426-4435",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control",
+      "available": "24/7",
+      "cost": "Des frais peuvent s'appliquer"
+    },
+    {
+      "name": "Pet Poison Helpline",
+      "phone": "(855) 764-7661",
+      "url": "https://www.petpoisonhelpline.com/",
+      "available": "24/7",
+      "cost": "Des frais peuvent s'appliquer"
+    }
+  ],
+  "when_to_call": [
+    "Votre animal a mangé du chocolat, des raisins, des raisins secs, des oignons, de l'ail, du xylitol ou des noix de macadamia",
+    "Votre animal vomit à plusieurs reprises, a des convulsions ou des difficultés à respirer",
+    "Vous soupçonnez un empoisonnement mais ne savez pas ce qui a été ingéré",
+    "Votre animal est léthargique, ne répond pas ou a manifestement mal"
+  ],
+  "common_toxins": [
+    "grapes",
+    "chocolate",
+    "onions",
+    "garlic",
+    "xylitol",
+    "avocado",
+    "macadamia-nuts",
+    "alcohol",
+    "coffee",
+    "raw-bread-dough"
+  ],
+  "steps": [
+    "Restez calme et éloignez votre animal de la source.",
+    "Vérifiez l'emballage ou prenez une photo de ce qui a été mangé.",
+    "Estimez la quantité consommée et l'heure de l'ingestion.",
+    "Appelez immédiatement le ASPCA Poison Control Center ou votre vétérinaire.",
+    "Ne provoquez pas le vomissement, sauf sur instruction d'un professionnel."
+  ],
+  "disclaimer": "Ce guide d'urgence est fourni à titre informatif uniquement et ne remplace pas les conseils vétérinaires professionnels. Si vous pensez que votre animal a un problème médical urgent, contactez immédiatement un vétérinaire ou un centre antipoison."
+}

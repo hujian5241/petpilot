@@ -2,12 +2,16 @@
 
 import { useState } from "react";
 import { Flag, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+import type { Locale } from "@/lib/i18n";
 
 interface ReportIssueProps {
   pageUrl?: string;
   itemName?: string;
   contactEmail?: string;
   siteName?: string;
+  locale?: Locale;
 }
 
 export function ReportIssue({
@@ -15,12 +19,21 @@ export function ReportIssue({
   itemName,
   contactEmail = "hello@petpilot.io",
   siteName = "PetPilot",
+  locale = "en",
 }: ReportIssueProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("ReportIssue");
 
   const subject = encodeURIComponent(
     itemName ? `Feedback about ${itemName}` : `${siteName} feedback`
   );
+
+  const options = [
+    { label: t("incorrectSafety"), detail: t("incorrectSafetyDetail") },
+    { label: t("missingInfo"), detail: t("missingInfoDetail") },
+    { label: t("typoOrLink"), detail: t("typoOrLinkDetail") },
+    { label: t("other"), detail: t("otherDetail") },
+  ];
 
   return (
     <div className="not-prose">
@@ -30,7 +43,7 @@ export function ReportIssue({
         className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm text-muted-foreground hover:bg-muted"
       >
         <Flag className="h-4 w-4" aria-hidden="true" />
-        Report an issue
+        {t("button")}
       </button>
 
       {isOpen && (
@@ -49,7 +62,7 @@ export function ReportIssue({
                 id="report-issue-title"
                 className="text-lg font-semibold text-foreground"
               >
-                Report an issue
+                {t("title")}
               </h3>
               <button
                 type="button"
@@ -61,17 +74,10 @@ export function ReportIssue({
               </button>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Help us improve{" "}
-              {itemName ? `the information about ${itemName}` : siteName}. Let us know if something is
-              incorrect, outdated, or missing.
+              {t("description", { item: itemName ?? siteName })}
             </p>
             <div className="mt-4 space-y-2">
-              {[
-                { label: "Incorrect safety info", detail: "The safety status or symptoms seem wrong." },
-                { label: "Missing information", detail: "Something important is not covered." },
-                { label: "Typo or broken link", detail: "There is a text error or link issue." },
-                { label: "Other", detail: "Something else." },
-              ].map((option) => {
+              {options.map((option) => {
                 const body = encodeURIComponent(
                   `Issue type: ${option.label}\n\nPage: ${
                     pageUrl ?? ""

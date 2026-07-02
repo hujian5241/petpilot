@@ -1,0 +1,167 @@
+{
+  "Header": {
+    "home": "Startseite",
+    "search": "Suche",
+    "foods": "Lebensmittel",
+    "plants": "Pflanzen",
+    "emergency": "Notfall",
+    "about": "Über uns"
+  },
+  "Footer": {
+    "quickLinks": "Schnelllinks",
+    "emergency": "Notfall",
+    "medicalDisclaimer": "Medizinischer Hinweis",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "search": "Suche",
+    "about": "Über uns",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutz"
+  },
+  "HomePage": {
+    "heroSubtitle": "Prüfen Sie im Handumdrehen, ob bestimmte Lebensmittel für Ihren Hund oder Ihre Katze sicher sind.",
+    "popularLabel": "Beliebt:",
+    "browseCategories": "Kategorien durchsuchen",
+    "popularSearches": "Beliebte Suchbegriffe",
+    "viewAll": "Alle anzeigen",
+    "whyTrustTitle": "Warum PetPilot vertrauen?",
+    "whyTrust": {
+      "fastAnswers": {
+        "title": "Schnelle Antworten",
+        "description": "Erhalten Sie in Sekunden klare Sicherheitsinformationen – besonders in dringenden Situationen."
+      },
+      "vetReviewed": {
+        "title": "Von Tierärzten geprüft",
+        "description": "Inhalte basieren auf vertrauenswürdigen Quellen wie der ASPCA und der Pet Poison Helpline."
+      },
+      "alwaysFree": {
+        "title": "Immer kostenlos",
+        "description": "Keine Anmeldung erforderlich. Greifen Sie jederzeit und überall auf unsere Datenbank zu."
+      }
+    }
+  },
+  "SearchPage": {
+    "title": "Suche",
+    "placeholder": "Lebensmittel suchen, z. B. Trauben, Schokolade, Karotten ...",
+    "loading": "Suche wird geladen...",
+    "resultsFor": "{count} Ergebnis{count, plural, one {} other {se}} für „{query}“",
+    "noResults": "Keine Ergebnisse für „{query}“",
+    "noResultsDescription": "Wir haben keine Lebensmittel oder Pflanzen gefunden, die zu Ihrer Suche passen.",
+    "suggestItem": "Eintrag vorschlagen",
+    "emptyState": "Geben Sie oben ein Lebensmittel oder eine Pflanze ein, um zu sehen, ob es für Ihr Haustier sicher ist.",
+    "alsoKnownAs": "Auch bekannt als: {alias}",
+    "foodTag": "Lebensmittel",
+    "plantTag": "Pflanze"
+  },
+  "FoodsPage": {
+    "title": "Lebensmittel-Ratgeber für Hunde und Katzen",
+    "description": "Durchsuchen Sie unsere von Tierärzten geprüfte Datenbank mit Lebensmitteln und erfahren Sie, was für Ihre Haustiere sicher, in Maßen oder giftig ist.",
+    "quickSafetyOverview": "Kurzer Sicherheitsüberblick",
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "allFoods": "Alle Lebensmittel",
+    "foods": "Lebensmittel",
+    "statusSafe": "Sicher",
+    "statusLimited": "In Maßen",
+    "statusToxic": "Giftig",
+    "statusUnknown": "Unbekannt"
+  },
+  "PlantsPage": {
+    "title": "Pflanzen",
+    "description": "Durchsuchen Sie Zimmerpflanzen, Gartenpflanzen und Wildpflanzen, um zu sehen, ob sie für Ihre Haustiere sicher sind.",
+    "houseplants": "Zimmerpflanzen",
+    "outdoorPlants": "Garten- und Wildpflanzen"
+  },
+  "EmergencyPage": {
+    "poisonControlHotlines": "Vergiftungs-Notrufnummern",
+    "whenToCall": "Wann Sie sofort anrufen sollten",
+    "stepsToTake": "Schritte, die Sie unternehmen sollten",
+    "commonToxicFoods": "Häufige giftige Lebensmittel",
+    "visitWebsite": "Website besuchen"
+  },
+  "EmergencyBanner": {
+    "title": "Verdacht, dass Ihr Haustier etwas Giftiges gefressen hat?",
+    "call": "{name} anrufen:",
+    "or": "oder",
+    "viewEmergencyGuide": "Notfall-Ratgeber anzeigen"
+  },
+  "Disclaimer": {
+    "important": "Wichtig:",
+    "text": "PetPilot bietet nur allgemeine Informationen und ersetzt keinen tierärztlichen Rat. Wenn Ihr Haustier krank oder verletzt ist oder möglicherweise etwas Giftiges gefressen hat, wenden Sie sich umgehend an Ihren Tierarzt oder ein Giftinformationszentrum."
+  },
+  "FoodDetail": {
+    "canDogsEat": "Dürfen Hunde {name} essen?",
+    "subtitle": "Erfahren Sie, ob {name} für Hunde und Katzen sicher ist.",
+    "safeForDogs": "Ist {name} für Hunde sicher?",
+    "safeForCats": "Ist {name} für Katzen sicher?",
+    "preparationNotes": "Zubereitungshinweise",
+    "recommendedAmount": "Empfohlene Menge",
+    "howOften": "Wie häufig?",
+    "symptoms": "Symptome, auf die Sie achten sollten",
+    "whatIfAte": "Was tun, wenn mein Haustier {name} gegessen hat?",
+    "call": "{name} anrufen",
+    "healthConditions": "Hinweise zu gesundheitlichen Einschränkungen",
+    "healthConditionsIntro": "Auch wenn {name} im Allgemeinen sicher ist, kann es für Haustiere mit bestimmten Erkrankungen nicht geeignet sein. Fragen Sie immer Ihren Tierarzt, wenn Ihr Haustier eine der folgenden Diagnosen hat.",
+    "forDogs": "Für Hunde",
+    "forCats": "Für Katzen",
+    "avoid": "Vermeiden",
+    "limit": "Begrenzen",
+    "consultVet": "Tierarzt konsultieren",
+    "safeAlternatives": "Sichere Alternativen",
+    "sources": "Quellen",
+    "vetsNote": "Hinweis des Tierarztes",
+    "vetsNoteText": "PetPilot bietet allgemeine Informationen zu Bildungszwecken. Obwohl wir uns auf anerkannte tierärztliche Organisationen beziehen, wurde diese Seite nicht von einem Tierarzt für Ihr spezifisches Haustier individuell geprüft. Einzelne Tiere können je nach Alter, Gewicht, Rasse, Gesundheitszustand und verzehrter Menge unterschiedlich reagieren. Konsultieren Sie immer Ihren Tierarzt oder ein Giftinformationszentrum für eine persönliche Beratung, insbesondere wenn Ihr Haustier krank, verletzt, trächtig, säugend oder medikamentös eingestellt ist.",
+    "medicalDisclaimer": "Medizinischer Hinweis",
+    "medicalDisclaimerText": "Die Inhalte dieser Seite ersetzen keine tierärztliche Diagnose, Behandlung oder Notfallversorgung. Wenn Sie vermuten, dass Ihr Haustier etwas Schädliches gefressen hat, wenden Sie sich an Ihren Tierarzt oder rufen Sie umgehend die <aspca>ASPCA Poison Control</aspca> oder die <pph>Pet Poison Helpline</pph> an."
+  },
+  "PlantDetail": {
+    "isSafeForPets": "Ist {name} für Haustiere sicher?",
+    "subtitle": "Erfahren Sie, ob {name} für Hunde und Katzen sicher ist.",
+    "safeForDogs": "Ist {name} für Hunde sicher?",
+    "safeForCats": "Ist {name} für Katzen sicher?",
+    "symptoms": "Symptome, auf die Sie achten sollten",
+    "whatIfAte": "Was tun, wenn mein Haustier {name} gefressen hat?",
+    "safeAlternatives": "Sichere Alternativen",
+    "sources": "Quellen",
+    "vetsNote": "Hinweis des Tierarztes",
+    "vetsNoteText": "PetPilot bietet allgemeine Informationen zu Bildungszwecken. Obwohl wir uns auf anerkannte tierärztliche Organisationen beziehen, wurde diese Seite nicht von einem Tierarzt für Ihr spezifisches Haustier individuell geprüft. Einzelne Tiere können je nach Alter, Gewicht, Rasse, Gesundheitszustand und verzehrter Menge unterschiedlich reagieren. Konsultieren Sie immer Ihren Tierarzt oder ein Giftinformationszentrum für eine persönliche Beratung, insbesondere wenn Ihr Haustier krank, verletzt, trächtig, säugend oder medikamentös eingestellt ist.",
+    "medicalDisclaimer": "Medizinischer Hinweis",
+    "medicalDisclaimerText": "Die Inhalte dieser Seite ersetzen keine tierärztliche Diagnose, Behandlung oder Notfallversorgung. Wenn Sie vermuten, dass Ihr Haustier etwas Schädliches gefressen hat, wenden Sie sich an Ihren Tierarzt oder rufen Sie umgehend die <aspca>ASPCA Poison Control</aspca> oder die <pph>Pet Poison Helpline</pph> an."
+  },
+  "SafetyBadge": {
+    "safe": "Sicher",
+    "limited": "In Maßen",
+    "toxic": "Giftig",
+    "unknown": "Unbekannt",
+    "dogs": "Hunde",
+    "cats": "Katzen"
+  },
+  "Breadcrumb": {
+    "home": "Startseite"
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Wir konnten die gesuchte Seite nicht finden. Versuchen Sie die Suche nach einem Lebensmittel oder einer Pflanze, oder durchsuchen Sie unsere Kategorien.",
+    "goHome": "Zur Startseite",
+    "search": "Suche",
+    "emergency": "Notfall",
+    "ifEmergency": "Im Notfall",
+    "emergencyText": "Wenden Sie sich an Ihren Tierarzt oder rufen Sie umgehend die <aspca>ASPCA Poison Control</aspca> oder die <pph>Pet Poison Helpline</pph> an."
+  },
+  "LegalPages": {
+    "lastUpdated": "Zuletzt aktualisiert: {date}",
+    "privacyDescription": "Datenschutzerklärung für {name}. Wir respektieren Ihre Privatsphäre und verkaufen keine persönlichen Daten.",
+    "termsDescription": "Nutzungsbedingungen für {name}. Informationen zur Tiergesundheit nur zu Bildungszwecken, kein tierärztlicher Rat."
+  },
+  "ReportIssue": {
+    "button": "Problem melden",
+    "title": "Problem melden",
+    "description": "Helfen Sie uns, {item} zu verbessern. Teilen Sie uns mit, wenn etwas falsch, veraltet oder unvollständig ist.",
+    "incorrectSafety": "Falsche Sicherheitsangabe",
+    "incorrectSafetyDetail": "Der Sicherheitsstatus oder die Symptome scheinen nicht korrekt zu sein.",
+    "missingInfo": "Fehlende Informationen",
+    "missingInfoDetail": "Wichtige Informationen fehlen.",
+    "typoOrLink": "Tippfehler oder defekter Link",
+    "typoOrLinkDetail": "Es gibt einen Textfehler oder ein Linkproblem.",
+    "other": "Sonstiges",
+    "otherDetail": "Etwas anderes."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "PetPilot",
+  "tagline": "Sachez ce qui est sûr pour votre animal",
+  "description": "PetPilot aide les propriétaires d'animaux nord-américains à vérifier instantanément si les aliments humains, les plantes et les objets du quotidien sont sûrs pour les chiens et les chats.",
+  "base_url": "https://petpilot-mvp.vercel.app",
+  "author": "PetPilot",
+  "contact_email": "hello@petpilot.io",
+  "social_links": [
+    {
+      "platform": "twitter",
+      "url": "https://twitter.com/petpilot"
+    }
+  ],
+  "default_og_image": "/images/og-default.svg"
+}

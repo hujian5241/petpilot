@@ -1,10 +1,17 @@
-import Link from "next/link";
 import { PawPrint } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
+import { Link } from "@/i18n/routing";
 import { getSiteConfig } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
-export async function Header() {
-  const config = await getSiteConfig();
+interface HeaderProps {
+  locale: Locale;
+}
+
+export async function Header({ locale }: HeaderProps) {
+  const config = await getSiteConfig(locale);
+  const t = await getTranslations("Header");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
@@ -21,37 +28,37 @@ export async function Header() {
             href="/"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Home
+            {t("home")}
           </Link>
           <Link
             href="/search"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Search
+            {t("search")}
           </Link>
           <Link
             href="/foods"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Foods
+            {t("foods")}
           </Link>
           <Link
             href="/plants"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            Plants
+            {t("plants")}
           </Link>
           <Link
             href="/emergency"
             className="text-emergency transition-colors hover:text-emergency/80"
           >
-            Emergency
+            {t("emergency")}
           </Link>
           <Link
             href="/about"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            About
+            {t("about")}
           </Link>
         </nav>
         <div className="md:hidden">
@@ -59,7 +66,7 @@ export async function Header() {
             href="/search"
             className="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground"
           >
-            Search
+            {t("search")}
           </Link>
         </div>
       </div>
