@@ -10,6 +10,12 @@ import { SearchBar } from "@/components/search/SearchBar";
 import { CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import type { SearchIndexItem } from "@/lib/types";
 
+interface SearchResult {
+  item: SearchIndexItem;
+  matchType: "name" | "alias" | "fuzzy";
+  matchedAlias?: string;
+}
+
 interface SearchPageClientProps {
   initialIndex: SearchIndexItem[];
   contactEmail?: string;
@@ -37,20 +43,29 @@ export function SearchPageClient({
     [initialIndex]
   );
 
-  const results = useMemo(() => {
+  const results = useMemo((): SearchResult[] => {
     if (!trimmedQuery) return [];
 
+    const queryParts = trimmedQuery.split(/\s+/);
+
     // 1. Exact/prefix matches in name or aliases
-    const exactMatches = initialIndex.filter((item) => {
-      const queryParts = trimmedQuery.split(/\s+/);
-      return queryParts.every((part) => {
-        const nameMatch = item.name.toLowerCase().includes(part);
-        const aliasMatch = item.aliases.some((a) =>
-          a.toLowerCase().includes(part)
-        );
-        return nameMatch || aliasMatch;
-      });
-    });
+    const exactMatches: SearchResult[] = [];
+    for (const item of initialIndex) {
+      const nameHit = queryParts.every((part) =>
+        item.name.toLowerCase().includes(part)
+      );
+      if (nameHit) {
+        exactMatches.push({ item, matchType: "name" });
+        continue;
+      }
+
+      const matchedAlias = item.aliases.find((a) =>
+        queryParts.every((part) => a.toLowerCase().includes(part))
+      );
+      if (matchedAlias) {
+        exactMatches.push({ item, matchType: "alias", matchedAlias });
+      }
+    }
 
     if (exactMatches.length > 0) {
       return exactMatches;
@@ -58,7 +73,7 @@ export function SearchPageClient({
 
     // 2. Fuzzy fallback on name and aliases only (not summary)
     const fuzzyResults = nameFuse.search(trimmedQuery);
-    return fuzzyResults.map((result) => result.item);
+    return fuzzyResults.map((result) => ({ item: result.item, matchType: "fuzzy" }));
   }, [trimmedQuery, initialIndex, nameFuse]);
 
   return (
@@ -76,7 +91,7 @@ export function SearchPageClient({
 
           {results.length > 0 ? (
             <div className="mt-4 space-y-3">
-              {results.map((item) => (
+              {results.map(({ item, matchType, matchedAlias }) => (
                 <Link
                   key={`${item.type}-${item.slug}`}
                   href={`/${item.type}s/${item.slug}`}
@@ -98,6 +113,11 @@ export function SearchPageClient({
                       </span>
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">{item.summary}</p>
+                    {matchType === "alias" && matchedAlias && (
+                      <p className="mt-1 text-xs text-primary">
+                        Also known as: {matchedAlias}
+                      </p>
+                    )}
                   </div>
                   <div className="flex flex-col gap-1">
                     <CompactSafetyBadge species="dogs" status={item.safetyDogs} />
