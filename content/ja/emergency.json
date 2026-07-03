@@ -3,18 +3,18 @@
   "subtitle": "ペットが有毒なものを食べたと思われる場合は、すぐに行動してください。",
   "hotlines": [
     {
-      "name": "ASPCA Animal Poison Control Center",
-      "phone": "(888) 426-4435",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control",
-      "available": "24時間365日",
-      "cost": "料金がかかる場合があります"
+      "name": "SPCA日本",
+      "phone": "03-3412-9611",
+      "url": "https://www.spca.or.jp/",
+      "available": "受付時間は公式サイトで確認",
+      "cost": "無料（電話料金のみ）"
     },
     {
-      "name": "Pet Poison Helpline",
-      "phone": "(855) 764-7661",
-      "url": "https://www.petpoisonhelpline.com/",
-      "available": "24時間365日",
-      "cost": "料金がかかる場合があります"
+      "name": "獣医師生活衛生同業組合 中毒相談",
+      "phone": "03-3291-3981",
+      "url": "https://www.jvma.or.jp/",
+      "available": "平日受付（詳細は公式サイトで確認）",
+      "cost": "無料（電話料金のみ）"
     }
   ],
   "when_to_call": [
@@ -39,7 +39,7 @@
     "落ち着いて、ペットをその場から遠ざけます。",
     "パッケージを確認するか、食べたものの写真を撮ります。",
     "どのくらいの量を、いつ食べたかを見積もります。",
-    "すぐにASPCA Poison Control Centerまたは獣医師に電話します。",
+    "最寄りの獣医師、SPCA日本、または日本獣医師会の中毒相談窓口に電話します。",
     "専門家の指示がない限り、嘔吐を促さないでください。"
   ],
   "disclaimer": "この緊急ガイドは情報提供のみを目的としており、専門的な獣医師の助言を代替するものではありません。ペットに医療上の緊急事態が起きていると思われる場合は、すぐに獣医師または中毒相談センターに連絡してください。"

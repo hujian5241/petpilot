@@ -67,6 +67,7 @@
   "PlantsPage": {
     "title": "Plants",
     "description": "Browse common houseplants, garden plants, and wild plants to see if they are safe for your pets.",
+    "plants": "Plants",
     "houseplants": "Houseplants",
     "outdoorPlants": "Outdoor Plants"
   },

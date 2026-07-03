@@ -18,11 +18,11 @@
     "privacy": "Confidentialité"
   },
   "HomePage": {
-    "heroSubtitle": "Vérifiez instantanément si les aliments humains sont sans danger pour votre chien ou votre chat.",
-    "popularLabel": "Populaires :",
+    "heroSubtitle": "Vérifiez instantanément si les aliments humains sont sûrs pour votre chien ou votre chat.",
+    "popularLabel": "Populaire :",
     "browseCategories": "Parcourir les catégories",
     "popularSearches": "Recherches populaires",
-    "viewAll": "Tout voir",
+    "viewAll": "Voir tout",
     "whyTrustTitle": "Pourquoi faire confiance à PetPilot ?",
     "whyTrust": {
       "fastAnswers": {
@@ -30,31 +30,31 @@
         "description": "Obtenez des informations claires sur la sécurité en quelques secondes, surtout en cas d'urgence."
       },
       "vetReviewed": {
-        "title": "Vérifié par des vétérinaires",
-        "description": "Contenu basé sur des sources fiables comme l'ASPCA et la Pet Poison Helpline."
+        "title": "Vérifié par un vétérinaire",
+        "description": "Contenu basé sur des sources fiables telles que l'ASPCA et Pet Poison Helpline."
       },
       "alwaysFree": {
         "title": "Toujours gratuit",
-        "description": "Aucun compte requis. Accédez à notre base de données à tout moment, où que vous soyez."
+        "description": "Aucune connexion requise. Accédez à notre base de données à tout moment, où que vous soyez."
       }
     }
   },
   "SearchPage": {
     "title": "Recherche",
-    "placeholder": "Rechercher un aliment, par exemple raisins, chocolat, carottes...",
+    "placeholder": "Recherchez un aliment, par exemple raisins, chocolat, carottes...",
     "loading": "Chargement de la recherche...",
-    "resultsFor": "{count, plural, one {{count} résultat} other {{count} résultats}} pour \"{query}\"",
+    "resultsFor": "{count} résultat{count, plural, one {} other {s}} pour \"{query}\"",
     "noResults": "Aucun résultat pour \"{query}\"",
     "noResultsDescription": "Nous n'avons trouvé aucun aliment ou plante correspondant à votre recherche.",
     "suggestItem": "Suggérer un élément",
-    "emptyState": "Saisissez un aliment ou une plante ci-dessus pour savoir s'il est sans danger pour votre animal.",
-    "alsoKnownAs": "Aussi connu sous le nom de : {alias}",
+    "emptyState": "Saisissez un aliment ou une plante ci-dessus pour savoir s'il est sûr pour votre animal.",
+    "alsoKnownAs": "Également connu sous le nom de : {alias}",
     "foodTag": "Aliment",
     "plantTag": "Plante"
   },
   "FoodsPage": {
-    "title": "Guide de sécurité alimentaire pour chiens et chats",
-    "description": "Parcourez notre base de données vérifiée par des vétérinaires d'aliments humains et découvrez ce qui est sûr, limité ou toxique pour vos animaux.",
+    "title": "Guide de sécurité des aliments pour chiens et chats",
+    "description": "Parcourez notre base de données vétérinaire d'aliments humains et découvrez ce qui est sûr, limité ou toxique pour vos animaux.",
     "quickSafetyOverview": "Aperçu rapide de la sécurité",
     "browseByCategory": "Parcourir par catégorie",
     "allFoods": "Tous les aliments",
@@ -66,65 +66,66 @@
   },
   "PlantsPage": {
     "title": "Plantes",
-    "description": "Parcourez les plantes d'intérieur, les plantes de jardin et les plantes sauvages courantes pour savoir si elles sont sûres pour vos animaux.",
+    "description": "Parcourez les plantes d'intérieur, de jardin et sauvages courantes pour savoir si elles sont sûres pour vos animaux.",
+    "plants": "Plantes",
     "houseplants": "Plantes d'intérieur",
     "outdoorPlants": "Plantes d'extérieur"
   },
   "EmergencyPage": {
-    "poisonControlHotlines": "Numéros d'urgence antipoison",
+    "poisonControlHotlines": "Numéros d'urgence anti-poison",
     "whenToCall": "Quand appeler immédiatement",
     "stepsToTake": "Mesures à prendre",
     "commonToxicFoods": "Aliments courants toxiques",
-    "visitWebsite": "Visiter le site"
+    "visitWebsite": "Visiter le site web"
   },
   "EmergencyBanner": {
-    "title": "Vous pensez que votre animal a ingéré quelque chose de toxique ?",
+    "title": "Vous pensez que votre animal a mangé quelque chose de toxique ?",
     "call": "Appelez {name} :",
     "or": "ou",
     "viewEmergencyGuide": "consulter le guide d'urgence"
   },
   "Disclaimer": {
     "important": "Important :",
-    "text": "PetPilot fournit des informations générales uniquement et ne remplace pas les conseils d'un vétérinaire professionnel. Si votre animal est malade, blessé ou a peut-être ingéré quelque chose de toxique, contactez immédiatement votre vétérinaire ou un centre antipoison pour animaux."
+    "text": "PetPilot fournit uniquement des informations générales et ne remplace pas l'avis d'un vétérinaire professionnel. Si votre animal est malade, blessé ou s'il a peut-être mangé quelque chose de toxique, contactez immédiatement votre vétérinaire ou un centre de contrôle des intoxications animales."
   },
   "FoodDetail": {
     "canDogsEat": "Les chiens peuvent-ils manger {name} ?",
     "subtitle": "Découvrez si {name} est sûr pour les chiens et les chats.",
-    "safeForDogs": "Est-ce que {name} est sans danger pour les chiens ?",
-    "safeForCats": "Est-ce que {name} est sans danger pour les chats ?",
-    "preparationNotes": "Notes de préparation",
+    "safeForDogs": "{name} est-il sûr pour les chiens ?",
+    "safeForCats": "{name} est-il sûr pour les chats ?",
+    "preparationNotes": "Conseils de préparation",
     "recommendedAmount": "Quantité recommandée",
     "howOften": "À quelle fréquence ?",
     "symptoms": "Symptômes à surveiller",
     "whatIfAte": "Et si mon animal a mangé {name} ?",
-    "call": "Appelez {name}",
+    "call": "Appeler {name}",
     "healthConditions": "Considérations liées à l'état de santé",
-    "healthConditionsIntro": "Même si {name} est généralement sans danger, il peut ne pas convenir aux animaux souffrant de certaines pathologies. Vérifiez toujours auprès de votre vétérinaire si votre animal a reçu l'un des diagnostics suivants.",
+    "healthConditionsIntro": "Même si {name} est généralement sûr, il peut ne pas convenir aux animaux souffrant de certaines affections médicales. Consultez toujours votre vétérinaire si votre animal a reçu l'un des diagnostics suivants.",
     "forDogs": "Pour les chiens",
     "forCats": "Pour les chats",
     "avoid": "Éviter",
     "limit": "Limiter",
-    "consultVet": "Consultez votre vétérinaire",
+    "consultVet": "Consulter votre vétérinaire",
     "safeAlternatives": "Alternatives sûres",
     "sources": "Sources",
     "vetsNote": "Note du vétérinaire",
-    "vetsNoteText": "PetPilot fournit des informations générales à des fins éducatives. Bien que nous fassions référence à des organisations vétérinaires faisant autorité, cette page n'a pas été examinée individuellement par un vétérinaire pour votre animal spécifique. Chaque animal peut réagir différemment en fonction de son âge, de son poids, de sa race, de son état de santé et de la quantité ingérée. Consultez toujours votre vétérinaire ou un centre antipoison pour des conseils personnalisés, surtout si votre animal est malade, blessé, gestant, allaitant ou sous médication.",
+    "vetsNoteText": "PetPilot fournit des informations générales à des fins éducatives. Bien que nous nous appuyions sur des organisations vétérinaires de référence, cette page n'a pas été examinée individuellement par un vétérinaire pour votre animal en particulier. Les animaux peuvent réagir différemment selon leur âge, leur poids, leur race, leurs problèmes de santé et la quantité ingérée. Consultez toujours votre vétérinaire ou un centre de contrôle des intoxications pour des conseils personnalisés, en particulier si votre animal est malade, blessé, en gestation, allaitant ou sous traitement médical.",
     "medicalDisclaimer": "Avertissement médical",
-    "medicalDisclaimerText": "Le contenu de cette page ne remplace pas un diagnostic, un traitement ou des soins d'urgence vétérinaires professionnels. Si vous soupçonnez que votre animal a ingéré quelque chose de nocif, contactez votre vétérinaire ou appelez immédiatement <aspca>ASPCA Poison Control</aspca> ou <pph>Pet Poison Helpline</pph>."
+    "medicalDisclaimerText": "Le contenu de cette page ne remplace pas un diagnostic, un traitement ou des soins d'urgence vétérinaires professionnels. Si vous suspectez que votre animal a mangé quelque chose de nocif, contactez votre vétérinaire ou appelez immédiatement <aspca>ASPCA Poison Control</aspca> ou <pph>Pet Poison Helpline</pph>."
   },
   "PlantDetail": {
-    "isSafeForPets": "Est-ce que {name} est sans danger pour les animaux ?",
+    "isSafeForPets": "{name} est-il sûr pour les animaux ?",
     "subtitle": "Découvrez si {name} est sûr pour les chiens et les chats.",
-    "safeForDogs": "Est-ce que {name} est sans danger pour les chiens ?",
-    "safeForCats": "Est-ce que {name} est sans danger pour les chats ?",
+    "safeForDogs": "{name} est-il sûr pour les chiens ?",
+    "safeForCats": "{name} est-il sûr pour les chats ?",
     "symptoms": "Symptômes à surveiller",
     "whatIfAte": "Et si mon animal a mangé {name} ?",
     "safeAlternatives": "Alternatives sûres",
     "sources": "Sources",
     "vetsNote": "Note du vétérinaire",
-    "vetsNoteText": "PetPilot fournit des informations générales à des fins éducatives. Bien que nous fassions référence à des organisations vétérinaires faisant autorité, cette page n'a pas été examinée individuellement par un vétérinaire pour votre animal spécifique. Chaque animal peut réagir différemment en fonction de son âge, de son poids, de sa race, de son état de santé et de la quantité ingérée. Consultez toujours votre vétérinaire ou un centre antipoison pour des conseils personnalisés, surtout si votre animal est malade, blessé, gestant, allaitant ou sous médication.",
+    "vetsNoteText": "PetPilot fournit des informations générales à des fins éducatives. Bien que nous nous appuyions sur des organisations vétérinaires de référence, cette page n'a pas été examinée individuellement par un vétérinaire pour votre animal en particulier. Les animaux peuvent réagir différemment selon leur âge, leur poids, leur race, leurs problèmes de santé et la quantité ingérée. Consultez toujours votre vétérinaire ou un centre de contrôle des intoxications pour des conseils personnalisés, en particulier si votre animal est malade, blessé, en gestation, allaitant ou sous traitement médical.",
     "medicalDisclaimer": "Avertissement médical",
-    "medicalDisclaimerText": "Le contenu de cette page ne remplace pas un diagnostic, un traitement ou des soins d'urgence vétérinaires professionnels. Si vous soupçonnez que votre animal a ingéré quelque chose de nocif, contactez votre vétérinaire ou appelez immédiatement <aspca>ASPCA Poison Control</aspca> ou <pph>Pet Poison Helpline</pph>."
+    "medicalDisclaimerText": "Le contenu de cette page ne remplace pas un diagnostic, un traitement ou des soins d'urgence vétérinaires professionnels. Si vous suspectez que votre animal a mangé quelque chose de nocif, contactez votre vétérinaire ou appelez immédiatement <aspca>ASPCA Poison Control</aspca> ou <pph>Pet Poison Helpline</pph>."
   },
   "SafetyBadge": {
     "safe": "Sûr",
@@ -138,8 +139,8 @@
     "home": "Accueil"
   },
   "NotFound": {
-    "title": "Page introuvable",
-    "description": "Nous n'avons pas trouvé la page que vous recherchiez. Essayez de chercher un aliment, une plante ou de parcourir nos catégories.",
+    "title": "Page non trouvée",
+    "description": "Nous n'avons pas trouvé la page recherchée. Essayez de rechercher un aliment, une plante ou de parcourir nos catégories.",
     "goHome": "Retour à l'accueil",
     "search": "Recherche",
     "emergency": "Urgence",
@@ -149,7 +150,7 @@
   "LegalPages": {
     "lastUpdated": "Dernière mise à jour : {date}",
     "privacyDescription": "Politique de confidentialité de {name}. Nous respectons votre vie privée et ne vendons pas de données personnelles.",
-    "termsDescription": "Conditions d'utilisation de {name}. Informations éducatives sur la sécurité des animaux uniquement, non pas des conseils vétérinaires."
+    "termsDescription": "Conditions d'utilisation de {name}. Informations éducatives sur la sécurité des animaux uniquement, sans conseil vétérinaire."
   },
   "ReportIssue": {
     "button": "Signaler un problème",
@@ -157,11 +158,11 @@
     "description": "Aidez-nous à améliorer {item}. Faites-nous savoir si quelque chose est incorrect, obsolète ou manquant.",
     "incorrectSafety": "Information de sécurité incorrecte",
     "incorrectSafetyDetail": "Le statut de sécurité ou les symptômes semblent erronés.",
-    "missingInfo": "Information manquante",
-    "missingInfoDetail": "Quelque chose d'important n'est pas abordé.",
+    "missingInfo": "Informations manquantes",
+    "missingInfoDetail": "Quelque chose d'important n'est pas couvert.",
     "typoOrLink": "Faute de frappe ou lien brisé",
     "typoOrLinkDetail": "Il y a une erreur de texte ou un problème de lien.",
     "other": "Autre",
-    "otherDetail": "Autre chose."
+    "otherDetail": "Quelque chose d'autre."
   }
 }
