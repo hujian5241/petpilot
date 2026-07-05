@@ -8,7 +8,16 @@ import sanitize from "rehype-sanitize"
 import remarkRehype from "remark-rehype"
 import rehypeStringify from "rehype-stringify"
 
-import type { Category, EmergencyInfo, FoodEntry, PlantEntry, SiteConfig } from "./types"
+import type {
+  Category,
+  EmergencyInfo,
+  FoodEntry,
+  HouseholdChemicalEntry,
+  MedicationEntry,
+  PesticideEntry,
+  PlantEntry,
+  SiteConfig,
+} from "./types"
 import { defaultLocale, type Locale } from "./locales"
 
 function contentDir(locale: Locale): string {
@@ -43,6 +52,8 @@ async function readFileWithFallback(
   return undefined
 }
 
+export { fileExists }
+
 async function readJsonWithFallback<T>(locale: Locale, relativePath: string): Promise<T> {
   const content = await readFileWithFallback(locale, relativePath)
   if (!content) {
@@ -72,10 +83,9 @@ export async function getEmergencyInfo(locale: Locale = defaultLocale): Promise<
   return readJsonWithFallback<EmergencyInfo>(locale, "emergency.json")
 }
 
-async function getSlugs(
-  type: "foods" | "plants",
-  locale: Locale = defaultLocale
-): Promise<string[]> {
+export type ContentType = "foods" | "plants" | "medications" | "household-chemicals" | "pesticides"
+
+async function getSlugs(type: ContentType, locale: Locale = defaultLocale): Promise<string[]> {
   const dir = path.join(contentDir(locale), type)
 
   if (!(await fileExists(dir))) {
@@ -86,9 +96,53 @@ async function getSlugs(
   return files.filter((file) => file.endsWith(".md")).map((file) => file.replace(/\.md$/, ""))
 }
 
+export { getSlugs }
+
+async function parseMarkdownEntry<T extends { slug: string; content?: string }>(
+  locale: Locale,
+  type: ContentType,
+  slug: string
+): Promise<T | undefined> {
+  const content = await readFileWithFallback(locale, path.join(type, `${slug}.md`))
+  if (!content) return undefined
+
+  const { data, content: body } = matter(content)
+
+  const processedContent = await remark()
+    .use(gfm)
+    .use(remarkRehype)
+    .use(sanitize)
+    .use(rehypeStringify)
+    .process(body)
+
+  return {
+    ...(data as Omit<T, "content" | "slug">),
+    slug,
+    content: processedContent.toString(),
+  } as T
+}
+
+async function getAllEntries<T extends { slug: string; name: string; categories: string[]; content?: string }>(
+  type: ContentType,
+  locale: Locale
+): Promise<T[]> {
+  const slugs = await getSlugs(type, defaultLocale)
+  const entries = await Promise.all(slugs.map((slug) => parseMarkdownEntry<T>(locale, type, slug)))
+  return (entries.filter((entry) => entry !== undefined) as T[]).sort((a, b) =>
+    a.name.localeCompare(b.name)
+  )
+}
+
+async function getEntriesByCategory<T extends { slug: string; name: string; categories: string[]; content?: string }>(
+  type: ContentType,
+  categorySlug: string,
+  locale: Locale
+): Promise<T[]> {
+  const entries = await getAllEntries<T>(type, locale)
+  return entries.filter((entry) => entry.categories.includes(categorySlug))
+}
+
 export async function getFoodSlugs(locale: Locale = defaultLocale): Promise<string[]> {
-  // Use default locale as the source of truth for available slugs so all locales
-  // share the same slug set and fall back cleanly when a translation is missing.
   return getSlugs("foods", defaultLocale)
 }
 
@@ -96,84 +150,108 @@ export async function getPlantSlugs(locale: Locale = defaultLocale): Promise<str
   return getSlugs("plants", defaultLocale)
 }
 
-export async function getAllFoods(locale: Locale = defaultLocale): Promise<FoodEntry[]> {
-  const slugs = await getFoodSlugs(locale)
-  const foods = await Promise.all(slugs.map((slug) => getFoodBySlug(slug, locale)))
+export async function getMedicationSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  return getSlugs("medications", defaultLocale)
+}
 
-  return foods
-    .filter((food): food is FoodEntry => food !== undefined)
-    .sort((a, b) => a.name.localeCompare(b.name))
+export async function getHouseholdChemicalSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  return getSlugs("household-chemicals", defaultLocale)
+}
+
+export async function getPesticideSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  return getSlugs("pesticides", defaultLocale)
+}
+
+export async function getAllFoods(locale: Locale = defaultLocale): Promise<FoodEntry[]> {
+  return getAllEntries<FoodEntry>("foods", locale)
 }
 
 export async function getFoodBySlug(
   slug: string,
   locale: Locale = defaultLocale
 ): Promise<FoodEntry | undefined> {
-  const content = await readFileWithFallback(locale, path.join("foods", `${slug}.md`))
-  if (!content) return undefined
-
-  const { data, content: body } = matter(content)
-
-  const processedContent = await remark()
-    .use(gfm)
-    .use(remarkRehype)
-    .use(sanitize)
-    .use(rehypeStringify)
-    .process(body)
-
-  return {
-    ...(data as Omit<FoodEntry, "content">),
-    slug,
-    content: processedContent.toString(),
-  } as FoodEntry
+  return parseMarkdownEntry<FoodEntry>(locale, "foods", slug)
 }
 
 export async function getFoodsByCategory(
   categorySlug: string,
   locale: Locale = defaultLocale
 ): Promise<FoodEntry[]> {
-  const foods = await getAllFoods(locale)
-  return foods.filter((food) => food.categories.includes(categorySlug))
+  return getEntriesByCategory<FoodEntry>("foods", categorySlug, locale)
 }
 
 export async function getAllPlants(locale: Locale = defaultLocale): Promise<PlantEntry[]> {
-  const slugs = await getPlantSlugs(locale)
-  const plants = await Promise.all(slugs.map((slug) => getPlantBySlug(slug, locale)))
-
-  return plants
-    .filter((plant): plant is PlantEntry => plant !== undefined)
-    .sort((a, b) => a.name.localeCompare(b.name))
+  return getAllEntries<PlantEntry>("plants", locale)
 }
 
 export async function getPlantBySlug(
   slug: string,
   locale: Locale = defaultLocale
 ): Promise<PlantEntry | undefined> {
-  const content = await readFileWithFallback(locale, path.join("plants", `${slug}.md`))
-  if (!content) return undefined
-
-  const { data, content: body } = matter(content)
-
-  const processedContent = await remark()
-    .use(gfm)
-    .use(remarkRehype)
-    .use(sanitize)
-    .use(rehypeStringify)
-    .process(body)
-
-  return {
-    ...(data as Omit<PlantEntry, "content">),
-    slug,
-    content: processedContent.toString(),
-  } as PlantEntry
+  return parseMarkdownEntry<PlantEntry>(locale, "plants", slug)
 }
 
 export async function getPlantsByCategory(
   categorySlug: string,
   locale: Locale = defaultLocale
 ): Promise<PlantEntry[]> {
-  const plants = await getAllPlants(locale)
-  return plants.filter((plant) => plant.categories.includes(categorySlug))
+  return getEntriesByCategory<PlantEntry>("plants", categorySlug, locale)
+}
+
+export async function getAllMedications(locale: Locale = defaultLocale): Promise<MedicationEntry[]> {
+  return getAllEntries<MedicationEntry>("medications", locale)
+}
+
+export async function getMedicationBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<MedicationEntry | undefined> {
+  return parseMarkdownEntry<MedicationEntry>(locale, "medications", slug)
+}
+
+export async function getMedicationsByCategory(
+  categorySlug: string,
+  locale: Locale = defaultLocale
+): Promise<MedicationEntry[]> {
+  return getEntriesByCategory<MedicationEntry>("medications", categorySlug, locale)
+}
+
+export async function getAllHouseholdChemicals(
+  locale: Locale = defaultLocale
+): Promise<HouseholdChemicalEntry[]> {
+  return getAllEntries<HouseholdChemicalEntry>("household-chemicals", locale)
+}
+
+export async function getHouseholdChemicalBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<HouseholdChemicalEntry | undefined> {
+  return parseMarkdownEntry<HouseholdChemicalEntry>(locale, "household-chemicals", slug)
+}
+
+export async function getHouseholdChemicalsByCategory(
+  categorySlug: string,
+  locale: Locale = defaultLocale
+): Promise<HouseholdChemicalEntry[]> {
+  return getEntriesByCategory<HouseholdChemicalEntry>("household-chemicals", categorySlug, locale)
+}
+
+export async function getAllPesticides(locale: Locale = defaultLocale): Promise<PesticideEntry[]> {
+  return getAllEntries<PesticideEntry>("pesticides", locale)
+}
+
+export async function getPesticideBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<PesticideEntry | undefined> {
+  return parseMarkdownEntry<PesticideEntry>(locale, "pesticides", slug)
+}
+
+export async function getPesticidesByCategory(
+  categorySlug: string,
+  locale: Locale = defaultLocale
+): Promise<PesticideEntry[]> {
+  return getEntriesByCategory<PesticideEntry>("pesticides", categorySlug, locale)
 }
 
 export function getCategoryDisplayName(categories: Category[], slug: string): string {

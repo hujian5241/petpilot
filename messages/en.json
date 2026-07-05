@@ -2,17 +2,29 @@
   "Header": {
     "home": "Home",
     "search": "Search",
+    "categories": "Categories",
     "foods": "Foods",
     "plants": "Plants",
+    "medications": "Medications",
+    "householdChemicals": "Chemicals",
+    "pesticides": "Pesticides",
     "emergency": "Emergency",
+    "news": "News",
     "about": "About"
   },
   "Footer": {
     "quickLinks": "Quick Links",
+    "categories": "Categories",
     "emergency": "Emergency",
     "medicalDisclaimer": "Medical Disclaimer",
     "allRightsReserved": "All rights reserved.",
     "search": "Search",
+    "news": "News",
+    "foods": "Foods",
+    "plants": "Plants",
+    "medications": "Medications",
+    "householdChemicals": "Household Chemicals",
+    "pesticides": "Pesticides",
     "about": "About",
     "terms": "Terms",
     "privacy": "Privacy"
@@ -22,7 +34,10 @@
     "popularLabel": "Popular:",
     "browseCategories": "Browse Categories",
     "popularSearches": "Popular Searches",
-    "viewAll": "View all",
+    "viewAll": "View all ({count})",
+    "showLess": "Show less",
+    "criticalNewsTitle": "Critical Pet Safety Alerts",
+    "criticalNewsCta": "View all news",
     "whyTrustTitle": "Why Trust PetPilot?",
     "whyTrust": {
       "fastAnswers": {
@@ -41,16 +56,19 @@
   },
   "SearchPage": {
     "title": "Search",
-    "placeholder": "Search a food, e.g., grapes, chocolate, carrots...",
+    "placeholder": "Search foods, plants, medications, chemicals, pesticides...",
     "loading": "Loading search...",
     "resultsFor": "{count} result{count, plural, one {} other {s}} for \"{query}\"",
     "noResults": "No results for \"{query}\"",
-    "noResultsDescription": "We couldn't find any foods or plants matching your search.",
+    "noResultsDescription": "We couldn't find any items matching your search.",
     "suggestItem": "Suggest an item",
-    "emptyState": "Enter a food or plant above to see if it's safe for your pet.",
+    "emptyState": "Enter a food, plant, medication, chemical, or pesticide above to see if it's safe for your pet.",
     "alsoKnownAs": "Also known as: {alias}",
     "foodTag": "Food",
-    "plantTag": "Plant"
+    "plantTag": "Plant",
+    "medicationTag": "Medication",
+    "householdChemicalTag": "Chemical",
+    "pesticideTag": "Pesticide"
   },
   "FoodsPage": {
     "title": "Food Safety Guide for Dogs & Cats",
@@ -67,6 +85,8 @@
   "PlantsPage": {
     "title": "Plants",
     "description": "Browse common houseplants, garden plants, and wild plants to see if they are safe for your pets.",
+    "quickSafetyOverview": "Quick Safety Overview",
+    "allPlants": "All Plants",
     "plants": "Plants",
     "houseplants": "Houseplants",
     "outdoorPlants": "Outdoor Plants"
@@ -126,6 +146,133 @@
     "vetsNoteText": "PetPilot provides general information for educational purposes. While we reference authoritative veterinary organizations, this page has not been individually reviewed by a veterinarian for your specific pet. Individual animals may react differently based on age, weight, breed, health conditions, and amount consumed. Always consult your veterinarian or a poison control center for personalized advice, especially if your pet is ill, injured, pregnant, nursing, or on medication.",
     "medicalDisclaimer": "Medical Disclaimer",
     "medicalDisclaimerText": "The content on this page is not a substitute for professional veterinary diagnosis, treatment, or emergency care. If you suspect your pet has eaten something harmful, contact your veterinarian or call <aspca>ASPCA Poison Control</aspca> or <pph>Pet Poison Helpline</pph> immediately."
+  },
+  "HazardDetail": {
+    "symptoms": "Symptoms to Watch For",
+    "whatIfAte": "What If My Pet Was Exposed to {name}?",
+    "call": "Call {name}",
+    "safeAlternatives": "Safer Alternatives",
+    "sources": "Sources",
+    "vetsNote": "Vet's Note",
+    "vetsNoteText": "PetPilot provides general information for educational purposes. While we reference authoritative veterinary organizations, this page has not been individually reviewed by a veterinarian for your specific pet. Individual animals may react differently based on age, weight, breed, health conditions, and amount consumed. Always consult your veterinarian or a poison control center for personalized advice, especially if your pet is ill, injured, pregnant, nursing, or on medication.",
+    "medicalDisclaimer": "Medical Disclaimer",
+    "medicalDisclaimerText": "The content on this page is not a substitute for professional veterinary diagnosis, treatment, or emergency care. If you suspect your pet has been exposed to something harmful, contact your veterinarian or call <aspca>ASPCA Poison Control</aspca> or <pph>Pet Poison Helpline</pph> immediately."
+  },
+  "MedicationsPage": {
+    "title": "Medication Safety Guide for Dogs & Cats",
+    "description": "Browse our vet-reviewed database of human and veterinary medications to learn what is toxic or safe for your pets.",
+    "quickSafetyOverview": "Quick Safety Overview",
+    "browseByCategory": "Browse by Category",
+    "allMedications": "All Medications",
+    "medications": "medications"
+  },
+  "HouseholdChemicalsPage": {
+    "title": "Household Chemical Safety for Dogs & Cats",
+    "description": "Browse common household cleaners, automotive products, and other chemicals to see if they are toxic to your pets.",
+    "quickSafetyOverview": "Quick Safety Overview",
+    "browseByCategory": "Browse by Category",
+    "allHouseholdChemicals": "All Household Chemicals",
+    "householdChemicals": "chemicals"
+  },
+  "PesticidesPage": {
+    "title": "Pesticide Safety for Dogs & Cats",
+    "description": "Browse insecticides, rodenticides, herbicides, and other pesticides to learn toxicity risks for your pets.",
+    "quickSafetyOverview": "Quick Safety Overview",
+    "browseByCategory": "Browse by Category",
+    "allPesticides": "All Pesticides",
+    "pesticides": "pesticides"
+  },
+  "NewsPage": {
+    "title": "Pet Poisoning News",
+    "description": "Monthly summaries of reported pet poisoning incidents and safety alerts from authoritative sources.",
+    "news": "News",
+    "noNews": "No news items available yet.",
+    "filterMonth": "Month",
+    "filterMonthButton": "Filter",
+    "filterSeverity": "Severity",
+    "allMonths": "All months",
+    "prevYear": "Previous year",
+    "nextYear": "Next year",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "showOlderMonths": "Show older months",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "filterSource": "Source",
+    "allSources": "All sources",
+    "clearFilters": "Clear filters",
+    "searchSources": "Search sources...",
+    "filterSpecies": "Species",
+    "filterSubstance": "Substance",
+    "coverageFrom": "{count, plural, one {Coverage from # source} other {Coverage from # sources}}",
+    "sourcePlaceholder": "Select sources",
+    "noSourcesFound": "No sources found",
+    "clearSearch": "Clear search",
+    "yearLabel": "Year",
+    "yearPlaceholder": "Select year",
+    "monthLabel": "Month",
+    "monthPlaceholder": "Select month",
+    "relatedCoverage": "Related coverage",
+    "relatedGuides": "Related PetPilot Guides",
+    "sourceHeading": "Original Source",
+    "sourceDescription": "This summary is based on a report from {source}.",
+    "readFullReport": "Read the full report",
+    "subscribeTitle": "Stay Updated",
+    "subscribeDescription": "New summaries are added monthly. Follow our sitemap for updates.",
+    "rssCta": "View sitemap",
+    "disclaimerTitle": "Important:",
+    "disclaimerText": "These summaries are for pet safety education only and do not replace professional veterinary advice. If your pet may have been exposed to a toxin, contact your veterinarian or a poison control center immediately.",
+    "severity": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "species": {
+      "dogs": "Dogs",
+      "cats": "Cats",
+      "other": "Other pets"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "under_investigation": "Under investigation",
+      "resolved": "Resolved",
+      "recovery": "In recovery"
+    }
+  },
+  "MedicationDetail": {
+    "title": "{name} and Pets",
+    "subtitle": "Find out if {name} is toxic to dogs and cats.",
+    "safeForDogs": "Is {name} Toxic to Dogs?",
+    "safeForCats": "Is {name} Toxic to Cats?",
+    "activeIngredients": "Active Ingredients",
+    "brandNames": "Common Brand Names",
+    "dosageForm": "Dosage Form",
+    "commonUses": "Common Uses",
+    "toxicIngredients": "Toxic Ingredients"
+  },
+  "HouseholdChemicalDetail": {
+    "title": "{name} and Pets",
+    "subtitle": "Find out if {name} is safe around dogs and cats.",
+    "safeForDogs": "Is {name} Safe for Dogs?",
+    "safeForCats": "Is {name} Safe for Cats?",
+    "activeIngredients": "Active Ingredients",
+    "commonProducts": "Common Products",
+    "commonLocation": "Common Location",
+    "ventilationNotes": "Ventilation Notes",
+    "dilutionWarning": "Dilution Warning"
+  },
+  "PesticideDetail": {
+    "title": "{name} and Pets",
+    "subtitle": "Find out if {name} is toxic to dogs and cats.",
+    "safeForDogs": "Is {name} Toxic to Dogs?",
+    "safeForCats": "Is {name} Toxic to Cats?",
+    "activeIngredients": "Active Ingredients",
+    "pestTargeted": "Pest Targeted",
+    "formulation": "Formulation",
+    "signalWord": "Signal Word",
+    "applicationArea": "Application Area",
+    "epaRegistration": "EPA Registration Number"
   },
   "SafetyBadge": {
     "safe": "Safe",

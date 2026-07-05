@@ -2,17 +2,29 @@
   "Header": {
     "home": "ホーム",
     "search": "検索",
+    "categories": "カテゴリ",
     "foods": "食品",
     "plants": "植物",
+    "medications": "医薬品",
+    "householdChemicals": "化学製品",
+    "pesticides": "農薬",
     "emergency": "緊急",
+    "news": "ニュース",
     "about": "について"
   },
   "Footer": {
     "quickLinks": "クイックリンク",
+    "categories": "カテゴリ",
     "emergency": "緊急",
     "medicalDisclaimer": "医療免責事項",
     "allRightsReserved": "All rights reserved.",
     "search": "検索",
+    "news": "ニュース",
+    "foods": "食品",
+    "plants": "植物",
+    "medications": "医薬品",
+    "householdChemicals": "家庭用化学製品",
+    "pesticides": "農薬",
     "about": "について",
     "terms": "利用規約",
     "privacy": "プライバシー"
@@ -23,6 +35,8 @@
     "browseCategories": "カテゴリーを見る",
     "popularSearches": "よく検索されるもの",
     "viewAll": "すべて見る",
+    "criticalNewsTitle": "重大なペット安全警報",
+    "criticalNewsCta": "すべてのニュースを見る",
     "whyTrustTitle": "PetPilotが信頼できる理由",
     "whyTrust": {
       "fastAnswers": {
@@ -41,16 +55,19 @@
   },
   "SearchPage": {
     "title": "検索",
-    "placeholder": "食品を検索（例：ぶどう、チョコレート、にんじん...）",
+    "placeholder": "食品、植物、医薬品、化学製品、農薬を検索...",
     "loading": "検索中です...",
     "resultsFor": "「{query}」の検索結果：{count}件{count, plural, one {} other {}}",
     "noResults": "「{query}」の検索結果はありません",
-    "noResultsDescription": "検索に一致する食品や植物が見つかりませんでした。",
+    "noResultsDescription": "検索に一致する食品、植物、医薬品、化学製品、農薬が見つかりませんでした。",
     "suggestItem": "項目を提案する",
-    "emptyState": "上の検索欄に食品や植物を入力すると、ペットにとって安全かどうかが確認できます。",
+    "emptyState": "上の検索欄に食品、植物、医薬品、化学製品、または農薬を入力すると、ペットにとって安全かどうかが確認できます。",
     "alsoKnownAs": "別名：{alias}",
     "foodTag": "食品",
-    "plantTag": "植物"
+    "plantTag": "植物",
+    "medicationTag": "医薬品",
+    "householdChemicalTag": "化学製品",
+    "pesticideTag": "農薬"
   },
   "FoodsPage": {
     "title": "犬と猫のための食品安全性ガイド",
@@ -67,6 +84,8 @@
   "PlantsPage": {
     "title": "植物",
     "description": "観葉植物、庭木、野生植物など、ペットにとって安全かどうかを確認できます。",
+    "quickSafetyOverview": "安全性の概要",
+    "allPlants": "すべての植物",
     "plants": "植物",
     "houseplants": "観葉植物",
     "outdoorPlants": "屋外の植物"
@@ -127,6 +146,134 @@
     "medicalDisclaimer": "医療免責事項",
     "medicalDisclaimerText": "このページの内容は、専門的な獣医師の診断、治療、または緊急時の医療行為に代わるものではありません。ペットが有害なものを食べた可能性があると思われる場合は、すぐに獣医師に連絡するか、<aspca>ASPCA Poison Control</aspca>または<pph>Pet Poison Helpline</pph>に電話してください。"
   },
+  "HazardDetail": {
+    "symptoms": "注意すべき症状",
+    "whatIfAte": "ペットが{name}に接触した場合は？",
+    "call": "{name}に電話する",
+    "safeAlternatives": "より安全な代替品",
+    "sources": "情報源",
+    "vetsNote": "獣医師からの注意",
+    "vetsNoteText": "PetPilotが提供する情報は、教育目的の一般的な情報です。信頼できる獣医関連組織の情報を参考にしていますが、このページはあなたのペットについて個別に獣医師によって確認されたものではありません。年齢、体重、品種、健康状態、摂取量などによって、個々の動物の反応は異なる場合があります。特にペットが病気・けが、妊娠・授乳中、または投薬中の場合は、個別のアドバイスを得るために獣医師または毒物管理センターに必ず相談してください。",
+    "medicalDisclaimer": "医療免責事項",
+    "medicalDisclaimerText": "このページの内容は、専門的な獣医師の診断、治療、または緊急時の医療行為に代わるものではありません。ペットが有害なものに接触した可能性があると思われる場合は、すぐに獣医師に連絡するか、<aspca>ASPCA Poison Control</aspca>または<pph>Pet Poison Helpline</pph>に電話してください。"
+  },
+  "MedicationsPage": {
+    "title": "犬と猫のための医薬品安全性ガイド",
+    "description": "獣医師監修のデータベースから人間用・動物用の医薬品を探し、ペットにとって有毒か安全かを確認できます。",
+    "quickSafetyOverview": "安全性の概要",
+    "browseByCategory": "カテゴリーから探す",
+    "allMedications": "すべての医薬品",
+    "medications": "医薬品"
+  },
+  "HouseholdChemicalsPage": {
+    "title": "犬と猫のための家庭用化学製品安全性ガイド",
+    "description": "一般的な家庭用洗剤、自動車用品、その他の化学製品を探し、ペットにとって有毒かどうかを確認できます。",
+    "quickSafetyOverview": "安全性の概要",
+    "browseByCategory": "カテゴリーから探す",
+    "allHouseholdChemicals": "すべての家庭用化学製品",
+    "householdChemicals": "化学製品"
+  },
+  "PesticidesPage": {
+    "title": "犬と猫のための農薬安全性ガイド",
+    "description": "殺虫剤、殺鼠剤、除草剤、その他の農薬を探し、ペットへの毒性リスクを確認できます。",
+    "quickSafetyOverview": "安全性の概要",
+    "browseByCategory": "カテゴリーから探す",
+    "allPesticides": "すべての農薬",
+    "pesticides": "農薬"
+  },
+  "NewsPage": {
+    "title": "ペット中毒に関するニュース",
+    "description": "権威ある情報源からのペット中毒事例と安全警報の月間まとめ。",
+    "news": "ニュース",
+    "noNews": "まだニュースはありません。",
+    "filterMonth": "月",
+    "filterMonthButton": "絞り込む",
+    "filterSeverity": "重大度",
+    "allMonths": "すべての月",
+    "prevYear": "前年",
+    "nextYear": "翌年",
+    "prevMonth": "前月",
+    "nextMonth": "翌月",
+    "showOlderMonths": "過去の月を表示",
+    "showAll": "すべて表示",
+    "showLess": "折りたたむ",
+    "filterSource": "情報源",
+    "allSources": "すべての情報源",
+    "clearFilters": "フィルタをクリア",
+    "searchSources": "情報源を検索...",
+    "coverageFrom": "{count}件の情報源からの報道",
+    "sourcePlaceholder": "情報源を選択",
+    "noSourcesFound": "情報源が見つかりません",
+    "clearSearch": "検索をクリア",
+    "yearLabel": "年",
+    "yearPlaceholder": "年を選択",
+    "monthLabel": "月",
+    "monthPlaceholder": "月を選択",
+    "relatedCoverage": "関連報道",
+    "filterSpecies": "種類",
+    "filterSubstance": "物質",
+    "relatedItems": "関連ガイド",
+    "relatedGuides": "関連するPetPilotガイド",
+    "sourceHeading": "元の情報源",
+    "sourceDescription": "この要約は{source}の報告に基づいています。",
+    "readFullReport": "全文を読む",
+    "subscribeTitle": "最新情報を受け取る",
+    "subscribeDescription": "新しい要約は毎月追加されます。更新情報はサイトマップでご確認ください。",
+    "rssCta": "サイトマップを見る",
+    "disclaimerTitle": "重要：",
+    "disclaimerText": "これらの要約はペットの安全教育目的のみであり、獣医師の専門的な助言に代わるものではありません。ペットが毒素にさらされた可能性がある場合は、すぐに獣医師または毒物管理センターにご連絡ください。",
+    "severity": {
+      "low": "低い",
+      "moderate": "中程度",
+      "high": "高い",
+      "critical": "深刻"
+    },
+    "species": {
+      "dogs": "犬",
+      "cats": "猫",
+      "other": "その他のペット"
+    },
+    "status": {
+      "confirmed": "確認済み",
+      "under_investigation": "調査中",
+      "resolved": "解決済み",
+      "recovery": "回復中"
+    }
+  },
+  "MedicationDetail": {
+    "title": "{name}とペット",
+    "subtitle": "犬と猫に{name}が有毒かどうかを確認しましょう。",
+    "safeForDogs": "犬に{name}は有毒ですか？",
+    "safeForCats": "猫に{name}は有毒ですか？",
+    "activeIngredients": "有効成分",
+    "brandNames": "一般的なブランド名",
+    "dosageForm": "剤型",
+    "commonUses": "一般的な用途",
+    "toxicIngredients": "有毒成分"
+  },
+  "HouseholdChemicalDetail": {
+    "title": "{name}とペット",
+    "subtitle": "犬と猫に{name}が安全かどうかを確認しましょう。",
+    "safeForDogs": "犬に{name}は安全ですか？",
+    "safeForCats": "猫に{name}は安全ですか？",
+    "activeIngredients": "有効成分",
+    "commonProducts": "一般的な製品",
+    "commonLocation": "よくある場所",
+    "ventilationNotes": "換気に関する注意",
+    "dilutionWarning": "希釈に関する警告"
+  },
+  "PesticideDetail": {
+    "title": "{name}とペット",
+    "subtitle": "犬と猫に{name}が有毒かどうかを確認しましょう。",
+    "safeForDogs": "犬に{name}は有毒ですか？",
+    "safeForCats": "猫に{name}は有毒ですか？",
+    "activeIngredients": "有効成分",
+    "pestTargeted": "対象害虫",
+    "formulation": "製剤",
+    "signalWord": "信号語",
+    "applicationArea": "適用場所",
+    "epaRegistration": "EPA登録番号"
+  },
   "SafetyBadge": {
     "safe": "安全",
     "limited": "控える",
@@ -140,7 +287,7 @@
   },
   "NotFound": {
     "title": "ページが見つかりません",
-    "description": "お探しのページが見つかりませんでした。食品や植物を検索するか、カテゴリーから探してみてください。",
+    "description": "お探しのページが見つかりませんでした。食品、植物、医薬品、化学製品、農薬を検索するか、カテゴリーから探してみてください。",
     "goHome": "ホームに戻る",
     "search": "検索",
     "emergency": "緊急",
