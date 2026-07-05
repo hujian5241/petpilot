@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/routing";
 import type { Locale } from "@/lib/i18n";
-import type { NewsEntry, NewsSeverity } from "@/lib/news";
+import type { NewsEntry, NewsSeverity } from "@/lib/news-types";
 import { cn } from "@/lib/utils";
 
 function severityBadge(severity: NewsSeverity): string {

@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { getNewsBySlug, getAllNewsSlugs, loadClusters, getClusterBySlug } from "@/lib/news-content";
 import { getSiteConfig, getSlugs, type ContentType } from "@/lib/content";
 import { defaultLocale, type Locale } from "@/lib/i18n";
-import type { NewsEntry } from "@/lib/news";
+import type { NewsEntry, NewsSeverity } from "@/lib/news-types";
 
 interface NewsDetailPageProps {
   params: Promise<{ locale: Locale; slug: string }>;

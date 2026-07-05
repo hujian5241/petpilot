@@ -8,14 +8,10 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 
 import { defaultLocale, type Locale } from "./locales";
-import type { NewsCluster, NewsEntry } from "./news";
+import type { NewsCluster, NewsEntry, NewsFile } from "./news-types";
+import { linkifyNewsContent } from "./news-linkify";
 
-export interface NewsFile {
-  slug: string;
-  entry: NewsEntry;
-  contentHtml: string;
-  updatedAt: string;
-}
+export type { NewsCluster, NewsEntry, NewsFile } from "./news-types";
 
 async function fileExists(filePath: string): Promise<boolean> {
   try {
@@ -55,7 +51,8 @@ async function readNewsFile(
 
 async function parseNewsFile(
   slug: string,
-  locale: Locale = defaultLocale
+  locale: Locale = defaultLocale,
+  { linkify = false }: { linkify?: boolean } = {}
 ): Promise<NewsFile | undefined> {
   const file = await readNewsFile(slug, locale);
   if (!file) return undefined;
@@ -69,6 +66,12 @@ async function parseNewsFile(
     .use(rehypeStringify)
     .process(content);
 
+  const isClustered = Boolean(data.clusterId);
+  const rawHtml = processedContent.toString();
+  const contentHtml = linkify && isClustered
+    ? await linkifyNewsContent(rawHtml, locale, file.resolvedLocale !== locale)
+    : rawHtml;
+
   const stat = await fs.stat(file.resolvedPath);
   const updatedAt = data.updatedAt
     ? String(data.updatedAt)
@@ -77,7 +80,7 @@ async function parseNewsFile(
   return {
     slug,
     entry: data as NewsEntry,
-    contentHtml: processedContent.toString(),
+    contentHtml,
     updatedAt,
   };
 }
@@ -98,7 +101,7 @@ export async function getNewsBySlug(
   slug: string,
   locale: Locale = defaultLocale
 ): Promise<NewsFile | undefined> {
-  return parseNewsFile(slug, locale);
+  return parseNewsFile(slug, locale, { linkify: true });
 }
 
 export async function getAllNews(locale: Locale = defaultLocale): Promise<NewsFile[]> {

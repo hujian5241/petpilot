@@ -4,8 +4,8 @@ import { useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import type { Locale } from "@/lib/i18n";
-import type { NewsCluster } from "@/lib/news";
-import type { NewsFile } from "@/lib/news-content";
+import type { NewsCluster } from "@/lib/news-types";
+import type { NewsFile } from "@/lib/news-types";
 import { cn } from "@/lib/utils";
 import { NewsCard } from "./NewsCard";
 import { NewsClusterCard } from "./NewsClusterCard";

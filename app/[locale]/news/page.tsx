@@ -18,8 +18,7 @@ import {
 } from "@/lib/news-content";
 import { getSiteConfig } from "@/lib/content";
 import type { Locale } from "@/lib/i18n";
-import type { NewsSeverity, NewsCluster } from "@/lib/news";
-import type { NewsFile } from "@/lib/news-content";
+import type { NewsSeverity, NewsCluster, NewsFile } from "@/lib/news-types";
 
 interface NewsPageProps {
   params: Promise<{ locale: Locale }>;
