@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe in very small amounts. High in fat and may upset lactose-intolerant dogs.
+    summary: >-
+      Safe in very small amounts. High in fat and may upset lactose-intolerant
+      dogs.
   cats:
     status: limited
     severity: low
@@ -25,20 +27,24 @@ symptoms:
   - diarrhea
   - gas
   - vomiting
-what_to_do: Stop feeding if digestive upset occurs. Contact a vet if onion, garlic, or chives were present.
+what_to_do: >-
+  Stop feeding if digestive upset occurs. Contact a vet if onion, garlic, or
+  chives were present.
 alternatives:
   - plain-yogurt
   - cottage-cheese
   - kefir
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain sour cream. Avoid flavored dips and toppings with onion, garlic, or chives.
+preparation_notes: >-
+  Use plain sour cream. Avoid flavored dips and toppings with onion, garlic, or
+  chives.
 safe_amount: A small lick for dogs; a tiny dab for cats.
 frequency: Rarely.
 related_foods:
@@ -51,7 +57,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -93,17 +101,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains lactose, which many adult pets cannot digest well.
+    reason: 'Contains lactose, which many adult pets cannot digest well.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Dairy can cause diarrhea and gas in sensitive pets.
-meta_title: Can Dogs Eat Sour Cream? Safety, Risks & Vet Advice
-meta_description: Is Sour Cream safe for dogs and cats? Sour Cream is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sour Cream? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sour Cream safe for dogs and cats? Sour Cream is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sour Cream
 
 Plain sour cream is safe for dogs in very small amounts. It is cultured, which lowers lactose somewhat, but it remains high in fat. It is often used as a food topper, but there are healthier options.

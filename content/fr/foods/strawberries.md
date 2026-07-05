@@ -21,14 +21,16 @@ safety:
 symptoms:
   - maux de ventre
   - diarrhée
-what_to_do: Surveillez les maux de ventre. Contactez votre vétérinaire si les symptômes persistent.
+what_to_do: >-
+  Surveillez les maux de ventre. Contactez votre vétérinaire si les symptômes
+  persistent.
 alternatives:
   - blueberries
   - bananas
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -41,17 +43,25 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Les sucres naturels peuvent affecter le contrôle glycémique ; la taille de la portion est importante.
+    reason: >-
+      Les sucres naturels peuvent affecter le contrôle glycémique ; la taille de
+      la portion est importante.
   - condition: Maladie dentaire
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Les sucres nourrissent les bactéries buccales et contribuent aux maladies dentaires.
-meta_title: Les chiens peuvent-ils manger des fraises ? Sécurité, risques et conseils vétérinaires
-meta_description: Les fraises sont-elles sûres pour les chiens et les chats ? Les fraises sont sûres pour les chiens et sûres pour les chats. Découvrez les symptômes, que faire et des alternatives approuvées par les vétérinaires.
+    reason: >-
+      Les sucres nourrissent les bactéries buccales et contribuent aux maladies
+      dentaires.
+meta_title: >-
+  Les chiens peuvent-ils manger des fraises ? Sécurité, risques et conseils
+  vétérinaires
+meta_description: >-
+  Les fraises sont-elles sûres pour les chiens et les chats ? Les fraises sont
+  sûres pour les chiens et sûres pour les chats. Découvrez les symptômes, que
+  faire et des alternatives approuvées par les vétérinaires.
 ---
-
 # Fraises
 
 Les fraises sont sûres pour les chiens en petites quantités. Elles contiennent des fibres, de la vitamine C et des antioxydants. Évitez les produits à base de fraises sucrés.

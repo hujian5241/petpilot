@@ -34,16 +34,17 @@ alternatives:
   - dandelion
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Creeping Charlie and Pets — Safety Guide | PetPilot
-meta_description: Creeping Charlie is limited risk for pets. Learn symptoms of mild stomach upset and how to manage this ground cover.
+meta_description: >-
+  Creeping Charlie is limited risk for pets. Learn symptoms of mild stomach
+  upset and how to manage this ground cover.
 ---
-
 # Creeping Charlie
 
 Creeping Charlie is a fast-spreading ground cover with scalloped leaves and small purple flowers. It is mildly aromatic and generally low risk for pets.

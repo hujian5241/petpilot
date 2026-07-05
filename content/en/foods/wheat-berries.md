@@ -21,21 +21,25 @@ safety:
 symptoms:
   - gas
   - bloating
-what_to_do: Ensure thorough cooking. If a hard kernel is swallowed whole, monitor for obstruction signs.
+what_to_do: >-
+  Ensure thorough cooking. If a hard kernel is swallowed whole, monitor for
+  obstruction signs.
 alternatives:
   - brown-rice
   - quinoa
   - plain-oatmeal
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 preparation_notes: Cook until very soft. Hard kernels can damage teeth or cause blockages.
-safe_amount: A teaspoon for small dogs, up to a tablespoon for large dogs; avoid for cats when possible.
+safe_amount: >-
+  A teaspoon for small dogs, up to a tablespoon for large dogs; avoid for cats
+  when possible.
 frequency: Rarely.
 related_foods:
   - farro
@@ -72,10 +76,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Wheat Berries? Safety, Risks & Vet Advice
-meta_description: Is Wheat Berries safe for dogs and cats? Wheat Berries is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Wheat Berries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Wheat Berries safe for dogs and cats? Wheat Berries is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Wheat Berries
 
 Wheat berries are the whole, unprocessed kernels of wheat. They are safe for dogs only after long cooking that softens the grain. Undercooked or dry wheat berries are hard and can pose a dental or intestinal obstruction risk.

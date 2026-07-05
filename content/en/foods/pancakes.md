@@ -17,7 +17,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Plain pancakes without toppings are safe in small amounts but offer little nutrition.
+    summary: >-
+      Plain pancakes without toppings are safe in small amounts but offer little
+      nutrition.
   cats:
     status: limited
     severity: low
@@ -33,13 +35,13 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -63,11 +65,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Typically contains milk or dairy, which may cause digestive upset.
-meta_title: Can Dogs Eat Pancakes? Safety, Risks & Vet Advice
-meta_description: Is Pancakes safe for dogs and cats? Pancakes is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Typically contains milk or dairy, which may cause digestive upset.'
+meta_title: 'Can Dogs Eat Pancakes? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pancakes safe for dogs and cats? Pancakes is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pancakes
 
 A small piece of plain pancake is unlikely to hurt a pet, but pancakes are mostly empty calories. The real danger comes from toppings such as butter, chocolate chips, whipped cream, and especially sugar-free syrup containing xylitol. Xylitol can cause a rapid, dangerous drop in blood sugar and liver failure in dogs. Keep dressed pancakes away from pets.

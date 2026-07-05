@@ -7,7 +7,6 @@ aliases:
   - Geflügelherz
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - taurine
@@ -15,22 +14,29 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn ungewürzt gekocht. Eine gute Quelle für Taurin und Protein.
+    summary: >-
+      Unbedenklich, wenn ungewürzt gekocht. Eine gute Quelle für Taurin und
+      Protein.
   cats:
     status: safe
-    summary: Unbedenklich, wenn ungewürzt gekocht. Eine gute Quelle für Taurin und Protein.
+    summary: >-
+      Unbedenklich, wenn ungewürzt gekocht. Eine gute Quelle für Taurin und
+      Protein.
 symptoms:
   - Erbrechen
   - Durchfall
   - Ersticken
-what_to_do: Beobachten Sie Ihr Tier auf Anzeichen von Ersticken oder Verdauungsbeschwerden. Kontaktieren Sie Ihren Tierarzt, falls die Symptome anhalten.
+what_to_do: >-
+  Beobachten Sie Ihr Tier auf Anzeichen von Ersticken oder
+  Verdauungsbeschwerden. Kontaktieren Sie Ihren Tierarzt, falls die Symptome
+  anhalten.
 alternatives:
   - chicken-breast
   - turkey
   - beef
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -46,17 +52,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Geflügelprotein kann bei Haustieren mit Geflügelallergie allergische Reaktionen auslösen.
+    reason: >-
+      Geflügelprotein kann bei Haustieren mit Geflügelallergie allergische
+      Reaktionen auslösen.
   - condition: Verdauungsempfindlichkeit
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Reichhaltiges Innereienfleisch kann bei empfindlichen Haustieren Erbrechen oder Durchfall verursachen.
-meta_title: Können Hunde Hühnerherzen essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Sind Hühnerherzen für Hunde und Katzen unbedenklich? Hühnerherzen sind für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen.
+    reason: >-
+      Reichhaltiges Innereienfleisch kann bei empfindlichen Haustieren Erbrechen
+      oder Durchfall verursachen.
+meta_title: 'Können Hunde Hühnerherzen essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Sind Hühnerherzen für Hunde und Katzen unbedenklich? Hühnerherzen sind für
+  Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige
+  Verhalten und tierärztlich geprüfte Alternativen.
 ---
-
 # Hühnerherz
 
 Hühnerherzen sind ein mageres, nährstoffreiches Innereienfleisch, das Protein, Taurin und wichtige Mineralstoffe liefert. Sie werden in der Regel gut vertragen, wenn sie ungewürzt gekocht und in Maßen gefüttert werden.

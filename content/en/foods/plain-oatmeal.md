@@ -28,14 +28,16 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook with water, not milk. Do not add sugar, salt, butter, raisins, or spices.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a teaspoon for cats.
+preparation_notes: 'Cook with water, not milk. Do not add sugar, salt, butter, raisins, or spices.'
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a teaspoon
+  for cats.
 frequency: A few times per week at most.
 related_foods:
   - rolled-oats
@@ -61,10 +63,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Fiber content may not be appropriate for all IBD patients.
-meta_title: Can Dogs Eat Plain Oatmeal? Safety, Risks & Vet Advice
-meta_description: Is Plain Oatmeal safe for dogs and cats? Plain Oatmeal is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Plain Oatmeal? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Plain Oatmeal safe for dogs and cats? Plain Oatmeal is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Plain Oatmeal
 
 Plain, cooked oatmeal is a safe and nutritious grain for many dogs. It provides soluble fiber that can help regulate bowel movements and may be beneficial for dogs with mild cholesterol issues. Oatmeal should always be cooked, as raw oats are difficult to digest.

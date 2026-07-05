@@ -16,11 +16,15 @@ safety:
   dogs:
     status: toxic
     severity: high
-    summary: Contains grayanotoxins that can cause vomiting, weakness, and cardiovascular effects.
+    summary: >-
+      Contains grayanotoxins that can cause vomiting, weakness, and
+      cardiovascular effects.
   cats:
     status: toxic
     severity: high
-    summary: Can cause vomiting, diarrhea, weakness, and potentially life-threatening heart effects.
+    summary: >-
+      Can cause vomiting, diarrhea, weakness, and potentially life-threatening
+      heart effects.
 symptoms:
   - vomiting
   - diarrhea
@@ -29,27 +33,32 @@ symptoms:
   - low blood pressure
   - irregular heartbeat
   - tremors
-what_to_do: Contact a veterinarian or poison helpline immediately. Emergency care may be needed, especially if large amounts were eaten.
+what_to_do: >-
+  Contact a veterinarian or poison helpline immediately. Emergency care may be
+  needed, especially if large amounts were eaten.
 alternatives:
   - african-violet
   - phalaenopsis-orchid
   - christmas-cactus
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/azalea/
+    url: 'https://www.petpoisonhelpline.com/poison/azalea/'
   - name: MSD Veterinary Manual — Toxicology
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Cats
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Dogs
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
 meta_title: Azalea and Pet Safety — Highly Toxic | PetPilot
-meta_description: Azaleas are highly toxic to dogs and cats and can affect the heart. Learn symptoms, emergency care, and safe alternatives.
+meta_description: >-
+  Azaleas are highly toxic to dogs and cats and can affect the heart. Learn
+  symptoms, emergency care, and safe alternatives.
 related_plants:
   - oleander
 symptoms_severity:
@@ -58,7 +67,6 @@ symptoms_severity:
   - symptom: weakness
     severity: high
 ---
-
 # Azalea
 
 Azaleas are flowering shrubs sometimes kept as indoor bonsai or patio plants. They contain grayanotoxins that affect the heart and nervous system. Ingestion of even a few leaves can make dogs and cats seriously ill.

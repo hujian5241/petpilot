@@ -13,7 +13,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Fruchtfleisch ist in kleinen Mengen unbedenklich; Kern, Stiel und Blätter enthalten Zyanid.
+    summary: >-
+      Fruchtfleisch ist in kleinen Mengen unbedenklich; Kern, Stiel und Blätter
+      enthalten Zyanid.
   cats:
     status: limited
     severity: low
@@ -22,19 +24,21 @@ symptoms:
   - Zyanidvergiftung
   - Ersticken
   - Darmverschluss
-what_to_do: Kontaktieren Sie Ihren Tierarzt umgehend, wenn der Kern gekaut oder geschluckt wurde.
+what_to_do: >-
+  Kontaktieren Sie Ihren Tierarzt umgehend, wenn der Kern gekaut oder geschluckt
+  wurde.
 alternatives:
   - peaches
   - pears
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: Entfernen Sie Kern, Stiel und Blätter.
+preparation_notes: 'Entfernen Sie Kern, Stiel und Blätter.'
 safe_amount: Ein kleines Stück Fruchtfleisch.
 frequency: Gelegentlicher Leckerbissen.
 condition_warnings:
@@ -44,10 +48,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fruchtzucker kann den Blutzuckerspiegel erhöhen.
-meta_title: Können Hunde Aprikosen essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Sind Aprikosen für Hunde und Katzen sicher? Aprikosen sind für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Können Hunde Aprikosen essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Sind Aprikosen für Hunde und Katzen sicher? Aprikosen sind für Hunde
+  eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun
+  ist, und tierärztlich geprüfte Alternativen.
 ---
-
 # Aprikosen
 
 Aprikosenfleisch ist in kleinen Mengen in der Regel unbedenklich, aber der Kern enthält Zyanid und birgt eine Erstickungsgefahr.

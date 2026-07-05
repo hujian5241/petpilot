@@ -27,7 +27,7 @@ alternatives:
   - strawberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -46,11 +46,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Fruit sugar adds calories, though lower than many fruits.
-meta_title: Can Dogs Eat Raspberries? Safety, Risks & Vet Advice
-meta_description: Is Raspberries safe for dogs and cats? Raspberries is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Fruit sugar adds calories, though lower than many fruits.'
+meta_title: 'Can Dogs Eat Raspberries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Raspberries safe for dogs and cats? Raspberries is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Raspberries
 
 Raspberries are low in sugar and safe for dogs in moderation. They contain fiber, vitamins, and antioxidants.

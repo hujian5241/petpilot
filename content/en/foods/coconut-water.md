@@ -25,7 +25,7 @@ alternatives:
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -38,23 +38,28 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: The file explicitly states coconut water is high in potassium, which must be restricted in CKD.
+    reason: >-
+      The file explicitly states coconut water is high in potassium, which must
+      be restricted in CKD.
   - condition: Heart disease/hypertension
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: High potassium content may interact with cardiac medications or require dietary adjustment.
+    reason: >-
+      High potassium content may interact with cardiac medications or require
+      dietary adjustment.
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: May cause upset stomach or diarrhea.
-meta_title: Can Dogs Eat Coconut Water? Safety, Risks & Vet Advice
-meta_description: Is Coconut Water safe for dogs and cats? Coconut Water is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Coconut Water? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Coconut Water safe for dogs and cats? Coconut Water is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Coconut Water
 
 Plain coconut water is safe for dogs in small amounts but is high in potassium. It should not replace regular water.

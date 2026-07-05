@@ -17,7 +17,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Plain cooked potato is safe, but fried fries are high in fat and salt.
+    summary: 'Plain cooked potato is safe, but fried fries are high in fat and salt.'
   cats:
     status: limited
     severity: low
@@ -33,13 +33,13 @@ alternatives:
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -58,19 +58,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat from frying oil can trigger pancreatitis; the file lists pancreatitis risk.
+    reason: >-
+      High fat from frying oil can trigger pancreatitis; the file lists
+      pancreatitis risk.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Very high fat content from frying is inappropriate for hyperlipidemic pets.
+    reason: >-
+      Very high fat content from frying is inappropriate for hyperlipidemic
+      pets.
   - condition: Heart disease/hypertension
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: High in salt, which is harmful for cardiac and hypertensive patients.
+    reason: 'High in salt, which is harmful for cardiac and hypertensive patients.'
   - condition: Chronic kidney disease
     appliesTo:
       - dogs
@@ -95,10 +99,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High fat and fried foods can aggravate IBD.
-meta_title: Can Dogs Eat French Fries? Safety, Risks & Vet Advice
-meta_description: Is French Fries safe for dogs and cats? French Fries is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat French Fries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is French Fries safe for dogs and cats? French Fries is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # French Fries
 
 French fries are not poisonous in the same way as chocolate or grapes, but they are not a healthy treat. The frying oil and salt can cause vomiting, diarrhea, and in some cases pancreatitis. Fries cooked with garlic, truffle oil, or seasoning blends are more dangerous. A single plain fry is unlikely to harm a large dog, but it should not become a habit.

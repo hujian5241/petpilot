@@ -18,7 +18,9 @@ safety:
     summary: Culinary amounts of oregano are generally safe.
   cats:
     status: safe
-    summary: Small amounts are usually safe, though strong herbs may upset sensitive stomachs.
+    summary: >-
+      Small amounts are usually safe, though strong herbs may upset sensitive
+      stomachs.
 symptoms:
   - vomiting
   - diarrhea
@@ -29,13 +31,13 @@ alternatives:
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -58,10 +60,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Aromatic herbs may irritate an inflamed GI tract.
-meta_title: Can Dogs Eat Oregano? Safety, Risks & Vet Advice
-meta_description: Is Oregano safe for dogs and cats? Oregano is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Oregano? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Oregano safe for dogs and cats? Oregano is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Oregano
 
 Oregano is a Mediterranean herb that is safe for dogs and cats in the small amounts used in cooking. Some natural remedies use larger therapeutic doses, but those should only be given under veterinary supervision. Strongly seasoned sauces that include oregano often also contain garlic and onion, so keep those dishes away from pets.

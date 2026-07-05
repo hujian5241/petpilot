@@ -27,13 +27,13 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Steam or serve raw in very small florets. No butter, cheese, or seasonings.
+preparation_notes: 'Steam or serve raw in very small florets. No butter, cheese, or seasonings.'
 safe_amount: A few small florets for dogs; one tiny piece for cats.
 frequency: Occasionally.
 related_foods:
@@ -59,10 +59,11 @@ condition_warnings:
     recommendation: consult_vet
     reason: Contains goitrogens that may affect thyroid function in large amounts.
     notes: Relevant to cats with hyperthyroidism and dogs with hypothyroidism.
-meta_title: Can Dogs Eat Cauliflower? Safety, Risks & Vet Advice
-meta_description: Is Cauliflower safe for dogs and cats? Cauliflower is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cauliflower? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cauliflower safe for dogs and cats? Cauliflower is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cauliflower
 
 Cauliflower is safe for dogs and cats in small portions. Like other cruciferous vegetables, it can cause gas and bloating. Steaming cauliflower makes it easier to digest than raw.

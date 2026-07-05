@@ -33,13 +33,15 @@ alternatives:
   - mozzarella-cheese
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, low-fat cream cheese. Avoid flavored spreads with onion, garlic, chives, or xylitol.
+preparation_notes: >-
+  Use plain, low-fat cream cheese. Avoid flavored spreads with onion, garlic,
+  chives, or xylitol.
 safe_amount: A thin smear for dogs; a tiny dab for cats.
 frequency: Rarely.
 related_foods:
@@ -58,19 +60,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High in fat and calories; the file states it is not suitable for overweight dogs.
+    reason: >-
+      High in fat and calories; the file states it is not suitable for
+      overweight dogs.
   - condition: Pancreatitis
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat content may trigger pancreatitis; the file lists pancreatitis-risk as a symptom.
+    reason: >-
+      High fat content may trigger pancreatitis; the file lists
+      pancreatitis-risk as a symptom.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Very high in fat, inappropriate for hyperlipidemic pets.
+    reason: 'Very high in fat, inappropriate for hyperlipidemic pets.'
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -82,11 +88,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: May cause diarrhea, gas, or vomiting.
-meta_title: Can Dogs Eat Cream Cheese? Safety, Risks & Vet Advice
-meta_description: Is Cream Cheese safe for dogs and cats? Cream Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'May cause diarrhea, gas, or vomiting.'
+meta_title: 'Can Dogs Eat Cream Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cream Cheese safe for dogs and cats? Cream Cheese is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cream Cheese
 
 Plain cream cheese is safe for dogs in very small amounts. Its high fat content means it should not be a regular treat, and it is not suitable for overweight dogs or those prone to pancreatitis. A thin smear is sometimes used to hide pills.

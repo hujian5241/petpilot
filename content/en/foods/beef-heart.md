@@ -7,7 +7,6 @@ aliases:
   - ox heart
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - taurine
@@ -22,18 +21,22 @@ safety:
 symptoms:
   - vomiting
   - diarrhea
-what_to_do: For digestive upset after eating heart, withhold food briefly and contact your vet if symptoms persist.
+what_to_do: >-
+  For digestive upset after eating heart, withhold food briefly and contact your
+  vet if symptoms persist.
 alternatives:
   - beef
   - chicken-breast
   - turkey
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-beef/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-beef/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook thoroughly without seasoning. Remove excess fat and cut into small pieces.
+preparation_notes: >-
+  Cook thoroughly without seasoning. Remove excess fat and cut into small
+  pieces.
 safe_amount: Small pieces as an occasional treat.
 frequency: Occasional.
 related_foods:
@@ -58,10 +61,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Organ meats can be richer in fat than lean muscle.
-meta_title: Can Dogs Eat Beef Heart? Safety, Risks & Vet Advice
-meta_description: Is Beef Heart safe for dogs and cats? Beef Heart is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Beef Heart? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Beef Heart safe for dogs and cats? Beef Heart is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Beef Heart
 
 Beef heart is a nutrient-dense muscle organ that provides protein, taurine, and B vitamins. It is generally well tolerated when cooked plain and fed in moderation.

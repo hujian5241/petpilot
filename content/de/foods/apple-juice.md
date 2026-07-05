@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Reiner Apfelsaft ist nicht giftig, aber der Zuckergehalt kann Verdauungsbeschwerden und Gewichtszunahme verursachen.
+    summary: >-
+      Reiner Apfelsaft ist nicht giftig, aber der Zuckergehalt kann
+      Verdauungsbeschwerden und Gewichtszunahme verursachen.
   cats:
     status: limited
     severity: low
@@ -32,17 +34,17 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-safe_amount: Ein sehr kleiner Schluck, wenn überhaupt.
+safe_amount: 'Ein sehr kleiner Schluck, wenn überhaupt.'
 frequency: Selten.
 related_foods:
   - orange-juice
@@ -53,7 +55,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Konzentrierter Zucker ohne Ballaststoffe führt zu schnellen Blutzuckerspitzen.
+    reason: >-
+      Konzentrierter Zucker ohne Ballaststoffe führt zu schnellen
+      Blutzuckerspitzen.
   - condition: Übergewicht
     appliesTo:
       - dogs
@@ -72,10 +76,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zucker kann Durchfall und Magenbeschwerden verursachen.
-meta_title: Dürfen Hunde Apfelsaft trinken? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Apfelsaft für Hunde und Katzen sicher? Apfelsaft ist für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie mehr zu Symptomen, dem richtigen Verhalten und tierärztlich geprüften Alternativen.
+meta_title: 'Dürfen Hunde Apfelsaft trinken? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Apfelsaft für Hunde und Katzen sicher? Apfelsaft ist für Hunde und Katzen
+  nur eingeschränkt geeignet. Erfahren Sie mehr zu Symptomen, dem richtigen
+  Verhalten und tierärztlich geprüften Alternativen.
 ---
-
 # Apfelsaft
 
 Apfelsaft enthält nicht die Ballaststoffe ganzer Äpfel und besteht hauptsächlich aus Zucker und Wasser. Reiner Saft ohne zugesetzte Süßungsmittel ist nicht giftig, aber er kann bei regelmäßiger Fütterung zu Übergewicht und Zahnproblemen führen.

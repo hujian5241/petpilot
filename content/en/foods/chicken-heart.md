@@ -7,7 +7,6 @@ aliases:
   - poultry heart
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - taurine
@@ -30,7 +29,7 @@ alternatives:
   - beef
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -46,17 +45,20 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Poultry protein can trigger allergic reactions in pets with poultry allergies.
+    reason: >-
+      Poultry protein can trigger allergic reactions in pets with poultry
+      allergies.
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Rich organ meat may cause vomiting or diarrhea in sensitive pets.
-meta_title: Can Dogs Eat Chicken Heart? Safety, Risks & Vet Advice
-meta_description: Is Chicken Heart safe for dogs and cats? Chicken Heart is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Chicken Heart? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Chicken Heart safe for dogs and cats? Chicken Heart is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Chicken Heart
 
 Chicken hearts are a lean, nutrient-rich organ meat that provides protein, taurine, and essential minerals. They are generally well tolerated when cooked plain and fed in moderation.

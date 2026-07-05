@@ -15,7 +15,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe in very small amounts. Citrus oils and high acidity may upset stomachs.
+    summary: >-
+      Safe in very small amounts. Citrus oils and high acidity may upset
+      stomachs.
   cats:
     status: limited
     severity: low
@@ -30,11 +32,11 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Remove peel, seeds, and pith. Offer only a small segment of flesh.
+preparation_notes: 'Remove peel, seeds, and pith. Offer only a small segment of flesh.'
 safe_amount: One or two small segments for dogs.
 frequency: Rarely.
 condition_warnings:
@@ -62,10 +64,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Citrus oils and acidity may upset sensitive stomachs.
-meta_title: Can Dogs Eat Oranges? Safety, Risks & Vet Advice
-meta_description: Is Oranges safe for dogs and cats? Oranges is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Oranges? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Oranges safe for dogs and cats? Oranges is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Oranges
 
 Orange flesh is generally safe in tiny amounts, but the oils in the peel and high acidity can cause stomach upset.

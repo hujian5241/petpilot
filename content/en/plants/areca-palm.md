@@ -29,16 +29,18 @@ alternatives:
   - boston-fern
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/areca-palm
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/areca-palm
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/areca-palm/
+    url: 'https://www.petpoisonhelpline.com/poison/areca-palm/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Areca Palm and Pet Safety — Pet-Safe Tropical Plant | PetPilot
-meta_description: Areca palms are non-toxic to dogs and cats. Learn care tips and safe tropical alternatives.
+meta_description: >-
+  Areca palms are non-toxic to dogs and cats. Learn care tips and safe tropical
+  alternatives.
 ---
-
 # Areca Palm
 
 Areca palms are elegant, clumping palms with feathery, arching fronds. They are non-toxic to both dogs and cats and can add a tropical feel to a home without the risks associated with true palms such as sago palm.

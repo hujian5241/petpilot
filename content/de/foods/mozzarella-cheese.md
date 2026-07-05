@@ -16,11 +16,13 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Einer der sichereren Käsesorten in kleinen Mengen, da er weniger Fett und Salz enthält.
+    summary: >-
+      Einer der sichereren Käsesorten in kleinen Mengen, da er weniger Fett und
+      Salz enthält.
   cats:
     status: limited
     severity: low
-    summary: In kleinsten Mengen unbedenklich, wenn er naturbelassen ist.
+    summary: 'In kleinsten Mengen unbedenklich, wenn er naturbelassen ist.'
 symptoms:
   - Durchfall
   - Blähungen
@@ -31,13 +33,15 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Einfach und in kleinen Stücken servieren. Mozzarella-Sticks mit Panade oder Marinara-Sauce vermeiden.
+preparation_notes: >-
+  Einfach und in kleinen Stücken servieren. Mozzarella-Sticks mit Panade oder
+  Marinara-Sauce vermeiden.
 safe_amount: Ein kleiner Würfel für Hunde; eine erbsengroße Menge für Katzen.
 frequency: Gelegentlich.
 related_foods:
@@ -50,11 +54,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Milchprodukt; beobachten Sie Ihr Tier auf Durchfall oder Blähungen, obwohl Mozzarella weniger Laktose enthält.
-meta_title: Dürfen Hunde Mozzarella-Käse essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Mozzarella-Käse für Hunde und Katzen sicher? Mozzarella-Käse ist für Hunde eingeschränkt geeignet und für Katzen eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+    reason: >-
+      Milchprodukt; beobachten Sie Ihr Tier auf Durchfall oder Blähungen, obwohl
+      Mozzarella weniger Laktose enthält.
+meta_title: 'Dürfen Hunde Mozzarella-Käse essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Mozzarella-Käse für Hunde und Katzen sicher? Mozzarella-Käse ist für Hunde
+  eingeschränkt geeignet und für Katzen eingeschränkt geeignet. Erfahren Sie
+  Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
 ---
-
 # Mozzarella-Käse
 
 Mozzarella-Käse ist für Hunde oft eine bessere Wahl als andere Käsesorten, da er in der Regel weniger Fett und Natrium als Cheddar oder Frischkäse enthält. Naturbelassener, frischer Mozzarella kann in kleinen Stücken als besonders wertvolles Leckerli für das Training verwendet werden.

@@ -14,7 +14,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber hoher Zuckergehalt und Milchbestandteile können Magenbeschwerden verursachen.
+    summary: >-
+      Nicht giftig, aber hoher Zuckergehalt und Milchbestandteile können
+      Magenbeschwerden verursachen.
   cats:
     status: limited
     severity: low
@@ -25,13 +27,15 @@ symptoms:
   - Durchfall
   - Gewichtszunahme
   - Karies
-what_to_do: Beobachten Sie Ihr Tier. Kontaktieren Sie Ihren Tierarzt, wenn giftige Zutaten enthalten waren.
+what_to_do: >-
+  Beobachten Sie Ihr Tier. Kontaktieren Sie Ihren Tierarzt, wenn giftige Zutaten
+  enthalten waren.
 alternatives:
   - blueberries
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -75,10 +79,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Zuckergehalt und Milchprodukte verursachen häufig Durchfall.
-meta_title: Dürfen Hunde Karamell essen? Sicherheit, Risiken und Tierarzt-Rat
-meta_description: Ist Karamell für Hunde und Katzen sicher? Karamell ist für Hunde und Katzen eingeschränkt. Erfahren Sie mehr über Symptome, Verhaltensmaßnahmen und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Karamell essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Ist Karamell für Hunde und Katzen sicher? Karamell ist für Hunde und Katzen
+  eingeschränkt. Erfahren Sie mehr über Symptome, Verhaltensmaßnahmen und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Karamell
 
 Karamell besteht meist aus Zucker und manchmal aus Milchbestandteilen. Er kann bei Haustieren Magenbeschwerden, Gewichtszunahme und Zahnprobleme verursachen. Einige Karamellsorten enthalten Schokolade oder Xylit, die giftig sind.

@@ -22,21 +22,25 @@ safety:
 symptoms:
   - gas
   - bloating
-what_to_do: No action for a small plain piece. Avoid wraps and burritos with unsafe fillings.
+what_to_do: >-
+  No action for a small plain piece. Avoid wraps and burritos with unsafe
+  fillings.
 alternatives:
   - corn-tortilla
   - plain-bread
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain. Avoid cheese, meat fillings, onions, garlic, salt, and oil.
-safe_amount: A small piece for small dogs, half a tortilla for large dogs; a tiny piece for cats.
+preparation_notes: 'Serve plain. Avoid cheese, meat fillings, onions, garlic, salt, and oil.'
+safe_amount: >-
+  A small piece for small dogs, half a tortilla for large dogs; a tiny piece for
+  cats.
 frequency: Rarely.
 related_foods:
   - corn-tortilla
@@ -67,10 +71,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: May cause gas or bloating.
-meta_title: Can Dogs Eat Flour Tortilla? Safety, Risks & Vet Advice
-meta_description: Is Flour Tortilla safe for dogs and cats? Flour Tortilla is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Flour Tortilla? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Flour Tortilla safe for dogs and cats? Flour Tortilla is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Flour Tortilla
 
 A plain flour tortilla is generally safe for dogs as an occasional small treat. Flour tortillas are higher in calories and fat than corn tortillas and should not be fed regularly. Dogs with wheat allergies should avoid them.

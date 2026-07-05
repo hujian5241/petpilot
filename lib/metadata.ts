@@ -1,6 +1,14 @@
 import { Metadata } from "next";
 
-import type { FoodEntry, PlantEntry, Category, SiteConfig } from "./types";
+import type {
+  Category,
+  FoodEntry,
+  HouseholdChemicalEntry,
+  MedicationEntry,
+  PesticideEntry,
+  PlantEntry,
+  SiteConfig,
+} from "./types";
 import { locales, type Locale, defaultLocale } from "./i18n";
 
 function buildAlternates(
@@ -96,6 +104,99 @@ export function buildPlantMetadata(
     plant.meta_description ??
     `Is ${plant.name} safe for dogs and cats? Learn symptoms, risks, and what to do if your pet eats it.`;
   const path = `/plants/${plant.slug}`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: path,
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    alternates: buildAlternates(path, config, locale),
+  };
+}
+
+export function buildMedicationMetadata(
+  medication: MedicationEntry,
+  config: SiteConfig,
+  locale: Locale = defaultLocale
+): Metadata {
+  const title =
+    medication.meta_title ??
+    `${medication.name} Poisoning in Dogs & Cats — PetPilot`;
+  const description =
+    medication.meta_description ??
+    `Is ${medication.name} toxic to dogs and cats? Learn symptoms, emergency steps, and safer alternatives.`;
+  const path = `/medications/${medication.slug}`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: path,
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    alternates: buildAlternates(path, config, locale),
+  };
+}
+
+export function buildHouseholdChemicalMetadata(
+  chemical: HouseholdChemicalEntry,
+  config: SiteConfig,
+  locale: Locale = defaultLocale
+): Metadata {
+  const title =
+    chemical.meta_title ??
+    `${chemical.name} and Pets — Poisoning Risks | PetPilot`;
+  const description =
+    chemical.meta_description ??
+    `Is ${chemical.name} safe around dogs and cats? Learn symptoms, what to do, and pet-safe alternatives.`;
+  const path = `/household-chemicals/${chemical.slug}`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: path,
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    alternates: buildAlternates(path, config, locale),
+  };
+}
+
+export function buildPesticideMetadata(
+  pesticide: PesticideEntry,
+  config: SiteConfig,
+  locale: Locale = defaultLocale
+): Metadata {
+  const title =
+    pesticide.meta_title ??
+    `${pesticide.name} and Pets — Toxicity Guide | PetPilot`;
+  const description =
+    pesticide.meta_description ??
+    `Is ${pesticide.name} toxic to dogs and cats? Learn symptoms, emergency steps, and how to keep pets safe.`;
+  const path = `/pesticides/${pesticide.slug}`;
 
   return {
     title,

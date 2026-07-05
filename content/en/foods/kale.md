@@ -14,7 +14,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe in very small amounts. Can interfere with thyroid function and calcium absorption if overfed.
+    summary: >-
+      Safe in very small amounts. Can interfere with thyroid function and
+      calcium absorption if overfed.
   cats:
     status: limited
     severity: low
@@ -22,16 +24,18 @@ safety:
 symptoms:
   - gas
   - digestive upset
-what_to_do: Stop feeding if gas or diarrhea occurs. Consult a vet for pets with thyroid issues.
+what_to_do: >-
+  Stop feeding if gas or diarrhea occurs. Consult a vet for pets with thyroid
+  issues.
 alternatives:
   - green-beans
   - carrots
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -72,10 +76,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber and cruciferous compounds may irritate during flares.
-meta_title: Can Dogs Eat Kale? Safety, Risks & Vet Advice
-meta_description: Is Kale safe for dogs and cats? Kale is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Kale? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Kale safe for dogs and cats? Kale is limited for dogs and limited for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Kale
 
 Kale is nutrient-dense but contains isothiocyanates and calcium oxalates, which can cause gastric irritation and may affect thyroid function when fed in large quantities. Small, occasional servings are generally safe for healthy dogs.

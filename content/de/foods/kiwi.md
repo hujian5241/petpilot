@@ -17,7 +17,9 @@ safety:
   cats:
     status: safe
     severity: low
-    summary: In sehr kleinen Mengen unbedenklich, aber die meisten Katzen mögen ihn nicht.
+    summary: >-
+      In sehr kleinen Mengen unbedenklich, aber die meisten Katzen mögen ihn
+      nicht.
 symptoms:
   - Magenverstimmung
   - Durchfall
@@ -27,7 +29,7 @@ alternatives:
   - strawberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -59,10 +61,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Saure und zuckerhaltige Früchte können die Zahngesundheit beeinträchtigen.
-meta_title: Können Hunde Kiwi essen? Sicherheit, Risiken und tierärztliche Empfehlungen
-meta_description: Ist Kiwi für Hunde und Katzen unbedenklich? Kiwi ist für Hunde und Katzen sicher. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich empfohlene Alternativen.
+meta_title: 'Können Hunde Kiwi essen? Sicherheit, Risiken und tierärztliche Empfehlungen'
+meta_description: >-
+  Ist Kiwi für Hunde und Katzen unbedenklich? Kiwi ist für Hunde und Katzen
+  sicher. Erfahren Sie mehr über Symptome, das richtige Verhalten und
+  tierärztlich empfohlene Alternativen.
 ---
-
 # Kiwi
 
 Kiwi-Fruchtfleisch ist für Hunde in kleinen Mengen unbedenklich. Die filzige Schale kann reizen; schälen Sie sie daher vorher ab.

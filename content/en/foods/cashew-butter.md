@@ -29,11 +29,11 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose plain, unsalted cashew butter with no xylitol or added sugar.
+preparation_notes: 'Choose plain, unsalted cashew butter with no xylitol or added sugar.'
 safe_amount: A small lick for dogs.
 frequency: Rarely.
 condition_warnings:
@@ -85,10 +85,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Rich and fatty; may cause diarrhea.
-meta_title: Can Dogs Eat Cashew Butter? Safety, Risks & Vet Advice
-meta_description: Is Cashew Butter safe for dogs and cats? Cashew Butter is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cashew Butter? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cashew Butter safe for dogs and cats? Cashew Butter is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cashew Butter
 
 Plain cashew butter is generally safe for dogs in very small amounts. It is calorie-dense, so use it sparingly. Check the label for xylitol and other unsafe additives.

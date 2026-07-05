@@ -29,11 +29,11 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Vermeiden Sie es, Maraschino-Kirschen zu füttern.
+preparation_notes: 'Vermeiden Sie es, Maraschino-Kirschen zu füttern.'
 safe_amount: Vermeiden.
 frequency: Nicht empfohlen.
 condition_warnings:
@@ -54,7 +54,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Klebriger, gefärbter Zucker haftet an den Zähnen.
+    reason: 'Klebriger, gefärbter Zucker haftet an den Zähnen.'
   - condition: Magen-Darm-Empfindlichkeit
     appliesTo:
       - dogs
@@ -62,9 +62,12 @@ condition_warnings:
     recommendation: limit
     reason: Zucker und Farbstoffe können Verdauungsstörungen verursachen.
 meta_title: 'Dürfen Hunde Maraschino-Kirschen essen? Sicherheit, Risiken & Tierarzt-Rat'
-meta_description: 'Sind Maraschino-Kirschen für Hunde und Katzen unbedenklich? Maraschino-Kirschen sind für Hunde eingeschränkt geeignet und für Katzen eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte Alternativen.'
+meta_description: >-
+  Sind Maraschino-Kirschen für Hunde und Katzen unbedenklich?
+  Maraschino-Kirschen sind für Hunde eingeschränkt geeignet und für Katzen
+  eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Maraschino-Kirschen
 
 Maraschino-Kirschen enthalten viel Zucker, Farbstoffe und Konservierungsstoffe. Sie haben keinen Nährwert und können Magenverstimmungen verursachen.

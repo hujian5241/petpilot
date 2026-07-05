@@ -31,14 +31,16 @@ alternatives:
   - rosemary-plant
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/camellia
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/camellia
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Are Camellias Safe for Pets?
-meta_description: Camellias are non-toxic to dogs and cats. Discover why they are a beautiful, pet-safe alternative to toxic flowering shrubs.
+meta_description: >-
+  Camellias are non-toxic to dogs and cats. Discover why they are a beautiful,
+  pet-safe alternative to toxic flowering shrubs.
 ---
-
 # Camellia
 
 Camellias are elegant evergreen shrubs with rose-like flowers. They are non-toxic to dogs and cats, making them a safe alternative to toxic flowering shrubs such as azaleas and rhododendrons.

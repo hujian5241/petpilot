@@ -28,14 +28,16 @@ alternatives:
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until soft. Avoid soups or stews with onion, garlic, salt, or fat.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for cats.
+preparation_notes: 'Cook until soft. Avoid soups or stews with onion, garlic, salt, or fat.'
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for
+  cats.
 frequency: Occasionally.
 related_foods:
   - quinoa
@@ -72,10 +74,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber and gluten can cause gas or loose stools in sensitive pets.
-meta_title: Can Dogs Eat Barley? Safety, Risks & Vet Advice
-meta_description: Is Barley safe for dogs and cats? Barley is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Barley? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Barley safe for dogs and cats? Barley is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Barley
 
 Barley is a nutritious, fiber-rich grain that is safe for dogs when fully cooked. It is sometimes used as an ingredient in commercial dog foods. Its chewy texture and high fiber content can be beneficial but may cause gas in sensitive dogs.

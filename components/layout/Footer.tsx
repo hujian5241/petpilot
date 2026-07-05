@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { getSiteConfig, getEmergencyInfo } from "@/lib/content";
 import { getTranslations } from "next-intl/server";
+import { ChevronDown } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 
 interface FooterProps {
@@ -24,48 +25,59 @@ export async function Footer({ locale }: FooterProps) {
           </div>
           <div>
             <h4 className="text-sm font-semibold">{t("quickLinks")}</h4>
-            <ul className="mt-2 space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/search"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  {t("search")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/emergency"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  {t("emergency")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  {t("about")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  {t("terms")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  {t("privacy")}
-                </Link>
-              </li>
-            </ul>
+            <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+              <Link href="/search" className="text-muted-foreground hover:text-foreground">
+                {t("search")}
+              </Link>
+              <Link href="/news" className="text-muted-foreground hover:text-foreground">
+                {t("news")}
+              </Link>
+              <Link href="/emergency" className="text-muted-foreground hover:text-foreground">
+                {t("emergency")}
+              </Link>
+              <Link href="/about" className="text-muted-foreground hover:text-foreground">
+                {t("about")}
+              </Link>
+              <Link href="/terms" className="text-muted-foreground hover:text-foreground">
+                {t("terms")}
+              </Link>
+              <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                {t("privacy")}
+              </Link>
+            </div>
+            <details className="group mt-4">
+              <summary className="flex cursor-pointer list-none items-center gap-1 text-sm font-semibold text-muted-foreground hover:text-foreground">
+                {t("categories")}
+                <ChevronDown className="h-3.5 w-3.5 transition-transform group-open:rotate-180" aria-hidden="true" />
+              </summary>
+              <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                <li>
+                  <Link href="/foods" className="text-muted-foreground hover:text-foreground">
+                    {t("foods")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/plants" className="text-muted-foreground hover:text-foreground">
+                    {t("plants")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/medications" className="text-muted-foreground hover:text-foreground">
+                    {t("medications")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/household-chemicals" className="text-muted-foreground hover:text-foreground">
+                    {t("householdChemicals")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/pesticides" className="text-muted-foreground hover:text-foreground">
+                    {t("pesticides")}
+                  </Link>
+                </li>
+              </ul>
+            </details>
           </div>
           <div>
             <h4 className="text-sm font-semibold">{t("emergency")}</h4>

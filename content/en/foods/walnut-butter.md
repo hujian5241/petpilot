@@ -30,11 +30,11 @@ alternatives:
   - carrots
 sources:
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid walnut butter. If offered, ensure it is fresh, plain, and free of mold.
+preparation_notes: 'Avoid walnut butter. If offered, ensure it is fresh, plain, and free of mold.'
 safe_amount: Avoid feeding.
 frequency: Avoid.
 condition_warnings:
@@ -43,7 +43,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -86,10 +88,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Walnut Butter? Safety, Risks & Vet Advice
-meta_description: Is Walnut Butter safe for dogs and cats? Walnut Butter is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Walnut Butter? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Walnut Butter safe for dogs and cats? Walnut Butter is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Walnut Butter
 
 Walnut butter is not a recommended treat for dogs. Walnuts can harbor mold that produces toxins causing neurological signs, and the butter is high in fat.

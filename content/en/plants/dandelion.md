@@ -23,23 +23,26 @@ safety:
     status: safe
     summary: Safe; not harmful if chewed in small amounts.
 symptoms: []
-what_to_do: No action needed. Make sure the plant has not been sprayed with herbicides or fertilizers.
+what_to_do: >-
+  No action needed. Make sure the plant has not been sprayed with herbicides or
+  fertilizers.
 alternatives:
   - white-clover
   - common-plantain
   - chickweed
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Dandelion and Pets — Safety Guide | PetPilot
-meta_description: Dandelions are safe for dogs and cats. Learn why this common lawn weed is non-toxic and what precautions to take.
+meta_description: >-
+  Dandelions are safe for dogs and cats. Learn why this common lawn weed is
+  non-toxic and what precautions to take.
 ---
-
 # Dandelion
 
 Dandelions are one of the most common lawn weeds and are considered safe for dogs and cats. The leaves, flowers, and roots are not toxic and are even used in some pet supplements.

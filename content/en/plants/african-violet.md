@@ -28,16 +28,18 @@ alternatives:
   - christmas-cactus
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/african-violet
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/african-violet
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/african-violet/
+    url: 'https://www.petpoisonhelpline.com/poison/african-violet/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: African Violet and Pet Safety — Pet-Safe Flowers | PetPilot
-meta_description: African violets are non-toxic to dogs and cats. Learn care tips and safe flowering alternatives.
+meta_description: >-
+  African violets are non-toxic to dogs and cats. Learn care tips and safe
+  flowering alternatives.
 ---
-
 # African Violet
 
 African violets are compact flowering houseplants with velvety leaves and delicate blooms in purple, pink, and white. They are non-toxic to dogs and cats, making them one of the best choices for adding color to a pet-friendly home.

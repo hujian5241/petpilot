@@ -24,18 +24,22 @@ symptoms:
   - Erbrechen
   - Durchfall
   - Pankreatitis
-what_to_do: Menge reduzieren oder Fütterung beenden, falls Verdauungsbeschwerden auftreten.
+what_to_do: >-
+  Menge reduzieren oder Fütterung beenden, falls Verdauungsbeschwerden
+  auftreten.
 alternatives:
   - peanut-butter
   - pumpkin
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Wählen Sie ungesüßte, ungesalzene Cashewbutter ohne Xylit und ohne Zusatz von Zucker.
+preparation_notes: >-
+  Wählen Sie ungesüßte, ungesalzene Cashewbutter ohne Xylit und ohne Zusatz von
+  Zucker.
 safe_amount: Ein kleiner Schleck für Hunde.
 frequency: Selten.
 condition_warnings:
@@ -87,10 +91,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Reichhaltig und fettig; kann Durchfall verursachen.
-meta_title: Dürfen Hunde Cashewbutter essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Cashewbutter für Hunde und Katzen geeignet? Für Hunde und Katzen ist sie nur eingeschränkt geeignet. Erfahren Sie Symptome, was Sie tun sollten, und tierärztlich empfohlene Alternativen.
+meta_title: 'Dürfen Hunde Cashewbutter essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Cashewbutter für Hunde und Katzen geeignet? Für Hunde und Katzen ist sie
+  nur eingeschränkt geeignet. Erfahren Sie Symptome, was Sie tun sollten, und
+  tierärztlich empfohlene Alternativen.
 ---
-
 # Cashewbutter
 
 Naturbelassene Cashewbutter ist für Hunde in sehr kleinen Mengen in der Regel unbedenklich. Sie ist kalorienreich, daher nur sparsam verwenden. Überprüfen Sie das Etikett auf Xylit und andere ungeeignete Zusatzstoffe.

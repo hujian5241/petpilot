@@ -18,7 +18,9 @@ safety:
   dogs:
     status: toxic
     severity: high
-    summary: Contains tropane alkaloids that cause hallucinations, seizures, and life-threatening heart effects.
+    summary: >-
+      Contains tropane alkaloids that cause hallucinations, seizures, and
+      life-threatening heart effects.
   cats:
     status: toxic
     severity: high
@@ -38,22 +40,23 @@ alternatives:
   - white-clover
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: MSD Veterinary Manual — Toxicology
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Cats
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Dogs
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
 meta_title: Jimsonweed and Pets — Safety Guide | PetPilot
-meta_description: Jimsonweed is a toxic weed that affects the heart and nervous system in pets. Learn symptoms and emergency treatment.
+meta_description: >-
+  Jimsonweed is a toxic weed that affects the heart and nervous system in pets.
+  Learn symptoms and emergency treatment.
 ---
-
 # Jimsonweed
 
 Jimsonweed is a foul-smelling annual weed with large white or purple trumpet-shaped flowers and spiny seed pods. All parts contain tropane alkaloids that disrupt the nervous system and heart.

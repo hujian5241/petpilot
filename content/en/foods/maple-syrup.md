@@ -13,7 +13,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but very high in sugar.
+    summary: 'Not toxic, but very high in sugar.'
   cats:
     status: limited
     severity: low
@@ -29,11 +29,11 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid maple syrup. If offered accidentally, ensure no xylitol.
+preparation_notes: 'Avoid maple syrup. If offered accidentally, ensure no xylitol.'
 safe_amount: Avoid.
 frequency: Avoid.
 condition_warnings:
@@ -61,10 +61,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High sugar can cause diarrhea.
-meta_title: Can Dogs Eat Maple Syrup? Safety, Risks & Vet Advice
-meta_description: Is Maple Syrup safe for dogs and cats? Maple Syrup is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Maple Syrup? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Maple Syrup safe for dogs and cats? Maple Syrup is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Maple Syrup
 
 Maple syrup is not toxic to pets, but it is concentrated sugar with no nutritional benefit. It can cause weight gain, dental problems, and digestive upset.

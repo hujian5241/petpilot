@@ -27,7 +27,7 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -47,10 +47,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit residue can contribute to plaque.
-meta_title: Can Dogs Eat Cantaloupe? Safety, Risks & Vet Advice
-meta_description: Is Cantaloupe safe for dogs and cats? Cantaloupe is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cantaloupe? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cantaloupe safe for dogs and cats? Cantaloupe is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cantaloupe
 
 Cantaloupe is safe for dogs in moderation. It is low in calories and high in water content, making it a refreshing treat.

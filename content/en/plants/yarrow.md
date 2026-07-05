@@ -18,7 +18,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: May cause vomiting, diarrhea, or skin irritation in sensitive dogs.
+    summary: 'May cause vomiting, diarrhea, or skin irritation in sensitive dogs.'
   cats:
     status: limited
     severity: low
@@ -34,16 +34,17 @@ alternatives:
   - dandelion
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Yarrow and Pets — Safety Guide | PetPilot
-meta_description: Yarrow is limited risk for pets. Learn symptoms of yarrow sensitivity and safer native wildflowers.
+meta_description: >-
+  Yarrow is limited risk for pets. Learn symptoms of yarrow sensitivity and
+  safer native wildflowers.
 ---
-
 # Yarrow
 
 Yarrow is a hardy perennial with fern-like leaves and flat flower clusters. It is used in herbal medicine but can irritate some pets.

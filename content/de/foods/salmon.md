@@ -18,28 +18,37 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Sicher, wenn vollständig schonend gekocht und entgrätet. Hervorragende Quelle für Omega-3-Fettsäuren.
+    summary: >-
+      Sicher, wenn vollständig schonend gekocht und entgrätet. Hervorragende
+      Quelle für Omega-3-Fettsäuren.
   cats:
     status: safe
-    summary: Sicher, wenn vollständig schonend gekocht und entgrätet. Hervorragende Quelle für Omega-3-Fettsäuren.
+    summary: >-
+      Sicher, wenn vollständig schonend gekocht und entgrätet. Hervorragende
+      Quelle für Omega-3-Fettsäuren.
 symptoms:
   - Erbrechen
   - Durchfall
   - Lachsvergiftung
-what_to_do: Wenn roher oder nicht durchgegarter Lachs gefressen wurde, kontaktieren Sie umgehend Ihren Tierarzt. Pazifischer Lachs kann einen Parasiten übertragen, der die Lachsvergiftung (Salmon Poisoning Disease) verursacht.
+what_to_do: >-
+  Wenn roher oder nicht durchgegarter Lachs gefressen wurde, kontaktieren Sie
+  umgehend Ihren Tierarzt. Pazifischer Lachs kann einen Parasiten übertragen,
+  der die Lachsvergiftung (Salmon Poisoning Disease) verursacht.
 alternatives:
   - whitefish
   - sardines
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-salmon/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-salmon/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Gründlich garen, alle Gräten entfernen und auf Öl, Butter, Salz, Knoblauch und Gewürze verzichten.
+preparation_notes: >-
+  Gründlich garen, alle Gräten entfernen und auf Öl, Butter, Salz, Knoblauch und
+  Gewürze verzichten.
 safe_amount: Kleine Stücke gelegentlich als Leckerli.
 frequency: Gelegentlich.
 related_foods:
@@ -55,7 +64,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung normalerweise eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung
+      normalerweise eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -92,10 +103,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Fettgehalt kann einen empfindlichen Magen-Darm-Trakt reizen.
-meta_title: Dürfen Hunde Lachs essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Lachs für Hunde und Katzen sicher? Lachs ist für Hunde und Katzen sicher. Erfahren Sie mehr über Symptome, was zu tun ist, und tierärztlich empfohlene Alternativen.
+meta_title: 'Dürfen Hunde Lachs essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Lachs für Hunde und Katzen sicher? Lachs ist für Hunde und Katzen sicher.
+  Erfahren Sie mehr über Symptome, was zu tun ist, und tierärztlich empfohlene
+  Alternativen.
 ---
-
 # Lachs
 
 Schlicht gekochter Lachs ist eine gesunde Proteinquelle, reich an Omega-3-Fettsäuren, die Haut, Fell und Gelenke unterstützen. Er sollte immer gut durchgegart und entgrätet sein, bevor Sie ihn füttern.

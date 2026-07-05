@@ -13,7 +13,7 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe when only the root is fed. The vine, seeds, and skin can be toxic.
+    summary: 'Safe when only the root is fed. The vine, seeds, and skin can be toxic.'
   cats:
     status: safe
     summary: Safe in tiny amounts of peeled root only.
@@ -27,9 +27,9 @@ alternatives:
   - green-beans
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber may aggravate some IBD cases.
-meta_title: Can Dogs Eat Jicama? Safety, Risks & Vet Advice
-meta_description: Is Jicama safe for dogs and cats? Jicama is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Jicama? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Jicama safe for dogs and cats? Jicama is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Jicama
 
 Jicama root is a crunchy, low-calorie vegetable that is safe for dogs when peeled and cut into small pieces. The skin, vines, and seeds of the jicama plant contain toxins and must be removed.

@@ -17,7 +17,9 @@ safety:
   dogs:
     status: toxic
     severity: moderate
-    summary: Contains cardenolides that can cause vomiting, weakness, and seizures in dogs.
+    summary: >-
+      Contains cardenolides that can cause vomiting, weakness, and seizures in
+      dogs.
   cats:
     status: toxic
     severity: moderate
@@ -29,7 +31,9 @@ symptoms:
   - weakness
   - difficulty breathing
   - seizures
-what_to_do: Contact your veterinarian, especially if large amounts were eaten or neurological signs develop.
+what_to_do: >-
+  Contact your veterinarian, especially if large amounts were eaten or
+  neurological signs develop.
 alternatives:
   - sunflowers
   - zinnias
@@ -37,21 +41,23 @@ alternatives:
   - black-eyed-susan
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/milkweed
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/milkweed
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/milkweed/
+    url: 'https://www.petpoisonhelpline.com/poison/milkweed/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Milkweed Toxicity in Pets
-meta_description: Milkweed is toxic to dogs and cats. Learn symptoms, what to do, and pollinator-friendly pet-safe flowers for your garden.
+meta_description: >-
+  Milkweed is toxic to dogs and cats. Learn symptoms, what to do, and
+  pollinator-friendly pet-safe flowers for your garden.
 symptoms_severity:
   - symptom: difficulty breathing
     severity: high
   - symptom: seizures
     severity: high
 ---
-
 # Milkweed
 
 Milkweed is vital for monarch butterflies but problematic for pets. The plant contains cardenolides, compounds that affect the heart and nervous system. Native species vary in toxicity, so it is safest to limit pet access to milkweed patches.

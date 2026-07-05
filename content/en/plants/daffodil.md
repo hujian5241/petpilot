@@ -17,11 +17,13 @@ safety:
   dogs:
     status: toxic
     severity: moderate
-    summary: Bulbs contain the highest toxin levels and can cause severe vomiting and heart effects.
+    summary: >-
+      Bulbs contain the highest toxin levels and can cause severe vomiting and
+      heart effects.
   cats:
     status: toxic
     severity: moderate
-    summary: Can cause vomiting, diarrhea, drooling, and tremors.
+    summary: 'Can cause vomiting, diarrhea, drooling, and tremors.'
 symptoms:
   - vomiting
   - diarrhea
@@ -29,32 +31,36 @@ symptoms:
   - abdominal pain
   - tremors
   - irregular heartbeat
-what_to_do: Contact a veterinarian, especially if bulbs were eaten. Seek emergency care for tremors or heart rhythm changes.
+what_to_do: >-
+  Contact a veterinarian, especially if bulbs were eaten. Seek emergency care
+  for tremors or heart rhythm changes.
 alternatives:
   - phalaenopsis-orchid
   - african-violet
   - christmas-cactus
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/daffodil
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/daffodil
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/daffodil/
+    url: 'https://www.petpoisonhelpline.com/poison/daffodil/'
   - name: MSD Veterinary Manual — Toxicology
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Cats
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Dogs
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Daffodil and Pet Safety — Toxic Bulbs | PetPilot
-meta_description: Daffodils are toxic to pets, especially the bulbs. Learn symptoms, emergency signs, and safe alternatives.
+meta_description: >-
+  Daffodils are toxic to pets, especially the bulbs. Learn symptoms, emergency
+  signs, and safe alternatives.
 related_plants:
   - tulip
   - hyacinth
 ---
-
 # Daffodil
 
 Daffodils are cheerful spring flowers often forced indoors in pots. They contain alkaloids and calcium oxalate crystals that irritate the digestive tract and can affect the heart and nervous system if large amounts, especially bulbs, are consumed.

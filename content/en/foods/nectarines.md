@@ -27,13 +27,13 @@ alternatives:
   - peaches
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: Remove pit, stem, and leaves.
+preparation_notes: 'Remove pit, stem, and leaves.'
 safe_amount: A small slice.
 frequency: Rare treat.
 condition_warnings:
@@ -55,10 +55,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit can contribute to dental plaque.
-meta_title: Can Dogs Eat Nectarines? Safety, Risks & Vet Advice
-meta_description: Is Nectarines safe for dogs and cats? Nectarines is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Nectarines? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Nectarines safe for dogs and cats? Nectarines is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Nectarines
 
 Nectarine flesh is generally safe for dogs, but the pit contains cyanide and is a choking risk.

@@ -29,16 +29,15 @@ alternatives:
   - lambs-quarters
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: ヒコウキソウとペット — 安全性ガイド | PetPilot
 meta_description: ヒコウキソウは犬と猫に安全です。食べられる芝生の雑草について、ペットに安全に与える方法をご紹介します。
 ---
-
 # ヒコウキソウ
 
 ヒコウキソウは、涼しい季節に生育する一年草で、小さな白い星形の花を咲かせます。ペットに安全で、鶏やウサギ、草を食べる犬にもよく喜ばれます。

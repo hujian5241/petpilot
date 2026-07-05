@@ -7,7 +7,6 @@ aliases:
   - ox liver
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - vitamin-a
@@ -26,16 +25,18 @@ symptoms:
   - diarrhea
   - bone spurs
   - lethargy
-what_to_do: If large amounts are consumed repeatedly, contact your vet. Vitamin A toxicity can be cumulative.
+what_to_do: >-
+  If large amounts are consumed repeatedly, contact your vet. Vitamin A toxicity
+  can be cumulative.
 alternatives:
   - beef
   - chicken-breast
   - turkey
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-liver/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-liver/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -60,7 +61,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High phosphorus, vitamin A, and protein are not suitable for failing kidneys.
+    reason: >-
+      High phosphorus, vitamin A, and protein are not suitable for failing
+      kidneys.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -91,10 +94,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Richness can lead to diarrhea or vomiting.
-meta_title: Can Dogs Eat Beef Liver? Safety, Risks & Vet Advice
-meta_description: Is Beef Liver safe for dogs and cats? Beef Liver is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Beef Liver? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Beef Liver safe for dogs and cats? Beef Liver is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Beef Liver
 
 Beef liver is highly nutritious, providing vitamin A, iron, copper, and B vitamins. However, its richness means it should be fed only in small amounts.

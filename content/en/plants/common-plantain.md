@@ -29,16 +29,17 @@ alternatives:
   - chickweed
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Common Plantain and Pets — Safety Guide | PetPilot
-meta_description: Common plantain is safe for dogs and cats. Learn why this lawn weed is non-toxic and how to identify it.
+meta_description: >-
+  Common plantain is safe for dogs and cats. Learn why this lawn weed is
+  non-toxic and how to identify it.
 ---
-
 # Common Plantain
 
 Common plantain is a low-growing weed with broad ribbed leaves. It is safe for dogs and cats and is sometimes included in herbal remedies.

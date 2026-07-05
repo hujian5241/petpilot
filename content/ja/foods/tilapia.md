@@ -29,9 +29,9 @@ alternatives:
   - salmon
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-fish/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-fish/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -57,7 +57,6 @@ condition_warnings:
 meta_title: 犬はティラピアを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ティラピアは犬や猫に安全？犬にも猫にも安全です。症状、対処法、獣医師が推奨する代替食材をご紹介します。
 ---
-
 # ティラピア
 
 ティラピアはマイルドで低脂質の白身魚で、犬や猫に一般的に良く受け入れられます。胃腸が弱いペットや、脂質の少ないタンパク質を必要とするペットに適した選択肢です。

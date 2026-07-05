@@ -1,4 +1,11 @@
-import type { FoodEntry, PlantEntry, SearchIndexItem } from "./types"
+import type {
+  FoodEntry,
+  HouseholdChemicalEntry,
+  MedicationEntry,
+  PesticideEntry,
+  PlantEntry,
+  SearchIndexItem,
+} from "./types"
 
 export function buildFoodSearchIndex(foods: FoodEntry[]): SearchIndexItem[] {
   return foods.map((food) => ({
@@ -26,6 +33,59 @@ export function buildPlantSearchIndex(plants: PlantEntry[]): SearchIndexItem[] {
   }))
 }
 
-export function buildSearchIndex(foods: FoodEntry[], plants: PlantEntry[] = []): SearchIndexItem[] {
-  return [...buildFoodSearchIndex(foods), ...buildPlantSearchIndex(plants)]
+export function buildMedicationSearchIndex(medications: MedicationEntry[]): SearchIndexItem[] {
+  return medications.map((medication) => ({
+    slug: medication.slug,
+    name: medication.name,
+    aliases: medication.aliases,
+    categories: medication.categories,
+    summary: medication.safety.dogs.summary,
+    safetyDogs: medication.safety.dogs.status,
+    safetyCats: medication.safety.cats.status,
+    type: "medication" as const,
+  }))
+}
+
+export function buildHouseholdChemicalSearchIndex(
+  chemicals: HouseholdChemicalEntry[]
+): SearchIndexItem[] {
+  return chemicals.map((chemical) => ({
+    slug: chemical.slug,
+    name: chemical.name,
+    aliases: chemical.aliases,
+    categories: chemical.categories,
+    summary: chemical.safety.dogs.summary,
+    safetyDogs: chemical.safety.dogs.status,
+    safetyCats: chemical.safety.cats.status,
+    type: "household-chemical" as const,
+  }))
+}
+
+export function buildPesticideSearchIndex(pesticides: PesticideEntry[]): SearchIndexItem[] {
+  return pesticides.map((pesticide) => ({
+    slug: pesticide.slug,
+    name: pesticide.name,
+    aliases: pesticide.aliases,
+    categories: pesticide.categories,
+    summary: pesticide.safety.dogs.summary,
+    safetyDogs: pesticide.safety.dogs.status,
+    safetyCats: pesticide.safety.cats.status,
+    type: "pesticide" as const,
+  }))
+}
+
+export function buildSearchIndex(
+  foods: FoodEntry[] = [],
+  plants: PlantEntry[] = [],
+  medications: MedicationEntry[] = [],
+  householdChemicals: HouseholdChemicalEntry[] = [],
+  pesticides: PesticideEntry[] = []
+): SearchIndexItem[] {
+  return [
+    ...buildFoodSearchIndex(foods),
+    ...buildPlantSearchIndex(plants),
+    ...buildMedicationSearchIndex(medications),
+    ...buildHouseholdChemicalSearchIndex(householdChemicals),
+    ...buildPesticideSearchIndex(pesticides),
+  ]
 }

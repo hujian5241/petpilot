@@ -22,16 +22,18 @@ safety:
 symptoms:
   - gas
   - bloating
-what_to_do: No action for a small piece of baked bread. Seek emergency care if raw dough was eaten.
+what_to_do: >-
+  No action for a small piece of baked bread. Seek emergency care if raw dough
+  was eaten.
 alternatives:
   - plain-bread
   - whole-wheat-bread
   - plain-pasta
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -61,10 +63,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Wheat ingredients are common allergens; reactions are individual.
-meta_title: Can Dogs Eat Sourdough Bread? Safety, Risks & Vet Advice
-meta_description: Is Sourdough Bread safe for dogs and cats? Sourdough Bread is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sourdough Bread? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sourdough Bread safe for dogs and cats? Sourdough Bread is safe for dogs
+  and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sourdough Bread
 
 A small piece of plain, fully baked sourdough bread is generally safe for dogs. The fermentation process and acidity of sourdough are not a concern once the bread is baked and cooled. The main danger, as with any bread, is raw dough.

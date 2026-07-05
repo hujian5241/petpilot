@@ -15,7 +15,9 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe in moderation when plain and unsweetened. Higher protein than regular yogurt.
+    summary: >-
+      Safe in moderation when plain and unsweetened. Higher protein than regular
+      yogurt.
   cats:
     status: safe
     summary: Safe in small amounts when plain and unsweetened.
@@ -29,14 +31,16 @@ alternatives:
   - cottage-cheese
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose plain, unsweetened Greek yogurt. Avoid flavored or sweetened varieties.
-safe_amount: A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for cats.
+preparation_notes: 'Choose plain, unsweetened Greek yogurt. Avoid flavored or sweetened varieties.'
+safe_amount: >-
+  A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for
+  cats.
 frequency: A few times per week.
 related_foods:
   - plain-yogurt
@@ -48,13 +52,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Lower in lactose than regular yogurt but may still upset lactose-intolerant pets.
+    reason: >-
+      Lower in lactose than regular yogurt but may still upset
+      lactose-intolerant pets.
   - condition: Obesity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Calorie-dense, especially full-fat varieties.
+    reason: 'Calorie-dense, especially full-fat varieties.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
@@ -73,10 +79,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: Dairy is a common allergen.
-meta_title: Can Dogs Eat Greek Yogurt? Safety, Risks & Vet Advice
-meta_description: Is Greek Yogurt safe for dogs and cats? Greek Yogurt is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Greek Yogurt? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Greek Yogurt safe for dogs and cats? Greek Yogurt is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Greek Yogurt
 
 Greek yogurt is a higher-protein, lower-lactose option compared to regular yogurt. When plain and unsweetened, it is generally safe for dogs and cats in small amounts. The thicker texture makes it a popular food topper or pill hider.

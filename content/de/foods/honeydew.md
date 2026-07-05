@@ -27,7 +27,7 @@ alternatives:
   - watermelon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,11 +52,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Wasser- und Ballaststoffgehalt kann bei größeren Mengen Durchfall verursachen.
-meta_title: Dürfen Hunde Honigmelone essen? Sicherheit, Risiken und Tierarzt-Rat
-meta_description: Ist Honigmelone für Hunde und Katzen sicher? Honigmelone ist für Hunde und Katzen unbedenklich. Erfahren Sie mehr zu Symptomen, was zu tun ist und tierarztgeprüften Alternativen.
+    reason: >-
+      Hoher Wasser- und Ballaststoffgehalt kann bei größeren Mengen Durchfall
+      verursachen.
+meta_title: 'Dürfen Hunde Honigmelone essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Ist Honigmelone für Hunde und Katzen sicher? Honigmelone ist für Hunde und
+  Katzen unbedenklich. Erfahren Sie mehr zu Symptomen, was zu tun ist und
+  tierarztgeprüften Alternativen.
 ---
-
 # Honigmelone
 
 Honigmelone ist für Hunde in kleinen Mengen unbedenklich. Entfernen Sie vor dem Servieren Schale und Kerne.

@@ -18,7 +18,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Mildly toxic in large amounts; can cause vomiting, diarrhea, and skin irritation.
+    summary: >-
+      Mildly toxic in large amounts; can cause vomiting, diarrhea, and skin
+      irritation.
   cats:
     status: limited
     severity: low
@@ -35,16 +37,17 @@ alternatives:
   - catnip
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Chamomile and Pets — Safety Guide | PetPilot
-meta_description: Chamomile is limited risk for dogs and cats. Learn symptoms of chamomile sensitivity and safer herb choices.
+meta_description: >-
+  Chamomile is limited risk for dogs and cats. Learn symptoms of chamomile
+  sensitivity and safer herb choices.
 ---
-
 # Chamomile
 
 Chamomile is a calming herb for humans, but concentrated amounts can irritate pets. The fresh plant is generally low risk unless a pet eats a large quantity.

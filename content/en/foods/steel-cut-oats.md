@@ -28,14 +28,16 @@ alternatives:
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until very soft. Do not add salt, sugar, butter, or milk.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for cats.
+preparation_notes: 'Cook until very soft. Do not add salt, sugar, butter, or milk.'
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for
+  cats.
 frequency: Occasionally.
 related_foods:
   - rolled-oats
@@ -65,10 +67,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Steel-Cut Oats? Safety, Risks & Vet Advice
-meta_description: Is Steel-Cut Oats safe for dogs and cats? Steel-Cut Oats is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Steel-Cut Oats? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Steel-Cut Oats safe for dogs and cats? Steel-Cut Oats is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Steel-Cut Oats
 
 Steel-cut oats are minimally processed oat groats chopped into pieces. They retain more fiber and a chewier texture than rolled oats. Dogs can eat them safely as long as they are cooked until soft; undercooked steel-cut oats may be hard to digest and can cause stomach upset.

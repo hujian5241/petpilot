@@ -29,16 +29,17 @@ alternatives:
   - dandelion
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Creeping Thyme and Pets — Safety Guide | PetPilot
-meta_description: Creeping thyme is safe for dogs and cats. Learn why this fragrant ground cover is a pet-friendly lawn alternative.
+meta_description: >-
+  Creeping thyme is safe for dogs and cats. Learn why this fragrant ground cover
+  is a pet-friendly lawn alternative.
 ---
-
 # Creeping Thyme
 
 Creeping thyme is a low, aromatic herb that forms dense mats. It is safe for pets and can be used as a fragrant, drought-tolerant lawn alternative.

@@ -27,7 +27,7 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -53,10 +53,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Fiber content may aggravate IBD in some animals.
-meta_title: Can Dogs Eat Pears? Safety, Risks & Vet Advice
-meta_description: Is Pears safe for dogs and cats? Pears is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pears? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pears safe for dogs and cats? Pears is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pears
 
 Pears are safe for dogs when seeds and core are removed. They provide fiber and vitamins.

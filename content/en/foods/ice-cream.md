@@ -24,18 +24,22 @@ symptoms:
   - vomiting
   - gas
   - weight-gain
-what_to_do: Stop feeding ice cream if digestive upset occurs. Contact your vet if symptoms persist.
+what_to_do: >-
+  Stop feeding ice cream if digestive upset occurs. Contact your vet if symptoms
+  persist.
 alternatives:
   - plain-yogurt
   - blueberries
   - pumpkin
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Consider dog-safe frozen treats instead. Avoid chocolate, xylitol, and artificial sweeteners.
+preparation_notes: >-
+  Consider dog-safe frozen treats instead. Avoid chocolate, xylitol, and
+  artificial sweeteners.
 safe_amount: A tiny lick very occasionally.
 frequency: Rarely.
 condition_warnings:
@@ -74,17 +78,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Dairy, sugar, and fat commonly cause upset.
+    reason: 'Dairy, sugar, and fat commonly cause upset.'
   - condition: Dental disease
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Sugary residue promotes dental disease.
-meta_title: Can Dogs Eat Ice Cream? Safety, Risks & Vet Advice
-meta_description: Is Ice Cream safe for dogs and cats? Ice Cream is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Ice Cream? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Ice Cream safe for dogs and cats? Ice Cream is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Ice Cream
 
 Ice cream is not toxic to most dogs, but many are lactose intolerant. The sugar and fat content can cause digestive upset and weight gain. Some ice creams contain xylitol or chocolate.

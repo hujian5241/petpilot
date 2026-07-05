@@ -13,11 +13,11 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but unhealthy and can cause weight gain and dental issues.
+    summary: 'Not toxic, but unhealthy and can cause weight gain and dental issues.'
   cats:
     status: limited
     severity: low
-    summary: Not toxic, but not recommended.
+    summary: 'Not toxic, but not recommended.'
 symptoms:
   - weight-gain
   - dental-decay
@@ -30,7 +30,7 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -56,10 +56,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: Sugars feed oral bacteria and contribute to dental disease.
-meta_title: Can Dogs Eat Sugar? Safety, Risks & Vet Advice
-meta_description: Is Sugar safe for dogs and cats? Sugar is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sugar? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sugar safe for dogs and cats? Sugar is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sugar
 
 Plain sugar is not toxic to pets, but it provides empty calories and can contribute to obesity, dental disease, and diabetes. Sugary foods often contain other dangerous ingredients.

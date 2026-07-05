@@ -28,13 +28,13 @@ alternatives:
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -49,11 +49,14 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Even in small culinary amounts, some pets may experience mild stomach upset.
-meta_title: Can Dogs Eat Coriander? Safety, Risks & Vet Advice
-meta_description: Is Coriander safe for dogs and cats? Coriander is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      Even in small culinary amounts, some pets may experience mild stomach
+      upset.
+meta_title: 'Can Dogs Eat Coriander? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Coriander safe for dogs and cats? Coriander is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Coriander
 
 Coriander, including both the leafy cilantro form and the dried seeds, is safe for dogs and cats in small amounts. It is often used in curries and salsas, but those dishes usually contain onion, garlic, and chili, which are not safe. Always feed coriander plain and in tiny portions.

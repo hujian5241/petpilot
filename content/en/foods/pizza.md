@@ -18,30 +18,36 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Plain crust and cheese in small amounts are usually safe, but sauce often contains garlic and onion.
+    summary: >-
+      Plain crust and cheese in small amounts are usually safe, but sauce often
+      contains garlic and onion.
   cats:
     status: limited
     severity: moderate
-    summary: Cheese and crust can upset a cat's stomach; tomato sauce may contain toxic seasonings.
+    summary: >-
+      Cheese and crust can upset a cat's stomach; tomato sauce may contain toxic
+      seasonings.
 symptoms:
   - vomiting
   - diarrhea
   - gas
   - pancreatitis risk
-what_to_do: If a large amount of pizza with garlic or onion was eaten, contact a vet or poison helpline.
+what_to_do: >-
+  If a large amount of pizza with garlic or onion was eaten, contact a vet or
+  poison helpline.
 alternatives:
   - chicken-breast
   - brown-rice
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -91,11 +97,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Garlic, onion, herbs, and dairy can irritate sensitive stomachs.
-meta_title: Can Dogs Eat Pizza? Safety, Risks & Vet Advice
-meta_description: Is Pizza safe for dogs and cats? Pizza is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Garlic, onion, herbs, and dairy can irritate sensitive stomachs.'
+meta_title: 'Can Dogs Eat Pizza? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pizza safe for dogs and cats? Pizza is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pizza
 
 Pizza combines several ingredients that range from safe to dangerous for pets. A tiny piece of plain crust is usually harmless, but cheese can cause digestive upset in lactose-intolerant animals. The real concern is the tomato sauce, which commonly contains garlic, onion, salt, and herbs. Pepperoni and sausage add high fat and salt. If your pet eats more than a small bite, especially with toppings, call your vet.

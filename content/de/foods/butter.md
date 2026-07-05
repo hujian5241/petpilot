@@ -16,31 +16,42 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber sehr fettreich. Kann eine Bauchspeicheldrüsenentzündung verursachen.
+    summary: >-
+      Nicht giftig, aber sehr fettreich. Kann eine Bauchspeicheldrüsenentzündung
+      verursachen.
   cats:
     status: limited
     severity: low
-    summary: Der hohe Fettgehalt kann Verdauungsbeschwerden und Bauchspeicheldrüsenentzündung verursachen.
+    summary: >-
+      Der hohe Fettgehalt kann Verdauungsbeschwerden und
+      Bauchspeicheldrüsenentzündung verursachen.
 symptoms:
   - Durchfall
   - Erbrechen
   - Risiko einer Bauchspeicheldrüsenentzündung
   - Risiko von Übergewicht
-what_to_do: Beobachten Sie Ihr Tier. Kontaktieren Sie einen Tierarzt, wenn größere Mengen aufgenommen wurden oder wenn Erbrechen, Lethargie oder Bauchschmerzen auftreten.
+what_to_do: >-
+  Beobachten Sie Ihr Tier. Kontaktieren Sie einen Tierarzt, wenn größere Mengen
+  aufgenommen wurden oder wenn Erbrechen, Lethargie oder Bauchschmerzen
+  auftreten.
 alternatives:
   - plain-yogurt
   - cottage-cheese
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Vermeiden Sie es, Butter zu füttern. Wenn ein kleine Menge versehentlich aufgenommen wurde, beobachten Sie Ihr Tier auf Erbrechen oder Durchfall.
-safe_amount: Am besten ist keine Menge. Ein kleiner Leck ist für ein gesundes Haustier wahrscheinlich ungefährlich.
+preparation_notes: >-
+  Vermeiden Sie es, Butter zu füttern. Wenn ein kleine Menge versehentlich
+  aufgenommen wurde, beobachten Sie Ihr Tier auf Erbrechen oder Durchfall.
+safe_amount: >-
+  Am besten ist keine Menge. Ein kleiner Leck ist für ein gesundes Haustier
+  wahrscheinlich ungefährlich.
 frequency: Selten oder nie.
 related_foods:
   - cream
@@ -52,7 +63,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Fast reines gesättigtes Fett; hohes Risiko einer Bauchspeicheldrüsenentzündung.
+    reason: >-
+      Fast reines gesättigtes Fett; hohes Risiko einer
+      Bauchspeicheldrüsenentzündung.
   - condition: Hyperlipidämie
     appliesTo:
       - dogs
@@ -95,10 +108,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hohe Fettaufnahme belastet eine geschwächte Leber.
-meta_title: Dürfen Hunde Butter essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Butter sicher für Hunde und Katzen? Butter ist für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Butter essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Butter sicher für Hunde und Katzen? Butter ist für Hunde und Katzen nur
+  eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Butter
 
 Butter ist für Hunde und Katzen nicht giftig, aber sie besteht fast vollständig aus Fett. Der Verzehr von Butter kann Erbrechen, Durchfall und in manchen Fällen eine Bauchspeicheldrüsenentzündung (Pankreatitis) verursachen – eine schmerzhafte und potenziell schwerwiegende Entzündung der Bauchspeicheldrüse.

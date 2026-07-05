@@ -23,20 +23,24 @@ symptoms:
   - vomiting
   - diarrhea
   - salmon-poisoning
-what_to_do: If raw or undercooked salmon was eaten, contact your vet immediately. Pacific salmon can carry a parasite causing salmon poisoning disease.
+what_to_do: >-
+  If raw or undercooked salmon was eaten, contact your vet immediately. Pacific
+  salmon can carry a parasite causing salmon poisoning disease.
 alternatives:
   - whitefish
   - sardines
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-salmon/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-salmon/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook thoroughly, remove all bones, and avoid oil, butter, salt, garlic, and seasonings.
+preparation_notes: >-
+  Cook thoroughly, remove all bones, and avoid oil, butter, salt, garlic, and
+  seasonings.
 safe_amount: Small pieces as an occasional treat.
 frequency: Occasional.
 related_foods:
@@ -52,7 +56,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -89,10 +95,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Salmon? Safety, Risks & Vet Advice
-meta_description: Is Salmon safe for dogs and cats? Salmon is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Salmon? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Salmon safe for dogs and cats? Salmon is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Salmon
 
 Plain, cooked salmon is a healthy protein source rich in omega-3 fatty acids, which support skin, coat, and joint health. It should always be fully cooked and deboned before feeding.

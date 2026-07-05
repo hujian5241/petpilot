@@ -31,16 +31,17 @@ alternatives:
   - white-clover
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Mint and Pets — Safety Guide | PetPilot
-meta_description: Mint is safe for dogs and cats in small amounts. Learn about fresh mint versus concentrated mint oil safety.
+meta_description: >-
+  Mint is safe for dogs and cats in small amounts. Learn about fresh mint versus
+  concentrated mint oil safety.
 ---
-
 # Mint
 
 Mint is a fragrant perennial herb that is safe for pets in moderation. Peppermint and spearmint are the most common garden varieties.

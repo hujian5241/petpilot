@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#ef4444"/>
+  <circle cx="200" cy="120" r="80" fill="white" fill-opacity="0.12"/>
+  
+      <svg x="170" y="90" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 5v16"/>
+        <path d="M9 5H6.5a2.5 2.5 0 0 0 0 5H9V5Z"/>
+        <path d="M9 5h4.5a2.5 2.5 0 0 1 0 5H9V5Z"/>
+        <path d="M9 14h6"/>
+        <path d="M9 18h6"/>
+      </svg>
+  <text x="200" y="190" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700" fill="white">Glass Cleaner</text>
+  <text x="200" y="225" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="white" fill-opacity="0.9">Pet Chemical Guide</text>
+  <text x="200" y="260" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="white" fill-opacity="0.75">PetPilot.com</text>
+</svg>

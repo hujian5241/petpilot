@@ -17,30 +17,36 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Ein kleines Stück ungewürztes Fleisch kann sicher sein, aber Sandwiches enthalten oft ungeeignete Zutaten.
+    summary: >-
+      Ein kleines Stück ungewürztes Fleisch kann sicher sein, aber Sandwiches
+      enthalten oft ungeeignete Zutaten.
   cats:
     status: limited
     severity: low
-    summary: Un gewürztes, gekochtes Fleisch ist sicher, aber Brot, Soßen und Beläge sind nicht ideal.
+    summary: >-
+      Un gewürztes, gekochtes Fleisch ist sicher, aber Brot, Soßen und Beläge
+      sind nicht ideal.
 symptoms:
   - Erbrechen
   - Durchfall
   - Blähungen
   - Risiko einer Pankreatitis
-what_to_do: Überprüfen Sie die Zutaten. Kontaktieren Sie einen Tierarzt, wenn Zwiebeln, Knoblauch, Trauben, Rosinen oder Xylitol enthalten waren.
+what_to_do: >-
+  Überprüfen Sie die Zutaten. Kontaktieren Sie einen Tierarzt, wenn Zwiebeln,
+  Knoblauch, Trauben, Rosinen oder Xylitol enthalten waren.
 alternatives:
   - chicken-breast
   - turkey
   - brown-rice
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -54,7 +60,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hohe Natriumlast kann Bluthochdruck und Flüssigkeitsbilanz bei chronischer Niereninsuffizienz verschlechtern.
+    reason: >-
+      Hohe Natriumlast kann Bluthochdruck und Flüssigkeitsbilanz bei chronischer
+      Niereninsuffizienz verschlechtern.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -78,19 +86,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Natriumgehalt kann Bluthochdruck und Wassereinlagerungen verschlimmern.
+    reason: >-
+      Hoher Natriumgehalt kann Bluthochdruck und Wassereinlagerungen
+      verschlimmern.
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Gewürze, Fett und Zusatzstoffe können den Magen-Darm-Trakt bei IBD reizen.
+    reason: 'Gewürze, Fett und Zusatzstoffe können den Magen-Darm-Trakt bei IBD reizen.'
   - condition: Erkrankungen der Harnwege/Harnblasensteinen
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Natriumgehalt kann das mineralische Gleichgewicht des Urins verändern.
+    reason: >-
+      Hoher Natriumgehalt kann das mineralische Gleichgewicht des Urins
+      verändern.
   - condition: Hyperlipidämie
     appliesTo:
       - dogs
@@ -102,11 +114,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Fettige oder gewürzte Lebensmittel verursachen häufig Magen-Darm-Beschwerden.
-meta_title: Können Hunde Sandwich essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Sandwich sicher für Hunde und Katzen? Sandwich ist für Hunde limited und für Katzen limited. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+    reason: >-
+      Fettige oder gewürzte Lebensmittel verursachen häufig
+      Magen-Darm-Beschwerden.
+meta_title: 'Können Hunde Sandwich essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Sandwich sicher für Hunde und Katzen? Sandwich ist für Hunde limited und
+  für Katzen limited. Erfahren Sie Symptome, was zu tun ist, und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Sandwich
 
 Sandwiches sind sehr unterschiedlich zusammengesetzt. Ein kleines Stück ungewürztes, gekochtes Puten- oder Hähnchenfleisch kann ein sicherer Leckerbissen sein, aber Sandwiches enthalten meist Brot, Käse, Mayonnaise, Senf, Salat, Tomate, Gurken und manchmal Zwiebeln oder Avocado. Einige Aufschnittwaren enthalten viel Salz und Konservierungsstoffe. Geben Sie nicht das ganze Sandwich, sondern bieten Sie stattdessen ein kleines, ungewürztes Stück der Proteinquelle an.

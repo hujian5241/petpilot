@@ -17,30 +17,36 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Ein kleines Stück eines ungewürzten Hot Dogs ist in der Regel unbedenklich, aber sehr salzig und fettreich.
+    summary: >-
+      Ein kleines Stück eines ungewürzten Hot Dogs ist in der Regel
+      unbedenklich, aber sehr salzig und fettreich.
   cats:
     status: limited
     severity: low
-    summary: Sehr kleine Stücke eines ungewürzten Hot Dogs können für Katzen unbedenklich sein, sind aber nicht gesund.
+    summary: >-
+      Sehr kleine Stücke eines ungewürzten Hot Dogs können für Katzen
+      unbedenklich sein, sind aber nicht gesund.
 symptoms:
   - Magenbeschwerden
   - Durchfall
   - Pankreatitis-Risiko
   - Salzbelastung
-what_to_do: Beobachten Sie Verdauungsbeschwerden. Meiden Sie den Hot Dog, wenn er Knoblauch, Zwiebel oder Xylit enthält.
+what_to_do: >-
+  Beobachten Sie Verdauungsbeschwerden. Meiden Sie den Hot Dog, wenn er
+  Knoblauch, Zwiebel oder Xylit enthält.
 alternatives:
   - chicken-breast
   - turkey
   - brown-rice
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -90,11 +96,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Verarbeitete, fettreiche Lebensmittel lösen häufig Schübe aus.
-meta_title: Dürfen Hunde Hot Dog essen? Sicherheit, Risiken & tierärztliche Empfehlung
-meta_description: Ist Hot Dog für Hunde und Katzen geeignet? Hot Dog ist für Hunde limitiert und für Katzen limitiert. Erfahren Sie Symptome, Verhaltenshinweise und tierärztlich geprüfte Alternativen.
+    reason: 'Verarbeitete, fettreiche Lebensmittel lösen häufig Schübe aus.'
+meta_title: 'Dürfen Hunde Hot Dog essen? Sicherheit, Risiken & tierärztliche Empfehlung'
+meta_description: >-
+  Ist Hot Dog für Hunde und Katzen geeignet? Hot Dog ist für Hunde limitiert und
+  für Katzen limitiert. Erfahren Sie Symptome, Verhaltenshinweise und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Hot Dog
 
 Hot Dogs sind ein beliebtes Trainingsleckerli, aber stark verarbeitet und reich an Natrium und Fett. Einige Marken enthalten Knoblauch- oder Zwiebelpulver, und zuckerfreie Varianten können Xylit enthalten. Kleine, gelegentliche Stücke eines ungewürzten, gekochten Hot Dogs sind für

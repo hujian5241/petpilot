@@ -15,27 +15,33 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn schlicht gekocht. Kann den Urin vorübergehend rot färben.
+    summary: >-
+      Unbedenklich, wenn schlicht gekocht. Kann den Urin vorübergehend rot
+      färben.
   cats:
     status: safe
-    summary: In kleinen Mengen unbedenklich, wenn schlicht gekocht.
+    summary: 'In kleinen Mengen unbedenklich, wenn schlicht gekocht.'
 symptoms:
   - Roter Urin
   - Durchfall
-what_to_do: Roter Urin nach Rote Bete ist meist ein harmloses Pigment. Setzen Sie die Fütterung ab, wenn Durchfall auftritt.
+what_to_do: >-
+  Roter Urin nach Rote Bete ist meist ein harmloses Pigment. Setzen Sie die
+  Fütterung ab, wenn Durchfall auftritt.
 alternatives:
   - carrots
   - sweet-potato
   - pumpkin
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Weich kochen und ohne Zusätze servieren. Essig- und salzhaltige Rote Bete aus der Dose vermeiden.
+preparation_notes: >-
+  Weich kochen und ohne Zusätze servieren. Essig- und salzhaltige Rote Bete aus
+  der Dose vermeiden.
 safe_amount: Ein Esslöffel für Hunde; ein Teelöffel für Katzen.
 frequency: Gelegentlich.
 related_foods:
@@ -66,10 +72,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Ballaststoffgehalt kann Magenbeschwerden oder Durchfall verursachen.
-meta_title: Dürfen Hunde Rote Bete essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Rote Bete für Hunde und Katzen unbedenklich? Rote Bete ist für Hunde und Katzen unbedenklich. Erfahren Sie Symptome, was zu tun ist und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Rote Bete essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Rote Bete für Hunde und Katzen unbedenklich? Rote Bete ist für Hunde und
+  Katzen unbedenklich. Erfahren Sie Symptome, was zu tun ist und tierärztlich
+  geprüfte Alternativen.
 ---
-
 # Rote Bete
 
 Rote Bete ist für Hunde unbedenklich, wenn sie schlicht gekocht wird. Sie ist reich an Ballaststoffen und Nährstoffen, kann aber roten oder rosafarbenen Urin und Kot verursachen, was meist harmlos ist. Rohe Rote Bete ist hart und schwer verdaulich, daher wird Kochen empfohlen.

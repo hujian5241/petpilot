@@ -21,18 +21,20 @@ safety:
 symptoms:
   - Erbrechen
   - Durchfall
-what_to_do: Wenn gewürzte oder knöcherne Teile gefressen wurden, kontaktieren Sie Ihren Tierarzt zur Beratung.
+what_to_do: >-
+  Wenn gewürzte oder knöcherne Teile gefressen wurden, kontaktieren Sie Ihren
+  Tierarzt zur Beratung.
 alternatives:
   - chicken-breast
   - whitefish
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Gründlich ohne Gewürze, Öl oder Butter garen. Haut und Knochen entfernen.
+preparation_notes: 'Gründlich ohne Gewürze, Öl oder Butter garen. Haut und Knochen entfernen.'
 safe_amount: Kleine Stücke als Leckerli oder als Topping über das Futter.
 frequency: Gelegentlich.
 related_foods:
@@ -44,17 +46,21 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Protein, die bei chronischer Niereninsuffizienz in der Regel eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Protein, die bei chronischer Niereninsuffizienz in
+      der Regel eingeschränkt werden.
   - condition: Nahrungsmittelallergien
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
     reason: Proteinzutaten sind häufige Allergene; Reaktionen sind individuell.
-meta_title: Dürfen Hunde Putenbrust essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Putenbrust für Hunde und Katzen sicher? Putenbrust ist für Hunde und Katzen sicher. Erfahren Sie Symptome, Verhaltenshinweise und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Putenbrust essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Putenbrust für Hunde und Katzen sicher? Putenbrust ist für Hunde und
+  Katzen sicher. Erfahren Sie Symptome, Verhaltenshinweise und tierarztgeprüfte
+  Alternativen.
 ---
-
 # Putenbrust
 
 Putenbrust ist ein mageres, mildes Protein, das die meisten Haustiere gut verdauen können. Sie eignet sich als schonende Diätergänzung oder fettarme Belohnung, wenn sie schlicht zubereitet wird.

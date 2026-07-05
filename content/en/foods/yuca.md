@@ -32,9 +32,9 @@ alternatives:
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -57,10 +57,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Calorie-dense; excess can contribute to weight gain.
-meta_title: Can Dogs Eat Yuca? Safety, Risks & Vet Advice
-meta_description: Is Yuca safe for dogs and cats? Yuca is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Yuca? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Yuca safe for dogs and cats? Yuca is limited for dogs and limited for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Yuca
 
 Yuca, also called cassava, must be thoroughly cooked and peeled before feeding to dogs. Raw yuca contains cyanogenic glycosides, which can release cyanide and cause serious poisoning. Properly prepared yuca is safe in very small amounts.

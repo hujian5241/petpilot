@@ -17,7 +17,7 @@ safety:
   cats:
     status: safe
     severity: low
-    summary: Safe in tiny amounts, but most cats dislike the texture.
+    summary: 'Safe in tiny amounts, but most cats dislike the texture.'
 symptoms:
   - constipation
   - upset stomach
@@ -28,7 +28,7 @@ alternatives:
   - watermelon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -53,7 +53,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Soft, sugary fruit can stick to teeth.
+    reason: 'Soft, sugary fruit can stick to teeth.'
   - condition: Chronic kidney disease
     appliesTo:
       - dogs
@@ -61,10 +61,11 @@ condition_warnings:
     recommendation: consult_vet
     reason: High potassium may need to be restricted in advanced kidney disease.
     notes: Restriction depends on disease stage and blood potassium levels.
-meta_title: Can Dogs Eat Bananas? Safety, Risks & Vet Advice
-meta_description: Is Bananas safe for dogs and cats? Bananas is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Bananas? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Bananas safe for dogs and cats? Bananas is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Bananas
 
 Bananas are safe for dogs in moderation. They are high in potassium and fiber but also sugar, so they should be an occasional treat.

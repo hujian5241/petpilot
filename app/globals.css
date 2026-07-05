@@ -151,15 +151,15 @@
 }
 
 .prose-pet h1 {
-  @apply text-3xl font-bold tracking-tight text-foreground mb-6;
+  @apply text-3xl font-bold tracking-tight text-foreground mb-5;
 }
 
 .prose-pet h2 {
-  @apply text-2xl font-semibold tracking-tight text-foreground mt-10 mb-4;
+  @apply text-xl font-semibold tracking-tight text-foreground mt-8 mb-3;
 }
 
 .prose-pet h3 {
-  @apply text-xl font-semibold tracking-tight text-foreground mt-8 mb-3;
+  @apply text-lg font-semibold tracking-tight text-foreground mt-6 mb-2;
 }
 
 .prose-pet p {
@@ -167,11 +167,11 @@
 }
 
 .prose-pet ul {
-  @apply list-disc pl-6 mb-4 space-y-2;
+  @apply list-disc pl-5 mb-4 space-y-1.5;
 }
 
 .prose-pet ol {
-  @apply list-decimal pl-6 mb-4 space-y-2;
+  @apply list-decimal pl-5 mb-4 space-y-1.5;
 }
 
 .prose-pet li {

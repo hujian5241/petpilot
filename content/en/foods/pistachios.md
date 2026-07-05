@@ -14,11 +14,11 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Plain, shelled pistachios are not toxic but high in fat.
+    summary: 'Plain, shelled pistachios are not toxic but high in fat.'
   cats:
     status: limited
     severity: low
-    summary: Small amounts may be tolerated, but not recommended.
+    summary: 'Small amounts may be tolerated, but not recommended.'
 symptoms:
   - vomiting
   - diarrhea
@@ -32,13 +32,13 @@ alternatives:
   - peanut-butter
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, unsalted, shelled pistachios. Avoid salted or flavored pistachios.
+preparation_notes: 'Use plain, unsalted, shelled pistachios. Avoid salted or flavored pistachios.'
 safe_amount: One or two shelled pistachios rarely.
 frequency: Rarely.
 condition_warnings:
@@ -78,10 +78,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Tree nuts are a potential allergen.
-meta_title: Can Dogs Eat Pistachios? Safety, Risks & Vet Advice
-meta_description: Is Pistachios safe for dogs and cats? Pistachios is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pistachios? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pistachios safe for dogs and cats? Pistachios is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pistachios
 
 Plain pistachios are not toxic to dogs, but the shells can cause choking or intestinal blockage. Salted pistachios can contribute to sodium toxicity and should be avoided.

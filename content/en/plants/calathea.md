@@ -29,18 +29,20 @@ alternatives:
   - boston-fern
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/calathea
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/calathea
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/calathea/
+    url: 'https://www.petpoisonhelpline.com/poison/calathea/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Calathea and Pet Safety — Pet-Safe Colorful Foliage | PetPilot
-meta_description: Calatheas are non-toxic to dogs and cats and offer colorful, patterned leaves. Learn care tips and alternatives.
+meta_description: >-
+  Calatheas are non-toxic to dogs and cats and offer colorful, patterned leaves.
+  Learn care tips and alternatives.
 related_plants:
   - prayer-plant
 ---
-
 # Calathea
 
 Calatheas are treasured for their stunning patterned leaves in shades of green, pink, purple, and white. Many varieties fold their leaves upward at night, earning them the nickname prayer plants. They are non-toxic to both dogs and cats.

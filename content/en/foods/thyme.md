@@ -28,13 +28,13 @@ alternatives:
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -44,10 +44,11 @@ related_foods:
   - oregano
   - rosemary
 condition_warnings: []
-meta_title: Can Dogs Eat Thyme? Safety, Risks & Vet Advice
-meta_description: Is Thyme safe for dogs and cats? Thyme is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Thyme? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Thyme safe for dogs and cats? Thyme is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Thyme
 
 Thyme is another pet-safe culinary herb. It is unlikely to cause problems when used as a light seasoning. Essential oil of thyme is much more concentrated and can irritate the skin and digestive system, so keep essential oils away from pets. Foods seasoned with thyme are usually fine if they do not also contain harmful ingredients like garlic or onion.

@@ -30,9 +30,9 @@ alternatives:
   - whitefish
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-duck/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-duck/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -70,7 +70,6 @@ condition_warnings:
 meta_title: 犬は鴨を食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: 鴨は犬や猫にとって安全？犬にも安全、猫にも安全です。症状、対処法、獣医師が推奨する代替食材をご紹介します。
 ---
-
 # 鴨
 
 鴨は風味豊かな家禽肉で、食物アレルギーが気になるペット向けのノベルプロテイン（新しいタンパク質源）や限定成分食事療法にしばしば用いられます。素焼きにし、皮と脂肪を取り除けば、安全で栄養価の高い食材です。

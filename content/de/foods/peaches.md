@@ -13,28 +13,36 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Fruchtfleisch ist in kleinen Mengen unbedenklich, der Kern jedoch gefährlich.
+    summary: >-
+      Fruchtfleisch ist in kleinen Mengen unbedenklich, der Kern jedoch
+      gefährlich.
   cats:
     status: limited
     severity: low
-    summary: Fruchtfleisch in kleinen Mengen ist in der Regel unbedenklich; meiden Sie den Kern.
+    summary: >-
+      Fruchtfleisch in kleinen Mengen ist in der Regel unbedenklich; meiden Sie
+      den Kern.
 symptoms:
   - Zyanidvergiftung
   - Erstickungsgefahr
   - Darmverschluss
-what_to_do: Wenn der Kern gekaut oder verschluckt wurde, wenden Sie sich sofort an Ihren Tierarzt. Pfirsichkerne enthalten Zyanid.
+what_to_do: >-
+  Wenn der Kern gekaut oder verschluckt wurde, wenden Sie sich sofort an Ihren
+  Tierarzt. Pfirsichkerne enthalten Zyanid.
 alternatives:
   - apple-slices
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: Entfernen Sie Kern, Stiel und Blätter. Schneiden Sie das Fruchtfleisch in kleine Stücke.
+preparation_notes: >-
+  Entfernen Sie Kern, Stiel und Blätter. Schneiden Sie das Fruchtfleisch in
+  kleine Stücke.
 safe_amount: Ein oder zwei kleine Scheiben für Hunde.
 frequency: Gelegentlicher Leckerbissen.
 lookalikes:
@@ -64,10 +72,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckerhaltiges Obst kann zur Zahnplaquebildung beitragen.
-meta_title: Dürfen Hunde Pfirsiche essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Sind Pfirsiche für Hunde und Katzen sicher? Pfirsiche sind für Hunde und Katzen eingeschränkt geeignet. Erfahren Sie Symptome, Verhaltenshinweise und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Pfirsiche essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Sind Pfirsiche für Hunde und Katzen sicher? Pfirsiche sind für Hunde und
+  Katzen eingeschränkt geeignet. Erfahren Sie Symptome, Verhaltenshinweise und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Pfirsiche
 
 Das Fruchtfleisch von Pfirsichen ist für Hunde in kleinen Mengen in der Regel unbedenklich, der Kern enthält jedoch Zyanid und birgt eine Erstickungsgefahr.

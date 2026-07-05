@@ -29,16 +29,17 @@ alternatives:
   - common-mallow
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Purslane and Pets — Safety Guide | PetPilot
-meta_description: Purslane is safe for dogs and cats. Learn about this succulent weed and how to share it safely.
+meta_description: >-
+  Purslane is safe for dogs and cats. Learn about this succulent weed and how to
+  share it safely.
 ---
-
 # Purslane
 
 Purslane is a low-growing succulent weed with thick reddish stems and small yellow flowers. It is safe for pets and is even valued as an edible green.

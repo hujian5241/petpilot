@@ -26,13 +26,13 @@ alternatives:
   - broccoli
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain, steamed, or raw without salt, butter, oil, or seasonings.
+preparation_notes: 'Serve plain, steamed, or raw without salt, butter, oil, or seasonings.'
 safe_amount: A small handful of chopped green beans for dogs; a few tiny pieces for cats.
 frequency: A few times per week.
 related_foods:
@@ -52,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber may aggravate some IBD flare-ups.
-meta_title: Can Dogs Eat Green Beans? Safety, Risks & Vet Advice
-meta_description: Is Green Beans safe for dogs and cats? Green Beans is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Green Beans? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Green Beans safe for dogs and cats? Green Beans is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Green Beans
 
 Green beans are a healthy, low-calorie vegetable that can be fed to dogs either raw or cooked. They are often recommended by veterinarians as a filler treat for overweight dogs because they provide bulk without many calories. Cats can eat a small amount, but they receive little nutritional benefit.

@@ -7,7 +7,6 @@ aliases:
   - Ochsen-Niere
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - protein
@@ -25,14 +24,16 @@ symptoms:
   - Erbrechen
   - Durchfall
   - Harntraktprobleme
-what_to_do: Wenn Ihr Haustier an Harnsteinen oder Nierenerkrankungen leidet, vermeiden Sie Nierenfleisch und sprechen Sie vor dem Füttern mit Ihrem Tierarzt.
+what_to_do: >-
+  Wenn Ihr Haustier an Harnsteinen oder Nierenerkrankungen leidet, vermeiden Sie
+  Nierenfleisch und sprechen Sie vor dem Füttern mit Ihrem Tierarzt.
 alternatives:
   - beef
   - chicken-breast
   - whitefish
 sources:
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -85,10 +86,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Reichhaltig und kann Durchfall oder Erbrechen verursachen.
-meta_title: Können Hunde Rinderniere essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Rinderniere für Hunde und Katzen sicher? Rinderniere ist für Hunde und Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Können Hunde Rinderniere essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Rinderniere für Hunde und Katzen sicher? Rinderniere ist für Hunde und
+  Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierärztlich
+  geprüfte Alternativen.
 ---
-
 # Rinderniere
 
 Rinderniere ist eine Innerei, die Protein und Spurenelemente liefert, aber auch purinreich ist. Haustiere, die zu Harnsteinen oder Nierenerkrankungen neigen, sollten sie vermeiden.

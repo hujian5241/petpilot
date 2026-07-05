@@ -22,14 +22,16 @@ safety:
 symptoms:
   - upset stomach
   - choking
-what_to_do: If seeds or core were swallowed, monitor your pet. Contact your vet if you notice signs of distress.
+what_to_do: >-
+  If seeds or core were swallowed, monitor your pet. Contact your vet if you
+  notice signs of distress.
 alternatives:
   - blueberries
   - carrots
   - pears
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -51,10 +53,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit residue can contribute to dental plaque.
-meta_title: Can Dogs Eat Apple Slices? Safety, Risks & Vet Advice
-meta_description: Is Apple Slices safe for dogs and cats? Apple Slices is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Apple Slices? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Apple Slices safe for dogs and cats? Apple Slices is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Apple Slices
 
 Apple slices without seeds or core are a crunchy, low-calorie treat for dogs. They provide fiber and vitamins A and C.

@@ -13,7 +13,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but hard to digest and may cause obstruction.
+    summary: 'Not toxic, but hard to digest and may cause obstruction.'
   cats:
     status: limited
     severity: low
@@ -30,13 +30,13 @@ alternatives:
   - peanut-butter
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Plain, unsalted almonds only. Avoid chocolate-covered or salted varieties.
+preparation_notes: 'Plain, unsalted almonds only. Avoid chocolate-covered or salted varieties.'
 safe_amount: One or two almonds at most for a large dog; avoid for small dogs.
 frequency: Rarely.
 related_foods:
@@ -71,7 +71,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Almonds are high in oxalates, which can contribute to calcium oxalate urolithiasis.
+    reason: >-
+      Almonds are high in oxalates, which can contribute to calcium oxalate
+      urolithiasis.
   - condition: Inflammatory bowel disease (IBD)
     appliesTo:
       - dogs
@@ -84,10 +86,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hard to digest and may cause upset stomach.
-meta_title: Can Dogs Eat Almonds? Safety, Risks & Vet Advice
-meta_description: Is Almonds safe for dogs and cats? Almonds is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Almonds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Almonds safe for dogs and cats? Almonds is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Almonds
 
 Almonds are not toxic to dogs, but they are difficult to digest and can cause gastrointestinal upset. Whole almonds can also pose a choking hazard or cause intestinal blockage, especially in small dogs.

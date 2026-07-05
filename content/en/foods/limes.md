@@ -28,9 +28,9 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -56,10 +56,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Acid can erode enamel.
-meta_title: Can Dogs Eat Limes? Safety, Risks & Vet Advice
-meta_description: Is Limes safe for dogs and cats? Limes is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Limes? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Limes safe for dogs and cats? Limes is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Limes
 
 Limes, like lemons, are not toxic but can cause vomiting and diarrhea due to acidity and citrus oils.

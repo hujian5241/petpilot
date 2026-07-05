@@ -16,29 +16,37 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe occasionally in small amounts. Choose low-sodium, water-packed tuna. Mercury is a concern.
+    summary: >-
+      Safe occasionally in small amounts. Choose low-sodium, water-packed tuna.
+      Mercury is a concern.
   cats:
     status: limited
     severity: low
-    summary: Safe occasionally as a treat. Choose low-sodium, water-packed tuna. Mercury is a concern.
+    summary: >-
+      Safe occasionally as a treat. Choose low-sodium, water-packed tuna.
+      Mercury is a concern.
 symptoms:
   - vomiting
   - diarrhea
   - mercury-toxicity
-what_to_do: If large amounts of tuna are eaten regularly, contact your vet to discuss mercury exposure.
+what_to_do: >-
+  If large amounts of tuna are eaten regularly, contact your vet to discuss
+  mercury exposure.
 alternatives:
   - sardines
   - whitefish
   - salmon
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, water-packed tuna with no salt, oil, or seasonings. Limit portion size.
+preparation_notes: >-
+  Use plain, water-packed tuna with no salt, oil, or seasonings. Limit portion
+  size.
 safe_amount: A small spoonful occasionally.
 frequency: No more than once or twice a week.
 related_foods:
@@ -109,10 +117,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High purine content can trigger urate crystal/stone formation.
-meta_title: Can Dogs Eat Tuna? Safety, Risks & Vet Advice
-meta_description: Is Tuna safe for dogs and cats? Tuna is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Tuna? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Tuna safe for dogs and cats? Tuna is limited for dogs and limited for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Tuna
 
 Tuna is a fish many cats love, but it should be an occasional treat rather than a staple. Canned tuna packed in water and with no added salt is best. Tuna packed in oil or brine is too fatty or salty.

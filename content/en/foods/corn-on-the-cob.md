@@ -16,33 +16,33 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Kernels are safe, but the cob is a serious obstruction hazard.
+    summary: 'Kernels are safe, but the cob is a serious obstruction hazard.'
   cats:
     status: limited
     severity: moderate
-    summary: Kernels are safe in tiny amounts, but the cob is dangerous.
+    summary: 'Kernels are safe in tiny amounts, but the cob is dangerous.'
 symptoms:
   - vomiting
   - lethargy
   - loss of appetite
   - abdominal pain
   - constipation
-what_to_do: If any part of the cob was swallowed, contact a veterinarian immediately.
+what_to_do: 'If any part of the cob was swallowed, contact a veterinarian immediately.'
 alternatives:
   - corn
   - green-beans
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: If sharing, cut kernels off the cob. Never let pets chew or swallow the cob.
+preparation_notes: 'If sharing, cut kernels off the cob. Never let pets chew or swallow the cob.'
 safe_amount: Only plain cooked kernels; never the cob.
-frequency: Rarely, and only as kernels.
+frequency: 'Rarely, and only as kernels.'
 related_foods:
   - corn
   - polenta
@@ -65,17 +65,21 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: May cause vomiting, constipation, or abdominal pain; cob obstruction is an additional hazard.
+    reason: >-
+      May cause vomiting, constipation, or abdominal pain; cob obstruction is an
+      additional hazard.
   - condition: Inflammatory bowel disease (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Starchy grain may irritate sensitive bowels.
-meta_title: Can Dogs Eat Corn on the Cob? Safety, Risks & Vet Advice
-meta_description: Is Corn on the Cob safe for dogs and cats? Corn on the Cob is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Corn on the Cob? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Corn on the Cob safe for dogs and cats? Corn on the Cob is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Corn on the Cob
 
 Corn kernels themselves are safe for dogs, but corn on the cob is dangerous because many dogs will try to eat the cob. A swallowed cob can cause a life-threatening intestinal blockage that often requires surgical removal.

@@ -18,27 +18,33 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: High in salt, fat, and spices. Garlic and onion are common ingredients. Avoid.
+    summary: >-
+      High in salt, fat, and spices. Garlic and onion are common ingredients.
+      Avoid.
   cats:
     status: limited
     severity: moderate
-    summary: High in salt, fat, and spices. Garlic and onion are common ingredients. Avoid.
+    summary: >-
+      High in salt, fat, and spices. Garlic and onion are common ingredients.
+      Avoid.
 symptoms:
   - vomiting
   - diarrhea
   - pancreatitis
   - anemia
   - excessive thirst
-what_to_do: If salami containing garlic or onion was eaten, contact your vet or poison control. Seek emergency care for weakness or pale gums.
+what_to_do: >-
+  If salami containing garlic or onion was eaten, contact your vet or poison
+  control. Seek emergency care for weakness or pale gums.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -96,7 +102,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Seasonings, fat, and additives can irritate the GI tract in IBD.
+    reason: 'Seasonings, fat, and additives can irritate the GI tract in IBD.'
   - condition: Urinary tract disease/bladder stones
     appliesTo:
       - dogs
@@ -114,17 +120,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Rich, fatty, or seasoned foods commonly cause GI upset.
+    reason: 'Rich, fatty, or seasoned foods commonly cause GI upset.'
   - condition: Purine metabolism disorders
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: High purine content can trigger urate crystal/stone formation.
-meta_title: Can Dogs Eat Salami? Safety, Risks & Vet Advice
-meta_description: Is Salami safe for dogs and cats? Salami is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Salami? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Salami safe for dogs and cats? Salami is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Salami
 
 Salami is a cured, fermented meat loaded with salt, fat, and spices. Many varieties contain garlic or onion powder, which are toxic to pets. It is not a healthy treat.

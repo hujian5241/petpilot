@@ -29,29 +29,32 @@ symptoms:
   - bloating
   - respiratory failure
   - death
-what_to_do: Get to an emergency veterinarian immediately. Water hemlock poisoning is often rapidly fatal.
+what_to_do: >-
+  Get to an emergency veterinarian immediately. Water hemlock poisoning is often
+  rapidly fatal.
 alternatives:
   - dandelion
   - common-plantain
   - white-clover
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: MSD Veterinary Manual — Toxicology
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Cats
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Dogs
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
 meta_title: Water Hemlock and Pets — Safety Guide | PetPilot
-meta_description: Water hemlock is one of the deadliest plants for pets. Learn symptoms of water hemlock poisoning and how to avoid exposure.
+meta_description: >-
+  Water hemlock is one of the deadliest plants for pets. Learn symptoms of water
+  hemlock poisoning and how to avoid exposure.
 ---
-
 # Water Hemlock
 
 Water hemlock grows in wet meadows, ditches, and along streams. It contains cicutoxin, a potent neurotoxin that causes violent seizures and respiratory failure.

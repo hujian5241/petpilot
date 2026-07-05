@@ -28,16 +28,18 @@ alternatives:
   - wax-plant
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/orchid/
+    url: 'https://www.petpoisonhelpline.com/poison/orchid/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Phalaenopsis Orchid and Pet Safety — Pet-Safe Flower | PetPilot
-meta_description: Phalaenopsis orchids are non-toxic to dogs and cats. Learn care tips and safe alternatives to toxic lilies.
+meta_description: >-
+  Phalaenopsis orchids are non-toxic to dogs and cats. Learn care tips and safe
+  alternatives to toxic lilies.
 ---
-
 # Phalaenopsis Orchid
 
 Phalaenopsis orchids, commonly called moth orchids, are elegant flowering plants with long-lasting blooms. They are non-toxic to dogs and cats, making them a safe alternative to toxic lilies.

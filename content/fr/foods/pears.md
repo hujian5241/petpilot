@@ -27,12 +27,14 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 preparation_notes: Retirez les pépins et le cœur. Coupez en morceaux de taille appropriée.
-safe_amount: Quelques petits morceaux pour les petits chiens ; plusieurs pour les grands chiens.
+safe_amount: >-
+  Quelques petits morceaux pour les petits chiens ; plusieurs pour les grands
+  chiens.
 frequency: Gâterie occasionnelle.
 condition_warnings:
   - condition: Diabète sucré
@@ -40,7 +42,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contient des sucres naturels qui doivent être limités pour les diabétiques.
+    reason: >-
+      Contient des sucres naturels qui doivent être limités pour les
+      diabétiques.
   - condition: Obésité
     appliesTo:
       - dogs
@@ -53,10 +57,14 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: La teneur en fibres peut aggraver la MII chez certains animaux.
-meta_title: Les chiens peuvent-ils manger des poires ? Sécurité, risques et conseils vétérinaires
-meta_description: Les poires sont-elles sûres pour les chiens et les chats ? Les poires sont sûres pour les chiens et les chats. Découvrez les symptômes, les gestes à adopter et des alternatives approuvées par les vétérinaires.
+meta_title: >-
+  Les chiens peuvent-ils manger des poires ? Sécurité, risques et conseils
+  vétérinaires
+meta_description: >-
+  Les poires sont-elles sûres pour les chiens et les chats ? Les poires sont
+  sûres pour les chiens et les chats. Découvrez les symptômes, les gestes à
+  adopter et des alternatives approuvées par les vétérinaires.
 ---
-
 # Poires
 
 Les poires sont sûres pour les chiens lorsque les pépins et le cœur sont retirés. Elles apportent des fibres et des vitamines.

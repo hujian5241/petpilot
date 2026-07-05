@@ -31,14 +31,14 @@ alternatives:
   - catnip
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/basil
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/basil
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: バジルはペットに安全ですか？
 meta_description: バジルは犬や猫に対して無毒です。ペットに優しい食用ガーデンに適した、安全で香り豊かなハーブである理由を解説します。
 ---
-
 # バジル
 
 バジルは、香り豊かな葉を持つ人気の料理用ハーブです。犬や猫に対して無毒であり、ペットに優しいハーブガーデンや屋外のプランターに最適な選択です。

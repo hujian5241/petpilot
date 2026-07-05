@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#ef4444"/>
+  <circle cx="200" cy="120" r="80" fill="white" fill-opacity="0.12"/>
+  
+      <svg x="170" y="90" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 17v4"/>
+        <path d="M8 21h8"/>
+        <path d="m2.3 9.5 4-1.7"/>
+        <path d="m21.7 9.5-4-1.7"/>
+        <path d="M12 2v3"/>
+        <circle cx="12" cy="12" r="5"/>
+      </svg>
+  <text x="200" y="190" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="700" fill="white">Mosquito Spray</text>
+  <text x="200" y="225" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="white" fill-opacity="0.9">Pet Pesticide Guide</text>
+  <text x="200" y="260" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="white" fill-opacity="0.75">PetPilot.com</text>
+</svg>

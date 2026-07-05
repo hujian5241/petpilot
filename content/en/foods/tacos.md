@@ -17,30 +17,34 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Plain, unseasoned meat and a small piece of tortilla are usually safe; toppings and seasonings are not.
+    summary: >-
+      Plain, unseasoned meat and a small piece of tortilla are usually safe;
+      toppings and seasonings are not.
   cats:
     status: limited
     severity: low
-    summary: Plain meat bits may be safe, but taco seasoning and dairy toppings can upset the stomach.
+    summary: >-
+      Plain meat bits may be safe, but taco seasoning and dairy toppings can
+      upset the stomach.
 symptoms:
   - vomiting
   - diarrhea
   - gas
   - stomach pain
-what_to_do: If the taco contained onion, garlic, or spicy seasoning, contact a vet.
+what_to_do: 'If the taco contained onion, garlic, or spicy seasoning, contact a vet.'
 alternatives:
   - chicken-breast
   - brown-rice
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -81,7 +85,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Seasonings, fat, and additives can irritate the GI tract in IBD.
+    reason: 'Seasonings, fat, and additives can irritate the GI tract in IBD.'
   - condition: Urinary tract disease/bladder stones
     appliesTo:
       - dogs
@@ -99,11 +103,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Rich, fatty, or seasoned foods commonly cause GI upset.
-meta_title: Can Dogs Eat Tacos? Safety, Risks & Vet Advice
-meta_description: Is Tacos safe for dogs and cats? Tacos is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Rich, fatty, or seasoned foods commonly cause GI upset.'
+meta_title: 'Can Dogs Eat Tacos? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Tacos safe for dogs and cats? Tacos is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Tacos
 
 Tacos are a mixed bag for pets. A small piece of plain, cooked meat and a bit of plain tortilla are usually fine. The trouble comes from taco seasoning, onions, garlic, cheese, sour cream, salsa, and hot sauce. These additions can irritate the stomach and, in the case of alliums, damage red blood cells. Keep fully assembled tacos away from pets.

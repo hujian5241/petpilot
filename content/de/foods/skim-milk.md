@@ -15,7 +15,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Fettärmer als Vollmilch, aber Laktose bleibt ein Problem.
+    summary: 'Fettärmer als Vollmilch, aber Laktose bleibt ein Problem.'
   cats:
     status: limited
     severity: low
@@ -24,16 +24,18 @@ symptoms:
   - Durchfall
   - Blähungen
   - Aufgeblähtheit
-what_to_do: Fütterung stoppen. Wasser bereitstellen. Kontaktieren Sie einen Tierarzt, falls der Durchfall anhält.
+what_to_do: >-
+  Fütterung stoppen. Wasser bereitstellen. Kontaktieren Sie einen Tierarzt,
+  falls der Durchfall anhält.
 alternatives:
   - lactose-free-milk
   - plain-yogurt
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -43,3 +45,5 @@ frequency: Selten oder nie.
 related_foods:
   - cow-milk
   - whole-milk
+---
+

@@ -28,7 +28,7 @@ alternatives:
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -48,10 +48,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugars feed oral bacteria and contribute to dental disease.
-meta_title: Can Dogs Eat Strawberries? Safety, Risks & Vet Advice
-meta_description: Is Strawberries safe for dogs and cats? Strawberries is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Strawberries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Strawberries safe for dogs and cats? Strawberries is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Strawberries
 
 Strawberries are safe for dogs in small amounts. They contain fiber, vitamin C, and antioxidants. Avoid sugary strawberry products.

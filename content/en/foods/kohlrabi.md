@@ -28,11 +28,11 @@ alternatives:
   - sweet-potato
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Peel and cook plain kohlrabi. Avoid seasonings, butter, or salt.
+preparation_notes: 'Peel and cook plain kohlrabi. Avoid seasonings, butter, or salt.'
 safe_amount: A small cooked cube for dogs.
 frequency: Occasional treat.
 condition_warnings:
@@ -48,10 +48,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber may aggravate some IBD cases.
-meta_title: Can Dogs Eat Kohlrabi? Safety, Risks & Vet Advice
-meta_description: Is Kohlrabi safe for dogs and cats? Kohlrabi is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Kohlrabi? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Kohlrabi safe for dogs and cats? Kohlrabi is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Kohlrabi
 
 Kohlrabi is safe for dogs in small amounts when cooked plain. Raw kohlrabi can be tough and difficult to digest.

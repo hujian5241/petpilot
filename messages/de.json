@@ -2,17 +2,29 @@
   "Header": {
     "home": "Start",
     "search": "Suche",
+    "categories": "Kategorien",
     "foods": "Lebensmittel",
     "plants": "Pflanzen",
+    "medications": "Medikamente",
+    "householdChemicals": "Chemikalien",
+    "pesticides": "Pestizide",
     "emergency": "Notfall",
+    "news": "Nachrichten",
     "about": "Über uns"
   },
   "Footer": {
     "quickLinks": "Schnelllinks",
+    "categories": "Kategorien",
     "emergency": "Notfall",
     "medicalDisclaimer": "Medizinischer Haftungsausschluss",
     "allRightsReserved": "Alle Rechte vorbehalten.",
     "search": "Suche",
+    "news": "Nachrichten",
+    "foods": "Lebensmittel",
+    "plants": "Pflanzen",
+    "medications": "Medikamente",
+    "householdChemicals": "Haushaltschemikalien",
+    "pesticides": "Pestizide",
     "about": "Über uns",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutz"
@@ -23,6 +35,9 @@
     "browseCategories": "Kategorien durchsuchen",
     "popularSearches": "Beliebte Suchanfragen",
     "viewAll": "Alle anzeigen",
+    "stats": "Unsere Datenbank umfasst {categories} Kategorien und {total, plural, one {# Eintrag} other {# Einträge}}: {foods} Lebensmittel, {plants} Pflanzen, {medications} Medikamente, {householdChemicals} Chemikalien und {pesticides} Pestizide.",
+    "criticalNewsTitle": "Kritische Warnungen zur Haustiersicherheit",
+    "criticalNewsCta": "Alle Nachrichten anzeigen",
     "whyTrustTitle": "Warum PetPilot?",
     "whyTrust": {
       "fastAnswers": {
@@ -41,16 +56,19 @@
   },
   "SearchPage": {
     "title": "Suche",
-    "placeholder": "Lebensmittel suchen, z. B. Weintrauben, Schokolade, Karotten …",
+    "placeholder": "Lebensmittel, Pflanzen, Medikamente, Chemikalien, Pestizide suchen …",
     "loading": "Suche wird geladen …",
     "resultsFor": "{count} Ergebnis{count, plural, one {} other {se}} für „{query}“",
     "noResults": "Keine Ergebnisse für „{query}“",
-    "noResultsDescription": "Wir haben keine Lebensmittel oder Pflanzen gefunden, die zu Ihrer Suche passen.",
+    "noResultsDescription": "Wir haben keine Lebensmittel, Pflanzen, Medikamente, Chemikalien oder Pestizide gefunden, die zu Ihrer Suche passen.",
     "suggestItem": "Eintrag vorschlagen",
-    "emptyState": "Geben Sie oben ein Lebensmittel oder eine Pflanze ein, um zu sehen, ob es für Ihr Haustier geeignet ist.",
+    "emptyState": "Geben Sie oben ein Lebensmittel, eine Pflanze, ein Medikament, eine Chemikalie oder ein Pestizid ein, um zu sehen, ob es für Ihr Haustier geeignet ist.",
     "alsoKnownAs": "Auch bekannt als: {alias}",
     "foodTag": "Lebensmittel",
-    "plantTag": "Pflanze"
+    "plantTag": "Pflanze",
+    "medicationTag": "Medikament",
+    "householdChemicalTag": "Chemikalie",
+    "pesticideTag": "Pestizid"
   },
   "FoodsPage": {
     "title": "Lebensmittel-Sicherheitsratgeber für Hunde & Katzen",
@@ -67,6 +85,8 @@
   "PlantsPage": {
     "title": "Pflanzen",
     "description": "Durchsuchen Sie gängige Zimmerpflanzen, Gartenpflanzen und Wildpflanzen, um zu sehen, ob sie für Ihre Haustiere sicher sind.",
+    "quickSafetyOverview": "Kurzer Sicherheitsüberblick",
+    "allPlants": "Alle Pflanzen",
     "plants": "Pflanzen",
     "houseplants": "Zimmerpflanzen",
     "outdoorPlants": "Gartenpflanzen"
@@ -127,6 +147,134 @@
     "medicalDisclaimer": "Medizinischer Haftungsausschluss",
     "medicalDisclaimerText": "Die Inhalte dieser Seite ersetzen keine tierärztliche Diagnose, Behandlung oder Notfallversorgung. Wenn Sie vermuten, dass Ihr Haustier etwas Schädliches gefressen hat, wenden Sie sich an Ihren Tierarzt oder rufen Sie umgehend die <aspca>ASPCA Poison Control</aspca> oder die <pph>Pet Poison Helpline</pph> an."
   },
+  "HazardDetail": {
+    "symptoms": "Symptome, auf die Sie achten sollten",
+    "whatIfAte": "Was tun, wenn mein Haustier {name} ausgesetzt war?",
+    "call": "{name} anrufen",
+    "safeAlternatives": "Sicherere Alternativen",
+    "sources": "Quellen",
+    "vetsNote": "Hinweis des Tierarztes",
+    "vetsNoteText": "PetPilot bietet allgemeine Informationen zu Bildungszwecken. Obwohl wir auf anerkannte tierärztliche Organisationen verweisen, wurde diese Seite nicht für Ihr spezifisches Haustier individuell von einem Tierarzt geprüft. Einzelne Tiere können je nach Alter, Gewicht, Rasse, Gesundheitszustand und verzehrter Menge unterschiedlich reagieren. Konsultieren Sie immer Ihren Tierarzt oder eine Giftnotruf-Zentrale für individuelle Ratschläge, insbesondere wenn Ihr Haustier krank, verletzt, trächtig, säugend oder unter Medikation ist.",
+    "medicalDisclaimer": "Medizinischer Haftungsausschluss",
+    "medicalDisclaimerText": "Die Inhalte dieser Seite ersetzen keine tierärztliche Diagnose, Behandlung oder Notfallversorgung. Wenn Sie vermuten, dass Ihr Haustier etwas Schädlichem ausgesetzt war, wenden Sie sich an Ihren Tierarzt oder rufen Sie umgehend die <aspca>ASPCA Poison Control</aspca> oder die <pph>Pet Poison Helpline</pph> an."
+  },
+  "MedicationsPage": {
+    "title": "Medikamenten-Sicherheitsratgeber für Hunde & Katzen",
+    "description": "Durchsuchen Sie unsere tierärztlich geprüfte Datenbank mit Medikamenten für Menschen und Tiere und erfahren Sie, was für Ihre Haustiere giftig oder sicher ist.",
+    "quickSafetyOverview": "Kurzer Sicherheitsüberblick",
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "allMedications": "Alle Medikamente",
+    "medications": "Medikamente"
+  },
+  "HouseholdChemicalsPage": {
+    "title": "Haushaltschemikalien-Sicherheit für Hunde & Katzen",
+    "description": "Durchsuchen Sie gängige Haushaltsreiniger, Autoprodukte und andere Chemikalien, um zu sehen, ob sie für Ihre Haustiere giftig sind.",
+    "quickSafetyOverview": "Kurzer Sicherheitsüberblick",
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "allHouseholdChemicals": "Alle Haushaltschemikalien",
+    "householdChemicals": "Chemikalien"
+  },
+  "PesticidesPage": {
+    "title": "Pestizid-Sicherheit für Hunde & Katzen",
+    "description": "Durchsuchen Sie Insektizide, Rodentizide, Herbizide und andere Pestizide, um Toxizitätsrisiken für Ihre Haustiere zu kennen.",
+    "quickSafetyOverview": "Kurzer Sicherheitsüberblick",
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "allPesticides": "Alle Pestizide",
+    "pesticides": "Pestizide"
+  },
+  "NewsPage": {
+    "title": "Nachrichten zu Tiervergiftungen",
+    "description": "Monatliche Zusammenfassungen gemeldeter Vergiftungsfälle und Sicherheitswarnungen aus autoritativen Quellen.",
+    "news": "Nachrichten",
+    "noNews": "Noch keine Nachrichten verfügbar.",
+    "filterMonth": "Monat",
+    "filterMonthButton": "Filtern",
+    "filterSeverity": "Schweregrad",
+    "allMonths": "Alle Monate",
+    "prevYear": "Vorheriges Jahr",
+    "nextYear": "Nächstes Jahr",
+    "prevMonth": "Vorheriger Monat",
+    "nextMonth": "Nächster Monat",
+    "showOlderMonths": "Ältere Monate anzeigen",
+    "showAll": "Alle anzeigen",
+    "showLess": "Weniger anzeigen",
+    "filterSource": "Quelle",
+    "allSources": "Alle Quellen",
+    "clearFilters": "Filter zurücksetzen",
+    "searchSources": "Quellen durchsuchen...",
+    "coverageFrom": "{count, plural, one {Berichterstattung aus # Quelle} other {Berichterstattung aus # Quellen}}",
+    "sourcePlaceholder": "Quellen auswählen",
+    "noSourcesFound": "Keine Quellen gefunden",
+    "clearSearch": "Suche löschen",
+    "yearLabel": "Jahr",
+    "yearPlaceholder": "Jahr auswählen",
+    "monthLabel": "Monat",
+    "monthPlaceholder": "Monat auswählen",
+    "relatedCoverage": "Weitere Berichterstattung",
+    "filterSpecies": "Tierart",
+    "filterSubstance": "Substanz",
+    "relatedItems": "Verwandte Ratgeber",
+    "relatedGuides": "Verwandte PetPilot-Ratgeber",
+    "sourceHeading": "Originalquelle",
+    "sourceDescription": "Diese Zusammenfassung basiert auf einem Bericht von {source}.",
+    "readFullReport": "Vollständigen Bericht lesen",
+    "subscribeTitle": "Bleiben Sie auf dem Laufenden",
+    "subscribeDescription": "Neue Zusammenfassungen werden monatlich hinzugefügt. Folgen Sie unserer Sitemap für Updates.",
+    "rssCta": "Sitemap anzeigen",
+    "disclaimerTitle": "Wichtig:",
+    "disclaimerText": "Diese Zusammenfassungen dienen nur der Aufklärung über Haustiersicherheit und ersetzen keine tierärztliche Beratung. Wenn Ihr Haustier möglicherweise einem Gift ausgesetzt war, kontaktieren Sie umgehend Ihren Tierarzt oder eine Giftnotruf-Zentrale.",
+    "severity": {
+      "low": "Niedrig",
+      "moderate": "Mittel",
+      "high": "Hoch",
+      "critical": "Kritisch"
+    },
+    "species": {
+      "dogs": "Hunde",
+      "cats": "Katzen",
+      "other": "Andere Haustiere"
+    },
+    "status": {
+      "confirmed": "Bestätigt",
+      "under_investigation": "Untersuchung läuft",
+      "resolved": "Geklärt",
+      "recovery": "In Erholung"
+    }
+  },
+  "MedicationDetail": {
+    "title": "{name} und Haustiere",
+    "subtitle": "Erfahren Sie, ob {name} für Hunde und Katzen giftig ist.",
+    "safeForDogs": "Ist {name} für Hunde giftig?",
+    "safeForCats": "Ist {name} für Katzen giftig?",
+    "activeIngredients": "Wirkstoffe",
+    "brandNames": "Markennamen",
+    "dosageForm": "Darreichungsform",
+    "commonUses": "Häufige Anwendungsgebiete",
+    "toxicIngredients": "Giftige Inhaltsstoffe"
+  },
+  "HouseholdChemicalDetail": {
+    "title": "{name} und Haustiere",
+    "subtitle": "Erfahren Sie, ob {name} für Hunde und Katzen sicher ist.",
+    "safeForDogs": "Ist {name} für Hunde sicher?",
+    "safeForCats": "Ist {name} für Katzen sicher?",
+    "activeIngredients": "Wirkstoffe",
+    "commonProducts": "Häufige Produkte",
+    "commonLocation": "Häufiger Einsatzort",
+    "ventilationNotes": "Lüftungshinweise",
+    "dilutionWarning": "Verdünnungswarnung"
+  },
+  "PesticideDetail": {
+    "title": "{name} und Haustiere",
+    "subtitle": "Erfahren Sie, ob {name} für Hunde und Katzen giftig ist.",
+    "safeForDogs": "Ist {name} für Hunde giftig?",
+    "safeForCats": "Ist {name} für Katzen giftig?",
+    "activeIngredients": "Wirkstoffe",
+    "pestTargeted": "Zielschädling",
+    "formulation": "Formulierung",
+    "signalWord": "Signalwort",
+    "applicationArea": "Anwendungsbereich",
+    "epaRegistration": "EPA-Registrierungsnummer"
+  },
   "SafetyBadge": {
     "safe": "Sicher",
     "limited": "Begrenzt",
@@ -140,7 +288,7 @@
   },
   "NotFound": {
     "title": "Seite nicht gefunden",
-    "description": "Wir konnten die gesuchte Seite nicht finden. Versuchen Sie, nach einem Lebensmittel oder einer Pflanze zu suchen, oder durchsuchen Sie unsere Kategorien.",
+    "description": "Wir konnten die gesuchte Seite nicht finden. Versuchen Sie, nach einem Lebensmittel, einer Pflanze, einem Medikament, einer Chemikalie oder einem Pestizid zu suchen, oder durchsuchen Sie unsere Kategorien.",
     "goHome": "Zur Startseite",
     "search": "Suche",
     "emergency": "Notfall",

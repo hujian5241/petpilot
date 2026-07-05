@@ -29,18 +29,20 @@ alternatives:
   - boston-fern
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/prayer-plant
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/prayer-plant
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/prayer-plant/
+    url: 'https://www.petpoisonhelpline.com/poison/prayer-plant/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Prayer Plant and Pet Safety — Pet-Safe Tropical Plant | PetPilot
-meta_description: Prayer plants are non-toxic to dogs and cats and feature folding, patterned leaves. Learn care tips and alternatives.
+meta_description: >-
+  Prayer plants are non-toxic to dogs and cats and feature folding, patterned
+  leaves. Learn care tips and alternatives.
 related_plants:
   - calathea
 ---
-
 # Prayer Plant
 
 Prayer plants are known for their beautifully patterned leaves that fold upward at night, as if in prayer. They are non-toxic to dogs and cats and add a dynamic, tropical feel to indoor spaces.

@@ -14,7 +14,9 @@ safety:
   dogs:
     status: safe
     severity: low
-    summary: Geschälte, ungesalzene Sonnenblumenkerne sind in kleinen Mengen unbedenklich.
+    summary: >-
+      Geschälte, ungesalzene Sonnenblumenkerne sind in kleinen Mengen
+      unbedenklich.
   cats:
     status: safe
     severity: low
@@ -23,18 +25,22 @@ symptoms:
   - Verdauungsstörung
   - Durchfall
   - Natriumvergiftung (gesalzen)
-what_to_do: Reduzieren Sie die Menge oder setzen Sie die Fütterung bei Verdauungsbeschwerden aus.
+what_to_do: >-
+  Reduzieren Sie die Menge oder setzen Sie die Fütterung bei
+  Verdauungsbeschwerden aus.
 alternatives:
   - pumpkin-seeds
   - carrots
   - green-beans
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Verwenden Sie geschälte, ungesalzene Samen. Vermeiden Sie gewürzte oder gesalzene Samen.
+preparation_notes: >-
+  Verwenden Sie geschälte, ungesalzene Samen. Vermeiden Sie gewürzte oder
+  gesalzene Samen.
 safe_amount: Eine kleine Prise für kleine Hunde; ein Teelöffel für große Hunde.
 frequency: Gelegentlicher Leckerbissen.
 condition_warnings:
@@ -43,7 +49,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung normalerweise eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung
+      normalerweise eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -61,7 +69,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind individuell.
+    reason: >-
+      Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind
+      individuell.
   - condition: Entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
@@ -80,10 +90,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Fettgehalt kann einen empfindlichen Magen-Darm-Trakt reizen.
-meta_title: Dürfen Hunde Sonnenblumenkerne essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Sind Sonnenblumenkerne für Hunde und Katzen sicher? Sonnenblumenkerne sind für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Sonnenblumenkerne essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Sind Sonnenblumenkerne für Hunde und Katzen sicher? Sonnenblumenkerne sind für
+  Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, was zu tun
+  ist, und tierärztlich geprüfte Alternativen.
 ---
-
 # Sonnenblumenkerne
 
 Geschälte, ungesalzene Sonnenblumenkerne sind für Hunde in kleinen Mengen unbedenklich. Sie liefern gesunde Fette und Vitamin E. Gesalzene oder gewürzte Samen sollten vermieden werden.

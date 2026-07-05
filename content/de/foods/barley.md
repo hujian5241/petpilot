@@ -14,28 +14,34 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn gut durchgekocht. Reich an Ballaststoffen.
+    summary: 'Unbedenklich, wenn gut durchgekocht. Reich an Ballaststoffen.'
   cats:
     status: safe
-    summary: In sehr kleinen Mengen unbedenklich, wenn vollständig gekocht.
+    summary: 'In sehr kleinen Mengen unbedenklich, wenn vollständig gekocht.'
 symptoms:
   - Blähungen
   - Leichter Durchfall
-what_to_do: Verringern Sie die Portion, falls Verdauungsbeschwerden auftreten. Füttern Sie keine rohe Gerste.
+what_to_do: >-
+  Verringern Sie die Portion, falls Verdauungsbeschwerden auftreten. Füttern Sie
+  keine rohe Gerste.
 alternatives:
   - brown-rice
   - quinoa
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Bis zur Weichheit kochen. Vermeiden Sie Suppen oder Eintöpfe mit Zwiebeln, Knoblauch, Salz oder Fett.
-safe_amount: Ein Esslöffel für kleine Hunde, bis zu einer Vierteltasse für große Hunde; eine Prise für Katzen.
+preparation_notes: >-
+  Bis zur Weichheit kochen. Vermeiden Sie Suppen oder Eintöpfe mit Zwiebeln,
+  Knoblauch, Salz oder Fett.
+safe_amount: >-
+  Ein Esslöffel für kleine Hunde, bis zu einer Vierteltasse für große Hunde;
+  eine Prise für Katzen.
 frequency: Gelegentlich.
 related_foods:
   - quinoa
@@ -71,11 +77,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Ballaststoffe und Gluten können bei empfindlichen Tieren Blähungen oder weichen Stuhl verursachen.
-meta_title: Dürfen Hunde Gerste essen? Sicherheit, Risiken und Tierarzt-Ratschläge
-meta_description: Ist Gerste für Hunde und Katzen sicher? Gerste ist für Hunde und Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierärztlich empfohlene Alternativen.
+    reason: >-
+      Ballaststoffe und Gluten können bei empfindlichen Tieren Blähungen oder
+      weichen Stuhl verursachen.
+meta_title: 'Dürfen Hunde Gerste essen? Sicherheit, Risiken und Tierarzt-Ratschläge'
+meta_description: >-
+  Ist Gerste für Hunde und Katzen sicher? Gerste ist für Hunde und Katzen
+  sicher. Erfahren Sie Symptome, was zu tun ist und tierärztlich empfohlene
+  Alternativen.
 ---
-
 # Gerste
 
 Gerste ist ein nährstoffreiches, ballaststoffreiches Getreide, das für Hunde unbedenklich ist, wenn es vollständig gekocht wurde. Sie wird manchmal als Zutat in handelsüblichen Hundefuttern verwendet. Ihre kauige Konsistenz und der hohe Ballaststoffgehalt können vorteilhaft sein, können bei empfindlichen Hunden jedoch Blähungen verursachen.

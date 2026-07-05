@@ -29,13 +29,15 @@ alternatives:
   - zucchini
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook plain and chop finely. Avoid coleslaw and fermented cabbage with salt or spices.
+preparation_notes: >-
+  Cook plain and chop finely. Avoid coleslaw and fermented cabbage with salt or
+  spices.
 safe_amount: A tablespoon for dogs; a tiny piece for cats.
 frequency: Occasionally.
 related_foods:
@@ -61,10 +63,11 @@ condition_warnings:
     recommendation: consult_vet
     reason: Contains goitrogens that may affect thyroid function in large amounts.
     notes: Relevant to cats with hyperthyroidism and dogs with hypothyroidism.
-meta_title: Can Dogs Eat Cabbage? Safety, Risks & Vet Advice
-meta_description: Is Cabbage safe for dogs and cats? Cabbage is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cabbage? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cabbage safe for dogs and cats? Cabbage is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cabbage
 
 Cabbage is safe for dogs in small portions but is well known for causing gas. Lightly cooking cabbage makes it easier to digest than raw. Avoid coleslaw, sauerkraut, and cooked cabbage containing bacon, garlic, onions, or salt.

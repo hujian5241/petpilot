@@ -6,7 +6,6 @@ aliases:
   - sheep liver
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - vitamin-a
@@ -24,14 +23,16 @@ symptoms:
   - vomiting
   - diarrhea
   - lethargy
-what_to_do: If large amounts were eaten, contact your vet to discuss monitoring for vitamin A toxicity.
+what_to_do: >-
+  If large amounts were eaten, contact your vet to discuss monitoring for
+  vitamin A toxicity.
 alternatives:
   - lamb
   - chicken-breast
   - turkey
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-liver/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-liver/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -71,17 +72,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Very rich and high fat, which can trigger flares.
+    reason: 'Very rich and high fat, which can trigger flares.'
   - condition: Purine metabolism disorders
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
     reason: Organ meats are very high in purines.
-meta_title: Can Dogs Eat Lamb Liver? Safety, Risks & Vet Advice
-meta_description: Is Lamb Liver safe for dogs and cats? Lamb Liver is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Lamb Liver? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Lamb Liver safe for dogs and cats? Lamb Liver is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Lamb Liver
 
 Lamb liver is rich in vitamin A, iron, and protein. Like all livers, it should be fed sparingly to avoid nutrient excess and digestive upset.

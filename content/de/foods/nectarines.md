@@ -22,19 +22,21 @@ safety:
 symptoms:
   - Zyanidvergiftung
   - Erstickungsgefahr
-what_to_do: Wenden Sie sich an Ihren Tierarzt, wenn der Kern angekaut oder verschluckt wurde.
+what_to_do: >-
+  Wenden Sie sich an Ihren Tierarzt, wenn der Kern angekaut oder verschluckt
+  wurde.
 alternatives:
   - apple-slices
   - peaches
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: Kern, Stiel und Blätter entfernen.
+preparation_notes: 'Kern, Stiel und Blätter entfernen.'
 safe_amount: Eine kleine Scheibe.
 frequency: Gelegentlicher Leckerbissen.
 condition_warnings:
@@ -43,7 +45,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Fruchtfleisch ist zuckerhaltig und sollte bei diabetischen Tieren eingeschränkt werden.
+    reason: >-
+      Fruchtfleisch ist zuckerhaltig und sollte bei diabetischen Tieren
+      eingeschränkt werden.
   - condition: Übergewicht
     appliesTo:
       - dogs
@@ -56,10 +60,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckerhaltiges Obst kann zur Zahnbelagsbildung beitragen.
-meta_title: Dürfen Hunde Nektarinen essen? Sicherheit, Risiken & tierärztliche Empfehlung
-meta_description: Sind Nektarinen sicher für Hunde und Katzen? Nektarinen sind für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Nektarinen essen? Sicherheit, Risiken & tierärztliche Empfehlung'
+meta_description: >-
+  Sind Nektarinen sicher für Hunde und Katzen? Nektarinen sind für Hunde und
+  Katzen nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das
+  richtige Verhalten und tierärztlich geprüfte Alternativen.
 ---
-
 # Nektarinen
 
 Nektarinenfruchtfleisch ist für Hunde in der Regel unbedenklich, aber der Kern enthält Zyanid und birgt Erstickungsgefahr.

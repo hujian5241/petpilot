@@ -30,14 +30,14 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Plain, fresh, unsalted pecans only. Avoid pies and flavored pecans.
-safe_amount: Avoid feeding; if given, one small piece rarely.
+preparation_notes: 'Plain, fresh, unsalted pecans only. Avoid pies and flavored pecans.'
+safe_amount: 'Avoid feeding; if given, one small piece rarely.'
 frequency: Rarely.
 condition_warnings:
   - condition: Pancreatitis
@@ -45,7 +45,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High-fat nuts can cause pancreatitis and GI upset; may also contain harmful molds.
+    reason: >-
+      High-fat nuts can cause pancreatitis and GI upset; may also contain
+      harmful molds.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
@@ -64,10 +66,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Tree nuts are a potential allergen.
-meta_title: Can Dogs Eat Pecans? Safety, Risks & Vet Advice
-meta_description: Is Pecans safe for dogs and cats? Pecans is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pecans? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pecans safe for dogs and cats? Pecans is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pecans
 
 Pecans are not as toxic as macadamia nuts, but they are high in fat and can cause pancreatitis or gastrointestinal upset. Moldy pecans can also contain tremorgenic mycotoxins.

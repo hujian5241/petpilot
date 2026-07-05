@@ -29,7 +29,7 @@ alternatives:
   - salmon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -50,10 +50,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Fiber and oil content may need to be adjusted during IBD management.
-meta_title: Can Dogs Eat Flax Seeds? Safety, Risks & Vet Advice
-meta_description: Is Flax Seeds safe for dogs and cats? Flax Seeds is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Flax Seeds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Flax Seeds safe for dogs and cats? Flax Seeds is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Flax Seeds
 
 Ground flaxseed is a safe source of fiber and omega-3 fatty acids for dogs. Whole flax seeds may pass through undigested, so grinding improves absorption.

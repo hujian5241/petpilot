@@ -18,31 +18,39 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: High in fat, salt, and preservatives. Avoid or offer only a tiny piece rarely.
+    summary: >-
+      High in fat, salt, and preservatives. Avoid or offer only a tiny piece
+      rarely.
   cats:
     status: limited
     severity: moderate
-    summary: High in fat, salt, and preservatives. Avoid or offer only a tiny piece rarely.
+    summary: >-
+      High in fat, salt, and preservatives. Avoid or offer only a tiny piece
+      rarely.
 symptoms:
   - vomiting
   - diarrhea
   - pancreatitis
   - excessive thirst
-what_to_do: If a large amount was eaten, contact your vet. Seek emergency care for severe abdominal pain, repeated vomiting, or lethargy.
+what_to_do: >-
+  If a large amount was eaten, contact your vet. Seek emergency care for severe
+  abdominal pain, repeated vomiting, or lethargy.
 alternatives:
   - chicken-breast
   - turkey
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-bacon/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-bacon/'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: If shared, a very small piece of low-sodium, unseasoned, well-cooked bacon only.
-safe_amount: Avoid. If given, no more than a small crumb.
+preparation_notes: >-
+  If shared, a very small piece of low-sodium, unseasoned, well-cooked bacon
+  only.
+safe_amount: 'Avoid. If given, no more than a small crumb.'
 frequency: Very rarely.
 related_foods:
   - ham
@@ -81,13 +89,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High sodium, phosphorus, and protein burden compromised kidneys.
+    reason: 'High sodium, phosphorus, and protein burden compromised kidneys.'
   - condition: Inflammatory bowel disease (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Fatty, processed meat often triggers GI flare-ups.
+    reason: 'Fatty, processed meat often triggers GI flare-ups.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
@@ -106,10 +114,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High fat and salt are poorly tolerated by diseased livers.
-meta_title: Can Dogs Eat Bacon? Safety, Risks & Vet Advice
-meta_description: Is Bacon safe for dogs and cats? Bacon is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Bacon? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Bacon safe for dogs and cats? Bacon is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Bacon
 
 Bacon is extremely high in fat, salt, and preservatives. It is a common trigger for pancreatitis in dogs and should not be a regular treat. Even small amounts can cause digestive upset in sensitive pets.

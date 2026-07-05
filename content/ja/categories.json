@@ -94,5 +94,133 @@
     "description": "ペットが遭遇する可能性のある庭、庭先、野生の植物。",
     "icon": "TreePine",
     "sort_order": 12
+  },
+  {
+    "id": "human-medications",
+    "name": "人用医薬品",
+    "slug": "human-medications",
+    "description": "市販されている一般的な医薬品や処方薬。",
+    "icon": "Pill",
+    "sort_order": 13
+  },
+  {
+    "id": "vet-medications",
+    "name": "動物用医薬品",
+    "slug": "vet-medications",
+    "description": "動物に処方される医薬品だが、それでも危険な場合がある。",
+    "icon": "Pill",
+    "sort_order": 14
+  },
+  {
+    "id": "pain-relief",
+    "name": "鎮痛剤",
+    "slug": "pain-relief",
+    "description": "NSAIDs、 acetaminophen、その他の鎮痛剤。",
+    "icon": "Thermometer",
+    "sort_order": 15
+  },
+  {
+    "id": "cold-flu",
+    "name": "風邪 & インフルエンザ",
+    "slug": "cold-flu",
+    "description": "咳、風邪、インフルエンザの治療薬。",
+    "icon": "Thermometer",
+    "sort_order": 16
+  },
+  {
+    "id": "antidepressants",
+    "name": "抗うつ薬",
+    "slug": "antidepressants",
+    "description": "SSRI、SNRI、その他の気分安定薬。",
+    "icon": "Brain",
+    "sort_order": 17
+  },
+  {
+    "id": "heart-blood-pressure",
+    "name": "心臓 & 血圧",
+    "slug": "heart-blood-pressure",
+    "description": "心臓病や高血圧の治療薬。",
+    "icon": "HeartPulse",
+    "sort_order": 18
+  },
+  {
+    "id": "cleaning-products",
+    "name": "清掃用品",
+    "slug": "cleaning-products",
+    "description": "家庭用洗剤、消毒剤、脱脂剤。",
+    "icon": "Sparkles",
+    "sort_order": 19
+  },
+  {
+    "id": "laundry-products",
+    "name": "洗濯用品",
+    "slug": "laundry-products",
+    "description": "洗濯洗剤、柔軟剤、乾燥機シート。",
+    "icon": "Droplets",
+    "sort_order": 20
+  },
+  {
+    "id": "automotive-products",
+    "name": "自動車用品",
+    "slug": "automotive-products",
+    "description": "不凍液、ウォッシャー液、オイル。",
+    "icon": "Car",
+    "sort_order": 21
+  },
+  {
+    "id": "personal-care-products",
+    "name": "パーソナルケア用品",
+    "slug": "personal-care-products",
+    "description": "石鹸、ローション、歯科製品、化粧品。",
+    "icon": "Sparkles",
+    "sort_order": 22
+  },
+  {
+    "id": "home-improvement",
+    "name": "住宅改善",
+    "slug": "home-improvement",
+    "description": "塗料、接着剤、溶剤、その他のDIY用品。",
+    "icon": "Hammer",
+    "sort_order": 23
+  },
+  {
+    "id": "insecticides",
+    "name": "殺虫剤",
+    "slug": "insecticides",
+    "description": "昆虫を駆除または忌避する製品。",
+    "icon": "Bug",
+    "sort_order": 24
+  },
+  {
+    "id": "rodenticides",
+    "name": "殺鼠剤",
+    "slug": "rodenticides",
+    "description": "ネズミや鼠用の毒餌。",
+    "icon": "Bug",
+    "sort_order": 25
+  },
+  {
+    "id": "herbicides",
+    "name": "除草剤",
+    "slug": "herbicides",
+    "description": "雑草除去剤や芝生用薬剤。",
+    "icon": "Leaf",
+    "sort_order": 26
+  },
+  {
+    "id": "fungicides",
+    "name": "殺菌剤",
+    "slug": "fungicides",
+    "description": "カビ、うどんこ病、菌類を防除する製品。",
+    "icon": "Leaf",
+    "sort_order": 27
+  },
+  {
+    "id": "molluscicides",
+    "name": "軟体動物駆除剤",
+    "slug": "molluscicides",
+    "description": "カタツムリやナメクジ用の毒餌。",
+    "icon": "Bug",
+    "sort_order": 28
   }
 ]

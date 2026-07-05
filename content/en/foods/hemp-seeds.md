@@ -29,11 +29,11 @@ alternatives:
   - salmon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, shelled hemp seeds. No seasonings.
+preparation_notes: 'Use plain, shelled hemp seeds. No seasonings.'
 safe_amount: 1/4 teaspoon for small dogs; 1 teaspoon for large dogs.
 frequency: Occasional.
 condition_warnings:
@@ -48,17 +48,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: High fat content, even though mostly unsaturated.
+    reason: 'High fat content, even though mostly unsaturated.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Fiber and fat can cause loose stools.
-meta_title: Can Dogs Eat Hemp Seeds? Safety, Risks & Vet Advice
-meta_description: Is Hemp Seeds safe for dogs and cats? Hemp Seeds is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Hemp Seeds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Hemp Seeds safe for dogs and cats? Hemp Seeds is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Hemp Seeds
 
 Hemp seeds, also called hemp hearts, are safe for dogs in small amounts. They contain protein, fiber, and omega fatty acids. Avoid seasoned or flavored hemp products.

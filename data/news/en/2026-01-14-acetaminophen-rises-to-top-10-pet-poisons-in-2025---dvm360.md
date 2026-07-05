@@ -1,0 +1,42 @@
+---
+body: ''
+slug: 2026-01-14-acetaminophen-rises-to-top-10-pet-poisons-in-2025---dvm360
+title: Acetaminophen rises to top 10 pet poisons in 2025 - DVM360
+date: '2026-01-14'
+month: 2026-01
+source: DVM360
+sourceUrl: >-
+  https://news.google.com/rss/articles/CBMigwFBVV95cUxNRkVsdHlhOUtpMzZYLTJkeTVONkVTTzZOSUQzck1FQ1BrVjV0bXVBb2Jfek5VVk9OVl9sQ3pWY1ZOaWJ0X3JSRHJmbkNDTWp5SVBIUFdfemZEYXhpUUx3Mi1tRFNWbDlWdXE3dVN5aXBWUmlLaXJ5VHF3QThiSG1obTRscw?oc=5
+species:
+  - other
+substances:
+  - acetaminophen
+severity: moderate
+status: confirmed
+summary: >-
+  Acetaminophen rises to top 10 pet poisons in 2025 DVM360 This report may be
+  useful for pet owners monitoring potential risks. Affected animals: other.
+  Substances or products mentioned: acetaminophen.
+relatedSlugs:
+  medications:
+    - acetaminophen
+    - guaifenesin
+reviewed: false
+clusterId: f60d860eacaff732
+updatedAt: '2026-07-05T17:48:07.913Z'
+---
+## What happened
+DVM360 reported that Pet Poison Helpline’s 2025 data shows acetaminophen rising into the top 10 list of pet poisons.
+
+## Key facts
+- Acetaminophen, a common human pain reliever, can be toxic to dogs, cats, and other pets.
+- The increase signals a growing risk from human medications in homes.
+
+## What pet owners should do
+- Keep acetaminophen and other over-the-counter medications in locked cabinets.
+- Never give human pain relievers to pets without veterinary guidance; seek immediate help if ingestion occurs.
+
+## Related coverage
+- [Read the report on DVM360 →](https://news.google.com/rss/articles/CBMigwFBVV95cUxNRkVsdHlhOUtpMzZYLTJkeTVONkVTTzZOSUQzck1FQ1BrVjV0bXVBb2Jfek5VVk9OVl9sQ3pWY1ZOaWJ0X3JSRHJmbkNDTWp5SVBIUFdfemZEYXhpUUx3Mi1tRFNWbDlWdXE3dVN5aXBWUmlLaXJ5VHF3QThiSG1obTRscw?oc=5)
+- [Read PetPilot's coverage from Pet Poison Helpline →](/news/2026-01-14-2025-annual-report-card)
+- [Read PetPilot's coverage from PR Newswire →](/news/2026-01-14-top-10-pet-poisons-of-2025---pr-newswire)

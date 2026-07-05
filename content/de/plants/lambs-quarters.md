@@ -20,7 +20,7 @@ safety:
     summary: Unbedenklich und nahrhaft; verwandt mit Spinat und Quinoa.
   cats:
     status: safe
-    summary: Unbedenklich, wenn in kleinen Mengen genascht.
+    summary: 'Unbedenklich, wenn in kleinen Mengen genascht.'
 symptoms: []
 what_to_do: Keine Maßnahmen erforderlich. Sammeln Sie ihn nur aus unbehandelten Gebieten.
 alternatives:
@@ -29,16 +29,17 @@ alternatives:
   - purslane
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Weißer Gänsefuß und Haustiere — Sicherheitsratgeber | PetPilot
-meta_description: Weißer Gänsefuß ist für Hunde und Katzen unbedenklich. Erfahren Sie, warum dieses Wildgemüse ungiftig ist und wie Sie es erkennen.
+meta_description: >-
+  Weißer Gänsefuß ist für Hunde und Katzen unbedenklich. Erfahren Sie, warum
+  dieses Wildgemüse ungiftig ist und wie Sie es erkennen.
 ---
-
 # Weißer Gänsefuß
 
 Weißer Gänsefuß ist ein häufiges Gartenunkraut mit einem mehligen weißen Überzug auf den Blättern. Es ist für Haustiere nicht giftig und für Menschen als Spinatersatz essbar.

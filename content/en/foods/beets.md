@@ -20,20 +20,24 @@ safety:
 symptoms:
   - red urine
   - diarrhea
-what_to_do: Red urine after beets is usually harmless pigment. Stop feeding if diarrhea occurs.
+what_to_do: >-
+  Red urine after beets is usually harmless pigment. Stop feeding if diarrhea
+  occurs.
 alternatives:
   - carrots
   - sweet-potato
   - pumpkin
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until soft and serve plain. Avoid pickled beets and canned beets with salt.
+preparation_notes: >-
+  Cook until soft and serve plain. Avoid pickled beets and canned beets with
+  salt.
 safe_amount: A tablespoon for dogs; a teaspoon for cats.
 frequency: Occasionally.
 related_foods:
@@ -64,10 +68,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber can cause stomach upset or diarrhea.
-meta_title: Can Dogs Eat Beets? Safety, Risks & Vet Advice
-meta_description: Is Beets safe for dogs and cats? Beets is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Beets? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Beets safe for dogs and cats? Beets is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Beets
 
 Beets are safe for dogs when cooked plain. They are rich in fiber and nutrients but can cause red or pink urine and stool, which is usually harmless. Raw beets are hard and difficult to digest, so cooking is recommended.

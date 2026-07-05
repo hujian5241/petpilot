@@ -14,23 +14,29 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe when cooked plain. A lean novel protein often used in hypoallergenic diets.
+    summary: >-
+      Safe when cooked plain. A lean novel protein often used in hypoallergenic
+      diets.
   cats:
     status: safe
-    summary: Safe when cooked plain. A lean novel protein often used in hypoallergenic diets.
+    summary: >-
+      Safe when cooked plain. A lean novel protein often used in hypoallergenic
+      diets.
 symptoms:
   - vomiting
   - diarrhea
-what_to_do: If bones or seasoned rabbit were eaten, monitor and contact your vet if symptoms develop.
+what_to_do: >-
+  If bones or seasoned rabbit were eaten, monitor and contact your vet if
+  symptoms develop.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-rabbit/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-rabbit/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -41,10 +47,11 @@ related_foods:
   - venison
   - duck
 condition_warnings: []
-meta_title: Can Dogs Eat Rabbit? Safety, Risks & Vet Advice
-meta_description: Is Rabbit safe for dogs and cats? Rabbit is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Rabbit? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Rabbit safe for dogs and cats? Rabbit is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Rabbit
 
 Rabbit is a lean, easily digestible protein that is commonly used in hypoallergenic and novel-protein pet foods. It is lower in fat than many meats and often well tolerated.

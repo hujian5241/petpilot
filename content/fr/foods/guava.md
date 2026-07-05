@@ -26,7 +26,7 @@ alternatives:
   - kiwi
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -58,10 +58,14 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Les résidus sucrés du fruit peuvent contribuer aux maladies dentaires.
-meta_title: Les chiens peuvent-ils manger de la goyave ? Sécurité, risques et conseils vétérinaires
-meta_description: La goyave est-elle sûre pour les chiens et les chats ? La goyave est sûre pour les chiens et sûre pour les chats. Découvrez les symptômes, les mesures à prendre et des alternatives approuvées par le vétérinaire.
+meta_title: >-
+  Les chiens peuvent-ils manger de la goyave ? Sécurité, risques et conseils
+  vétérinaires
+meta_description: >-
+  La goyave est-elle sûre pour les chiens et les chats ? La goyave est sûre pour
+  les chiens et sûre pour les chats. Découvrez les symptômes, les mesures à
+  prendre et des alternatives approuvées par le vétérinaire.
 ---
-
 # Goyave
 
 La goyave est sûre pour les chiens en petites quantités. Les graines sont généralement sans danger, mais les retirer réduit le risque d'étouffement.

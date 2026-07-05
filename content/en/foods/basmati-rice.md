@@ -26,14 +26,16 @@ alternatives:
   - brown-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook plain. Avoid saffron, spices, butter, or salt.
-safe_amount: A spoonful for small dogs, up to half a cup for large dogs; a teaspoon for cats.
+preparation_notes: 'Cook plain. Avoid saffron, spices, butter, or salt.'
+safe_amount: >-
+  A spoonful for small dogs, up to half a cup for large dogs; a teaspoon for
+  cats.
 frequency: Occasionally.
 related_foods:
   - white-rice
@@ -52,10 +54,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Calorie-dense and easy to overfeed.
-meta_title: Can Dogs Eat Basmati Rice? Safety, Risks & Vet Advice
-meta_description: Is Basmati Rice safe for dogs and cats? Basmati Rice is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Basmati Rice? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Basmati Rice safe for dogs and cats? Basmati Rice is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Basmati Rice
 
 Basmati rice is a long-grain aromatic rice that is safe for dogs and cats when served plain and fully cooked. It is similar in digestibility to white rice and can be used as a bland carbohydrate source during gastrointestinal recovery.

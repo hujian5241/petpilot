@@ -24,20 +24,22 @@ safety:
 symptoms:
   - diarrhea
   - gas
-what_to_do: Stop feeding if digestive upset occurs. Ensure pieces are small to prevent choking.
+what_to_do: >-
+  Stop feeding if digestive upset occurs. Ensure pieces are small to prevent
+  choking.
 alternatives:
   - mozzarella-cheese
   - cottage-cheese
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Tear into small pieces. Choose low-sodium, plain mozzarella string cheese.
+preparation_notes: 'Tear into small pieces. Choose low-sodium, plain mozzarella string cheese.'
 safe_amount: A small piece for dogs; a pea-sized amount for cats.
 frequency: Occasionally.
 related_foods:
@@ -50,7 +52,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -86,17 +90,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains lactose, which many adult pets cannot digest well.
+    reason: 'Contains lactose, which many adult pets cannot digest well.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Dairy can cause diarrhea and gas in sensitive pets.
-meta_title: Can Dogs Eat String Cheese? Safety, Risks & Vet Advice
-meta_description: Is String Cheese safe for dogs and cats? String Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat String Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is String Cheese safe for dogs and cats? String Cheese is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # String Cheese
 
 String cheese is typically made from mozzarella, which is lower in sodium and fat than many other cheeses. It can be a convenient training treat for dogs when torn into small pieces. Some dogs may swallow large pieces whole, so size matters.

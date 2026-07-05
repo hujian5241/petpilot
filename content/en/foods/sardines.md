@@ -15,28 +15,36 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe when packed in water and fed in moderation. Rich in omega-3s and calcium.
+    summary: >-
+      Safe when packed in water and fed in moderation. Rich in omega-3s and
+      calcium.
   cats:
     status: safe
-    summary: Safe when packed in water and fed in moderation. Rich in omega-3s and calcium.
+    summary: >-
+      Safe when packed in water and fed in moderation. Rich in omega-3s and
+      calcium.
 symptoms:
   - vomiting
   - diarrhea
   - excessive-thirst
-what_to_do: If your pet ate sardines in heavy oil, salt, or sauce, monitor for digestive upset and contact your vet if symptoms persist.
+what_to_do: >-
+  If your pet ate sardines in heavy oil, salt, or sauce, monitor for digestive
+  upset and contact your vet if symptoms persist.
 alternatives:
   - whitefish
   - salmon
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-sardines/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-sardines/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose sardines packed in water with no added salt, oil, or sauces. Drain before serving.
+preparation_notes: >-
+  Choose sardines packed in water with no added salt, oil, or sauces. Drain
+  before serving.
 safe_amount: One or two small sardines for a medium dog; one for a cat.
 frequency: A few times per week at most.
 related_foods:
@@ -49,7 +57,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -98,10 +108,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High purine content can trigger urate crystal/stone formation.
-meta_title: Can Dogs Eat Sardines? Safety, Risks & Vet Advice
-meta_description: Is Sardines safe for dogs and cats? Sardines is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sardines? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sardines safe for dogs and cats? Sardines is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sardines
 
 Sardines are small, low-mercury fish packed with omega-3 fatty acids, protein, and calcium. They are generally safe for dogs and cats when packed in water and fed in moderation.

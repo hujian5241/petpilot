@@ -25,20 +25,22 @@ symptoms:
   - diarrhea
   - gas
   - vomiting
-what_to_do: Stop feeding if digestive upset occurs. Contact a vet if toxic ingredients were present.
+what_to_do: >-
+  Stop feeding if digestive upset occurs. Contact a vet if toxic ingredients
+  were present.
 alternatives:
   - plain-yogurt
   - frozen-yogurt
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose plain vanilla without chocolate, nuts, raisins, xylitol, or coffee.
+preparation_notes: 'Choose plain vanilla without chocolate, nuts, raisins, xylitol, or coffee.'
 safe_amount: A small spoonful for large dogs; a tiny lick for small dogs and cats.
 frequency: Rarely.
 related_foods:
@@ -51,7 +53,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -105,17 +109,19 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains lactose, which many adult pets cannot digest well.
+    reason: 'Contains lactose, which many adult pets cannot digest well.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Dairy can cause diarrhea and gas in sensitive pets.
-meta_title: Can Dogs Eat Vanilla Ice Cream? Safety, Risks & Vet Advice
-meta_description: Is Vanilla Ice Cream safe for dogs and cats? Vanilla Ice Cream is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Vanilla Ice Cream? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Vanilla Ice Cream safe for dogs and cats? Vanilla Ice Cream is limited for
+  dogs and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Vanilla Ice Cream
 
 Plain vanilla ice cream is not toxic to dogs or cats, but it is high in sugar, fat, and lactose. A tiny lick on a special occasion is unlikely to harm a healthy pet, but it should not be a regular treat.

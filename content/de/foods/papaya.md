@@ -28,7 +28,7 @@ alternatives:
   - pineapple
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -41,7 +41,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Das Fruchtfleisch enthält natürliche Zucker, die bei diabetischen Tieren eingeschränkt werden sollten.
+    reason: >-
+      Das Fruchtfleisch enthält natürliche Zucker, die bei diabetischen Tieren
+      eingeschränkt werden sollten.
   - condition: Adipositas
     appliesTo:
       - dogs
@@ -54,10 +56,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckerhaltiges Obst kann zur Bildung von Zahnbelag beitragen.
-meta_title: Dürfen Hunde Papaya essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Papaya für Hunde und Katzen sicher? Papaya ist für Hunde und Katzen unbedenklich. Erfahren Sie Symptome, Verhaltenshinweise und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Papaya essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Papaya für Hunde und Katzen sicher? Papaya ist für Hunde und Katzen
+  unbedenklich. Erfahren Sie Symptome, Verhaltenshinweise und tierarztgeprüfte
+  Alternativen.
 ---
-
 # Papaya
 
 Papayafleisch ist für Hunde in Maßen sicher. Entfernen Sie vor dem Füttern die Samen und die Schale.

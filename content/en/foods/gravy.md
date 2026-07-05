@@ -28,20 +28,20 @@ symptoms:
   - diarrhea
   - pancreatitis risk
   - excessive thirst
-what_to_do: Contact a vet if the gravy contained onion, garlic, or a large amount of salt.
+what_to_do: 'Contact a vet if the gravy contained onion, garlic, or a large amount of salt.'
 alternatives:
   - chicken-breast
   - brown-rice
   - chicken-broth
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -78,7 +78,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Often contains onion or garlic and high fat, which are poorly tolerated.
+    reason: 'Often contains onion or garlic and high fat, which are poorly tolerated.'
   - condition: Obesity
     appliesTo:
       - dogs
@@ -96,11 +96,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Rich, fatty, and seasoned gravies commonly cause vomiting or diarrhea.
-meta_title: Can Dogs Eat Gravy? Safety, Risks & Vet Advice
-meta_description: Is Gravy safe for dogs and cats? Gravy is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Rich, fatty, and seasoned gravies commonly cause vomiting or diarrhea.'
+meta_title: 'Can Dogs Eat Gravy? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Gravy safe for dogs and cats? Gravy is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Gravy
 
 Gravy is made from meat drippings, flour, and seasonings, making it high in fat and salt. Many recipes include onion and garlic, which are toxic to pets. A small amount of plain, unsalted meat drippings may be safe, but traditional gravy should be avoided. Pets with a history of pancreatitis should never have gravy.

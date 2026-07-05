@@ -14,27 +14,29 @@ safety:
   dogs:
     status: safe
     severity: low
-    summary: Sicher, wenn sie frei von Xylit und arm an Salz ist.
+    summary: 'Sicher, wenn sie frei von Xylit und arm an Salz ist.'
   cats:
     status: safe
     severity: low
-    summary: In sehr kleinen Mengen sicher, wenn sie kein Xylit enthält.
+    summary: 'In sehr kleinen Mengen sicher, wenn sie kein Xylit enthält.'
 symptoms:
   - Hypoglykämie
   - Leberversagen (bei Xylitgehalt)
   - Magen-Darm-Beschwerden
-what_to_do: Suchen Sie sofort die Notfallversorgung auf, wenn Erdnussbutter mit Xylit verzehrt wurde.
+what_to_do: >-
+  Suchen Sie sofort die Notfallversorgung auf, wenn Erdnussbutter mit Xylit
+  verzehrt wurde.
 alternatives:
   - pumpkin
   - plain-yogurt
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Wählen Sie natürliche Erdnussbutter ohne Xylit, Salz oder zugesetzten Zucker.
+preparation_notes: 'Wählen Sie natürliche Erdnussbutter ohne Xylit, Salz oder zugesetzten Zucker.'
 safe_amount: Ein kleiner Schleck oder ein Teelöffel für Hunde.
 frequency: Gelegentlich als besonders wertvolle Belohnung.
 notes_for_puppies: Verwenden Sie sie in kleinen Mengen als Trainingsbelohnung.
@@ -45,7 +47,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Aufgrund des hohen Fettgehalts kann Erdnussbutter bei empfindlichen Tieren eine Bauchspeicheldrüsenentzündung auslösen.
+    reason: >-
+      Aufgrund des hohen Fettgehalts kann Erdnussbutter bei empfindlichen Tieren
+      eine Bauchspeicheldrüsenentzündung auslösen.
   - condition: Fettstoffwechselstörung
     appliesTo:
       - dogs
@@ -57,17 +61,19 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Kalorienreiches Leckerli, das zu Gewichtszunahme führen kann.
+    reason: 'Kalorienreiches Leckerli, das zu Gewichtszunahme führen kann.'
   - condition: Nahrungsmittelallergien
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
     reason: Erdnüsse können bei einigen Tieren allergische Reaktionen auslösen.
-meta_title: Dürfen Hunde Erdnussbutter essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Erdnussbutter für Hunde und Katzen sicher? Erdnussbutter ist für Hunde und Katzen sicher. Erfahren Sie mehr über Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Erdnussbutter essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Erdnussbutter für Hunde und Katzen sicher? Erdnussbutter ist für Hunde und
+  Katzen sicher. Erfahren Sie mehr über Symptome, was zu tun ist, und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Erdnussbutter
 
 Natürliche Erdnussbutter ohne Xylit ist ein beliebter und im Allgemeinen sicherer Leckerli für Hunde. Sie kann zum Verstecken von Tabletten oder als Trainingsbelohnung verwendet werden. Lesen Sie das Etikett sorgfältig auf Xylit durch.

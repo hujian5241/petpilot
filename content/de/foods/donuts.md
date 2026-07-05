@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber viel Fett und Zucker können eine Pankreatitis verursachen.
+    summary: >-
+      Nicht giftig, aber viel Fett und Zucker können eine Pankreatitis
+      verursachen.
   cats:
     status: limited
     severity: low
@@ -27,18 +29,22 @@ symptoms:
   - Durchfall
   - Pankreatitis
   - Gewichtszunahme
-what_to_do: Beobachten Sie Ihr Tier auf Erbrechen oder Durchfall. Nehmen Sie bei schwerwiegenden Symptomen Kontakt mit Ihrem Tierarzt auf.
+what_to_do: >-
+  Beobachten Sie Ihr Tier auf Erbrechen oder Durchfall. Nehmen Sie bei
+  schwerwiegenden Symptomen Kontakt mit Ihrem Tierarzt auf.
 alternatives:
   - plain-bread
   - blueberries
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Füttern Sie Donuts nicht. Schokolade, Xylit und glasierte Zuckergüsse erhöhen das Risiko.
+preparation_notes: >-
+  Füttern Sie Donuts nicht. Schokolade, Xylit und glasierte Zuckergüsse erhöhen
+  das Risiko.
 safe_amount: Vermeiden.
 frequency: Vermeiden.
 condition_warnings:
@@ -47,7 +53,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Frittiertes, zucker- und fettreiches Futter, das Gewichtszunahme fördert.
+    reason: 'Frittiertes, zucker- und fettreiches Futter, das Gewichtszunahme fördert.'
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -59,7 +65,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Hoher Fettgehalt kann eine Pankreatitis auslösen; Pankreatitis ist als Symptom aufgeführt.
+    reason: >-
+      Hoher Fettgehalt kann eine Pankreatitis auslösen; Pankreatitis ist als
+      Symptom aufgeführt.
   - condition: Hyperlipidämie
     appliesTo:
       - dogs
@@ -71,17 +79,19 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Zuckerhaltige, klebrige Überzüge fördern Zahnerkrankungen.
+    reason: 'Zuckerhaltige, klebrige Überzüge fördern Zahnerkrankungen.'
   - condition: Gastrointestinale Sensibilität
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
     reason: Frittiertes Fett und Zucker verursachen häufig Erbrechen oder Durchfall.
-meta_title: Dürfen Hunde Donuts essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Sind Donuts sicher für Hunde und Katzen? Donuts sind für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierärztlich empfohlene Alternativen.
+meta_title: 'Dürfen Hunde Donuts essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Sind Donuts sicher für Hunde und Katzen? Donuts sind für Hunde und Katzen nur
+  eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und
+  tierärztlich empfohlene Alternativen.
 ---
-
 # Donuts
 
 Donuts sind frittiert und enthalten viel Zucker und Fett. Sie können bei Hunden und Katzen Verdauungsbeschwerden und Pankreatitis verursachen. Manche Donuts enthalten Schokolade oder andere giftige Zutaten.

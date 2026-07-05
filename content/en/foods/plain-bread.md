@@ -23,20 +23,24 @@ safety:
 symptoms:
   - gas
   - bloating
-what_to_do: No action for a small piece of plain bread. Contact a vet if bread contained raisins, garlic, onion, xylitol, or raw dough.
+what_to_do: >-
+  No action for a small piece of plain bread. Contact a vet if bread contained
+  raisins, garlic, onion, xylitol, or raw dough.
 alternatives:
   - plain-pasta
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain. Avoid butter, garlic, onion, raisins, nuts, seeds, and xylitol-sweetened breads.
-safe_amount: A small bite for small dogs, one slice for large dogs; a crumb for cats.
+preparation_notes: >-
+  Serve plain. Avoid butter, garlic, onion, raisins, nuts, seeds, and
+  xylitol-sweetened breads.
+safe_amount: 'A small bite for small dogs, one slice for large dogs; a crumb for cats.'
 frequency: Rarely.
 related_foods:
   - whole-wheat-bread
@@ -61,10 +65,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Wheat/gluten may be an allergen for some pets.
-meta_title: Can Dogs Eat Plain Bread? Safety, Risks & Vet Advice
-meta_description: Is Plain Bread safe for dogs and cats? Plain Bread is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Plain Bread? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Plain Bread safe for dogs and cats? Plain Bread is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Plain Bread
 
 A small piece of plain baked bread is generally safe for dogs but offers little nutritional benefit. Bread is high in calories and can contribute to weight gain if fed regularly. The biggest risks come from breads containing toxic ingredients.

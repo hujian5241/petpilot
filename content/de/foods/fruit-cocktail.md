@@ -14,7 +14,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Wegen zugesetzter Zucker und Sirups nicht empfohlen. Nur einzelne Stücke von normalem Obst.
+    summary: >-
+      Wegen zugesetzter Zucker und Sirups nicht empfohlen. Nur einzelne Stücke
+      von normalem Obst.
   cats:
     status: limited
     severity: low
@@ -29,11 +31,13 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Wenn Sie es füttern, spülen Sie den Sirup ab und verwenden Sie nur einzelne Stücke von normalem Obst.
+preparation_notes: >-
+  Wenn Sie es füttern, spülen Sie den Sirup ab und verwenden Sie nur einzelne
+  Stücke von normalem Obst.
 safe_amount: Ein kleines Stück normales Obst.
 frequency: Nur selten.
 condition_warnings:
@@ -61,10 +65,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sirup kann bei empfindlichen Tieren Durchfall verursachen.
-meta_title: Dürfen Hunde Fruchtcocktail essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Fruchtcocktail für Hunde und Katzen sicher? Fruchtcocktail ist für Hunde nur eingeschränkt geeignet und für Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Fruchtcocktail essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Fruchtcocktail für Hunde und Katzen sicher? Fruchtcocktail ist für Hunde
+  nur eingeschränkt geeignet und für Katzen nur eingeschränkt geeignet. Erfahren
+  Sie Symptome, was zu tun ist und tierärztlich geprüfte Alternativen.
 ---
-
 # Fruchtcocktail
 
 Dosenobstcocktail enthält zugesetzte Zucker und Sirups, die für Haustiere nicht gesund sind. Frisches Obst ist die bessere Wahl.

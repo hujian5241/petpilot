@@ -15,27 +15,33 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: In kleinen Mengen unbedenklich, wenn sie schlicht und ungewürzt ist.
+    summary: 'In kleinen Mengen unbedenklich, wenn sie schlicht und ungewürzt ist.'
   cats:
     status: safe
-    summary: In sehr kleinen Mengen unbedenklich, wenn sie schlicht ist.
+    summary: 'In sehr kleinen Mengen unbedenklich, wenn sie schlicht ist.'
 symptoms:
   - Blähungen
   - Aufblähung
-what_to_do: Bei einem kleinen schlichten Stück ist keine Maßnahme erforderlich. Vermeiden Sie gewürzte oder frittierte Varianten.
+what_to_do: >-
+  Bei einem kleinen schlichten Stück ist keine Maßnahme erforderlich. Vermeiden
+  Sie gewürzte oder frittierte Varianten.
 alternatives:
   - plain-bread
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Nur schlicht servieren. Vermeiden Sie gewürzte Chips, Quesadillas, Salsa, Salz und Öl.
-safe_amount: Ein kleines Stück für kleine Hunde, eine Tortilla für große Hunde; ein winziges Stück für Katzen.
+preparation_notes: >-
+  Nur schlicht servieren. Vermeiden Sie gewürzte Chips, Quesadillas, Salsa, Salz
+  und Öl.
+safe_amount: >-
+  Ein kleines Stück für kleine Hunde, eine Tortilla für große Hunde; ein
+  winziges Stück für Katzen.
 frequency: Nur selten.
 related_foods:
   - flour-tortilla
@@ -53,7 +59,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Größtenteils leere Kalorien; sie sollte daher nur selten verfüttert werden.
+    reason: >-
+      Größtenteils leere Kalorien; sie sollte daher nur selten verfüttert
+      werden.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -66,10 +74,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Kann Blähungen oder Aufblähung verursachen.
-meta_title: Dürfen Hunde Mais-Tortilla essen? Sicherheit, Risiken und Tierarzt-Rat
-meta_description: Ist Mais-Tortilla für Hunde und Katzen unbedenklich? Mais-Tortilla ist für Hunde und Katzen unbedenklich. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Mais-Tortilla essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Ist Mais-Tortilla für Hunde und Katzen unbedenklich? Mais-Tortilla ist für
+  Hunde und Katzen unbedenklich. Erfahren Sie Symptome, was zu tun ist und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Mais-Tortilla
 
 Eine schlichte Mais-Tortilla ist für Hunde in kleinen Mengen unbedenklich. Sie ist fettarm im Vergleich zu Weizen-Tortillas, aber dennoch größtenteils leere Kalorien. Tortilla-Chips, Quesadillas und Tacos sind aufgrund von Salz, Fett, Käse, Zwiebeln, Knoblauch und Gewürzen nicht unbedenklich.

@@ -26,23 +26,27 @@ symptoms:
   - diarrhea
   - drowsiness
   - loss of appetite
-what_to_do: Remove plant access and monitor. Contact a veterinarian if symptoms persist or worsen.
+what_to_do: >-
+  Remove plant access and monitor. Contact a veterinarian if symptoms persist or
+  worsen.
 alternatives:
   - areca-palm
   - parlor-palm
   - boston-fern
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/bird-of-paradise
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/bird-of-paradise
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/bird-of-paradise/
+    url: 'https://www.petpoisonhelpline.com/poison/bird-of-paradise/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Bird of Paradise and Pet Safety — Mildly Toxic | PetPilot
-meta_description: Bird of paradise can cause mild stomach upset in pets. Learn symptoms, care, and safe tropical alternatives.
+meta_description: >-
+  Bird of paradise can cause mild stomach upset in pets. Learn symptoms, care,
+  and safe tropical alternatives.
 ---
-
 # Bird of Paradise
 
 Bird of paradise is a striking tropical plant with banana-like leaves and exotic orange and blue flowers. While less toxic than many houseplants, the seeds and fruits can cause gastrointestinal upset and drowsiness in pets.

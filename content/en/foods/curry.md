@@ -18,7 +18,9 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Curries usually contain onion, garlic, spices, and fat that can upset the stomach or be toxic.
+    summary: >-
+      Curries usually contain onion, garlic, spices, and fat that can upset the
+      stomach or be toxic.
   cats:
     status: limited
     severity: moderate
@@ -35,13 +37,13 @@ alternatives:
   - sweet-potato
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -55,7 +57,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Often high in salt and may contain onion and garlic, which are unsafe for CKD patients.
+    reason: >-
+      Often high in salt and may contain onion and garlic, which are unsafe for
+      CKD patients.
   - condition: Heart disease/hypertension
     appliesTo:
       - dogs
@@ -85,17 +89,22 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Onion, garlic, ginger, chili, and spices commonly cause vomiting and diarrhea.
+    reason: >-
+      Onion, garlic, ginger, chili, and spices commonly cause vomiting and
+      diarrhea.
   - condition: Liver disease
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Spice burden and potential allium content may stress the liver; severity-dependent.
-meta_title: Can Dogs Eat Curry? Safety, Risks & Vet Advice
-meta_description: Is Curry safe for dogs and cats? Curry is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      Spice burden and potential allium content may stress the liver;
+      severity-dependent.
+meta_title: 'Can Dogs Eat Curry? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Curry safe for dogs and cats? Curry is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Curry
 
 Curry dishes are flavorful but often include onion, garlic, ginger, chili, and rich fats. Onion and garlic are the biggest concerns because they can damage red blood cells. Spices can also irritate the digestive tract. A small lick of mild curry may only cause stomach upset, but larger amounts or curries with lots of alliums warrant veterinary advice.

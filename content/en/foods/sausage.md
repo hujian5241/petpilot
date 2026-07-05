@@ -18,31 +18,35 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Often contains garlic, onion, salt, and fat. Avoid sharing with pets.
+    summary: 'Often contains garlic, onion, salt, and fat. Avoid sharing with pets.'
   cats:
     status: limited
     severity: moderate
-    summary: Often contains garlic, onion, salt, and fat. Avoid sharing with pets.
+    summary: 'Often contains garlic, onion, salt, and fat. Avoid sharing with pets.'
 symptoms:
   - vomiting
   - diarrhea
   - pancreatitis
   - anemia
   - excessive thirst
-what_to_do: If sausage containing garlic or onion was eaten, contact your vet or poison control. Seek emergency care for weakness, pale gums, or collapse.
+what_to_do: >-
+  If sausage containing garlic or onion was eaten, contact your vet or poison
+  control. Seek emergency care for weakness, pale gums, or collapse.
 alternatives:
   - chicken-breast
   - turkey
   - eggs
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid feeding sausage. If a plain, low-sodium, garlic/onion-free variety exists, only a tiny amount should be considered.
+preparation_notes: >-
+  Avoid feeding sausage. If a plain, low-sodium, garlic/onion-free variety
+  exists, only a tiny amount should be considered.
 safe_amount: Avoid.
 frequency: Rarely if ever.
 related_foods:
@@ -96,7 +100,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Seasonings, fat, and additives can irritate the GI tract in IBD.
+    reason: 'Seasonings, fat, and additives can irritate the GI tract in IBD.'
   - condition: Urinary tract disease/bladder stones
     appliesTo:
       - dogs
@@ -114,17 +118,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Rich, fatty, or seasoned foods commonly cause GI upset.
+    reason: 'Rich, fatty, or seasoned foods commonly cause GI upset.'
   - condition: Purine metabolism disorders
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: High purine content can trigger urate crystal/stone formation.
-meta_title: Can Dogs Eat Sausage? Safety, Risks & Vet Advice
-meta_description: Is Sausage safe for dogs and cats? Sausage is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sausage? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sausage safe for dogs and cats? Sausage is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sausage
 
 Sausage is highly seasoned and typically contains garlic, onion powder, salt, and high amounts of fat. These ingredients can cause anemia, pancreatitis, and digestive upset in dogs and cats.

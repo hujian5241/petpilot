@@ -13,7 +13,9 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: English walnuts are not highly toxic, but moldy walnuts can cause seizures.
+    summary: >-
+      English walnuts are not highly toxic, but moldy walnuts can cause
+      seizures.
   cats:
     status: limited
     severity: low
@@ -31,13 +33,13 @@ alternatives:
   - blueberries
 sources:
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Only plain, fresh, shelled walnuts. Never feed moldy or black walnuts.
+preparation_notes: 'Only plain, fresh, shelled walnuts. Never feed moldy or black walnuts.'
 safe_amount: Avoid feeding walnuts when possible; one small piece very rarely.
 frequency: Avoid.
 related_foods:
@@ -49,7 +51,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -92,10 +96,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Walnuts? Safety, Risks & Vet Advice
-meta_description: Is Walnuts safe for dogs and cats? Walnuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Walnuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Walnuts safe for dogs and cats? Walnuts is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Walnuts
 
 Plain English walnuts are not as dangerous as black walnuts, but they are high in fat and can cause gastrointestinal upset. The biggest concern is mold, which can produce tremorgenic mycotoxins leading to seizures.

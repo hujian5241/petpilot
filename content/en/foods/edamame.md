@@ -21,20 +21,20 @@ safety:
 symptoms:
   - gas
   - allergic reaction
-what_to_do: Stop feeding if gas, itching, or vomiting occurs.
+what_to_do: 'Stop feeding if gas, itching, or vomiting occurs.'
 alternatives:
   - green-beans
   - peas
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain, cooked, and removed from pods. Avoid salted or seasoned edamame.
+preparation_notes: 'Serve plain, cooked, and removed from pods. Avoid salted or seasoned edamame.'
 safe_amount: A few beans for dogs; one or two beans for cats.
 frequency: Occasionally.
 related_foods:
@@ -63,11 +63,14 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Soy isoflavones may interfere with thyroid function; veterinary guidance is recommended for thyroid disorders.
-meta_title: Can Dogs Eat Edamame? Safety, Risks & Vet Advice
-meta_description: Is Edamame safe for dogs and cats? Edamame is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      Soy isoflavones may interfere with thyroid function; veterinary guidance
+      is recommended for thyroid disorders.
+meta_title: 'Can Dogs Eat Edamame? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Edamame safe for dogs and cats? Edamame is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Edamame
 
 Plain cooked edamame beans are safe for dogs in small amounts. They provide plant protein and fiber. Some dogs have soy allergies, so introduce edamame cautiously.

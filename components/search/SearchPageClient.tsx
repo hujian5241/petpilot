@@ -3,7 +3,14 @@
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Fuse from "fuse.js";
-import { Search, Leaf, UtensilsCrossed } from "lucide-react";
+import {
+  Search,
+  Leaf,
+  UtensilsCrossed,
+  Pill,
+  FlaskConical,
+  Bug,
+} from "lucide-react";
 
 import { Link } from "@/i18n/routing";
 import { SearchBar } from "@/components/search/SearchBar";
@@ -22,6 +29,14 @@ interface SearchPageClientProps {
   initialIndex: SearchIndexItem[];
   contactEmail?: string;
 }
+
+const routePrefix: Record<SearchIndexItem["type"], string> = {
+  food: "foods",
+  plant: "plants",
+  medication: "medications",
+  "household-chemical": "household-chemicals",
+  pesticide: "pesticides",
+};
 
 export function SearchPageClient({
   locale,
@@ -94,23 +109,13 @@ export function SearchPageClient({
               {results.map(({ item, matchType, matchedAlias }) => (
                 <Link
                   key={`${item.type}-${item.slug}`}
-                  href={`/${item.type}s/${item.slug}`}
+                  href={`/${routePrefix[item.type]}/${item.slug}`}
                   className="flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-2">
                       <h2 className="text-lg font-semibold text-foreground">{item.name}</h2>
-                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
-                        {item.type === "food" ? (
-                          <>
-                            <UtensilsCrossed className="h-3 w-3" aria-hidden="true" /> {t("foodTag")}
-                          </>
-                        ) : (
-                          <>
-                            <Leaf className="h-3 w-3" aria-hidden="true" /> {t("plantTag")}
-                          </>
-                        )}
-                      </span>
+                      <TypeTag type={item.type} />
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">{item.summary}</p>
                     {matchType === "alias" && matchedAlias && (
@@ -138,7 +143,14 @@ export function SearchPageClient({
                 {t("noResultsDescription")}
               </p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
-                {["grapes", "chocolate", "lilies", "blueberries", "carrots"].map((suggestion) => (
+                {[
+                  "grapes",
+                  "chocolate",
+                  "lilies",
+                  "ibuprofen",
+                  "bleach",
+                  "ant bait",
+                ].map((suggestion) => (
                   <Link
                     key={suggestion}
                     href={`/search?q=${encodeURIComponent(suggestion)}`}
@@ -169,7 +181,14 @@ export function SearchPageClient({
             {t("emptyState")}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {["apple", "tulips", "onions", "spider plant"].map((suggestion) => (
+            {[
+              "apple",
+              "tulips",
+              "onions",
+              "acetaminophen",
+              "spider plant",
+              "weed killer",
+            ].map((suggestion) => (
               <Link
                 key={suggestion}
                 href={`/search?q=${encodeURIComponent(suggestion)}`}
@@ -182,5 +201,43 @@ export function SearchPageClient({
         </div>
       )}
     </div>
+  );
+}
+
+function TypeTag({ type }: { type: SearchIndexItem["type"] }) {
+  const t = useTranslations("SearchPage");
+
+  const config: Record<
+    SearchIndexItem["type"],
+    { icon: React.ReactNode; label: string }
+  > = {
+    food: {
+      icon: <UtensilsCrossed className="h-3 w-3" aria-hidden="true" />,
+      label: t("foodTag"),
+    },
+    plant: {
+      icon: <Leaf className="h-3 w-3" aria-hidden="true" />,
+      label: t("plantTag"),
+    },
+    medication: {
+      icon: <Pill className="h-3 w-3" aria-hidden="true" />,
+      label: t("medicationTag"),
+    },
+    "household-chemical": {
+      icon: <FlaskConical className="h-3 w-3" aria-hidden="true" />,
+      label: t("householdChemicalTag"),
+    },
+    pesticide: {
+      icon: <Bug className="h-3 w-3" aria-hidden="true" />,
+      label: t("pesticideTag"),
+    },
+  };
+
+  const { icon, label } = config[type];
+
+  return (
+    <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+      {icon} {label}
+    </span>
   );
 }

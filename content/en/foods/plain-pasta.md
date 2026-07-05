@@ -29,14 +29,16 @@ alternatives:
   - quinoa
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until soft. Do not add sauce, garlic, onion, cheese, salt, or oil.
-safe_amount: A few pieces for small dogs, up to half a cup for large dogs; one small piece for cats.
+preparation_notes: 'Cook until soft. Do not add sauce, garlic, onion, cheese, salt, or oil.'
+safe_amount: >-
+  A few pieces for small dogs, up to half a cup for large dogs; one small piece
+  for cats.
 frequency: Occasionally.
 related_foods:
   - whole-wheat-pasta
@@ -61,10 +63,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Wheat/gluten may trigger allergic reactions.
-meta_title: Can Dogs Eat Plain Pasta? Safety, Risks & Vet Advice
-meta_description: Is Plain Pasta safe for dogs and cats? Plain Pasta is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Plain Pasta? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Plain Pasta safe for dogs and cats? Plain Pasta is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Plain Pasta
 
 Plain, cooked pasta is safe for dogs as an occasional treat. It is bland and easy to chew, making it a common vehicle for hiding medications. Pasta should make up only a small fraction of a dog's diet to avoid excess carbohydrates and weight gain.

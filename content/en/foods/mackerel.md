@@ -21,20 +21,24 @@ safety:
 symptoms:
   - vomiting
   - diarrhea
-what_to_do: If mackerel in oil or heavy brine was eaten, monitor for digestive upset and contact your vet if symptoms persist.
+what_to_do: >-
+  If mackerel in oil or heavy brine was eaten, monitor for digestive upset and
+  contact your vet if symptoms persist.
 alternatives:
   - sardines
   - salmon
   - whitefish
 sources:
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, cooked mackerel or water-packed canned mackerel with no added salt or sauces.
+preparation_notes: >-
+  Use plain, cooked mackerel or water-packed canned mackerel with no added salt
+  or sauces.
 safe_amount: Small pieces as an occasional treat.
 frequency: Occasional.
 related_foods:
@@ -60,10 +64,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Rich fish can cause diarrhea in sensitive pets.
-meta_title: Can Dogs Eat Mackerel? Safety, Risks & Vet Advice
-meta_description: Is Mackerel safe for dogs and cats? Mackerel is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Mackerel? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Mackerel safe for dogs and cats? Mackerel is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Mackerel
 
 Mackerel is an oily fish rich in omega-3 fatty acids and protein. Plain, cooked mackerel or water-packed canned mackerel can be a healthy occasional treat.

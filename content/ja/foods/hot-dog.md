@@ -34,13 +34,13 @@ alternatives:
   - brown-rice
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -94,7 +94,6 @@ condition_warnings:
 meta_title: 犬はホットドッグを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ホットドッグは犬や猫にとって安全でしょうか？犬は「制限あり」、猫も「制限あり」です。症状、対処法、獣医師が推奨する代替品をご確認ください。
 ---
-
 # ホットドッグ
 
 ホットドッグは人気のあるしつけ用のおやつですが、過度に加工されており、ナトリウムと脂肪が多く含まれています。一部のブランドにはニンニクパウダーやタマネギパウダーが含まれており、シュガーレスタイプにはキシリトールが含まれる場合があります。プレーンで調理済みのホットドッグを少量、たまに与えることは、ほとんどのペットに害を及ぼす可能性は低いですが、日常の主食にはしないでください。可能であれば低塩タイプを選びましょう。

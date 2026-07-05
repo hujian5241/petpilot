@@ -14,28 +14,37 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Gekocht unbedenklich. Trockene rohe Haferflocken sollten nicht in großen Mengen verfüttert werden.
+    summary: >-
+      Gekocht unbedenklich. Trockene rohe Haferflocken sollten nicht in großen
+      Mengen verfüttert werden.
   cats:
     status: safe
     summary: Gekocht in kleinsten Mengen unbedenklich.
 symptoms:
   - Blähungen
   - Aufblähung
-what_to_do: Stellen Sie sicher, dass die Haferflocken gekocht sind. Wenn große Mengen Trockenflocken gefressen wurden, bieten Sie Wasser an und beobachten Sie das Tier.
+what_to_do: >-
+  Stellen Sie sicher, dass die Haferflocken gekocht sind. Wenn große Mengen
+  Trockenflocken gefressen wurden, bieten Sie Wasser an und beobachten Sie das
+  Tier.
 alternatives:
   - plain-oatmeal
   - white-rice
   - quinoa
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Kochen Sie sie vor dem Füttern. Trockene Haferflocken können quellen und bei größeren Mengen Aufblähungen verursachen.
-safe_amount: Ein Esslöffel gekochte Haferflocken für kleine Hunde, bis zu einer Vierteltasse für große Hunde.
+preparation_notes: >-
+  Kochen Sie sie vor dem Füttern. Trockene Haferflocken können quellen und bei
+  größeren Mengen Aufblähungen verursachen.
+safe_amount: >-
+  Ein Esslöffel gekochte Haferflocken für kleine Hunde, bis zu einer
+  Vierteltasse für große Hunde.
 frequency: Gelegentlich.
 related_foods:
   - plain-oatmeal
@@ -64,11 +73,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Fasergehalt kann bei empfindlichen Tieren Blähungen oder weichen Stuhl verursachen.
-meta_title: Können Hunde Haferflocken essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Sind Haferflocken für Hunde und Katzen sicher? Haferflocken sind für Hunde und Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte Alternativen.
+    reason: >-
+      Hoher Fasergehalt kann bei empfindlichen Tieren Blähungen oder weichen
+      Stuhl verursachen.
+meta_title: 'Können Hunde Haferflocken essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Sind Haferflocken für Hunde und Katzen sicher? Haferflocken sind für Hunde und
+  Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte
+  Alternativen.
 ---
-
 # Haferflocken
 
 Haferflocken sind Vollkornhafer, der gedämpft und plattgewalzt wurde. Für Hunde sind sie unbedenklich, wenn sie zu Haferbrei gekocht oder in einfache, tiergerechte Leckerlis gebacken werden. Eine große Menge Trockenhaferflocken kann zu Aufblähungen führen, da die Flocken Feuchtigkeit im Magen aufnehmen.

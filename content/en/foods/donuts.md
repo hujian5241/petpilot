@@ -15,7 +15,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but high fat and sugar can cause pancreatitis.
+    summary: 'Not toxic, but high fat and sugar can cause pancreatitis.'
   cats:
     status: limited
     severity: low
@@ -33,11 +33,11 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid feeding. Chocolate, xylitol, and glazed toppings add risk.
+preparation_notes: 'Avoid feeding. Chocolate, xylitol, and glazed toppings add risk.'
 safe_amount: Avoid.
 frequency: Avoid.
 condition_warnings:
@@ -46,7 +46,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Fried, high-sugar, high-fat food that promotes weight gain.
+    reason: 'Fried, high-sugar, high-fat food that promotes weight gain.'
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -58,7 +58,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat content can trigger pancreatitis; the file lists pancreatitis as a symptom.
+    reason: >-
+      High fat content can trigger pancreatitis; the file lists pancreatitis as
+      a symptom.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
@@ -70,17 +72,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Sugary, sticky coatings promote dental disease.
+    reason: 'Sugary, sticky coatings promote dental disease.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
     reason: Fried fat and sugar commonly cause vomiting or diarrhea.
-meta_title: Can Dogs Eat Donuts? Safety, Risks & Vet Advice
-meta_description: Is Donuts safe for dogs and cats? Donuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Donuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Donuts safe for dogs and cats? Donuts is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Donuts
 
 Donuts are fried and loaded with sugar and fat. They can cause digestive upset and pancreatitis in dogs and cats. Some donuts contain chocolate or other toxic ingredients.

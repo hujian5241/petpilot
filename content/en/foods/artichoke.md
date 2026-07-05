@@ -27,13 +27,15 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Feed only cooked artichoke heart pieces. Avoid leaves, thorns, dips, and seasonings.
+preparation_notes: >-
+  Feed only cooked artichoke heart pieces. Avoid leaves, thorns, dips, and
+  seasonings.
 safe_amount: A small piece for dogs; a tiny piece for cats.
 frequency: Rarely.
 related_foods:
@@ -52,10 +54,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber-rich and can cause gas or diarrhea.
-meta_title: Can Dogs Eat Artichoke? Safety, Risks & Vet Advice
-meta_description: Is Artichoke safe for dogs and cats? Artichoke is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Artichoke? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Artichoke safe for dogs and cats? Artichoke is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Artichoke
 
 Cooked artichoke hearts are safe for dogs in small amounts. The tough outer leaves and thorny tips should be removed because they can cause choking or mouth injury. Artichokes are high in fiber and antioxidants.

@@ -14,33 +14,41 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: In kleinen Mengen unbedenklich. Der hohe Ballaststoffgehalt kann Blähungen verursachen.
+    summary: >-
+      In kleinen Mengen unbedenklich. Der hohe Ballaststoffgehalt kann Blähungen
+      verursachen.
   cats:
     status: safe
     summary: In sehr kleinen Mengen unbedenklich; kann Blähungen verursachen.
 symptoms:
   - Blähungen
   - leichter Durchfall
-what_to_do: Reduzieren Sie die Portionsgröße, wenn Blähungen oder weicher Stuhl auftreten. Setzen Sie die Fütterung ab, wenn die Symptome anhalten.
+what_to_do: >-
+  Reduzieren Sie die Portionsgröße, wenn Blähungen oder weicher Stuhl auftreten.
+  Setzen Sie die Fütterung ab, wenn die Symptome anhalten.
 alternatives:
   - green-beans
   - carrots
   - cauliflower
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Dämpfen Sie ihn oder servieren Sie ihn roh in sehr kleinen Stücken. Vermeiden Sie Gewürze, Öle oder Käsesaucen.
+preparation_notes: >-
+  Dämpfen Sie ihn oder servieren Sie ihn roh in sehr kleinen Stücken. Vermeiden
+  Sie Gewürze, Öle oder Käsesaucen.
 safe_amount: Einige kleine Röschen für Hunde; ein winziges Stück für Katzen.
 frequency: Gelegentlich.
 related_foods:
   - cauliflower
   - brussels-sprouts
-notes_for_puppies: Führen Sie Brokkoli langsam ein, da Welpen zu Blähungen und weichem Stuhl neigen.
+notes_for_puppies: >-
+  Führen Sie Brokkoli langsam ein, da Welpen zu Blähungen und weichem Stuhl
+  neigen.
 condition_warnings:
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
@@ -59,12 +67,16 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Enthält Goitrogene, die in großen Mengen die Schilddrüsenfunktion beeinträchtigen können.
+    reason: >-
+      Enthält Goitrogene, die in großen Mengen die Schilddrüsenfunktion
+      beeinträchtigen können.
     notes: Relevant für Katzen mit Hyperthyreose und Hunde mit Hypothyreose.
-meta_title: Dürfen Hunde Brokkoli essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Brokkoli für Hunde und Katzen unbedenklich? Brokkoli ist für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Brokkoli essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Brokkoli für Hunde und Katzen unbedenklich? Brokkoli ist für Hunde und
+  Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten
+  und tierärztlich geprüfte Alternativen.
 ---
-
 # Brokkoli
 
 Brokkoli ist für Hunde und Katzen in kleinen Mengen unbedenklich. Er enthält Ballaststoffe, Vitamin C und Antioxidantien. Die Röschen enthalten jedoch Isothiocyanate, die bei einigen Tieren bei größeren Mengen Magenreizungen verursachen können.

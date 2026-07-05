@@ -14,28 +14,34 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Sicher, wenn schlicht gekocht und in Maßen verfüttert.
+    summary: 'Sicher, wenn schlicht gekocht und in Maßen verfüttert.'
   cats:
     status: safe
-    summary: Sicher in sehr kleinen Mengen, wenn ungewürzt und gekocht.
+    summary: 'Sicher in sehr kleinen Mengen, wenn ungewürzt und gekocht.'
 symptoms:
   - Blähungen
   - leichter Durchfall
-what_to_do: Verringern Sie die Portion, wenn Verdauungsbeschwerden auftreten. Achten Sie darauf, dass keine Gewürze enthalten sind.
+what_to_do: >-
+  Verringern Sie die Portion, wenn Verdauungsbeschwerden auftreten. Achten Sie
+  darauf, dass keine Gewürze enthalten sind.
 alternatives:
   - polenta
   - white-rice
   - plain-pasta
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Kochen Sie sie weich. Fügen Sie keine Butter, Salz, Käse, Knoblauch oder Garnelen hinzu.
-safe_amount: Ein Esslöffel für kleine Hunde, bis zu einer Vierteltasse für große Hunde; ein Teelöffel für Katzen.
+preparation_notes: >-
+  Kochen Sie sie weich. Fügen Sie keine Butter, Salz, Käse, Knoblauch oder
+  Garnelen hinzu.
+safe_amount: >-
+  Ein Esslöffel für kleine Hunde, bis zu einer Vierteltasse für große Hunde; ein
+  Teelöffel für Katzen.
 frequency: Gelegentlich.
 related_foods:
   - polenta
@@ -59,9 +65,14 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Maisbasierte Kohlenhydrate können bei empfindlichen Tieren Blähungen verursachen.
-meta_title: Können Hunde Grits essen? Sicherheit, Risiken und Tierarzt-Ratschläge
-meta_description: Sind Grits für Hunde und Katzen sicher? Grits sind für Hunde und Katzen sicher. Erfahren Sie mehr über Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+    reason: >-
+      Maisbasierte Kohlenhydrate können bei empfindlichen Tieren Blähungen
+      verursachen.
+meta_title: 'Können Hunde Grits essen? Sicherheit, Risiken und Tierarzt-Ratschläge'
+meta_description: >-
+  Sind Grits für Hunde und Katzen sicher? Grits sind für Hunde und Katzen
+  sicher. Erfahren Sie mehr über Symptome, was zu tun ist, und tierarztgeprüfte
+  Alternativen.
 ---
 ```
 
