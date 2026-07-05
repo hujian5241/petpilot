@@ -36,6 +36,7 @@
     "popularSearches": "Popular Searches",
     "viewAll": "View all ({count})",
     "showLess": "Show less",
+    "stats": "Our database covers {categories} categories and {total, plural, one {# item} other {# items}}: {foods} foods, {plants} plants, {medications} medications, {householdChemicals} chemicals, and {pesticides} pesticides.",
     "criticalNewsTitle": "Critical Pet Safety Alerts",
     "criticalNewsCta": "View all news",
     "whyTrustTitle": "Why Trust PetPilot?",

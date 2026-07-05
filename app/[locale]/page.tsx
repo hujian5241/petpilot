@@ -1,12 +1,22 @@
-import { Suspense } from "react";
-import { Search } from "lucide-react";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/routing";
+import { AlertTriangle } from "lucide-react";
 import { SearchBar } from "@/components/search/SearchBar";
 import { FoodCard } from "@/components/food/FoodCard";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
-import { getAllCategories, getAllFoods, getSiteConfig } from "@/lib/content";
+import { CollapsibleGridSection } from "@/components/layout/CollapsibleGridSection";
+import {
+  getAllCategories,
+  getAllFoods,
+  getSiteConfig,
+  getHouseholdChemicalSlugs,
+  getMedicationSlugs,
+  getPesticideSlugs,
+  getPlantSlugs,
+} from "@/lib/content";
+import { getAllNews } from "@/lib/news-content";
 import type { Locale } from "@/lib/i18n";
 
 interface HomePageProps {
@@ -24,13 +34,40 @@ export async function generateMetadata({ params }: HomePageProps) {
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
-  const [config, foods, categories] = await Promise.all([
+  const [
+    config,
+    foods,
+    categories,
+    allNews,
+    plantSlugs,
+    medicationSlugs,
+    householdChemicalSlugs,
+    pesticideSlugs,
+  ] = await Promise.all([
     getSiteConfig(locale),
     getAllFoods(locale),
     getAllCategories(locale),
+    getAllNews(locale),
+    getPlantSlugs(locale),
+    getMedicationSlugs(locale),
+    getHouseholdChemicalSlugs(locale),
+    getPesticideSlugs(locale),
   ]);
 
+  const totalItems =
+    foods.length +
+    plantSlugs.length +
+    medicationSlugs.length +
+    householdChemicalSlugs.length +
+    pesticideSlugs.length;
+
   const t = await getTranslations("HomePage");
+
+  const oneYearAgo = new Date();
+  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+  const criticalNews = allNews
+    .filter((item) => item.entry.severity === "critical" && new Date(item.entry.date) >= oneYearAgo)
+    .slice(0, 5);
 
   const popularSlugs = [
     "grapes",
@@ -54,14 +91,23 @@ export default async function HomePage({ params }: HomePageProps) {
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             {config.tagline}
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            {t("heroSubtitle")}
-          </p>
+          <p className="mt-4 text-lg text-muted-foreground">{t("heroSubtitle")}</p>
           <div className="mt-8">
-            <Suspense fallback={<div className="h-14 w-full animate-pulse rounded-full bg-muted" />}>
-              <SearchBar locale={locale} size="large" />
-            </Suspense>
+            <SearchBar locale={locale} size="large" />
           </div>
+
+          <p className="mt-4 text-sm text-muted-foreground">
+            {t("stats", {
+              categories: categories.length,
+              total: totalItems,
+              foods: foods.length,
+              plants: plantSlugs.length,
+              medications: medicationSlugs.length,
+              householdChemicals: householdChemicalSlugs.length,
+              pesticides: pesticideSlugs.length,
+            })}
+          </p>
+
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground">
             <span>{t("popularLabel")}{" "}</span>
             {popularFoods.slice(0, 6).map((food, index) => (
@@ -83,6 +129,43 @@ export default async function HomePage({ params }: HomePageProps) {
         <EmergencyBanner locale={locale} />
       </section>
 
+      {criticalNews.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+          <div className="rounded-lg border border-primary bg-primary/5 px-4 py-4">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h2 className="font-semibold text-foreground">{t("criticalNewsTitle")}</h2>
+                  <Link
+                    href="/news"
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    {t("criticalNewsCta")}
+                  </Link>
+                </div>
+                <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {criticalNews.map((item) => (
+                    <li key={item.slug}>
+                      <Link
+                        href={`/news/${item.slug}`}
+                        className="block rounded-md bg-background p-2.5 text-sm text-foreground shadow-sm transition-colors hover:bg-primary/10 hover:text-primary"
+                        title={item.entry.title}
+                      >
+                        <time dateTime={item.entry.date} className="text-xs text-muted-foreground">
+                          {item.entry.date}
+                        </time>
+                        <span className="mt-0.5 block line-clamp-2">{item.entry.title}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold text-foreground">{t("browseCategories")}</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
@@ -92,7 +175,6 @@ export default async function HomePage({ params }: HomePageProps) {
               href={`/categories/${category.slug}`}
               className="flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md"
             >
-              <Search className="h-5 w-5 text-primary" />
               <span className="font-medium text-foreground">{category.name}</span>
             </Link>
           ))}
@@ -100,17 +182,11 @@ export default async function HomePage({ params }: HomePageProps) {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-semibold text-foreground">{t("popularSearches")}</h2>
-          <Link href="/search" className="text-sm font-medium text-primary hover:text-primary-dark">
-            {t("viewAll")}
-          </Link>
-        </div>
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <CollapsibleGridSection title={t("popularSearches")} count={popularFoods.length}>
           {popularFoods.map((food) => (
             <FoodCard key={food.slug} food={food} locale={locale} />
           ))}
-        </div>
+        </CollapsibleGridSection>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -118,31 +194,16 @@ export default async function HomePage({ params }: HomePageProps) {
           <h2 className="text-2xl font-semibold text-foreground">{t("whyTrustTitle")}</h2>
           <div className="mt-8 grid gap-8 md:grid-cols-3">
             <div>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Search className="h-6 w-6 text-primary" />
-              </div>
               <h3 className="mt-4 font-semibold">{t("whyTrust.fastAnswers.title")}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {t("whyTrust.fastAnswers.description")}
-              </p>
+              <p className="mt-2 text-sm text-muted-foreground">{t("whyTrust.fastAnswers.description")}</p>
             </div>
             <div>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Search className="h-6 w-6 text-primary" />
-              </div>
               <h3 className="mt-4 font-semibold">{t("whyTrust.vetReviewed.title")}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {t("whyTrust.vetReviewed.description")}
-              </p>
+              <p className="mt-2 text-sm text-muted-foreground">{t("whyTrust.vetReviewed.description")}</p>
             </div>
             <div>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Search className="h-6 w-6 text-primary" />
-              </div>
               <h3 className="mt-4 font-semibold">{t("whyTrust.alwaysFree.title")}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {t("whyTrust.alwaysFree.description")}
-              </p>
+              <p className="mt-2 text-sm text-muted-foreground">{t("whyTrust.alwaysFree.description")}</p>
             </div>
           </div>
         </div>

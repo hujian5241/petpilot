@@ -35,6 +35,7 @@
     "browseCategories": "カテゴリーを見る",
     "popularSearches": "よく検索されるもの",
     "viewAll": "すべて見る",
+    "stats": "現在、{categories}のカテゴリー、{total}の項目（食品{foods}、植物{plants}、医薬品{medications}、家庭用化学製品{householdChemicals}、農薬{pesticides}）を掲載しています。",
     "criticalNewsTitle": "重大なペット安全警報",
     "criticalNewsCta": "すべてのニュースを見る",
     "whyTrustTitle": "PetPilotが信頼できる理由",

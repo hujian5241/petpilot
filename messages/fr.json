@@ -35,6 +35,7 @@
     "browseCategories": "Parcourir les catégories",
     "popularSearches": "Recherches populaires",
     "viewAll": "Voir tout",
+    "stats": "Notre base de données couvre {categories} catégories et {total, plural, one {# élément} other {# éléments}} : {foods} aliments, {plants} plantes, {medications} médicaments, {householdChemicals} produits chimiques et {pesticides} pesticides.",
     "criticalNewsTitle": "Alertes de sécurité animale critiques",
     "criticalNewsCta": "Voir toutes les actualités",
     "whyTrustTitle": "Pourquoi faire confiance à PetPilot ?",

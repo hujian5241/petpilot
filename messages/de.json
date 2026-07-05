@@ -35,6 +35,7 @@
     "browseCategories": "Kategorien durchsuchen",
     "popularSearches": "Beliebte Suchanfragen",
     "viewAll": "Alle anzeigen",
+    "stats": "Unsere Datenbank umfasst {categories} Kategorien und {total, plural, one {# Eintrag} other {# Einträge}}: {foods} Lebensmittel, {plants} Pflanzen, {medications} Medikamente, {householdChemicals} Chemikalien und {pesticides} Pestizide.",
     "criticalNewsTitle": "Kritische Warnungen zur Haustiersicherheit",
     "criticalNewsCta": "Alle Nachrichten anzeigen",
     "whyTrustTitle": "Warum PetPilot?",
