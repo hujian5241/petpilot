@@ -1,6 +1,9 @@
+import fs from "fs/promises";
+import path from "path";
+import matter from "gray-matter";
+
 import { getSiteConfig } from "@/lib/content";
 import { defaultLocale, locales, type Locale } from "@/lib/i18n";
-import { getAllNews } from "@/lib/news-content";
 
 export const dynamic = "force-static";
 export const revalidate = 86400;
@@ -15,8 +18,54 @@ function escapeXml(value: string): string {
 }
 
 function formatNewsDate(date: string): string {
-  // Google News expects YYYY-MM-DD format.
   return date.slice(0, 10);
+}
+
+interface NewsSitemapEntry {
+  loc: string;
+  title: string;
+  date: string;
+  locale: Locale;
+}
+
+async function readNewsEntries(locale: Locale): Promise<NewsSitemapEntry[]> {
+  const baseDir = path.join(
+    /*turbopackIgnore: true*/ process.cwd(),
+    "data",
+    "news"
+  );
+  const dir = path.join(baseDir, locale);
+
+  let resolvedDir = dir;
+  try {
+    await fs.access(dir);
+  } catch {
+    resolvedDir = path.join(baseDir, defaultLocale);
+  }
+
+  try {
+    await fs.access(resolvedDir);
+  } catch {
+    return [];
+  }
+
+  const files = await fs.readdir(resolvedDir);
+  const mdFiles = files.filter((f) => f.endsWith(".md"));
+
+  const entries: NewsSitemapEntry[] = [];
+  for (const file of mdFiles) {
+    const raw = await fs.readFile(path.join(resolvedDir, file), "utf-8");
+    const { data } = matter(raw);
+    const slug = file.replace(/\.md$/, "");
+    entries.push({
+      loc: slug,
+      title: data.title ? String(data.title) : slug,
+      date: formatNewsDate(data.date ? String(data.date) : new Date().toISOString()),
+      locale,
+    });
+  }
+
+  return entries;
 }
 
 export async function GET() {
@@ -25,15 +74,13 @@ export async function GET() {
     ? config.base_url.slice(0, -1)
     : config.base_url;
 
-  const entries: { loc: string; title: string; date: string; locale: Locale }[] = [];
+  const entries: NewsSitemapEntry[] = [];
   for (const locale of locales) {
-    const news = await getAllNews(locale);
+    const news = await readNewsEntries(locale);
     for (const item of news) {
       entries.push({
-        loc: `${baseUrl}/${locale}/news/${item.slug}`,
-        title: item.entry.title,
-        date: formatNewsDate(item.entry.date),
-        locale,
+        ...item,
+        loc: `${baseUrl}/${locale}/news/${item.loc}`,
       });
     }
   }

@@ -8,7 +8,6 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 
 import { defaultLocale, type Locale } from "./locales";
-import { fileExists } from "./content";
 import type { NewsCluster, NewsEntry } from "./news";
 
 export interface NewsFile {
@@ -18,10 +17,21 @@ export interface NewsFile {
   updatedAt: string;
 }
 
-const newsDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "content", "news");
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function newsDir(): string {
+  return path.join(/*turbopackIgnore: true*/ process.cwd(), "data", "news");
+}
 
 function newsLocaleDir(locale: Locale): string {
-  return path.join(newsDir, locale);
+  return path.join(newsDir(), locale);
 }
 
 async function readNewsFile(
@@ -129,7 +139,7 @@ export function getUniqueNewsValues<T extends keyof NewsEntry>(
 }
 
 export async function loadClusters(locale: Locale = defaultLocale): Promise<NewsCluster[]> {
-  const clusterPath = path.join(newsDir, locale, "clusters.json");
+  const clusterPath = path.join(newsDir(), locale, "clusters.json");
   if (!(await fileExists(clusterPath))) {
     if (locale !== defaultLocale) {
       return loadClusters(defaultLocale);

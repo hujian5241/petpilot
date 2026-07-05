@@ -564,8 +564,8 @@ async function main() {
   const locale: Locale = defaultLocale;
   const publish = process.env.NEWS_PUBLISH === "true";
   const outDir = publish
-    ? path.join(process.cwd(), "content", "news", locale)
-    : path.join(process.cwd(), "content", "news", locale, "drafts");
+    ? path.join(process.cwd(), "data", "news", locale)
+    : path.join(process.cwd(), "data", "news", locale, "drafts");
   await fs.mkdir(outDir, { recursive: true });
 
   const existingSlugs = await loadExistingSlugs(locale);

@@ -6,7 +6,7 @@ import { createHash } from "crypto";
 
 import type { NewsCluster, NewsEntry, NewsSeverity } from "../lib/news";
 
-const newsDir = path.join(process.cwd(), "content", "news", "en");
+const newsDir = path.join(process.cwd(), "data", "news", "en");
 const clustersPath = path.join(newsDir, "clusters.json");
 
 const MODEL = "claude-sonnet-4-6";
