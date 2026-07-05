@@ -28,13 +28,13 @@ alternatives:
   - pumpkin
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-pumpkin/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-pumpkin/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, roasted, unsalted seeds. Remove shells if tough.
+preparation_notes: 'Use plain, roasted, unsalted seeds. Remove shells if tough.'
 safe_amount: A few seeds for small dogs; up to a tablespoon for large dogs.
 frequency: Occasional treat.
 dosage_per_weight: About 1 teaspoon per 10 pounds of body weight.
@@ -57,10 +57,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Seeds can be an allergen for some pets.
-meta_title: Can Dogs Eat Pumpkin Seeds? Safety, Risks & Vet Advice
-meta_description: Is Pumpkin Seeds safe for dogs and cats? Pumpkin Seeds is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pumpkin Seeds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pumpkin Seeds safe for dogs and cats? Pumpkin Seeds is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pumpkin Seeds
 
 Plain roasted pumpkin seeds are generally safe for dogs and can be a crunchy source of fiber and minerals. Avoid salted or seasoned seeds.

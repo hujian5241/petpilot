@@ -18,30 +18,34 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Stuffing usually contains onion, garlic, sage, and butter, all of which can harm dogs.
+    summary: >-
+      Stuffing usually contains onion, garlic, sage, and butter, all of which
+      can harm dogs.
   cats:
     status: limited
     severity: moderate
-    summary: Cats should avoid stuffing because of alliums, fat, and seasonings.
+    summary: 'Cats should avoid stuffing because of alliums, fat, and seasonings.'
 symptoms:
   - vomiting
   - diarrhea
   - lethargy
   - pale gums
-what_to_do: Contact a vet if a significant amount was eaten, especially if onion or garlic is in the recipe.
+what_to_do: >-
+  Contact a vet if a significant amount was eaten, especially if onion or garlic
+  is in the recipe.
 alternatives:
   - chicken-breast
   - brown-rice
   - pumpkin
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -90,7 +94,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Seasonings, fat, and additives can irritate the GI tract in IBD.
+    reason: 'Seasonings, fat, and additives can irritate the GI tract in IBD.'
   - condition: Urinary tract disease/bladder stones
     appliesTo:
       - dogs
@@ -108,11 +112,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Rich, fatty, or seasoned foods commonly cause GI upset.
-meta_title: Can Dogs Eat Stuffing? Safety, Risks & Vet Advice
-meta_description: Is Stuffing safe for dogs and cats? Stuffing is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Rich, fatty, or seasoned foods commonly cause GI upset.'
+meta_title: 'Can Dogs Eat Stuffing? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Stuffing safe for dogs and cats? Stuffing is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Stuffing
 
 Stuffing is a holiday favorite that combines bread, butter, onions, garlic, celery, sage, and sometimes raisins or sausage. Onions and garlic can damage red blood cells, while sage and rich fats can cause stomach upset or, in large amounts, neurological signs. Raisins are highly toxic. Keep stuffing well away from pets during holiday meals.

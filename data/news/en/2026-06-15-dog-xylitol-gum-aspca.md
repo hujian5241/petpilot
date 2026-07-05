@@ -22,6 +22,7 @@ relatedSlugs:
   foods:
     - xylitol
 reviewed: true
+body: ''
 ---
 A dog in the United States was hospitalized after ingesting xylitol-containing gum. The owner reported symptoms within 30 minutes; emergency treatment included IV dextrose and l... Pet owners should be aware of this incident and take precautions. Affected animals: dogs. Substances or products mentioned: xylitol. Location: United States.
 

@@ -29,16 +29,17 @@ alternatives:
   - dandelion
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Bee Balm and Pets — Safety Guide | PetPilot
-meta_description: Bee balm is safe for dogs and cats. Learn why this pollinator favorite belongs in pet-friendly gardens.
+meta_description: >-
+  Bee balm is safe for dogs and cats. Learn why this pollinator favorite belongs
+  in pet-friendly gardens.
 ---
-
 # Bee Balm
 
 Bee balm is a native perennial with tufted flowers that attract bees, butterflies, and hummingbirds. It is safe for dogs and cats.

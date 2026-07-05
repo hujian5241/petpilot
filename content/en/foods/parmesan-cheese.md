@@ -25,16 +25,18 @@ symptoms:
   - thirst
   - diarrhea
   - gas
-what_to_do: Provide fresh water. Contact a vet if large amounts were eaten or symptoms persist.
+what_to_do: >-
+  Provide fresh water. Contact a vet if large amounts were eaten or symptoms
+  persist.
 alternatives:
   - mozzarella-cheese
   - cottage-cheese
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -68,11 +70,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Dairy product; though low in lactose, some pets may react.
-meta_title: Can Dogs Eat Parmesan Cheese? Safety, Risks & Vet Advice
-meta_description: Is Parmesan Cheese safe for dogs and cats? Parmesan Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Dairy product; though low in lactose, some pets may react.'
+meta_title: 'Can Dogs Eat Parmesan Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Parmesan Cheese safe for dogs and cats? Parmesan Cheese is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Parmesan Cheese
 
 Parmesan is an aged, hard cheese that is low in lactose but very high in sodium. A small sprinkle over food is generally safe for dogs, but larger amounts can contribute to excessive salt intake and stomach upset.

@@ -14,7 +14,7 @@ safety:
   dogs:
     status: toxic
     severity: high
-    summary: Can cause tremors, seizures, and gastrointestinal distress.
+    summary: 'Can cause tremors, seizures, and gastrointestinal distress.'
   cats:
     status: toxic
     severity: moderate
@@ -33,9 +33,9 @@ alternatives:
   - apple-slices
 sources:
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -46,10 +46,11 @@ symptoms_severity:
     severity: critical
   - symptom: tremors
     severity: high
-meta_title: Can Dogs Eat Black Walnuts? Safety, Risks & Vet Advice
-meta_description: Is Black Walnuts safe for dogs and cats? Black Walnuts is toxic for dogs and toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Black Walnuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Black Walnuts safe for dogs and cats? Black Walnuts is toxic for dogs and
+  toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Black Walnuts
 
 Black walnuts, especially moldy nuts, are dangerous to dogs and can cause tremors and seizures. The toxin is associated with mold on the nuts rather than the nut itself, but the risk is significant.

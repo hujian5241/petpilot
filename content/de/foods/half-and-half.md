@@ -16,7 +16,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber reich an Fett und Laktose.
+    summary: 'Nicht giftig, aber reich an Fett und Laktose.'
   cats:
     status: limited
     severity: low
@@ -25,21 +25,27 @@ symptoms:
   - Durchfall
   - Blähungen
   - Erbrechen
-what_to_do: Beobachten Sie Ihr Tier. Kontaktieren Sie einen Tierarzt, wenn größere Mengen aufgenommen wurden oder die Symptome anhalten.
+what_to_do: >-
+  Beobachten Sie Ihr Tier. Kontaktieren Sie einen Tierarzt, wenn größere Mengen
+  aufgenommen wurden oder die Symptome anhalten.
 alternatives:
   - lactose-free-milk
   - plain-yogurt
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Geben Sie es nicht zu Futter oder Wasser. Überprüfen Sie aromatisierte Kaffeeweißer auf Xylitol.
-safe_amount: Am besten ist, es ganz zu vermeiden. Ein kleiner versehentlicher Schleck ist in der Regel nicht schädlich.
+preparation_notes: >-
+  Geben Sie es nicht zu Futter oder Wasser. Überprüfen Sie aromatisierte
+  Kaffeeweißer auf Xylitol.
+safe_amount: >-
+  Am besten ist, es ganz zu vermeiden. Ein kleiner versehentlicher Schleck ist
+  in der Regel nicht schädlich.
 frequency: Selten oder nie.
 related_foods:
   - cream
@@ -81,10 +87,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Laktose ist ein Milchzucker.
-meta_title: Können Hunde Half-and-Half essen? Sicherheit, Risiken und Tierarzt-Rat
-meta_description: Ist Half-and-Half für Hunde und Katzen sicher? Half-and-Half ist für Hunde limitiert und für Katzen limitiert. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte Alternativen.
+meta_title: 'Können Hunde Half-and-Half essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Ist Half-and-Half für Hunde und Katzen sicher? Half-and-Half ist für Hunde
+  limitiert und für Katzen limitiert. Erfahren Sie Symptome, was zu tun ist und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Half-and-Half
 
 Half-and-Half ist eine Mischung aus Milch und Sahne, die für den regelmäßigen Verzehr durch Haustiere zu fett- und laktosereich ist. Ein winziger Klecks in verschüttetem Kaffee ist meist nicht gefährlich, aber ein bewusstes Füttern ist nicht zu empfehlen.

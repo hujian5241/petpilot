@@ -17,7 +17,7 @@ safety:
   cats:
     status: safe
     severity: low
-    summary: Safe in tiny amounts, but most cats dislike it.
+    summary: 'Safe in tiny amounts, but most cats dislike it.'
 symptoms:
   - upset stomach
   - diarrhea
@@ -27,7 +27,7 @@ alternatives:
   - strawberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -59,10 +59,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Acidic and sugary fruit can affect dental health.
-meta_title: Can Dogs Eat Kiwi? Safety, Risks & Vet Advice
-meta_description: Is Kiwi safe for dogs and cats? Kiwi is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Kiwi? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Kiwi safe for dogs and cats? Kiwi is safe for dogs and safe for cats. Learn
+  symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Kiwi
 
 Kiwi flesh is safe for dogs in small amounts. The fuzzy skin can be irritating, so peel it first.

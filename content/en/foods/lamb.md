@@ -15,28 +15,36 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe when cooked plain and trimmed of fat. Often used in limited-ingredient diets.
+    summary: >-
+      Safe when cooked plain and trimmed of fat. Often used in
+      limited-ingredient diets.
   cats:
     status: safe
-    summary: Safe when cooked plain and trimmed of fat. Often used in limited-ingredient diets.
+    summary: >-
+      Safe when cooked plain and trimmed of fat. Often used in
+      limited-ingredient diets.
 symptoms:
   - vomiting
   - diarrhea
   - pancreatitis
-what_to_do: If bones or fatty seasoned portions were eaten, monitor and contact your vet if symptoms develop.
+what_to_do: >-
+  If bones or fatty seasoned portions were eaten, monitor and contact your vet
+  if symptoms develop.
 alternatives:
   - beef
   - turkey
   - chicken-breast
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-lamb/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-lamb/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook thoroughly, remove bones, and trim fat. Avoid seasonings, mint jelly, and sauces.
+preparation_notes: >-
+  Cook thoroughly, remove bones, and trim fat. Avoid seasonings, mint jelly, and
+  sauces.
 safe_amount: Small pieces as an occasional treat.
 frequency: Occasional.
 related_foods:
@@ -54,7 +62,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Fatty cuts can trigger flares; lean, well-trimmed portions may be tolerated.
+    reason: >-
+      Fatty cuts can trigger flares; lean, well-trimmed portions may be
+      tolerated.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
@@ -85,10 +95,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Red meat contains moderate purines.
-meta_title: Can Dogs Eat Lamb? Safety, Risks & Vet Advice
-meta_description: Is Lamb safe for dogs and cats? Lamb is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Lamb? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Lamb safe for dogs and cats? Lamb is safe for dogs and safe for cats. Learn
+  symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Lamb
 
 Lamb is a flavorful red meat that is commonly used in novel-protein and limited-ingredient pet foods. When cooked plainly and trimmed of fat, it is safe for most dogs and cats.

@@ -30,7 +30,7 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -44,17 +44,22 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: High fiber content can cause bloating, upset stomach, or diarrhea if not soaked or if overfed.
+    reason: >-
+      High fiber content can cause bloating, upset stomach, or diarrhea if not
+      soaked or if overfed.
   - condition: Inflammatory bowel disease (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: High fiber and potential for bloating may not be suitable during IBD flares; veterinarian guidance is recommended.
-meta_title: Can Dogs Eat Chia Seeds? Safety, Risks & Vet Advice
-meta_description: Is Chia Seeds safe for dogs and cats? Chia Seeds is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      High fiber and potential for bloating may not be suitable during IBD
+      flares; veterinarian guidance is recommended.
+meta_title: 'Can Dogs Eat Chia Seeds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Chia Seeds safe for dogs and cats? Chia Seeds is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Chia Seeds
 
 Chia seeds are safe for dogs in small amounts and provide fiber and omega-3 fatty acids. They should be soaked before feeding to prevent them from expanding in the stomach.

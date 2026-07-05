@@ -29,7 +29,7 @@ alternatives:
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -42,17 +42,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Der hohe Ballaststoffgehalt kann Magenverstimmung oder Durchfall verursachen.
+    reason: >-
+      Der hohe Ballaststoffgehalt kann Magenverstimmung oder Durchfall
+      verursachen.
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Ballaststoffreiche Nahrung wird bei akuten IBD-Schüben möglicherweise nicht vertragen.
+    reason: >-
+      Ballaststoffreiche Nahrung wird bei akuten IBD-Schüben möglicherweise
+      nicht vertragen.
 meta_title: 'Dürfen Hunde Endivie essen? Sicherheit, Risiken & tierärztlicher Rat'
-meta_description: Ist Endivie für Hunde und Katzen sicher? Endivie ist für Hunde und Katzen unbedenklich. Erfahren Sie mehr zu Symptomen, was zu tun ist und tierärztlich geprüften Alternativen.
+meta_description: >-
+  Ist Endivie für Hunde und Katzen sicher? Endivie ist für Hunde und Katzen
+  unbedenklich. Erfahren Sie mehr zu Symptomen, was zu tun ist und tierärztlich
+  geprüften Alternativen.
 ---
-
 # Endivie
 
 Endivie ist ein kalorienarmes Blattgemüse, das für Hunde in kleinen Mengen unbedenklich ist. Sie ist zwar kalorienarm, aber ballaststoffreich, daher sollten Sie sie nur in Maß füttern.

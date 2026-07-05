@@ -18,11 +18,15 @@ safety:
   dogs:
     status: toxic
     severity: critical
-    summary: Dangerous. Cooked bones can splinter and cause obstruction, perforation, or choking.
+    summary: >-
+      Dangerous. Cooked bones can splinter and cause obstruction, perforation,
+      or choking.
   cats:
     status: toxic
     severity: critical
-    summary: Dangerous. Cooked bones can splinter and cause obstruction, perforation, or choking.
+    summary: >-
+      Dangerous. Cooked bones can splinter and cause obstruction, perforation,
+      or choking.
 symptoms:
   - choking
   - vomiting
@@ -30,22 +34,26 @@ symptoms:
   - abdominal-pain
   - bloody-stool
   - lethargy
-what_to_do: If your pet ate a cooked bone, contact your vet or emergency clinic immediately. Do not induce vomiting unless instructed.
+what_to_do: >-
+  If your pet ate a cooked bone, contact your vet or emergency clinic
+  immediately. Do not induce vomiting unless instructed.
 alternatives:
   - chicken-breast
   - turkey
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
-preparation_notes: Do not feed cooked bones. Dispose of them safely where pets cannot access them.
+preparation_notes: >-
+  Do not feed cooked bones. Dispose of them safely where pets cannot access
+  them.
 safe_amount: None.
 frequency: Never.
 related_foods:
@@ -58,10 +66,11 @@ symptoms_severity:
     severity: high
   - symptom: bloody-stool
     severity: high
-meta_title: Can Dogs Eat Cooked Bones? Safety, Risks & Vet Advice
-meta_description: Is Cooked Bones safe for dogs and cats? Cooked Bones is toxic for dogs and toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cooked Bones? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cooked Bones safe for dogs and cats? Cooked Bones is toxic for dogs and
+  toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cooked Bones
 
 Cooked bones from chicken, turkey, pork, or beef are dangerous for pets. They become brittle and can splinter into sharp pieces that cause choking, mouth injuries, esophageal or intestinal obstruction, or perforation.

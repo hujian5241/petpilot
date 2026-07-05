@@ -20,39 +20,43 @@ safety:
   cats:
     status: toxic
     severity: moderate
-    summary: Chewing causes oral pain, drooling, and vomiting.
+    summary: 'Chewing causes oral pain, drooling, and vomiting.'
 symptoms:
   - oral irritation
   - excessive drooling
   - vomiting
   - difficulty swallowing
   - pawing at mouth
-what_to_do: Rinse the mouth with water and offer a drink. Contact a vet if symptoms persist or swelling occurs.
+what_to_do: >-
+  Rinse the mouth with water and offer a drink. Contact a vet if symptoms
+  persist or swelling occurs.
 alternatives:
   - calathea
   - peperomia
   - boston-fern
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/alocasia/
+    url: 'https://www.petpoisonhelpline.com/poison/alocasia/'
   - name: MSD Veterinary Manual — Toxicology
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Cats
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Toxic and Non-Toxic Plant List for Dogs
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Alocasia and Pet Safety — Toxic Houseplant | PetPilot
-meta_description: Alocasia can irritate pets' mouths and stomachs. Learn symptoms, first aid, and safe alternatives.
+meta_description: >-
+  Alocasia can irritate pets' mouths and stomachs. Learn symptoms, first aid,
+  and safe alternatives.
 related_plants:
   - elephant-ear
   - caladium
 ---
-
 # Alocasia
 
 Alocasias are striking tropical plants with arrowhead or shield-shaped leaves, often accented with silvery veins. They contain insoluble calcium oxalate crystals that cause immediate oral irritation when chewed by pets.

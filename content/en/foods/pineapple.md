@@ -26,11 +26,11 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Remove skin, core, and crown. Serve fresh, plain chunks.
+preparation_notes: 'Remove skin, core, and crown. Serve fresh, plain chunks.'
 safe_amount: A few small chunks for dogs.
 frequency: Occasional treat.
 condition_warnings:
@@ -52,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit can contribute to plaque formation.
-meta_title: Can Dogs Eat Pineapple? Safety, Risks & Vet Advice
-meta_description: Is Pineapple safe for dogs and cats? Pineapple is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pineapple? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pineapple safe for dogs and cats? Pineapple is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pineapple
 
 Fresh pineapple is safe for dogs in small amounts. Avoid canned pineapple in syrup.

@@ -15,7 +15,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber sehr zuckerhaltig.
+    summary: 'Nicht giftig, aber sehr zuckerhaltig.'
   cats:
     status: limited
     severity: low
@@ -25,17 +25,21 @@ symptoms:
   - upset-stomach
   - diarrhea
   - blood-sugar-spike
-what_to_do: Beobachten Sie Ihr Haustier. Wenden Sie sich an Ihren Tierarzt, wenn eine große Menge aufgenommen wurde.
+what_to_do: >-
+  Beobachten Sie Ihr Haustier. Wenden Sie sich an Ihren Tierarzt, wenn eine
+  große Menge aufgenommen wurde.
 alternatives:
   - blueberries
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Vermeiden Sie Ahornsirup. Wurde er versehentlich angeboten, stellen Sie sicher, dass kein Xylitol enthalten ist.
+preparation_notes: >-
+  Vermeiden Sie Ahornsirup. Wurde er versehentlich angeboten, stellen Sie
+  sicher, dass kein Xylitol enthalten ist.
 safe_amount: Vermeiden.
 frequency: Vermeiden.
 condition_warnings:
@@ -63,10 +67,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Zuckergehalt kann Durchfall verursachen.
-meta_title: Können Hunde Ahornsirup essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Ahornsirup für Hunde und Katzen sicher? Ahornsirup ist für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, Verhaltenshinweise und tierärztlich geprüfte Alternativen.
+meta_title: 'Können Hunde Ahornsirup essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Ahornsirup für Hunde und Katzen sicher? Ahornsirup ist für Hunde
+  eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome,
+  Verhaltenshinweise und tierärztlich geprüfte Alternativen.
 ---
-
 # Ahornsirup
 
 Ahornsirup ist für Haustiere nicht giftig, aber konzentrierter Zucker ohne Nährwert. Er kann Gewichtszunahme, Zahnprobleme und Verdauungsstörungen verursachen.

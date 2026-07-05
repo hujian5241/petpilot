@@ -31,9 +31,9 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -96,7 +96,6 @@ condition_warnings:
 meta_title: 犬はストリングチーズを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ストリングチーズは犬や猫にとって安全？犬・猫ともに「制限付き」とされています。症状、対処法、獣医師が推奨する代替食品をご紹介します。
 ---
-
 # ストリングチーズ
 
 ストリングチーズは通常、モッツァレラから作られており、他の多くのチーズと比べて塩分と脂肪が少なめです。小さくちぎれば、犬のトレーニング用のおやつとして便利です。一部の犬は大きな塊を丸呑みしようとすることがあるため、大きさに注意してください。

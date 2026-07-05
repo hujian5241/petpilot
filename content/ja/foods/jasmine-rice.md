@@ -26,9 +26,9 @@ alternatives:
   - brown-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -55,7 +55,6 @@ condition_warnings:
 meta_title: 犬はジャスミンライスを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ジャスミンライスは犬や猫にとって安全？犬・猫への安全性、症状、対処法、獣医師推奨の代替食品を解説します。
 ---
-
 # ジャスミンライス
 
 ジャスミンライスは、塩・油・調味料を使わずに調理すれば、犬に与えても安全な淡白な炭水化物の一つです。調理後の柔らかな食感は多くの犬が食べやすく、一時的な消化に優しい食事にする際には低脂質なタンパク質と混ぜて与えることもできます。

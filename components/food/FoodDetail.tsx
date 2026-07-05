@@ -3,7 +3,7 @@ import { ExternalLink, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/routing";
-import { SafetyBadge } from "./SafetyBadge";
+import { SafetyBadge, CompactSafetyBadge } from "./SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
@@ -59,32 +59,32 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
         ]}
       />
 
-      <header className="mt-6">
-        <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          {t("canDogsEat", { name: food.name })}
-        </h1>
-        <p className="mt-2 text-lg text-muted-foreground">
-          {t("subtitle", { name: food.name.toLowerCase() })}
-        </p>
-      </header>
-
-      {food.images?.[0] && (
-        <div className="mt-6 aspect-[16/9] overflow-hidden rounded-xl border border-border bg-muted">
-          <Image
-            src={food.images[0].src}
-            alt={food.images[0].alt ?? food.name}
-            width={800}
-            height={450}
-            className="h-full w-full object-cover"
-            priority
-          />
+      <header className="mt-6 rounded-2xl border border-border bg-card p-6">
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+          <div className="relative aspect-square w-28 shrink-0 overflow-hidden rounded-xl border border-border bg-muted sm:w-32">
+            <Image
+              src={food.images?.[0]?.src ?? `/images/foods/${food.slug}.svg`}
+              alt={food.images?.[0]?.alt ?? food.name}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 640px) 112px, 128px"
+            />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              {t("canDogsEat", { name: food.name })}
+            </h1>
+            <p className="mt-2 text-lg text-muted-foreground">
+              {t("subtitle", { name: food.name.toLowerCase() })}
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
+              <CompactSafetyBadge species="dogs" status={food.safety.dogs.status} locale={locale} />
+              <CompactSafetyBadge species="cats" status={food.safety.cats.status} locale={locale} />
+            </div>
+          </div>
         </div>
-      )}
-
-      <div className="mt-6 grid gap-3 sm:grid-cols-2">
-        <SafetyBadge species="dogs" status={food.safety.dogs.status} locale={locale} />
-        <SafetyBadge species="cats" status={food.safety.cats.status} locale={locale} />
-      </div>
+      </header>
 
       {isUrgent && (
         <div className="mt-6">
@@ -155,9 +155,7 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
         {(dogWarnings.length > 0 || catWarnings.length > 0) && (
           <>
             <h2>{t("healthConditions")}</h2>
-            <p>
-              {t("healthConditionsIntro", { name: food.name.toLowerCase() })}
-            </p>
+            <p>{t("healthConditionsIntro", { name: food.name.toLowerCase() })}</p>
             {dogWarnings.length > 0 && (
               <>
                 <h3>{t("forDogs")}</h3>
@@ -199,10 +197,7 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
         <ul>
           {food.alternatives.map((alt) => (
             <li key={alt}>
-              <Link
-                href={`/foods/${alt}`}
-                className="text-primary hover:text-primary-dark"
-              >
+              <Link href={`/foods/${alt}`} className="text-primary hover:text-primary-dark">
                 {alt
                   .split("-")
                   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -244,10 +239,7 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
           {t.rich("medicalDisclaimerText", {
             aspca: (chunks) =>
               aspca ? (
-                <a
-                  href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
-                >
+                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-semibold underline">
                   {chunks}
                 </a>
               ) : (
@@ -255,10 +247,7 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
               ),
             pph: (chunks) =>
               pph ? (
-                <a
-                  href={`tel:${pph.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
-                >
+                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-semibold underline">
                   {chunks}
                 </a>
               ) : (

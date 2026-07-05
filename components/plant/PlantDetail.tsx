@@ -3,7 +3,7 @@ import { ExternalLink, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/routing";
-import { SafetyBadge } from "@/components/food/SafetyBadge";
+import { SafetyBadge, CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
@@ -40,35 +40,35 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
         ]}
       />
 
-      <header className="mt-6">
-        <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          {t("isSafeForPets", { name: plant.name })}
-        </h1>
-        {plant.scientific_name && (
-          <p className="mt-2 text-lg italic text-muted-foreground">{plant.scientific_name}</p>
-        )}
-        <p className="mt-2 text-lg text-muted-foreground">
-          {t("subtitle", { name: plant.name.toLowerCase() })}
-        </p>
-      </header>
-
-      {plant.images?.[0] && (
-        <div className="mt-6 aspect-[16/9] overflow-hidden rounded-xl border border-border bg-muted">
-          <Image
-            src={plant.images[0].src}
-            alt={plant.images[0].alt ?? plant.name}
-            width={800}
-            height={450}
-            className="h-full w-full object-cover"
-            priority
-          />
+      <header className="mt-6 rounded-2xl border border-border bg-card p-6">
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+          <div className="relative aspect-square w-28 shrink-0 overflow-hidden rounded-xl border border-border bg-muted sm:w-32">
+            <Image
+              src={plant.images?.[0]?.src ?? `/images/plants/${plant.slug}.svg`}
+              alt={plant.images?.[0]?.alt ?? plant.name}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 640px) 112px, 128px"
+            />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              {t("isSafeForPets", { name: plant.name })}
+            </h1>
+            {plant.scientific_name && (
+              <p className="mt-2 text-lg italic text-muted-foreground">{plant.scientific_name}</p>
+            )}
+            <p className="mt-2 text-lg text-muted-foreground">
+              {t("subtitle", { name: plant.name.toLowerCase() })}
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
+              <CompactSafetyBadge species="dogs" status={plant.safety.dogs.status} locale={locale} />
+              <CompactSafetyBadge species="cats" status={plant.safety.cats.status} locale={locale} />
+            </div>
+          </div>
         </div>
-      )}
-
-      <div className="mt-6 grid gap-3 sm:grid-cols-2">
-        <SafetyBadge species="dogs" status={plant.safety.dogs.status} locale={locale} />
-        <SafetyBadge species="cats" status={plant.safety.cats.status} locale={locale} />
-      </div>
+      </header>
 
       {isUrgent && (
         <div className="mt-6">
@@ -119,10 +119,7 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
         <ul>
           {plant.alternatives.map((alt) => (
             <li key={alt}>
-              <Link
-                href={`/plants/${alt}`}
-                className="text-primary hover:text-primary-dark"
-              >
+              <Link href={`/plants/${alt}`} className="text-primary hover:text-primary-dark">
                 {alt
                   .split("-")
                   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -164,10 +161,7 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
           {t.rich("medicalDisclaimerText", {
             aspca: (chunks) =>
               aspca ? (
-                <a
-                  href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
-                >
+                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-semibold underline">
                   {chunks}
                 </a>
               ) : (
@@ -175,10 +169,7 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
               ),
             pph: (chunks) =>
               pph ? (
-                <a
-                  href={`tel:${pph.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
-                >
+                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-semibold underline">
                   {chunks}
                 </a>
               ) : (

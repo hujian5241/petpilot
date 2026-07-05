@@ -26,7 +26,7 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -46,10 +46,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Seeds and acidity may irritate an inflamed GI tract.
-meta_title: Can Dogs Eat Passion Fruit? Safety, Risks & Vet Advice
-meta_description: Is Passion Fruit safe for dogs and cats? Passion Fruit is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Passion Fruit? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Passion Fruit safe for dogs and cats? Passion Fruit is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Passion Fruit
 
 Passion fruit pulp is likely safe in tiny amounts, but the seeds can be hard to digest.

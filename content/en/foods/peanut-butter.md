@@ -22,18 +22,20 @@ symptoms:
   - hypoglycemia
   - liver-failure (if xylitol present)
   - upset-stomach
-what_to_do: If xylitol-containing peanut butter was eaten, seek emergency care immediately.
+what_to_do: >-
+  If xylitol-containing peanut butter was eaten, seek emergency care
+  immediately.
 alternatives:
   - pumpkin
   - plain-yogurt
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose natural peanut butter with no xylitol, salt, or added sugar.
+preparation_notes: 'Choose natural peanut butter with no xylitol, salt, or added sugar.'
 safe_amount: A small lick or teaspoon for dogs.
 frequency: Occasional high-value treat.
 notes_for_puppies: Use as a training treat in small amounts.
@@ -63,10 +65,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Peanuts are a potential allergen for some pets.
-meta_title: Can Dogs Eat Peanut Butter? Safety, Risks & Vet Advice
-meta_description: Is Peanut Butter safe for dogs and cats? Peanut Butter is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Peanut Butter? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Peanut Butter safe for dogs and cats? Peanut Butter is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Peanut Butter
 
 Plain peanut butter without xylitol is a popular and generally safe treat for dogs. It can be used for hiding pills or as a training reward. Always read the label carefully for xylitol.

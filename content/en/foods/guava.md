@@ -26,7 +26,7 @@ alternatives:
   - kiwi
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -58,10 +58,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit residue can contribute to dental disease.
-meta_title: Can Dogs Eat Guava? Safety, Risks & Vet Advice
-meta_description: Is Guava safe for dogs and cats? Guava is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Guava? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Guava safe for dogs and cats? Guava is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Guava
 
 Guava is safe for dogs in small amounts. The seeds are generally safe but removing them reduces choking risk.

@@ -2,7 +2,14 @@ import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 
 import { SearchPageClient } from "@/components/search/SearchPageClient";
-import { getAllFoods, getAllPlants, getSiteConfig } from "@/lib/content";
+import {
+  getAllFoods,
+  getAllHouseholdChemicals,
+  getAllMedications,
+  getAllPesticides,
+  getAllPlants,
+  getSiteConfig,
+} from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
 import type { Locale } from "@/lib/i18n";
 
@@ -12,17 +19,25 @@ interface SearchPageProps {
 
 export default async function SearchPage({ params }: SearchPageProps) {
   const { locale } = await params;
-  const [foods, plants, config] = await Promise.all([
-    getAllFoods(locale),
-    getAllPlants(locale),
-    getSiteConfig(locale),
-  ]);
-  const searchIndex = buildSearchIndex(foods, plants);
+  const [foods, plants, medications, householdChemicals, pesticides, config] =
+    await Promise.all([
+      getAllFoods(locale),
+      getAllPlants(locale),
+      getAllMedications(locale),
+      getAllHouseholdChemicals(locale),
+      getAllPesticides(locale),
+      getSiteConfig(locale),
+    ]);
+  const searchIndex = buildSearchIndex(
+    foods,
+    plants,
+    medications,
+    householdChemicals,
+    pesticides
+  );
 
   return (
-    <Suspense
-      fallback={<SearchFallback locale={locale} />}
-    >
+    <Suspense fallback={<SearchFallback locale={locale} />}>
       <SearchPageClient
         locale={locale}
         initialIndex={searchIndex}

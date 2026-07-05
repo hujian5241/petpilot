@@ -31,16 +31,15 @@ alternatives:
   - common-plantain
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: 草・芝生とペットの安全ガイド | PetPilot
 meta_description: 普通の草は犬や猫にとって安全です。ペットが草を食べる理由や、芝生の薬剤が問題になるタイミングを解説します。
 ---
-
 # 草・芝生
 
 普通の草は犬や猫にとって有毒ではありません。多くのペットは時々草を食べますが、これは胃の不快感を和らげたり、食物繊維を補ったりするためだと考えられています。食後すぐに嘔吐を起こすことがよくあります。

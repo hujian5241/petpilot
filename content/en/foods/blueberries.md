@@ -14,24 +14,26 @@ safety:
   dogs:
     status: safe
     severity: low
-    summary: Safe in moderation. A healthy, low-calorie treat rich in antioxidants.
+    summary: 'Safe in moderation. A healthy, low-calorie treat rich in antioxidants.'
   cats:
     status: safe
     severity: low
-    summary: Safe in tiny amounts, but most cats are not interested in fruit.
+    summary: 'Safe in tiny amounts, but most cats are not interested in fruit.'
 symptoms:
   - upset stomach
   - diarrhea
-what_to_do: Reduce portion size if stomach upset occurs. Contact your vet if diarrhea persists more than 24 hours.
+what_to_do: >-
+  Reduce portion size if stomach upset occurs. Contact your vet if diarrhea
+  persists more than 24 hours.
 alternatives:
   - strawberries
   - apple-slices
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -55,11 +57,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains natural sugars, though low in calories.
-meta_title: Can Dogs Eat Blueberries? Safety, Risks & Vet Advice
-meta_description: Is Blueberries safe for dogs and cats? Blueberries is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Contains natural sugars, though low in calories.'
+meta_title: 'Can Dogs Eat Blueberries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Blueberries safe for dogs and cats? Blueberries is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Blueberries
 
 Blueberries are widely considered safe for dogs and can be a healthy, low-calorie treat. They contain antioxidants, fiber, and vitamins.

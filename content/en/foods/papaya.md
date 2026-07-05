@@ -26,7 +26,7 @@ alternatives:
   - pineapple
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -39,7 +39,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Fruit flesh contains natural sugars that should be restricted for diabetic pets.
+    reason: >-
+      Fruit flesh contains natural sugars that should be restricted for diabetic
+      pets.
   - condition: Obesity
     appliesTo:
       - dogs
@@ -52,10 +54,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit can contribute to dental plaque.
-meta_title: Can Dogs Eat Papaya? Safety, Risks & Vet Advice
-meta_description: Is Papaya safe for dogs and cats? Papaya is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Papaya? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Papaya safe for dogs and cats? Papaya is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Papaya
 
 Papaya flesh is safe for dogs in moderation. Remove the seeds and skin before serving.

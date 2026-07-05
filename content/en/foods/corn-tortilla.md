@@ -28,14 +28,16 @@ alternatives:
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain. Avoid seasoned chips, quesadillas, salsa, salt, and oil.
-safe_amount: A small piece for small dogs, one tortilla for large dogs; a tiny piece for cats.
+preparation_notes: 'Serve plain. Avoid seasoned chips, quesadillas, salsa, salt, and oil.'
+safe_amount: >-
+  A small piece for small dogs, one tortilla for large dogs; a tiny piece for
+  cats.
 frequency: Rarely.
 related_foods:
   - flour-tortilla
@@ -66,10 +68,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: May cause gas or bloating.
-meta_title: Can Dogs Eat Corn Tortilla? Safety, Risks & Vet Advice
-meta_description: Is Corn Tortilla safe for dogs and cats? Corn Tortilla is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Corn Tortilla? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Corn Tortilla safe for dogs and cats? Corn Tortilla is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Corn Tortilla
 
 A plain corn tortilla is safe for dogs in small amounts. It is low in fat compared to flour tortillas but still mostly empty calories. Tortilla chips, quesadillas, and tacos are not safe due to salt, fat, cheese, onions, garlic, and spices.

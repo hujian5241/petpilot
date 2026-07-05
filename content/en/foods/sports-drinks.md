@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Sports drinks are not toxic but are high in sugar and sodium, which pets do not need.
+    summary: >-
+      Sports drinks are not toxic but are high in sugar and sodium, which pets
+      do not need.
   cats:
     status: limited
     severity: low
@@ -32,19 +34,21 @@ alternatives:
   - chicken-breast
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
-  - name: Gugler et al., Compend Contin Educ Vet (2013)
-    url: https://pubmed.ncbi.nlm.nih.gov/23677840/
+    url: 'https://www.avma.org'
+  - name: 'Gugler et al., Compend Contin Educ Vet (2013)'
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23677840/'
   - name: MSD Veterinary Manual — Chocolate Toxicosis (methylxanthines)
-    url: https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
+    url: >-
+      https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
   - name: ASPCA — People Foods to Avoid Feeding Your Pets
-    url: https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
+    url: >-
+      https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -90,10 +94,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High sodium can alter urinary mineral balance.
-meta_title: Can Dogs Eat Sports Drinks? Safety, Risks & Vet Advice
-meta_description: Is Sports Drinks safe for dogs and cats? Sports Drinks is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sports Drinks? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sports Drinks safe for dogs and cats? Sports Drinks is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sports Drinks
 
 Sports drinks are designed for human athletes and contain electrolytes, sugars, and artificial ingredients. Pets generally do not benefit from these beverages and can get adequate hydration from water. After intense exercise or illness, a veterinarian may recommend a pet-specific electrolyte solution. Routine sports drinks can contribute to obesity and dental issues.

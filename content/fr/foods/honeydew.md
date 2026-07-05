@@ -13,7 +13,7 @@ safety:
   dogs:
     status: safe
     severity: low
-    summary: Sûr sans la peau et les pépins, en petites quantités.
+    summary: 'Sûr sans la peau et les pépins, en petites quantités.'
   cats:
     status: safe
     severity: low
@@ -27,7 +27,7 @@ alternatives:
   - watermelon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,11 +52,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: La forte teneur en eau et en fibres peut provoquer une diarrhée en grande quantité.
-meta_title: Les chiens peuvent-ils manger du melon honeydew ? Sécurité, risques et conseils vétérinaires
-meta_description: Le melon honeydew est-il sans danger pour les chiens et les chats ? Le melon honeydew est sans danger pour les chiens et les chats. Découvrez les symptômes, la conduite à tenir et des alternatives approuvées par les vétérinaires.
+    reason: >-
+      La forte teneur en eau et en fibres peut provoquer une diarrhée en grande
+      quantité.
+meta_title: >-
+  Les chiens peuvent-ils manger du melon honeydew ? Sécurité, risques et
+  conseils vétérinaires
+meta_description: >-
+  Le melon honeydew est-il sans danger pour les chiens et les chats ? Le melon
+  honeydew est sans danger pour les chiens et les chats. Découvrez les
+  symptômes, la conduite à tenir et des alternatives approuvées par les
+  vétérinaires.
 ---
-
 # Melon honeydew
 
 Le melon honeydew est sans danger pour les chiens en petites quantités. Retirez la peau et les pépins avant de le servir.

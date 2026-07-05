@@ -256,6 +256,45 @@ async function fetchRssSource(source: SourceFeed): Promise<RawNewsItem[]> {
 
 function isPetPoisoningRelevant(title: string, description?: string): boolean {
   const text = `${title} ${description ?? ""}`;
+  const lowerText = text.toLowerCase();
+
+  // Explicitly exclude advice columns and human-focused lifestyle articles.
+  const offTopicPatterns = [
+    /\bask\s+annalisa\b/i,
+    /\bask\s+hadley\b/i,
+    /\bdear\s+(carolyn|abby|prudence|polly|annalisa)\b/i,
+    /\badvice\s+column\b/i,
+    /\bhow\s+do\s+i\s+(cope|deal|handle)\b/i,
+    /\bmy\s+(husband|wife|partner|boyfriend|girlfriend|mother|father|child|daughter|son)\b/i,
+    /\bgrief\b/i,
+    /\bguilt\b/i,
+    /\bbereavement\b/i,
+    /\bdivorce\b/i,
+    /\bbreakup\b/i,
+    /\bmental\s+health\b/i,
+    /\bdepression\b/i,
+    /\banxiety\b/i,
+    /\btherapy\b/i,
+    /\brelationship\s+advice\b/i,
+    /\bpolitics\b/i,
+    /\belection\b/i,
+    /\bolympics\b/i,
+    /\bsports?\b/i,
+    /\bfootball\b/i,
+    /\bbasketball\b/i,
+    /\bbaseball\b/i,
+    /\bcelebrity\b/i,
+    /\bentertainment\b/i,
+    /\bweather\b/i,
+    /\bstock\s+market\b/i,
+    /\bfinance\b/i,
+    /\binflation\b/i,
+    /\bmortgage\b/i,
+  ];
+  if (offTopicPatterns.some((pattern) => pattern.test(text))) {
+    return false;
+  }
+
   const petPatterns = [
     /\bdogs?\b/i,
     /\bcats?\b/i,
@@ -310,7 +349,6 @@ function isPetPoisoningRelevant(title: string, description?: string): boolean {
     "emergency",
     "severe",
   ];
-  const lowerText = text.toLowerCase();
   return incidentTerms.some((t) => lowerText.includes(t));
 }
 

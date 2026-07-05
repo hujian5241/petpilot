@@ -24,18 +24,22 @@ symptoms:
   - Erbrechen
   - Durchfall
   - Zittern
-what_to_do: Wenden Sie sich an Ihren Tierarzt, wenn schimmeliges oder große Mengen Walnussbutter gefressen wurden.
+what_to_do: >-
+  Wenden Sie sich an Ihren Tierarzt, wenn schimmeliges oder große Mengen
+  Walnussbutter gefressen wurden.
 alternatives:
   - peanut-butter
   - almond-butter
   - carrots
 sources:
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Walnussbutter vermeiden. Falls angeboten, stellen Sie sicher, dass sie frisch, ungewürzt und schimmelfrei ist.
+preparation_notes: >-
+  Walnussbutter vermeiden. Falls angeboten, stellen Sie sicher, dass sie frisch,
+  ungewürzt und schimmelfrei ist.
 safe_amount: Fütterung vermeiden.
 frequency: Vermeiden.
 condition_warnings:
@@ -44,7 +48,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Eiweiß, die bei chronischer Nierenerkrankung in der Regel eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Eiweiß, die bei chronischer Nierenerkrankung in der
+      Regel eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -62,7 +68,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind individuell.
+    reason: >-
+      Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind
+      individuell.
   - condition: Lebererkrankung
     appliesTo:
       - dogs
@@ -87,10 +95,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Viel Fett kann einen empfindlichen Magen-Darm-Trakt reizen.
-meta_title: Dürfen Hunde Walnussbutter fressen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Walnussbutter für Hunde und Katzen sicher? Walnussbutter ist für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Walnussbutter fressen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Walnussbutter für Hunde und Katzen sicher? Walnussbutter ist für Hunde
+  eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun
+  ist, und tierärztlich geprüfte Alternativen.
 ---
-
 # Walnussbutter
 
 Walnussbutter ist kein empfohlener Leckerbissen für Hunde. Walnüsse können Schimmelpilze beherbergen, die Giftstoffe bilden, die neurologische Symptome verursachen, und die Butter ist fettreich.

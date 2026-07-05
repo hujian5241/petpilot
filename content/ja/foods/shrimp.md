@@ -31,9 +31,9 @@ alternatives:
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-shrimp/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-shrimp/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -59,7 +59,6 @@ condition_warnings:
 meta_title: 犬はエビを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: エビは犬や猫に安全でしょうか。エビは犬にも猫にも安全です。症状、対処法、獣医師が認める代替食材をご紹介します。
 ---
-
 # エビ
 
 味付けなしで調理したエビは、犬や猫にとって低脂質でタンパク質豊富なおやつです。必ず殻をむき、背わたを取り除き、バター、ニンニク、香辛料を使わずに調理してください。

@@ -29,7 +29,7 @@ alternatives:
   - sweet-potato
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,7 +52,6 @@ condition_warnings:
 meta_title: 犬はコールラビを食べても大丈夫？安全性、リスク、獣医師のアドバイス
 meta_description: コールラビは犬や猫に安全ですか？犬にも猫にも安全です。症状、対処法、獣医師推奨の代替食をご覧ください。
 ---
-
 # コールラビ
 
 コールラビは、調味料を加えずに調理した少量であれば犬に安全です。生のコールラビは硬く、消化しにくい場合があります。

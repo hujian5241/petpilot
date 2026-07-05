@@ -29,14 +29,16 @@ alternatives:
   - quinoa
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook thoroughly and serve plain. Avoid sauce, garlic, onions, and cheese.
-safe_amount: A few pieces for small dogs, up to half a cup for large dogs; one small piece for cats.
+preparation_notes: 'Cook thoroughly and serve plain. Avoid sauce, garlic, onions, and cheese.'
+safe_amount: >-
+  A few pieces for small dogs, up to half a cup for large dogs; one small piece
+  for cats.
 frequency: Occasionally.
 related_foods:
   - plain-pasta
@@ -73,10 +75,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Whole Wheat Pasta? Safety, Risks & Vet Advice
-meta_description: Is Whole Wheat Pasta safe for dogs and cats? Whole Wheat Pasta is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Whole Wheat Pasta? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Whole Wheat Pasta safe for dogs and cats? Whole Wheat Pasta is safe for
+  dogs and safe for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Whole Wheat Pasta
 
 Whole wheat pasta is safe for dogs when cooked and served without sauces or seasonings. It contains more fiber than refined pasta, which can be helpful for some dogs but may cause loose stool in others.

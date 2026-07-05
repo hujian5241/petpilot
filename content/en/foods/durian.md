@@ -28,7 +28,7 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -53,7 +53,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat content increases pancreatitis risk; the file lists pancreatitis risk as a symptom.
+    reason: >-
+      High fat content increases pancreatitis risk; the file lists pancreatitis
+      risk as a symptom.
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
@@ -66,10 +68,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High fat and sugar commonly cause upset stomach or diarrhea.
-meta_title: Can Dogs Eat Durian? Safety, Risks & Vet Advice
-meta_description: Is Durian safe for dogs and cats? Durian is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Durian? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Durian safe for dogs and cats? Durian is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Durian
 
 Durian is not toxic but is very high in fat and sugar. It should only be offered as a tiny, rare treat.

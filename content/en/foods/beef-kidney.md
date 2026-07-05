@@ -7,7 +7,6 @@ aliases:
   - ox kidney
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - protein
@@ -25,14 +24,16 @@ symptoms:
   - vomiting
   - diarrhea
   - urinary issues
-what_to_do: If your pet has a history of urinary stones or kidney disease, avoid kidney and consult your vet before feeding.
+what_to_do: >-
+  If your pet has a history of urinary stones or kidney disease, avoid kidney
+  and consult your vet before feeding.
 alternatives:
   - beef
   - chicken-breast
   - whitefish
 sources:
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -85,10 +86,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Rich and can cause diarrhea or vomiting.
-meta_title: Can Dogs Eat Beef Kidney? Safety, Risks & Vet Advice
-meta_description: Is Beef Kidney safe for dogs and cats? Beef Kidney is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Beef Kidney? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Beef Kidney safe for dogs and cats? Beef Kidney is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Beef Kidney
 
 Beef kidney is an organ meat that provides protein and trace minerals, but it is also high in purines. Pets prone to urinary stones or kidney disease should avoid it.

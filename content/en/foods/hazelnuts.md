@@ -13,7 +13,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but can cause choking and stomach upset.
+    summary: 'Not toxic, but can cause choking and stomach upset.'
   cats:
     status: limited
     severity: low
@@ -30,13 +30,13 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Plain, unsalted hazelnuts only. Avoid chocolate-covered products.
+preparation_notes: 'Plain, unsalted hazelnuts only. Avoid chocolate-covered products.'
 safe_amount: One small hazelnut for large dogs; avoid for small dogs.
 frequency: Rarely.
 condition_warnings:
@@ -63,11 +63,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hard, fatty nuts can cause vomiting or diarrhea.
-meta_title: Can Dogs Eat Hazelnuts? Safety, Risks & Vet Advice
-meta_description: Is Hazelnuts safe for dogs and cats? Hazelnuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Hard, fatty nuts can cause vomiting or diarrhea.'
+meta_title: 'Can Dogs Eat Hazelnuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Hazelnuts safe for dogs and cats? Hazelnuts is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Hazelnuts
 
 Hazelnuts are not toxic to dogs, but whole nuts can be a choking hazard, especially for small breeds. Their high fat content can also cause stomach upset or pancreatitis.

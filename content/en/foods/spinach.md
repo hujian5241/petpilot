@@ -14,7 +14,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe in small amounts. High oxalate content makes large or frequent servings inadvisable.
+    summary: >-
+      Safe in small amounts. High oxalate content makes large or frequent
+      servings inadvisable.
   cats:
     status: limited
     severity: low
@@ -22,22 +24,24 @@ safety:
 symptoms:
   - kidney stress
   - urinary issues
-what_to_do: Stop feeding if your pet has a history of kidney or bladder stones. Contact a vet if urinary symptoms appear.
+what_to_do: >-
+  Stop feeding if your pet has a history of kidney or bladder stones. Contact a
+  vet if urinary symptoms appear.
 alternatives:
   - green-beans
   - carrots
   - zucchini
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Steam or wilt without oil, salt, garlic, or onions.
+preparation_notes: 'Steam or wilt without oil, salt, garlic, or onions.'
 safe_amount: A teaspoon to a tablespoon for dogs; a tiny pinch for cats.
-frequency: Occasionally, not daily.
+frequency: 'Occasionally, not daily.'
 related_foods:
   - kale
   - lettuce
@@ -48,7 +52,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Oxalates and kidney-stress compounds are poorly tolerated in chronic kidney disease.
+    reason: >-
+      Oxalates and kidney-stress compounds are poorly tolerated in chronic
+      kidney disease.
   - condition: Inflammatory bowel disease (IBD)
     appliesTo:
       - dogs
@@ -73,10 +79,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High oxalate content promotes calcium oxalate urolithiasis.
-meta_title: Can Dogs Eat Spinach? Safety, Risks & Vet Advice
-meta_description: Is Spinach safe for dogs and cats? Spinach is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Spinach? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Spinach safe for dogs and cats? Spinach is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Spinach
 
 Spinach contains beneficial vitamins and minerals, but it also contains oxalates, which can contribute to kidney stress and bladder stones in susceptible pets. For this reason, it should only be offered occasionally and in small quantities.

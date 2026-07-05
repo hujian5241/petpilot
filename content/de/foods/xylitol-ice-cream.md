@@ -30,18 +30,20 @@ symptoms:
   - Krämpfe
   - Kollaps
   - Leberversagen
-what_to_do: Suchen Sie sofort die Notfall-Tierarztpraxis auf, selbst wenn nur eine kleine Menge gefressen wurde.
+what_to_do: >-
+  Suchen Sie sofort die Notfall-Tierarztpraxis auf, selbst wenn nur eine kleine
+  Menge gefressen wurde.
 alternatives:
   - plain-yogurt
   - vanilla-ice-cream
   - frozen-yogurt
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: American Veterinary Medical Association
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -61,10 +63,12 @@ symptoms_severity:
     severity: critical
   - symptom: Leberversagen
     severity: critical
-meta_title: Können Hunde Xylit-Eis essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Xylit-Eis für Hunde und Katzen sicher? Xylit-Eis ist für Hunde giftig und für Katzen giftig. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+meta_title: 'Können Hunde Xylit-Eis essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Xylit-Eis für Hunde und Katzen sicher? Xylit-Eis ist für Hunde giftig und
+  für Katzen giftig. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte
+  Alternativen.
 ---
-
 # Xylit-Eis
 
 Xylit ist ein künstlicher Süßstoff, der für Hunde extrem giftig ist. Es führt zu einer schnellen Ausschüttung von Insulin, was zu lebensbedrohlicher Hypoglykämie führt, und kann auch Leberversagen verursachen. Zuckerfreies Eis, gefrorener Joghurt und Desserts sind häufige Quellen für Xylit.

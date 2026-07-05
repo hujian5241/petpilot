@@ -26,7 +26,7 @@ alternatives:
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -40,5 +40,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Contient des sucres naturels.
-meta_title: Les chiens peuvent-ils manger des mûres ? Sécurité, risques et conseils vétérinaires
-meta_description: Les mûres sont-elles sûres pour les chiens et les chats ? Les mûres sont sûres pour les chiens et les chats. Découvrez les symptômes
+meta_title: >-
+  Les chiens peuvent-ils manger des mûres ? Sécurité, risques et conseils
+  vétérinaires
+meta_description: >-
+  Les mûres sont-elles sûres pour les chiens et les chats ? Les mûres sont sûres
+  pour les chiens et les chats. Découvrez les symptômes
+---
+

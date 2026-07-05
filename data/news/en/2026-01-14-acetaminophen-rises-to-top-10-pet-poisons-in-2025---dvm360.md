@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-01-14-acetaminophen-rises-to-top-10-pet-poisons-in-2025---dvm360
 title: Acetaminophen rises to top 10 pet poisons in 2025 - DVM360
 date: '2026-01-14'
@@ -16,24 +17,26 @@ summary: >-
   Acetaminophen rises to top 10 pet poisons in 2025 DVM360 This report may be
   useful for pet owners monitoring potential risks. Affected animals: other.
   Substances or products mentioned: acetaminophen.
-body: ''
 relatedSlugs:
   medications:
     - acetaminophen
     - guaifenesin
 reviewed: false
 clusterId: f60d860eacaff732
+updatedAt: '2026-07-05T17:48:07.913Z'
 ---
 ## What happened
-DVM360 reported that acetaminophen entered the top 10 pet poisons list for 2025, based on the Pet Poison Helpline's annual report card.
+DVM360 reported that Pet Poison Helpline’s 2025 data shows acetaminophen rising into the top 10 list of pet poisons.
+
 ## Key facts
-- Acetaminophen (found in Tylenol and many cold/flu medications) is now one of the most common toxins reported.
-- The report draws on calls to a veterinary toxicology helpline.
-- Both dogs and cats are at risk; cats are especially sensitive.
+- Acetaminophen, a common human pain reliever, can be toxic to dogs, cats, and other pets.
+- The increase signals a growing risk from human medications in homes.
+
 ## What pet owners should do
-- Never give pets acetaminophen unless explicitly directed by a veterinarian.
-- Store all human medications in locked cabinets.
-- Seek immediate veterinary care if a pet ingests any amount.
+- Keep acetaminophen and other over-the-counter medications in locked cabinets.
+- Never give human pain relievers to pets without veterinary guidance; seek immediate help if ingestion occurs.
+
 ## Related coverage
-- [Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/uncategorized/2025/?utm_source=rss&utm_medium=rss&utm_campaign=2025)
-- [Read the report on PR Newswire →](https://news.google.com/rss/articles/CBMiigFBVV95cUxPNHVheHl5MmZ5V3VHQmtDSnYzaHpoNDZGZDZaeHJlOTVqVkwwU2lWcVNTUm40b2J2WVY1U0VFWk5obWQtNWdkR0FWNVhySWExSzRLalJHakdpOGhBLUZYLTJyZ3VfWHpkeWM4cWRQajVGOGNLeDBoSTRySFFWRXRNLTd5ZjBzaTNVSmc?oc=5)
+- [Read the report on DVM360 →](https://news.google.com/rss/articles/CBMigwFBVV95cUxNRkVsdHlhOUtpMzZYLTJkeTVONkVTTzZOSUQzck1FQ1BrVjV0bXVBb2Jfek5VVk9OVl9sQ3pWY1ZOaWJ0X3JSRHJmbkNDTWp5SVBIUFdfemZEYXhpUUx3Mi1tRFNWbDlWdXE3dVN5aXBWUmlLaXJ5VHF3QThiSG1obTRscw?oc=5)
+- [Read PetPilot's coverage from Pet Poison Helpline →](/news/2026-01-14-2025-annual-report-card)
+- [Read PetPilot's coverage from PR Newswire →](/news/2026-01-14-top-10-pet-poisons-of-2025---pr-newswire)

@@ -18,30 +18,38 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: A small plain piece is usually safe, but high sodium and preservatives make it a poor regular choice.
+    summary: >-
+      A small plain piece is usually safe, but high sodium and preservatives
+      make it a poor regular choice.
   cats:
     status: limited
     severity: low
-    summary: A small plain piece is usually safe, but high sodium and preservatives make it a poor regular choice.
+    summary: >-
+      A small plain piece is usually safe, but high sodium and preservatives
+      make it a poor regular choice.
 symptoms:
   - vomiting
   - diarrhea
   - excessive thirst
   - sodium-imbalance
-what_to_do: If a large amount of salty deli meat was eaten, contact your vet. Seek emergency care for vomiting, tremors, or seizures.
+what_to_do: >-
+  If a large amount of salty deli meat was eaten, contact your vet. Seek
+  emergency care for vomiting, tremors, or seizures.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose low-sodium, plain varieties. Avoid seasoned, garlic, onion, or spicy deli meats.
+preparation_notes: >-
+  Choose low-sodium, plain varieties. Avoid seasoned, garlic, onion, or spicy
+  deli meats.
 safe_amount: A small piece on rare occasions.
 frequency: Rarely.
 related_foods:
@@ -54,7 +62,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High in sodium, which is harmful for cardiac and hypertensive patients.
+    reason: 'High in sodium, which is harmful for cardiac and hypertensive patients.'
   - condition: Chronic kidney disease
     appliesTo:
       - dogs
@@ -84,11 +92,14 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: May contain additives, preservatives, or proteins that trigger sensitivities.
-meta_title: Can Dogs Eat Deli Meat? Safety, Risks & Vet Advice
-meta_description: Is Deli Meat safe for dogs and cats? Deli Meat is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      May contain additives, preservatives, or proteins that trigger
+      sensitivities.
+meta_title: 'Can Dogs Eat Deli Meat? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Deli Meat safe for dogs and cats? Deli Meat is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Deli Meat
 
 Deli meats are convenient but often contain high levels of sodium, nitrates, and preservatives. A small piece of plain, low-sodium turkey or chicken is usually fine, but regular feeding is not recommended.

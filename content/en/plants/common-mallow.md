@@ -29,16 +29,17 @@ alternatives:
   - purslane
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Common Mallow and Pets — Safety Guide | PetPilot
-meta_description: Common mallow is safe for dogs and cats. Learn why this mild lawn weed is non-toxic and pet-friendly.
+meta_description: >-
+  Common mallow is safe for dogs and cats. Learn why this mild lawn weed is
+  non-toxic and pet-friendly.
 ---
-
 # Common Mallow
 
 Common mallow is a low-growing weed with rounded leaves and small pale pink or white flowers. It is safe for pets and humans.

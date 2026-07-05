@@ -21,6 +21,7 @@ summary: >-
 relatedSlugs:
   foods: []
 reviewed: true
+body: ''
 ---
 FDA CVM announced a voluntary recall of dry pet food due to potential aflatoxin contamination. Pet owners are advised to stop feeding the affected lots immediately and contact t... Pet owners should be aware of this incident and take precautions. Affected animals: other. Substances or products mentioned: aflatoxin. Location: United States.
 

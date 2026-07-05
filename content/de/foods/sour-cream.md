@@ -16,29 +16,36 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: In sehr kleinen Mengen unbedenklich. Fettreich und kann laktoseintoleranten Hunden Probleme bereiten.
+    summary: >-
+      In sehr kleinen Mengen unbedenklich. Fettreich und kann
+      laktoseintoleranten Hunden Probleme bereiten.
   cats:
     status: limited
     severity: low
-    summary: In kleinsten Mengen unbedenklich, aber fettreich.
+    summary: 'In kleinsten Mengen unbedenklich, aber fettreich.'
 symptoms:
   - Durchfall
   - Blähungen
   - Erbrechen
-what_to_do: Setzen Sie die Fütterung ab, wenn Verdauungsbeschwerden auftreten. Kontaktieren Sie einen Tierarzt, wenn Zwiebeln, Knoblauch oder Schnittlauch enthalten waren.
+what_to_do: >-
+  Setzen Sie die Fütterung ab, wenn Verdauungsbeschwerden auftreten.
+  Kontaktieren Sie einen Tierarzt, wenn Zwiebeln, Knoblauch oder Schnittlauch
+  enthalten waren.
 alternatives:
   - plain-yogurt
   - cottage-cheese
   - kefir
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Verwenden Sie reinen Sauerrahm. Vermeiden Sie gewürzte Dips und Toppings mit Zwiebeln, Knoblauch oder Schnittlauch.
+preparation_notes: >-
+  Verwenden Sie reinen Sauerrahm. Vermeiden Sie gewürzte Dips und Toppings mit
+  Zwiebeln, Knoblauch oder Schnittlauch.
 safe_amount: Ein kleiner Schleck für Hunde; ein winziger Klecks für Katzen.
 frequency: Nur selten.
 related_foods:
@@ -51,7 +58,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung meist eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung meist
+      eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -93,17 +102,21 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Laktose, die viele erwachsene Haustiere nicht gut verdauen können.
+    reason: 'Enthält Laktose, die viele erwachsene Haustiere nicht gut verdauen können.'
   - condition: Magen-Darm-Sensibilität
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Milchprodukte können bei empfindlichen Tieren Durchfall und Blähungen verursachen.
-meta_title: Dürfen Hunde Sauerrahm essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Sauerrahm für Hunde und Katzen unbedenklich? Sauerrahm ist für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+    reason: >-
+      Milchprodukte können bei empfindlichen Tieren Durchfall und Blähungen
+      verursachen.
+meta_title: 'Dürfen Hunde Sauerrahm essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Sauerrahm für Hunde und Katzen unbedenklich? Sauerrahm ist für Hunde und
+  Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Sauerrahm
 
 Einfacher Sauerrahm ist für Hunde in sehr kleinen Mengen unbedenklich. Er ist fermentiert, was den Laktosegehalt etwas senkt, aber er bleibt fettreich. Er wird oft als Futtertopper verwendet, aber es gibt gesündere Alternativen.

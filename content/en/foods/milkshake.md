@@ -17,7 +17,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Plain vanilla milkshakes are not toxic in small amounts but are high in fat, sugar, and dairy.
+    summary: >-
+      Plain vanilla milkshakes are not toxic in small amounts but are high in
+      fat, sugar, and dairy.
   cats:
     status: limited
     severity: low
@@ -27,20 +29,22 @@ symptoms:
   - vomiting
   - gas
   - pancreatitis risk with high fat
-what_to_do: Monitor for digestive upset. If the milkshake contains chocolate, xylitol, or coffee, contact a vet.
+what_to_do: >-
+  Monitor for digestive upset. If the milkshake contains chocolate, xylitol, or
+  coffee, contact a vet.
 alternatives:
   - cucumber
   - chicken-breast
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -84,17 +88,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Dairy, sugar, and fat commonly cause diarrhea or vomiting.
+    reason: 'Dairy, sugar, and fat commonly cause diarrhea or vomiting.'
   - condition: Dental disease
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Sugary residue promotes dental disease.
-meta_title: Can Dogs Eat Milkshake? Safety, Risks & Vet Advice
-meta_description: Is Milkshake safe for dogs and cats? Milkshake is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Milkshake? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Milkshake safe for dogs and cats? Milkshake is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Milkshake
 
 Milkshakes are a combination of milk, sugar, and often flavorings such as chocolate or syrups. Plain vanilla is unlikely to poison a pet, but the dairy and sugar can cause diarrhea and contribute to obesity. Chocolate, coffee, or sugar-free syrups can introduce serious toxins. It is better to skip milkshakes entirely and choose a pet-safe frozen treat.

@@ -29,16 +29,17 @@ alternatives:
   - white-clover
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Wild Violet and Pets — Safety Guide | PetPilot
-meta_description: Wild violets are safe for dogs and cats. Learn about this native lawn wildflower and how to keep it pet-friendly.
+meta_description: >-
+  Wild violets are safe for dogs and cats. Learn about this native lawn
+  wildflower and how to keep it pet-friendly.
 ---
-
 # Wild Violet
 
 Wild violets are charming native wildflowers that often dot shaded lawns. They are safe for dogs and cats and add color without posing a poisoning risk.

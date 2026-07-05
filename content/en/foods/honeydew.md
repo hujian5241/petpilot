@@ -26,7 +26,7 @@ alternatives:
   - watermelon
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High water and fiber content can cause diarrhea in large amounts.
-meta_title: Can Dogs Eat Honeydew Melon? Safety, Risks & Vet Advice
-meta_description: Is Honeydew Melon safe for dogs and cats? Honeydew Melon is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Honeydew Melon? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Honeydew Melon safe for dogs and cats? Honeydew Melon is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Honeydew Melon
 
 Honeydew melon is safe for dogs in small amounts. Remove the rind and seeds before serving.

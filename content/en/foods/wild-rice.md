@@ -28,14 +28,18 @@ alternatives:
   - quinoa
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until tender. Serve plain. Whole grains can be hard to digest if undercooked.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for cats.
+preparation_notes: >-
+  Cook until tender. Serve plain. Whole grains can be hard to digest if
+  undercooked.
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for
+  cats.
 frequency: Occasionally.
 related_foods:
   - brown-rice
@@ -66,10 +70,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Wild Rice? Safety, Risks & Vet Advice
-meta_description: Is Wild Rice safe for dogs and cats? Wild Rice is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Wild Rice? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Wild Rice safe for dogs and cats? Wild Rice is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Wild Rice
 
 Wild rice is a whole grain that is safe for dogs when thoroughly cooked and served plain. It is higher in protein and fiber than white rice but also chewier, which may not appeal to all pets. Undercooked wild rice can be difficult to digest and may cause stomach upset.

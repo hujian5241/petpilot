@@ -14,7 +14,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Low theobromine, but high fat and sugar can cause stomach upset.
+    summary: 'Low theobromine, but high fat and sugar can cause stomach upset.'
   cats:
     status: limited
     severity: low
@@ -25,16 +25,20 @@ symptoms:
   - diarrhea
   - pancreatitis
   - weight-gain
-what_to_do: Monitor your pet. Contact your vet if a large amount was eaten or symptoms occur.
+what_to_do: >-
+  Monitor your pet. Contact your vet if a large amount was eaten or symptoms
+  occur.
 alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid feeding. If offered accidentally, ensure no xylitol or other toxic ingredients.
+preparation_notes: >-
+  Avoid feeding. If offered accidentally, ensure no xylitol or other toxic
+  ingredients.
 safe_amount: A tiny amount accidentally is unlikely to cause theobromine toxicity.
 frequency: Avoid.
 related_foods:
@@ -89,10 +93,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat White Chocolate? Safety, Risks & Vet Advice
-meta_description: Is White Chocolate safe for dogs and cats? White Chocolate is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat White Chocolate? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is White Chocolate safe for dogs and cats? White Chocolate is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # White Chocolate
 
 White chocolate contains very little theobromine and is unlikely to cause chocolate toxicity. However, it is high in fat and sugar, which can lead to pancreatitis and digestive upset.

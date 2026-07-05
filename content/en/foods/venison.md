@@ -15,23 +15,27 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Safe when cooked plain. A lean novel protein often used in elimination diets.
+    summary: >-
+      Safe when cooked plain. A lean novel protein often used in elimination
+      diets.
   cats:
     status: safe
-    summary: Safe when cooked plain. A lean novel protein often used in elimination diets.
+    summary: >-
+      Safe when cooked plain. A lean novel protein often used in elimination
+      diets.
 symptoms:
   - vomiting
   - diarrhea
-what_to_do: If raw venison was eaten, contact your vet to discuss parasite risk.
+what_to_do: 'If raw venison was eaten, contact your vet to discuss parasite risk.'
 alternatives:
   - beef
   - lamb
   - turkey
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-venison/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-venison/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -48,7 +52,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Food allergies
     appliesTo:
       - dogs
@@ -67,10 +73,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High purine content can trigger urate crystal/stone formation.
-meta_title: Can Dogs Eat Venison? Safety, Risks & Vet Advice
-meta_description: Is Venison safe for dogs and cats? Venison is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Venison? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Venison safe for dogs and cats? Venison is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Venison
 
 Venison is a lean, novel protein that is often well tolerated by pets with food allergies or sensitivities. It provides iron and B vitamins without being overly fatty.

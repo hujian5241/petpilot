@@ -17,27 +17,29 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Very high in fat, salt, and spices. Avoid feeding to pets.
+    summary: 'Very high in fat, salt, and spices. Avoid feeding to pets.'
   cats:
     status: limited
     severity: moderate
-    summary: Very high in fat, salt, and spices. Avoid feeding to pets.
+    summary: 'Very high in fat, salt, and spices. Avoid feeding to pets.'
 symptoms:
   - vomiting
   - diarrhea
   - pancreatitis
   - excessive thirst
   - stomach-upset
-what_to_do: If a large amount was eaten, contact your vet. Seek emergency care for severe abdominal pain or repeated vomiting.
+what_to_do: >-
+  If a large amount was eaten, contact your vet. Seek emergency care for severe
+  abdominal pain or repeated vomiting.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -93,11 +95,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Spicy, fatty cured meat commonly causes stomach upset.
-meta_title: Can Dogs Eat Pepperoni? Safety, Risks & Vet Advice
-meta_description: Is Pepperoni safe for dogs and cats? Pepperoni is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Spicy, fatty cured meat commonly causes stomach upset.'
+meta_title: 'Can Dogs Eat Pepperoni? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pepperoni safe for dogs and cats? Pepperoni is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pepperoni
 
 Pepperoni is a spicy, fatty, highly salted cured meat. It can cause stomach upset and pancreatitis and offers no nutritional benefit to pets.

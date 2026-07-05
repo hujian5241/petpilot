@@ -32,9 +32,9 @@ alternatives:
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -81,10 +81,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Lactose is a milk sugar.
-meta_title: Can Dogs Eat Half-and-Half? Safety, Risks & Vet Advice
-meta_description: Is Half-and-Half safe for dogs and cats? Half-and-Half is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Half-and-Half? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Half-and-Half safe for dogs and cats? Half-and-Half is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Half-and-Half
 
 Half-and-half is a mixture of milk and cream that is too high in fat and lactose for regular pet consumption. A tiny amount in coffee that spills may not be dangerous, but deliberate feeding is not recommended.

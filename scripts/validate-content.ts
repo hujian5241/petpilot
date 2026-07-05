@@ -4,7 +4,16 @@ import matter from "gray-matter";
 
 import { getAllCategories } from "../lib/content";
 import { locales, defaultLocale, type Locale } from "../lib/i18n";
-import type { FoodEntry, PlantEntry, SafetyStatus, Severity, Species } from "../lib/types";
+import type {
+  FoodEntry,
+  HouseholdChemicalEntry,
+  MedicationEntry,
+  PesticideEntry,
+  PlantEntry,
+  SafetyStatus,
+  Severity,
+  Species,
+} from "../lib/types";
 
 const SAFETY_STATUSES: SafetyStatus[] = ["safe", "limited", "toxic", "unknown"];
 const SEVERITIES: (Severity | undefined)[] = ["low", "moderate", "high", "critical", undefined];
@@ -44,14 +53,16 @@ async function loadMarkdownFiles(
 }
 
 interface ValidationContext {
-  type: "food" | "plant";
+  type: "food" | "plant" | "medication" | "household-chemical" | "pesticide";
   locale: Locale;
   validCategorySlugs: Set<string>;
   validSlugs: Set<string>;
 }
 
+type EntryUnion = Partial<FoodEntry> | Partial<PlantEntry> | Partial<MedicationEntry> | Partial<HouseholdChemicalEntry> | Partial<PesticideEntry>;
+
 function collectErrors(
-  entry: Partial<FoodEntry> | Partial<PlantEntry>,
+  entry: EntryUnion,
   slug: string,
   ctx: ValidationContext
 ): string[] {
@@ -258,12 +269,54 @@ function collectErrors(
     }
   }
 
+  if (ctx.type === "medication") {
+    const medication = entry as Partial<MedicationEntry>;
+
+    if (!Array.isArray(medication.active_ingredients) || medication.active_ingredients.length === 0) {
+      errors.push(`${prefix} Missing or invalid required field: active_ingredients`);
+    }
+    if (medication.brand_names !== undefined && !Array.isArray(medication.brand_names)) {
+      errors.push(`${prefix} Invalid optional field: brand_names`);
+    }
+    if (medication.common_uses !== undefined && !Array.isArray(medication.common_uses)) {
+      errors.push(`${prefix} Invalid optional field: common_uses`);
+    }
+    if (medication.toxic_ingredients !== undefined && !Array.isArray(medication.toxic_ingredients)) {
+      errors.push(`${prefix} Invalid optional field: toxic_ingredients`);
+    }
+  }
+
+  if (ctx.type === "household-chemical") {
+    const chemical = entry as Partial<HouseholdChemicalEntry>;
+
+    if (chemical.active_ingredients !== undefined && !Array.isArray(chemical.active_ingredients)) {
+      errors.push(`${prefix} Invalid optional field: active_ingredients`);
+    }
+    if (chemical.common_products !== undefined && !Array.isArray(chemical.common_products)) {
+      errors.push(`${prefix} Invalid optional field: common_products`);
+    }
+  }
+
+  if (ctx.type === "pesticide") {
+    const pesticide = entry as Partial<PesticideEntry>;
+
+    if (!Array.isArray(pesticide.active_ingredients) || pesticide.active_ingredients.length === 0) {
+      errors.push(`${prefix} Missing or invalid required field: active_ingredients`);
+    }
+    if (pesticide.pest_targeted !== undefined && !Array.isArray(pesticide.pest_targeted)) {
+      errors.push(`${prefix} Invalid optional field: pest_targeted`);
+    }
+    if (pesticide.signal_word !== undefined && !["caution", "warning", "danger"].includes(pesticide.signal_word)) {
+      errors.push(`${prefix} Invalid optional field: signal_word`);
+    }
+  }
+
   return errors;
 }
 
 async function validateDirectory(
   dir: string,
-  type: "food" | "plant",
+  type: "food" | "plant" | "medication" | "household-chemical" | "pesticide",
   locale: Locale,
   validCategorySlugs: Set<string>,
   validSlugs: Set<string>
@@ -273,7 +326,7 @@ async function validateDirectory(
   let totalErrors = 0;
 
   for (const file of files) {
-    const entry = (file.data ?? {}) as Partial<FoodEntry> | Partial<PlantEntry>;
+    const entry = (file.data ?? {}) as EntryUnion;
     const errors = collectErrors(entry, file.slug, ctx);
     if (errors.length > 0) {
       totalErrors += errors.length;
@@ -290,81 +343,81 @@ async function main() {
   const categories = await getAllCategories(defaultLocale);
   const validCategorySlugs = new Set(categories.map((c) => c.slug));
 
-  // Validate each locale independently.
+  const typeConfigs = [
+    { key: "foods", type: "food" as const, dirName: "foods" },
+    { key: "plants", type: "plant" as const, dirName: "plants" },
+    { key: "medications", type: "medication" as const, dirName: "medications" },
+    { key: "householdChemicals", type: "household-chemical" as const, dirName: "household-chemicals" },
+    { key: "pesticides", type: "pesticide" as const, dirName: "pesticides" },
+  ];
+
+  type TypeKey = (typeof typeConfigs)[number]["key"];
+
   let totalErrors = 0;
-  const localeStats: Record<Locale, { foods: number; plants: number }> = {} as Record<
+  const localeStats: Record<Locale, Record<TypeKey, number>> = {} as Record<
     Locale,
-    { foods: number; plants: number }
+    Record<TypeKey, number>
   >;
-  const slugIndex: Record<Locale, { foods: Set<string>; plants: Set<string> }> = {} as Record<
+  const slugIndex: Record<Locale, Record<TypeKey, Set<string>>> = {} as Record<
     Locale,
-    { foods: Set<string>; plants: Set<string> }
+    Record<TypeKey, Set<string>>
   >;
 
+  // Validate each locale independently.
   for (const locale of locales) {
-    const foodsDir = path.join(contentDir(locale), "foods");
-    const plantsDir = path.join(contentDir(locale), "plants");
+    const localeResults: Record<TypeKey, { errors: number; files: number }> = {} as Record<
+      TypeKey,
+      { errors: number; files: number }
+    >;
 
-    const [foodFiles, plantFiles] = await Promise.all([
-      loadMarkdownFiles(foodsDir),
-      loadMarkdownFiles(plantsDir),
-    ]);
+    for (const config of typeConfigs) {
+      const dir = path.join(contentDir(locale), config.dirName);
+      const files = await loadMarkdownFiles(dir);
+      const validSlugs = new Set(files.map((f) => f.slug));
 
-    const validFoodSlugs = new Set(foodFiles.map((f) => f.slug));
-    const validPlantSlugs = new Set(plantFiles.map((f) => f.slug));
+      if (!slugIndex[locale]) {
+        slugIndex[locale] = {} as Record<TypeKey, Set<string>>;
+      }
+      slugIndex[locale][config.key] = validSlugs;
 
-    slugIndex[locale] = {
-      foods: validFoodSlugs,
-      plants: validPlantSlugs,
-    };
+      const referenceSlugs =
+        locale === defaultLocale
+          ? validSlugs
+          : new Set([
+              ...validSlugs,
+              ...(slugIndex[defaultLocale]?.[config.key] ?? new Set()),
+            ]);
 
-    // For non-default locales, allow cross-references to default-locale slugs
-    // that have not been translated yet (the site falls back to English).
-    const referenceFoodSlugs =
-      locale === defaultLocale ? validFoodSlugs : new Set([...validFoodSlugs, ...slugIndex[defaultLocale]?.foods ?? new Set()]);
-    const referencePlantSlugs =
-      locale === defaultLocale
-        ? validPlantSlugs
-        : new Set([...validPlantSlugs, ...slugIndex[defaultLocale]?.plants ?? new Set()]);
+      const result = await validateDirectory(
+        dir,
+        config.type,
+        locale,
+        validCategorySlugs,
+        referenceSlugs
+      );
+      localeResults[config.key] = result;
+      totalErrors += result.errors;
+    }
 
-    const foodResult = await validateDirectory(
-      foodsDir,
-      "food",
-      locale,
-      validCategorySlugs,
-      referenceFoodSlugs
-    );
-    const plantResult = await validateDirectory(
-      plantsDir,
-      "plant",
-      locale,
-      validCategorySlugs,
-      referencePlantSlugs
-    );
-
-    totalErrors += foodResult.errors + plantResult.errors;
-    localeStats[locale] = { foods: foodResult.files, plants: plantResult.files };
+    localeStats[locale] = Object.fromEntries(
+      typeConfigs.map((config) => [config.key, localeResults[config.key]!.files])
+    ) as Record<TypeKey, number>;
   }
 
   // Cross-locale consistency: report missing translations (warn only).
-  const enFoodSlugs = slugIndex[defaultLocale].foods;
-  const enPlantSlugs = slugIndex[defaultLocale].plants;
-
   for (const locale of locales) {
     if (locale === defaultLocale) continue;
 
-    const missingFoods = [...enFoodSlugs].filter((slug) => !slugIndex[locale].foods.has(slug));
-    const missingPlants = [...enPlantSlugs].filter((slug) => !slugIndex[locale].plants.has(slug));
-
-    for (const slug of missingFoods) {
-      console.warn(
-        `[${locale}:food:${slug}] Missing translation (falling back to ${defaultLocale}).`
+    for (const config of typeConfigs) {
+      const enSlugs = slugIndex[defaultLocale]![config.key]!;
+      const missing = [...enSlugs].filter(
+        (slug) => !slugIndex[locale]![config.key]!.has(slug)
       );
-    }
-    for (const slug of missingPlants) {
-      console.warn(
-        `[${locale}:plant:${slug}] Missing translation (falling back to ${defaultLocale}).`
-      );
+      for (const slug of missing) {
+        console.warn(
+          `[${locale}:${config.type}:${slug}] Missing translation (falling back to ${defaultLocale}).`
+        );
+      }
     }
   }
 
@@ -372,49 +425,39 @@ async function main() {
   for (const locale of locales) {
     if (locale === defaultLocale) continue;
 
-    const enFoods = await loadMarkdownFiles(path.join(contentDir(defaultLocale), "foods"));
-    const localeFoods = await loadMarkdownFiles(path.join(contentDir(locale), "foods"));
-    const enFoodsBySlug = new Map(enFoods.map((f) => [f.slug, f.data]));
+    for (const config of typeConfigs) {
+      const enFiles = await loadMarkdownFiles(
+        path.join(contentDir(defaultLocale), config.dirName)
+      );
+      const localeFiles = await loadMarkdownFiles(
+        path.join(contentDir(locale), config.dirName)
+      );
+      const enBySlug = new Map(enFiles.map((f) => [f.slug, f.data]));
 
-    for (const file of localeFoods) {
-      const enData = enFoodsBySlug.get(file.slug);
-      if (!enData) continue;
-      const enId = (enData as Partial<FoodEntry>).id;
-      const localeId = (file.data as Partial<FoodEntry>).id;
-      if (enId !== localeId) {
-        console.error(
-          `[${locale}:food:${file.slug}] ID mismatch with ${defaultLocale}: ${localeId} vs ${enId}`
-        );
-        totalErrors++;
-      }
-    }
-
-    const enPlants = await loadMarkdownFiles(path.join(contentDir(defaultLocale), "plants"));
-    const localePlants = await loadMarkdownFiles(path.join(contentDir(locale), "plants"));
-    const enPlantsBySlug = new Map(enPlants.map((f) => [f.slug, f.data]));
-
-    for (const file of localePlants) {
-      const enData = enPlantsBySlug.get(file.slug);
-      if (!enData) continue;
-      const enId = (enData as Partial<PlantEntry>).id;
-      const localeId = (file.data as Partial<PlantEntry>).id;
-      if (enId !== localeId) {
-        console.error(
-          `[${locale}:plant:${file.slug}] ID mismatch with ${defaultLocale}: ${localeId} vs ${enId}`
-        );
-        totalErrors++;
+      for (const file of localeFiles) {
+        const enData = enBySlug.get(file.slug);
+        if (!enData) continue;
+        const enId = (enData as { id?: string }).id;
+        const localeId = (file.data as { id?: string }).id;
+        if (enId !== localeId) {
+          console.error(
+            `[${locale}:${config.type}:${file.slug}] ID mismatch with ${defaultLocale}: ${localeId} vs ${enId}`
+          );
+          totalErrors++;
+        }
       }
     }
   }
 
   for (const locale of locales) {
     const stats = localeStats[locale];
+    const entries = typeConfigs
+      .map((config) => `${stats[config.key]} ${config.dirName}`)
+      .join(", ");
     const fallbackNote =
-      locale !== defaultLocale
-        ? ` (${stats.foods} foods, ${stats.plants} plants present locally)`
-        : "";
+      locale !== defaultLocale ? " (entries present locally)" : "";
     console.log(
-      `✓ ${locale}: validated ${stats.foods} food entries and ${stats.plants} plant entries${fallbackNote}.`
+      `✓ ${locale}: validated ${entries}${fallbackNote}.`
     );
   }
 

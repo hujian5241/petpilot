@@ -29,18 +29,19 @@ alternatives:
   - red-clover
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: White Clover and Pets — Safety Guide | PetPilot
-meta_description: White clover is safe for dogs and cats. Learn about this common lawn plant and how to keep it chemical-free for pets.
+meta_description: >-
+  White clover is safe for dogs and cats. Learn about this common lawn plant and
+  how to keep it chemical-free for pets.
 related_plants:
   - red-clover
 ---
-
 # White Clover
 
 White clover is a low-growing legume that often appears in lawns. It is safe for pets to walk on and occasionally nibble.

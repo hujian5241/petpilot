@@ -28,16 +28,17 @@ alternatives:
   - dandelion
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Echinacea and Pets — Safety Guide | PetPilot
-meta_description: Echinacea is safe for dogs and cats. Learn about this native coneflower and safe supplement use.
+meta_description: >-
+  Echinacea is safe for dogs and cats. Learn about this native coneflower and
+  safe supplement use.
 ---
-
 # Echinacea
 
 Echinacea, or coneflower, is a sturdy native perennial with drooping purple petals. It is safe for pets and is popular in herbal immune support products.

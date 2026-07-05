@@ -15,29 +15,40 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Sicher, wenn sie in Wasser eingelegt sind und in Maßen verfüttert werden. Reich an Omega-3-Fettsäuren und Kalzium.
+    summary: >-
+      Sicher, wenn sie in Wasser eingelegt sind und in Maßen verfüttert werden.
+      Reich an Omega-3-Fettsäuren und Kalzium.
   cats:
     status: safe
-    summary: Sicher, wenn sie in Wasser eingelegt sind und in Maßen verfüttert werden. Reich an Omega-3-Fettsäuren und Kalzium.
+    summary: >-
+      Sicher, wenn sie in Wasser eingelegt sind und in Maßen verfüttert werden.
+      Reich an Omega-3-Fettsäuren und Kalzium.
 symptoms:
   - Erbrechen
   - Durchfall
   - übermäßiger Durst
-what_to_do: Wenn Ihr Haustier Sardinen in Öl, stark gesalzen oder mit Soße gegessen hat, beobachten Sie es auf Verdauungsstörungen und kontaktieren Sie Ihren Tierarzt, wenn die Symptome anhalten.
+what_to_do: >-
+  Wenn Ihr Haustier Sardinen in Öl, stark gesalzen oder mit Soße gegessen hat,
+  beobachten Sie es auf Verdauungsstörungen und kontaktieren Sie Ihren Tierarzt,
+  wenn die Symptome anhalten.
 alternatives:
   - whitefish
   - salmon
   - eggs
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-sardines/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-sardines/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Wählen Sie Sardinen, die in Wasser eingelegt sind und ohne zugesetztes Salz, Öl oder Soßen auskommen. Vor dem Servieren abtropfen lassen.
-safe_amount: Eine oder zwei kleine Sardinen für einen mittelgroßen Hund; eine für eine Katze.
+preparation_notes: >-
+  Wählen Sie Sardinen, die in Wasser eingelegt sind und ohne zugesetztes Salz,
+  Öl oder Soßen auskommen. Vor dem Servieren abtropfen lassen.
+safe_amount: >-
+  Eine oder zwei kleine Sardinen für einen mittelgroßen Hund; eine für eine
+  Katze.
 frequency: Höchstens einige Male pro Woche.
 related_foods:
   - tuna
@@ -49,7 +60,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Eiweiß, die bei chronischen Nierenerkrankungen in der Regel eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Eiweiß, die bei chronischen Nierenerkrankungen in der
+      Regel eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -79,7 +92,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Purine können bei empfänglichen Tieren die Harnsäure erhöhen und das Steinrisiko steigern.
+    reason: >-
+      Purine können bei empfänglichen Tieren die Harnsäure erhöhen und das
+      Steinrisiko steigern.
   - condition: Hyperlipidämie
     appliesTo:
       - dogs
@@ -98,10 +113,12 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: Hoher Puringehalt kann die Bildung von Uratkristallen/-steinen auslösen.
-meta_title: Dürfen Hunde Sardinen essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Sind Sardinen für Hunde und Katzen sicher? Sardinen sind für Hunde und Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Sardinen essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Sind Sardinen für Hunde und Katzen sicher? Sardinen sind für Hunde und Katzen
+  sicher. Erfahren Sie Symptome, was zu tun ist und tierärztlich geprüfte
+  Alternativen.
 ---
-
 # Sardinen
 
 Sardinen sind kleine, quecksilberarme Fische, die reich an Omega-3-Fettsäuren, Eiweiß und Kalzium sind. Sie sind für Hunde und Katzen in der Regel sicher, wenn sie in Wasser eingelegt sind und in Maßen verfüttert werden.

@@ -28,13 +28,15 @@ alternatives:
   - zucchini
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Steam or lightly cook. Chop into small pieces. Avoid garlic, ginger, soy sauce, and oils.
+preparation_notes: >-
+  Steam or lightly cook. Chop into small pieces. Avoid garlic, ginger, soy
+  sauce, and oils.
 safe_amount: A tablespoon for dogs; a tiny piece for cats.
 frequency: Occasionally.
 related_foods:
@@ -58,12 +60,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Cruciferous vegetables contain goitrogens that may interfere with thyroid function when fed in large amounts.
+    reason: >-
+      Cruciferous vegetables contain goitrogens that may interfere with thyroid
+      function when fed in large amounts.
     notes: Relevant to cats with hyperthyroidism and dogs with hypothyroidism.
-meta_title: Can Dogs Eat Bok Choy? Safety, Risks & Vet Advice
-meta_description: Is Bok Choy safe for dogs and cats? Bok Choy is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Bok Choy? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Bok Choy safe for dogs and cats? Bok Choy is safe for dogs and safe for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Bok Choy
 
 Bok choy is safe for dogs when cooked plain and chopped into small pieces. It is a leafy green that provides vitamins and minerals. Like other cruciferous vegetables, it can cause gas.

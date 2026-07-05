@@ -13,7 +13,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: In sehr kleinen Mengen unbedenklich, aber reich an Ballaststoffen und Zucker. Stein entfernt.
+    summary: >-
+      In sehr kleinen Mengen unbedenklich, aber reich an Ballaststoffen und
+      Zucker. Stein entfernt.
   cats:
     status: limited
     severity: low
@@ -27,12 +29,14 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Wählen Sie entsteinte, ungesüßte Trockenpflaumen. Schneiden Sie sie in kleine Stücke.
-safe_amount: "Ein kleines Stück für große Hunde."
+preparation_notes: >-
+  Wählen Sie entsteinte, ungesüßte Trockenpflaumen. Schneiden Sie sie in kleine
+  Stücke.
+safe_amount: Ein kleines Stück für große Hunde.
 frequency: Nur selten.
 condition_warnings:
   - condition: Diabetes mellitus
@@ -59,10 +63,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Ballaststoff- und Zuckergehalt führen häufig zu Durchfall.
-meta_title: "Dürfen Hunde Trockenpflaumen essen? Sicherheit, Risiken und Tierarzt-Rat"
-meta_description: "Sind Trockenpflaumen für Hunde und Katzen sicher? Sie sind für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen."
+meta_title: 'Dürfen Hunde Trockenpflaumen essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Sind Trockenpflaumen für Hunde und Katzen sicher? Sie sind für Hunde und
+  Katzen nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das
+  richtige Verhalten und tierärztlich geprüfte Alternativen.
 ---
-
 # Trockenpflaumen
 
 Trockenpflaumen sind nicht giftig, aber sehr reich an Ballaststoffen und Zucker. Sie können Durchfall verursachen.

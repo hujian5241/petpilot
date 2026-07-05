@@ -32,13 +32,13 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use low-fat, low-sodium cheddar. Avoid processed cheese slices with additives.
+preparation_notes: 'Use low-fat, low-sodium cheddar. Avoid processed cheese slices with additives.'
 safe_amount: A small cube for dogs; a pea-sized amount for cats.
 frequency: Rarely.
 related_foods:
@@ -51,7 +51,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Contains lactose and is a dairy product; the file notes that some pets are lactose intolerant and may develop diarrhea, gas, or vomiting.
+    reason: >-
+      Contains lactose and is a dairy product; the file notes that some pets are
+      lactose intolerant and may develop diarrhea, gas, or vomiting.
   - condition: Obesity
     appliesTo:
       - dogs
@@ -63,23 +65,25 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat content can trigger pancreatitis, as noted in the file.
+    reason: 'High fat content can trigger pancreatitis, as noted in the file.'
   - condition: Hyperlipidemia
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: High in fat, which is inappropriate for pets with elevated blood lipids.
+    reason: 'High in fat, which is inappropriate for pets with elevated blood lipids.'
   - condition: Heart disease/hypertension
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
     reason: High in sodium; the file recommends choosing low-sodium varieties only.
-meta_title: Can Dogs Eat Cheddar Cheese? Safety, Risks & Vet Advice
-meta_description: Is Cheddar Cheese safe for dogs and cats? Cheddar Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Cheddar Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cheddar Cheese safe for dogs and cats? Cheddar Cheese is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Cheddar Cheese
 
 Cheddar cheese is safe for most dogs in very small amounts. It is lower in lactose than milk because of the aging process, but it is still high in fat and sodium. Overfeeding can lead to weight gain and pancreatitis.

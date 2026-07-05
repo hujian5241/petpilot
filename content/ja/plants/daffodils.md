@@ -39,15 +39,16 @@ alternatives:
   - snapdragons
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/daffodil
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/daffodil
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/daffodil/
+    url: 'https://www.petpoisonhelpline.com/poison/daffodil/'
   - name: MSD Veterinary Manual — 毒物学
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — 猫用の有毒・無毒植物リスト
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — 犬用の有毒・無毒植物リスト
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -62,7 +63,6 @@ symptoms_severity:
     severity: high
 notes_for_puppies: 好奇心旺盛な子犬は春の球根を掘り起こすことがありますので、スイセンの花壇に立ち入らせないようにしてください。
 ---
-
 # スイセン
 
 スイセンは、鮮やかな黄色の花で春の訪れを告げますが、ペットに有毒なアルカロイドを含んでいます。最も危険なのは球根ですが、地上部も口内の刺激や胃腸障害を引き起こすことがあります。

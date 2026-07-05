@@ -34,9 +34,9 @@ alternatives:
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -75,7 +75,6 @@ condition_warnings:
 meta_title: 犬はピーナッツを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ピーナッツは犬や猫にとって安全？犬にも猫にも「制限あり」です。症状、対処法、獣医師推奨の代替品を解説します。
 ---
-
 # ピーナッツ
 
 ピーナッツは厳密にはナッツではなく、マメ科植物です。塩味や味付けをしていない素のピーナッツは、犬に少量を与える限り一般的に安全ですが、脂肪分が高いため胃腸の不調や膵炎を引き起こす可能性があります。塩味や味付けのピーナッツは、ナトリウム過多の問題を引き起こすことがあります。

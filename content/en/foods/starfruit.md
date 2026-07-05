@@ -12,7 +12,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Small amounts may be safe for healthy dogs; avoid in pets with kidney issues.
+    summary: >-
+      Small amounts may be safe for healthy dogs; avoid in pets with kidney
+      issues.
   cats:
     status: limited
     severity: low
@@ -21,15 +23,17 @@ symptoms:
   - kidney issues
   - upset stomach
   - neurological signs
-what_to_do: Avoid feeding starfruit to pets with kidney problems. Contact your vet if symptoms occur.
+what_to_do: >-
+  Avoid feeding starfruit to pets with kidney problems. Contact your vet if
+  symptoms occur.
 alternatives:
   - blueberries
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -45,7 +49,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Oxalates and kidney-stress compounds are poorly tolerated in chronic kidney disease.
+    reason: >-
+      Oxalates and kidney-stress compounds are poorly tolerated in chronic
+      kidney disease.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -76,10 +82,11 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: High oxalate content promotes calcium oxalate urolithiasis.
-meta_title: Can Dogs Eat Starfruit? Safety, Risks & Vet Advice
-meta_description: Is Starfruit safe for dogs and cats? Starfruit is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Starfruit? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Starfruit safe for dogs and cats? Starfruit is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Starfruit
 
 Starfruit can be problematic for pets with kidney disease. For healthy pets, tiny amounts may be tolerated.

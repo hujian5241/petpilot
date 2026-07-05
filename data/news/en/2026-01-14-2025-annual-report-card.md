@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-01-14-2025-annual-report-card
 title: 2025 Annual Report Card
 date: '2026-01-14'
@@ -17,21 +18,24 @@ summary: >-
   Report Card, we reflect on 365 days of expert toxicology guidance for pets and
   the people who love... This report may be useful for pet owners monitoring
   potential risks. Affected animals: other. Location: United States.
-body: ''
 relatedSlugs: {}
 reviewed: false
 clusterId: f60d860eacaff732
+updatedAt: '2026-07-05T17:48:07.913Z'
 ---
 ## What happened
-Pet Poison Helpline published its 2025 Annual Report Card, reflecting a year of expert toxicology guidance and outlining the most common poisoning hazards reported to its hotline.
+Pet Poison Helpline published its 2025 Annual Report Card, reviewing a year of expert toxicology guidance and common pet poisoning cases.
+
 ## Key facts
-- The report summarizes 365 days of veterinary toxicology calls and guidance.
-- Acetaminophen was a notable toxin, rising into the top 10 list for 2025.
-- The data primarily covers companion animals in the United States.
+- The report reflects 365 days of calls and consultations.
+- It covers risks to dogs, cats, and other pets in the United States.
+- It highlights trends in exposures and preventive guidance.
+
 ## What pet owners should do
-- Review the annual report card to identify common household toxins.
-- Keep medications, foods, and chemicals in secure, pet-inaccessible locations.
-- Call Pet Poison Helpline or a veterinarian immediately if exposure is suspected.
+- Review common household toxins and keep medications out of reach.
+- Save the Pet Poison Helpline number and your vet’s contact info for emergencies.
+
 ## Related coverage
-- [Read the report on DVM360 →](https://news.google.com/rss/articles/CBMigwFBVV95cUxNRkVsdHlhOUtpMzZYLTJkeTVONkVTTzZOSUQzck1FQ1BrVjV0bXVBb2Jfek5VVk9OVl9sQ3pWY1ZOaWJ0X3JSRHJmbkNDTWp5SVBIUFdfemZEYXhpUUx3Mi1tRFNWbDlWdXE3dVN5aXBWUmlLaXJ5VHF3QThiSG1obTRscw?oc=5)
+- [Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/uncategorized/2025/?utm_source=rss&utm_medium=rss&utm_campaign=2025)
+- [Read PetPilot's coverage from DVM360 →](/news/2026-01-14-acetaminophen-rises-to-top-10-pet-poisons-in-2025---dvm360)
 - [Read PetPilot's coverage from PR Newswire →](/news/2026-01-14-top-10-pet-poisons-of-2025---pr-newswire)

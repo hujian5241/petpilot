@@ -26,7 +26,7 @@ alternatives:
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -40,10 +40,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Contains natural sugars.
-meta_title: Can Dogs Eat Blackberries? Safety, Risks & Vet Advice
-meta_description: Is Blackberries safe for dogs and cats? Blackberries is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Blackberries? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Blackberries safe for dogs and cats? Blackberries is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Blackberries
 
 Blackberries are safe for dogs in moderation and provide vitamins C and K, fiber, and antioxidants.

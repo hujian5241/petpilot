@@ -14,7 +14,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but high sugar and dairy can cause upset.
+    summary: 'Not toxic, but high sugar and dairy can cause upset.'
   cats:
     status: limited
     severity: low
@@ -31,7 +31,7 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -75,10 +75,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High sugar and dairy commonly cause diarrhea.
-meta_title: Can Dogs Eat Caramel? Safety, Risks & Vet Advice
-meta_description: Is Caramel safe for dogs and cats? Caramel is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Caramel? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Caramel safe for dogs and cats? Caramel is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Caramel
 
 Caramel is mostly sugar and sometimes dairy. It can cause stomach upset, weight gain, and dental issues in pets. Some caramels contain chocolate or xylitol, which are toxic.

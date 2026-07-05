@@ -15,28 +15,34 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn sehr weich gekocht. Ganze Weizenkerne.
+    summary: 'Unbedenklich, wenn sehr weich gekocht. Ganze Weizenkerne.'
   cats:
     status: safe
-    summary: In kleinen Mengen unbedenklich, wenn vollständig gekocht und ungewürzt.
+    summary: 'In kleinen Mengen unbedenklich, wenn vollständig gekocht und ungewürzt.'
 symptoms:
   - Blähungen
   - Aufgeblähtheit
-what_to_do: Sorgen Sie für eine gründliche Zubereitung. Wenn ein harter Kern verschluckt wird, beobachten Sie Anzeichen einer Verstopfung.
+what_to_do: >-
+  Sorgen Sie für eine gründliche Zubereitung. Wenn ein harter Kern verschluckt
+  wird, beobachten Sie Anzeichen einer Verstopfung.
 alternatives:
   - brown-rice
   - quinoa
   - plain-oatmeal
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Sehr weich kochen. Harte Kerne können Zähne beschädigen oder Verstopfungen verursachen.
-safe_amount: Ein Teelöffel für kleine Hunde, bis zu einem Esslöffel für große Hunde; für Katzen nach Möglichkeit vermeiden.
+preparation_notes: >-
+  Sehr weich kochen. Harte Kerne können Zähne beschädigen oder Verstopfungen
+  verursachen.
+safe_amount: >-
+  Ein Teelöffel für kleine Hunde, bis zu einem Esslöffel für große Hunde; für
+  Katzen nach Möglichkeit vermeiden.
 frequency: Nur gelegentlich.
 related_foods:
   - farro
@@ -66,17 +72,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Ballaststoffgehalt wird von manchen IBD-Patienten schlecht vertragen.
+    reason: >-
+      Hoher Ballaststoffgehalt wird von manchen IBD-Patienten schlecht
+      vertragen.
   - condition: Magen-Darm-Empfindlichkeit
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Hoher Ballaststoffgehalt kann bei empfindlichen Tieren Blähungen oder weichen Stuhl verursachen.
-meta_title: Können Hunde Weizenbeeren fressen? Sicherheit, Risiken & Tierarzt-Tipps
-meta_description: Sind Weizenbeeren für Hunde und Katzen sicher? Weizenbeeren sind für Hunde und für Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte Alternativen.
+    reason: >-
+      Hoher Ballaststoffgehalt kann bei empfindlichen Tieren Blähungen oder
+      weichen Stuhl verursachen.
+meta_title: 'Können Hunde Weizenbeeren fressen? Sicherheit, Risiken & Tierarzt-Tipps'
+meta_description: >-
+  Sind Weizenbeeren für Hunde und Katzen sicher? Weizenbeeren sind für Hunde und
+  für Katzen sicher. Erfahren Sie Symptome, was zu tun ist und tierarztgeprüfte
+  Alternativen.
 ---
-
 # Weizenbeeren
 
 Weizenbeeren sind die ganzen, unverarbeiteten Körner des Weizens. Sie sind für Hunde erst nach langer Kochzeit sicher, die das Korn weich macht. Untergekochte oder trockene Weizenbeeren sind hart und können ein Risiko für Zahnverletzungen oder Darmverstopfungen darstellen.

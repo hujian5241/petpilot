@@ -9,20 +9,20 @@ const defaultLocale = "en"
 const targetLocales = ["de", "fr", "ja"] as const
 type TargetLocale = (typeof targetLocales)[number]
 
-const contentTypes = ["foods", "plants"] as const
+const contentTypes = ["foods", "plants", "medications", "household-chemicals", "pesticides"] as const
 type ContentType = (typeof contentTypes)[number]
 
 const MODEL = "claude-sonnet-4-6"
 const MAX_CONCURRENCY = 1
-const MAX_RETRIES = 5
-const MIN_REQUEST_INTERVAL_MS = 500
+const MAX_RETRIES = 2
+const MIN_REQUEST_INTERVAL_MS = 1500
 
 const systemPrompt = `You are a professional veterinary-content translator. Your task is to translate pet-safety articles from English into the requested locale while preserving every technical and structural detail.
 
 Rules:
 - Keep YAML front matter keys exactly as they appear.
-- Do NOT translate: id, slug, categories, tags, scientific_name, safety.status, safety.severity, recommendation (avoid/limit/consult_vet), appliesTo, source URLs, lookalikes, alternatives, related_foods, related_plants, image src paths, numeric values, dates, booleans, vet_reviewed, requires_emergency_visit.
-- Translate these fields into natural, accurate target-language text: name, aliases, safety.*.summary, symptoms, symptoms_severity.*.symptom, what_to_do, preparation_notes, safe_amount, frequency, dosage_per_weight, notes_for_puppies, notes_for_kittens, condition_warnings.*.condition, condition_warnings.*.reason, condition_warnings.*.notes, nutrition.notes, source names only when they contain descriptive English (keep proper nouns like ASPCA, AKC, AVMA, Pet Poison Helpline, Cornell, MSD Veterinary Manual exactly as-is), meta_title, meta_description, and the Markdown body.
+- Do NOT translate: id, slug, categories, tags, scientific_name, safety.status, safety.severity, recommendation (avoid/limit/consult_vet), appliesTo, source URLs, lookalikes, alternatives, related_foods, related_plants, image src paths, numeric values, dates, booleans, vet_reviewed, requires_emergency_visit, active_ingredients, brand_names, dosage_form, toxic_ingredients, is_veterinary, requires_prescription, common_products, room, contains_bleach, contains_ammonia, contains_phenols, pest_targeted, formulation, signal_word, application_area, epa_registration_number.
+- Translate these fields into natural, accurate target-language text: name, aliases, safety.*.summary, symptoms, symptoms_severity.*.symptom, what_to_do, preparation_notes, safe_amount, frequency, dosage_per_weight, notes_for_puppies, notes_for_kittens, condition_warnings.*.condition, condition_warnings.*.reason, condition_warnings.*.notes, nutrition.notes, common_uses, ventilation_notes, dilution_warning, meta_title, meta_description, and the Markdown body.
 - For German: use formal tone (Sie) only for direct-user instructions; otherwise clear, neutral German. For French: European French. For Japanese: polite, natural Japanese suitable for pet owners; use 「です/ます」 style.
 - Localize symptom terms into the target language as plain readable phrases (e.g., "vomiting" -> "Erbrechen" / "vomissements" / "嘔吐").
 - Keep aliases useful for search in the target language.
@@ -56,12 +56,12 @@ async function translateWithRetry(
   try {
     const response = await client.messages.create({
       model: MODEL,
-      max_tokens: 4096,
+      max_tokens: 6000,
       system: systemPrompt,
       messages: [
         {
           role: "user",
-          content: `Translate the following article into ${locale}. Return only the translated Markdown file.\n\n${raw}`,
+          content: `Translate the following article into ${locale}. Return ONLY the complete translated Markdown file, starting with --- and ending with the Markdown body. Do not include any explanatory text before or after.\n\n${raw}`,
         },
       ],
     })
@@ -89,12 +89,29 @@ async function translateWithRetry(
   } catch (error) {
     if (attempt < MAX_RETRIES) {
       const delay = retryDelayMs(attempt, error)
-      console.warn(`  Retry ${attempt + 1}/${MAX_RETRIES} for ${identifier} (${locale}) in ${delay}ms: ${(error as Error).message}`)
+      console.warn(`  Retry ${attempt + 1}/${MAX_RETRIES} for ${identifier} in ${delay}ms: ${(error as Error).message}`)
       await sleep(delay)
       return translateWithRetry(locale, raw, identifier, attempt + 1)
     }
     throw error
   }
+}
+
+async function loadFailures(): Promise<Set<string>> {
+  const failuresPath = path.join(process.cwd(), "scripts", "translate-failures.json")
+  try {
+    const data = await fs.readFile(failuresPath, "utf-8")
+    return new Set(JSON.parse(data))
+  } catch {
+    return new Set()
+  }
+}
+
+async function saveFailures(failures: string[]) {
+  const failuresPath = path.join(process.cwd(), "scripts", "translate-failures.json")
+  const existing = await loadFailures()
+  for (const f of failures) existing.add(f)
+  await fs.writeFile(failuresPath, JSON.stringify(Array.from(existing).sort(), null, 2), "utf-8")
 }
 
 async function getSourceFiles(type: ContentType): Promise<string[]> {
@@ -108,11 +125,15 @@ async function processFile(
   locale: TargetLocale,
   file: string,
   force: boolean
-): Promise<{ ok: boolean; type: ContentType; file: string; locale: TargetLocale; error?: string }> {
+): Promise<{ ok: boolean; type: ContentType; file: string; locale: TargetLocale; error?: string; skipped?: boolean }> {
   const slug = file.replace(/\.md$/, "")
   const sourcePath = path.join(process.cwd(), "content", defaultLocale, type, file)
   const targetPath = path.join(process.cwd(), "content", locale, type, file)
   const identifier = `${locale}:${type}/${slug}`
+  const knownFailures = await loadFailures()
+  if (!force && knownFailures.has(identifier)) {
+    return { ok: false, type, file, locale, skipped: true, error: "previously failed, skipping" }
+  }
 
   if (!force) {
     try {
@@ -162,13 +183,17 @@ async function runPool<T, R>(items: T[], concurrency: number, fn: (item: T) => P
 async function main() {
   const args = process.argv.slice(2)
   const force = args.includes("--force")
-  const onlyLocale = args.find((arg) => arg.startsWith("--locale="))?.split("=")[1] as TargetLocale | undefined
-  const onlyType = args.find((arg) => arg.startsWith("--type="))?.split("=")[1] as ContentType | undefined
+  const onlyLocales = args
+    .filter((arg) => arg.startsWith("--locale="))
+    .map((arg) => arg.split("=")[1] as TargetLocale)
+  const onlyTypes = args
+    .filter((arg) => arg.startsWith("--type="))
+    .map((arg) => arg.split("=")[1] as ContentType)
   const limitArg = args.find((arg) => arg.startsWith("--limit="))?.split("=")[1]
   const limit = limitArg ? parseInt(limitArg, 10) : undefined
 
-  const locales = onlyLocale ? [onlyLocale] : targetLocales
-  const types = onlyType ? [onlyType] : contentTypes
+  const locales = onlyLocales.length > 0 ? onlyLocales : targetLocales
+  const types = onlyTypes.length > 0 ? onlyTypes : contentTypes
 
   const jobs: { type: ContentType; locale: TargetLocale; file: string }[] = []
 
@@ -203,14 +228,17 @@ async function main() {
     return result
   })
 
-  const failures = results.filter((r) => !r.ok)
-  console.log(`\nDone. ${results.length - failures.length}/${results.length} succeeded.`)
+  const failures = results.filter((r) => !r.ok && !r.skipped)
+  const skipped = results.filter((r) => r.skipped)
+  const successCount = results.length - failures.length - skipped.length
+  console.log(`\nDone. ${successCount}/${jobs.length} succeeded, ${skipped.length} skipped (previous failures), ${failures.length} failed.`)
 
   if (failures.length > 0) {
     console.error("\nFailures:")
     for (const f of failures) {
       console.error(`  ${f.locale}:${f.type}/${f.file} - ${f.error}`)
     }
+    await saveFailures(failures.map((f) => `${f.locale}:${f.type}/${f.file.replace(/\.md$/, "")}`))
     // Do not exit with error so partial progress is preserved and the build
     // can still use fallback English content for failed files.
     process.exitCode = 1

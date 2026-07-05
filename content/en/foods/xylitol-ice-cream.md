@@ -28,18 +28,20 @@ symptoms:
   - seizures
   - collapse
   - liver failure
-what_to_do: Seek emergency veterinary care immediately, even if only a small amount was eaten.
+what_to_do: >-
+  Seek emergency veterinary care immediately, even if only a small amount was
+  eaten.
 alternatives:
   - plain-yogurt
   - vanilla-ice-cream
   - frozen-yogurt
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
   - name: American Veterinary Medical Association
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -59,10 +61,12 @@ symptoms_severity:
     severity: critical
   - symptom: liver failure
     severity: critical
-meta_title: Can Dogs Eat Xylitol Ice Cream? Safety, Risks & Vet Advice
-meta_description: Is Xylitol Ice Cream safe for dogs and cats? Xylitol Ice Cream is toxic for dogs and toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Xylitol Ice Cream? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Xylitol Ice Cream safe for dogs and cats? Xylitol Ice Cream is toxic for
+  dogs and toxic for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Xylitol Ice Cream
 
 Xylitol is an artificial sweetener that is extremely toxic to dogs. It causes a rapid release of insulin, leading to life-threatening hypoglycemia, and can also cause liver failure. Sugar-free ice creams, frozen yogurts, and desserts are common sources of xylitol.

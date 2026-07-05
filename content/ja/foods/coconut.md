@@ -28,7 +28,7 @@ alternatives:
   - bananas
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -63,7 +63,6 @@ condition_warnings:
 meta_title: 犬はココナッツを食べてもいい？安全性、リスク、獣医師のアドバイス
 meta_description: ココナッツは犬や猫に安全ですか？犬には制限付き、猫にも制限付きです。症状、対処法、獣医師が認めた代替食品をご確認ください。
 ---
-
 # ココナッツ
 
 犬には少量のココナッツ果肉やオイルを与えることができます。一部の犬では下痢や脂っぽい便が出ることがあります。

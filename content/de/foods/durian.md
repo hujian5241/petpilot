@@ -13,7 +13,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Kleine Mengen Fruchtfleisch können vermutlich sicher sein, sind aber sehr fett- und zuckerhaltig.
+    summary: >-
+      Kleine Mengen Fruchtfleisch können vermutlich sicher sein, sind aber sehr
+      fett- und zuckerhaltig.
   cats:
     status: limited
     severity: low
@@ -22,13 +24,15 @@ symptoms:
   - Magenverstimmung
   - Durchfall
   - Pankreatitis-Risiko
-what_to_do: Beobachten Sie Ihr Haustier auf Verdauungsbeschwerden. Vermeiden Sie es bei übergewichtigen Tieren.
+what_to_do: >-
+  Beobachten Sie Ihr Haustier auf Verdauungsbeschwerden. Vermeiden Sie es bei
+  übergewichtigen Tieren.
 alternatives:
   - bananas
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -41,7 +45,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Sehr fett- und zuckerhaltig; die Datei besagt, dass übergewichtige Tiere Durian meiden sollten.
+    reason: >-
+      Sehr fett- und zuckerhaltig; die Datei besagt, dass übergewichtige Tiere
+      Durian meiden sollten.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -53,7 +59,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Der hohe Fettgehalt erhöht das Pankreatitis-Risiko; die Datei listet das Pankreatitis-Risiko als Symptom.
+    reason: >-
+      Der hohe Fettgehalt erhöht das Pankreatitis-Risiko; die Datei listet das
+      Pankreatitis-Risiko als Symptom.
   - condition: Hyperlipidämie
     appliesTo:
       - dogs
@@ -65,11 +73,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Hoher Fett- und Zuckergehalt verursacht häufig Magenverstimmung oder Durchfall.
-meta_title: Können Hunde Durian essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Durian für Hunde und Katzen sicher? Durian ist für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+    reason: >-
+      Hoher Fett- und Zuckergehalt verursacht häufig Magenverstimmung oder
+      Durchfall.
+meta_title: 'Können Hunde Durian essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Durian für Hunde und Katzen sicher? Durian ist für Hunde eingeschränkt und
+  für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Durian
 
 Durian ist nicht giftig, aber sehr fett- und zuckerhaltig. Er sollte nur als winziger, seltener Leckerbissen angeboten werden.

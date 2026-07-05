@@ -22,21 +22,27 @@ safety:
 symptoms:
   - diarrhea
   - gas
-what_to_do: Reduce amount or stop if digestive upset occurs. Check for xylitol in ingredient lists.
+what_to_do: >-
+  Reduce amount or stop if digestive upset occurs. Check for xylitol in
+  ingredient lists.
 alternatives:
   - greek-yogurt
   - kefir
   - cottage-cheese
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose plain, unsweetened yogurt with live cultures. Avoid flavored, sugary, or xylitol-sweetened yogurts.
-safe_amount: A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for cats.
+preparation_notes: >-
+  Choose plain, unsweetened yogurt with live cultures. Avoid flavored, sugary,
+  or xylitol-sweetened yogurts.
+safe_amount: >-
+  A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for
+  cats.
 frequency: A few times per week.
 related_foods:
   - greek-yogurt
@@ -61,10 +67,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Calorie-dense dairy treat.
-meta_title: Can Dogs Eat Plain Yogurt? Safety, Risks & Vet Advice
-meta_description: Is Plain Yogurt safe for dogs and cats? Plain Yogurt is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Plain Yogurt? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Plain Yogurt safe for dogs and cats? Plain Yogurt is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Plain Yogurt
 
 Plain, unsweetened yogurt is one of the safest dairy products for dogs and cats. The live cultures help break down lactose, making it easier to digest than milk. It can provide protein, calcium, and probiotics.

@@ -14,7 +14,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic by itself, but unhealthy and may contain toxic toppings.
+    summary: 'Not toxic by itself, but unhealthy and may contain toxic toppings.'
   cats:
     status: limited
     severity: low
@@ -30,11 +30,11 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid sharing. Check for chocolate, xylitol, raisins, or macadamia nuts.
+preparation_notes: 'Avoid sharing. Check for chocolate, xylitol, raisins, or macadamia nuts.'
 safe_amount: Avoid feeding.
 frequency: Avoid.
 condition_warnings:
@@ -67,7 +67,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Sugary, sticky frosting and cake promote dental disease.
+    reason: 'Sugary, sticky frosting and cake promote dental disease.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
@@ -79,11 +79,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: May contain wheat, dairy, eggs, or other common allergens.
-meta_title: Can Dogs Eat Cupcakes? Safety, Risks & Vet Advice
-meta_description: Is Cupcakes safe for dogs and cats? Cupcakes is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'May contain wheat, dairy, eggs, or other common allergens.'
+meta_title: 'Can Dogs Eat Cupcakes? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cupcakes safe for dogs and cats? Cupcakes is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cupcakes
 
 Cupcakes are high in sugar and fat and offer no nutritional value to pets. Frosting, chocolate chips, sprinkles, and other decorations can contain toxic ingredients.

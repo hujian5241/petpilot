@@ -24,20 +24,24 @@ symptoms:
   - diarrhea
   - vomiting
   - pancreatitis-risk
-what_to_do: Monitor. Contact a vet if large amounts were eaten or if vomiting or lethargy develops.
+what_to_do: >-
+  Monitor. Contact a vet if large amounts were eaten or if vomiting or lethargy
+  develops.
 alternatives:
   - plain-yogurt
   - lactose-free-milk
   - kefir
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid feeding cream. If consumed accidentally, monitor for vomiting or diarrhea.
+preparation_notes: >-
+  Avoid feeding cream. If consumed accidentally, monitor for vomiting or
+  diarrhea.
 safe_amount: None is best. A tiny lick is unlikely to harm a healthy pet.
 frequency: Rarely or never.
 related_foods:
@@ -50,7 +54,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High in lactose and commonly causes diarrhea, vomiting, and bloating.
+    reason: 'High in lactose and commonly causes diarrhea, vomiting, and bloating.'
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -74,17 +78,22 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: High fat and lactose sugar can disrupt glycemic control; the file explicitly says pets with diabetes should avoid cream.
+    reason: >-
+      High fat and lactose sugar can disrupt glycemic control; the file
+      explicitly says pets with diabetes should avoid cream.
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: The file explicitly states pets with sensitive stomachs should avoid cream.
-meta_title: Can Dogs Eat Cream? Safety, Risks & Vet Advice
-meta_description: Is Cream safe for dogs and cats? Cream is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      The file explicitly states pets with sensitive stomachs should avoid
+      cream.
+meta_title: 'Can Dogs Eat Cream? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Cream safe for dogs and cats? Cream is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Cream
 
 Cream is very high in fat and can cause diarrhea, vomiting, and pancreatitis in dogs and cats. It is not a healthy treat and offers little nutritional benefit. A small accidental lick is usually not an emergency.

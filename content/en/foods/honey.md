@@ -27,7 +27,7 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -59,10 +59,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High sugar can cause diarrhea.
-meta_title: Can Dogs Eat Honey? Safety, Risks & Vet Advice
-meta_description: Is Honey safe for dogs and cats? Honey is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Honey? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Honey safe for dogs and cats? Honey is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Honey
 
 Honey is safe for most dogs in very small amounts but is high in sugar. It should not be given to diabetic or overweight pets.

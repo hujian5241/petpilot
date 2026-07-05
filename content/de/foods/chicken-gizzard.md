@@ -8,7 +8,6 @@ aliases:
   - Hähnchenmagen
 categories:
   - proteins
-  - proteins
 tags:
   - organ-meat
   - chewy
@@ -16,26 +15,30 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn ungewürzt gekocht und in kleine Stücke geschnitten.
+    summary: 'Unbedenklich, wenn ungewürzt gekocht und in kleine Stücke geschnitten.'
   cats:
     status: safe
-    summary: Unbedenklich, wenn ungewürzt gekocht und in kleine Stücke geschnitten.
+    summary: 'Unbedenklich, wenn ungewürzt gekocht und in kleine Stücke geschnitten.'
 symptoms:
   - Erbrechen
   - Durchfall
   - Würgen
-what_to_do: Wenn Ihr Haustier würgt oder anhaltendes Erbrechen oder Durchfall zeigt, kontaktieren Sie Ihren Tierarzt.
+what_to_do: >-
+  Wenn Ihr Haustier würgt oder anhaltendes Erbrechen oder Durchfall zeigt,
+  kontaktieren Sie Ihren Tierarzt.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-chicken/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Gründlich kochen, bis sie weich sind. In mundgerechte Stücke schneiden, um die Erstickungsgefahr zu verringern.
+preparation_notes: >-
+  Gründlich kochen, bis sie weich sind. In mundgerechte Stücke schneiden, um die
+  Erstickungsgefahr zu verringern.
 safe_amount: Ein oder zwei kleine Stücke als Leckerli.
 frequency: Gelegentlich.
 related_foods:
@@ -47,17 +50,23 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Konsistenz und Reichhaltigkeit von Innereien können bei empfindlichen Tieren Erbrechen oder Durchfall verursachen.
+    reason: >-
+      Konsistenz und Reichhaltigkeit von Innereien können bei empfindlichen
+      Tieren Erbrechen oder Durchfall verursachen.
   - condition: Zahnerkrankung
     appliesTo:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Die zähe Konsistenz kann für Tiere mit ausgeprägten Zahnerkrankungen schwierig sein; das Schneiden in kleine Stücke ist unerlässlich.
-meta_title: Dürfen Hunde Hühnermagen fressen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Hühnermagen für Hunde und Katzen sicher? Hühnermagen ist für Hunde und Katzen sicher. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen.
+    reason: >-
+      Die zähe Konsistenz kann für Tiere mit ausgeprägten Zahnerkrankungen
+      schwierig sein; das Schneiden in kleine Stücke ist unerlässlich.
+meta_title: 'Dürfen Hunde Hühnermagen fressen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Hühnermagen für Hunde und Katzen sicher? Hühnermagen ist für Hunde und
+  Katzen sicher. Erfahren Sie mehr über Symptome, das richtige Verhalten und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Hühnermagen
 
 Hühnermägen sind eine zähe, eiweißreiche Innerei, die viele Haustiere gerne fressen. Sie enthalten weniger Fett als manche andere Innereien, können aber zäh sein, weshalb es wichtig ist, sie weich zu kochen und in kleine Stücke zu schneiden.

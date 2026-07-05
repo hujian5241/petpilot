@@ -29,18 +29,19 @@ alternatives:
   - common-plantain
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Red Clover and Pets — Safety Guide | PetPilot
-meta_description: Red clover is safe for dogs and cats. Learn about this meadow wildflower and pet lawn safety.
+meta_description: >-
+  Red clover is safe for dogs and cats. Learn about this meadow wildflower and
+  pet lawn safety.
 related_plants:
   - white-clover
 ---
-
 # Red Clover
 
 Red clover is a flowering legume found in meadows, pastures, and lawns. It is safe for pets and provides nectar for pollinators.

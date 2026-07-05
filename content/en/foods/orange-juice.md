@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Orange juice is not toxic but is acidic and high in sugar, which can upset the stomach.
+    summary: >-
+      Orange juice is not toxic but is acidic and high in sugar, which can upset
+      the stomach.
   cats:
     status: limited
     severity: low
@@ -32,17 +34,17 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-safe_amount: A small sip only, if any.
+safe_amount: 'A small sip only, if any.'
 frequency: Rarely.
 related_foods:
   - apple-juice
@@ -72,10 +74,11 @@ condition_warnings:
       - cats
     recommendation: consult_vet
     reason: Citrus acidity can cause stomach upset or diarrhea in sensitive pets.
-meta_title: Can Dogs Eat Orange Juice? Safety, Risks & Vet Advice
-meta_description: Is Orange Juice safe for dogs and cats? Orange Juice is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Orange Juice? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Orange Juice safe for dogs and cats? Orange Juice is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Orange Juice
 
 Orange juice is not poisonous to pets, but it offers no nutritional benefit and can cause diarrhea or stomach upset due to acidity and natural sugars. Citrus essential oils are a separate concern and can be irritating. It is better to offer water or a small piece of the flesh of a pet-safe fruit such as blueberries instead.

@@ -94,5 +94,133 @@
     "description": "Garden, yard, and wild plants that pets may encounter.",
     "icon": "TreePine",
     "sort_order": 12
+  },
+  {
+    "id": "human-medications",
+    "name": "Human Medications",
+    "slug": "human-medications",
+    "description": "Common over-the-counter and prescription drugs for people.",
+    "icon": "Pill",
+    "sort_order": 13
+  },
+  {
+    "id": "vet-medications",
+    "name": "Veterinary Medications",
+    "slug": "vet-medications",
+    "description": "Medications prescribed for animals that can still be dangerous.",
+    "icon": "Pill",
+    "sort_order": 14
+  },
+  {
+    "id": "pain-relief",
+    "name": "Pain Relief",
+    "slug": "pain-relief",
+    "description": "NSAIDs, acetaminophen, and other pain relievers.",
+    "icon": "Thermometer",
+    "sort_order": 15
+  },
+  {
+    "id": "cold-flu",
+    "name": "Cold & Flu",
+    "slug": "cold-flu",
+    "description": "Cough, cold, and flu remedies.",
+    "icon": "Thermometer",
+    "sort_order": 16
+  },
+  {
+    "id": "antidepressants",
+    "name": "Antidepressants",
+    "slug": "antidepressants",
+    "description": "SSRIs, SNRIs, and other mood medications.",
+    "icon": "Brain",
+    "sort_order": 17
+  },
+  {
+    "id": "heart-blood-pressure",
+    "name": "Heart & Blood Pressure",
+    "slug": "heart-blood-pressure",
+    "description": "Cardiac and antihypertensive medications.",
+    "icon": "HeartPulse",
+    "sort_order": 18
+  },
+  {
+    "id": "cleaning-products",
+    "name": "Cleaning Products",
+    "slug": "cleaning-products",
+    "description": "Household cleaners, disinfectants, and degreasers.",
+    "icon": "Sparkles",
+    "sort_order": 19
+  },
+  {
+    "id": "laundry-products",
+    "name": "Laundry Products",
+    "slug": "laundry-products",
+    "description": "Detergents, fabric softeners, and dryer sheets.",
+    "icon": "Droplets",
+    "sort_order": 20
+  },
+  {
+    "id": "automotive-products",
+    "name": "Automotive Products",
+    "slug": "automotive-products",
+    "description": "Antifreeze, windshield washer fluid, and oils.",
+    "icon": "Car",
+    "sort_order": 21
+  },
+  {
+    "id": "personal-care-products",
+    "name": "Personal Care Products",
+    "slug": "personal-care-products",
+    "description": "Soaps, lotions, dental products, and cosmetics.",
+    "icon": "Sparkles",
+    "sort_order": 22
+  },
+  {
+    "id": "home-improvement",
+    "name": "Home Improvement",
+    "slug": "home-improvement",
+    "description": "Paints, glues, solvents, and other DIY supplies.",
+    "icon": "Hammer",
+    "sort_order": 23
+  },
+  {
+    "id": "insecticides",
+    "name": "Insecticides",
+    "slug": "insecticides",
+    "description": "Products that kill or repel insects.",
+    "icon": "Bug",
+    "sort_order": 24
+  },
+  {
+    "id": "rodenticides",
+    "name": "Rodenticides",
+    "slug": "rodenticides",
+    "description": "Rat and mouse baits and poisons.",
+    "icon": "Bug",
+    "sort_order": 25
+  },
+  {
+    "id": "herbicides",
+    "name": "Herbicides",
+    "slug": "herbicides",
+    "description": "Weed killers and lawn treatments.",
+    "icon": "Leaf",
+    "sort_order": 26
+  },
+  {
+    "id": "fungicides",
+    "name": "Fungicides",
+    "slug": "fungicides",
+    "description": "Products that control mold, mildew, and fungi.",
+    "icon": "Leaf",
+    "sort_order": 27
+  },
+  {
+    "id": "molluscicides",
+    "name": "Molluscicides",
+    "slug": "molluscicides",
+    "description": "Snail and slug baits.",
+    "icon": "Bug",
+    "sort_order": 28
   }
 ]

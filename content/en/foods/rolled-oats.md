@@ -21,21 +21,27 @@ safety:
 symptoms:
   - gas
   - bloating
-what_to_do: Ensure oats are cooked. If dry oats were consumed in large quantity, offer water and monitor.
+what_to_do: >-
+  Ensure oats are cooked. If dry oats were consumed in large quantity, offer
+  water and monitor.
 alternatives:
   - plain-oatmeal
   - white-rice
   - quinoa
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook before feeding. Dry oats can swell and cause bloating if eaten dry in quantity.
-safe_amount: A tablespoon of cooked oats for small dogs, up to a quarter cup for large dogs.
+preparation_notes: >-
+  Cook before feeding. Dry oats can swell and cause bloating if eaten dry in
+  quantity.
+safe_amount: >-
+  A tablespoon of cooked oats for small dogs, up to a quarter cup for large
+  dogs.
 frequency: Occasionally.
 related_foods:
   - plain-oatmeal
@@ -65,10 +71,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Rolled Oats? Safety, Risks & Vet Advice
-meta_description: Is Rolled Oats safe for dogs and cats? Rolled Oats is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Rolled Oats? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Rolled Oats safe for dogs and cats? Rolled Oats is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Rolled Oats
 
 Rolled oats are whole-grain oats that have been steamed and flattened. They are safe for dogs once cooked into oatmeal or baked into simple, pet-safe treats. Feeding a large amount of dry rolled oats can lead to bloating as the oats absorb moisture in the stomach.

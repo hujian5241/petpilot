@@ -28,16 +28,17 @@ alternatives:
   - nasturtium
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Pansy and Pets — Safety Guide | PetPilot
-meta_description: Pansies are safe for dogs and cats. Learn why these colorful flowers are a worry-free garden choice.
+meta_description: >-
+  Pansies are safe for dogs and cats. Learn why these colorful flowers are a
+  worry-free garden choice.
 ---
-
 # Pansy
 
 Pansies are cheerful cool-season flowers with colorful faces. They are safe for pets and are sometimes used as edible garnishes.

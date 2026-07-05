@@ -23,19 +23,21 @@ safety:
 symptoms:
   - Verdauungsstörungen
   - Durchfall
-what_to_do: Reduzieren Sie die Menge, falls Verdauungsprobleme auftreten.
+what_to_do: 'Reduzieren Sie die Menge, falls Verdauungsprobleme auftreten.'
 alternatives:
   - pumpkin-seeds
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Verwenden Sie ungewürzte, unbehandelte Sesamkörner. Vermeiden Sie Tahini mit Knoblauch oder Zucker.
+preparation_notes: >-
+  Verwenden Sie ungewürzte, unbehandelte Sesamkörner. Vermeiden Sie Tahini mit
+  Knoblauch oder Zucker.
 safe_amount: Eine kleine Prise für kleine Hunde; 1/2 Teelöffel für große Hunde.
 frequency: Gelegentlich.
 condition_warnings:
@@ -44,7 +46,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung in der Regel eingeschränkt werden.
+    reason: >-
+      Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung in der
+      Regel eingeschränkt werden.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -62,7 +66,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind individuell.
+    reason: >-
+      Nuss- und Samenzutaten sind häufige Allergene; Reaktionen sind
+      individuell.
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
@@ -81,10 +87,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Hoher Fettgehalt kann einen empfindlichen Magen-Darm-Trakt reizen.
-meta_title: Dürfen Hunde Sesam essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Sesam für Hunde und Katzen unbedenklich? Sesam ist für Hunde und Katzen unbedenklich. Erfahren Sie Symptome, Verhaltensempfehlungen und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Sesam essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Sesam für Hunde und Katzen unbedenklich? Sesam ist für Hunde und Katzen
+  unbedenklich. Erfahren Sie Symptome, Verhaltensempfehlungen und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Sesam
 
 Ungewürzte Sesamkörner sind für Hunde in sehr kleinen Mengen in der Regel unbedenklich. Sie verleihen einen leichten Biss und gesunde Fette, sind aber kein notwendiger Bestandteil der Ernährung.

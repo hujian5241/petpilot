@@ -31,13 +31,15 @@ alternatives:
   - plain-yogurt
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain and in small pieces. Avoid mozzarella sticks with breading or marinara sauce.
+preparation_notes: >-
+  Serve plain and in small pieces. Avoid mozzarella sticks with breading or
+  marinara sauce.
 safe_amount: A small cube for dogs; a pea-sized amount for cats.
 frequency: Occasionally.
 related_foods:
@@ -50,11 +52,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Dairy product; monitor for diarrhea or gas even though mozzarella is lower in lactose.
-meta_title: Can Dogs Eat Mozzarella Cheese? Safety, Risks & Vet Advice
-meta_description: Is Mozzarella Cheese safe for dogs and cats? Mozzarella Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      Dairy product; monitor for diarrhea or gas even though mozzarella is lower
+      in lactose.
+meta_title: 'Can Dogs Eat Mozzarella Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Mozzarella Cheese safe for dogs and cats? Mozzarella Cheese is limited for
+  dogs and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Mozzarella Cheese
 
 Mozzarella is often a better cheese choice for dogs because it tends to be lower in fat and sodium than cheddar or cream cheese. Plain, fresh mozzarella can be used as a high-value training treat in small pieces.

@@ -22,15 +22,17 @@ symptoms:
   - vomiting
   - diarrhea
   - drooling
-what_to_do: Contact your vet if a significant amount was consumed, especially if your pet takes medication.
+what_to_do: >-
+  Contact your vet if a significant amount was consumed, especially if your pet
+  takes medication.
 alternatives:
   - oranges
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -50,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Acid can contribute to enamel erosion.
-meta_title: Can Dogs Eat Grapefruit? Safety, Risks & Vet Advice
-meta_description: Is Grapefruit safe for dogs and cats? Grapefruit is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Grapefruit? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Grapefruit safe for dogs and cats? Grapefruit is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Grapefruit
 
 Grapefruit is highly acidic and can cause digestive upset. It may also interact with certain medications.

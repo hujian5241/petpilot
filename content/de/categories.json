@@ -94,5 +94,133 @@
     "description": "Garten-, Hof- und Wildpflanzen, denen Haustiere begegnen können.",
     "icon": "TreePine",
     "sort_order": 12
+  },
+  {
+    "id": "human-medications",
+    "name": "Medikamente für Menschen",
+    "slug": "human-medications",
+    "description": "Gängige rezeptfreie und verschreibungspflichtige Arzneimittel für Menschen.",
+    "icon": "Pill",
+    "sort_order": 13
+  },
+  {
+    "id": "vet-medications",
+    "name": "Tierärztliche Medikamente",
+    "slug": "vet-medications",
+    "description": "Medikamente, die für Tiere verschrieben werden, aber dennoch gefährlich sein können.",
+    "icon": "Pill",
+    "sort_order": 14
+  },
+  {
+    "id": "pain-relief",
+    "name": "Schmerzmittel",
+    "slug": "pain-relief",
+    "description": "NSAR, Paracetamol und andere Schmerzmittel.",
+    "icon": "Thermometer",
+    "sort_order": 15
+  },
+  {
+    "id": "cold-flu",
+    "name": "Erkältung & Grippe",
+    "slug": "cold-flu",
+    "description": "Mittel gegen Husten, Erkältung und Grippe.",
+    "icon": "Thermometer",
+    "sort_order": 16
+  },
+  {
+    "id": "antidepressants",
+    "name": "Antidepressiva",
+    "slug": "antidepressants",
+    "description": "SSRIs, SNRIs und andere Stimmungsmedikamente.",
+    "icon": "Brain",
+    "sort_order": 17
+  },
+  {
+    "id": "heart-blood-pressure",
+    "name": "Herz & Blutdruck",
+    "slug": "heart-blood-pressure",
+    "description": "Herz- und blutdrucksenkende Medikamente.",
+    "icon": "HeartPulse",
+    "sort_order": 18
+  },
+  {
+    "id": "cleaning-products",
+    "name": "Reinigungsmittel",
+    "slug": "cleaning-products",
+    "description": "Haushaltsreiniger, Desinfektionsmittel und Entfetter.",
+    "icon": "Sparkles",
+    "sort_order": 19
+  },
+  {
+    "id": "laundry-products",
+    "name": "Wäscheprodukte",
+    "slug": "laundry-products",
+    "description": "Waschmittel, Weichspüler und Trocknertücher.",
+    "icon": "Droplets",
+    "sort_order": 20
+  },
+  {
+    "id": "automotive-products",
+    "name": "Autoprodukte",
+    "slug": "automotive-products",
+    "description": "Frostschutzmittel, Scheibenwaschflüssigkeit und Öle.",
+    "icon": "Car",
+    "sort_order": 21
+  },
+  {
+    "id": "personal-care-products",
+    "name": "Körperpflegeprodukte",
+    "slug": "personal-care-products",
+    "description": "Seifen, Lotionen, Dentalprodukte und Kosmetika.",
+    "icon": "Sparkles",
+    "sort_order": 22
+  },
+  {
+    "id": "home-improvement",
+    "name": "Heimwerken",
+    "slug": "home-improvement",
+    "description": "Farben, Klebstoffe, Lösungsmittel und andere DIY-Materialien.",
+    "icon": "Hammer",
+    "sort_order": 23
+  },
+  {
+    "id": "insecticides",
+    "name": "Insektizide",
+    "slug": "insecticides",
+    "description": "Produkte zur Abwehr oder Tötung von Insekten.",
+    "icon": "Bug",
+    "sort_order": 24
+  },
+  {
+    "id": "rodenticides",
+    "name": "Rodentizide",
+    "slug": "rodenticides",
+    "description": "Ratten- und Mäuseköder sowie -gifte.",
+    "icon": "Bug",
+    "sort_order": 25
+  },
+  {
+    "id": "herbicides",
+    "name": "Herbizide",
+    "slug": "herbicides",
+    "description": "Unkrautvernichtungsmittel und Rasenbehandlungen.",
+    "icon": "Leaf",
+    "sort_order": 26
+  },
+  {
+    "id": "fungicides",
+    "name": "Fungizide",
+    "slug": "fungicides",
+    "description": "Produkte zur Bekämpfung von Schimmel, Mehltau und Pilzen.",
+    "icon": "Leaf",
+    "sort_order": 27
+  },
+  {
+    "id": "molluscicides",
+    "name": "Molluskizide",
+    "slug": "molluscicides",
+    "description": "Schnecken- und Nacktschneckenköder.",
+    "icon": "Bug",
+    "sort_order": 28
   }
 ]

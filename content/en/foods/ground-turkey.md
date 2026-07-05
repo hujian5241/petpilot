@@ -22,20 +22,22 @@ symptoms:
   - vomiting
   - diarrhea
   - food-poisoning
-what_to_do: If raw or undercooked ground turkey was eaten, contact your vet to discuss salmonella risk.
+what_to_do: >-
+  If raw or undercooked ground turkey was eaten, contact your vet to discuss
+  salmonella risk.
 alternatives:
   - turkey
   - chicken-breast
   - beef
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-turkey/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until no pink remains. Do not add seasonings, onions, garlic, or oil.
+preparation_notes: 'Cook until no pink remains. Do not add seasonings, onions, garlic, or oil.'
 safe_amount: Small portions mixed with regular food or as a treat.
 frequency: Occasional.
 related_foods:
@@ -47,7 +49,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Lean, drained turkey is usually tolerated, but fatty portions may trigger flares.
+    reason: >-
+      Lean, drained turkey is usually tolerated, but fatty portions may trigger
+      flares.
   - condition: Chronic kidney disease
     appliesTo:
       - dogs
@@ -60,10 +64,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Rich protein may be hard for some sensitive stomachs.
-meta_title: Can Dogs Eat Ground Turkey? Safety, Risks & Vet Advice
-meta_description: Is Ground Turkey safe for dogs and cats? Ground Turkey is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Ground Turkey? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Ground Turkey safe for dogs and cats? Ground Turkey is safe for dogs and
+  safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Ground Turkey
 
 Ground turkey is a versatile, lean protein that works well as a meal topper or bland diet base. It must be cooked thoroughly to eliminate bacterial contamination.

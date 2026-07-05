@@ -28,14 +28,16 @@ alternatives:
   - plain-pasta
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook until soft. Do not add butter, salt, cheese, garlic, or shrimp.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a teaspoon for cats.
+preparation_notes: 'Cook until soft. Do not add butter, salt, cheese, garlic, or shrimp.'
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a teaspoon
+  for cats.
 frequency: Occasionally.
 related_foods:
   - polenta
@@ -60,10 +62,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Corn-based carbs can cause gas in sensitive pets.
-meta_title: Can Dogs Eat Grits? Safety, Risks & Vet Advice
-meta_description: Is Grits safe for dogs and cats? Grits is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Grits? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Grits safe for dogs and cats? Grits is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Grits
 
 Plain, cooked grits are safe for dogs as an occasional treat. They are soft and bland, making them easy to eat. Like other corn products, grits are mostly carbohydrates and should not make up a large part of the diet.

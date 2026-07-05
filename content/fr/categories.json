@@ -94,5 +94,133 @@
     "description": "Plantes de jardin, de cour et sauvages que les animaux peuvent rencontrer.",
     "icon": "TreePine",
     "sort_order": 12
+  },
+  {
+    "id": "human-medications",
+    "name": "Médicaments humains",
+    "slug": "human-medications",
+    "description": "Médicaments courants sans ordonnance et sur ordonnance pour les humains.",
+    "icon": "Pill",
+    "sort_order": 13
+  },
+  {
+    "id": "vet-medications",
+    "name": "Médicaments vétérinaires",
+    "slug": "vet-medications",
+    "description": "Médicaments prescrits pour les animaux mais qui peuvent tout de même être dangereux.",
+    "icon": "Pill",
+    "sort_order": 14
+  },
+  {
+    "id": "pain-relief",
+    "name": "Antidouleur",
+    "slug": "pain-relief",
+    "description": "AINS, paracétamol et autres analgésiques.",
+    "icon": "Thermometer",
+    "sort_order": 15
+  },
+  {
+    "id": "cold-flu",
+    "name": "Rhume & grippe",
+    "slug": "cold-flu",
+    "description": "Remèdes contre la toux, le rhume et la grippe.",
+    "icon": "Thermometer",
+    "sort_order": 16
+  },
+  {
+    "id": "antidepressants",
+    "name": "Antidépresseurs",
+    "slug": "antidepressants",
+    "description": "ISRS, ISRSN et autres médicaments de l'humeur.",
+    "icon": "Brain",
+    "sort_order": 17
+  },
+  {
+    "id": "heart-blood-pressure",
+    "name": "Cœur & tension",
+    "slug": "heart-blood-pressure",
+    "description": "Médicaments cardiaques et antihypertenseurs.",
+    "icon": "HeartPulse",
+    "sort_order": 18
+  },
+  {
+    "id": "cleaning-products",
+    "name": "Produits de nettoyage",
+    "slug": "cleaning-products",
+    "description": "Nettoyants ménagers, désinfectants et dégraissants.",
+    "icon": "Sparkles",
+    "sort_order": 19
+  },
+  {
+    "id": "laundry-products",
+    "name": "Produits lessiviels",
+    "slug": "laundry-products",
+    "description": "Lessives, assouplissants et feuilles de séchage.",
+    "icon": "Droplets",
+    "sort_order": 20
+  },
+  {
+    "id": "automotive-products",
+    "name": "Produits automobiles",
+    "slug": "automotive-products",
+    "description": "Antigel, liquide lave-glace et huiles.",
+    "icon": "Car",
+    "sort_order": 21
+  },
+  {
+    "id": "personal-care-products",
+    "name": "Produits d'hygiène",
+    "slug": "personal-care-products",
+    "description": "Savons, lotions, produits dentaires et cosmétiques.",
+    "icon": "Sparkles",
+    "sort_order": 22
+  },
+  {
+    "id": "home-improvement",
+    "name": "Bricolage",
+    "slug": "home-improvement",
+    "description": "Peintures, colles, solvants et autres fournitures de bricolage.",
+    "icon": "Hammer",
+    "sort_order": 23
+  },
+  {
+    "id": "insecticides",
+    "name": "Insecticides",
+    "slug": "insecticides",
+    "description": "Produits qui tuent ou repoussent les insectes.",
+    "icon": "Bug",
+    "sort_order": 24
+  },
+  {
+    "id": "rodenticides",
+    "name": "Rodenticides",
+    "slug": "rodenticides",
+    "description": "Appâts et poisons pour rats et souris.",
+    "icon": "Bug",
+    "sort_order": 25
+  },
+  {
+    "id": "herbicides",
+    "name": "Herbicides",
+    "slug": "herbicides",
+    "description": "Désherbants et traitements de pelouse.",
+    "icon": "Leaf",
+    "sort_order": 26
+  },
+  {
+    "id": "fungicides",
+    "name": "Fongicides",
+    "slug": "fungicides",
+    "description": "Produits de lutte contre la moisissure, le mildiou et les champignons.",
+    "icon": "Leaf",
+    "sort_order": 27
+  },
+  {
+    "id": "molluscicides",
+    "name": "Molluscicides",
+    "slug": "molluscicides",
+    "description": "Appâts anti-escargots et anti-limaces.",
+    "icon": "Bug",
+    "sort_order": 28
   }
 ]

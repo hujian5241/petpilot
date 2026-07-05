@@ -16,26 +16,32 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Safe if packed in water with no added salt. Very high sodium if oil-packed or salted.
+    summary: >-
+      Safe if packed in water with no added salt. Very high sodium if oil-packed
+      or salted.
   cats:
     status: limited
     severity: low
-    summary: Safe if packed in water with no added salt. Very high sodium if oil-packed or salted.
+    summary: >-
+      Safe if packed in water with no added salt. Very high sodium if oil-packed
+      or salted.
 symptoms:
   - vomiting
   - diarrhea
   - excessive-thirst
   - sodium-imbalance
-what_to_do: If salted or oil-packed anchovies were eaten in quantity, contact your vet. Seek emergency care for tremors or seizures.
+what_to_do: >-
+  If salted or oil-packed anchovies were eaten in quantity, contact your vet.
+  Seek emergency care for tremors or seizures.
 alternatives:
   - sardines
   - whitefish
   - salmon
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -51,13 +57,15 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Very high sodium when salted or oil-packed, which worsens hypertension and heart disease.
+    reason: >-
+      Very high sodium when salted or oil-packed, which worsens hypertension and
+      heart disease.
   - condition: Chronic kidney disease
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: High sodium, phosphorus, and protein burden damaged kidneys.
+    reason: 'High sodium, phosphorus, and protein burden damaged kidneys.'
   - condition: Purine metabolism disorders
     appliesTo:
       - dogs
@@ -69,7 +77,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: High purine and sodium content may promote certain stones and urinary issues.
+    reason: >-
+      High purine and sodium content may promote certain stones and urinary
+      issues.
   - condition: Food allergies
     appliesTo:
       - dogs
@@ -87,12 +97,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: consult_vet
-    reason: Fish can be high in iodine, which may affect thyroid management.
+    reason: 'Fish can be high in iodine, which may affect thyroid management.'
     notes: Applies to cats with hyperthyroidism and dogs with hypothyroidism.
-meta_title: Can Dogs Eat Anchovies? Safety, Risks & Vet Advice
-meta_description: Is Anchovies safe for dogs and cats? Anchovies is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Anchovies? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Anchovies safe for dogs and cats? Anchovies is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Anchovies
 
 Anchovies are small fish rich in omega-3 fatty acids, but they are often packed in salt, oil, or brine. Only plain, low-sodium, water-packed anchovies should be shared with pets.

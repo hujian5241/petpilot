@@ -26,7 +26,7 @@ alternatives:
   - kiwi
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -58,10 +58,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckerhaltige Fruchtrückstände können Zahnkrankheiten begünstigen.
-meta_title: Dürfen Hunde Guave essen? Sicherheit, Risiken und tierärztlicher Rat
-meta_description: Ist Guave für Hunde und Katzen unbedenklich? Guave ist für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Guave essen? Sicherheit, Risiken und tierärztlicher Rat'
+meta_description: >-
+  Ist Guave für Hunde und Katzen unbedenklich? Guave ist für Hunde und Katzen
+  unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Guave
 
 Guave ist für Hunde in kleinen Mengen unbedenklich. Die Kerne sind in der Regel harmlos, aber ihre Entfernung reduziert das Erstickungsrisiko.

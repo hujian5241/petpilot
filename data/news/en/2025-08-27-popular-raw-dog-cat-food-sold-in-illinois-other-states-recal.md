@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2025-08-27-popular-raw-dog-cat-food-sold-in-illinois-other-states-recal
 title: >-
   Popular raw dog, cat food sold in Illinois, other states recalled for
@@ -20,23 +21,23 @@ summary: >-
   salmonella, listeria NBC 5 Chicago Pet owners should be aware of this incident
   and take precautions. Affected animals: dogs, cats. Substances or products
   mentioned: salmonella.
-body: ''
 relatedSlugs: {}
 reviewed: false
 clusterId: 539a1509cdc42b71
+updatedAt: '2026-07-05T17:47:37.784Z'
 ---
 ## What happened
-A popular raw dog and cat food sold in Illinois and other states is being recalled due to Salmonella and Listeria contamination, NBC 5 Chicago reports.
+A popular raw dog and cat food sold in Illinois and other states has been recalled because it may be contaminated with Salmonella and Listeria, NBC 5 Chicago reports.
 
 ## Key facts
-- Affected animals: dogs and cats
-- Pathogens: Salmonella and Listeria
-- Distribution: Illinois and other states
-- Product type: raw dog and cat food
+- **Source:** NBC 5 Chicago
+- **Date:** August 27, 2025
+- **Affected animals:** Dogs and cats
+- **Pathogens:** Salmonella and Listeria
 
 ## What pet owners should do
-Discard the recalled raw food immediately, avoid cross-contamination by cleaning storage areas, bowls, and utensils, and wash hands after handling pet food. Monitor pets and household members for symptoms of foodborne illness, and seek veterinary or medical care if needed.
+Do not feed the recalled raw food. Discard it safely, clean all surfaces and utensils that touched it, and monitor pets for illness. Seek veterinary care if needed.
 
 ## Related coverage
-[Read the report on Food Poison Journal →](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWmlWYWxzekIxT0pSRWpDZ1BxamdfYTY0ckZmREc5REhSR05fTXhQSEN4ZTVEdmlXcS1lR3lmY1dpc2lJWVVtOWJTemc1aGR1X05PZFFkYktxLXpxalViYi0xWF8xMFZZQzlieHlKUzJpVnV6b3MyaC1EZ0hoS1U3ajVDdHAzaHBuLWVRd0lySkxRWmtmaHkzVmktRURmYVFxWXhIUlAxakc?oc=5)
-[Read PetPilot's coverage from Food Poison Journal →](/news/2025-08-25-dog-and-cat-food-recalled-due-to-salmonella---food-poison-jo)
+- [Read the report on Food Poison Journal →](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWmlWYWxzekIxT0pSRWpDZ1BxamdfYTY0ckZmREc5REhSR05fTXhQSEN4ZTVEdmlXcS1lR3lmY1dpc2lJWVVtOWJTemc1aGR1X05PZFFkYktxLXpxalViYi0xWF8xMFZZQzlieHlKUzJpVnV6b3MyaC1EZ0hoS1U3ajVDdHAzaHBuLWVRd0lySkxRWmtmaHkzVmktRURmYVFxWXhIUlAxakc?oc=5)
+- [Read PetPilot's coverage from Food Poison Journal →](/news/2025-08-25-dog-and-cat-food-recalled-due-to-salmonella---food-poison-jo)

@@ -37,7 +37,7 @@ async function readAllNews(): Promise<ParsedNews[]> {
     const slug = file.replace(/\.md$/, "");
     result.push({
       slug,
-      entry: { ...data, slug } as NewsEntry,
+      entry: { body: "", ...data, slug } as NewsEntry,
       content,
       filePath,
     });
@@ -539,7 +539,10 @@ async function main() {
     if (!dryRun) {
       const now = new Date().toISOString();
       for (const member of members) {
-        const body = result.bodies[member.slug] || generateLocalBody(member.entry, cluster, members);
+        const body =
+          result.bodies[member.slug] ||
+          generateLocalBody(member.entry, cluster, members) ||
+          "";
         const updatedEntry: NewsEntry = {
           ...member.entry,
           clusterId: cluster.id,

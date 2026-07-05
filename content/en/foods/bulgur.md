@@ -28,14 +28,18 @@ alternatives:
   - couscous
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook or soak until tender. Serve plain. Avoid tabbouleh with onions and garlic.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for cats.
+preparation_notes: >-
+  Cook or soak until tender. Serve plain. Avoid tabbouleh with onions and
+  garlic.
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for
+  cats.
 frequency: Occasionally.
 related_foods:
   - couscous
@@ -72,10 +76,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Wheat fiber can cause gas or loose stools.
-meta_title: Can Dogs Eat Bulgur? Safety, Risks & Vet Advice
-meta_description: Is Bulgur safe for dogs and cats? Bulgur is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Bulgur? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Bulgur safe for dogs and cats? Bulgur is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Bulgur
 
 Bulgur is a whole wheat grain that has been parboiled and cracked. When cooked and served plain, it is safe for dogs in moderation. Its high fiber content can support digestion but may also cause gas.

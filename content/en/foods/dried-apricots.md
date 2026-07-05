@@ -28,11 +28,11 @@ alternatives:
   - apple-slices
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose unsweetened, unsulfured varieties. Ensure pit is removed.
+preparation_notes: 'Choose unsweetened, unsulfured varieties. Ensure pit is removed.'
 safe_amount: One small piece.
 frequency: Rarely.
 condition_warnings:
@@ -41,7 +41,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Concentrated sugar and calories make dried apricots inappropriate for overweight pets.
+    reason: >-
+      Concentrated sugar and calories make dried apricots inappropriate for
+      overweight pets.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -53,17 +55,19 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Sticky, sugary dried fruit adheres to teeth and promotes dental disease.
+    reason: 'Sticky, sugary dried fruit adheres to teeth and promotes dental disease.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: High fiber and sugar can cause upset stomach or diarrhea.
-meta_title: Can Dogs Eat Dried Apricots? Safety, Risks & Vet Advice
-meta_description: Is Dried Apricots safe for dogs and cats? Dried Apricots is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Dried Apricots? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Dried Apricots safe for dogs and cats? Dried Apricots is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Dried Apricots
 
 Dried apricots are safe in tiny amounts but are concentrated in sugar and fiber, which can cause digestive upset.

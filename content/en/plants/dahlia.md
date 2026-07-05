@@ -26,7 +26,9 @@ symptoms:
   - diarrhea
   - drooling
   - skin irritation
-what_to_do: Monitor your pet. Most reactions are mild. Contact your vet if symptoms persist.
+what_to_do: >-
+  Monitor your pet. Most reactions are mild. Contact your vet if symptoms
+  persist.
 alternatives:
   - roses
   - sunflowers
@@ -34,20 +36,23 @@ alternatives:
   - petunias
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/dahlia
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/dahlia
   - name: Pet Poison Helpline
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Dahlia Toxicity in Pets
-meta_description: Dahlias are mildly toxic to dogs and cats. Learn symptoms, home care, and safe flowering alternatives for pet-friendly gardens.
+meta_description: >-
+  Dahlias are mildly toxic to dogs and cats. Learn symptoms, home care, and safe
+  flowering alternatives for pet-friendly gardens.
 symptoms_severity:
   - symptom: vomiting
     severity: low
   - symptom: skin irritation
     severity: low
 ---
-
 # Dahlia
 
 Dahlias are summer garden favorites with vibrant blooms. They are only mildly toxic to pets, usually causing self-limiting stomach upset or minor skin irritation. Most pets do not need veterinary treatment after a small nibble.

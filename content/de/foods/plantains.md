@@ -15,26 +15,32 @@ tags:
 safety:
   dogs:
     status: safe
-    summary: Unbedenklich, wenn schlicht gekocht. Rohe Kochbananen sind schwer verdaulich.
+    summary: >-
+      Unbedenklich, wenn schlicht gekocht. Rohe Kochbananen sind schwer
+      verdaulich.
   cats:
     status: safe
-    summary: In kleinen Mengen unbedenklich, wenn schlicht gekocht.
+    summary: 'In kleinen Mengen unbedenklich, wenn schlicht gekocht.'
 symptoms:
   - Verdauungsprobleme
-what_to_do: Verringern Sie die Menge oder setzen Sie die Fütterung ab, falls Durchfall auftritt.
+what_to_do: >-
+  Verringern Sie die Menge oder setzen Sie die Fütterung ab, falls Durchfall
+  auftritt.
 alternatives:
   - sweet-potato
   - pumpkin
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Kochen Sie sie gründlich ohne Öl, Salz oder Zucker. Schälen Sie sie vor dem Kochen.
+preparation_notes: >-
+  Kochen Sie sie gründlich ohne Öl, Salz oder Zucker. Schälen Sie sie vor dem
+  Kochen.
 safe_amount: Ein kleines Stück für Hunde; ein sehr kleines Stück für Katzen.
 frequency: Gelegentlich.
 related_foods:
@@ -53,10 +59,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Kalorienreiche Stärke.
-meta_title: Dürfen Hunde Kochbananen essen? Sicherheit, Risiken & tierärztliche Empfehlung
-meta_description: Sind Kochbananen für Hunde und Katzen unbedenklich? Kochbananen sind für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Kochbananen essen? Sicherheit, Risiken & tierärztliche Empfehlung'
+meta_description: >-
+  Sind Kochbananen für Hunde und Katzen unbedenklich? Kochbananen sind für Hunde
+  und Katzen unbedenklich. Erfahren Sie mehr über Symptome, was zu tun ist, und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Kochbananen
 
 Kochbananen sind stärkehaltige Gemüse, die für Hunde unbedenklich sind, wenn sie vollständig gekocht und ohne Zusätze serviert werden. Sie enthalten weniger Zucker als Bananen, aber mehr Stärke. Rohe Kochbananen sind zäh und schwer verdaulich.

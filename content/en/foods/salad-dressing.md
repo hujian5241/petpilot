@@ -17,7 +17,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Most dressings are too fatty or salty; some contain garlic, onion, or xylitol.
+    summary: >-
+      Most dressings are too fatty or salty; some contain garlic, onion, or
+      xylitol.
   cats:
     status: limited
     severity: low
@@ -26,20 +28,22 @@ symptoms:
   - vomiting
   - diarrhea
   - pancreatitis risk
-what_to_do: Check the label for xylitol, garlic, or onion. Contact a vet if any of these are present.
+what_to_do: >-
+  Check the label for xylitol, garlic, or onion. Contact a vet if any of these
+  are present.
 alternatives:
   - chicken-breast
   - brown-rice
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -76,7 +80,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Seasonings, fat, and additives can irritate the GI tract in IBD.
+    reason: 'Seasonings, fat, and additives can irritate the GI tract in IBD.'
   - condition: Urinary tract disease/bladder stones
     appliesTo:
       - dogs
@@ -94,11 +98,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Rich, fatty, or seasoned foods commonly cause GI upset.
-meta_title: Can Dogs Eat Salad Dressing? Safety, Risks & Vet Advice
-meta_description: Is Salad Dressing safe for dogs and cats? Salad Dressing is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Rich, fatty, or seasoned foods commonly cause GI upset.'
+meta_title: 'Can Dogs Eat Salad Dressing? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Salad Dressing safe for dogs and cats? Salad Dressing is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Salad Dressing
 
 Salad dressings vary widely. Oil and vinegar-based dressings may cause stomach upset, while creamy dressings are high in fat and dairy. Caesar and ranch dressings often contain garlic and onion powder. Some low-calorie or sugar-free dressings contain xylitol, which is extremely dangerous to dogs. A small lick of plain oil and vinegar is usually not an emergency, but dressings should not be offered intentionally.

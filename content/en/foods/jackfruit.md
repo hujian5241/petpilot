@@ -27,11 +27,11 @@ alternatives:
   - bananas
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Remove seeds, skin, and latex. Use only ripe flesh.
+preparation_notes: 'Remove seeds, skin, and latex. Use only ripe flesh.'
 safe_amount: A small piece.
 frequency: Rarely.
 condition_warnings:
@@ -59,10 +59,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sugary fruit residue can affect teeth.
-meta_title: Can Dogs Eat Jackfruit? Safety, Risks & Vet Advice
-meta_description: Is Jackfruit safe for dogs and cats? Jackfruit is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Jackfruit? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Jackfruit safe for dogs and cats? Jackfruit is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Jackfruit
 
 Ripe jackfruit flesh is likely safe in small amounts, but the seeds and skin should be avoided.

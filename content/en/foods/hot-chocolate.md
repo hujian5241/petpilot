@@ -16,7 +16,9 @@ safety:
   dogs:
     status: toxic
     severity: critical
-    summary: Hot chocolate contains cocoa, milk, and often sugar, all of which are risky for dogs.
+    summary: >-
+      Hot chocolate contains cocoa, milk, and often sugar, all of which are
+      risky for dogs.
   cats:
     status: toxic
     severity: critical
@@ -35,25 +37,28 @@ alternatives:
   - pumpkin
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
-  - name: Cortinovis & Caloni, Front Vet Sci (2016)
-    url: https://pubmed.ncbi.nlm.nih.gov/27047944/
-  - name: Gugler et al., Compend Contin Educ Vet (2013)
-    url: https://pubmed.ncbi.nlm.nih.gov/23677840/
+    url: 'https://www.avma.org'
+  - name: 'Cortinovis & Caloni, Front Vet Sci (2016)'
+    url: 'https://pubmed.ncbi.nlm.nih.gov/27047944/'
+  - name: 'Gugler et al., Compend Contin Educ Vet (2013)'
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23677840/'
   - name: MSD Veterinary Manual — Food Hazards
-    url: https://www.msdvetmanual.com/toxicology/food-hazards
+    url: 'https://www.msdvetmanual.com/toxicology/food-hazards'
   - name: MSD Veterinary Manual — Chocolate Toxicosis
-    url: https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
+    url: >-
+      https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
   - name: ASPCA — People Foods to Avoid Feeding Your Pets
-    url: https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
+    url: >-
+      https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
   - name: Cornell Riney Canine Health Center — Chocolate Toxicity
-    url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/chocolate-toxicity-what-should-i-do-if-my-dog-eats-chocolate
+    url: >-
+      https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/chocolate-toxicity-what-should-i-do-if-my-dog-eats-chocolate
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -68,10 +73,11 @@ symptoms_severity:
     severity: high
   - symptom: seizures
     severity: critical
-meta_title: Can Dogs Eat Hot Chocolate? Safety, Risks & Vet Advice
-meta_description: Is Hot Chocolate safe for dogs and cats? Hot Chocolate is toxic for dogs and toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Hot Chocolate? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Hot Chocolate safe for dogs and cats? Hot Chocolate is toxic for dogs and
+  toxic for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Hot Chocolate
 
 Hot chocolate combines cocoa powder, sugar, and milk, creating multiple risks for pets. Cocoa contains theobromine and caffeine, which can trigger vomiting, tremors, seizures, and heart problems. Milk adds lactose intolerance issues. Because hot chocolate is often rich and sweet, pets may drink a large volume quickly. Any ingestion should be treated as an emergency.

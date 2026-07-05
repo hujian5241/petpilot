@@ -28,13 +28,13 @@ alternatives:
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Plain, unsalted pine nuts only. Avoid pesto with garlic.
+preparation_notes: 'Plain, unsalted pine nuts only. Avoid pesto with garlic.'
 safe_amount: A few pine nuts occasionally.
 frequency: Rarely.
 condition_warnings:
@@ -56,10 +56,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Calorie-dense and easy to overfeed.
-meta_title: Can Dogs Eat Pine Nuts? Safety, Risks & Vet Advice
-meta_description: Is Pine Nuts safe for dogs and cats? Pine Nuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pine Nuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pine Nuts safe for dogs and cats? Pine Nuts is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pine Nuts
 
 Pine nuts are not toxic to dogs, but they are high in fat and can cause stomach upset if fed in large amounts. Pesto containing pine nuts usually has garlic and other unsafe ingredients and should be avoided.

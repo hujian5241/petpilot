@@ -27,13 +27,13 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Peler, couper en cubes et cuire jusqu'à tendreté. Servir nature.
+preparation_notes: 'Peler, couper en cubes et cuire jusqu''à tendreté. Servir nature.'
 safe_amount: Une cuillère à soupe pour les chiens ; un tout petit morceau pour les chats.
 frequency: Occasionnellement.
 related_foods:
@@ -45,17 +45,26 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Une forte teneur en fibres peut être mal tolérée par certains patients atteints d'IBD.
+    reason: >-
+      Une forte teneur en fibres peut être mal tolérée par certains patients
+      atteints d'IBD.
   - condition: Sensibilité gastro-intestinale
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Une forte teneur en fibres peut provoquer des gaz ou des selles molles chez les animaux sensibles.
-meta_title: Les chiens peuvent-ils manger du rutabaga ? Sécurité, risques et conseils vétérinaires
-meta_description: Le rutabaga est-il sans danger pour les chiens et les chats ? Le rutabaga est sans danger pour les chiens et sans danger pour les chats. Découvrez les symptômes, les mesures à prendre et des alternatives approuvées par un vétérinaire.
+    reason: >-
+      Une forte teneur en fibres peut provoquer des gaz ou des selles molles
+      chez les animaux sensibles.
+meta_title: >-
+  Les chiens peuvent-ils manger du rutabaga ? Sécurité, risques et conseils
+  vétérinaires
+meta_description: >-
+  Le rutabaga est-il sans danger pour les chiens et les chats ? Le rutabaga est
+  sans danger pour les chiens et sans danger pour les chats. Découvrez les
+  symptômes, les mesures à prendre et des alternatives approuvées par un
+  vétérinaire.
 ---
-
 # Rutabaga
 
 Le rutabaga est un légume-racine sans danger pour les chiens lorsqu'il est cuit et servi nature. C'est une bonne source de fibres et de vitamine C. Le rutabaga cru est trop dur pour la plupart des animaux pour être correctement mâché et digéré.

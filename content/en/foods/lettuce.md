@@ -27,9 +27,9 @@ alternatives:
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -52,10 +52,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Fiber may aggravate some IBD cases.
-meta_title: Can Dogs Eat Lettuce? Safety, Risks & Vet Advice
-meta_description: Is Lettuce safe for dogs and cats? Lettuce is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Lettuce? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Lettuce safe for dogs and cats? Lettuce is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Lettuce
 
 Lettuce is safe for dogs but provides minimal nutrition. It is mostly water and fiber. Large amounts can cause diarrhea. Serve plain lettuce without salad dressing, vinegar, onions, or croutons.

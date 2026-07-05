@@ -154,5 +154,104 @@ export interface SearchIndexItem {
   summary: string
   safetyDogs: SafetyStatus
   safetyCats: SafetyStatus
-  type: "food" | "plant"
+  type: "food" | "plant" | "medication" | "household-chemical" | "pesticide"
+}
+
+export interface MedicationEntry {
+  id: string
+  name: string
+  slug: string
+  aliases: string[]
+  categories: string[]
+  tags: string[]
+  images?: FoodImage[]
+  safety: Record<Species, SafetyInfo>
+  symptoms: string[]
+  symptoms_severity?: SymptomSeverity[]
+  what_to_do: string
+  requires_emergency_visit?: boolean
+  alternatives: string[]
+  active_ingredients: string[]
+  brand_names?: string[]
+  dosage_form?: string
+  common_uses?: string[]
+  toxic_ingredients?: string[]
+  is_veterinary?: boolean
+  requires_prescription?: boolean
+  sources: Source[]
+  vet_reviewed: boolean
+  reviewed_by?: string
+  last_reviewed: string
+  next_review?: string
+  notes_for_puppies?: string
+  notes_for_kittens?: string
+  meta_title?: string
+  meta_description?: string
+  content?: string
+}
+
+export interface HouseholdChemicalEntry {
+  id: string
+  name: string
+  slug: string
+  aliases: string[]
+  categories: string[]
+  tags: string[]
+  images?: FoodImage[]
+  safety: Record<Species, SafetyInfo>
+  symptoms: string[]
+  symptoms_severity?: SymptomSeverity[]
+  what_to_do: string
+  requires_emergency_visit?: boolean
+  alternatives: string[]
+  active_ingredients?: string[]
+  common_products?: string[]
+  room?: string
+  ventilation_notes?: string
+  dilution_warning?: string
+  contains_bleach?: boolean
+  contains_ammonia?: boolean
+  contains_phenols?: boolean
+  sources: Source[]
+  vet_reviewed: boolean
+  reviewed_by?: string
+  last_reviewed: string
+  next_review?: string
+  notes_for_puppies?: string
+  notes_for_kittens?: string
+  meta_title?: string
+  meta_description?: string
+  content?: string
+}
+
+export interface PesticideEntry {
+  id: string
+  name: string
+  slug: string
+  aliases: string[]
+  categories: string[]
+  tags: string[]
+  images?: FoodImage[]
+  safety: Record<Species, SafetyInfo>
+  symptoms: string[]
+  symptoms_severity?: SymptomSeverity[]
+  what_to_do: string
+  requires_emergency_visit?: boolean
+  alternatives: string[]
+  active_ingredients: string[]
+  pest_targeted?: string[]
+  formulation?: string
+  signal_word?: "caution" | "warning" | "danger"
+  application_area?: string
+  epa_registration_number?: string
+  sources: Source[]
+  vet_reviewed: boolean
+  reviewed_by?: string
+  last_reviewed: string
+  next_review?: string
+  notes_for_puppies?: string
+  notes_for_kittens?: string
+  meta_title?: string
+  meta_description?: string
+  content?: string
 }

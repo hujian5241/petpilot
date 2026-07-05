@@ -26,7 +26,7 @@ alternatives:
   - raspberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -40,10 +40,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Enthält natürliche Zucker.
-meta_title: Dürfen Hunde Brombeeren essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Sind Brombeeren für Hunde und Katzen sicher? Brombeeren sind für Hunde und Katzen sicher. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+meta_title: 'Dürfen Hunde Brombeeren essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Sind Brombeeren für Hunde und Katzen sicher? Brombeeren sind für Hunde und
+  Katzen sicher. Erfahren Sie Symptome, was zu tun ist, und tierärztlich
+  geprüfte Alternativen.
 ---
-
 # Brombeeren
 
 Brombeeren sind für Hunde in Maßen sicher und liefern Vitamine C und K, Ballaststoffe sowie Antioxidantien.

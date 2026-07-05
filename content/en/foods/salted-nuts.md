@@ -25,20 +25,22 @@ symptoms:
   - diarrhea
   - tremors
   - seizures (salt toxicity)
-what_to_do: Contact your vet if your pet ate a large amount of salted nuts or shows neurological signs.
+what_to_do: >-
+  Contact your vet if your pet ate a large amount of salted nuts or shows
+  neurological signs.
 alternatives:
   - peanuts
   - carrots
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Avoid salted nuts. If nuts are given, choose plain, unsalted varieties.
+preparation_notes: 'Avoid salted nuts. If nuts are given, choose plain, unsalted varieties.'
 safe_amount: Avoid.
 frequency: Avoid.
 condition_warnings:
@@ -102,10 +104,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Salted Nuts? Safety, Risks & Vet Advice
-meta_description: Is Salted Nuts safe for dogs and cats? Salted Nuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Salted Nuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Salted Nuts safe for dogs and cats? Salted Nuts is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Salted Nuts
 
 Salted nuts contain too much sodium for dogs and cats. Large amounts can lead to salt toxicity, causing vomiting, tremors, seizures, and even death.

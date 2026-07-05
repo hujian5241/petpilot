@@ -15,7 +15,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Lower fat than whole milk, but lactose remains a problem.
+    summary: 'Lower fat than whole milk, but lactose remains a problem.'
   cats:
     status: limited
     severity: low
@@ -31,9 +31,9 @@ alternatives:
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -50,7 +50,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Food allergies
     appliesTo:
       - dogs
@@ -68,17 +70,18 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains lactose, which many adult pets cannot digest well.
+    reason: 'Contains lactose, which many adult pets cannot digest well.'
   - condition: Gastrointestinal sensitivity
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Dairy can cause diarrhea and gas in sensitive pets.
-meta_title: Can Dogs Eat Skim Milk? Safety, Risks & Vet Advice
-meta_description: Is Skim Milk safe for dogs and cats? Skim Milk is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Skim Milk? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Skim Milk safe for dogs and cats? Skim Milk is limited for dogs and limited
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Skim Milk
 
 Skim milk has less fat than whole milk but still contains lactose, which most adult dogs and cats cannot digest well. It can cause diarrhea, gas, and abdominal discomfort. Skim milk is not a necessary or beneficial treat for pets.

@@ -24,18 +24,20 @@ symptoms:
   - vomissements
   - diarrhée
   - pancréatite
-what_to_do: Cesser de donner et surveiller. Contactez votre vétérinaire si les symptômes persistent.
+what_to_do: >-
+  Cesser de donner et surveiller. Contactez votre vétérinaire si les symptômes
+  persistent.
 alternatives:
   - peanut-butter
   - pumpkin
   - carrots
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choisissez un beurre d'amande nature, non salé, sans xylitol ni sucre ajouté.
+preparation_notes: 'Choisissez un beurre d''amande nature, non salé, sans xylitol ni sucre ajouté.'
 safe_amount: Une petite léchée ou 1/4 de cuillère à café pour les chiens.
 frequency: Rarement.
 condition_warnings:
@@ -44,13 +46,17 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: La teneur élevée en matières grasses peut déclencher ou aggraver la pancréatite.
+    reason: >-
+      La teneur élevée en matières grasses peut déclencher ou aggraver la
+      pancréatite.
   - condition: Hyperlipidémie
     appliesTo:
       - dogs
       - cats
     recommendation: limit
-    reason: Très riche en matières grasses, ce qui peut augmenter le taux de lipides sanguins.
+    reason: >-
+      Très riche en matières grasses, ce qui peut augmenter le taux de lipides
+      sanguins.
   - condition: Obésité
     appliesTo:
       - dogs
@@ -68,7 +74,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Les matières grasses élevées peuvent aggraver l'inflammation gastro-intestinale.
+    reason: >-
+      Les matières grasses élevées peuvent aggraver l'inflammation
+      gastro-intestinale.
   - condition: Sensibilité gastro-intestinale
     appliesTo:
       - dogs
@@ -80,11 +88,17 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Les amandes sont riches en oxalates, qui sont concentrés dans le beurre d'amande.
-meta_title: Les chiens peuvent-ils manger du beurre d'amande ? Sécurité, risques et conseils vétérinaires
-meta_description: Le beurre d'amande est-il sûr pour les chiens et les chats ? Le beurre d'amande est limité pour les chiens et limité pour les chats. Découvrez les symptômes, que faire et des alternatives approuvées par les vétérinaires.
+    reason: >-
+      Les amandes sont riches en oxalates, qui sont concentrés dans le beurre
+      d'amande.
+meta_title: >-
+  Les chiens peuvent-ils manger du beurre d'amande ? Sécurité, risques et
+  conseils vétérinaires
+meta_description: >-
+  Le beurre d'amande est-il sûr pour les chiens et les chats ? Le beurre
+  d'amande est limité pour les chiens et limité pour les chats. Découvrez les
+  symptômes, que faire et des alternatives approuvées par les vétérinaires.
 ---
-
 # Beurre d'amande
 
 Le beurre d'amande n'est pas toxique pour les chiens, mais il est riche en matières grasses et en calories. Une petite léchée occasionnelle est généralement sans danger. Évitez les produits contenant du xylitol, du sel ou du chocolat.

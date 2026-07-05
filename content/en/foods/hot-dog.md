@@ -17,7 +17,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: A small piece of plain hot dog is usually safe but is high in salt and fat.
+    summary: >-
+      A small piece of plain hot dog is usually safe but is high in salt and
+      fat.
   cats:
     status: limited
     severity: low
@@ -27,20 +29,22 @@ symptoms:
   - diarrhea
   - pancreatitis risk
   - salt concerns
-what_to_do: Monitor for digestive upset. Avoid if the hot dog contains garlic, onion, or xylitol.
+what_to_do: >-
+  Monitor for digestive upset. Avoid if the hot dog contains garlic, onion, or
+  xylitol.
 alternatives:
   - chicken-breast
   - turkey
   - brown-rice
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -90,11 +94,12 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Processed, high-fat foods often trigger flares.
-meta_title: Can Dogs Eat Hot Dog? Safety, Risks & Vet Advice
-meta_description: Is Hot Dog safe for dogs and cats? Hot Dog is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Processed, high-fat foods often trigger flares.'
+meta_title: 'Can Dogs Eat Hot Dog? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Hot Dog safe for dogs and cats? Hot Dog is limited for dogs and limited for
+  cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Hot Dog
 
 Hot dogs are a popular training treat, but they are heavily processed and high in sodium and fat. Some brands contain garlic or onion powder, and sugar-free varieties may contain xylitol. Small, occasional pieces of plain, cooked hot dog are unlikely to harm most pets, but they should not be a dietary staple. Choose low-sodium options when possible.

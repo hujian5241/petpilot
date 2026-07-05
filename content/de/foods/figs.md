@@ -12,7 +12,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Kleine Mengen frisches Feigenfleisch sind in der Regel unbedenklich. Ficus-Pflanzen können die Haut reizen.
+    summary: >-
+      Kleine Mengen frisches Feigenfleisch sind in der Regel unbedenklich.
+      Ficus-Pflanzen können die Haut reizen.
   cats:
     status: limited
     severity: low
@@ -21,15 +23,15 @@ symptoms:
   - Verdauungsbeschwerden
   - Durchfall
   - Hautreizung
-what_to_do: Setzen Sie die Fütterung ab, wenn Verdauungsbeschwerden auftreten.
+what_to_do: 'Setzen Sie die Fütterung ab, wenn Verdauungsbeschwerden auftreten.'
 alternatives:
   - blueberries
   - pears
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -42,17 +44,19 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Kann Verdauungsbeschwerden, Durchfall oder Hautreizung verursachen.
+    reason: 'Kann Verdauungsbeschwerden, Durchfall oder Hautreizung verursachen.'
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
       - cats
     recommendation: limit
     reason: Fruchtzucker und Haut können empfindlichen Darm reizen.
-meta_title: Dürfen Hunde Feigen essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Sind Feigen sicher für Hunde und Katzen? Feigen sind für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Feigen essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Sind Feigen sicher für Hunde und Katzen? Feigen sind für Hunde eingeschränkt
+  und für Katzen eingeschränkt. Erfahren Sie Symptome, was zu tun ist, und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Feigen
 
 Frisches Feigenfleisch ist in sehr kleinen Mengen in der Regel unbedenklich, aber die Pflanze und die Schale können bei einigen Haustieren Reizungen verursachen.

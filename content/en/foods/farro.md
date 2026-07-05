@@ -28,14 +28,16 @@ alternatives:
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 preparation_notes: Cook until chewy-tender. Serve plain. Not suitable for gluten-sensitive dogs.
-safe_amount: A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for cats.
+safe_amount: >-
+  A tablespoon for small dogs, up to a quarter cup for large dogs; a pinch for
+  cats.
 frequency: Occasionally.
 related_foods:
   - bulgur
@@ -47,7 +49,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: The file states farro contains gluten and should be avoided for gluten-sensitive dogs.
+    reason: >-
+      The file states farro contains gluten and should be avoided for
+      gluten-sensitive dogs.
   - condition: Diabetes mellitus
     appliesTo:
       - dogs
@@ -72,10 +76,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Gluten-containing grains may irritate sensitive bowels.
-meta_title: Can Dogs Eat Farro? Safety, Risks & Vet Advice
-meta_description: Is Farro safe for dogs and cats? Farro is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Farro? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Farro safe for dogs and cats? Farro is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Farro
 
 Farro is an ancient wheat grain with a chewy texture and nutty flavor. It is safe for dogs when cooked plain and served in moderation. Because it contains gluten, it should be avoided for dogs with wheat or gluten sensitivities.

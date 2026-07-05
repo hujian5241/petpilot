@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { FoodCard } from "@/components/food/FoodCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { CollapsibleGridSection } from "@/components/layout/CollapsibleGridSection";
 import { getAllCategories, getAllFoods, getSiteConfig } from "@/lib/content";
 import type { FoodEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
@@ -74,9 +75,7 @@ export default async function FoodsPage({ params }: FoodsPageProps) {
 
       <header className="mt-6">
         <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
-          {t("description")}
-        </p>
+        <p className="mt-2 text-lg text-muted-foreground">{t("description")}</p>
       </header>
 
       <section className="mt-10">
@@ -111,31 +110,29 @@ export default async function FoodsPage({ params }: FoodsPageProps) {
         </div>
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold text-foreground">{t("allFoods")}</h2>
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {foods.map((food) => (
-            <FoodCard key={food.slug} food={food} locale={locale} />
-          ))}
-        </div>
-      </section>
+      <CollapsibleGridSection title={t("allFoods")} count={foods.length}>
+        {foods.map((food) => (
+          <FoodCard key={food.slug} food={food} locale={locale} />
+        ))}
+      </CollapsibleGridSection>
 
-      <section className="mt-16 space-y-12">
+      <div className="mt-16 space-y-12">
         {statusOrder.map((status) => {
           const groupFoods = foodsByStatus[status];
           if (groupFoods.length === 0) return null;
           return (
-            <div key={status} id={status}>
-              <h2 className="text-2xl font-semibold text-foreground">{statusLabels[status]} ({groupFoods.length})</h2>
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {groupFoods.map((food) => (
-                  <FoodCard key={food.slug} food={food} locale={locale} />
-                ))}
-              </div>
-            </div>
+            <CollapsibleGridSection
+              key={status}
+              title={`${statusLabels[status]}`}
+              count={groupFoods.length}
+            >
+              {groupFoods.map((food) => (
+                <FoodCard key={food.slug} food={food} locale={locale} />
+              ))}
+            </CollapsibleGridSection>
           );
         })}
-      </section>
+      </div>
     </div>
   );
 }

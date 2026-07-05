@@ -23,20 +23,22 @@ symptoms:
   - diarrhea
   - salmon-poisoning
   - lethargy
-what_to_do: If raw trout was eaten, contact your vet immediately. Raw freshwater fish can transmit salmon poisoning disease.
+what_to_do: >-
+  If raw trout was eaten, contact your vet immediately. Raw freshwater fish can
+  transmit salmon poisoning disease.
 alternatives:
   - salmon
   - whitefish
   - sardines
 sources:
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-fish/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-fish/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook thoroughly, remove all bones, and avoid seasonings, oil, and butter.
+preparation_notes: 'Cook thoroughly, remove all bones, and avoid seasonings, oil, and butter.'
 safe_amount: Small pieces as an occasional treat.
 frequency: Occasional.
 related_foods:
@@ -52,7 +54,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -89,10 +93,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Trout? Safety, Risks & Vet Advice
-meta_description: Is Trout safe for dogs and cats? Trout is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Trout? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Trout safe for dogs and cats? Trout is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Trout
 
 Trout is a freshwater fish that provides protein and omega-3 fatty acids. When cooked plainly and deboned, it is safe for most dogs and cats.

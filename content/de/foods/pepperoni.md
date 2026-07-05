@@ -17,27 +17,30 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Sehr fett-, salz- und gewürzreich. Füttern Sie Ihr Tier nicht damit.
+    summary: 'Sehr fett-, salz- und gewürzreich. Füttern Sie Ihr Tier nicht damit.'
   cats:
     status: limited
     severity: moderate
-    summary: Sehr fett-, salz- und gewürzreich. Füttern Sie Ihr Tier nicht damit.
+    summary: 'Sehr fett-, salz- und gewürzreich. Füttern Sie Ihr Tier nicht damit.'
 symptoms:
   - Erbrechen
   - Durchfall
   - Pankreatitis
   - übermäßiger Durst
   - Magenverstimmung
-what_to_do: Wenn eine große Menge gefressen wurde, kontaktieren Sie Ihren Tierarzt. Bei starken Bauchschmerzen oder wiederholtem Erbrechen suchen Sie die Notfallversorgung auf.
+what_to_do: >-
+  Wenn eine große Menge gefressen wurde, kontaktieren Sie Ihren Tierarzt. Bei
+  starken Bauchschmerzen oder wiederholtem Erbrechen suchen Sie die
+  Notfallversorgung auf.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/
+    url: 'https://www.petpoisonhelpline.com/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -63,7 +66,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Hoher Salzgehalt und verarbeitete Konservierungsstoffe belasten die Nieren.
+    reason: >-
+      Hoher Salzgehalt und verarbeitete Konservierungsstoffe belasten die
+      Nieren.
   - condition: Pankreatitis
     appliesTo:
       - dogs
@@ -81,7 +86,7 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Kalorienreiche, fettige Wurst.
+    reason: 'Kalorienreiche, fettige Wurst.'
   - condition: Lebererkrankung
     appliesTo:
       - dogs
@@ -93,11 +98,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Scharfe, fettige Wurst löst häufig Magenverstimmungen aus.
-meta_title: Dürfen Hunde Pepperoni essen? Sicherheit, Risiken & tierärztlicher Rat
-meta_description: Ist Pepperoni für Hunde und Katzen unbedenklich? Pepperoni ist für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierärztlich geprüfte Alternativen.
+    reason: 'Scharfe, fettige Wurst löst häufig Magenverstimmungen aus.'
+meta_title: 'Dürfen Hunde Pepperoni essen? Sicherheit, Risiken & tierärztlicher Rat'
+meta_description: >-
+  Ist Pepperoni für Hunde und Katzen unbedenklich? Pepperoni ist für Hunde und
+  Katzen nur eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und
+  tierärztlich geprüfte Alternativen.
 ---
-
 # Pepperoni
 
 Pepperoni ist eine scharfe, fettreiche und stark gesalzene Wurst. Sie kann Magenverstimmungen und Pankreatitis verursachen und bietet Haustieren keinen nährstofflichen Mehrwert.

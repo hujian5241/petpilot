@@ -16,11 +16,15 @@ safety:
   dogs:
     status: toxic
     severity: high
-    summary: Enthält Grayanotoxine, die Erbrechen, Schwäche und Auswirkungen auf Herz und Kreislauf verursachen können.
+    summary: >-
+      Enthält Grayanotoxine, die Erbrechen, Schwäche und Auswirkungen auf Herz
+      und Kreislauf verursachen können.
   cats:
     status: toxic
     severity: high
-    summary: Kann Erbrechen, Durchfall, Schwäche und potenziell lebensbedrohliche Herzrhythmusstörungen verursachen.
+    summary: >-
+      Kann Erbrechen, Durchfall, Schwäche und potenziell lebensbedrohliche
+      Herzrhythmusstörungen verursachen.
 symptoms:
   - Erbrechen
   - Durchfall
@@ -29,27 +33,33 @@ symptoms:
   - niedriger Blutdruck
   - unregelmäßiger Herzschlag
   - Zittern
-what_to_do: Kontaktieren Sie umgehend einen Tierarzt oder eine Giftnotrufzentrale. Eine Notfallversorgung kann erforderlich sein, insbesondere wenn größere Mengen gefressen wurden.
+what_to_do: >-
+  Kontaktieren Sie umgehend einen Tierarzt oder eine Giftnotrufzentrale. Eine
+  Notfallversorgung kann erforderlich sein, insbesondere wenn größere Mengen
+  gefressen wurden.
 alternatives:
   - african-violet
   - phalaenopsis-orchid
   - christmas-cactus
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/azalea
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/azalea/
+    url: 'https://www.petpoisonhelpline.com/poison/azalea/'
   - name: MSD Veterinary Manual — Toxikologie
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — Liste giftiger und ungiftiger Pflanzen für Katzen
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — Liste giftiger und ungiftiger Pflanzen für Hunde
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
 meta_title: Azalee und Haustiersicherheit – Hochgiftig | PetPilot
-meta_description: Azaleen sind für Hunde und Katzen hochgiftig und können das Herz schädigen. Erfahren Sie mehr über Symptome, Notfallversorgung und sichere Alternativen.
+meta_description: >-
+  Azaleen sind für Hunde und Katzen hochgiftig und können das Herz schädigen.
+  Erfahren Sie mehr über Symptome, Notfallversorgung und sichere Alternativen.
 related_plants:
   - oleander
 symptoms_severity:
@@ -58,7 +68,6 @@ symptoms_severity:
   - symptom: Schwäche
     severity: high
 ---
-
 # Azalee
 
 Azaleen sind blühende Sträucher, die manchmal als Zimmerbonsai oder Terrassenpflanzen gehalten werden. Sie enthalten Grayanotoxine, die Herz und Nervensystem beeinflussen. Der Verzehr von nur wenigen Blättern kann Hunde und Katzen schwer erkranken lassen.

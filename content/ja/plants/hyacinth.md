@@ -35,15 +35,16 @@ alternatives:
   - african-violet
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hyacinth
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hyacinth
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/hyacinth/
+    url: 'https://www.petpoisonhelpline.com/poison/hyacinth/'
   - name: MSD Veterinary Manual — 中毒学
-    url: https://www.msdvetmanual.com/toxicology
+    url: 'https://www.msdvetmanual.com/toxicology'
   - name: ASPCA — 猫向け有毒・無毒植物リスト
-    url: https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list'
   - name: ASPCA — 犬向け有毒・無毒植物リスト
-    url: https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list
+    url: 'https://www.aspca.org/pet-care/animal-poison-control/dogs-plant-list'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -53,7 +54,6 @@ related_plants:
   - tulip
   - daffodil
 ---
-
 # ヒヤシンス
 
 ヒヤシンスは、花の密生した穂をつける香り豊かな春の球根植物です。シュウ酸カルシウム結晶やその他の刺激物を含んでおり、口の中に強い痛みや胃腸の不調を引き起こします。最も危険な部分は球根です。

@@ -27,13 +27,13 @@ alternatives:
   - carrots
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, unseasoned sesame seeds. Avoid tahini with garlic or sugar.
+preparation_notes: 'Use plain, unseasoned sesame seeds. Avoid tahini with garlic or sugar.'
 safe_amount: A small pinch for small dogs; 1/2 teaspoon for large dogs.
 frequency: Occasional.
 condition_warnings:
@@ -42,7 +42,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Contains phosphorus and protein, which are typically restricted in chronic kidney disease.
+    reason: >-
+      Contains phosphorus and protein, which are typically restricted in chronic
+      kidney disease.
   - condition: Pancreatitis
     appliesTo:
       - dogs
@@ -79,10 +81,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fat may irritate a sensitive gastrointestinal tract.
-meta_title: Can Dogs Eat Sesame Seeds? Safety, Risks & Vet Advice
-meta_description: Is Sesame Seeds safe for dogs and cats? Sesame Seeds is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Sesame Seeds? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Sesame Seeds safe for dogs and cats? Sesame Seeds is safe for dogs and safe
+  for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Sesame Seeds
 
 Plain sesame seeds are generally safe for dogs in very small amounts. They add a little crunch and healthy fat but are not a dietary necessity.

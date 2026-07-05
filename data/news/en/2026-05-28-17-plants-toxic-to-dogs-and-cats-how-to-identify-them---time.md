@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-05-28-17-plants-toxic-to-dogs-and-cats-how-to-identify-them---time
 title: '17 plants toxic to dogs and cats, how to identify them - Times Union'
 date: '2026-05-28'
@@ -16,31 +17,25 @@ summary: >-
   17 plants toxic to dogs and cats, how to identify them Times Union This report
   may be useful for pet owners monitoring potential risks. Affected animals:
   dogs, cats.
-body: ''
 relatedSlugs: {}
 reviewed: false
 clusterId: 530ca3611ea229b4
+updatedAt: '2026-07-05T17:51:58.343Z'
 ---
 ## What happened
 
-In May 2026, regulators and manufacturers announced several significant dog food recalls. Albright's Raw Pet Food issued a voluntary recall of select chicken recipes for dogs due to potential Salmonella contamination. AllProvide recalled dog food sold in multiple states because of possible plastic contamination. Raaw Energy expanded an existing recall of raw dog food products after Listeria monocytogenes was detected, with the recall eventually growing to more than 180 lots following reported illnesses.
+Late May 2026 brought a series of FDA-linked pet safety alerts. Albright’s Raw Pet Food voluntarily recalled select raw chicken dog food recipes because of potential Salmonella contamination. AllProvide recalled dog food sold in at least nine states, including New York, due to possible plastic contamination. Raaw Energy expanded a raw dog food recall for Listeria monocytogenes, with reports of pet illness and more than 180 lots affected. At the same time, veterinary sources warned that lilies, Alstroemeria and other common plants can be toxic to cats, and that essential oils can pose risks to both dogs and cats.
 
 ## Key facts
 
-- **Affected animals:** primarily dogs.
-- **Contaminants:** Salmonella (Albright's), plastic foreign material (AllProvide), and *Listeria monocytogenes* (Raaw Energy).
-- **Distribution:** nationwide and multi-state, with some products sold online and in retail stores.
-- **Scale:** Raaw Energy's recall expanded significantly to more than 180 lots.
-- **Risk profile:** raw and frozen pet foods are particularly susceptible to bacterial contamination.
+- Pets primarily affected: dogs (food recalls); cats (plant toxicity warnings).
+- Hazards: Salmonella, Listeria monocytogenes, plastic foreign material, and plant toxins.
+- Distribution: nationwide and across multiple states, including online and retail sales.
+- Cross-species risk: Salmonella and Listeria can also sicken humans handling contaminated food.
 
 ## What pet owners should do
 
-- Check shelves and freezers against FDA recall notices and lot numbers.
-- Do not feed recalled products to pets.
-- Dispose of affected food safely and clean any containers, bowls, or surfaces it touched.
-- Monitor dogs for symptoms such as vomiting, diarrhea, lethargy, fever, or loss of appetite.
-- Contact a veterinarian if a pet shows signs of illness after consuming recalled food.
-- Wash hands thoroughly after handling pet food, especially raw products.
+Check FDA recall lists for specific lot numbers and UPCs. Stop feeding any recalled product immediately and dispose of it safely. Wash hands, bowls, and surfaces after handling raw or recalled pet food. Watch for vomiting, diarrhea, lethargy, or loss of appetite in pets, and contact a veterinarian if symptoms occur. Keep lilies, Alstroemeria, and other toxic plants away from pets, and consult a vet before using essential oils in the home.
 
 ## Related coverage
 

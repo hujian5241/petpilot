@@ -28,14 +28,14 @@ alternatives:
   - white-rice
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Serve plain. Check for raisins, nuts, seeds, garlic, onion, or xylitol.
-safe_amount: A small bite for small dogs, one slice for large dogs; a crumb for cats.
+preparation_notes: 'Serve plain. Check for raisins, nuts, seeds, garlic, onion, or xylitol.'
+safe_amount: 'A small bite for small dogs, one slice for large dogs; a crumb for cats.'
 frequency: Rarely.
 related_foods:
   - plain-bread
@@ -72,10 +72,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High fiber may cause gas or loose stool in sensitive pets.
-meta_title: Can Dogs Eat Whole Wheat Bread? Safety, Risks & Vet Advice
-meta_description: Is Whole Wheat Bread safe for dogs and cats? Whole Wheat Bread is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Whole Wheat Bread? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Whole Wheat Bread safe for dogs and cats? Whole Wheat Bread is safe for
+  dogs and safe for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Whole Wheat Bread
 
 Whole wheat bread is safe for dogs in small quantities as long as it is plain and fully baked. It contains more fiber than white bread but is still mostly empty calories. Some dogs are sensitive or allergic to wheat.

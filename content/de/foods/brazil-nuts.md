@@ -15,7 +15,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Nicht giftig, aber sehr fettreich und selenreich.
+    summary: 'Nicht giftig, aber sehr fettreich und selenreich.'
   cats:
     status: limited
     severity: low
@@ -25,20 +25,20 @@ symptoms:
   - Erbrechen
   - Durchfall
   - Pankreatitis
-what_to_do: Kontaktieren Sie Ihren Tierarzt, wenn eine größere Menge gefressen wurde.
+what_to_do: 'Kontaktieren Sie Ihren Tierarzt, wenn eine größere Menge gefressen wurde.'
 alternatives:
   - carrots
   - apple-slices
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Nur naturbelassene, ungesalzene Paranüsse. Regelmäßig vermeiden.
+preparation_notes: 'Nur naturbelassene, ungesalzene Paranüsse. Regelmäßig vermeiden.'
 safe_amount: Nicht füttern; höchstens ein sehr kleines Stück sehr selten.
 frequency: Vermeiden.
 condition_warnings:
@@ -84,10 +84,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sehr fettreich und schwer verdaulich.
-meta_title: Können Hunde Paranüsse essen? Sicherheit, Risiken & Tierarzt-Tipps
-meta_description: Sind Paranüsse für Hunde und Katzen sicher? Paranüsse sind für Hunde eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome, Verhaltenshinweise und tierarztgeprüfte Alternativen.
+meta_title: 'Können Hunde Paranüsse essen? Sicherheit, Risiken & Tierarzt-Tipps'
+meta_description: >-
+  Sind Paranüsse für Hunde und Katzen sicher? Paranüsse sind für Hunde
+  eingeschränkt und für Katzen eingeschränkt. Erfahren Sie Symptome,
+  Verhaltenshinweise und tierarztgeprüfte Alternativen.
 ---
-
 # Paranüsse
 
 Paranüsse sind für Hunde nicht giftig, aber extrem fettreich und enthalten viel Selen. Regelmäßiges Füttern kann zu Fettleibigkeit und Pankreatitis führen.

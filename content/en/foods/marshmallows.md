@@ -31,7 +31,7 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -63,10 +63,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: High sugar can cause diarrhea.
-meta_title: Can Dogs Eat Marshmallows? Safety, Risks & Vet Advice
-meta_description: Is Marshmallows safe for dogs and cats? Marshmallows is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Marshmallows? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Marshmallows safe for dogs and cats? Marshmallows is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Marshmallows
 
 Plain marshmallows are not toxic to dogs, but they are mostly sugar and offer no nutrition. They can also be a choking hazard, especially for small dogs.

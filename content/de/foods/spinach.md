@@ -14,7 +14,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: In kleinen Mengen unbedenklich. Aufgrund des hohen Oxalatgehalts sind große oder häufige Portionen nicht ratsam.
+    summary: >-
+      In kleinen Mengen unbedenklich. Aufgrund des hohen Oxalatgehalts sind
+      große oder häufige Portionen nicht ratsam.
   cats:
     status: limited
     severity: low
@@ -22,22 +24,27 @@ safety:
 symptoms:
   - Nierenbelastung
   - Harnwegsprobleme
-what_to_do: Setzen Sie die Fütterung ab, wenn Ihr Tier bereits Nieren- oder Blasensteinprobleme hatte. Wenden Sie sich an einen Tierarzt, falls Symptome im Harnbereich auftreten.
+what_to_do: >-
+  Setzen Sie die Fütterung ab, wenn Ihr Tier bereits Nieren- oder
+  Blasensteinprobleme hatte. Wenden Sie sich an einen Tierarzt, falls Symptome
+  im Harnbereich auftreten.
 alternatives:
   - green-beans
   - carrots
   - zucchini
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Dünsten oder leicht zusammenfallen lassen ohne Öl, Salz, Knoblauch oder Zwiebeln.
+preparation_notes: >-
+  Dünsten oder leicht zusammenfallen lassen ohne Öl, Salz, Knoblauch oder
+  Zwiebeln.
 safe_amount: Für Hunde ein Teelöffel bis ein Esslöffel; für Katzen eine winzige Prise.
-frequency: Gelegentlich, nicht täglich.
+frequency: 'Gelegentlich, nicht täglich.'
 related_foods:
   - kale
   - lettuce
@@ -48,7 +55,9 @@ condition_warnings:
       - dogs
       - cats
     recommendation: avoid
-    reason: Oxalate und nierenbelastende Substanzen werden bei chronischer Nierenerkrankung schlecht vertragen.
+    reason: >-
+      Oxalate und nierenbelastende Substanzen werden bei chronischer
+      Nierenerkrankung schlecht vertragen.
   - condition: Chronisch-entzündliche Darmerkrankung (IBD)
     appliesTo:
       - dogs
@@ -73,10 +82,12 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: Ein hoher Oxalatgehalt fördert die Calciumoxalat-Urolithiasis.
-meta_title: Können Hunde Spinat essen? Sicherheit, Risiken und Tierarzt-Rat
-meta_description: Ist Spinat für Hunde und Katzen unbedenklich? Spinat ist für Hunde und Katzen nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das richtige Verhalten und tierarztgeprüfte Alternativen.
+meta_title: 'Können Hunde Spinat essen? Sicherheit, Risiken und Tierarzt-Rat'
+meta_description: >-
+  Ist Spinat für Hunde und Katzen unbedenklich? Spinat ist für Hunde und Katzen
+  nur eingeschränkt geeignet. Erfahren Sie mehr über Symptome, das richtige
+  Verhalten und tierarztgeprüfte Alternativen.
 ---
-
 # Spinat
 
 Spinat enthält wertvolle Vitamine und Mineralstoffe, aber auch Oxalate, die bei empfindlichen Tieren zu Nierenbelastung und Blasensteinen beitragen können. Aus diesem Grund sollte er nur gelegentlich und in kleinen Mengen angeboten werden.

@@ -16,7 +16,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Koffeinfreie Limonade ist in kleinen Mengen nicht giftig, enthält aber viel Zucker und Säuren.
+    summary: >-
+      Koffeinfreie Limonade ist in kleinen Mengen nicht giftig, enthält aber
+      viel Zucker und Säuren.
   cats:
     status: limited
     severity: low
@@ -26,26 +28,30 @@ symptoms:
   - Durchfall
   - Blähungen
   - Unruhe bei koffeinhaltiger Limonade
-what_to_do: Bei koffeinfreier Limonade Wasser anbieten und das Tier beobachten. Enthält die Limonade Koffein, einen Tierarzt kontaktieren.
+what_to_do: >-
+  Bei koffeinfreier Limonade Wasser anbieten und das Tier beobachten. Enthält
+  die Limonade Koffein, einen Tierarzt kontaktieren.
 alternatives:
   - cucumber
   - chicken-breast
   - chicken-broth
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
-  - name: Gugler et al., Compend Contin Educ Vet (2013)
-    url: https://pubmed.ncbi.nlm.nih.gov/23677840/
+    url: 'https://www.avma.org'
+  - name: 'Gugler et al., Compend Contin Educ Vet (2013)'
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23677840/'
   - name: MSD Veterinary Manual — Schokoladenvergiftung (Methylxanthine)
-    url: https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
-  - name: ASPCA — Lebensmittel, die Sie Ihren Haustieren nicht füttern sollten
-    url: https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
+    url: >-
+      https://www.msdvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals
+  - name: 'ASPCA — Lebensmittel, die Sie Ihren Haustieren nicht füttern sollten'
+    url: >-
+      https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -71,3 +77,5 @@ condition_warnings:
       - cats
     recommendation: avoid
     reason: Zucker füttert Mundbakterien und
+---
+

@@ -21,26 +21,28 @@ safety:
   cats:
     status: limited
     severity: low
-    summary: Cats may tolerate tiny amounts, but dairy and fat can cause stomach upset.
+    summary: 'Cats may tolerate tiny amounts, but dairy and fat can cause stomach upset.'
 symptoms:
   - vomiting
   - diarrhea
   - gas
   - pancreatitis risk
-what_to_do: Monitor for digestive upset. Avoid mac and cheese with garlic, onion, or spicy additives.
+what_to_do: >-
+  Monitor for digestive upset. Avoid mac and cheese with garlic, onion, or spicy
+  additives.
 alternatives:
   - brown-rice
   - chicken-breast
   - green-beans
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -101,11 +103,13 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Sodium, phosphorus, and dairy may need restriction.
-meta_title: Can Dogs Eat Mac and Cheese? Safety, Risks & Vet Advice
-meta_description: Is Mac and Cheese safe for dogs and cats? Mac and Cheese is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: 'Sodium, phosphorus, and dairy may need restriction.'
+meta_title: 'Can Dogs Eat Mac and Cheese? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Mac and Cheese safe for dogs and cats? Mac and Cheese is limited for dogs
+  and limited for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Mac and Cheese
 
 Macaroni and cheese is not toxic in small amounts, but it is high in fat, salt, and dairy. Many dogs and cats are lactose intolerant, so cheese can cause diarrhea. Some boxed or flavored versions contain garlic or onion powder. Plain cooked pasta with a tiny bit of cheese is a safer indulgence than a rich, cheesy casserole.

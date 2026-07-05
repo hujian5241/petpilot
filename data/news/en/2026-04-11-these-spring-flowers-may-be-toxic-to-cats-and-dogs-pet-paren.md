@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-04-11-these-spring-flowers-may-be-toxic-to-cats-and-dogs-pet-paren
 title: >-
   These spring flowers may be toxic to cats and dogs — pet parents beware -
@@ -19,22 +20,19 @@ summary: >-
   These spring flowers may be toxic to cats and dogs — pet parents beware Yahoo
   Lifestyle Canada This report may be useful for pet owners monitoring potential
   risks. Affected animals: dogs, cats. Location: Canada.
-body: ''
 relatedSlugs: {}
 reviewed: false
 clusterId: b200d6a3ca9ddc5e
+updatedAt: '2026-07-05T17:51:28.381Z'
 ---
 ## What happened
-Yahoo Lifestyle Canada warned that popular spring flowers can poison cats and dogs across Canada.
-
+Yahoo Lifestyle Canada reported that certain spring flowers can be toxic to both cats and dogs, warning pet parents in Canada.
 ## Key facts
-Tulips, lilies, daffodils, hyacinths, and crocuses contain compounds that may cause vomiting, drooling, diarrhea, and more severe organ damage if ingested. Cats are especially vulnerable to lilies.
-
+The report covers seasonal blooms that pose poisoning risks to dogs and cats. Location is Canada.
 ## What pet owners should do
-Keep bouquets and garden beds inaccessible, remove fallen petals, and contact a veterinarian or poison hotline if a pet chews or consumes any part of a plant.
-
+Owners should identify toxic spring flowers in gardens and bouquets, prevent pets from chewing plants, and seek veterinary care if exposure occurs.
 ## Related coverage
-- [Read the report on Yahoo Lifestyle Canada →](https://news.google.com/rss/articles/CBMisgFBVV95cUxOSW5FeWZzZzdIbEFDNkZTT0dqSnprYWdIMi05RE04MW4taWpNWjhkdFZUazdteUEyUVBuMzhSd2oyd2tFai1sbjU0S3FLT3VxRzN5Uk9uZXJrZW1hR19kQUtKQmdIRGlzUjM0YkVzbHJIeGRoNEZYZ2szSTJNWEZVempVYXF4YWY0ejdzT0E3bGN6cjVRTU41S3FyQ0w0OVJHRFNaUWl2Si0xM3RlTXlJRFlB?oc=5)
-- [Read PetPilot's coverage from Catster →](/news/2026-04-07-what-foods-are-toxic-to-cats-16-everyday-items-vet-reviewed-)
-- [Read PetPilot's coverage from The Spruce Pets →](/news/2026-04-19-are-tulips-toxic-to-cats---the-spruce-pets)
-- [Read PetPilot's coverage from Daily Paws →](/news/2026-04-20-these-5-flowers-are-toxic-to-cats-so-be-aware-as-spring-arri)
+[Read the report on Yahoo Lifestyle Canada →](https://news.google.com/rss/articles/CBMisgFBVV95cUxOSW5FeWZzZzdIbEFDNkZTT0dqSnprYWdIMi05RE04MW4taWpNWjhkdFZUazdteUEyUVBuMzhSd2oyd2tFai1sbjU0S3FLT3VxRzN5Uk9uZXJrZW1hR19kQUtKQmdIRGlzUjM0YkVzbHJIeGRoNEZYZ2szSTJNWEZVempVYXF4YWY0ejdzT0E3bGN6cjVRTU41S3FyQ0w0OVJHRFNaUWl2Si0xM3RlTXlJRFlB?oc=5)
+[Read PetPilot's coverage from Catster →](/news/2026-04-07-what-foods-are-toxic-to-cats-16-everyday-items-vet-reviewed-)
+[Read PetPilot's coverage from The Spruce Pets →](/news/2026-04-19-are-tulips-toxic-to-cats---the-spruce-pets)
+[Read PetPilot's coverage from Daily Paws →](/news/2026-04-20-these-5-flowers-are-toxic-to-cats-so-be-aware-as-spring-arri)

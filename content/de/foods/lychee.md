@@ -13,7 +13,9 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Das Fruchtfleisch in sehr kleinen Mengen ist wahrscheinlich unbedenklich; entfernen Sie Kern und Schale.
+    summary: >-
+      Das Fruchtfleisch in sehr kleinen Mengen ist wahrscheinlich unbedenklich;
+      entfernen Sie Kern und Schale.
   cats:
     status: limited
     severity: low
@@ -27,7 +29,7 @@ alternatives:
   - kiwi
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
@@ -59,10 +61,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckrige Fruchtrückstände können die Zähne beeinträchtigen.
-meta_title: Dürfen Hunde Litschi essen? Sicherheit, Risiken & Tierarzt-Rat
-meta_description: Ist Litschi für Hunde und Katzen sicher? Litschi ist für Hunde und Katzen eingeschränkt geeignet. Erfahren Sie Symptome, Verhaltensmaßnahmen und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Litschi essen? Sicherheit, Risiken & Tierarzt-Rat'
+meta_description: >-
+  Ist Litschi für Hunde und Katzen sicher? Litschi ist für Hunde und Katzen
+  eingeschränkt geeignet. Erfahren Sie Symptome, Verhaltensmaßnahmen und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Litschi
 
 Das Fruchtfleisch der Litschi ist in sehr kleinen Mengen wahrscheinlich unbedenklich, aber Kern und Schale sollten entfernt werden. Unreife Litschis können problematisch sein.

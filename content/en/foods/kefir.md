@@ -28,14 +28,16 @@ alternatives:
   - lactose-free-milk
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Use plain, unsweetened kefir. Avoid flavored, sugary, or alcoholic kefir.
-safe_amount: A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for cats.
+preparation_notes: 'Use plain, unsweetened kefir. Avoid flavored, sugary, or alcoholic kefir.'
+safe_amount: >-
+  A teaspoon for small dogs, up to a tablespoon for large dogs; a teaspoon for
+  cats.
 frequency: A few times per week.
 related_foods:
   - plain-yogurt
@@ -72,10 +74,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Protein and phosphorus content may need restriction.
-meta_title: Can Dogs Eat Kefir? Safety, Risks & Vet Advice
-meta_description: Is Kefir safe for dogs and cats? Kefir is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Kefir? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Kefir safe for dogs and cats? Kefir is safe for dogs and safe for cats.
+  Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Kefir
 
 Kefir is a fermented milk drink that is lower in lactose than regular milk and contains beneficial probiotics. Plain, unsweetened kefir can be a healthy occasional addition to a dog's or cat's diet in small amounts.

@@ -28,7 +28,9 @@ symptoms:
   - drooling
   - abdominal pain
   - depression
-what_to_do: Contact your vet, especially if seeds or pods were eaten. Provide supportive care as directed.
+what_to_do: >-
+  Contact your vet, especially if seeds or pods were eaten. Provide supportive
+  care as directed.
 alternatives:
   - roses
   - snapdragons
@@ -36,21 +38,23 @@ alternatives:
   - zinnias
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/wisteria
+    url: >-
+      https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/wisteria
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com/poison/wisteria/
+    url: 'https://www.petpoisonhelpline.com/poison/wisteria/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Wisteria Toxicity in Pets
-meta_description: Wisteria seeds and pods are toxic to dogs and cats. Learn symptoms, treatment, and safer climbing or flowering alternatives.
+meta_description: >-
+  Wisteria seeds and pods are toxic to dogs and cats. Learn symptoms, treatment,
+  and safer climbing or flowering alternatives.
 symptoms_severity:
   - symptom: vomiting
     severity: moderate
   - symptom: abdominal pain
     severity: moderate
 ---
-
 # Wisteria
 
 Wisteria is a beautiful flowering vine known for cascading purple or white blooms. The seeds and seed pods contain toxins that can cause significant gastrointestinal upset in pets. Many cases are mild, but large ingestions may require veterinary care.

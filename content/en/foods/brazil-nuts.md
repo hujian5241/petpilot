@@ -13,7 +13,7 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Not toxic, but very high in fat and selenium.
+    summary: 'Not toxic, but very high in fat and selenium.'
   cats:
     status: limited
     severity: low
@@ -30,13 +30,13 @@ alternatives:
   - blueberries
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Plain, unsalted brazil nuts only. Avoid regularly.
+preparation_notes: 'Plain, unsalted brazil nuts only. Avoid regularly.'
 safe_amount: Avoid feeding; one small piece very rarely.
 frequency: Avoid.
 condition_warnings:
@@ -82,10 +82,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Very fatty and hard to digest.
-meta_title: Can Dogs Eat Brazil Nuts? Safety, Risks & Vet Advice
-meta_description: Is Brazil Nuts safe for dogs and cats? Brazil Nuts is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Brazil Nuts? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Brazil Nuts safe for dogs and cats? Brazil Nuts is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Brazil Nuts
 
 Brazil nuts are not toxic to dogs, but they are extremely high in fat and contain a lot of selenium. Regular feeding can lead to obesity and pancreatitis.

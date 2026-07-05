@@ -17,7 +17,9 @@ safety:
   dogs:
     status: limited
     severity: moderate
-    summary: Tomato is generally safe, but pasta sauces usually contain garlic and onion.
+    summary: >-
+      Tomato is generally safe, but pasta sauces usually contain garlic and
+      onion.
   cats:
     status: limited
     severity: moderate
@@ -27,20 +29,22 @@ symptoms:
   - diarrhea
   - lethargy
   - pale gums
-what_to_do: If garlic or onion is in the ingredient list, contact a vet or poison helpline.
+what_to_do: >-
+  If garlic or onion is in the ingredient list, contact a vet or poison
+  helpline.
 alternatives:
   - pumpkin
   - brown-rice
   - chicken-breast
 sources:
   - name: ASPCA
-    url: https://www.aspca.org
+    url: 'https://www.aspca.org'
   - name: Pet Poison Helpline
-    url: https://www.petpoisonhelpline.com
+    url: 'https://www.petpoisonhelpline.com'
   - name: AKC
-    url: https://www.akc.org
+    url: 'https://www.akc.org'
   - name: AVMA
-    url: https://www.avma.org
+    url: 'https://www.avma.org'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: true
@@ -72,10 +76,11 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Salt content and acidic tomatoes can stress compromised kidneys.
-meta_title: Can Dogs Eat Pasta Sauce? Safety, Risks & Vet Advice
-meta_description: Is Pasta Sauce safe for dogs and cats? Pasta Sauce is limited for dogs and limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Pasta Sauce? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Pasta Sauce safe for dogs and cats? Pasta Sauce is limited for dogs and
+  limited for cats. Learn symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Pasta Sauce
 
 Plain, ripe tomatoes are not toxic to pets, but jarred and homemade pasta sauces are seasoned with garlic and onion, both of which are dangerous. The acidity of tomatoes can also upset sensitive stomachs. If a pet licks a small amount of plain tomato, monitoring is usually sufficient, but any sauce with alliums should be evaluated by a veterinarian.

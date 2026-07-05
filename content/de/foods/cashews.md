@@ -14,29 +14,33 @@ safety:
   dogs:
     status: limited
     severity: low
-    summary: Ungeröstete, ungesalzene Cashews sind in sehr kleinen Mengen unbedenklich.
+    summary: 'Ungeröstete, ungesalzene Cashews sind in sehr kleinen Mengen unbedenklich.'
   cats:
     status: limited
     severity: low
-    summary: Kleine Mengen können toleriert werden, sind aber nicht empfohlen.
+    summary: 'Kleine Mengen können toleriert werden, sind aber nicht empfohlen.'
 symptoms:
   - Magenverstimmung
   - Erbrechen
   - Durchfall
   - Pankreatitis
   - Gewichtszunahme
-what_to_do: Hören Sie auf, sie zu füttern, und beobachten Sie Ihr Tier. Kontaktieren Sie Ihren Tierarzt, wenn Erbrechen, Durchfall oder Lethargie anhält.
+what_to_do: >-
+  Hören Sie auf, sie zu füttern, und beobachten Sie Ihr Tier. Kontaktieren Sie
+  Ihren Tierarzt, wenn Erbrechen, Durchfall oder Lethargie anhält.
 alternatives:
   - peanut-butter
   - carrots
   - green-beans
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Naturbelassene, ungesalzene, geröstete oder rohe Cashews. Vermeiden Sie gesalzene, gewürzte oder schokoladenüberzogene Cashews.
+preparation_notes: >-
+  Naturbelassene, ungesalzene, geröstete oder rohe Cashews. Vermeiden Sie
+  gesalzene, gewürzte oder schokoladenüberzogene Cashews.
 safe_amount: Einige Cashews für große Hunde; ein Cashew für kleine Hunde.
 frequency: Selten aufgrund des hohen Fettgehalts.
 related_foods:
@@ -90,10 +94,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Sehr fettreich und schwer verdaulich.
-meta_title: Dürfen Hunde Cashews essen? Sicherheit, Risiken & Tierarzt-Tipps
-meta_description: Sind Cashews sicher für Hunde und Katzen? Cashews sind für Hunde begrenzt geeignet und für Katzen begrenzt geeignet. Erfahren Sie Symptome, was zu tun ist, und tierarztgeprüfte Alternativen.
+meta_title: 'Dürfen Hunde Cashews essen? Sicherheit, Risiken & Tierarzt-Tipps'
+meta_description: >-
+  Sind Cashews sicher für Hunde und Katzen? Cashews sind für Hunde begrenzt
+  geeignet und für Katzen begrenzt geeignet. Erfahren Sie Symptome, was zu tun
+  ist, und tierarztgeprüfte Alternativen.
 ---
-
 # Cashews
 
 Cashews sind in der Regel für Hunde ungefährlich, wenn sie naturbelassen und ungesalzen sind, aber sie sind fettreich. Zu viele können Magenbeschwerden verursachen oder zu Pankreatitis beitragen. Gesalzene oder gewürzte Cashews sollten vermieden werden.

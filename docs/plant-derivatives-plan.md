@@ -1,53 +1,53 @@
-# Plant Derivatives SEO Usage Plan
+# 植物衍生词 SEO 使用方案
 
-## Generated Assets
+## 已生成的资源
 
 1. **content/en/plant-derivatives.json**
-   - 128 plants → 5,631 derivative terms
-   - Includes question forms, animal-specific phrases, preparation states, and plant part variants
-   - Maps each derivative to the most specific existing plant slug
+   - 128 种植物 → 5,631 个衍生词
+   - 覆盖疑问句、动物对象短语、状态/场景、植物部位变体
+   - 每个衍生词都映射到最相关的现有植物 slug
 
 2. **content/en/plant-derivatives-high-value.json**
-   - 3,604 prioritized derivative terms
-   - Focused on high-search-intent question forms, animal-specific phrases, leaf/part toxicity questions, and form-part variants for toxic/high-priority plants
+   - 3,604 个高价值衍生词
+   - 聚焦于高搜索意图的疑问句式、动物对象短语、叶片/部位毒性问题，以及有毒/高优先级植物的部位变体
 
-## Recommended Usage (no new pages)
+## 推荐用法（不新建页面）
 
-### 1. Search Index Expansion
-- Load `plant-derivatives-high-value.json` into the search indexer alongside `food-derivatives-high-value.json`.
-- Each derivative points to its `target_slug` plant page.
-- Example: "are tulip leaves toxic to cats" → `/plants/tulips`
+### 1. 搜索索引扩展
+- 将 `plant-derivatives-high-value.json` 与 `food-derivatives-high-value.json` 一起加载到搜索索引中。
+- 每个衍生词指向其 `target_slug` 对应的植物页面。
+- 例如 "are tulip leaves toxic to cats" → `/plants/tulips`。
 
-### 2. Internal Auto-Linking
-- When rendering plant pages, news articles, and hazard guides, link the first occurrence of derivative terms to the target plant page.
-- Example: "lily pollen" links to `/plants/lily`, "sago palm seeds" links to `/plants/sago-palm`.
+### 2. 内容自动内链
+- 渲染植物页面、新闻文章和危害指南时，将首次出现的衍生词链接到对应植物页面。
+- 例如 "lily pollen" 链接到 `/plants/lily`，"sago palm seeds" 链接到 `/plants/sago-palm`。
 
-### 3. Search Autocomplete
-- Feed plant derivative terms into autocomplete, prioritizing question forms.
-- "Are lily leaves toxic to dogs" and "aloe for cats" are high-value autocomplete candidates.
+### 3. 搜索自动补全
+- 将植物衍生词输入自动补全，优先展示疑问句式。
+- "Are lily leaves toxic to dogs" 和 "aloe for cats" 是高价值的自动补全候选。
 
-### 4. Sitemap & Meta Enrichment
-- Include derivative terms in plant page meta descriptions and JSON-LD keywords.
-- Ensure target pages mention common part variants (leaves, pollen, bulbs, berries) since these are common toxic exposure routes.
+### 4. 站点地图与 Meta 丰富
+- 在植物页面的 meta 描述和 JSON-LD keywords 中加入衍生词。
+- 确保目标页面提及常见部位变体（leaves, pollen, bulbs, berries），因为这些是常见的毒性接触途径。
 
-### 5. FAQ Structured Data
-- Add FAQ schema to plant pages using derivative questions:
+### 5. FAQ 结构化数据
+- 使用衍生疑问句式为植物页面添加 FAQ 结构化数据：
   - "Are [plant] leaves toxic to dogs?"
   - "Is [plant] safe for cats?"
   - "Can dogs eat [plant] berries?"
-- Answers derived from existing safety summaries.
+- 答案从现有安全摘要推导。
 
-### 6. Related Searches Module
-- On each plant page, show a "People also ask" block with derivative questions.
-- Keep SEO value on the canonical plant page.
+### 6. 相关搜索模块
+- 在每个植物页面展示 "People also ask" 模块，包含衍生问题。
+- SEO 价值保留在 canonical 植物页面。
 
-## Next Implementation Steps
+## 下一步实施计划
 
-1. Merge plant derivatives into the search index builder.
-2. Add plant derivative questions to plant detail page FAQ schema.
-3. Add related-searches component to plant detail pages.
+1. 将植物衍生词合并到搜索索引构建器中。
+2. 在植物详情页的 FAQ 结构化数据中添加植物衍生问题。
+3. 在植物详情页添加相关搜索组件。
 
-## Caveats
+## 注意事项
 
-- Plant aliases include scientific names; some generated terms may use Latin names (e.g., "Cycad" for sago palm). Keep these in the full file but consider pruning non-English terms from the high-value subset.
-- Part-derivative terms like "asparagus fern berries" can be low-volume; prioritize toxic plants for form-part generation.
+- 植物别名包含学名，部分生成词可能使用拉丁名（如 sago palm 的 "Cycad"）。保留在全量文件中，但可考虑从高价值子集中剔除非英文术语。
+- 部位衍生词如 "asparagus fern berries" 搜索量可能较低，优先对有毒植物生成部位变体。

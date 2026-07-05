@@ -23,20 +23,24 @@ symptoms:
   - vomiting
   - diarrhea
   - biotin-deficiency
-what_to_do: If raw eggs were eaten, contact your vet to discuss salmonella and biotin deficiency risk.
+what_to_do: >-
+  If raw eggs were eaten, contact your vet to discuss salmonella and biotin
+  deficiency risk.
 alternatives:
   - chicken-breast
   - turkey
   - whitefish
 sources:
   - name: AKC
-    url: https://www.akc.org/expert-advice/nutrition/can-dogs-eat-eggs/
+    url: 'https://www.akc.org/expert-advice/nutrition/can-dogs-eat-eggs/'
   - name: AVMA
-    url: https://www.avma.org/
+    url: 'https://www.avma.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Cook eggs thoroughly without butter, oil, salt, or seasonings. Scrambled, boiled, or poached are all fine.
+preparation_notes: >-
+  Cook eggs thoroughly without butter, oil, salt, or seasonings. Scrambled,
+  boiled, or poached are all fine.
 safe_amount: One egg for a large dog; half an egg for a small dog or cat.
 frequency: A few times per week at most.
 related_foods:
@@ -53,11 +57,14 @@ condition_warnings:
       - dogs
       - cats
     recommendation: limit
-    reason: Whole eggs contain fat in the yolk; moderation is advised for pets with lipid disorders.
-meta_title: Can Dogs Eat Eggs? Safety, Risks & Vet Advice
-meta_description: Is Eggs safe for dogs and cats? Eggs is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+    reason: >-
+      Whole eggs contain fat in the yolk; moderation is advised for pets with
+      lipid disorders.
+meta_title: 'Can Dogs Eat Eggs? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Eggs safe for dogs and cats? Eggs is safe for dogs and safe for cats. Learn
+  symptoms, what to do, and vet-approved alternatives.
 ---
-
 # Eggs
 
 Cooked eggs are a nutritious, easily digestible source of protein, vitamins, and minerals. They are often recommended for pets recovering from digestive upset.

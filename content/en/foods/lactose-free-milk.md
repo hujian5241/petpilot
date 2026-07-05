@@ -28,13 +28,15 @@ alternatives:
   - cucumber
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Choose plain, unsweetened lactose-free milk. Avoid flavored or sweetened versions.
+preparation_notes: >-
+  Choose plain, unsweetened lactose-free milk. Avoid flavored or sweetened
+  versions.
 safe_amount: A few tablespoons for dogs; a tablespoon for cats.
 frequency: Occasionally.
 related_foods:
@@ -72,10 +74,12 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Phosphorus content may need restriction.
-meta_title: Can Dogs Eat Lactose-Free Milk? Safety, Risks & Vet Advice
-meta_description: Is Lactose-Free Milk safe for dogs and cats? Lactose-Free Milk is safe for dogs and safe for cats. Learn symptoms, what to do, and vet-approved alternatives.
+meta_title: 'Can Dogs Eat Lactose-Free Milk? Safety, Risks & Vet Advice'
+meta_description: >-
+  Is Lactose-Free Milk safe for dogs and cats? Lactose-Free Milk is safe for
+  dogs and safe for cats. Learn symptoms, what to do, and vet-approved
+  alternatives.
 ---
-
 # Lactose-Free Milk
 
 Lactose-free milk is a safer option for pets that enjoy milk because the lactose has been broken down. Most dogs and cats can handle small amounts without the diarrhea and gas associated with regular milk.

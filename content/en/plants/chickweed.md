@@ -29,16 +29,17 @@ alternatives:
   - lambs-quarters
 sources:
   - name: ASPCA
-    url: https://www.aspca.org/pet-care/animal-poison-control
+    url: 'https://www.aspca.org/pet-care/animal-poison-control'
   - name: American Kennel Club
-    url: https://www.akc.org/expert-advice/health/
+    url: 'https://www.akc.org/expert-advice/health/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Chickweed and Pets — Safety Guide | PetPilot
-meta_description: Chickweed is safe for dogs and cats. Learn about this edible lawn weed and how to share it safely with pets.
+meta_description: >-
+  Chickweed is safe for dogs and cats. Learn about this edible lawn weed and how
+  to share it safely with pets.
 ---
-
 # Chickweed
 
 Chickweed is a cool-season annual with small white star-shaped flowers. It is safe for pets and often enjoyed by chickens, rabbits, and grazing dogs.

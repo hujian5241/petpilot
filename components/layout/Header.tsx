@@ -1,17 +1,24 @@
 import { PawPrint } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/routing";
-import { getSiteConfig } from "@/lib/content";
+import { LocaleSwitcher, NavDropdown } from "./HeaderClient";
 import type { Locale } from "@/lib/i18n";
 
 interface HeaderProps {
   locale: Locale;
 }
 
-export async function Header({ locale }: HeaderProps) {
-  const config = await getSiteConfig(locale);
-  const t = await getTranslations("Header");
+export function Header({ locale }: HeaderProps) {
+  const t = useTranslations("Header");
+
+  const categoryItems = [
+    { href: "/foods", label: t("foods") },
+    { href: "/plants", label: t("plants") },
+    { href: "/medications", label: t("medications") },
+    { href: "/household-chemicals", label: t("householdChemicals") },
+    { href: "/pesticides", label: t("pesticides") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
@@ -21,9 +28,9 @@ export async function Header({ locale }: HeaderProps) {
           className="flex items-center gap-2 text-xl font-bold text-foreground"
         >
           <PawPrint className="h-7 w-7 text-primary" aria-hidden="true" />
-          <span>{config.name}</span>
+          <span className="hidden sm:inline">PetPilot</span>
         </Link>
-        <nav aria-label="Main" className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-5 text-sm font-medium md:flex">
           <Link
             href="/"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -36,17 +43,12 @@ export async function Header({ locale }: HeaderProps) {
           >
             {t("search")}
           </Link>
+          <NavDropdown label={t("categories")} items={categoryItems} />
           <Link
-            href="/foods"
+            href="/news"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
-            {t("foods")}
-          </Link>
-          <Link
-            href="/plants"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            {t("plants")}
+            {t("news")}
           </Link>
           <Link
             href="/emergency"
@@ -60,8 +62,11 @@ export async function Header({ locale }: HeaderProps) {
           >
             {t("about")}
           </Link>
+          <div className="h-5 w-px bg-border" aria-hidden="true" />
+          <LocaleSwitcher locale={locale} />
         </nav>
-        <div className="md:hidden">
+        <div className="flex items-center gap-3 md:hidden">
+          <LocaleSwitcher locale={locale} />
           <Link
             href="/search"
             className="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground"

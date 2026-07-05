@@ -28,11 +28,13 @@ alternatives:
   - blueberries
 sources:
   - name: American Kennel Club
-    url: https://www.akc.org/
+    url: 'https://www.akc.org/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: Entfernen Sie Schale und Kerne. Schneiden Sie das Fruchtfleisch in kleine Stücke.
+preparation_notes: >-
+  Entfernen Sie Schale und Kerne. Schneiden Sie das Fruchtfleisch in kleine
+  Stücke.
 safe_amount: Einige kleine Würfel für Hunde.
 frequency: Gelegentlicher Leckerbissen.
 condition_warnings:
@@ -48,10 +50,14 @@ condition_warnings:
       - cats
     recommendation: limit
     reason: Zuckerhaltige Fruchtrückstände können zur Bildung von Zahnbelag beitragen.
-meta_title: "Dürfen Hunde Cantaloupe essen? Sicherheit, Risiken und tierärztliche Empfehlungen"
-meta_description: "Ist Cantaloupe für Hunde und Katzen sicher? Cantaloupe ist für Hunde und Katzen unbedenklich. Erfahren Sie mehr über Symptome, was Sie tun sollten, und tierarztgeprüfte Alternativen."
+meta_title: >-
+  Dürfen Hunde Cantaloupe essen? Sicherheit, Risiken und tierärztliche
+  Empfehlungen
+meta_description: >-
+  Ist Cantaloupe für Hunde und Katzen sicher? Cantaloupe ist für Hunde und
+  Katzen unbedenklich. Erfahren Sie mehr über Symptome, was Sie tun sollten, und
+  tierarztgeprüfte Alternativen.
 ---
-
 # Cantaloupe
 
 Cantaloupe ist für Hunde in Maßen sicher. Sie ist kalorienarm und hat einen hohen Wasseranteil, wodurch sie sich als erfrischender Leckerbissen eignet.
