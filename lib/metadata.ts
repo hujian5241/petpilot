@@ -73,7 +73,6 @@ export function buildSiteMetadata(
   locale: Locale = defaultLocale
 ): Metadata {
   const path = "/";
-  const baseUrl = getBaseUrl(config);
 
   return {
     title: {
@@ -97,30 +96,6 @@ export function buildSiteMetadata(
       images: [config.default_og_image],
     },
     alternates: buildAlternates(path, config, locale),
-    other: {
-      "json-ld": JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            name: config.name,
-            url: baseUrl,
-            potentialAction: {
-              "@type": "SearchAction",
-              target: `${baseUrl}/${locale}/search?q={search_term_string}`,
-              "query-input": "required name=search_term_string",
-            },
-          },
-          {
-            "@type": "Organization",
-            name: config.name,
-            url: baseUrl,
-            logo: `${baseUrl}/images/og-default.svg`,
-            email: config.contact_email,
-          },
-        ],
-      }).replace(/</g, "\\u003c"),
-    },
   };
 }
 

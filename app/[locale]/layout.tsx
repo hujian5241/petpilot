@@ -31,6 +31,35 @@ export async function generateStaticParams() {
   return locales.map((locale: Locale) => ({ locale }));
 }
 
+function buildSiteJsonLd(config: Awaited<ReturnType<typeof getSiteConfig>>, locale: Locale) {
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: config.name,
+        url: baseUrl,
+        potentialAction: {
+          "@type": "SearchAction",
+          target: `${baseUrl}/${locale}/search?q={search_term_string}`,
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "Organization",
+        name: config.name,
+        url: baseUrl,
+        logo: `${baseUrl}/images/og-default.svg`,
+        email: config.contact_email,
+      },
+    ],
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -46,6 +75,8 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const isJapanese = locale === "ja";
+  const config = await getSiteConfig(locale as Locale);
+  const siteJsonLd = buildSiteJsonLd(config, locale as Locale);
 
   return (
     <html lang={locale} className="h-full">
@@ -70,6 +101,12 @@ export default async function LocaleLayout({
             />
           </>
         )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <GoogleAnalytics />
       </head>
       <body className={`min-h-full flex flex-col ${isJapanese ? "font-sans-jp" : "font-sans"}`}>
