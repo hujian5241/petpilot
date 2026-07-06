@@ -9,6 +9,7 @@ import {
   getAllMedications,
   getAllPesticides,
   getAllPlants,
+  getAllCategories,
   getSiteConfig,
 } from "@/lib/content";
 import { buildSearchIndex } from "@/lib/search";
@@ -55,7 +56,7 @@ interface SearchPageProps {
 
 export default async function SearchPage({ params }: SearchPageProps) {
   const { locale } = await params;
-  const [foods, plants, medications, householdChemicals, pesticides, config] =
+  const [foods, plants, medications, householdChemicals, pesticides, config, categories] =
     await Promise.all([
       getAllFoods(locale),
       getAllPlants(locale),
@@ -63,6 +64,7 @@ export default async function SearchPage({ params }: SearchPageProps) {
       getAllHouseholdChemicals(locale),
       getAllPesticides(locale),
       getSiteConfig(locale),
+      getAllCategories(locale),
     ]);
   const searchIndex = buildSearchIndex(
     foods,
@@ -78,6 +80,14 @@ export default async function SearchPage({ params }: SearchPageProps) {
         locale={locale}
         initialIndex={searchIndex}
         contactEmail={config.contact_email}
+        stats={{
+          categories: categories.length,
+          foods: foods.length,
+          plants: plants.length,
+          medications: medications.length,
+          householdChemicals: householdChemicals.length,
+          pesticides: pesticides.length,
+        }}
       />
     </Suspense>
   );

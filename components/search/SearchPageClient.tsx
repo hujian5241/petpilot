@@ -28,6 +28,14 @@ interface SearchPageClientProps {
   locale: Locale;
   initialIndex: SearchIndexItem[];
   contactEmail?: string;
+  stats?: {
+    categories: number;
+    foods: number;
+    plants: number;
+    medications: number;
+    householdChemicals: number;
+    pesticides: number;
+  };
 }
 
 const routePrefix: Record<SearchIndexItem["type"], string> = {
@@ -65,11 +73,17 @@ export function SearchPageClient({
   locale,
   initialIndex,
   contactEmail = "hello@petpilot.io",
+  stats,
 }: SearchPageClientProps) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
   const trimmedQuery = query.trim().toLowerCase();
   const t = useTranslations("SearchPage");
+  const tHome = useTranslations("HomePage");
+
+  const totalItems = stats
+    ? stats.foods + stats.plants + stats.medications + stats.householdChemicals + stats.pesticides
+    : initialIndex.length;
 
   const nameFuse = new Fuse(initialIndex, {
     keys: ["name", "aliases"],
@@ -117,6 +131,20 @@ export function SearchPageClient({
       <div className="mt-6">
         <SearchBar locale={locale} />
       </div>
+
+      {stats && (
+        <p className="mt-4 text-center text-sm text-muted-foreground">
+          {tHome("stats", {
+            categories: stats.categories,
+            total: totalItems,
+            foods: stats.foods,
+            plants: stats.plants,
+            medications: stats.medications,
+            householdChemicals: stats.householdChemicals,
+            pesticides: stats.pesticides,
+          })}
+        </p>
+      )}
 
       {query && (
         <div className="mt-8">
