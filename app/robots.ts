@@ -14,5 +14,6 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       allow: "/",
     },
     sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/news-sitemap.xml`],
+    host: baseUrl,
   };
 }

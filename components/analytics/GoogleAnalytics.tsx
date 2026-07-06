@@ -3,7 +3,9 @@
 import Script from "next/script";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
-const GOOGLE_SITE_VERIFICATION = "ug9QYH4Ge0FaqJ0IaECwO4ny1ZjU9n2lRSh2cIMqCgQ";
+const GOOGLE_SITE_VERIFICATION =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+  "ug9QYH4Ge0FaqJ0IaECwO4ny1ZjU9n2lRSh2cIMqCgQ";
 
 export function GoogleAnalytics() {
   if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === "G-XXXXXXXXXX") {
@@ -24,6 +26,9 @@ export function GoogleAnalytics() {
           gtag('config', '${GA_MEASUREMENT_ID}', {
             page_title: document.title,
             page_location: window.location.href,
+            cookie_flags: 'SameSite=None;Secure',
+            transport_url: 'https://www.google-analytics.com',
+            send_page_view: true,
           });
         `}
       </Script>
