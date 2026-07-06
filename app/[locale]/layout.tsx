@@ -6,10 +6,14 @@ import { getMessages } from "next-intl/server";
 import "../globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { getSiteConfig } from "@/lib/content";
 import { buildSiteMetadata } from "@/lib/metadata";
-import { locales, type Locale, defaultLocale } from "@/lib/i18n";
+import { locales, type Locale } from "@/lib/i18n";
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
+const GOOGLE_SITE_VERIFICATION =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+  "ug9QYH4Ge0FaqJ0IaECwO4ny1ZjU9n2lRSh2cIMqCgQ";
 
 export async function generateMetadata({
   params,
@@ -24,12 +28,12 @@ export async function generateMetadata({
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
+    verification: {
+      google: GOOGLE_SITE_VERIFICATION,
+    },
   };
 }
 
-export async function generateStaticParams() {
-  return locales.map((locale: Locale) => ({ locale }));
-}
 
 function buildSiteJsonLd(config: Awaited<ReturnType<typeof getSiteConfig>>, locale: Locale) {
   const baseUrl = config.base_url.endsWith("/")
@@ -80,36 +84,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="h-full">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {isJapanese && (
-          <>
-            {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-            <link
-              href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
-              rel="stylesheet"
-            />
-          </>
-        )}
+      <body className={`min-h-full flex flex-col ${isJapanese ? "font-sans-jp" : "font-sans"}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <GoogleAnalytics />
-      </head>
-      <body className={`min-h-full flex flex-col ${isJapanese ? "font-sans-jp" : "font-sans"}`}>
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main-content"
@@ -121,6 +102,27 @@ export default async function LocaleLayout({
           <main id="main-content" className="flex-1">{children}</main>
           <Footer locale={locale as Locale} />
         </NextIntlClientProvider>
+        {GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX" && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_MEASUREMENT_ID}', {
+                    page_title: document.title,
+                    page_location: window.location.href,
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   );

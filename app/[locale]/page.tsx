@@ -20,10 +20,14 @@ import {
   getPlantSlugs,
 } from "@/lib/content";
 import { getAllNewsFrontmatterCached } from "@/lib/news-content";
-import type { Locale } from "@/lib/i18n";
+import { locales, type Locale } from "@/lib/i18n";
 
 interface HomePageProps {
   params: Promise<{ locale: Locale }>;
+}
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
