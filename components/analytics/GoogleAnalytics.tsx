@@ -26,9 +26,6 @@ export function GoogleAnalytics() {
           gtag('config', '${GA_MEASUREMENT_ID}', {
             page_title: document.title,
             page_location: window.location.href,
-            cookie_flags: 'SameSite=None;Secure',
-            transport_url: 'https://www.google-analytics.com',
-            send_page_view: true,
           });
         `}
       </Script>
