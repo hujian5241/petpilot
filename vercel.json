@@ -4,5 +4,29 @@
       "path": "/api/cron/news",
       "schedule": "0 8 * * 1"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://petpilot.top/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.petpilot.top"
+        }
+      ],
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://petpilot.top/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "petpilot-mvp.vercel.app"
+        }
+      ],
+      "permanent": true
+    }
   ]
 }
