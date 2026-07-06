@@ -40,7 +40,6 @@ preparation_notes: >-
 safe_amount: A few tablespoons for dogs; a tablespoon for cats.
 frequency: Occasionally.
 related_foods:
-  - cow-milk
   - goat-milk
   - plain-yogurt
 condition_warnings:

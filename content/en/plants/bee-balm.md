@@ -25,7 +25,7 @@ symptoms: []
 what_to_do: No action needed. Plant freely in pet-friendly gardens.
 alternatives:
   - echinacea
-  - sunflower
+  - sunflowers
   - dandelion
 sources:
   - name: ASPCA

@@ -50,7 +50,6 @@ last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 related_foods:
   - burgers
-  - hot-dog
   - salad-dressing
 condition_warnings:
   - condition: Chronic kidney disease

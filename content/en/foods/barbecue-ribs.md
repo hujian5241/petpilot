@@ -52,7 +52,6 @@ requires_emergency_visit: true
 related_foods:
   - fried-chicken
   - burgers
-  - hot-dog
 meta_title: 'Can Dogs Eat Barbecue Ribs? Safety, Risks & Vet Advice'
 meta_description: >-
   Is Barbecue Ribs safe for dogs and cats? Barbecue Ribs is limited for dogs and

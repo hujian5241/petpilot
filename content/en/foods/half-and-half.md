@@ -43,7 +43,6 @@ safe_amount: None is best. A small accidental lick is usually not harmful.
 frequency: Rarely or never.
 related_foods:
   - cream
-  - whole-milk
 condition_warnings:
   - condition: Pancreatitis
     appliesTo:

@@ -24,7 +24,7 @@ symptoms: []
 what_to_do: No action needed. Use supplements only under veterinary guidance.
 alternatives:
   - bee-balm
-  - sunflower
+  - sunflowers
   - dandelion
 sources:
   - name: ASPCA

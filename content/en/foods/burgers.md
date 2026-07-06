@@ -51,7 +51,6 @@ safe_amount: >-
   cat.
 frequency: Occasional.
 related_foods:
-  - hot-dog
   - sandwich
   - barbecue-ribs
 condition_warnings:

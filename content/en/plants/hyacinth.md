@@ -55,8 +55,8 @@ meta_description: >-
   Hyacinths can irritate pets' mouths and stomachs. Learn symptoms, care, and
   safe flowering alternatives.
 related_plants:
-  - tulip
-  - daffodil
+  - tulips
+  - daffodils
 ---
 # Hyacinth
 

@@ -40,7 +40,6 @@ what_to_do: >-
 alternatives:
   - dandelion
   - white-clover
-  - sunflower
 sources:
   - name: ASPCA
     url: 'https://www.aspca.org/pet-care/animal-poison-control'

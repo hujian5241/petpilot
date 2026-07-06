@@ -13,7 +13,7 @@ tags:
 safety:
   dogs:
     status: safe
-    severity: moderate
+    severity: low
     summary: >-
       Safe when prescribed by a veterinarian and dosed correctly; dangerous in
       overdose, causing GI ulcers, kidney injury, and bleeding.

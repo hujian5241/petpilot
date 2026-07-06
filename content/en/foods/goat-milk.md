@@ -43,7 +43,6 @@ safe_amount: >-
   for cats.
 frequency: Occasionally if tolerated.
 related_foods:
-  - cow-milk
   - kefir
   - lactose-free-milk
 condition_warnings:
