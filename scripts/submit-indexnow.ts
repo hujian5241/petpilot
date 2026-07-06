@@ -12,12 +12,14 @@ async function fetchUrls(): Promise<string[]> {
   }
   const xml = await res.text();
   const matches = xml.matchAll(/<loc>([^<]+)<\/loc>/g);
-  return Array.from(matches).map((m) => m[1].trim());
+  return Array.from(matches)
+    .map((m) => m[1]?.trim())
+    .filter((url): url is string => typeof url === "string" && url.length > 0);
 }
 
 async function submitIndexNow(urls: string[]) {
   const endpoint = `https://www.bing.com/indexnow?url=${encodeURIComponent(
-    urls[0]
+    urls[0] ?? ""
   )}&key=${KEY}`;
   // IndexNow also supports bulk submission via POST to api.indexnow.org
   const bulkEndpoint = "https://api.indexnow.org/indexnow";
