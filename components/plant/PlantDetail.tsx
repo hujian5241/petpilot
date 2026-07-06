@@ -8,6 +8,7 @@ import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
 import { getEmergencyInfo } from "@/lib/content";
+import { buildGuideFaqSchema } from "@/lib/jsonld";
 import type { PlantEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
 
@@ -29,9 +30,16 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
   const pageUrl = `/${locale}/plants/${plant.slug}`;
   const t = await getTranslations("PlantDetail");
   const tNav = await getTranslations("Header");
+  const jsonLd = buildGuideFaqSchema(plant);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Breadcrumb
         locale={locale}
         items={[
@@ -85,12 +93,16 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
         <h2>{t("safeForCats", { name: plant.name })}</h2>
         <p>{plant.safety.cats.summary}</p>
 
-        <h2>{t("symptoms")}</h2>
-        <ul>
-          {plant.symptoms.map((symptom) => (
-            <li key={symptom}>{symptom}</li>
-          ))}
-        </ul>
+        {plant.symptoms.length > 0 && (
+          <>
+            <h2>{t("symptoms")}</h2>
+            <ul>
+              {plant.symptoms.map((symptom) => (
+                <li key={symptom}>{symptom}</li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <h2>{t("whatIfAte", { name: plant.name })}</h2>
         <p>{plant.what_to_do}</p>
@@ -115,40 +127,48 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
           )}
         </div>
 
-        <h2>{t("safeAlternatives")}</h2>
-        <ul>
-          {plant.alternatives.map((alt) => (
-            <li key={alt}>
-              <Link href={`/plants/${alt}`} className="text-primary hover:text-primary-dark">
-                {alt
-                  .split("-")
-                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                  .join(" ")}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {plant.alternatives.length > 0 && (
+          <>
+            <h2>{t("safeAlternatives")}</h2>
+            <ul>
+              {plant.alternatives.map((alt) => (
+                <li key={alt}>
+                  <Link href={`/plants/${alt}`} className="text-primary hover:text-primary-dark">
+                    {alt
+                      .split("-")
+                      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                      .join(" ")}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
-        <h2>{t("sources")}</h2>
-        <ul>
-          {plant.sources.map((source) => (
-            <li key={source.name}>
-              {source.url ? (
-                <a
-                  href={source.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary hover:text-primary-dark"
-                >
-                  {source.name}
-                  <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-                </a>
-              ) : (
-                source.name
-              )}
-            </li>
-          ))}
-        </ul>
+        {plant.sources.length > 0 && (
+          <>
+            <h2>{t("sources")}</h2>
+            <ul>
+              {plant.sources.map((source) => (
+                <li key={source.name}>
+                  {source.url ? (
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-primary hover:text-primary-dark"
+                    >
+                      {source.name}
+                      <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                    </a>
+                  ) : (
+                    source.name
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <h2>{t("vetsNote")}</h2>
         <p>{t("vetsNoteText")}</p>

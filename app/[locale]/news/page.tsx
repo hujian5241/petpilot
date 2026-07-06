@@ -10,7 +10,7 @@ import { SourceFilter } from "@/components/news/SourceFilter";
 import { FilterGroup } from "@/components/news/FilterGroup";
 import { ClearFilters } from "@/components/news/ClearFilters";
 import {
-  getAllNews,
+  getAllNewsFrontmatterCached,
   groupNewsByMonth,
   getUniqueNewsValues,
   loadClusters,
@@ -18,7 +18,7 @@ import {
 } from "@/lib/news-content";
 import { getSiteConfig } from "@/lib/content";
 import type { Locale } from "@/lib/i18n";
-import type { NewsSeverity, NewsCluster, NewsFile } from "@/lib/news-types";
+import type { NewsSeverity, NewsCluster, NewsItem } from "@/lib/news-types";
 
 interface NewsPageProps {
   params: Promise<{ locale: Locale }>;
@@ -138,12 +138,25 @@ function buildWebSiteJsonLd(baseUrl: string) {
   };
 }
 
-export async function generateMetadata({ params }: NewsPageProps): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: NewsPageProps): Promise<Metadata> {
   const { locale } = await params;
   const config = await getSiteConfig(locale);
   const t = await getTranslations({ locale, namespace: "NewsPage" });
+
+  const {
+    month,
+    severity,
+    source,
+    species,
+    substance,
+  } = await searchParams;
+
+  const hasActiveFilters = Boolean(
+    month || severity || source || species || substance
+  );
+
   const ogImage = `${config.base_url}/images/og-default.svg`;
-  return {
+  const metadata: Metadata = {
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(config.base_url),
@@ -162,6 +175,15 @@ export async function generateMetadata({ params }: NewsPageProps): Promise<Metad
       images: [ogImage],
     },
   };
+
+  if (hasActiveFilters) {
+    metadata.robots = {
+      index: false,
+      follow: true,
+    };
+  }
+
+  return metadata;
 }
 
 function formatMonthLabel(month: string, locale: Locale): string {
@@ -185,7 +207,7 @@ function parseFilterParam(value: string | undefined): string[] {
 }
 
 function matchesFilters(
-  item: NewsFile,
+  item: NewsItem,
   filters: {
     severities: string[];
     sources: string[];
@@ -238,7 +260,7 @@ function buildHref(
 }
 
 function buildMonthItems(
-  items: NewsFile[],
+  items: NewsItem[],
   clusterMap: Map<string, NewsCluster>
 ): MonthItem[] {
   const seenClusters = new Set<string>();
@@ -259,7 +281,7 @@ function buildMonthItems(
 }
 
 function groupMonthItemsByMonth(
-  grouped: Record<string, NewsFile[]>,
+  grouped: Record<string, NewsItem[]>,
   clusterMap: Map<string, NewsCluster>
 ): Record<string, MonthItem[]> {
   return Object.fromEntries(
@@ -288,7 +310,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
   const substanceFilter = parseFilterParam(rawSubstance);
 
   const [allNews, config, clusters] = await Promise.all([
-    getAllNews(locale),
+    getAllNewsFrontmatterCached(locale),
     getSiteConfig(locale),
     loadClusters(locale),
   ]);
@@ -360,7 +382,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
           __html: JSON.stringify([
             buildWebSiteJsonLd(config.base_url),
             buildBreadcrumbJsonLd(locale, config.base_url),
-          ]),
+          ]).replace(/</g, "\\u003c"),
         }}
       />
 
@@ -489,7 +511,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
         <h2 className="text-2xl font-semibold text-foreground">{t("subscribeTitle")}</h2>
         <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">{t("subscribeDescription")}</p>
         <a
-          href={`${config.base_url}/sitemaps/sitemap-${locale}.xml`}
+          href="/sitemap.xml"
           className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
         >
           {t("rssCta")}

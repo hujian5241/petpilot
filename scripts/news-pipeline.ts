@@ -3,6 +3,8 @@ import { promisify } from "util";
 
 const execFileAsync = promisify(execFile);
 
+const STAGE_TIMEOUT_MS = 10 * 60 * 1000; // 10 minutes per stage
+
 interface PipelineResult {
   success: boolean;
   stage: string;
@@ -37,6 +39,7 @@ export async function runNewsPipeline(): Promise<PipelineResult[]> {
       const { stdout, stderr } = await execFileAsync(stage.command, stage.args, {
         env: { ...process.env, ...stage.env },
         maxBuffer: 10 * 1024 * 1024,
+        timeout: STAGE_TIMEOUT_MS,
       });
       results.push({
         success: true,

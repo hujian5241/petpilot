@@ -19,17 +19,22 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 985fde2d5925f80a
-updatedAt: '2026-07-05T17:50:45.156Z'
+updatedAt: '2026-07-05T21:57:50.540Z'
 ---
 ## What happened
-Mamavation released a purchasing guide to help consumers choose natural, organic and non-toxic dog food.
+Mamavation published a purchasing guide to help dog owners choose natural, organic, and non-toxic dog food and avoid harmful chemicals.
 
 ## Key facts
-The guide focuses on dog food and evaluates ingredients and chemical contaminants such as PFAS and pesticides, aiming to reduce toxin exposure.
+- The guide focuses on dogs.
+- It evaluates brands and ingredients for pesticides, additives, and PFAS risks.
+- Recommended options emphasize organic, minimally processed formulas.
 
 ## What pet owners should do
-Use the guide to compare brands, prioritize organic or low-toxin options, and read ingredient labels carefully.
+- Read ingredient labels and look for certified organic or additive-free foods.
+- Use the guide to compare safer brands and formulations.
+- Stay alert for new recalls and emerging safety research.
 
 ## Related coverage
-[Read the report on 毎日新聞 →](https://news.google.com/rss/articles/CBMic0FVX3lxTE95TkZlN291LW16cWdoMkxnYzIzb2tyX01abWREMVFjd0NDclQ4ME0zd2VJc1hBUW92aFFFTXppQmZKUURSSmo2UE9UQnUtMnN1cXNmaFR6dW5lN2lMbzdNUUJLSEQ1OXNzQUppUHpYcGcwRmM?oc=5)
-[Read PetPilot's coverage from Irish Mirror →](/news/2026-03-30-dog-and-cat-owners-urged-to-be-wary-of-toxic-easter-foods---)
+- [Read the report on Mamavation →](https://news.google.com/rss/articles/CBMinAFBVV95cUxQOUg0MERYTHZMaTZSbndtbDFtOElaYmZIUjExTi14Y0tFaFIwLV8tSVhWWEJsSS1PR0hvdnBTR00xbHNHZkFfdEpmelZYc3FQZGZiVU14aWlrbVJwVGVtY2xSVEdma1JSQ2JLQVZRTl8xRGpETFJtTnp1UXZaLWZFdURUTWhrS0xWVThlVEFuQ0VKTTRDQ3RldTRpdEI?oc=5)
+- [Read PetPilot's coverage from 毎日新聞 →](/news/2026-03-02-wide-range-of-dog-and-cat-food-in-japan-found-to-contain-tox)
+- [Read PetPilot's coverage from Irish Mirror →](/news/2026-03-30-dog-and-cat-owners-urged-to-be-wary-of-toxic-easter-foods---)

@@ -103,6 +103,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     categoryPesticides.length > 0;
 
   const t = await getTranslations({ locale, namespace: "SearchPage" });
+  const tCategory = await getTranslations({ locale, namespace: "CategoryPage" });
   const tBadge = await getTranslations("SafetyBadge");
 
   const statusLabels: Record<StatusGroup, string> = {
@@ -159,7 +160,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       )}
 
       {!hasItems && (
-        <p className="mt-8 text-muted-foreground">No items in this category yet.</p>
+        <p className="mt-8 text-muted-foreground">{tCategory("noItems")}</p>
       )}
     </div>
   );

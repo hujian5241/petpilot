@@ -22,19 +22,20 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 49b358da178ecc3b
-updatedAt: '2026-07-05T17:49:07.858Z'
+updatedAt: '2026-07-05T21:56:13.790Z'
 ---
 ## What happened
-Derry Journal warned that daffodils can be dangerously toxic to dogs and cats.
+The Derry Journal warned pet owners that daffodils can be dangerously toxic to dogs and cats.
 
 ## Key facts
-- Affected animals: dogs, cats
-- Popular spring bulbs, flowers, and leaves can cause poisoning if ingested.
+- Affected animals: dogs and cats.
+- All parts of the plant are toxic, with bulbs especially dangerous.
+- Ingestion can cause vomiting, drooling, abdominal pain, and heart rhythm issues.
 
 ## What pet owners should do
-Prevent pets from digging up or eating daffodil bulbs, flowers, or leaves, and contact a vet if ingestion occurs.
+Prevent pets from digging up or chewing daffodil bulbs, keep cut flowers out of reach, and seek veterinary care immediately if ingestion occurs.
 
 ## Related coverage
-[Read the report on Derry Journal →](https://news.google.com/rss/articles/CBMiugFBVV95cUxQVWtvQUdBTFRJa01sSGM0cUdDNGpEYkpiVDJEQXdhckZfYUNCMVlFRWt4bVZFMkxLUEFZR2FKMkxubmdxZGJQcmwyWWlRakh3UXBoTUJZV1N6SVhwSzluMVhRUmhFb09fSDdkRlBNNk10M2FFclhpWl8zR2hYUVF2UDRsN1hlNXU3UXUwbHJkdHJsZFNHMHRZZDRDd2VjNXJVTnRPbUxIYXE2Q25naEt3U201ZGFTMWV5VEE?oc=5)
-[Read PetPilot's coverage from Vet Times →](/news/2026-02-10-rhododendron-l-and-azalea-toxic-to-dogs-toxic-to-cats---vet-)
-[Read PetPilot's coverage from Wales Online →](/news/2026-02-06-do-not-delay-vet-warning-to-dog-owners-over-lesser-known-tox)
+- [Read the report on Derry Journal →](https://news.google.com/rss/articles/CBMiugFBVV95cUxQVWtvQUdBTFRJa01sSGM0cUdDNGpEYkpiVDJEQXdhckZfYUNCMVlFRWt4bVZFMkxLUEFZR2FKMkxubmdxZGJQcmwyWWlRakh3UXBoTUJZV1N6SVhwSzluMVhRUmhFb09fSDdkRlBNNk10M2FFclhpWl8zR2hYUVF2UDRsN1hlNXU3UXUwbHJkdHJsZFNHMHRZZDRDd2VjNXJVTnRPbUxIYXE2Q25naEt3U201ZGFTMWV5VEE?oc=5)
+- [Read PetPilot's coverage on rhododendron/azalea toxicity →](/news/2026-02-10-rhododendron-l-and-azalea-toxic-to-dogs-toxic-to-cats---vet-)
+- [Read PetPilot's coverage on the lesser-known toxin warning →](/news/2026-02-06-do-not-delay-vet-warning-to-dog-owners-over-lesser-known-tox)

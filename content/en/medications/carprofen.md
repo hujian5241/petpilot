@@ -12,11 +12,11 @@ tags:
   - nsaid
 safety:
   dogs:
-    status: toxic
-    severity: high
+    status: limited
+    severity: moderate
     summary: >-
-      Safe at the prescribed veterinary dose, but overdoses or long-term use can
-      cause gastrointestinal ulcers, liver damage, and acute kidney failure.
+      FDA-approved for dogs at veterinary-prescribed doses. Overdoses or
+      long-term use can cause GI ulcers, liver damage, and acute kidney injury.
   cats:
     status: toxic
     severity: critical

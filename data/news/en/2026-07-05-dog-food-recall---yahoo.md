@@ -16,27 +16,26 @@ summary: >-
   Dog Food Recall Yahoo Pet owners should be aware of this incident and take
   precautions. Affected animals: dogs.
 relatedSlugs: {}
-updatedAt: '2026-07-05T17:54:06.301Z'
+updatedAt: '2026-07-05T22:02:17.349Z'
 reviewed: false
 clusterId: 76d6fea79f714a5a
 ---
 ## What happened
-Mars Petcare is voluntarily recalling two lots of PEDIGREE High Protein Chopped Chicken & Duck Flavor wet dog food. The recall follows reports that the canned product may contain foreign material—specifically sharp metal and plastic—that could pose a safety risk to dogs. The issue is described as potentially related to fraudulent distribution of the product. The FDA and several news outlets announced the recall on July 2–3, 2026.
+Mars Petcare is voluntarily recalling two lots of PEDIGREE® High Protein Chopped Chicken & Duck Flavor canned wet dog food. The FDA announced the recall after the product was found to potentially contain sharp metal and plastic foreign material. Some reports tie the issue to possible fraudulent distribution of the affected lots. The recalled canned food was sold nationwide.
 
 ## Key facts
-- Product: PEDIGREE High Protein Chopped Chicken & Duck Flavor wet dog food (canned)
-- Affected animals: Dogs
-- Reason: Possible contamination with foreign material, including metal and plastic
-- Scope: Two lots sold nationwide
-- Status: Voluntary recall
+- **Product:** PEDIGREE® High Protein Chopped Chicken & Duck Flavor wet dog food (canned).
+- **Reason:** Potential presence of metal and plastic foreign material.
+- **Scope:** Two lots; sold nationwide.
+- **Affected pets:** Dogs.
+- **Risk:** No illnesses were reported in the provided coverage, but foreign material can cause mouth, throat, or internal injuries.
 
 ## What pet owners should do
-- Stop feeding the recalled product immediately.
-- Check lot codes and expiration dates on Pedigree cans in your home.
-- Do not let pets consume food from the affected lots.
-- Contact the place of purchase or Mars Petcare for refund or replacement information.
-- Monitor dogs for signs of illness or injury and contact a veterinarian if concerns arise.
-- Visit FDA.gov or Pedigree's official channels for specific lot numbers and updates.
+- Check cans for the recalled product and lot information.
+- Stop feeding the product immediately and keep it away from dogs.
+- Return recalled cans to the place of purchase or dispose of them safely.
+- Monitor dogs for signs of injury or distress—such as drooling, gagging, vomiting, loss of appetite, or abdominal pain—and contact a veterinarian if symptoms appear.
+- Keep receipts and packaging in case a vet visit is needed.
 
 ## Related coverage
 

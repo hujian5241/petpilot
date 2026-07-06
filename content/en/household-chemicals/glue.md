@@ -78,3 +78,13 @@ last_reviewed: '2026-07-01'
 vet_reviewed: false
 ---
 
+
+# Glue and Adhesives
+
+Most household glues, such as white school glue and paste, are low in toxicity but can still cause problems if a pet eats them or gets them stuck to fur or skin. The main risks are gastrointestinal irritation and physical blockage.
+
+**Super glue and other fast-bonding adhesives** can adhere to a pet’s mouth, tongue, or fur. Do not try to pull glued areas apart, as this can tear skin. Instead, rinse with warm water and contact a veterinarian.
+
+**Gorilla Glue and similar polyurethane adhesives** are especially dangerous because they expand in the stomach and can form a solid mass that requires surgical removal.
+
+If your pet swallows any glue, contact your veterinarian or a pet poison control center. Do not induce vomiting unless instructed. Keep craft supplies and repair products stored securely away from curious pets.

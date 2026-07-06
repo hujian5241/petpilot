@@ -11,14 +11,50 @@ import type {
 } from "./types";
 import { locales, type Locale, defaultLocale } from "./i18n";
 
+function getBaseUrl(config: SiteConfig): string {
+  return config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+}
+
+function buildOpenGraph(
+  title: string,
+  description: string,
+  path: string,
+  config: SiteConfig,
+  locale: Locale
+) {
+  const baseUrl = getBaseUrl(config);
+  return {
+    type: "article" as const,
+    title,
+    description,
+    url: `${baseUrl}/${locale}${path}`,
+    locale,
+    images: [config.default_og_image],
+    siteName: config.name,
+  };
+}
+
+function buildTwitter(
+  title: string,
+  description: string,
+  config: SiteConfig
+) {
+  return {
+    card: "summary_large_image" as const,
+    title,
+    description,
+    images: [config.default_og_image],
+  };
+}
+
 function buildAlternates(
   path: string,
   config: SiteConfig,
   locale: Locale
 ): NonNullable<Metadata["alternates"]> {
-  const baseUrl = config.base_url.endsWith("/")
-    ? config.base_url.slice(0, -1)
-    : config.base_url;
+  const baseUrl = getBaseUrl(config);
 
   const languages: Record<string, string> = {};
   for (const loc of locales) {
@@ -78,17 +114,8 @@ export function buildFoodMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }
@@ -108,17 +135,8 @@ export function buildPlantMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }
@@ -139,17 +157,8 @@ export function buildMedicationMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }
@@ -170,17 +179,8 @@ export function buildHouseholdChemicalMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }
@@ -201,17 +201,8 @@ export function buildPesticideMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }
@@ -232,12 +223,8 @@ export function buildCategoryMetadata(
   return {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale,
-    },
+    openGraph: buildOpenGraph(title, description, path, config, locale),
+    twitter: buildTwitter(title, description, config),
     alternates: buildAlternates(path, config, locale),
   };
 }

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { getSiteConfig, getPageMarkdown } from "@/lib/content";
@@ -9,7 +10,7 @@ interface TermsPageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: TermsPageProps) {
+export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
   const { locale } = await params;
   const config = await getSiteConfig(locale);
   const page = await getPageMarkdown(locale, "terms");
@@ -17,6 +18,27 @@ export async function generateMetadata({ params }: TermsPageProps) {
   return {
     title: page?.title ?? `Terms of Service | ${config.name}`,
     description: t("termsDescription", { name: config.name }),
+    metadataBase: new URL(config.base_url),
+    alternates: buildAlternates("/terms", config, locale),
+  };
+}
+
+function buildAlternates(
+  path: string,
+  config: Awaited<ReturnType<typeof getSiteConfig>>,
+  locale: Locale
+) {
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+  const languages: Record<string, string> = {};
+  for (const loc of ["en", "de", "fr", "ja"] as const) {
+    languages[loc] = `${baseUrl}/${loc}${path}`;
+  }
+  languages["x-default"] = `${baseUrl}/en${path}`;
+  return {
+    canonical: `${baseUrl}/${locale}${path}`,
+    languages,
   };
 }
 

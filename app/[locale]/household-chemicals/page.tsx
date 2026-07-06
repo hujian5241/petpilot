@@ -33,9 +33,26 @@ export async function generateMetadata({ params }: HouseholdChemicalsPageProps):
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(config.base_url),
-    alternates: {
-      canonical: `${config.base_url}/${locale}/household-chemicals`,
-    },
+    alternates: buildAlternates("/household-chemicals", config, locale),
+  };
+}
+
+function buildAlternates(
+  path: string,
+  config: Awaited<ReturnType<typeof getSiteConfig>>,
+  locale: Locale
+) {
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+  const languages: Record<string, string> = {};
+  for (const loc of ["en", "de", "fr", "ja"] as const) {
+    languages[loc] = `${baseUrl}/${loc}${path}`;
+  }
+  languages["x-default"] = `${baseUrl}/en${path}`;
+  return {
+    canonical: `${baseUrl}/${locale}${path}`,
+    languages,
   };
 }
 

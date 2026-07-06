@@ -65,3 +65,11 @@ last_reviewed: '2026-07-01'
 vet_reviewed: false
 ---
 
+
+# Flea and Tick Spot-On Products
+
+Spot-on flea and tick treatments are applied directly to a pet’s skin and are common in many households. When used correctly, dog-formulated products can be safe for dogs. However, mistakes are common and can be dangerous.
+
+The most serious risk involves **dog products used on cats**, especially those containing permethrin or other pyrethroids. Cats lack the enzymes to break down these chemicals efficiently, so exposure through direct application or by grooming a recently treated dog can cause tremors, seizures, hypersalivation, vomiting, and death. Even a small amount can be fatal.
+
+Always use the species-appropriate product at the labeled dose. Separate treated pets until the product is dry, and never split a large-dog dose between smaller pets. If a cat is exposed to a dog spot-on, bathe with liquid dish soap and lukewarm water, then seek emergency veterinary care immediately.

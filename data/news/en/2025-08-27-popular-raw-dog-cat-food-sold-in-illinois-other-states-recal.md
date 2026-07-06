@@ -24,19 +24,22 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 539a1509cdc42b71
-updatedAt: '2026-07-05T17:47:37.784Z'
+updatedAt: '2026-07-05T21:54:29.198Z'
 ---
 ## What happened
-A popular raw dog and cat food sold in Illinois and other states has been recalled because it may be contaminated with Salmonella and Listeria, NBC 5 Chicago reports.
+On August 27, NBC 5 Chicago reported that a popular raw dog and cat food sold in Illinois and other states is being recalled due to Salmonella and Listeria contamination.
 
 ## Key facts
-- **Source:** NBC 5 Chicago
-- **Date:** August 27, 2025
-- **Affected animals:** Dogs and cats
-- **Pathogens:** Salmonella and Listeria
+- Affected animals: dogs and cats.
+- Pathogens: Salmonella and Listeria.
+- Product type: raw pet food distributed in multiple states, including Illinois.
+- Both pets and people can become ill from handling contaminated raw food or contaminated surfaces.
 
 ## What pet owners should do
-Do not feed the recalled raw food. Discard it safely, clean all surfaces and utensils that touched it, and monitor pets for illness. Seek veterinary care if needed.
+- Check the recall notice for brand, lot numbers, and expiration dates.
+- Do not feed the recalled raw food; seal and discard it where pets and wildlife cannot access it.
+- Thoroughly clean and disinfect bowls, utensils, cutting boards, counters, and storage areas.
+- Wash hands after handling pet food, and watch pets for signs of illness; seek veterinary care if symptoms appear.
 
 ## Related coverage
 - [Read the report on Food Poison Journal →](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWmlWYWxzekIxT0pSRWpDZ1BxamdfYTY0ckZmREc5REhSR05fTXhQSEN4ZTVEdmlXcS1lR3lmY1dpc2lJWVVtOWJTemc1aGR1X05PZFFkYktxLXpxalViYi0xWF8xMFZZQzlieHlKUzJpVnV6b3MyaC1EZ0hoS1U3ajVDdHAzaHBuLWVRd0lySkxRWmtmaHkzVmktRURmYVFxWXhIUlAxakc?oc=5)

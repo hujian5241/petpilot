@@ -66,3 +66,11 @@ last_reviewed: '2026-07-01'
 vet_reviewed: false
 ---
 
+
+# Termite Treatment
+
+Termite treatments include liquid soil termiticides, foams, sprays, and baits. Many products contain insecticides that can be toxic to pets if they are exposed before the product dries or while fumes are still present.
+
+Dogs and cats should be kept out of treated areas until products are completely dry and the space is well ventilated. Cats are especially sensitive to pyrethroids and fipronil. Signs of exposure include drooling, vomiting, diarrhea, tremors, seizures, weakness, and difficulty breathing. Skin or eye contact can cause irritation.
+
+If your pet is exposed, move them to fresh air, rinse skin or eyes with lukewarm water for 15–20 minutes if needed, and contact your veterinarian or a pet poison control center. Bring the product label or EPA registration number to help identify the active ingredients.

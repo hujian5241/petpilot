@@ -1,4 +1,7 @@
 {
+  "Accessibility": {
+    "skipToContent": "Skip to main content"
+  },
   "Header": {
     "home": "Home",
     "search": "Search",
@@ -10,7 +13,9 @@
     "pesticides": "Pesticides",
     "emergency": "Emergency",
     "news": "News",
-    "about": "About"
+    "about": "About",
+    "language": "Language",
+    "openMenu": "Open navigation menu"
   },
   "Footer": {
     "quickLinks": "Quick Links",
@@ -64,6 +69,8 @@
     "noResultsDescription": "We couldn't find any items matching your search.",
     "suggestItem": "Suggest an item",
     "emptyState": "Enter a food, plant, medication, chemical, or pesticide above to see if it's safe for your pet.",
+    "noResultsSuggestions": ["grapes|Grapes", "chocolate|Chocolate", "lilies|Lilies", "ibuprofen|Ibuprofen", "bleach|Bleach", "ant bait|Ant bait"],
+    "emptyStateSuggestions": ["apple|Apple", "tulips|Tulips", "onions|Onions", "acetaminophen|Acetaminophen", "spider plant|Spider plant", "weed killer|Weed killer"],
     "alsoKnownAs": "Also known as: {alias}",
     "foodTag": "Food",
     "plantTag": "Plant",
@@ -311,6 +318,10 @@
     "typoOrLink": "Typo or broken link",
     "typoOrLinkDetail": "There is a text error or link issue.",
     "other": "Other",
-    "otherDetail": "Something else."
+    "otherDetail": "Something else.",
+    "close": "Close"
+  },
+  "CategoryPage": {
+    "noItems": "No items in this category yet."
   }
 }

@@ -75,20 +75,16 @@ brand_names:
   - Suphedrin
   - Unifed
   - SudoGest
-  - ColdCalm
   - Sine-Off
   - Comtrex
   - DayQuil
   - NyQuil
-  - Theraflu
   - Aprodine
   - Biofed
   - Congestaid
   - Efidac
   - ElixSure
   - Genaphed
-  - Kid-Kare
-  - Lorphed
   - Maxifed
   - Nasofed
   - Nexafed
@@ -97,15 +93,10 @@ brand_names:
   - Rondec
   - Rynatuss
   - Semprex-D
-  - Severe Sinus
-  - Sinutab
   - Sudodrin
   - Sudogest
   - Tussafed
   - Zephrex
-  - Zyrtec-D
-  - Claritin-D
-  - Allegra-D
   - Advil Allergy Sinus
   - Aleve Sinus & Headache
   - Benadryl Allergy Plus Sinus
@@ -141,99 +132,6 @@ brand_names:
   - TopCare Nasal Decongestant
   - Up and Up Nasal Decongestant
   - Western Family Nasal Decongestant
-  - 12 Hour Decongestant
-  - 24 Hour Decongestant
-  - Congestaid
-  - Decongestant Sinus
-  - Nasal Decongestant
-  - Sinus Relief
-  - Sinus Congestion
-  - Sinus & Allergy
-  - Cold & Sinus
-  - Flu & Sinus
-  - Max Strength Sinus
-  - Non-Drowsy Sinus
-  - Pressure + Pain
-  - Sinus Headache
-  - Sinus Pressure
-  - Severe Cold
-  - Severe Congestion
-  - Severe Sinus
-  - Maximum Strength Decongestant
-  - Extended-Release Decongestant
-  - Immediate-Release Decongestant
-  - Pseudoephedrine HCl
-  - Pseudoephedrine Hydrochloride
-  - Pseudoephedrine Sulfate
-  - (+)-Pseudoephedrine
-  - d-Pseudoephedrine
-  - L-Pseudoephedrine
-  - Isoephedrine
-  - psi-Ephedrine
-  - d-Isoephedrine
-  - l-Isoephedrine
-  - (+)-Psi-ephedrine
-  - (-)-Pseudoephedrine
-  - Norpseudoephedrine
-  - Cathine
-  - Cathinone
-  - Ephedrine-pseudoephedrine combination
-  - Pseudoephedrine plus loratadine
-  - Pseudoephedrine plus fexofenadine
-  - Pseudoephedrine plus cetirizine
-  - Pseudoephedrine plus diphenhydramine
-  - Pseudoephedrine plus acetaminophen
-  - Pseudoephedrine plus ibuprofen
-  - Pseudoephedrine plus naproxen
-  - Pseudoephedrine plus aspirin
-  - Pseudoephedrine plus guaifenesin
-  - Pseudoephedrine plus dextromethorphan
-  - Pseudoephedrine plus chlorpheniramine
-  - Pseudoephedrine plus brompheniramine
-  - Pseudoephedrine plus triprolidine
-  - Pseudoephedrine plus phenylephrine
-  - Pseudoephedrine plus codeine
-  - Pseudoephedrine plus hydrocodone
-  - Pseudoephedrine plus carbinoxamine
-  - Pseudoephedrine plus clemastine
-  - Pseudoephedrine plus dexbrompheniramine
-  - Pseudoephedrine plus doxylamine
-  - Pseudoephedrine plus mepyramine
-  - Pseudoephedrine plus pheniramine
-  - Pseudoephedrine plus pyrilamine
-  - Pseudoephedrine plus methscopolamine
-  - Pseudoephedrine plus noscapine
-  - Pseudoephedrine plus phenyltoloxamine
-  - Pseudoephedrine plus promethazine
-  - Pseudoephedrine plus pyridoxine
-  - Pseudoephedrine plus salicylamide
-  - Pseudoephedrine plus acetaminophen and dextromethorphan
-  - Pseudoephedrine plus acetaminophen and guaifenesin
-  - Pseudoephedrine plus acetaminophen and chlorpheniramine
-  - Pseudoephedrine plus ibuprofen and chlorpheniramine
-  - Pseudoephedrine plus hydrocodone and chlorpheniramine
-  - Pseudoephedrine plus cetirizine and paracetamol
-  - Pseudoephedrine plus fexofenadine and paracetamol
-  - Pseudoephedrine plus loratadine and paracetamol
-  - Pseudoephedrine plus nimesulide
-  - Pseudoephedrine plus phenylephrine and acetaminophen
-  - Pseudoephedrine plus triprolidine and codeine
-  - Pseudoephedrine plus brompheniramine and codeine
-  - Pseudoephedrine plus carbinoxamine and hydrocodone
-  - Pseudoephedrine plus chlorpheniramine and hydrocodone
-  - Pseudoephedrine plus dexbrompheniramine and codeine
-  - Pseudoephedrine plus pyrilamine and hydrocodone
-  - Pseudoephedrine plus triprolidine and hydrocodone
-  - Pseudoephedrine plus brompheniramine and dextromethorphan
-  - Pseudoephedrine plus chlorpheniramine and dextromethorphan
-  - Pseudoephedrine plus pyrilamine and dextromethorphan
-  - Pseudoephedrine plus triprolidine and dextromethorphan
-  - Pseudoephedrine plus brompheniramine and guaifenesin
-  - Pseudoephedrine plus chlorpheniramine and guaifenesin
-  - Pseudoephedrine plus pyrilamine and guaifenesin
-  - Pseudoephedrine plus triprolidine and guaifenesin
-  - Pseudoephedrine plus acetaminophen and phenylephrine
-  - Pseudoephedrine plus dextromethorphan and gu
 last_reviewed: '2026-07-01'
 vet_reviewed: false
 sources:
@@ -241,3 +139,13 @@ sources:
     url: 'https://www.petpoisonhelpline.com/'
 ---
 
+
+# Pseudoephedrine
+
+Pseudoephedrine is a decongestant found in many over-the-counter cold, flu, and allergy medications. In pets, it acts as a potent stimulant and can be life-threatening even in small amounts.
+
+Dogs may become hyperactive, restless, and tremorous after ingesting pseudoephedrine. More serious signs include seizures, rapid heart rate, high blood pressure, panting, elevated body temperature, weakness, and collapse. Cats are even more sensitive; a single tablet can cause severe agitation, tremors, seizures, hyperthermia, and cardiovascular collapse.
+
+Because pets are smaller than people and many products are flavored or concentrated, even a “small” human dose can be dangerous. Store all cold and allergy medications in a secure cabinet, and never give a pet any human decongestant without veterinary guidance.
+
+If your pet eats pseudoephedrine, seek veterinary or poison-control help immediately. Bring the medication package with you so the veterinarian can identify the exact dose and ingredients.

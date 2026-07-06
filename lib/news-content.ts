@@ -6,12 +6,13 @@ import gfm from "remark-gfm";
 import sanitize from "rehype-sanitize";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
+import { unstable_cache } from "next/cache";
 
 import { defaultLocale, type Locale } from "./locales";
-import type { NewsCluster, NewsEntry, NewsFile } from "./news-types";
+import type { NewsCluster, NewsEntry, NewsFile, NewsItem } from "./news-types";
 import { linkifyNewsContent } from "./news-linkify";
 
-export type { NewsCluster, NewsEntry, NewsFile } from "./news-types";
+export type { NewsCluster, NewsEntry, NewsFile, NewsItem } from "./news-types";
 
 async function fileExists(filePath: string): Promise<boolean> {
   try {
@@ -85,6 +86,20 @@ async function parseNewsFile(
   };
 }
 
+async function parseNewsFileFrontmatter(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<NewsItem | undefined> {
+  const file = await readNewsFile(slug, locale);
+  if (!file) return undefined;
+
+  const { data } = matter(file.raw);
+  return {
+    slug,
+    entry: data as NewsEntry,
+  };
+}
+
 export async function getAllNewsSlugs(locale: Locale = defaultLocale): Promise<string[]> {
   const dir = newsLocaleDir(locale);
   if (!(await fileExists(dir))) {
@@ -112,21 +127,31 @@ export async function getAllNews(locale: Locale = defaultLocale): Promise<NewsFi
   );
 }
 
-export function groupNewsByMonth(news: NewsFile[]): Record<string, NewsFile[]> {
+export async function getAllNewsFrontmatter(locale: Locale = defaultLocale): Promise<NewsItem[]> {
+  const slugs = await getAllNewsSlugs(locale);
+  const files = await Promise.all(slugs.map((slug) => parseNewsFileFrontmatter(slug, locale)));
+  return (files.filter(Boolean) as NewsItem[]).sort(
+    (a, b) => new Date(b.entry.date).getTime() - new Date(a.entry.date).getTime()
+  );
+}
+
+export function groupNewsByMonth<T extends { entry: { month: string } }>(
+  news: T[]
+): Record<string, T[]> {
   return news.reduce((acc, item) => {
     const month = item.entry.month;
     if (!acc[month]) acc[month] = [];
     acc[month].push(item);
     return acc;
-  }, {} as Record<string, NewsFile[]>);
+  }, {} as Record<string, T[]>);
 }
 
-export function getUniqueNewsValues<T extends keyof NewsEntry>(
-  news: NewsFile[],
-  key: T
-): NewsEntry[T] extends string[]
+export function getUniqueNewsValues<T extends { entry: NewsEntry }, K extends keyof NewsEntry>(
+  news: T[],
+  key: K
+): NewsEntry[K] extends string[]
   ? string[]
-  : NewsEntry[T] extends string
+  : NewsEntry[K] extends string
   ? string[]
   : never {
   const values = new Set<string>();
@@ -141,17 +166,42 @@ export function getUniqueNewsValues<T extends keyof NewsEntry>(
   return Array.from(values).sort() as never;
 }
 
-export async function loadClusters(locale: Locale = defaultLocale): Promise<NewsCluster[]> {
+async function loadClustersUncached(locale: Locale = defaultLocale): Promise<NewsCluster[]> {
   const clusterPath = path.join(newsDir(), locale, "clusters.json");
   if (!(await fileExists(clusterPath))) {
     if (locale !== defaultLocale) {
-      return loadClusters(defaultLocale);
+      return loadClustersUncached(defaultLocale);
     }
     return [];
   }
   const raw = await fs.readFile(clusterPath, "utf-8");
   return JSON.parse(raw) as NewsCluster[];
 }
+
+export const loadClusters = unstable_cache(
+  async (locale: Locale): Promise<NewsCluster[]> => loadClustersUncached(locale),
+  ["news-clusters"],
+  { tags: ["news"] }
+);
+
+export const getAllNewsCached = unstable_cache(
+  async (locale: Locale): Promise<NewsFile[]> => getAllNews(locale),
+  ["news-full"],
+  { tags: ["news"] }
+);
+
+export const getAllNewsFrontmatterCached = unstable_cache(
+  async (locale: Locale): Promise<NewsItem[]> => getAllNewsFrontmatter(locale),
+  ["news-frontmatter"],
+  { tags: ["news"] }
+);
+
+export const getNewsBySlugCached = unstable_cache(
+  async (slug: string, locale: Locale): Promise<NewsFile | undefined> =>
+    getNewsBySlug(slug, locale),
+  ["news-detail"],
+  { tags: ["news"] }
+);
 
 export function getClusterBySlug(
   clusters: NewsCluster[],

@@ -5,6 +5,8 @@ slug: currants
 aliases:
   - black currants
   - red currants
+  - Zante currants
+  - Corinth currants
 categories:
   - fruits
 tags:
@@ -14,11 +16,17 @@ safety:
   dogs:
     status: toxic
     severity: high
-    summary: Toxic. Can cause kidney failure similar to grapes and raisins.
+    summary: >-
+      True currants (*Ribes*) are not the same as grape currants, but both can be
+      dangerous. Zante/Corinth currants are dried grapes and cause kidney failure
+      like raisins. Fresh black/red currants may cause GI upset; their kidney
+      risk in dogs is unclear, so avoid them.
   cats:
     status: toxic
     severity: high
-    summary: Toxic. Can cause kidney failure.
+    summary: >-
+      Zante/Corinth currants are dried grapes and can cause kidney failure. Fresh
+      black/red currants may cause GI upset; avoid sharing.
 symptoms:
   - vomiting
   - diarrhea
@@ -26,8 +34,9 @@ symptoms:
   - loss of appetite
   - decreased urination
 what_to_do: >-
-  Contact your veterinarian immediately. Currants are related to grapes and can
-  cause kidney damage.
+  Contact your veterinarian immediately, especially if the pet ate dried
+  Zante/Corinth currants (which are raisins) or a large amount of any currant.
+  Monitor for vomiting, lethargy, or decreased urination.
 alternatives:
   - blueberries
   - strawberries
@@ -58,6 +67,8 @@ requires_emergency_visit: true
 lookalikes:
   - grapes
   - raisins
+  - blueberries
+  - cranberries
 symptoms_severity:
   - symptom: vomiting
     severity: moderate
@@ -72,4 +83,4 @@ meta_description: >-
 ---
 # Currants
 
-Currants are closely related to grapes and raisins and carry the same risk of acute kidney failure in dogs and cats. Avoid entirely.
+The word “currants” can refer to two very different fruits, and both should be kept from pets. **Zante or Corinth currants** are small dried grapes and carry the same kidney-failure risk as raisins—avoid entirely. **Black and red currants** (*Ribes*) are a different fruit, but their safety for dogs and cats is not well established, and they can cause gastrointestinal upset. Because of the uncertainty and the risk of confusion, do not feed currants to pets.

@@ -76,3 +76,13 @@ vet_reviewed: false
 last_reviewed: '2026-07-01'
 ---
 
+
+# Acetaminophen (Paracetamol, Tylenol)
+
+Acetaminophen is a common human pain reliever and fever reducer, but it is **not safe for pets**. Dogs can develop liver injury and methemoglobinemia at higher doses, while cats are extremely sensitive—even small amounts can be fatal.
+
+Cats lack the liver enzymes needed to safely break down acetaminophen. Signs of poisoning can appear quickly and include vomiting, lethargy, difficulty breathing, blue or brown gums, facial or paw swelling, and collapse. In dogs, toxic effects may include vomiting, loss of appetite, abdominal pain, jaundice, and dark urine.
+
+Never give acetaminophen to a dog or cat unless specifically directed by a veterinarian. Keep all medications, including single-dose packets and pills left in bags or pockets, out of reach of pets.
+
+If you suspect your pet has swallowed acetaminophen, contact your veterinarian or a pet poison control center immediately. Quick treatment, which may include decontamination, supportive care, and antidotes, can improve the outcome.

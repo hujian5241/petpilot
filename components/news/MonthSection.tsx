@@ -4,14 +4,13 @@ import { useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 import type { Locale } from "@/lib/i18n";
-import type { NewsCluster } from "@/lib/news-types";
-import type { NewsFile } from "@/lib/news-types";
+import type { NewsCluster, NewsItem } from "@/lib/news-types";
 import { cn } from "@/lib/utils";
 import { NewsCard } from "./NewsCard";
 import { NewsClusterCard } from "./NewsClusterCard";
 
 export type MonthItem =
-  | { type: "article"; data: NewsFile }
+  | { type: "article"; data: NewsItem }
   | { type: "cluster"; data: NewsCluster };
 
 interface MonthSectionProps {

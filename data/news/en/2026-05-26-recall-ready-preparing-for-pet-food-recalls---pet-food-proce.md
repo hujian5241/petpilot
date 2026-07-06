@@ -19,22 +19,23 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 530ca3611ea229b4
-updatedAt: '2026-07-05T17:51:58.343Z'
+updatedAt: '2026-07-05T22:00:23.503Z'
 ---
 ## What happened
-
-Late May 2026 brought a series of FDA-linked pet safety alerts. Albright’s Raw Pet Food voluntarily recalled select raw chicken dog food recipes because of potential Salmonella contamination. AllProvide recalled dog food sold in at least nine states, including New York, due to possible plastic contamination. Raaw Energy expanded a raw dog food recall for Listeria monocytogenes, with reports of pet illness and more than 180 lots affected. At the same time, veterinary sources warned that lilies, Alstroemeria and other common plants can be toxic to cats, and that essential oils can pose risks to both dogs and cats.
+In May 2026, the FDA and pet food companies announced several U.S. recalls and safety advisories. Albright’s Raw Pet Food pulled a chicken recipe for dogs due to potential Salmonella; Raaw Energy expanded a raw dog food recall because of Listeria monocytogenes, with reported illnesses and more than 180 lots involved; and AllProvide recalled dog food sold in multiple states over possible plastic contamination. At the same time, veterinarians and consumer publications warned that lilies, alstroemeria, and certain essential oils can be toxic to cats and dogs.
 
 ## Key facts
-
-- Pets primarily affected: dogs (food recalls); cats (plant toxicity warnings).
-- Hazards: Salmonella, Listeria monocytogenes, plastic foreign material, and plant toxins.
-- Distribution: nationwide and across multiple states, including online and retail sales.
-- Cross-species risk: Salmonella and Listeria can also sicken humans handling contaminated food.
+- Affected pets: primarily dogs through contaminated food; cats and dogs from plant and oil toxins.
+- Hazards: Salmonella, Listeria monocytogenes, plastic fragments, lilies, alstroemeria, and essential oils.
+- Scope: recalls ranged from specific lots to nationwide distribution and multiple states.
+- Human health risk: Salmonella and Listeria can spread from pets or raw food to people.
 
 ## What pet owners should do
-
-Check FDA recall lists for specific lot numbers and UPCs. Stop feeding any recalled product immediately and dispose of it safely. Wash hands, bowls, and surfaces after handling raw or recalled pet food. Watch for vomiting, diarrhea, lethargy, or loss of appetite in pets, and contact a veterinarian if symptoms occur. Keep lilies, Alstroemeria, and other toxic plants away from pets, and consult a vet before using essential oils in the home.
+- Check your pet food brand, lot numbers, and expiration dates against FDA recall notices.
+- Do not feed recalled products; discard or return them safely.
+- Wash hands, bowls, and surfaces after handling raw pet food.
+- Keep lilies, alstroemeria, and essential oil diffusers away from pets, especially cats.
+- Contact your veterinarian if your pet shows vomiting, diarrhea, lethargy, or breathing difficulty.
 
 ## Related coverage
 

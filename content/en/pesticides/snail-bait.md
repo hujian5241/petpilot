@@ -58,3 +58,15 @@ last_reviewed: '2026-07-01'
 vet_reviewed: false
 ---
 
+
+# Snail and Slug Bait
+
+Snail and slug baits are used in gardens to control mollusks, but they are among the most dangerous pesticides for pets. The active ingredient matters greatly.
+
+**Metaldehyde** baits are highly toxic to dogs and cats. Ingestion causes rapid onset of tremors, muscle rigidity, seizures, hyperthermia, and can lead to coma or death. Symptoms can start within an hour. This is a veterinary emergency.
+
+**Iron phosphate** baits are generally less toxic but can still cause vomiting and diarrhea, especially if a pet eats a large amount. **Methiocarb** is another highly toxic ingredient with similar signs to metaldehyde.
+
+Do not use snail bait in areas pets can access. Store bags securely, and consider pet-safe alternatives such as copper tape, diatomaceous earth, or hand-picking.
+
+If you suspect your pet ate any snail or slug bait, contact your veterinarian or a pet poison control center immediately and bring the product packaging.

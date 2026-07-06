@@ -16,14 +16,16 @@ tags:
 safety:
   dogs:
     status: toxic
-    severity: moderate
+    severity: high
     summary: >-
-      Contains cardenolides that can cause vomiting, weakness, and seizures in
-      dogs.
+      Contains cardenolides that can cause vomiting, weakness, seizures, and
+      cardiac effects.
   cats:
     status: toxic
-    severity: moderate
-    summary: Can cause gastrointestinal and neurological signs in cats.
+    severity: high
+    summary: >-
+      Contains cardenolides that can cause vomiting, weakness, seizures, and
+      cardiac effects.
 symptoms:
   - vomiting
   - diarrhea
@@ -47,16 +49,16 @@ sources:
     url: 'https://www.petpoisonhelpline.com/poison/milkweed/'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
-requires_emergency_visit: false
+requires_emergency_visit: true
 meta_title: Milkweed Toxicity in Pets
 meta_description: >-
   Milkweed is toxic to dogs and cats. Learn symptoms, what to do, and
   pollinator-friendly pet-safe flowers for your garden.
 symptoms_severity:
   - symptom: difficulty breathing
-    severity: high
+    severity: critical
   - symptom: seizures
-    severity: high
+    severity: critical
 ---
 # Milkweed
 

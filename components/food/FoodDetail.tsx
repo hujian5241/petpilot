@@ -122,12 +122,16 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
           </>
         )}
 
-        <h2>{t("symptoms")}</h2>
-        <ul>
-          {food.symptoms.map((symptom) => (
-            <li key={symptom}>{symptom}</li>
-          ))}
-        </ul>
+        {food.symptoms.length > 0 && (
+          <>
+            <h2>{t("symptoms")}</h2>
+            <ul>
+              {food.symptoms.map((symptom) => (
+                <li key={symptom}>{symptom}</li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <h2>{t("whatIfAte", { name: food.name })}</h2>
         <p>{food.what_to_do}</p>
@@ -193,40 +197,48 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
           </>
         )}
 
-        <h2>{t("safeAlternatives")}</h2>
-        <ul>
-          {food.alternatives.map((alt) => (
-            <li key={alt}>
-              <Link href={`/foods/${alt}`} className="text-primary hover:text-primary-dark">
-                {alt
-                  .split("-")
-                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                  .join(" ")}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {food.alternatives.length > 0 && (
+          <>
+            <h2>{t("safeAlternatives")}</h2>
+            <ul>
+              {food.alternatives.map((alt) => (
+                <li key={alt}>
+                  <Link href={`/foods/${alt}`} className="text-primary hover:text-primary-dark">
+                    {alt
+                      .split("-")
+                      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                      .join(" ")}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
-        <h2>{t("sources")}</h2>
-        <ul>
-          {food.sources.map((source) => (
-            <li key={source.name}>
-              {source.url ? (
-                <a
-                  href={source.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary hover:text-primary-dark"
-                >
-                  {source.name}
-                  <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-                </a>
-              ) : (
-                source.name
-              )}
-            </li>
-          ))}
-        </ul>
+        {food.sources.length > 0 && (
+          <>
+            <h2>{t("sources")}</h2>
+            <ul>
+              {food.sources.map((source) => (
+                <li key={source.name}>
+                  {source.url ? (
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-primary hover:text-primary-dark"
+                    >
+                      {source.name}
+                      <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                    </a>
+                  ) : (
+                    source.name
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <h2>{t("vetsNote")}</h2>
         <p>{t("vetsNoteText")}</p>

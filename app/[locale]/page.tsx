@@ -1,12 +1,15 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/routing";
 import { AlertTriangle } from "lucide-react";
 import { SearchBar } from "@/components/search/SearchBar";
+import { SearchBarSkeleton } from "@/components/search/SearchBarSkeleton";
 import { FoodCard } from "@/components/food/FoodCard";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { CollapsibleGridSection } from "@/components/layout/CollapsibleGridSection";
+import { CategoryIcon } from "@/components/category/CategoryIcon";
 import {
   getAllCategories,
   getAllFoods,
@@ -16,18 +19,18 @@ import {
   getPesticideSlugs,
   getPlantSlugs,
 } from "@/lib/content";
-import { getAllNews } from "@/lib/news-content";
+import { getAllNewsFrontmatterCached } from "@/lib/news-content";
 import type { Locale } from "@/lib/i18n";
 
 interface HomePageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: HomePageProps) {
+export async function generateMetadata({ params }: HomePageProps): Promise<Metadata> {
   const { locale } = await params;
   const config = await getSiteConfig(locale);
   return {
-    title: config.tagline,
+    title: `${config.tagline} | ${config.name}`,
     description: config.description,
   };
 }
@@ -47,7 +50,7 @@ export default async function HomePage({ params }: HomePageProps) {
     getSiteConfig(locale),
     getAllFoods(locale),
     getAllCategories(locale),
-    getAllNews(locale),
+    getAllNewsFrontmatterCached(locale),
     getPlantSlugs(locale),
     getMedicationSlugs(locale),
     getHouseholdChemicalSlugs(locale),
@@ -93,7 +96,9 @@ export default async function HomePage({ params }: HomePageProps) {
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">{t("heroSubtitle")}</p>
           <div className="mt-8">
-            <SearchBar locale={locale} size="large" />
+            <Suspense fallback={<SearchBarSkeleton size="large" />}>
+              <SearchBar locale={locale} size="large" />
+            </Suspense>
           </div>
 
           <p className="mt-4 text-sm text-muted-foreground">
@@ -175,6 +180,9 @@ export default async function HomePage({ params }: HomePageProps) {
               href={`/categories/${category.slug}`}
               className="flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md"
             >
+              {category.icon && (
+                <CategoryIcon name={category.icon} className="h-5 w-5 shrink-0 text-primary" />
+              )}
               <span className="font-medium text-foreground">{category.name}</span>
             </Link>
           ))}

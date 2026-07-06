@@ -74,3 +74,13 @@ meta_description: >-
   symptoms, what to do, and safer alternatives for a pet-friendly home.
 ---
 
+
+# Air Fresheners
+
+Air fresheners come as sprays, plug-ins, reed diffusers, gels, and fabric refreshers. While they make homes smell pleasant, many contain essential oils, fragrance compounds, and volatile organic compounds (VOCs) that can irritate or harm pets.
+
+Cats are especially sensitive because their livers process certain compounds slowly. Essential oils such as tea tree, eucalyptus, citrus, and pine can be particularly dangerous. Birds and small pets are also at high risk from airborne fragrances.
+
+Signs of exposure include coughing, sneezing, watery eyes, difficulty breathing, vomiting, drooling, lethargy, and skin irritation. If a pet chews a plug-in or spills liquid, the risk is higher.
+
+Use air fresheners only in well-ventilated areas, away from where pets sleep or eat. Consider safer alternatives such as baking soda, activated charcoal, or regular cleaning. If your pet shows symptoms after exposure, move them to fresh air and contact a veterinarian if symptoms persist.

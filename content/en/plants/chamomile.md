@@ -11,20 +11,22 @@ categories:
   - outdoor-plants
 tags:
   - herb
-  - limited
+  - toxic
   - flower
   - edible
 safety:
   dogs:
-    status: limited
+    status: toxic
     severity: low
     summary: >-
-      Mildly toxic in large amounts; can cause vomiting, diarrhea, and skin
-      irritation.
+      Can cause vomiting, diarrhea, anorexia, allergic reactions, and bleeding
+      tendencies with repeated exposure.
   cats:
-    status: limited
+    status: toxic
     severity: low
-    summary: May cause mild GI upset and allergic reactions in sensitive cats.
+    summary: >-
+      Can cause vomiting, diarrhea, anorexia, allergic reactions, and bleeding
+      tendencies with repeated exposure.
 symptoms:
   - vomiting
   - diarrhea
@@ -45,8 +47,8 @@ last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 meta_title: Chamomile and Pets — Safety Guide | PetPilot
 meta_description: >-
-  Chamomile is limited risk for dogs and cats. Learn symptoms of chamomile
-  sensitivity and safer herb choices.
+  Chamomile is toxic to dogs and cats, especially with repeated exposure. Learn
+  symptoms, what to do, and safer herb choices.
 ---
 # Chamomile
 

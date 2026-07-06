@@ -4,7 +4,7 @@ import { ExternalLink, AlertTriangle } from "lucide-react";
 
 import { Link } from "@/i18n/routing";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
-import { getNewsBySlug, getAllNewsSlugs, loadClusters, getClusterBySlug } from "@/lib/news-content";
+import { getNewsBySlugCached, getAllNewsSlugs, loadClusters, getClusterBySlug } from "@/lib/news-content";
 import { getSiteConfig, getSlugs, type ContentType } from "@/lib/content";
 import { defaultLocale, type Locale } from "@/lib/i18n";
 import type { NewsEntry, NewsSeverity } from "@/lib/news-types";
@@ -91,7 +91,7 @@ function newsArticleJsonLd(
 
 export async function generateMetadata({ params }: NewsDetailPageProps) {
   const { locale, slug } = await params;
-  const news = await getNewsBySlug(slug, locale);
+  const news = await getNewsBySlugCached(slug, locale);
   if (!news) return {};
   const [config, clusters] = await Promise.all([
     getSiteConfig(locale),
@@ -145,7 +145,7 @@ function severityLabelClass(severity: NewsEntry["severity"]): string {
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const { locale, slug } = await params;
   const [news, config, clusters] = await Promise.all([
-    getNewsBySlug(slug, locale),
+    getNewsBySlugCached(slug, locale),
     getSiteConfig(locale),
     loadClusters(locale),
   ]);
@@ -219,7 +219,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
 
       <Breadcrumb

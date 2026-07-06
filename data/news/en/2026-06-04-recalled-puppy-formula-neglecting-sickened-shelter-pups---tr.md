@@ -19,20 +19,21 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 66146079ab41bc56
-updatedAt: '2026-07-05T17:53:14.061Z'
+updatedAt: '2026-07-05T22:01:17.221Z'
 ---
 ## What happened
-Truth about Pet Food reported that a recalled puppy formula has been linked to sick shelter puppies, warning that the episode points to gaps in care for vulnerable dogs.
+Truth about Pet Food reported on a June 4, 2026 incident involving a recalled puppy formula that was connected to illness among shelter puppies.
 
 ## Key facts
-- Affected animals: dogs (puppies in shelters).
-- Source: Truth about Pet Food.
-- Report date: June 4, 2026.
-- Specific brand and lot information were not detailed in the report.
+- Affected animals: dogs.
+- The report raises concerns about the feeding and care of vulnerable shelter puppies.
+- Exact product and recall scope were not detailed in the available summary.
 
 ## What pet owners should do
-Monitor recall lists, stop using any recalled formula, and seek veterinary care if puppies develop vomiting, diarrhea, lethargy, or poor appetite.
+- Monitor recall alerts for puppy formula and other pet foods.
+- Discontinue feeding any recalled formula and report suspected illness.
+- Seek veterinary care promptly if a puppy develops symptoms.
 
 ## Related coverage
-[Read the report on Google News →](https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDU1anBJOGZ3VEF4eWhVQ1FMUk4yRkhreERSU2wzRXJvSVFOT3NLaHplSGs0b0tMNmZZZTkzTERRMmNvN0R5T19jenJwYUxPSnF2SGVKYUJ5TkRXY3ZUOEo5ZWhWS2hJbVMxbC1vbDJILXA5Ql9kZ2hiRXZvUkM4TTgxZUliZFhsekZqdmpwcw?oc=5)
-[Read PetPilot's coverage from Truth about Pet Food →](/news/2026-06-04-recalled-puppy-formula-neglecting-sickened-shelter-pups--)
+- [Read the report on Truth about Pet Food →](https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDU1anBJOGZ3VEF4eWhVQ1FMUk4yRkhreERSU2wzRXJvSVFOT3NLaHplSGs0b0tMNmZZZTkzTERRMmNvN0R5T19jenJwYUxPSnF2SGVKYUJ5TkRXY3ZUOEo5ZWhWS2hJbVMxbC1vbDJILXA5Ql9kZ2hiRXZvUkM4TTgxZUliZFhsekZqdmpwcw?oc=5)
+- [Read PetPilot's coverage from Google News →](/news/2026-06-04-recalled-puppy-formula-neglecting-sickened-shelter-pups--)

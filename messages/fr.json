@@ -1,4 +1,7 @@
 {
+  "Accessibility": {
+    "skipToContent": "Passer au contenu principal"
+  },
   "Header": {
     "home": "Accueil",
     "search": "Recherche",
@@ -10,7 +13,9 @@
     "pesticides": "Pesticides",
     "emergency": "Urgence",
     "news": "Actualités",
-    "about": "À propos"
+    "about": "À propos",
+    "language": "Langue",
+    "openMenu": "Ouvrir le menu"
   },
   "Footer": {
     "quickLinks": "Liens rapides",
@@ -63,6 +68,8 @@
     "noResultsDescription": "Nous n'avons trouvé aucun aliment, plante, médicament, produit chimique ou pesticide correspondant à votre recherche.",
     "suggestItem": "Suggérer un élément",
     "emptyState": "Saisissez un aliment, une plante, un médicament, un produit chimique ou un pesticide ci-dessus pour savoir s'il est sûr pour votre animal.",
+    "noResultsSuggestions": ["grapes|Raisins", "chocolate|Chocolat", "lilies|Lys", "ibuprofen|Ibuprofène", "bleach|Eau de Javel", "ant bait|Appât à fourmis"],
+    "emptyStateSuggestions": ["apple|Pomme", "tulips|Tulipes", "onions|Oignons", "acetaminophen|Paracétamol", "spider plant|Plante araignée", "weed killer|Désherbant"],
     "alsoKnownAs": "Également connu sous le nom de : {alias}",
     "foodTag": "Aliment",
     "plantTag": "Plante",
@@ -311,6 +318,10 @@
     "typoOrLink": "Faute de frappe ou lien brisé",
     "typoOrLinkDetail": "Il y a une erreur de texte ou un problème de lien.",
     "other": "Autre",
-    "otherDetail": "Quelque chose d'autre."
+    "otherDetail": "Quelque chose d'autre.",
+    "close": "Fermer"
+  },
+  "CategoryPage": {
+    "noItems": "Aucun élément dans cette catégorie pour le moment."
   }
 }

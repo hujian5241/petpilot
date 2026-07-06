@@ -1,8 +1,10 @@
+"use client";
+
 import { PawPrint } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/routing";
-import { LocaleSwitcher, NavDropdown } from "./HeaderClient";
+import { Link, usePathname } from "@/i18n/routing";
+import { LocaleSwitcher, NavDropdown, MobileMenu } from "./HeaderClient";
 import type { Locale } from "@/lib/i18n";
 
 interface HeaderProps {
@@ -11,6 +13,7 @@ interface HeaderProps {
 
 export function Header({ locale }: HeaderProps) {
   const t = useTranslations("Header");
+  const pathname = usePathname();
 
   const categoryItems = [
     { href: "/foods", label: t("foods") },
@@ -19,6 +22,27 @@ export function Header({ locale }: HeaderProps) {
     { href: "/household-chemicals", label: t("householdChemicals") },
     { href: "/pesticides", label: t("pesticides") },
   ];
+
+  const mainNavItems = [
+    { href: "/", label: t("home") },
+    { href: "/search", label: t("search") },
+    { href: "/news", label: t("news") },
+    { href: "/emergency", label: t("emergency"), variant: "emergency" as const },
+    { href: "/about", label: t("about") },
+  ];
+
+  function isActive(href: string): boolean {
+    return href === pathname;
+  }
+
+  function navLinkClass(href: string, variant?: "default" | "emergency"): string {
+    const active = isActive(href);
+    const base = "transition-colors";
+    if (variant === "emergency") {
+      return `${base} ${active ? "font-semibold underline underline-offset-4" : ""} text-emergency hover:text-emergency/80`;
+    }
+    return `${base} ${active ? "font-semibold text-foreground" : "text-muted-foreground hover:text-foreground"}`;
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
@@ -31,35 +55,24 @@ export function Header({ locale }: HeaderProps) {
           <span className="hidden sm:inline">PetPilot</span>
         </Link>
         <nav aria-label="Main" className="hidden items-center gap-5 text-sm font-medium md:flex">
-          <Link
-            href="/"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/" className={navLinkClass("/")} aria-current={isActive("/") ? "page" : undefined}>
             {t("home")}
           </Link>
-          <Link
-            href="/search"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/search" className={navLinkClass("/search")} aria-current={isActive("/search") ? "page" : undefined}>
             {t("search")}
           </Link>
-          <NavDropdown label={t("categories")} items={categoryItems} />
-          <Link
-            href="/news"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <NavDropdown
+            label={t("categories")}
+            items={categoryItems}
+            active={categoryItems.some((item) => isActive(item.href))}
+          />
+          <Link href="/news" className={navLinkClass("/news")} aria-current={isActive("/news") ? "page" : undefined}>
             {t("news")}
           </Link>
-          <Link
-            href="/emergency"
-            className="text-emergency transition-colors hover:text-emergency/80"
-          >
+          <Link href="/emergency" className={navLinkClass("/emergency", "emergency")} aria-current={isActive("/emergency") ? "page" : undefined}>
             {t("emergency")}
           </Link>
-          <Link
-            href="/about"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/about" className={navLinkClass("/about")} aria-current={isActive("/about") ? "page" : undefined}>
             {t("about")}
           </Link>
           <div className="h-5 w-px bg-border" aria-hidden="true" />
@@ -67,12 +80,7 @@ export function Header({ locale }: HeaderProps) {
         </nav>
         <div className="flex items-center gap-3 md:hidden">
           <LocaleSwitcher locale={locale} />
-          <Link
-            href="/search"
-            className="rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground"
-          >
-            {t("search")}
-          </Link>
+          <MobileMenu locale={locale} navItems={mainNavItems} categoryItems={categoryItems} />
         </div>
       </div>
     </header>

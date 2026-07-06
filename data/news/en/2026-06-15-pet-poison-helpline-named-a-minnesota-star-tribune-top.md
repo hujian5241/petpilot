@@ -20,20 +20,22 @@ summary: >-
   Helpline, a real pers... This report may be useful for pet owners monitoring
   potential risks. Affected animals: other.
 relatedSlugs: {}
-updatedAt: '2026-07-05T17:53:55.773Z'
+updatedAt: '2026-07-05T22:01:54.135Z'
 reviewed: false
 clusterId: b331a3de4ce97be8
 ---
 ## What happened
-Pet Poison Helpline announced it was named a Minnesota Star Tribune Top Workplace for the 16th time on June 15, 2026.
+Pet Poison Helpline announced it has been recognized by the Minnesota Star Tribune as a Top Workplace for the 16th time. The award is based on employee feedback about workplace culture, leadership, and engagement.
 
 ## Key facts
-- The award recognizes workplace culture based on employee feedback.
-- Pet Poison Helpline provides 24/7 access to veterinary toxicology experts for pet owners and veterinary professionals.
-- Callers speak with real people trained to assess poison risks in dogs, cats, and other animals.
+- The recognition reflects the organization’s stable, experienced staff of veterinary professionals.
+- A stable team can improve the consistency and quality of emergency poison guidance.
+- No active poisoning event is reported; this is an organizational accolade.
 
 ## What pet owners should do
-Keep the Pet Poison Helpline number accessible for emergencies. If your pet ingests medications, foods, plants, or chemicals, contact them immediately for guidance.
+- Keep Pet Poison Helpline and your veterinarian’s contact information easily accessible.
+- In a suspected poisoning emergency, call a poison control hotline or your vet immediately.
+- Save the Minnesota Star Tribune top-workplace recognition as a signal of the helpline’s reliability.
 
 ## Related coverage
 [Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/company-news-culture/pet-poison-helpline-named-a-minnesota-star-tribune-top-workplace-for-the-16th-time/?utm_source=rss&utm_medium=rss&utm_campaign=pet-poison-helpline-named-a-minnesota-star-tribune-top-workplace-for-the-16th-time)

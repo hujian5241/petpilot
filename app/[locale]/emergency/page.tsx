@@ -1,11 +1,47 @@
 import { Phone, AlertTriangle } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 
 import { Link } from "@/i18n/routing";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Disclaimer } from "@/components/food/Disclaimer";
-import { getAllFoods, getEmergencyInfo } from "@/lib/content";
+import { getAllFoods, getEmergencyInfo, getSiteConfig } from "@/lib/content";
 import type { Locale } from "@/lib/i18n";
+
+interface EmergencyPageProps {
+  params: Promise<{ locale: Locale }>;
+}
+
+export async function generateMetadata({ params }: EmergencyPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const config = await getSiteConfig(locale);
+  const t = await getTranslations({ locale, namespace: "EmergencyPage" });
+  return {
+    title: t("poisonControlHotlines"),
+    description: t("whenToCall"),
+    metadataBase: new URL(config.base_url),
+    alternates: buildAlternates("/emergency", config, locale),
+  };
+}
+
+function buildAlternates(
+  path: string,
+  config: Awaited<ReturnType<typeof getSiteConfig>>,
+  locale: Locale
+) {
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+  const languages: Record<string, string> = {};
+  for (const loc of ["en", "de", "fr", "ja"] as const) {
+    languages[loc] = `${baseUrl}/${loc}${path}`;
+  }
+  languages["x-default"] = `${baseUrl}/en${path}`;
+  return {
+    canonical: `${baseUrl}/${locale}${path}`,
+    languages,
+  };
+}
 
 interface EmergencyPageProps {
   params: Promise<{ locale: Locale }>;

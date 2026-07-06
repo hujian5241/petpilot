@@ -72,3 +72,11 @@ sources:
     url: 'https://www.petpoisonhelpline.com/'
 ---
 
+
+# Hair Dye
+
+Hair dye is not safe for pets. These products contain ammonia, hydrogen peroxide, paraphenylenediamine (PPD), resorcinol, and other chemicals that can burn skin, irritate eyes, and cause serious illness if licked or swallowed.
+
+Cats are especially sensitive. Their grooming behavior means they can quickly spread the product over their fur and into their mouth. Signs of exposure include skin redness, itching, drooling, vomiting, diarrhea, difficulty breathing, facial swelling, and lethargy.
+
+Never dye a pet’s fur with human hair color, even “gentle” or “natural” products. If hair dye gets on your pet, rinse the area with lukewarm water for 15–20 minutes. If it gets in the eyes, flush gently with water or saline and seek veterinary care. If swallowed, contact your veterinarian or a pet poison control center immediately.

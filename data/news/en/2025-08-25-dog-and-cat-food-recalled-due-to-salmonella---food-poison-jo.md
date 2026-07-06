@@ -21,19 +21,21 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 539a1509cdc42b71
-updatedAt: '2026-07-05T17:47:37.784Z'
+updatedAt: '2026-07-05T21:54:29.198Z'
 ---
 ## What happened
-A dog and cat food product has been recalled due to possible Salmonella contamination, according to Food Poison Journal.
+On August 25, Food Poison Journal reported that dog and cat food is being recalled due to Salmonella contamination. The outlet urged pet owners to be aware of the incident and take precautions.
 
 ## Key facts
-- **Source:** Food Poison Journal
-- **Date:** August 25, 2025
-- **Affected animals:** Dogs and cats
-- **Pathogen:** Salmonella
+- Affected animals: dogs and cats.
+- Pathogen: Salmonella.
+- Salmonella can cause gastrointestinal illness in pets and may be spread by animals that show no symptoms.
 
 ## What pet owners should do
-Stop feeding the recalled food, wash hands and pet bowls thoroughly, and watch for vomiting, diarrhea, or lethargy. Contact your veterinarian if symptoms appear.
+- Check the specific recall information on the product label or manufacturer notice.
+- Stop feeding the recalled food immediately and discard it safely.
+- Wash bowls, utensils, and surfaces that touched the food; wash hands after handling pet food or pets.
+- Monitor pets for vomiting, diarrhea, fever, or lethargy and contact a veterinarian if symptoms develop.
 
 ## Related coverage
 - [Read the report on NBC 5 Chicago →](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOclh5Z3hpX2VJX3VJUTJZb1hzNDhIcW9oQ2h4RDNvWHRIT0dUX19yeTNOV1hVMmxJaFhkZUwxVDh6VnNLOXp3b2tFWnIweTc5NjhRMFh2RWk3Zzk5SnZsYjlUV0ZEb00zNWF4R0xPR2F6eFJTRjhMMERUNHNhQVhibXIwWlREc1ZPQTE00gGTAUFVX3lxTE42MzdMbzZYaWNXSDF3RmwySzhfbzM3b1ZVRGdUdlVLel9RX0tvWXJsbVg0UVVMeU1JcjUxYVJoZThvWkJKaFAyUjBQeWRjeHh0Y0NRYVZYZmZEa3J2Snp1cDhGNHljXzNKakJmSkxmWmNDTWVmUWNHZ2tPdGJhWExUY0ZROUdWMW1yd3o3RWhvc2ViSQ?oc=5)

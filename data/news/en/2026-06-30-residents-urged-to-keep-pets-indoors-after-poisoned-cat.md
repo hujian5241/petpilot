@@ -19,26 +19,26 @@ summary: >-
   mobile home park 607 News Now Pet owners should be aware of this incident and
   take precautions. Affected animals: cats.
 relatedSlugs: {}
-updatedAt: '2026-07-05T17:53:42.754Z'
+updatedAt: '2026-07-05T22:01:37.166Z'
 reviewed: false
 clusterId: ea5dafafaf599a0f
 ---
 ## What happened
-Go Raw has expanded a recall of its Steve’s Real Food freeze-dried dog and cat food because some lots may contain too little vitamin B1 (thiamine). The recall was first reported in early June 2026 and later expanded to cover additional states and products. The company and the FDA warn that thiamine deficiency can lead to serious neurological problems in pets.
+Multiple outlets reported an expanded recall of Go Raw freeze-dried pet foods, including Steve’s Real Food products, because of potentially low thiamine (vitamin B1) levels. Thiamine is essential for healthy nervous system function in dogs and cats, and a deficiency can lead to neurological symptoms.
 
 ## Key facts
-- **Affected animals:** dogs and cats.
-- **Product type:** freeze-dried dog and cat food, mainly under the Steve’s Real Food label.
-- **Why it’s being recalled:** possible low vitamin B1 (thiamine) levels.
-- **Geographic scope:** roughly 20 U.S. states.
-- **Potential symptoms:** weakness, tremors, difficulty walking, loss of balance, seizures, or lethargy.
+- **Affected products:** Freeze-dried dog and cat foods sold under Go Raw and Steve’s Real Food brands.
+- **Potential hazard:** Low vitamin B1, which can cause tremors, weakness, abnormal posture, seizures, and other neurological issues.
+- **Scope:** Reports indicate the recall reaches consumers in roughly 20 states.
+- **Timeline:** Initial recall notices appeared in early June 2026, with an expanded announcement by mid-June.
+- **Regulatory status:** The FDA and state agencies are monitoring the situation and issuing alerts.
 
 ## What pet owners should do
-- Check your pet food packaging against the FDA recall list and lot numbers.
-- Stop feeding any recalled product immediately.
-- Dispose of the food safely or return it to the retailer for a refund.
-- Contact your veterinarian if your dog or cat shows any neurological symptoms.
-- Watch for updated recall notices, as additional lots or states may be added.
+- Stop feeding the recalled products immediately.
+- Check lot numbers, package dates, and recall lists on the FDA or manufacturer website.
+- Return or discard the recalled food; do not feed it to pets or other animals.
+- Contact a veterinarian if your pet shows signs such as vomiting, loss of appetite, imbalance, tremors, or seizures.
+- Wash hands, bowls, and surfaces after handling recalled food to prevent cross-contamination.
 
 ## Related coverage
 

@@ -7,6 +7,7 @@ aliases:
   - narcissus
   - jonquil
   - daffodil
+  - paperwhite
 categories:
   - outdoor-plants
 tags:
@@ -39,9 +40,9 @@ what_to_do: >-
   Call your vet if your pet ate bulbs or shows severe vomiting. Large ingestions
   may require emergency supportive care.
 alternatives:
-  - tulips
   - roses
   - sunflowers
+  - zinnias
   - snapdragons
 sources:
   - name: ASPCA

@@ -38,6 +38,29 @@ const routePrefix: Record<SearchIndexItem["type"], string> = {
   pesticide: "pesticides",
 };
 
+// Split query into tokens. For CJK scripts we treat each character as a token
+// because CJK languages do not use spaces between words.
+function tokenizeQuery(query: string): string[] {
+  const cjkRegex = /[一-鿿぀-ゟ゠-ヿ가-힯]/;
+  const tokens: string[] = [];
+  for (const part of query.split(/\s+/)) {
+    if (part.length === 0) continue;
+    if (cjkRegex.test(part)) {
+      for (const char of part) {
+        if (cjkRegex.test(char)) tokens.push(char);
+      }
+    } else {
+      tokens.push(part);
+    }
+  }
+  return tokens;
+}
+
+function matchesTokens(text: string, tokens: string[]): boolean {
+  const lower = text.toLowerCase();
+  return tokens.every((token) => lower.includes(token));
+}
+
 export function SearchPageClient({
   locale,
   initialIndex,
@@ -61,22 +84,19 @@ export function SearchPageClient({
   const results: SearchResult[] = (() => {
     if (!trimmedQuery) return [];
 
-    const queryParts = trimmedQuery.split(/\s+/);
+    const tokens = tokenizeQuery(trimmedQuery);
+    if (tokens.length === 0) return [];
 
     // 1. Exact/prefix matches in name or aliases
     const exactMatches: SearchResult[] = [];
     for (const item of initialIndex) {
-      const nameHit = queryParts.every((part) =>
-        item.name.toLowerCase().includes(part)
-      );
+      const nameHit = matchesTokens(item.name, tokens);
       if (nameHit) {
         exactMatches.push({ item, matchType: "name" });
         continue;
       }
 
-      const matchedAlias = item.aliases.find((a) =>
-        queryParts.every((part) => a.toLowerCase().includes(part))
-      );
+      const matchedAlias = item.aliases.find((a) => matchesTokens(a, tokens));
       if (matchedAlias) {
         exactMatches.push({ item, matchType: "alias", matchedAlias });
       }
@@ -143,30 +163,28 @@ export function SearchPageClient({
                 {t("noResultsDescription")}
               </p>
               <div className="mt-4 flex flex-wrap justify-center gap-2">
-                {[
-                  "grapes",
-                  "chocolate",
-                  "lilies",
-                  "ibuprofen",
-                  "bleach",
-                  "ant bait",
-                ].map((suggestion) => (
-                  <Link
-                    key={suggestion}
-                    href={`/search?q=${encodeURIComponent(suggestion)}`}
-                    className="rounded-full bg-muted px-3 py-1 text-sm text-foreground hover:bg-muted/80"
-                  >
-                    {suggestion}
-                  </Link>
-                ))}
+                {(t.raw("noResultsSuggestions") as string[]).map((suggestion) => {
+                  const parts = suggestion.split("|");
+                  const query = parts[0] ?? suggestion;
+                  const label = parts[1] ?? query;
+                  return (
+                    <Link
+                      key={query}
+                      href={`/search?q=${encodeURIComponent(query)}`}
+                      className="rounded-full bg-muted px-3 py-1 text-sm text-foreground hover:bg-muted/80"
+                    >
+                      {label}
+                    </Link>
+                  );
+                })}
               </div>
               <p className="mt-6 text-sm text-muted-foreground">
                 {t("suggestItem")}:{" "}
                 <a
-                  href={`mailto:${contactEmail}?subject=Search%20suggestion`}
+                  href={`mailto:${contactEmail}?subject=${encodeURIComponent(t("suggestItem"))}`}
                   className="text-primary hover:underline"
                 >
-                  {t("suggestItem")}
+                  {contactEmail}
                 </a>
                 .
               </p>
@@ -181,22 +199,20 @@ export function SearchPageClient({
             {t("emptyState")}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {[
-              "apple",
-              "tulips",
-              "onions",
-              "acetaminophen",
-              "spider plant",
-              "weed killer",
-            ].map((suggestion) => (
-              <Link
-                key={suggestion}
-                href={`/search?q=${encodeURIComponent(suggestion)}`}
-                className="rounded-full bg-muted px-3 py-1 text-sm text-foreground hover:bg-muted/80"
-              >
-                {suggestion}
-              </Link>
-            ))}
+            {(t.raw("emptyStateSuggestions") as string[]).map((suggestion) => {
+              const parts = suggestion.split("|");
+              const query = parts[0] ?? suggestion;
+              const label = parts[1] ?? query;
+              return (
+                <Link
+                  key={query}
+                  href={`/search?q=${encodeURIComponent(query)}`}
+                  className="rounded-full bg-muted px-3 py-1 text-sm text-foreground hover:bg-muted/80"
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}

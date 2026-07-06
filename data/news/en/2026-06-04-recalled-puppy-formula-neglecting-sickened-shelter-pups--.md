@@ -17,22 +17,23 @@ summary: >-
   Pet owners should be aware of this incident and take precautions. Affected
   animals: dogs.
 relatedSlugs: {}
-updatedAt: '2026-07-05T17:53:14.061Z'
+updatedAt: '2026-07-05T22:01:17.221Z'
 reviewed: false
 clusterId: 66146079ab41bc56
 ---
 ## What happened
-Truth about Pet Food published a report, surfaced via Google News, about a recalled puppy formula connected to sick shelter puppies. The incident raises concerns about whether vulnerable dogs received adequate care after consuming a recalled product.
+Google News reported on a June 4, 2026 incident in which a recalled puppy formula was linked to sickened shelter puppies.
 
 ## Key facts
-- Affected animals: dogs, specifically puppies in a shelter setting.
-- Source: Truth about Pet Food (via Google News).
-- Report date: June 4, 2026.
-- Brand and batch details were not provided in the summary.
+- Affected animals: dogs.
+- The issue centers on a recalled puppy formula given to shelter puppies.
+- Specific brand and recall details were not fully disclosed in the report.
 
 ## What pet owners should do
-Check current pet food recall notices, remove any recalled formula, and contact a veterinarian if puppies show vomiting, diarrhea, lethargy, or poor appetite.
+- Check current pet food recalls before feeding any puppy formula.
+- Stop using any recalled product immediately.
+- Contact a veterinarian if a puppy shows vomiting, diarrhea, lethargy, or poor growth.
 
 ## Related coverage
-[Read the report on Truth about Pet Food →](https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDU1anBJOGZ3VEF4eWhVQ1FMUk4yRkhreERSU2wzRXJvSVFOT3NLaHplSGs0b0tMNmZZZTkzTERRMmNvN0R5T19jenJwYUxPSnF2SGVKYUJ5TkRXY3ZUOEo5ZWhWS2hJbVMxbC1vbDJILXA5Ql9kZ2hiRXZvUkM4TTgxZUliZFhsekZqdmpwcw?oc=5)
-[Read PetPilot's coverage from Google News →](/news/2026-06-04-recalled-puppy-formula-neglecting-sickened-shelter-pups---tr)
+- [Read the report on Google News →](https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDU1anBJOGZ3VEF4eWhVQ1FMUk4yRkhreERSU2wzRXJvSVFOT3NLaHplSGs0b0tMNmZZZTkzTERRMmNvN0R5T19jenJwYUxPSnF2SGVKYUJ5TkRXY3ZUOEo5ZWhWS2hJbVMxbC1vbDJILXA5Ql9kZ2hiRXZvUkM4TTgxZUliZFhsekZqdmpwcw?oc=5)
+- [Read PetPilot's coverage from Truth about Pet Food →](/news/2026-06-04-recalled-puppy-formula-neglecting-sickened-shelter-pups---tr)

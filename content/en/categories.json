@@ -44,7 +44,7 @@
     "name": "Nuts & Seeds",
     "slug": "nuts",
     "description": "High-fat snacks and spreads.",
-    "icon": "Cherry",
+    "icon": "Nut",
     "sort_order": 6
   },
   {
@@ -60,7 +60,7 @@
     "name": "Herbs & Spices",
     "slug": "spices",
     "description": "Flavor enhancers and seasonings.",
-    "icon": "Leaf",
+    "icon": "Sprout",
     "sort_order": 8
   },
   {
@@ -84,7 +84,7 @@
     "name": "Houseplants",
     "slug": "houseplants",
     "description": "Common indoor plants that may be toxic or safe for pets.",
-    "icon": "Leaf",
+    "icon": "Flower2",
     "sort_order": 11
   },
   {

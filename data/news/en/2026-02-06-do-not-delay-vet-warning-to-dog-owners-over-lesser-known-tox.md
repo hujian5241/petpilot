@@ -21,19 +21,20 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 49b358da178ecc3b
-updatedAt: '2026-07-05T17:49:07.858Z'
+updatedAt: '2026-07-05T21:56:13.790Z'
 ---
 ## What happened
-Wales Online carried a veterinary warning telling dog owners not to delay treatment if they suspect their pet has been exposed to a lesser-known toxin.
+Veterinarians warned dog owners not to delay treatment if they suspect exposure to a “lesser known toxin” that can seriously harm dogs.
 
 ## Key facts
-- Affected animals: dogs
-- The report emphasizes the importance of rapid veterinary care rather than waiting for symptoms to worsen.
+- Affected animals: dogs.
+- The warning emphasizes immediate veterinary attention rather than watchful waiting.
+- Delayed care can worsen outcomes.
 
 ## What pet owners should do
-Watch dogs for signs such as vomiting, lethargy, or drooling, and contact a vet immediately if poisoning is suspected. Do not wait to see if the dog improves on its own.
+Contact a vet promptly if a dog shows unusual symptoms or may have ingested an unknown substance. Bring any suspected packaging or plant material.
 
 ## Related coverage
-[Read the report on Wales Online →](https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjFNVXJseXdJQnFiMTFPMTRZYkhHb0JIWU1QenV3b3ZiOExiLWRNYmY2elhfTmFpX085SGJKS29kTTE3Zkk1REs2V1J2aTgtdHY2aEFpSTRKYmxDeENuUTRRUU5GaENGWmxLM005ZVNZU0oyUXVZLVdHSDZSdWRDTGNn0gGHAUFVX3lxTE95WGdGX1pDY1RnVDhnbks5SHhfbEJzNDlFbDFKNHZNVnNzVGF6d2dGenJNWkJ5WDFNcFEzbmI3cmtsTkhPR2J0aVJWN1haMTR4WW82d1N1dUJnaW9QQ0VRWi1BZjhTMHdJRThoTlhKVU11bURYSFlJS1dRT0ZZcVBfZ3QyekIwRQ?oc=5)
-[Read PetPilot's coverage from Vet Times →](/news/2026-02-10-rhododendron-l-and-azalea-toxic-to-dogs-toxic-to-cats---vet-)
-[Read PetPilot's coverage from Derry Journal →](/news/2026-02-27-daffodils-can-be-dangerously-toxic-to-dogs-and-cats-pet-owne)
+- [Read the report on Wales Online →](https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjFNVXJseXdJQnFiMTFPMTRZYkhHb0JIWU1QenV3b3ZiOExiLWRNYmY2elhfTmFpX085SGJKS29kTTE3Zkk1REs2V1J2aTgtdHY2aEFpSTRKYmxDeENuUTRRUU5GaENGWmxLM005ZVNZU0oyUXVZLVdHSDZSdWRDTGNn0gGHAUFVX3lxTE95WGdGX1pDY1RnVDhnbks5SHhfbEJzNDlFbDFKNHZNVnNzVGF6d2dGenJNWkJ5WDFNcFEzbmI3cmtsTkhPR2J0aVJWN1haMTR4WW82d1N1dUJnaW9QQ0VRWi1BZjhTMHdJRThoTlhKVU11bURYSFlJS1dRT0ZZcVBfZ3QyekIwRQ?oc=5)
+- [Read PetPilot's coverage on Lincoln dog poisoning →](/news/2026-02-20-police-investigate-after-lincoln-womans-dog-poisoned---koln-)
+- [Read PetPilot's coverage on daffodil toxicity →](/news/2026-02-27-daffodils-can-be-dangerously-toxic-to-dogs-and-cats-pet-owne)

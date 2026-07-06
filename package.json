@@ -11,7 +11,6 @@
     "test": "vitest --run",
     "test:watch": "vitest",
     "content:validate": "tsx scripts/validate-content.ts",
-    "sitemap:generate": "tsx scripts/generate-sitemaps.ts",
     "content:translate": "tsx scripts/translate-content.ts",
     "news:fetch": "tsx scripts/fetch-news.ts",
     "news:clusters": "tsx scripts/generate-news-clusters.ts",

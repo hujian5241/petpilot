@@ -36,10 +36,10 @@ what_to_do: >-
   Contact your veterinarian, especially if bulbs were eaten. Monitor for
   persistent vomiting or lethargy and seek care if symptoms worsen.
 alternatives:
-  - daffodils
   - roses
   - sunflowers
   - zinnias
+  - snapdragons
 sources:
   - name: ASPCA
     url: >-
@@ -60,7 +60,8 @@ meta_description: >-
   Tulips are toxic to dogs and cats, especially the bulbs. Learn symptoms, what
   to do, and pet-safe bulbs and flowers to plant instead.
 related_plants:
-  - daffodils
+  - roses
+  - sunflowers
 symptoms_severity:
   - symptom: vomiting
     severity: moderate

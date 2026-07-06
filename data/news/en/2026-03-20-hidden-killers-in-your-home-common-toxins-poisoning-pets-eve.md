@@ -21,21 +21,21 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 9a6148704d2bf948
-updatedAt: '2026-07-05T17:51:04.100Z'
+updatedAt: '2026-07-05T21:58:14.190Z'
 ---
 ## What happened
-A-Z Animals published a report identifying common household toxins poisoning pets every day.
+A-Z Animals published a report warning pet owners about common household toxins that can poison pets every day.
 
 ## Key facts
-- Everyday items such as certain foods, medications, plants, cleaning products, and small objects can sicken or kill dogs and cats.
-- Symptoms vary but may include vomiting, diarrhea, lethargy, seizures, or breathing difficulty.
-- Pets often encounter toxins through curiosity, unsecured trash, or dropped items.
+- The article describes everyday items as 'hidden killers' in the home.
+- Many common substances can cause accidental poisoning in companion animals.
+- Awareness is critical for preventing emergency situations.
 
 ## What pet owners should do
-- Store medications, cleaners, foods, and small objects out of reach.
-- Pet-proof trash cans and feeding areas.
-- Keep the ASPCA Animal Poison Control Center or Pet Poison Helpline number saved.
+- Review your home for potential toxins.
+- Keep dangerous substances out of reach of pets.
+- Monitor pets for signs of poisoning and contact a vet if exposure is suspected.
 
 ## Related coverage
-[Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/uncategorized/is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know/?utm_source=rss&utm_medium=rss&utm_campaign=is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know)  
+[Read the report on Google News →](https://news.google.com/rss/articles/CBMiogFBVV95cUxPTVBqNm9MLXppN09LdFdsMmZoTVZNZnRhOUFfaVRFN0w5N0syQXdpZ2hXMHRJVkg1Ym03TFYxaGxYWHpicFdxb1N6N1ZSVDNyX2ctYndPbWVSekp0OWd2OGRaWGJwMHMxbzNjM09CXzc1NWVoZTIzU3U3blRpdDZqaHp4TDJlRTNjb243cTRob1djSnc5MXVzdHNGT19OQUlHa1E?oc=5)
 [Read PetPilot's coverage from Pet Poison Helpline →](/news/2026-03-20-is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet)

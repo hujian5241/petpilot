@@ -1,4 +1,7 @@
 {
+  "Accessibility": {
+    "skipToContent": "Zum Hauptinhalt springen"
+  },
   "Header": {
     "home": "Start",
     "search": "Suche",
@@ -10,7 +13,9 @@
     "pesticides": "Pestizide",
     "emergency": "Notfall",
     "news": "Nachrichten",
-    "about": "Über uns"
+    "about": "Über uns",
+    "language": "Sprache",
+    "openMenu": "Navigation öffnen"
   },
   "Footer": {
     "quickLinks": "Schnelllinks",
@@ -63,6 +68,8 @@
     "noResultsDescription": "Wir haben keine Lebensmittel, Pflanzen, Medikamente, Chemikalien oder Pestizide gefunden, die zu Ihrer Suche passen.",
     "suggestItem": "Eintrag vorschlagen",
     "emptyState": "Geben Sie oben ein Lebensmittel, eine Pflanze, ein Medikament, eine Chemikalie oder ein Pestizid ein, um zu sehen, ob es für Ihr Haustier geeignet ist.",
+    "noResultsSuggestions": ["grapes|Trauben", "chocolate|Schokolade", "lilies|Lilien", "ibuprofen|Ibuprofen", "bleach|Bleichmittel", "ant bait|Ameisenköder"],
+    "emptyStateSuggestions": ["apple|Apfel", "tulips|Tulpen", "onions|Zwiebeln", "acetaminophen|Paracetamol", "spider plant|Grünlilie", "weed killer|Unkrautvernichter"],
     "alsoKnownAs": "Auch bekannt als: {alias}",
     "foodTag": "Lebensmittel",
     "plantTag": "Pflanze",
@@ -311,6 +318,10 @@
     "typoOrLink": "Tippfehler oder defekter Link",
     "typoOrLinkDetail": "Es gibt einen Textfehler oder ein Linkproblem.",
     "other": "Sonstiges",
-    "otherDetail": "Etwas anderes."
+    "otherDetail": "Etwas anderes.",
+    "close": "Schließen"
+  },
+  "CategoryPage": {
+    "noItems": "Noch keine Einträge in dieser Kategorie."
   }
 }

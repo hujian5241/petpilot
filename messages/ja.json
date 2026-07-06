@@ -1,4 +1,7 @@
 {
+  "Accessibility": {
+    "skipToContent": "メインコンテンツに移動"
+  },
   "Header": {
     "home": "ホーム",
     "search": "検索",
@@ -10,7 +13,9 @@
     "pesticides": "農薬",
     "emergency": "緊急",
     "news": "ニュース",
-    "about": "について"
+    "about": "について",
+    "language": "言語",
+    "openMenu": "ナビゲーションメニューを開く"
   },
   "Footer": {
     "quickLinks": "クイックリンク",
@@ -63,6 +68,8 @@
     "noResultsDescription": "検索に一致する食品、植物、医薬品、化学製品、農薬が見つかりませんでした。",
     "suggestItem": "項目を提案する",
     "emptyState": "上の検索欄に食品、植物、医薬品、化学製品、または農薬を入力すると、ペットにとって安全かどうかが確認できます。",
+    "noResultsSuggestions": ["grapes|ブドウ", "chocolate|チョコレート", "lilies|ユリ", "ibuprofen|イブプロフェン", "bleach|漂白剤", "ant bait|蟻の毒餌"],
+    "emptyStateSuggestions": ["apple|リンゴ", "tulips|チューリップ", "onions|タマネギ", "acetaminophen|アセトアミノフェン", "spider plant|オリズルラン", "weed killer|除草剤"],
     "alsoKnownAs": "別名：{alias}",
     "foodTag": "食品",
     "plantTag": "植物",
@@ -311,6 +318,10 @@
     "typoOrLink": "誤字またはリンク切れ",
     "typoOrLinkDetail": "テキストの誤りやリンクの問題があります。",
     "other": "その他",
-    "otherDetail": "その他の問題。"
+    "otherDetail": "その他の問題。",
+    "close": "閉じる"
+  },
+  "CategoryPage": {
+    "noItems": "このカテゴリにはまだ項目がありません。"
   }
 }

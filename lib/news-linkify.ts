@@ -15,8 +15,7 @@ interface LinkTarget {
   term: string;
 }
 
-let cache: Map<string, LinkTarget> | undefined;
-let cacheLocale: Locale | undefined;
+const indexPromises = new Map<Locale, Promise<Map<string, LinkTarget>>>();
 
 async function buildTermIndex(locale: Locale): Promise<Map<string, LinkTarget>> {
   const index = new Map<string, LinkTarget>();
@@ -68,27 +67,34 @@ async function buildTermIndex(locale: Locale): Promise<Map<string, LinkTarget>> 
   return index;
 }
 
-let indexPromise: Promise<Map<string, LinkTarget>> | undefined;
-let indexPromiseLocale: Locale | undefined;
-
 async function getTermIndex(locale: Locale): Promise<Map<string, LinkTarget>> {
-  if (indexPromise && indexPromiseLocale === locale) return indexPromise;
-  indexPromise = buildTermIndex(locale);
-  indexPromiseLocale = locale;
-  return indexPromise;
+  let promise = indexPromises.get(locale);
+  if (!promise) {
+    promise = buildTermIndex(locale);
+    indexPromises.set(locale, promise);
+  }
+  return promise;
 }
 
 export function clearTermIndexCache(): void {
-  indexPromise = undefined;
-  indexPromiseLocale = undefined;
+  indexPromises.clear();
 }
 
 function escapeRegex(term: string): string {
   return term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function linkHtml(href: string, text: string): string {
-  return `<a href="${href}" class="text-primary hover:text-primary-dark hover:underline">${text}</a>`;
+  return `<a href="${escapeHtml(href)}" class="text-primary hover:text-primary-dark hover:underline">${text}</a>`;
 }
 
 export async function linkifyNewsContent(
@@ -169,7 +175,7 @@ export async function linkifyNewsContent(
     for (const { start, end, target } of applied) {
       output += result.slice(lastEnd, start);
       const href = `/${locale === defaultLocale ? "" : `${locale}/`}${target.type}/${target.slug}`;
-      output += linkHtml(href, result.slice(start, end));
+      output += linkHtml(href, escapeHtml(result.slice(start, end)));
       lastEnd = end;
     }
     output += result.slice(lastEnd);

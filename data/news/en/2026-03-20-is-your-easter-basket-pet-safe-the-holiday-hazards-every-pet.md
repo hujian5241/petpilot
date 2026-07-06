@@ -33,21 +33,21 @@ relatedSlugs:
     - white-chocolate
 reviewed: false
 clusterId: 9a6148704d2bf948
-updatedAt: '2026-07-05T17:51:04.100Z'
+updatedAt: '2026-07-05T21:58:14.190Z'
 ---
 ## What happened
-Pet Poison Helpline released an advisory warning pet owners about Easter-specific hazards in baskets and spring décor.
+Pet Poison Helpline issued a warning about Easter holiday hazards that can endanger pets, including toxic flowers and basket treats.
 
 ## Key facts
-- Chocolate, xylitol-sweetened candy, lilies, plastic grass, and foil wrappers can poison or injure dogs and cats.
-- Lilies are especially toxic to cats and can cause kidney failure; chocolate and xylitol can trigger seizures or dangerous blood sugar drops in dogs.
-- Decorations and small toys can cause choking or intestinal blockages.
+- Lilies are highly toxic to cats and can cause kidney failure.
+- Chocolate and candy containing xylitol are dangerous to dogs.
+- Holiday decorations and colorful items can attract curious pets.
 
 ## What pet owners should do
-- Keep Easter baskets, candy, and floral arrangements out of reach.
-- Use pet-safe plants and toys; dispose of plastic grass and wrappers promptly.
-- Contact a veterinarian or poison hotline immediately if a pet ingests a hazardous item.
+- Keep lilies, chocolate, and xylitol products out of reach.
+- Use pet-safe alternatives in Easter baskets.
+- Contact a veterinarian or poison helpline immediately if exposure occurs.
 
 ## Related coverage
-[Read the report on A-Z Animals →](https://news.google.com/rss/articles/CBMiogFBVV95cUxPTVBqNm9MLXppN09LdFdsMmZoTVZNZnRhOUFfaVRFN0w5N0syQXdpZ2hXMHRJVkg1Ym03TFYxaGxYWHpicFdxb1N6N1ZSVDNyX2ctYndPbWVSekp0OWd2OGRaWGJwMHMxbzNjM09CXzc1NWVoZTIzU3U3blRpdDZqaHp4TDJlRTNjb243cTRob1djSnc5MXVzdHNGT19OQUlHa1E?oc=5)  
-[Read PetPilot's coverage from A-Z Animals →](/news/2026-03-20-hidden-killers-in-your-home-common-toxins-poisoning-pets-eve)
+[Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/uncategorized/is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know/?utm_source=rss&utm_medium=rss&utm_campaign=is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know)
+[Read PetPilot's coverage from Google News →](/news/2026-03-20-hidden-killers-in-your-home-common-toxins-poisoning-pets-eve)

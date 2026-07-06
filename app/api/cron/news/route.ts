@@ -3,11 +3,30 @@ import { runNewsPipeline } from "@/scripts/news-pipeline";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(request: NextRequest) {
-  const authHeader = request.headers.get("authorization");
-  const expected = process.env.CRON_SECRET ? `Bearer ${process.env.CRON_SECRET}` : undefined;
+// Constant-time string comparison to mitigate timing attacks.
+function timingSafeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
 
-  if (expected && authHeader !== expected) {
+export async function GET(request: NextRequest) {
+  const authHeader = request.headers.get("authorization") ?? "";
+  const expected = process.env.CRON_SECRET
+    ? `Bearer ${process.env.CRON_SECRET}`
+    : "";
+
+  if (!expected) {
+    return NextResponse.json(
+      { error: "CRON_SECRET is not configured" },
+      { status: 500 }
+    );
+  }
+
+  if (!timingSafeEqual(authHeader, expected)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

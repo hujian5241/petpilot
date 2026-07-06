@@ -5,6 +5,12 @@ export interface NewsFile {
   updatedAt: string;
 }
 
+/** Lightweight news item used by list pages that only need frontmatter. */
+export interface NewsItem {
+  slug: string;
+  entry: NewsEntry;
+}
+
 export interface NewsEntry {
   slug: string;
   title: string;
