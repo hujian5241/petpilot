@@ -25,6 +25,17 @@ safety:
     summary: >-
       Ibuprofen is extremely toxic to cats; even small amounts can cause
       life-threatening ulcers and kidney failure.
+toxicity_profiles:
+  - species: dogs
+    toxic_dose_mg_per_kg: 50
+    lethal_dose_mg_per_kg: 100
+    tablet_mg: 200
+    note: Toxic dose can vary by formulation (e.g., coated tablets, liquid gels). Call poison control with exact product details.
+  - species: cats
+    toxic_dose_mg_per_kg: 5
+    lethal_dose_mg_per_kg: 50
+    tablet_mg: 200
+    note: Cats are far more sensitive than dogs. Even a fragment of a tablet can be dangerous.
 symptoms:
   - vomiting
   - diarrhea

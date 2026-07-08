@@ -47,4 +47,4 @@ Nous pouvons mettre à jour cette Politique de confidentialité de temps à autr
 
 ## 9. Contactez-nous
 
-Si vous avez des questions concernant cette Politique de confidentialité, contactez-nous à [hello@petpilot.io](mailto:hello@petpilot.io).
+Si vous avez des questions concernant cette Politique de confidentialité, contactez-nous à [contact@petpilot.top](mailto:contact@petpilot.top).

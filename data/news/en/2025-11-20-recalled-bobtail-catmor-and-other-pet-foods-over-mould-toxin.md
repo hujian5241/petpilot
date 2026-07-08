@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2025-11-20-recalled-bobtail-catmor-and-other-pet-foods-over-mould-toxin
 title: 'Recalled: Bobtail, Catmor and other pet foods over mould toxin - News24'
 date: '2025-11-20'
@@ -15,9 +16,11 @@ summary: >-
   Recalled: Bobtail, Catmor and other pet foods over mould toxin News24 Pet
   owners should be aware of this incident and take precautions. Affected
   animals: cats.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: recall
+clusterId: 92791206a9689892
+updatedAt: '2026-07-08T06:02:41.312Z'
 ---
 Recalled: Bobtail, Catmor and other pet foods over mould toxin News24 Pet owners should be aware of this incident and take precautions. Affected animals: cats.
 

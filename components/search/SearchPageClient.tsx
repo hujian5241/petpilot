@@ -72,7 +72,7 @@ function matchesTokens(text: string, tokens: string[]): boolean {
 export function SearchPageClient({
   locale,
   initialIndex,
-  contactEmail = "hello@petpilot.io",
+  contactEmail = "contact@petpilot.top",
   stats,
 }: SearchPageClientProps) {
   const searchParams = useSearchParams();
@@ -127,7 +127,7 @@ export function SearchPageClient({
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
+      <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{t("title")}</h1>
       <div className="mt-6">
         <SearchBar locale={locale} />
       </div>
@@ -158,11 +158,11 @@ export function SearchPageClient({
                 <Link
                   key={`${item.type}-${item.slug}`}
                   href={`/${routePrefix[item.type]}/${item.slug}`}
-                  className="flex flex-col gap-2 rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm sm:flex-row sm:items-center sm:justify-between"
+                  className="flex flex-col gap-2 rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-card sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-2">
-                      <h2 className="text-lg font-semibold text-foreground">{item.name}</h2>
+                      <h2 className="text-lg font-medium text-foreground">{item.name}</h2>
                       <TypeTag type={item.type} />
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">{item.summary}</p>
@@ -180,11 +180,11 @@ export function SearchPageClient({
               ))}
             </div>
           ) : (
-            <div className="mt-6 rounded-lg border border-border bg-card p-8 text-center">
+            <div className="mt-6 rounded-xl border border-border bg-card p-8 text-center">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-muted">
                 <Search className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
               </div>
-              <h2 className="mt-4 text-lg font-semibold text-foreground">
+              <h2 className="mt-4 text-lg font-medium text-foreground">
                 {t("noResults", { query })}
               </h2>
               <p className="mt-2 text-muted-foreground">
@@ -222,7 +222,7 @@ export function SearchPageClient({
       )}
 
       {!query && (
-        <div className="mt-8 rounded-lg border border-border bg-card p-8 text-center">
+        <div className="mt-8 rounded-xl border border-border bg-card p-8 text-center">
           <p className="text-muted-foreground">
             {t("emptyState")}
           </p>

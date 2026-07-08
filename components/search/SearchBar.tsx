@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Search, X } from "lucide-react";
 
@@ -24,7 +25,7 @@ export function SearchBar({ locale = "en", size = "default", className }: Search
     e.preventDefault();
     const trimmed = query.trim();
     if (trimmed) {
-      router.push(`/${locale}/search?q=${encodeURIComponent(trimmed)}`);
+      router.push(`/search?q=${encodeURIComponent(trimmed)}`);
     }
   };
 

@@ -1,10 +1,15 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+
+export const dynamic = "force-static";
 import { ExternalLink, AlertTriangle } from "lucide-react";
 
 import { Link } from "@/i18n/routing";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
-import { getNewsBySlugCached, getAllNewsSlugs, loadClusters, getClusterBySlug } from "@/lib/news-content";
+import { ClusterSummaryCard } from "@/components/news/ClusterSummaryCard";
+import { RelatedCoverageSection } from "@/components/news/RelatedCoverageSection";
+import { NewsTypeBadge } from "@/components/news/NewsTypeBadge";
+import { getNewsBySlug, getAllNewsSlugs, loadClustersRaw, getClusterBySlug } from "@/lib/news-content";
 import { getSiteConfig, getSlugs, type ContentType } from "@/lib/content";
 import { defaultLocale, type Locale } from "@/lib/i18n";
 import type { NewsEntry, NewsSeverity } from "@/lib/news-types";
@@ -15,29 +20,81 @@ interface NewsDetailPageProps {
 
 export async function generateStaticParams({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  let slugs = await getAllNewsSlugs(locale as Locale);
-  if (slugs.length === 0) {
-    slugs = await getAllNewsSlugs(defaultLocale);
+  const [slugs, clusters] = await Promise.all([
+    getAllNewsSlugs(locale as Locale),
+    loadClustersRaw(locale as Locale),
+  ]);
+  const allSlugs = new Set(slugs);
+  for (const cluster of clusters) {
+    allSlugs.add(cluster.canonicalSlug);
+    for (const source of cluster.sources) {
+      allSlugs.add(source.slug);
+    }
   }
-  return slugs.map((slug) => ({ slug }));
+  if (allSlugs.size === 0) {
+    const fallbackSlugs = await getAllNewsSlugs(defaultLocale);
+    return fallbackSlugs.map((slug) => ({ slug }));
+  }
+  return Array.from(allSlugs).map((slug) => ({ slug }));
 }
 
-function buildDescription(entry: NewsEntry): string {
-  const why =
-    entry.severity === "critical"
-      ? "Critical pet safety alert: "
-      : entry.severity === "high"
-      ? "Important pet safety update: "
-      : "Pet safety news: ";
-  const details = [
-    entry.summary,
-    entry.species.length > 0 && `Affects ${entry.species.join(", ")}`,
-    entry.location && `Reported in ${entry.location}`,
-  ]
-    .filter(Boolean)
-    .join(" | ");
-  const full = `${why}${details}`;
+function buildDescription(entry: NewsEntry, locale: Locale): string {
+  const speciesText = entry.species.length > 0 ? entry.species.join(", ") : "";
+  const substanceText = entry.substances.length > 0 ? entry.substances.join(", ") : "";
+  const severityText = entry.severity;
+
+  const prefixMap: Record<NewsSeverity, string> = {
+    critical: "Critical pet safety alert: ",
+    high: "Important pet safety update: ",
+    moderate: "Pet safety update: ",
+    low: "Pet safety note: ",
+  };
+
+  let details = entry.summary;
+  if (speciesText) {
+    details += ` Affects ${speciesText}.`;
+  }
+  if (substanceText) {
+    details += ` Related to ${substanceText}.`;
+  }
+  if (entry.location) {
+    details += ` Reported in ${entry.location}.`;
+  }
+
+  const full = `${prefixMap[severityText]}${details}`;
   return full.length > 160 ? `${full.slice(0, 157).trim()}...` : full;
+}
+
+function buildTitle(entry: NewsEntry, locale: Locale): string {
+  const speciesText = entry.species.length > 0 ? entry.species.join(", ") : "";
+  const severityText = entry.severity;
+  const baseTitle = entry.title;
+
+  const severityPrefix: Record<NewsSeverity, string> = {
+    critical: "Critical: ",
+    high: "Warning: ",
+    moderate: "Alert: ",
+    low: "",
+  };
+
+  let enhanced = baseTitle;
+  if (severityPrefix[severityText] && !baseTitle.toLowerCase().includes(severityText)) {
+    enhanced = `${severityPrefix[severityText]}${baseTitle}`;
+  }
+
+  const suffix = speciesText ? ` | ${speciesText}` : "";
+  const full = `${enhanced}${suffix}`;
+
+  // Target ~55 chars so the parent layout template " | PetPilot" keeps the
+  // final <title> under ~60 characters.
+  if (full.length <= 55) return full;
+
+  if (enhanced.length <= 55) return enhanced;
+
+  if (enhanced.length > 50) {
+    return `${enhanced.slice(0, 52).trim()}...`;
+  }
+  return enhanced;
 }
 
 function truncateHeadline(title: string): string {
@@ -91,17 +148,44 @@ function newsArticleJsonLd(
 
 export async function generateMetadata({ params }: NewsDetailPageProps) {
   const { locale, slug } = await params;
-  const news = await getNewsBySlugCached(slug, locale);
-  if (!news) return {};
+  let news = await getNewsBySlug(slug, locale);
+  let resolvedSlug = slug;
+
   const [config, clusters] = await Promise.all([
     getSiteConfig(locale),
-    loadClusters(locale),
+    loadClustersRaw(locale),
   ]);
-  const cluster = getClusterBySlug(clusters, slug);
-  const canonicalSlug = cluster?.canonicalSlug ?? slug;
+
+  // The slug may be a canonical cluster slug that does not correspond to a
+  // real markdown file. Resolve it through the cluster's first source member so
+  // the canonical URL can still render valid metadata.
+  if (!news) {
+    const clusterByCanonical = clusters.find((c) => c.canonicalSlug === slug);
+    if (clusterByCanonical) {
+      news = await getNewsBySlug(clusterByCanonical.sources[0]!.slug, locale);
+      resolvedSlug = clusterByCanonical.sources[0]!.slug;
+    }
+  }
+
+  if (!news) return {};
+
+  const cluster = getClusterBySlug(clusters, resolvedSlug);
+  const canonicalSlug = cluster?.canonicalSlug ?? resolvedSlug;
   const canonicalUrl = `${config.base_url}/${locale}/news/${canonicalSlug}`;
-  const title = `${news.entry.title} | PetPilot News`;
-  const description = buildDescription(news.entry);
+  const isCanonical = canonicalSlug === slug;
+  const displayEntry: NewsEntry = isCanonical
+    ? {
+        ...news.entry,
+        title: cluster?.title ?? news.entry.title,
+        summary: cluster?.summary ?? news.entry.summary,
+        species: cluster?.species ?? news.entry.species,
+        substances: cluster?.substances ?? news.entry.substances,
+        severity: cluster?.severity ?? news.entry.severity,
+        date: cluster?.dateRange.end ?? news.entry.date,
+      }
+    : news.entry;
+  const title = buildTitle(displayEntry, locale);
+  const description = buildDescription(displayEntry, locale);
   const ogImage = `${config.base_url}/images/og-default.svg`;
   return {
     title,
@@ -115,7 +199,7 @@ export async function generateMetadata({ params }: NewsDetailPageProps) {
       title,
       description,
       type: "article",
-      publishedTime: news.entry.date,
+      publishedTime: displayEntry.date,
       modifiedTime: news.updatedAt,
       images: [ogImage],
       url: canonicalUrl,
@@ -145,24 +229,45 @@ function severityLabelClass(severity: NewsEntry["severity"]): string {
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const { locale, slug } = await params;
   const [news, config, clusters] = await Promise.all([
-    getNewsBySlugCached(slug, locale),
+    getNewsBySlug(slug, locale),
     getSiteConfig(locale),
-    loadClusters(locale),
+    loadClustersRaw(locale),
   ]);
 
-  if (!news) {
+  // If the slug itself is not a news file, it may be a canonical cluster slug.
+  // Try to find the cluster and load its first member so the canonical URL can render.
+  let resolvedNews = news;
+  let resolvedSlug = slug;
+  if (!resolvedNews) {
+    const clusterByCanonical = clusters.find((c) => c.canonicalSlug === slug);
+    if (clusterByCanonical) {
+      resolvedNews = await getNewsBySlug(clusterByCanonical.sources[0]!.slug, locale);
+      resolvedSlug = clusterByCanonical.sources[0]!.slug;
+    }
+  }
+
+  if (!resolvedNews) {
     notFound();
   }
 
   const t = await getTranslations({ locale, namespace: "NewsPage" });
-  const entry = news.entry;
+  const entry = resolvedNews.entry;
   const related = entry.relatedSlugs ?? {};
 
-  const cluster = getClusterBySlug(clusters, slug);
-  const canonicalSlug = cluster?.canonicalSlug ?? slug;
+  const cluster = getClusterBySlug(clusters, resolvedSlug);
+  const canonicalSlug = cluster?.canonicalSlug ?? resolvedSlug;
   const canonicalUrl = `${config.base_url}/${locale}/news/${canonicalSlug}`;
-  const otherCoverage =
-    cluster?.sources.filter((source) => source.slug !== slug) ?? [];
+  const isCanonical = canonicalSlug === slug;
+  // For canonical cluster pages, show the synthesized cluster content. For individual source
+  // pages, keep the original source title and summary so each URL remains distinct.
+  const displayTitle = isCanonical ? (cluster?.title ?? entry.title) : entry.title;
+  const displaySummary = isCanonical ? (cluster?.summary ?? entry.summary) : entry.summary;
+  const displaySpecies = isCanonical ? (cluster?.species ?? entry.species) : entry.species;
+  const displaySubstances = isCanonical ? (cluster?.substances ?? entry.substances) : entry.substances;
+  const displaySeverity = isCanonical ? (cluster?.severity ?? entry.severity) : entry.severity;
+  const displayDate = isCanonical ? (cluster?.dateRange.end ?? entry.date) : entry.date;
+  const displayType = isCanonical ? (cluster?.type ?? entry.type) : entry.type;
+  const displayContentHtml = isCanonical && cluster?.bodyHtml ? cluster.bodyHtml : resolvedNews.contentHtml;
 
   const relatedRoutes: { type: ContentType; slug: string; label: string }[] = [
     ...(related.foods ?? []).map((s) => ({ type: "foods" as ContentType, slug: s, label: s })),
@@ -177,26 +282,34 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   ];
 
   const jsonLd = newsArticleJsonLd(
-    entry,
+    {
+      ...entry,
+      title: displayTitle,
+      summary: displaySummary,
+      species: displaySpecies,
+      substances: displaySubstances,
+      severity: displaySeverity,
+      date: displayDate,
+    },
     config.base_url,
-    news.updatedAt,
+    resolvedNews.updatedAt,
     `${config.base_url}/images/og-default.svg`,
     canonicalUrl
   );
 
   // Build additional related links based on species and substances when explicit related slugs are empty.
   if (relatedRoutes.length === 0) {
-    if (entry.species.includes("dogs")) {
+    if (displaySpecies.includes("dogs")) {
       relatedRoutes.push({ type: "foods", slug: "chocolate", label: "chocolate" });
       relatedRoutes.push({ type: "foods", slug: "grapes", label: "grapes" });
     }
-    if (entry.species.includes("cats")) {
+    if (displaySpecies.includes("cats")) {
       relatedRoutes.push({ type: "plants", slug: "lily", label: "lily" });
     }
-    if (entry.substances.some((s) => s.toLowerCase().includes("xylitol"))) {
+    if (displaySubstances.some((s) => s.toLowerCase().includes("xylitol"))) {
       relatedRoutes.push({ type: "foods", slug: "xylitol", label: "xylitol" });
     }
-    if (entry.substances.some((s) => s.toLowerCase().includes("grape") || s.toLowerCase().includes("raisin"))) {
+    if (displaySubstances.some((s) => s.toLowerCase().includes("grape") || s.toLowerCase().includes("raisin"))) {
       relatedRoutes.push({ type: "foods", slug: "grapes", label: "grapes" });
     }
   }
@@ -226,15 +339,15 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         locale={locale}
         items={[
           { label: t("news"), href: "/news" },
-          { label: entry.title },
+          { label: displayTitle },
         ]}
       />
 
       <header className="mt-6">
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-          <time dateTime={entry.date}>{entry.date}</time>
+          <time dateTime={displayDate}>{displayDate}</time>
           <span>·</span>
-          <span>{entry.source}</span>
+          <span>{cluster ? t("coverageFrom", { count: cluster.sources.length }) : entry.source}</span>
           {entry.location && (
             <>
               <span>·</span>
@@ -243,18 +356,19 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           )}
         </div>
 
-        <h1 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">{entry.title}</h1>
+        <h1 className="mt-3 text-3xl font-light tracking-tight text-foreground sm:text-4xl">{displayTitle}</h1>
 
         <div className="mt-4 flex flex-wrap items-center gap-2">
+          <NewsTypeBadge type={displayType} />
           <span
             className={`inline-flex items-center gap-1 rounded-full border px-3 py-1 text-sm font-medium ${severityLabelClass(
-              entry.severity
+              displaySeverity
             )}`}
           >
             <AlertTriangle className="h-4 w-4" />
-            {t(`severity.${entry.severity}`)}
+            {t(`severity.${displaySeverity}`)}
           </span>
-          {entry.species.map((species) => (
+          {displaySpecies.map((species) => (
             <span
               key={species}
               className="inline-flex rounded-full bg-muted px-3 py-1 text-sm font-medium text-foreground"
@@ -268,38 +382,62 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         </div>
       </header>
 
-      <p className="mt-8 text-lg leading-relaxed text-foreground">{entry.summary}</p>
+      <p className="mt-8 text-lg font-light leading-relaxed text-foreground">{displaySummary}</p>
 
-      <section
-        className="prose-pet mt-6"
-        dangerouslySetInnerHTML={{ __html: news.contentHtml }}
-      />
+      {cluster && !isCanonical && (
+        <ClusterSummaryCard
+          cluster={cluster}
+          locale={locale}
+          heading={t("clusterSummaryHeading")}
+          description={t("clusterSummaryDescription")}
+          linkText={t("clusterSummaryLink")}
+        />
+      )}
 
-      <section className="mt-8 rounded-lg border border-border bg-card p-4">
-        <h2 className="text-sm font-semibold text-foreground">{t("sourceHeading")}</h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          {t("sourceDescription", { source: entry.source })}
-        </p>
-        <a
-          href={entry.sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark"
-        >
-          {t("readFullReport")}
-          <ExternalLink className="h-3.5 w-3.5" />
-        </a>
-      </section>
+      {displayContentHtml && (
+        <section
+          className="prose-pet mt-6"
+          dangerouslySetInnerHTML={{ __html: displayContentHtml }}
+        />
+      )}
+
+      {isCanonical && cluster && (
+        <RelatedCoverageSection
+          cluster={cluster}
+          currentSlug={slug}
+          locale={locale}
+          showAllLabel={t("showAll")}
+          showLessLabel={t("showLess")}
+        />
+      )}
+
+      {!isCanonical && (
+        <section className="mt-8 rounded-xl border border-border bg-card p-4">
+          <h2 className="text-sm font-medium text-foreground">{t("sourceHeading")}</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {t("sourceDescription", { source: entry.source })}
+          </p>
+          <a
+            href={entry.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark"
+          >
+            {t("readFullReport")}
+            <ExternalLink className="h-3.5 w-3.5" />
+          </a>
+        </section>
+      )}
 
       {validRelatedRoutes.length > 0 && (
         <section className="mt-8">
-          <h2 className="text-lg font-semibold text-foreground">{t("relatedGuides")}</h2>
+          <h2 className="text-lg font-normal tracking-tight text-foreground">{t("relatedGuides")}</h2>
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
             {validRelatedRoutes.map((route) => (
               <li key={`${route.type}-${route.slug}`}>
                 <Link
                   href={`/${route.type}/${route.slug}`}
-                  className="block rounded-lg border border-border bg-card p-3 text-sm font-medium text-foreground hover:border-primary hover:text-primary"
+                  className="block rounded-xl border border-border bg-card p-3 text-sm font-medium text-foreground hover:border-primary hover:text-primary"
                 >
                   {route.label
                     .split("-")
@@ -312,26 +450,8 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         </section>
       )}
 
-      {otherCoverage.length > 0 && (
-        <section className="mt-8 rounded-lg border border-border bg-card p-4">
-          <h2 className="text-sm font-semibold text-foreground">{t("relatedCoverage")}</h2>
-          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-            {otherCoverage.map((source) => (
-              <li key={source.slug}>
-                <Link
-                  href={`/news/${source.slug}`}
-                  className="block rounded-lg border border-border bg-background p-3 text-sm font-medium text-foreground hover:border-primary hover:text-primary"
-                >
-                  {source.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-        <strong className="block text-amber-950">{t("disclaimerTitle")}</strong>
+      <section className="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <strong className="block font-medium text-amber-950">{t("disclaimerTitle")}</strong>
         {t("disclaimerText")}
       </section>
     </article>

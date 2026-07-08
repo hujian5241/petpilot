@@ -20,6 +20,6 @@ PetPilotは教育情報のみを提供しており、専門的な獣医師のア
 
 ## お問い合わせ
 
-フィードバックやご提案は [hello@petpilot.io](mailto:hello@petpilot.io) までお送りください。
+フィードバックやご提案は [contact@petpilot.top](mailto:contact@petpilot.top) までお送りください。
 
 <a href="/emergency" class="inline-flex items-center rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90 no-underline">緊急ガイドを見る</a>

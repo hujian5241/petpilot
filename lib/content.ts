@@ -12,10 +12,15 @@ import type {
   Category,
   EmergencyInfo,
   FoodEntry,
+  GuideCategory,
+  GuideEntry,
   HouseholdChemicalEntry,
   MedicationEntry,
   PesticideEntry,
   PlantEntry,
+  RelatedEntry,
+  RelatedItem,
+  SafetyStatus,
   SiteConfig,
 } from "./types"
 import { defaultLocale, type Locale } from "./locales"
@@ -180,6 +185,37 @@ export async function getFoodsByCategory(
   return getEntriesByCategory<FoodEntry>("foods", categorySlug, locale)
 }
 
+export async function getAllGuides(locale: Locale = defaultLocale): Promise<GuideEntry[]> {
+  const dir = path.join(contentDir(locale), "guides")
+  if (!(await fileExists(dir))) {
+    return []
+  }
+  const slugs = await getSlugs("guides" as ContentType, defaultLocale)
+  const entries = await Promise.all(slugs.map((slug) => parseMarkdownEntry<GuideEntry>(locale, "guides" as ContentType, slug)))
+  return (entries.filter((entry) => entry !== undefined) as GuideEntry[]).sort(
+    (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+  )
+}
+
+export async function getGuideSlugs(locale: Locale = defaultLocale): Promise<string[]> {
+  const dir = path.join(contentDir(defaultLocale), "guides")
+  if (!(await fileExists(dir))) {
+    return []
+  }
+  return getSlugs("guides" as ContentType, defaultLocale)
+}
+
+export async function getGuideBySlug(
+  slug: string,
+  locale: Locale = defaultLocale
+): Promise<GuideEntry | undefined> {
+  return parseMarkdownEntry<GuideEntry>(locale, "guides" as ContentType, slug)
+}
+
+export async function getAllGuideCategories(locale: Locale = defaultLocale): Promise<GuideCategory[]> {
+  return readJsonWithFallback<GuideCategory[]>(locale, "guide-categories.json")
+}
+
 export async function getAllPlants(locale: Locale = defaultLocale): Promise<PlantEntry[]> {
   return getAllEntries<PlantEntry>("plants", locale)
 }
@@ -278,4 +314,77 @@ export async function getPageMarkdown(
     title: (data.title as string) ?? page,
     content: processedContent.toString(),
   }
+}
+
+const routePrefixByType: Record<
+  "food" | "plant" | "medication" | "household-chemical" | "pesticide",
+  ContentType
+> = {
+  food: "foods",
+  plant: "plants",
+  medication: "medications",
+  "household-chemical": "household-chemicals",
+  pesticide: "pesticides",
+}
+
+function getTypePrefix(type: RelatedItem["type"]): string {
+  return routePrefixByType[type]
+}
+
+const statusPriority: Record<SafetyStatus, number> = {
+  toxic: 0,
+  limited: 1,
+  unknown: 2,
+  safe: 3,
+}
+
+export async function findRelatedEntries(
+  entry: RelatedEntry,
+  locale: Locale,
+  limit = 6
+): Promise<RelatedItem[]> {
+  const [foods, plants, medications, householdChemicals, pesticides] = await Promise.all([
+    getAllFoods(locale),
+    getAllPlants(locale),
+    getAllMedications(locale),
+    getAllHouseholdChemicals(locale),
+    getAllPesticides(locale),
+  ])
+
+  const allEntries: { item: RelatedEntry; type: RelatedItem["type"] }[] = [
+    ...foods.map((item) => ({ item, type: "food" as const })),
+    ...plants.map((item) => ({ item, type: "plant" as const })),
+    ...medications.map((item) => ({ item, type: "medication" as const })),
+    ...householdChemicals.map((item) => ({ item, type: "household-chemical" as const })),
+    ...pesticides.map((item) => ({ item, type: "pesticide" as const })),
+  ]
+
+  const scored = allEntries
+    .filter(({ item }) => item.slug !== entry.slug)
+    .map(({ item, type }) => {
+      const categoryMatches = item.categories.filter((c) => entry.categories.includes(c)).length
+      const tagMatches = item.tags.filter((t) => entry.tags.includes(t)).length
+      const priority = Math.min(
+        statusPriority[item.safety.dogs.status],
+        statusPriority[item.safety.cats.status]
+      )
+      return {
+        item,
+        type,
+        score: categoryMatches * 3 + tagMatches * 2 - priority,
+      }
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.item.name.localeCompare(b.item.name))
+    .slice(0, limit)
+
+  return scored.map(({ item, type }) => ({
+    slug: item.slug,
+    name: item.name,
+    type,
+    summary: item.safety.dogs.summary,
+    safetyDogs: item.safety.dogs.status,
+    safetyCats: item.safety.cats.status,
+    image: item.images?.[0],
+  }))
 }

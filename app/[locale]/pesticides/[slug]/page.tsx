@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
 import { PesticideDetail } from "@/components/pesticide/PesticideDetail";
+
+export const dynamic = "force-static";
 import { getPesticideBySlug, getPesticideSlugs, getSiteConfig } from "@/lib/content";
 import { buildPesticideMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/i18n";

@@ -18,15 +18,15 @@ export default function NotFoundPage() {
         <AlertTriangle className="h-12 w-12 text-muted-foreground" />
       </div>
 
-      <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground">
+      <h1 className="mt-6 text-4xl font-light tracking-tight text-foreground">
         {t("title")}
       </h1>
-      <p className="mt-4 text-lg text-muted-foreground">
+      <p className="mt-4 text-lg font-light text-muted-foreground">
         {t("description")}
       </p>
 
       <div className="mt-8">
-        <Suspense fallback={<div className="h-12 rounded-lg border border-border bg-muted" />}>
+        <Suspense fallback={<div className="h-12 rounded-xl border border-border bg-muted" />}>
           <SearchBar locale={locale} size="large" />
         </Suspense>
       </div>
@@ -34,37 +34,37 @@ export default function NotFoundPage() {
       <div className="mt-10 flex flex-wrap justify-center gap-4">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-white hover:bg-primary/90"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-primary-foreground transition-colors hover:bg-primary-deep"
         >
           <Home className="h-4 w-4" />
           {t("goHome")}
         </Link>
         <Link
           href="/search"
-          className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-foreground hover:bg-muted"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-foreground transition-colors hover:bg-muted"
         >
           <Search className="h-4 w-4" />
           {t("search")}
         </Link>
         <Link
           href="/emergency"
-          className="inline-flex items-center gap-2 rounded-lg bg-emergency px-5 py-2.5 text-white hover:bg-emergency/90"
+          className="inline-flex items-center gap-2 rounded-full bg-emergency px-5 py-2.5 text-white transition-colors hover:bg-emergency/90"
         >
           <Phone className="h-4 w-4" />
           {t("emergency")}
         </Link>
       </div>
 
-      <div className="mt-12 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-        <strong className="block text-amber-950">{t("ifEmergency")}</strong>
+      <div className="mt-12 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <strong className="block font-medium text-amber-950">{t("ifEmergency")}</strong>
         {t.rich("emergencyText", {
           aspca: (chunks) => (
-            <a href="tel:8884264435" className="font-semibold underline">
+            <a href="tel:8884264435" className="font-medium underline">
               {chunks}
             </a>
           ),
           pph: (chunks) => (
-            <a href="tel:8557647661" className="font-semibold underline">
+            <a href="tel:8557647661" className="font-medium underline">
               {chunks}
             </a>
           ),

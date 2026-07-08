@@ -10,15 +10,18 @@ import { SourceFilter } from "@/components/news/SourceFilter";
 import { FilterGroup } from "@/components/news/FilterGroup";
 import { ClearFilters } from "@/components/news/ClearFilters";
 import {
-  getAllNewsFrontmatterCached,
+  getAllNewsFrontmatter,
   groupNewsByMonth,
   getUniqueNewsValues,
-  loadClusters,
+  loadClustersRaw,
   buildClusterMap,
 } from "@/lib/news-content";
 import { getSiteConfig } from "@/lib/content";
-import type { Locale } from "@/lib/i18n";
-import type { NewsSeverity, NewsCluster, NewsItem } from "@/lib/news-types";
+import { buildItemListSchema } from "@/lib/jsonld";
+import { type Locale } from "@/lib/i18n";
+import type { NewsSeverity, NewsCluster, NewsItem, NewsEntry } from "@/lib/news-types";
+
+export const dynamic = "force-dynamic";
 
 interface NewsPageProps {
   params: Promise<{ locale: Locale }>;
@@ -29,10 +32,12 @@ interface NewsPageProps {
     source?: string;
     species?: string;
     substance?: string;
+    type?: string;
   }>;
 }
 
 const SEVERITIES: NewsSeverity[] = ["critical", "high", "moderate", "low"];
+const NEWS_TYPES: Array<NonNullable<NewsEntry["type"]>> = ["recall", "alert", "incident"];
 
 function groupMonthsByYear(months: string[]): Record<string, string[]> {
   const grouped: Record<string, string[]> = {};
@@ -213,6 +218,7 @@ function matchesFilters(
     sources: string[];
     species: string[];
     substances: string[];
+    types: string[];
   }
 ): boolean {
   const entry = item.entry;
@@ -226,6 +232,9 @@ function matchesFilters(
     return false;
   }
   if (filters.substances.length > 0 && !entry.substances.some((s) => filters.substances.includes(s))) {
+    return false;
+  }
+  if (filters.types.length > 0 && !filters.types.includes(entry.type ?? "incident")) {
     return false;
   }
   return true;
@@ -301,6 +310,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
     source: rawSource,
     species: rawSpecies,
     substance: rawSubstance,
+    type: rawType,
   } = await searchParams;
 
   const showAllMonths = rawAll === "true";
@@ -308,13 +318,14 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
   const sourceFilter = parseFilterParam(rawSource);
   const speciesFilter = parseFilterParam(rawSpecies);
   const substanceFilter = parseFilterParam(rawSubstance);
+  const typeFilter = parseFilterParam(rawType);
 
   const [allNews, config, clusters] = await Promise.all([
-    getAllNewsFrontmatterCached(locale),
+    getAllNewsFrontmatter(locale),
     getSiteConfig(locale),
-    loadClusters(locale),
+    loadClustersRaw(locale),
   ]);
-  const t = await getTranslations("NewsPage");
+  const t = await getTranslations({ locale, namespace: "NewsPage" });
 
   const clusterMap = buildClusterMap(clusters);
 
@@ -323,6 +334,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
     sources: sourceFilter,
     species: speciesFilter,
     substances: substanceFilter,
+    types: typeFilter,
   };
 
   const hasActiveFilters =
@@ -330,6 +342,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
     sourceFilter.length > 0 ||
     speciesFilter.length > 0 ||
     substanceFilter.length > 0 ||
+    typeFilter.length > 0 ||
     !!rawMonth;
 
   const filteredNews = hasActiveFilters
@@ -370,9 +383,18 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
     source: rawSource,
     species: rawSpecies,
     substance: rawSubstance,
+    type: rawType,
   };
 
-  const pathname = `/${locale}/news`;
+  const pathname = "/news";
+
+  const baseUrl = config.base_url.endsWith("/") ? config.base_url.slice(0, -1) : config.base_url;
+  const newsItemListJsonLd = buildItemListSchema(
+    allNews.map((item) => ({
+      name: item.entry.title,
+      url: `${baseUrl}/${locale}/news/${item.slug}`,
+    }))
+  );
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -382,6 +404,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
           __html: JSON.stringify([
             buildWebSiteJsonLd(config.base_url),
             buildBreadcrumbJsonLd(locale, config.base_url),
+            newsItemListJsonLd,
           ]).replace(/</g, "\\u003c"),
         }}
       />
@@ -391,13 +414,13 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
       <header className="mt-6">
         <div className="flex items-center gap-3">
           <Newspaper className="h-8 w-8 text-primary" />
-          <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
+          <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{t("title")}</h1>
         </div>
-        <p className="mt-2 text-lg text-muted-foreground">{t("description")}</p>
+        <p className="mt-2 text-lg font-light text-muted-foreground">{t("description")}</p>
       </header>
 
-      <section className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-        <strong className="block text-amber-950">{t("disclaimerTitle")}</strong>
+      <section className="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <strong className="block font-medium text-amber-950">{t("disclaimerTitle")}</strong>
         {t("disclaimerText")}
       </section>
 
@@ -430,6 +453,7 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
               source: rawSource,
               species: rawSpecies,
               substance: rawSubstance,
+              type: rawType,
             }}
           />
 
@@ -442,7 +466,21 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
               label: t(`severity.${severity}`),
             }))}
             selected={severityFilter}
-            buildHref={(updates) => buildHref(pathname, currentParams, updates)}
+            pathname={pathname}
+            currentParams={currentParams}
+          />
+
+          <FilterGroup
+            title={t("filterType")}
+            param="type"
+            mode="chip"
+            items={NEWS_TYPES.map((type) => ({
+              value: type,
+              label: t(`type.${type}`),
+            }))}
+            selected={typeFilter}
+            pathname={pathname}
+            currentParams={currentParams}
           />
 
           <SourceFilter
@@ -465,7 +503,8 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
             mode="chip"
             items={species.map((s) => ({ value: s, label: t(`species.${s}`) }))}
             selected={speciesFilter}
-            buildHref={(updates) => buildHref(pathname, currentParams, updates)}
+            pathname={pathname}
+            currentParams={currentParams}
           />
 
           <FilterGroup
@@ -474,7 +513,8 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
             mode="chip"
             items={substances.map((substance) => ({ value: substance, label: substance }))}
             selected={substanceFilter}
-            buildHref={(updates) => buildHref(pathname, currentParams, updates)}
+            pathname={pathname}
+            currentParams={currentParams}
           />
         </aside>
 
@@ -508,11 +548,11 @@ export default async function NewsPage({ params, searchParams }: NewsPageProps) 
       </section>
 
       <section className="mt-12 rounded-2xl bg-primary/5 px-6 py-10 text-center">
-        <h2 className="text-2xl font-semibold text-foreground">{t("subscribeTitle")}</h2>
+        <h2 className="text-2xl font-normal tracking-tight text-foreground">{t("subscribeTitle")}</h2>
         <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">{t("subscribeDescription")}</p>
         <a
           href="/sitemap.xml"
-          className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-deep"
         >
           {t("rssCta")}
         </a>

@@ -3,18 +3,26 @@ import { resolve } from "path";
 
 const KEY = "3b4a87ed7d6709654ef55f4c53f5b5f9e3ff1a6e16c89cdf4a31b590bccb47dc";
 const HOST = "petpilot.top";
-const SITEMAP_URL = `https://${HOST}/sitemap.xml`;
+const SITEMAP_URLS = [
+  `https://${HOST}/sitemap.xml`,
+  `https://${HOST}/news-sitemap.xml`,
+];
 
-async function fetchUrls(): Promise<string[]> {
-  const res = await fetch(SITEMAP_URL);
+async function fetchUrlsFromSitemap(sitemapUrl: string): Promise<string[]> {
+  const res = await fetch(sitemapUrl);
   if (!res.ok) {
-    throw new Error(`Failed to fetch sitemap: ${res.status}`);
+    throw new Error(`Failed to fetch sitemap ${sitemapUrl}: ${res.status}`);
   }
   const xml = await res.text();
   const matches = xml.matchAll(/<loc>([^<]+)<\/loc>/g);
   return Array.from(matches)
     .map((m) => m[1]?.trim())
     .filter((url): url is string => typeof url === "string" && url.length > 0);
+}
+
+async function fetchUrls(): Promise<string[]> {
+  const nested = await Promise.all(SITEMAP_URLS.map(fetchUrlsFromSitemap));
+  return Array.from(new Set(nested.flat()));
 }
 
 async function submitIndexNow(urls: string[]) {

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nutrition",
+    "slug": "nutrition",
+    "name": "Nutrition",
+    "description": "Science-backed feeding guides, safe food lists, and nutritional advice for dogs and cats."
+  },
+  {
+    "id": "safety",
+    "slug": "safety",
+    "name": "Safety",
+    "description": "How to keep your pets safe from toxic foods, plants, medications, and household hazards."
+  },
+  {
+    "id": "wellness",
+    "slug": "wellness",
+    "name": "Wellness",
+    "description": "Long-form guides on pet health, life-stage care, weight management, and everyday wellbeing."
+  },
+  {
+    "id": "environment",
+    "slug": "environment",
+    "name": "Home & Garden",
+    "description": "Pet-proofing your home, safe houseplants, garden hazards, and seasonal safety tips."
+  }
+]

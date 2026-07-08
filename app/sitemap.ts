@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import {
   getAllCategories,
+  getAllGuides,
   getFoodSlugs,
   getHouseholdChemicalSlugs,
   getMedicationSlugs,
@@ -22,11 +23,12 @@ function entry(
   options: {
     priority?: number;
     changeFrequency?: Sitemap[number]["changeFrequency"];
+    lastModified?: Date;
   } = {}
 ): Sitemap[number] {
   return {
     url,
-    lastModified: new Date(),
+    lastModified: options.lastModified ?? new Date(),
     changeFrequency: options.changeFrequency ?? "weekly",
     priority: options.priority ?? 0.6,
   };
@@ -52,16 +54,23 @@ export default async function sitemap(): Promise<Sitemap> {
     getPesticideSlugs(defaultLocale),
   ]);
 
+  const guidesByLocale = await Promise.all(
+    locales.map((locale) => getAllGuides(locale))
+  );
+
   const routes: Sitemap = [];
 
-  for (const locale of locales) {
+  for (const [localeIndex, locale] of locales.entries()) {
     const prefix = `${baseUrl}/${locale}`;
+    const guides = guidesByLocale[localeIndex];
 
-    // Core pages
+    // Core pages (no news detail pages; those live in news-sitemap.xml)
     routes.push(entry(`${prefix}/`, { priority: 1.0, changeFrequency: "weekly" }));
     routes.push(entry(`${prefix}/search`, { priority: 0.8, changeFrequency: "weekly" }));
     routes.push(entry(`${prefix}/news`, { priority: 0.8, changeFrequency: "daily" }));
+    routes.push(entry(`${prefix}/guides`, { priority: 0.8, changeFrequency: "weekly" }));
     routes.push(entry(`${prefix}/emergency`, { priority: 0.9, changeFrequency: "monthly" }));
+    routes.push(entry(`${prefix}/emergency/wizard`, { priority: 0.8, changeFrequency: "monthly" }));
     routes.push(entry(`${prefix}/about`, { priority: 0.5, changeFrequency: "monthly" }));
     routes.push(entry(`${prefix}/privacy`, { priority: 0.3, changeFrequency: "yearly" }));
     routes.push(entry(`${prefix}/terms`, { priority: 0.3, changeFrequency: "yearly" }));
@@ -108,6 +117,17 @@ export default async function sitemap(): Promise<Sitemap> {
     for (const slug of pesticideSlugs) {
       routes.push(
         entry(`${prefix}/pesticides/${slug}`, { priority: 0.6, changeFrequency: "monthly" })
+      );
+    }
+
+    // Guide detail pages
+    for (const guide of guides ?? []) {
+      routes.push(
+        entry(`${prefix}/guides/${guide.slug}`, {
+          priority: 0.7,
+          changeFrequency: "monthly",
+          lastModified: guide.updated_at ? new Date(guide.updated_at) : new Date(guide.published_at),
+        })
       );
     }
   }

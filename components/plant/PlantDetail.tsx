@@ -2,13 +2,15 @@ import Image from "next/image";
 import { ExternalLink, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
 import { SafetyBadge, CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
-import { getEmergencyInfo } from "@/lib/content";
-import { buildGuideFaqSchema } from "@/lib/jsonld";
+import { RelatedItems } from "@/components/detail/RelatedItems";
+import { findRelatedEntries, getEmergencyInfo } from "@/lib/content";
+import { buildPlantFaqSchema } from "@/lib/jsonld";
 import type { PlantEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
 
@@ -26,11 +28,12 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
 
   const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
+  const related = await findRelatedEntries(plant, locale, 6);
 
   const pageUrl = `/${locale}/plants/${plant.slug}`;
-  const t = await getTranslations("PlantDetail");
-  const tNav = await getTranslations("Header");
-  const jsonLd = buildGuideFaqSchema(plant);
+  const t = await getTranslations({ locale, namespace: "PlantDetail" });
+  const tNav = await getTranslations({ locale, namespace: "Header" });
+  const jsonLd = buildPlantFaqSchema(plant);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -61,13 +64,13 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
             />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">
               {t("isSafeForPets", { name: plant.name })}
             </h1>
             {plant.scientific_name && (
-              <p className="mt-2 text-lg italic text-muted-foreground">{plant.scientific_name}</p>
+              <p className="mt-2 text-lg font-light italic text-muted-foreground">{plant.scientific_name}</p>
             )}
-            <p className="mt-2 text-lg text-muted-foreground">
+            <p className="mt-2 text-lg font-light text-muted-foreground">
               {t("subtitle", { name: plant.name.toLowerCase() })}
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
@@ -108,22 +111,20 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
         <p>{plant.what_to_do}</p>
         <div className="not-prose my-4 flex flex-wrap gap-3">
           {aspca && (
-            <a
-              href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {t("call", { name: aspca.name })}
-            </a>
+            <Button variant="emergency" asChild>
+              <a href={`tel:${aspca.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {t("call", { name: aspca.name })}
+              </a>
+            </Button>
           )}
           {pph && (
-            <a
-              href={`tel:${pph.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-emergency bg-white px-4 py-2 text-emergency hover:bg-emergency-light"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {pph.name}
-            </a>
+            <Button variant="emergency-outline" asChild>
+              <a href={`tel:${pph.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {pph.name}
+              </a>
+            </Button>
           )}
         </div>
 
@@ -174,14 +175,16 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
         <p>{t("vetsNoteText")}</p>
       </div>
 
+      <RelatedItems items={related} locale={locale} />
+
       <div className="mt-8 space-y-4">
         <ReportIssue itemName={plant.name} pageUrl={pageUrl} locale={locale} />
-        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
           {t.rich("medicalDisclaimerText", {
             aspca: (chunks) =>
               aspca ? (
-                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-semibold underline">
+                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-medium underline">
                   {chunks}
                 </a>
               ) : (
@@ -189,7 +192,7 @@ export async function PlantDetail({ plant, locale }: PlantDetailProps) {
               ),
             pph: (chunks) =>
               pph ? (
-                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-semibold underline">
+                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-medium underline">
                   {chunks}
                 </a>
               ) : (

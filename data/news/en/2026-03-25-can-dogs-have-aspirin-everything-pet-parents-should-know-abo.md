@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-03-25-can-dogs-have-aspirin-everything-pet-parents-should-know-abo
 title: >-
   Can Dogs Have Aspirin? Everything Pet Parents Should Know About Aspirin
@@ -17,9 +18,11 @@ summary: >-
   Can Dogs Have Aspirin? Everything Pet Parents Should Know About Aspirin
   Poisoning in Dogs PetMD This report may be useful for pet owners monitoring
   potential risks. Affected animals: dogs.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: incident
+clusterId: 7cf80a2310044757
+updatedAt: '2026-07-08T08:37:09.610Z'
 ---
 Can Dogs Have Aspirin? Everything Pet Parents Should Know About Aspirin Poisoning in Dogs PetMD This report may be useful for pet owners monitoring potential risks. Affected animals: dogs.
 

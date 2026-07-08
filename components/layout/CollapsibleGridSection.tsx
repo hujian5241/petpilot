@@ -48,12 +48,12 @@ export function CollapsibleGridSection({
         className="group flex w-full items-center justify-between text-left disabled:cursor-default"
         aria-expanded={expanded}
       >
-        <h2 className="text-2xl font-semibold text-foreground">
+        <h2 className="text-2xl font-normal tracking-tight text-foreground">
           {title}{" "}
           <span className="text-base font-normal text-muted-foreground">({count})</span>
         </h2>
         {needsToggle && (
-          <span className="flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-sm font-medium text-muted-foreground transition-colors group-hover:border-primary group-hover:text-primary">
+          <span className="flex items-center gap-1 rounded-full border border-border bg-background px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors group-hover:border-primary group-hover:text-primary">
             {expanded ? "Show less" : `Show all ${count}`}
             <ChevronDown
               className={`h-5 w-5 transition-transform ${expanded ? "rotate-180" : ""}`}
@@ -62,14 +62,14 @@ export function CollapsibleGridSection({
           </span>
         )}
       </button>
-      <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {visibleChildren}
       </div>
       {expanded && needsToggle && (
         <button
           type="button"
           onClick={toggle}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-lg transition-transform hover:scale-105 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-colored transition-transform hover:scale-105 hover:bg-primary-deep focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           aria-label="Show less"
         >
           <ChevronUp className="h-4 w-4" aria-hidden="true" />

@@ -6,6 +6,7 @@ import { Link } from "@/i18n/routing";
 import type { Locale } from "@/lib/i18n";
 import type { NewsEntry, NewsSeverity } from "@/lib/news-types";
 import { cn } from "@/lib/utils";
+import { NewsTypeBadge } from "./NewsTypeBadge";
 
 function severityBadge(severity: NewsSeverity): string {
   switch (severity) {
@@ -40,13 +41,17 @@ export function NewsCard({
   return (
     <article
       className={cn(
-        "flex h-full flex-col rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm",
+        "flex h-full flex-col rounded-xl border border-border bg-card p-5 transition-shadow hover:shadow-card",
         className
       )}
     >
       {/* Date + location */}
       <div className="flex flex-nowrap items-center gap-2 text-xs text-muted-foreground">
-        <time dateTime={entry.date} className="shrink-0 whitespace-nowrap">
+        <time
+          dateTime={entry.date}
+          className="shrink-0 whitespace-nowrap"
+          suppressHydrationWarning
+        >
           {formattedDate}
         </time>
         {entry.location && (
@@ -63,7 +68,7 @@ export function NewsCard({
       </div>
 
       {/* Title: clamped to 2 lines with fixed min-height */}
-      <h3 className="mt-2 min-h-[2.5rem] text-base font-semibold leading-tight text-foreground">
+      <h3 className="mt-2 min-h-[2.5rem] text-base font-medium leading-tight text-foreground">
         <Link href={`/news/${item.slug}`} className="line-clamp-2 hover:text-primary">
           {entry.title}
         </Link>
@@ -76,6 +81,7 @@ export function NewsCard({
 
       {/* Tags: pushed to the bottom and limited to a single line */}
       <div className="mt-auto flex flex-nowrap items-center gap-2 overflow-hidden">
+        <NewsTypeBadge type={entry.type} />
         <span
           className={`inline-flex shrink-0 rounded-full border px-2 py-0.5 text-xs font-medium ${severityBadge(entry.severity)}`}
         >
@@ -92,7 +98,7 @@ export function NewsCard({
         {entry.substances.slice(0, 2).map((substance) => (
           <span
             key={substance}
-            className="inline-flex shrink-0 rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+            className="inline-flex shrink-0 rounded-full bg-primary-subdued px-2 py-0.5 text-xs font-medium text-primary-deep"
           >
             {substance}
           </span>

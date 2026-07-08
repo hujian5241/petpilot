@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 
+export const dynamic = "force-static";
+
 import { FoodCard } from "@/components/food/FoodCard";
 import { PlantCard } from "@/components/plant/PlantCard";
 import { HazardCard } from "@/components/hazard/HazardCard";
@@ -17,6 +19,7 @@ import {
   getSiteConfig,
 } from "@/lib/content";
 import { buildCategoryMetadata } from "@/lib/metadata";
+import { buildItemListSchema } from "@/lib/jsonld";
 import type { Locale } from "@/lib/i18n";
 import type { SafetyStatus } from "@/lib/types";
 
@@ -104,7 +107,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const t = await getTranslations({ locale, namespace: "SearchPage" });
   const tCategory = await getTranslations({ locale, namespace: "CategoryPage" });
-  const tBadge = await getTranslations("SafetyBadge");
+  const tBadge = await getTranslations({ locale, namespace: "SafetyBadge" });
 
   const statusLabels: Record<StatusGroup, string> = {
     safe: tBadge("safe"),
@@ -113,12 +116,35 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     unknown: tBadge("unknown"),
   };
 
+  const allCategoryItems = [
+    ...categoryFoods.map((item) => ({ name: item.name, slug: item.slug, type: "foods" as const })),
+    ...categoryPlants.map((item) => ({ name: item.name, slug: item.slug, type: "plants" as const })),
+    ...categoryMedications.map((item) => ({ name: item.name, slug: item.slug, type: "medications" as const })),
+    ...categoryHouseholdChemicals.map((item) => ({ name: item.name, slug: item.slug, type: "household-chemicals" as const })),
+    ...categoryPesticides.map((item) => ({ name: item.name, slug: item.slug, type: "pesticides" as const })),
+  ];
+
+  const config = await getSiteConfig(locale);
+  const baseUrl = config.base_url.endsWith("/") ? config.base_url.slice(0, -1) : config.base_url;
+  const itemListJsonLd = buildItemListSchema(
+    allCategoryItems.map((item) => ({
+      name: item.name,
+      url: `${baseUrl}/${locale}/${item.type}/${item.slug}`,
+    }))
+  );
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Breadcrumb locale={locale} items={[{ label: category.name }]} />
       <header className="mt-6">
-        <h1 className="text-3xl font-bold text-foreground">{category.name}</h1>
-        <p className="mt-2 text-lg text-muted-foreground">{category.description}</p>
+        <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{category.name}</h1>
+        <p className="mt-2 text-lg font-light text-muted-foreground">{category.description}</p>
       </header>
 
       {categoryFoods.length > 0 && (
@@ -185,7 +211,7 @@ function TypeSection<T extends { slug: string; name: string; safety: { dogs: { s
 
   return (
     <section className="mt-12">
-      <h2 className="text-2xl font-semibold text-foreground">{title}</h2>
+      <h2 className="text-2xl font-normal tracking-tight text-foreground">{title}</h2>
       <CollapsibleGridSection title={`All ${title}`} count={items.length}>
         {items.map((item) => renderCard(item, type, locale))}
       </CollapsibleGridSection>

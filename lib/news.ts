@@ -13,12 +13,14 @@ export interface NewsCluster {
   slugs: string[];
   title: string;
   summary: string;
-  sources: { name: string; url: string; slug: string }[];
+  bodyHtml?: string;
+  sources: { name: string; url: string; slug: string; date: string }[];
   dateRange: { start: string; end: string };
   month: string;
   species: ("dogs" | "cats" | "other")[];
   substances: string[];
   severity: NewsSeverity;
+  type?: NewsEntry["type"];
 }
 
 export interface NewsEntry {
@@ -33,6 +35,7 @@ export interface NewsEntry {
   substances: string[];
   severity: NewsSeverity;
   status: "confirmed" | "under_investigation" | "resolved" | "recovery";
+  type?: "recall" | "incident" | "alert";
   summary: string;
   body: string;
   relatedSlugs: {

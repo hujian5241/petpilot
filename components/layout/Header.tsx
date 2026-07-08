@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { PawPrint } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -14,6 +15,11 @@ interface HeaderProps {
 export function Header({ locale }: HeaderProps) {
   const t = useTranslations("Header");
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const categoryItems = [
     { href: "/foods", label: t("foods") },
@@ -27,21 +33,23 @@ export function Header({ locale }: HeaderProps) {
     { href: "/", label: t("home") },
     { href: "/search", label: t("search") },
     { href: "/news", label: t("news") },
+    { href: "/guides", label: t("guides") },
     { href: "/emergency", label: t("emergency"), variant: "emergency" as const },
     { href: "/about", label: t("about") },
   ];
 
   function isActive(href: string): boolean {
+    if (!mounted) return false;
     return href === pathname;
   }
 
   function navLinkClass(href: string, variant?: "default" | "emergency"): string {
     const active = isActive(href);
-    const base = "transition-colors";
+    const base = "text-sm font-medium transition-colors";
     if (variant === "emergency") {
       return `${base} ${active ? "font-semibold underline underline-offset-4" : ""} text-emergency hover:text-emergency/80`;
     }
-    return `${base} ${active ? "font-semibold text-foreground" : "text-muted-foreground hover:text-foreground"}`;
+    return `${base} ${active ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`;
   }
 
   return (
@@ -49,12 +57,12 @@ export function Header({ locale }: HeaderProps) {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex items-center gap-2 text-xl font-bold text-foreground"
+          className="flex items-center gap-2 text-xl font-medium tracking-tight text-foreground"
         >
           <PawPrint className="h-7 w-7 text-primary" aria-hidden="true" />
           <span className="hidden sm:inline">PetPilot</span>
         </Link>
-        <nav aria-label="Main" className="hidden items-center gap-5 text-sm font-medium md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-5 md:flex">
           <Link href="/" className={navLinkClass("/")} aria-current={isActive("/") ? "page" : undefined}>
             {t("home")}
           </Link>
@@ -68,6 +76,9 @@ export function Header({ locale }: HeaderProps) {
           />
           <Link href="/news" className={navLinkClass("/news")} aria-current={isActive("/news") ? "page" : undefined}>
             {t("news")}
+          </Link>
+          <Link href="/guides" className={navLinkClass("/guides")} aria-current={isActive("/guides") ? "page" : undefined}>
+            {t("guides")}
           </Link>
           <Link href="/emergency" className={navLinkClass("/emergency", "emergency")} aria-current={isActive("/emergency") ? "page" : undefined}>
             {t("emergency")}

@@ -76,9 +76,88 @@ meta_description: >-
   Ist Brokkoli für Hunde und Katzen unbedenklich? Brokkoli ist für Hunde und
   Katzen unbedenklich. Erfahren Sie mehr über Symptome, das richtige Verhalten
   und tierärztlich geprüfte Alternativen.
+faq_extras:
+  - question: Dürfen Hunde rohen Brokkoli essen?
+    answer: >-
+      Hunde können kleine Mengen rohen Brokkoli essen, aber er kann schwerer
+      verdaulich sein und Blähungen verursachen. Dämpfen macht ihn oft sanfter
+      für den Magen.
+  - question: Ist Brokkoli für Hunde giftig?
+    answer: >-
+      Brokkoli ist in kleinen Mengen nicht giftig. Sehr große Mengen können
+      aufgrund von Verbindungen in den Röschen Magenreizungen verursachen.
+  - question: Dürfen Katzen Brokkoli essen?
+    answer: >-
+      Katzen können ein winziges Stück ungewürzten Brokkolis essen. Sie brauchen
+      keine Gemüse und werden es wahrscheinlich ablehnen.
+  - question: Kann Brokkoli bei Haustieren Blähungen verursachen?
+    answer: >-
+      Ja, Brokkoli ist ein Kreuzblütlergemüse und verursacht häufig Blähungen und
+      Aufblähung bei Hunden und Katzen.
+  - question: Sollte Brokkoli für Haustiere gekocht werden?
+    answer: >-
+      Dämpfen ohne Gewürze ist die beste Zubereitung. Vermeiden Sie Butter, Käse,
+      Knoblauch und Zwiebeln.
+  - question: Wie viel Brokkoli kann ein Hund haben?
+    answer: >-
+      Einige kleine Röschen sind für die meisten Hunde ausreichend. Große
+      Mengen sollten vermieden werden, um Blähungen und Reizungen zu reduzieren.
+why_it_matters: >-
+  Brokkoli ist ein nährstoffreiches Gemüse, das viele Besitzer teilen möchten.
+  Die korrekte Fütterung liefert Vitamine und Ballaststoffe, ohne die Blähungen
+  und Magenverstimmungen zu verursachen, die durch große Portionen entstehen
+  können.
+how_it_works: >-
+  Brokkoli enthält Ballaststoffe, Vitamin C und Antioxidantien. In kleinen
+  Mengen kann er die Immungesundheit und Verdauung unterstützen. Die Röschen
+  enthalten Isothiocyanate, die den Magen bei zu hoher Aufnahme reizen können.
+species_differences: >-
+  Hunde können Brokkoli als kalorienarmen Snack genießen. Katzen haben minimalen
+  Bedarf an Gemüse und sollten nur ein winziges Stück bei seltenen Gelegenheiten
+  erhalten.
+common_scenarios:
+  - Ein Hund bettelt nach gedämpftem Brokkoli vom Abendessen
+  - Ein Haustier isst Brokkoli mit Käsesauce
+  - Ein Welpe wird rohen Brokkoli vorgestellt
+  - Eine Katze schnuppert ein kleines Röschen auf dem Boden
+  - Übrig gebliebener gebackener Brokkoli mit Knoblauch liegt in Reichweite
+timeline: >-
+  Blähungen oder leichter Durchfall treten normalerweise innerhalb weniger
+  Stunden auf. Die Symptome klingen normalerweise ab, sobald Brokkoli aus der
+  Ernährung entfernt wird.
+quick_facts:
+  - Servieren Sie ungewürzt und in kleinen Stücken
+  - Dämpfen statt roh servieren für bessere Verdaulichkeit
+  - Vermeiden Sie Aufläufe, Käsesaucen und Gewürze
+  - Langsam bei Welpen einführen
+  - Portion auf einige kleine Röschen beschränken
 ---
 # Brokkoli
 
 Brokkoli ist für Hunde und Katzen in kleinen Mengen unbedenklich. Er enthält Ballaststoffe, Vitamin C und Antioxidantien. Die Röschen enthalten jedoch Isothiocyanate, die bei einigen Tieren bei größeren Mengen Magenreizungen verursachen können.
 
 Servieren Sie Brokkoli ungewürzt und in mundgerechten Stücken. Gedämpft ist er leichter verdaulich als roh. Vermeiden Sie Brokkoli-Aufläufe oder Gerichte mit Knoblauch, Zwiebeln, Käse oder sättigenden Saucen. Wenn Ihr Tier Blähungen oder Durchfall entwickelt, setzen Sie die Brokkoli-Fütterung ab.
+
+## Warum Brokkoli für Haustiere wichtig ist
+
+Brokkoli wird oft als Superfood für Menschen gelobt, und viele Haustierbesitzer gehen davon aus, dass er für Hunde und Katzen ebenso vorteilhaft ist. Während kleine Mengen Nährstoffe liefern können, ist Brokkoli kein notwendiger Teil einer Haustierernährung. Das Verständnis der Portionsgröße und Zubereitung hilft den Besitzern, ihn sicher zu teilen, ohne Verdauungsbeschwerden zu verursachen.
+
+## Wie Brokkoli Hunde und Katzen beeinflusst
+
+In Maßen bietet Brokkoli Ballaststoffe, die die Verdauung unterstützen, und Antioxidantien, die der allgemeinen Gesundheit zugute kommen können. Die Röschen enthalten natürliche Verbindungen namens Isothiocyanate, die die Magenschleimhaut bei zu hoher Aufnahme reizen können. Hunde tolerieren Brokkoli möglicherweise besser als Katzen, aber beide Arten können Blähungen und Aufblähung erleben.
+
+## Häufige Szenarien
+
+- **Ungewürzte gedämpfte Röschen:** Eine kleine Menge ist für Hunde normalerweise sicher.
+- **Roher Brokkoli:** Schwieriger zu verdauen und häufiger Blähungen verursachend.
+- **Brokkoli mit Käse oder Sauce:** Enthält unsichere Zutaten wie Knoblauch, Zwiebeln oder Milchprodukte.
+- **Brokkolistiele:** Können hart sein; in kleine, handhabbare Stücke schneiden.
+- **Eine Katze mit Brokkoli:** Die meisten Katzen werden nicht interessiert sein und brauchen es nicht.
+
+## Was zu beachten ist
+
+Nach dem Füttern von Brokkoli beobachten Sie auf Blähungen, Aufblähung, leichten Durchfall oder verminderten Appetit. Wenn Symptome länger als einen Tag anhalten oder Ihr Tier unwohl aussieht, hören Sie auf, Brokkoli anzubieten und konsultieren Sie Ihren Tierarzt. Welpen und Tiere mit empfindlichen Mägen sollten langsam eingeführt werden.
+
+## Sicherere Alternativen
+
+Wenn Brokkoli Blähungen verursacht, versuchen Sie grüne Bohnen, Karotten oder kleine Mengen gekochten Blumenkohls. Diese Gemüse sind im Allgemeinen milder für das Verdauungssystem und liefern trotzdem Vitamine und Ballaststoffe.

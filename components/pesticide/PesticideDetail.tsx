@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { HazardDetail } from "@/components/hazard/HazardDetail";
+import { buildPesticideFaqSchema } from "@/lib/jsonld";
 import type { Locale } from "@/lib/i18n";
 import type { PesticideEntry } from "@/lib/types";
 
@@ -10,8 +11,8 @@ interface PesticideDetailProps {
 }
 
 export async function PesticideDetail({ pesticide, locale }: PesticideDetailProps) {
-  const t = await getTranslations("PesticideDetail");
-  const tNav = await getTranslations("Header");
+  const t = await getTranslations({ locale, namespace: "PesticideDetail" });
+  const tNav = await getTranslations({ locale, namespace: "Header" });
 
   return (
     <HazardDetail
@@ -25,6 +26,7 @@ export async function PesticideDetail({ pesticide, locale }: PesticideDetailProp
       safeForDogsTitle={t("safeForDogs", { name: pesticide.name })}
       safeForCatsTitle={t("safeForCats", { name: pesticide.name })}
       alternativesPrefix="pesticides"
+      faqJsonLd={buildPesticideFaqSchema(pesticide)}
     >
       <>
         <h2>{t("activeIngredients")}</h2>

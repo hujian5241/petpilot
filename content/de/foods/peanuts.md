@@ -87,9 +87,88 @@ meta_description: >-
   Sind Erdnüsse für Hunde und Katzen sicher? Erdnüsse sind für Hunde und Katzen
   eingeschränkt geeignet. Erfahren Sie Symptome, was zu tun ist, und
   tierarztgeprüfte Alternativen.
+faq_extras:
+  - question: Sind Erdnüsse giftig für Hunde?
+    answer: >-
+      Schlichte Erdnüsse sind nicht giftig, aber sie sind fettreich und können
+      Magenverstimmung oder Pankreatitis verursachen. Vermeiden Sie gesalzene
+      oder aromatisierte Sorten.
+  - question: Dürfen Hunde Erdnussbutter essen?
+    answer: >-
+      Schlichte, ungesalzene Erdnussbutter ohne Xylit kann in kleinen Mengen
+      gegeben werden. Überprüfen Sie immer das Etikett auf Xylit.
+  - question: Sind ganze Erdnüsse eine Erstickungsgefahr?
+    answer: >-
+      Ja. Ganze Erdnüsse sind schwer zu kauen und können besonders bei kleinen
+      Hunden Erstickung oder Darminkompensation verursachen.
+  - question: Dürfen Katzen Erdnüsse essen?
+    answer: >-
+      Katzen vertragen eventuell einen winzigen Geschmackstest, aber Erdnüsse
+      werden nicht empfohlen. Sie sind fettreich und bieten keine
+      Nährstoffvorteile für Katzen.
+  - question: Was ist mit honigrosten Erdnüssen?
+    answer: >-
+      Honigroste und aromatisierte Erdnüsse enthalten zugesetzten Zucker und
+      Salz. Sie sollten vermieden werden.
+why_it_matters: >-
+  Erdnüsse sind ein beliebter Snack, und Haustiere finden sie oft auf dem Boden
+  oder in einer gefallenen Tasche. Während schlichte Erdnüsse nicht giftig sind,
+  kann ihr hoher Fett- und Salzgehalt zu Verdauungsproblemen und Pankreatitis
+  führen. Überzogene oder aromatisierte Erdnüsse können auch gefährliche
+  Zutaten enthalten.
+how_it_works: >-
+  Erdnüsse sind Hülsenfrüchte, die fett- und kalorienreich sind. Eine kleine
+  Anzahl kann für einen großen Hund in Ordnung sein, aber die Fettbelastung kann
+  kleinere Haustiere überlasten. Gesalzene Sorten fügen Natrium hinzu, und
+  aromatisierte Beschichtungen können Zucker oder Schokolade enthalten.
+species_differences: >-
+  Hunde können kleine Mengen Erdnüsse besser verdauen als Katzen. Katzen sind
+  obligate Fleischfresser und profitieren nicht von pflanzlichen Leckerlis.
+  Beide Arten sollten ganze Erdnüsse wegen der Erstickungsgefahr vermeiden.
+common_scenarios:
+  - Ein paar schlichte Erdnüsse fallen auf den Boden
+  - Ein Hund kommt in eine Packung gesalzener Erdnüsse
+  - Erdnüsse werden als Trainingsleckerli gegeben
+  - Ein Haustier isst schokoladenüberzogene Erdnüsse
+  - Ein Welpe findet eine ganze Erdnuss
+timeline: >-
+  Leichte Magenverstimmung kann innerhalb weniger Stunden auftreten.
+  Pankreatitis-Anzeichen entwickeln sich normalerweise innerhalb von 24 bis 72
+  Stunden. Erstickung oder Blockierung kann sofort auftreten, wenn eine ganze
+  Erdnuss verschluckt wird.
+quick_facts:
+  - Erdnüsse sind Hülsenfrüchte, keine echten Nüsse
+  - Schlichte, ungesalzene, geschälte Erdnüsse sind die sicherste Form
+  - Ganze Erdnüsse können kleine Hunde ersticken
+  - Gesalzene und aromatisierte Sorten sind riskant
+  - Schokoladenüberzogene Erdnüsse sind gefährlich
 ---
 # Erdnüsse
 
 Erdnüsse sind strenggenommen keine Nüsse, sondern Hülsenfrüchte. Schlichte, ungesalzene Erdnüsse sind für Hunde in sehr kleinen Mengen in der Regel unbedenklich, ihr hoher Fettgehalt kann jedoch zu Magenbeschwerden oder Pankreatitis führen. Gesalzene oder aromatisierte Erdnüsse können Natriumprobleme verursachen.
 
 Katzen vertragen eventuell einen winzigen Geschmackstest, aber Erdnüsse bieten kaum Nährwert und können Verdauungsbeschwerden verursachen. Vermeiden Sie stets Erdnüsse, die mit Schokolade, Xylit oder anderen gefährlichen Zutaten überzogen sind.
+
+## Warum Erdnüsse für Haustiere wichtig sind
+
+Erdnüsse sind in vielen Haushalten überall zu finden, von Snackschalen bis zu Trail-Mix. Ein paar gefallene Nüsse können harmlos erscheinen, aber Fett und Salz addieren sich schnell. Überzogene Erdnüsse können auch Schokolade, Xylit oder Knoblauchpulver verbergen, die für Haustiere gefährlich sind.
+
+## Wie Erdnüsse Hunde und Katzen beeinflussen
+
+Schlichte Erdnüsse sind nicht giftig, aber ihr hoher Fettgehalt kann Erbrechen oder Durchfall verursachen. Bei anfälligen Haustieren können zu viele Erdnüsse Pankreatitis auslösen. Ganze Erdnüsse sind schwer zu kauen und können Erstickung oder Blockierung verursachen, besonders bei kleinen Hunden.
+
+## Häufige Szenarien
+
+- Ein paar schlichte Erdnüsse fallen beim Snacken auf den Boden.
+- Ein Hund reißt eine Packung gesalzener oder honigroster Erdnüsse auf.
+- Erdnüsse werden als improvisiertes Trainingsleckerli verwendet.
+- Ein Haustier isst schokoladenüberzogene oder bonbonierte Erdnüsse.
+- Ein Welpe findet draußen eine ganze Erdnuss.
+
+## Was zu beachten ist
+
+Achten Sie auf Erbrechen, Durchfall, Blähungen, Lethargie oder Appetitlosigkeit. Wenn Ihr Tier schokoladenüberzogene Erdnüsse gegessen hat oder Anzeichen von Pankreatitis wie Bauchschmerzen zeigt, kontaktieren Sie Ihren Tierarzt. Suchen Sie sofort Hilfe, wenn Sie Erstickung oder Blockierung vermuten.
+
+## Sicherere Alternativen
+
+Bieten Sie stattdessen kleine Stücke Karotten, Apfelscheiben oder grüne Bohnen an. Diese Gemüse sind fettarm und liefern Ballaststoffe. Wenn Sie Erdnussbutter verwenden möchten, wählen Sie schlichte, ungesalzene, xylitfreie Erdnussbutter in winzigen Mengen.

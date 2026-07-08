@@ -3,122 +3,143 @@ id: walnuts
 name: Noix
 slug: walnuts
 aliases:
-  - noix-anglaises
-  - noix-communes
+  - Noix de Grenoble
 categories:
   - nuts
 tags:
-  - high-fat
-  - mold-risk
+  - omega-3
+  - fatty-acids
+  - healthy-fats
 safety:
   dogs:
-    status: limited
-    severity: moderate
-    summary: >-
-      Les noix anglaises ne sont pas très toxiques, mais les noix moisies
-      peuvent provoquer des crises.
+    status: safe
+    summary: Sans danger en quantité modérée. Sans coque ni salage.
   cats:
-    status: limited
-    severity: low
-    summary: >-
-      Non recommandées ; teneur élevée en matières grasses et risque possible de
-      moisissure.
+    status: safe
+    summary: Sans danger en très petite quantité.
 symptoms:
-  - vomissements
+  - troubles digestifs
   - diarrhée
-  - tremblements
-  - convulsions
-  - faiblesse
 what_to_do: >-
-  Contactez immédiatement votre vétérinaire si des noix moisies ont été ingérées
-  ou si des tremblements surviennent.
+  Réduisez la portion ou arrêtez l'alimentation si les symptômes persistent.
 alternatives:
-  - carrots
-  - apple-slices
-  - blueberries
+  - almonds
+  - pumpkin-seeds
+  - flaxseed
 sources:
-  - name: Pet Poison Helpline
-    url: 'https://www.petpoisonhelpline.com/'
+  - name: American Kennel Club
+    url: 'https://www.akc.org/'
   - name: ASPCA
     url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
 preparation_notes: >-
-  Seules des noix fraîches, décortiquées et nature. Ne donnez jamais de noix
-  moisies ou de noix noires.
-safe_amount: >-
-  Évitez de donner des noix dans la mesure du possible ; une très petite
-  quantité, très rarement.
-frequency: À éviter.
+  Enlever la coque. Écraser ou couper en petits morceaux.
+safe_amount: Une noix pour les chiens ; une petite pincée pour les chats.
+frequency: Occasionnellement.
 related_foods:
-  - walnut-butter
-  - black-walnuts
+  - almonds
+  - pumpkin-seeds
 condition_warnings:
-  - condition: Insuffisance rénale chronique
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: >-
-      Elles contiennent du phosphore et des protéines, généralement limités en
-      cas d'insuffisance rénale chronique.
   - condition: Pancréatite
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: >-
-      Une alimentation riche en graisses peut déclencher ou aggraver une
-      pancréatite.
-  - condition: Obésité
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Très caloriques ; un excès peut favoriser la prise de poids.
-  - condition: Allergies alimentaires
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: consult_vet
-    reason: >-
-      Les fruits à coque et les graines sont des allergènes courants ; les
-      réactions sont individuelles.
-  - condition: Maladie du foie
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Une teneur élevée en graisses peut surcharger un foie fragilisé.
-  - condition: Maladie inflammatoire de l'intestin (IBD)
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Les graisses peuvent aggraver l'inflammation digestive.
+    reason: Teneur élevée en graisses.
   - condition: Hyperlipidémie
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Une teneur élevée en graisses aggrave l'hyperlipidémie.
-  - condition: Sensibilité gastro-intestinale
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Les graisses peuvent irriter un tube digestif sensible.
+    reason: Peut augmenter le taux de triglycérides.
 meta_title: >-
   Les chiens peuvent-ils manger des noix ? Sécurité, risques et conseils
   vétérinaires
 meta_description: >-
-  Les noix sont-elles sans danger pour les chiens et les chats ? Les noix sont
-  limitées pour les chiens et limitées pour les chats. Découvrez les symptômes,
-  les gestes à adopter et des alternatives validées par les vétérinaires.
+  Les noix sont-elles sûres pour les chiens et les chats ? Les noix sont sans
+  danger pour les chiens et les chats. Découvrez les symptômes, la conduite à
+  tenir et des alternatives approuvées par les vétérinaires.
+faq_extras:
+  - question: Les chiens peuvent-ils manger des noix avec la coque ?
+    answer: >-
+      Non. La coque est dure et peut causer des problèmes de digestion ou
+      d'étouffement. Enlevez-la toujours avant de servir.
+  - question: Les noix salées sont-elles sûres pour les chiens ?
+    answer: >-
+      Non. Les noix salées ou avec épices contiennent trop de sodium et des
+      ingrédients nocifs.
+  - question: Les chats peuvent-ils manger des noix ?
+    answer: >-
+      Une petite pincée d'une noix écrasée est sûre, mais pas nécessaire.
+      La plupart des chats ne s'intéressent pas.
+  - question: Les noix sont-elles bonnes pour le cœur des chiens ?
+    answer: >-
+      Oui, elles contiennent des acides gras oméga-3 qui peuvent aider à
+      maintenir la santé cardiaque, mais seulement en quantité modérée.
+  - question: Trop de noix peuvent-elles être nocives ?
+    answer: >-
+      Oui, une consommation excessive peut causer une pancréatite en raison de
+      la teneur élevée en graisses.
+  - question: Que faire si mon chien mange beaucoup de noix ?
+    answer: >-
+      Si votre chien en mange beaucoup, surveillez les signes de pancréatite
+      comme la douleur abdominale, les vomissements ou la diarrhée.
+why_it_matters: >-
+  Les noix sont une source d'acides gras oméga-3 sains pour les animaux.
+  Cependant, elles doivent être servies en quantité modérée, car leur teneur
+  élevée en graisses peut causer des problèmes de digestion ou une
+  pancréatite.
+how_it_works: >-
+  Les noix contiennent des acides gras oméga-3 qui sont bons pour la santé
+  cardiaque et le pelage. Cependant, la teneur élevée en graisses peut
+  surcharger le pancréas si elles sont consommées en trop grande quantité.
+species_differences: >-
+  Les chiens peuvent manger une noix occasionnellement. Les chats n'ont pas
+  besoin d'elles, mais une petite quantité est sans danger.
+common_scenarios:
+  - Offrir une noix comme friandise
+  - Un chien vole des noix d'un bol
+  - Nourrir des cookies ou barres à la noix
+  - Un animal mange une noix avec la coque
+  - Un chat grignote une noix écrasée
+timeline: >-
+  Si des symptômes surviennent, ils peuvent apparaître dans les 6-12 heures
+  après l'ingestion. La pancréatite peut être grave et nécessite une visite
+  vétérinaire immédiate.
+quick_facts:
+  - Riche en acides gras oméga-3
+  - Enlever la coque
+  - Écraser ou couper en petits morceaux
+  - Risque de pancréatite si consommées en grande quantité
+  - Éviter les noix salées ou avec épices
 ---
 # Noix
 
-Les noix anglaises natures ne sont pas aussi dangereuses que les noix noires, mais elles sont riches en matières grasses et peuvent provoquer des troubles digestifs. Le principal risque est la moisissure, qui peut produire des mycotoxines tremorgéniques entraînant des convulsions.
+Les noix sont une source d'acides gras oméga-3 sains pour les chiens. Elles sont sans danger, tant qu'elles sont données en quantité modérée et sans coque ni salage. Les chats peuvent manger une petite quantité, mais les noix ne font pas partie de leur alimentation naturelle.
 
-Les chats devraient éviter les noix en raison de leur teneur élevée en graisses et du risque de moisissure. Des friandises plus sûres incluent les carottes et les myrtilles.
+Enlevez toujours la coque et écrasez ou coupez les noix en petits morceaux avant de les servir. Évitez les noix salées ou avec épices, car elles contiennent du sodium et des ingrédients nocifs.
+
+## Pourquoi les noix sont importantes pour les animaux
+
+Les noix sont souvent vantées pour leurs propriétés cardiaques et leur teneur en oméga-3. Pour les chiens, une noix occasionnelle peut contribuer à maintenir la santé cardiaque et le pelage.
+
+## Comment les noix affectent les chiens et les chats
+
+En petite quantité, les noix sont bien digérées et fournissent des graisses saines. Cependant, une consommation excessive peut surcharger le pancréas et causer une pancréatite. Les chats sont des carnivores obligés et n'ont pas besoin de noix dans leur alimentation.
+
+## Scénarios courants
+
+- Un chien reçoit une noix comme récompense.
+- Un animal vole des noix d'un bol sur la table.
+- Un chien mange un cookie à la noix.
+- Un chat examine une noix écrasée.
+
+## Ce qu'il faut surveiller
+
+Surveillez les signes de pancréatite comme la douleur abdominale, les vomissements ou la diarrhée si votre animal en mange beaucoup. Les animaux avec une histoire de pancréatite doivent éviter complètement les noix. Évitez toujours les noix salées ou avec épices.
+
+## Alternatives plus sûres
+
+Des amandes, des graines de courge ou de la linseed sont des options similaires qui fournissent également des graisses saines. Elles doivent également être servies en quantité modérée.

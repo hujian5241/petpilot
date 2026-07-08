@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2025-12-23-are-poinsettia-plants-toxic-to-cats-and-dogs-fears-of-seriou
 title: >-
   Are poinsettia plants toxic to cats and dogs? Fears of serious harm are
@@ -18,9 +19,11 @@ summary: >-
   Are poinsettia plants toxic to cats and dogs? Fears of serious harm are
   overblown Snopes.com This report may be useful for pet owners monitoring
   potential risks. Affected animals: dogs, cats.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: incident
+clusterId: 50691e4da80fccf5
+updatedAt: '2026-07-08T08:29:12.125Z'
 ---
 Are poinsettia plants toxic to cats and dogs? Fears of serious harm are overblown Snopes.com This report may be useful for pet owners monitoring potential risks. Affected animals: dogs, cats.
 

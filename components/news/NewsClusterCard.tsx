@@ -6,6 +6,7 @@ import { Link } from "@/i18n/routing";
 import type { Locale } from "@/lib/i18n";
 import type { NewsCluster, NewsSeverity } from "@/lib/news-types";
 import { cn } from "@/lib/utils";
+import { NewsTypeBadge } from "./NewsTypeBadge";
 
 function severityBadge(severity: NewsSeverity): string {
   switch (severity) {
@@ -41,6 +42,14 @@ function formatDateRange(
   )}`;
 }
 
+function formatSourceDate(date: string, locale: Locale): string {
+  return new Date(date).toLocaleDateString(locale, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
+
 export function NewsClusterCard({
   cluster,
   locale,
@@ -55,17 +64,21 @@ export function NewsClusterCard({
   return (
     <article
       className={cn(
-        "flex flex-col rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm",
+        "flex flex-col rounded-xl border border-border bg-card p-5 transition-shadow hover:shadow-card",
         className
       )}
     >
       <div className="flex flex-nowrap items-center gap-2 text-xs text-muted-foreground">
-        <time dateTime={cluster.dateRange.start} className="shrink-0 whitespace-nowrap">
+        <time
+          dateTime={cluster.dateRange.start}
+          className="shrink-0 whitespace-nowrap"
+          suppressHydrationWarning
+        >
           {formatDateRange(cluster.dateRange, locale)}
         </time>
       </div>
 
-      <h3 className="mt-2 text-base font-semibold leading-tight text-foreground">
+      <h3 className="mt-2 text-base font-medium leading-tight text-foreground">
         <Link
           href={`/news/${cluster.canonicalSlug}`}
           className="hover:text-primary"
@@ -79,6 +92,7 @@ export function NewsClusterCard({
       </p>
 
       <div className="mt-3 flex flex-wrap items-center gap-1.5">
+        <NewsTypeBadge type={cluster.type} />
         <span
           className={cn(
             "inline-flex rounded-full border px-2 py-0.5 text-xs font-medium",
@@ -98,7 +112,7 @@ export function NewsClusterCard({
         {cluster.substances.slice(0, 2).map((substance) => (
           <span
             key={substance}
-            className="inline-flex rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+            className="inline-flex rounded-full bg-primary-subdued px-2 py-0.5 text-xs font-medium text-primary-deep"
           >
             {substance}
           </span>
@@ -118,6 +132,11 @@ export function NewsClusterCard({
                 className="text-foreground underline decoration-border underline-offset-2 transition-colors hover:text-primary hover:decoration-primary"
               >
                 {source.name}
+                {source.date && (
+                  <span className="text-muted-foreground" suppressHydrationWarning>
+                    ({formatSourceDate(source.date, locale)})
+                  </span>
+                )}
               </Link>
             ))}
             {cluster.sources.length > 3 && (

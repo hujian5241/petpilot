@@ -10,7 +10,6 @@ import { unstable_cache } from "next/cache";
 
 import { defaultLocale, type Locale } from "./locales";
 import type { NewsCluster, NewsEntry, NewsFile, NewsItem } from "./news-types";
-import { linkifyNewsContent } from "./news-linkify";
 
 export type { NewsCluster, NewsEntry, NewsFile, NewsItem } from "./news-types";
 
@@ -52,8 +51,7 @@ async function readNewsFile(
 
 async function parseNewsFile(
   slug: string,
-  locale: Locale = defaultLocale,
-  { linkify = false }: { linkify?: boolean } = {}
+  locale: Locale = defaultLocale
 ): Promise<NewsFile | undefined> {
   const file = await readNewsFile(slug, locale);
   if (!file) return undefined;
@@ -67,12 +65,6 @@ async function parseNewsFile(
     .use(rehypeStringify)
     .process(content);
 
-  const isClustered = Boolean(data.clusterId);
-  const rawHtml = processedContent.toString();
-  const contentHtml = linkify && isClustered
-    ? await linkifyNewsContent(rawHtml, locale, file.resolvedLocale !== locale)
-    : rawHtml;
-
   const stat = await fs.stat(file.resolvedPath);
   const updatedAt = data.updatedAt
     ? String(data.updatedAt)
@@ -81,11 +73,10 @@ async function parseNewsFile(
   return {
     slug,
     entry: data as NewsEntry,
-    contentHtml,
+    contentHtml: processedContent.toString(),
     updatedAt,
   };
 }
-
 async function parseNewsFileFrontmatter(
   slug: string,
   locale: Locale = defaultLocale
@@ -116,7 +107,7 @@ export async function getNewsBySlug(
   slug: string,
   locale: Locale = defaultLocale
 ): Promise<NewsFile | undefined> {
-  return parseNewsFile(slug, locale, { linkify: true });
+  return parseNewsFile(slug, locale);
 }
 
 export async function getAllNews(locale: Locale = defaultLocale): Promise<NewsFile[]> {
@@ -178,6 +169,8 @@ async function loadClustersUncached(locale: Locale = defaultLocale): Promise<New
   return JSON.parse(raw) as NewsCluster[];
 }
 
+export const loadClustersRaw = loadClustersUncached;
+
 export const loadClusters = unstable_cache(
   async (locale: Locale): Promise<NewsCluster[]> => loadClustersUncached(locale),
   ["news-clusters"],
@@ -218,4 +211,26 @@ export function buildClusterMap(clusters: NewsCluster[]): Map<string, NewsCluste
     }
   }
   return map;
+}
+
+function isRecentMonth(dateString: string, months: number): boolean {
+  const d = new Date(dateString);
+  const now = new Date();
+  const cutoff = new Date(now.getFullYear(), now.getMonth() - months, 1);
+  return d >= cutoff;
+}
+
+export function getTopRecallClustersByCoverage(
+  clusters: NewsCluster[],
+  options: { months?: number; limit?: number } = {}
+): NewsCluster[] {
+  const { months = 3, limit = 2 } = options;
+  return clusters
+    .filter(
+      (c) =>
+        isRecentMonth(c.dateRange.end, months) &&
+        c.sources.length > 1
+    )
+    .sort((a, b) => b.sources.length - a.sources.length)
+    .slice(0, limit);
 }

@@ -14,9 +14,9 @@ export function FoodCard({ food, locale }: FoodCardProps) {
   return (
     <Link
       href={`/foods/${food.slug}`}
-      className="group flex flex-col rounded-lg border border-border bg-card p-3 transition-shadow hover:shadow-md"
+      className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-card"
     >
-      <div className="mb-2 aspect-[4/3] overflow-hidden rounded-md bg-muted">
+      <div className="mb-3 aspect-[4/3] overflow-hidden rounded-xl bg-muted">
         <Image
           src={food.images?.[0]?.src ?? `/images/foods/${food.slug}.svg`}
           alt={food.images?.[0]?.alt ?? food.name}
@@ -25,7 +25,7 @@ export function FoodCard({ food, locale }: FoodCardProps) {
           className="h-full w-full object-cover transition-transform group-hover:scale-105"
         />
       </div>
-      <h3 className="text-base font-semibold text-foreground group-hover:text-primary">
+      <h3 className="text-base font-medium text-foreground group-hover:text-primary">
         {food.name}
       </h3>
       <div className="mt-1.5 space-y-0.5">

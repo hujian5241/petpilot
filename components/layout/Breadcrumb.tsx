@@ -18,7 +18,7 @@ interface BreadcrumbProps {
 }
 
 export async function Breadcrumb({ items, locale, className }: BreadcrumbProps) {
-  const t = await getTranslations("Breadcrumb");
+  const t = await getTranslations({ locale, namespace: "Breadcrumb" });
   const config = await getSiteConfig(locale);
   const baseUrl = config.base_url.endsWith("/")
     ? config.base_url.slice(0, -1)
@@ -76,7 +76,7 @@ export async function Breadcrumb({ items, locale, className }: BreadcrumbProps) 
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <nav aria-label="Breadcrumb" className={cn("text-sm text-muted-foreground", className)}>
+      <nav aria-label="Breadcrumb" className={cn("text-sm font-medium text-muted-foreground", className)}>
         <ol className="flex flex-wrap items-center gap-2">
           <li>
             <Link href="/" className="hover:text-foreground">{t("home")}</Link>

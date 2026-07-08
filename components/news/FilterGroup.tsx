@@ -1,5 +1,6 @@
-import { Link } from "@/i18n/routing";
+"use client";
 
+import { useRouter } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 export type FilterMode = "list" | "chip";
@@ -10,7 +11,8 @@ interface FilterGroupProps {
   selected: string[];
   param: string;
   mode?: FilterMode;
-  buildHref: (params: Record<string, string | undefined>) => string;
+  pathname: string;
+  currentParams: Record<string, string | undefined>;
 }
 
 function toggle(selected: string[], value: string): string {
@@ -23,35 +25,67 @@ function toggle(selected: string[], value: string): string {
   return Array.from(next).join(",");
 }
 
+function buildHref(
+  pathname: string,
+  current: Record<string, string | undefined>,
+  updates: Record<string, string | undefined>
+): string {
+  const next = { ...current };
+  for (const [key, value] of Object.entries(updates)) {
+    if (value) {
+      next[key] = value;
+    } else {
+      delete next[key];
+    }
+  }
+  const search = new URLSearchParams();
+  for (const [key, value] of Object.entries(next)) {
+    if (value) search.set(key, value);
+  }
+  const qs = search.toString();
+  return qs ? `${pathname}?${qs}` : pathname;
+}
+
 export function FilterGroup({
   title,
   items,
   selected,
   param,
   mode = "list",
-  buildHref,
+  pathname,
+  currentParams,
 }: FilterGroupProps) {
+  const router = useRouter();
+
+  function handleClick(e: React.MouseEvent, value: string) {
+    e.preventDefault();
+    const nextValue = toggle(selected, value) || undefined;
+    router.push(buildHref(pathname, currentParams, { [param]: nextValue }), {
+      scroll: false,
+    });
+  }
+
   return (
     <div className="space-y-2">
-      <h2 className="text-sm font-semibold text-foreground">{title}</h2>
+      <h2 className="text-sm font-medium text-foreground">{title}</h2>
       {mode === "chip" ? (
         <ul className="flex flex-wrap gap-1.5">
           {items.map((item) => {
             const isActive = selected.includes(item.value);
-            const nextValue = toggle(selected, item.value) || undefined;
             return (
               <li key={item.value}>
-                <Link
-                  href={buildHref({ [param]: nextValue })}
+                <button
+                  type="button"
+                  onClick={(e) => handleClick(e, item.value)}
                   className={cn(
-                    "inline-flex rounded-full px-2.5 py-1 text-xs font-medium transition-colors",
+                    "inline-flex cursor-pointer rounded-full px-2.5 py-1 text-xs font-medium transition-colors",
                     isActive
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-foreground hover:bg-muted/80"
                   )}
                 >
                   {item.label}
-                </Link>
+                </button>
               </li>
             );
           })}
@@ -60,18 +94,18 @@ export function FilterGroup({
         <ul className="space-y-1 text-sm">
           {items.map((item) => {
             const isActive = selected.includes(item.value);
-            const nextValue = toggle(selected, item.value) || undefined;
             return (
               <li key={item.value}>
-                <Link
-                  href={buildHref({ [param]: nextValue })}
+                <button
+                  type="button"
+                  onClick={(e) => handleClick(e, item.value)}
                   className={cn(
-                    "block transition-colors",
+                    "block cursor-pointer text-left transition-colors",
                     isActive ? "font-medium text-foreground" : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {item.label}
-                </Link>
+                </button>
               </li>
             );
           })}

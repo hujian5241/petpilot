@@ -38,4 +38,4 @@ PetPilot上のすべてのコンテンツ、ブランド、資料は、当社が
 
 ## 9. お問い合わせ
 
-本規約についてご質問がある場合は、[hello@petpilot.io](mailto:hello@petpilot.io) までご連絡ください。
+本規約についてご質問がある場合は、[contact@petpilot.top](mailto:contact@petpilot.top) までご連絡ください。

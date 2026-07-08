@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2025-12-17-paws-off-xylitol-its-dangerous-for-dogs---fdagov
 title: Paws Off Xylitol; It's Dangerous for Dogs - fda.gov
 date: '2025-12-17'
@@ -16,13 +17,15 @@ summary: >-
   Paws Off Xylitol; It's Dangerous for Dogs fda.gov This report may be useful
   for pet owners monitoring potential risks. Affected animals: dogs. Substances
   or products mentioned: xylitol.
-body: ''
 relatedSlugs:
   foods:
     - sugar-free-gum
     - xylitol
     - xylitol-ice-cream
 reviewed: false
+type: incident
+clusterId: 50691e4da80fccf5
+updatedAt: '2026-07-08T08:29:12.125Z'
 ---
 Paws Off Xylitol; It's Dangerous for Dogs fda.gov This report may be useful for pet owners monitoring potential risks. Affected animals: dogs. Substances or products mentioned: xylitol.
 

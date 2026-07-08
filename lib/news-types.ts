@@ -23,6 +23,7 @@ export interface NewsEntry {
   species: string[];
   substances: string[];
   status: string;
+  type?: "recall" | "incident" | "alert";
   location?: string;
   relatedSlugs?: {
     foods?: string[];
@@ -43,12 +44,14 @@ export interface NewsCluster {
   slugs: string[];
   title: string;
   summary: string;
-  sources: { name: string; url: string; slug: string }[];
+  bodyHtml?: string;
+  sources: { name: string; url: string; slug: string; date: string }[];
   dateRange: { start: string; end: string };
   month: string;
   species: string[];
   substances: string[];
   severity: NewsSeverity;
+  type?: NewsEntry["type"];
 }
 
 export interface NewsSitemapEntry {

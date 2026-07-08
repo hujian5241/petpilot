@@ -1,0 +1,27 @@
+---
+body: ''
+slug: 2026-06-09-fda-pet-food-recalled-over-nutritional-deficiency---livenow-
+title: 'FDA: Pet food recalled over nutritional deficiency - LiveNOW from FOX'
+date: '2026-06-09'
+month: 2026-06
+source: LiveNOW from FOX
+sourceUrl: >-
+  https://news.google.com/rss/articles/CBMiggFBVV95cUxQOTR2R09YRFdCTDdHQ0YxSlRINndKSFI3RWNvaFZfdFR0MWFPeHpqMEhXOUI4VGtBbGxTNE9lbmFzNG94eWdKWERzdEdUS2NBdms4UGxyR0duZDZSVTBCM09ybF90TnVZOVVZTHdGZDdrVnJwTk9yUG9ScFRpN09Da3BB0gGHAUFVX3lxTE5uamFvR3M5VjROWUVLZm5CUkRCUkxMcE5ROUZZMWItWmoyb29GUDRFWXFGV1ZzWkZBMkxyYUhQVHVlMVl6NDBYSXdoS3pHcjFFTTluMGwxOUFFWllZQ3BCVk1sQjJmRW1SY2JiUFlfendSV0hYVlNaMXIwanZqQ0JUZHVKS0o3OA?oc=5
+species:
+  - other
+substances: []
+severity: high
+status: confirmed
+summary: >-
+  FDA: Pet food recalled over nutritional deficiency LiveNOW from FOX Pet owners
+  should be aware of this incident and take precautions. Affected animals:
+  other.
+relatedSlugs: {}
+reviewed: false
+clusterId: 412984ad17aec0cb
+updatedAt: '2026-07-07T20:30:55.303Z'
+type: recall
+---
+FDA: Pet food recalled over nutritional deficiency LiveNOW from FOX Pet owners should be aware of this incident and take precautions. Affected animals: other.
+
+[Read the full report on LiveNOW from FOX →](https://news.google.com/rss/articles/CBMiggFBVV95cUxQOTR2R09YRFdCTDdHQ0YxSlRINndKSFI3RWNvaFZfdFR0MWFPeHpqMEhXOUI4VGtBbGxTNE9lbmFzNG94eWdKWERzdEdUS2NBdms4UGxyR0duZDZSVTBCM09ybF90TnVZOVVZTHdGZDdrVnJwTk9yUG9ScFRpN09Da3BB0gGHAUFVX3lxTE5uamFvR3M5VjROWUVLZm5CUkRCUkxMcE5ROUZZMWItWmoyb29GUDRFWXFGV1ZzWkZBMkxyYUhQVHVlMVl6NDBYSXdoS3pHcjFFTTluMGwxOUFFWllZQ3BCVk1sQjJmRW1SY2JiUFlfendSV0hYVlNaMXIwanZqQ0JUZHVKS0o3OA?oc=5)

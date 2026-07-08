@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
 import { MedicationDetail } from "@/components/medication/MedicationDetail";
+
+export const dynamic = "force-static";
 import { getMedicationBySlug, getMedicationSlugs, getSiteConfig } from "@/lib/content";
 import { buildMedicationMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/i18n";

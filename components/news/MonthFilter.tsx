@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 import { Search, ChevronLeft, ChevronRight, ChevronDown, Check } from "lucide-react";
-
-import { Link } from "@/i18n/routing";
 import type { Locale } from "@/lib/i18n";
 
 interface SelectOption {
@@ -90,7 +88,7 @@ function CustomSelect({
         aria-expanded={open}
         aria-controls={listId}
         onClick={() => setOpen((v) => !v)}
-        className="flex h-9 w-full items-center justify-between rounded-md border border-input bg-background px-2 py-1.5 text-sm text-foreground shadow-sm transition-colors hover:bg-muted/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex h-9 w-full cursor-pointer items-center justify-between rounded-md border border-input bg-background px-2 py-1.5 text-sm text-foreground shadow-sm transition-colors hover:bg-muted/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
       >
         <span className="truncate">{selectedLabel}</span>
         <ChevronDown
@@ -156,6 +154,7 @@ interface MonthFilterProps {
   yearPlaceholder: string;
   monthLabel: string;
   monthPlaceholder: string;
+  pathname?: string;
   otherParams?: Record<string, string | undefined>;
 }
 
@@ -174,6 +173,7 @@ export function MonthFilter({
   yearPlaceholder,
   monthLabel,
   monthPlaceholder,
+  pathname = "/news",
   otherParams = {},
 }: MonthFilterProps) {
   const router = useRouter();
@@ -210,7 +210,7 @@ export function MonthFilter({
       else search.delete(key);
     }
     const qs = search.toString();
-    return qs ? `/${locale}/news?${qs}` : `/${locale}/news`;
+    return qs ? `${pathname}?${qs}` : pathname;
   }
 
   function navigateTo(newYear: string, newMonth: string) {
@@ -219,7 +219,7 @@ export function MonthFilter({
     const value = `${newYear}-${newMonth}`;
     const href = buildHref({ month: value, all: undefined });
     startTransition(() => {
-      router.push(href);
+      router.push(href, { scroll: false });
     });
   }
 
@@ -312,7 +312,7 @@ export function MonthFilter({
 
   return (
     <div className="space-y-3">
-      <span className="text-sm font-semibold text-foreground">{label}</span>
+      <span className="text-sm font-medium text-foreground">{label}</span>
       <form onSubmit={handleSubmit} className="space-y-2">
         <div className="grid grid-cols-2 gap-2">
           <CustomSelect
@@ -354,7 +354,7 @@ export function MonthFilter({
             onClick={goPrevYear}
             disabled={!canGoPrevYear || isPending}
             aria-label={prevYearLabel}
-            className="inline-flex h-8 items-center justify-center rounded-md border border-border bg-background text-xs font-medium text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40"
+            className="inline-flex h-8 cursor-pointer items-center justify-center rounded-md border border-border bg-background text-xs font-medium text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40"
           >
             <ChevronLeft className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Y</span>
@@ -393,19 +393,20 @@ export function MonthFilter({
 
         <button
           type="submit"
-          className="inline-flex h-9 w-full items-center justify-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex h-9 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
           disabled={isPending || !year || !month}
         >
           <Search className="h-4 w-4" aria-hidden="true" />
           {buttonLabel}
         </button>
       </form>
-      <Link
-        href={buildHref({ all: "true", month: undefined })}
-        className="inline-block text-sm text-muted-foreground hover:text-foreground"
+      <button
+        type="button"
+        onClick={() => router.push(buildHref({ all: "true", month: undefined }), { scroll: false })}
+        className="inline-block cursor-pointer text-sm text-muted-foreground hover:text-foreground"
       >
         {allMonthsLabel}
-      </Link>
+      </button>
     </div>
   );
 }

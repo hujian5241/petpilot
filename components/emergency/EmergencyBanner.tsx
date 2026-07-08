@@ -19,30 +19,30 @@ export async function EmergencyBanner({
 }: EmergencyBannerProps) {
   const info = await getEmergencyInfo(locale);
   const primary = info.hotlines[0];
-  const t = await getTranslations("EmergencyBanner");
+  const t = await getTranslations({ locale, namespace: "EmergencyBanner" });
 
   return (
     <div
       className={cn(
         "border-l-4 border-emergency bg-emergency-light p-4",
-        variant === "card" && "rounded-lg border",
+        variant === "card" && "rounded-xl border",
         className
       )}
     >
       <div className="flex items-start gap-3">
         <Phone className="mt-0.5 h-5 w-5 shrink-0 text-emergency" aria-hidden="true" />
         <div>
-          <p className="font-semibold text-emergency">{t("title")}</p>
+          <p className="font-medium text-emergency">{t("title")}</p>
           <p className="mt-1 text-sm text-foreground">
             {t("call", { name: primary?.name ?? "ASPCA Poison Control" })}{" "}
             <a
               href={`tel:${primary?.phone?.replace(/\D/g, "") ?? "8884264435"}`}
-              className="font-semibold text-emergency hover:underline"
+              className="font-medium text-emergency hover:underline"
             >
               {primary?.phone ?? "(888) 426-4435"}
             </a>
             {" "}{t("or")}{" "}
-            <Link href="/emergency" className="font-semibold text-emergency hover:underline">
+            <Link href="/emergency" className="font-medium text-emergency hover:underline">
               {t("viewEmergencyGuide")}
             </Link>
           </p>

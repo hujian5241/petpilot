@@ -38,4 +38,4 @@ We may update these Terms of Service from time to time. Continued use of the sit
 
 ## 9. Contact
 
-If you have questions about these Terms, contact us at [hello@petpilot.io](mailto:hello@petpilot.io).
+If you have questions about these Terms, contact us at [contact@petpilot.top](mailto:contact@petpilot.top).

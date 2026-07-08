@@ -20,6 +20,6 @@ PetPilot bietet ausschließlich Bildungsinformationen und ersetzt keine tierärz
 
 ## Kontaktieren Sie uns
 
-Haben Sie Feedback oder einen Vorschlag? Schreiben Sie uns an [hello@petpilot.io](mailto:hello@petpilot.io).
+Haben Sie Feedback oder einen Vorschlag? Schreiben Sie uns an [contact@petpilot.top](mailto:contact@petpilot.top).
 
 <a href="/emergency" class="inline-flex items-center rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90 no-underline">Notfallleitfaden anzeigen</a>

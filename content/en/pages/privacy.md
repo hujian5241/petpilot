@@ -47,4 +47,4 @@ We may update this Privacy Policy from time to time. The updated version will be
 
 ## 9. Contact Us
 
-If you have questions about this Privacy Policy, contact us at [hello@petpilot.io](mailto:hello@petpilot.io).
+If you have questions about this Privacy Policy, contact us at [contact@petpilot.top](mailto:contact@petpilot.top).

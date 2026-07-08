@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#eff6ff" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#b)" />
+  <circle cx="650" cy="120" r="130" fill="#533afd" opacity="0.08" />
+
+  <g transform="translate(280,110)">
+    <!-- bowl -->
+    <ellipse cx="120" cy="170" rx="90" ry="28" fill="#e2e8f0" />
+    <path d="M40,80 Q120,200 200,80 L200,70 Q120,190 40,70 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" />
+    <ellipse cx="120" cy="70" rx="80" ry="24" fill="#dbeafe" stroke="#3b82f6" stroke-width="3" />
+
+    <!-- bone -->
+    <rect x="85" y="60" width="70" height="20" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="92" cy="60" r="11" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="92" cy="80" r="11" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="148" cy="60" r="11" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+    <circle cx="148" cy="80" r="11" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+
+    <!-- carrot -->
+    <path d="M260,100 L300,160 L320,140 Z" fill="#fb923c" stroke="#ea580c" stroke-width="3" />
+    <path d="M310,145 L315,130 M320,150 L330,135" stroke="#16a34a" stroke-width="4" stroke-linecap="round" />
+
+    <text x="170" y="240" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" fill="#0f172a" font-weight="500">Complete Guide to Dog Nutrition</text>
+  </g>
+</svg>

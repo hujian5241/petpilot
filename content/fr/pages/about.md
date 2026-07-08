@@ -20,6 +20,6 @@ PetPilot fournit uniquement des informations éducatives et ne remplace pas les 
 
 ## Contactez-nous
 
-Vous avez des commentaires ou des suggestions ? Envoyez-nous un e-mail à [hello@petpilot.io](mailto:hello@petpilot.io).
+Vous avez des commentaires ou des suggestions ? Envoyez-nous un e-mail à [contact@petpilot.top](mailto:contact@petpilot.top).
 
 <a href="/emergency" class="inline-flex items-center rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90 no-underline">Voir le guide d'urgence</a>

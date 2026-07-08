@@ -1,9 +1,16 @@
 "use client";
 
-import { useEffect, useId, useMemo, useRef, useState } from "react";
+import {
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+  useTransition,
+} from "react";
 import { Search, X, Check, ChevronDown } from "lucide-react";
 
-import { Link } from "@/i18n/routing";
+import { useRouter } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 interface SourceFilterProps {
@@ -64,6 +71,7 @@ export function SourceFilter({
   pathname,
   currentParams,
 }: SourceFilterProps) {
+  const router = useRouter();
   const [open, setOpenState] = useState(false);
   const [query, setQuery] = useState("");
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -87,7 +95,10 @@ export function SourceFilter({
     if (!open) return;
     function handleClick(e: MouseEvent) {
       const target = e.target as Node;
-      if (panelRef.current?.contains(target) || triggerRef.current?.contains(target)) {
+      if (
+        panelRef.current?.contains(target) ||
+        triggerRef.current?.contains(target)
+      ) {
         return;
       }
       setOpen(false);
@@ -109,13 +120,22 @@ export function SourceFilter({
     }
   }, [open]);
 
+  function handleSelect(e: React.MouseEvent, value: string) {
+    e.preventDefault();
+    const nextValue = toggle(selected, value) || undefined;
+    router.push(buildHref(pathname, currentParams, { [param]: nextValue }), {
+      scroll: false,
+    });
+    setOpen(false);
+  }
+
   const triggerLabel = selected.length === 0 ? allLabel : `${selected.length} selected`;
 
   return (
     <div className="space-y-2">
       <label
         htmlFor={triggerId}
-        className="block text-sm font-semibold text-foreground"
+        className="block text-sm font-medium text-foreground"
       >
         {label}
       </label>
@@ -128,7 +148,7 @@ export function SourceFilter({
           aria-expanded={open}
           aria-controls={listId}
           onClick={() => setOpen(!open)}
-          className="flex h-9 w-full items-center justify-between rounded-md border border-input bg-background px-2 py-1.5 text-sm text-foreground shadow-sm transition-colors hover:bg-muted/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          className="flex h-9 w-full cursor-pointer items-center justify-between rounded-md border border-input bg-background px-2 py-1.5 text-sm text-foreground shadow-sm transition-colors hover:bg-muted/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         >
           <span className="truncate">{triggerLabel}</span>
           <ChevronDown
@@ -179,22 +199,23 @@ export function SourceFilter({
               )}
               {filteredItems.map((item) => {
                 const isSelected = selected.includes(item.value);
-                const nextValue = toggle(selected, item.value) || undefined;
                 return (
-                  <Link
+                  <button
                     key={item.value}
+                    type="button"
                     role="option"
                     aria-selected={isSelected}
-                    href={buildHref(pathname, currentParams, { [param]: nextValue })}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleSelect(e, item.value)}
                     className={cn(
-                      "flex items-center justify-between px-2 py-1.5 transition-colors",
-                      isSelected ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-muted"
+                      "flex w-full cursor-pointer items-center justify-between px-2 py-1.5 text-left transition-colors",
+                      isSelected
+                        ? "bg-primary text-primary-foreground"
+                        : "text-foreground hover:bg-muted"
                     )}
                   >
                     <span className="truncate">{item.label}</span>
                     {isSelected && <Check className="h-3.5 w-3.5 shrink-0" />}
-                  </Link>
+                  </button>
                 );
               })}
             </div>

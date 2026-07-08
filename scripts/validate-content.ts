@@ -13,6 +13,8 @@ import type {
   SafetyStatus,
   Severity,
   Species,
+  ToxicityProfile,
+  FaqItem,
 } from "../lib/types";
 
 const SAFETY_STATUSES: SafetyStatus[] = ["safe", "limited", "toxic", "unknown"];
@@ -25,6 +27,27 @@ function contentDir(locale: Locale): string {
 
 function isNonEmptyString(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0;
+}
+
+function isValidToxicityProfile(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const p = value as Partial<ToxicityProfile>;
+  if (!SPECIES.includes(p.species as Species)) return false;
+  if (p.toxic_dose_mg_per_kg !== undefined && typeof p.toxic_dose_mg_per_kg !== "number") return false;
+  if (p.lethal_dose_mg_per_kg !== undefined && typeof p.lethal_dose_mg_per_kg !== "number") return false;
+  if (p.toxic_dose_g_per_kg !== undefined && typeof p.toxic_dose_g_per_kg !== "number") return false;
+  if (p.concentration_mg_per_g !== undefined && typeof p.concentration_mg_per_g !== "number") return false;
+  if (p.tablet_mg !== undefined && typeof p.tablet_mg !== "number") return false;
+  if (p.note !== undefined && typeof p.note !== "string") return false;
+  return true;
+}
+
+function isValidFaqItem(value: unknown): boolean {
+  if (!value || typeof value !== "object") return false;
+  const item = value as Partial<FaqItem>;
+  if (!isNonEmptyString(item.question)) return false;
+  if (!isNonEmptyString(item.answer)) return false;
+  return true;
 }
 
 function isValidDate(value: string): boolean {
@@ -231,6 +254,53 @@ function collectErrors(
         }
       }
     }
+
+    if (food.toxicity_profiles !== undefined) {
+      if (!Array.isArray(food.toxicity_profiles)) {
+        errors.push(`${prefix} Invalid optional field: toxicity_profiles`);
+      } else {
+        for (const profile of food.toxicity_profiles) {
+          if (!isValidToxicityProfile(profile)) {
+            errors.push(`${prefix} Invalid toxicity_profiles item: ${JSON.stringify(profile)}`);
+          }
+        }
+      }
+    }
+
+    if (food.faq_extras !== undefined) {
+      if (!Array.isArray(food.faq_extras)) {
+        errors.push(`${prefix} Invalid optional field: faq_extras`);
+      } else {
+        for (const item of food.faq_extras) {
+          if (!isValidFaqItem(item)) {
+            errors.push(`${prefix} Invalid faq_extras item: ${JSON.stringify(item)}`);
+          }
+        }
+      }
+    }
+
+    if (food.why_it_matters !== undefined && !isNonEmptyString(food.why_it_matters)) {
+      errors.push(`${prefix} Invalid optional field: why_it_matters`);
+    }
+    if (food.how_it_works !== undefined && !isNonEmptyString(food.how_it_works)) {
+      errors.push(`${prefix} Invalid optional field: how_it_works`);
+    }
+    if (food.species_differences !== undefined && !isNonEmptyString(food.species_differences)) {
+      errors.push(`${prefix} Invalid optional field: species_differences`);
+    }
+    if (food.timeline !== undefined && !isNonEmptyString(food.timeline)) {
+      errors.push(`${prefix} Invalid optional field: timeline`);
+    }
+    if (food.common_scenarios !== undefined) {
+      if (!Array.isArray(food.common_scenarios) || food.common_scenarios.some((s) => !isNonEmptyString(s))) {
+        errors.push(`${prefix} Invalid optional field: common_scenarios`);
+      }
+    }
+    if (food.quick_facts !== undefined) {
+      if (!Array.isArray(food.quick_facts) || food.quick_facts.some((s) => !isNonEmptyString(s))) {
+        errors.push(`${prefix} Invalid optional field: quick_facts`);
+      }
+    }
   }
 
   if (ctx.type === "plant") {
@@ -283,6 +353,18 @@ function collectErrors(
     }
     if (medication.toxic_ingredients !== undefined && !Array.isArray(medication.toxic_ingredients)) {
       errors.push(`${prefix} Invalid optional field: toxic_ingredients`);
+    }
+
+    if (medication.toxicity_profiles !== undefined) {
+      if (!Array.isArray(medication.toxicity_profiles)) {
+        errors.push(`${prefix} Invalid optional field: toxicity_profiles`);
+      } else {
+        for (const profile of medication.toxicity_profiles) {
+          if (!isValidToxicityProfile(profile)) {
+            errors.push(`${prefix} Invalid toxicity_profiles item: ${JSON.stringify(profile)}`);
+          }
+        }
+      }
     }
   }
 

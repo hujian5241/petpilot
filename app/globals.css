@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -14,11 +14,23 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-heading: var(--font-sans);
 
-  /* PetPilot Brand Colors */
+  /* Stripe-inspired brand colors */
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-primary-dark: var(--primary-dark);
-  --color-primary-light: var(--primary-light);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary-dark: var(--primary-deep);
+  --color-primary-light: var(--primary-subdued);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-press: var(--primary-press);
+  --color-primary-subdued: var(--primary-subdued);
+  --color-brand-dark-900: var(--brand-dark-900);
+  --color-canvas-soft: var(--canvas-soft);
+  --color-canvas-cream: var(--canvas-cream);
+  --color-hairline-input: var(--hairline-input);
+  --color-ruby: var(--ruby);
+  --color-magenta: var(--magenta);
+  --color-lemon: var(--lemon);
+  --color-shadow-blue: var(--shadow-blue);
 
   /* Safety Status Colors */
   --color-status-safe: var(--status-safe);
@@ -37,6 +49,11 @@
   /* Emergency */
   --color-emergency: var(--emergency);
   --color-emergency-light: var(--emergency-light);
+
+  /* Stripe-style shadows */
+  --shadow-card: 0 1px 3px rgba(0, 55, 112, 0.08);
+  --shadow-panel: 0 8px 24px rgba(0, 55, 112, 0.08), 0 2px 6px rgba(0, 55, 112, 0.04);
+  --shadow-colored: 0 4px 12px rgba(83, 58, 253, 0.12);
 
   /* shadcn mappings */
   --color-sidebar-ring: var(--sidebar-ring);
@@ -66,73 +83,85 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-xl: calc(var(--radius) * 1.333);
+  --radius-2xl: calc(var(--radius) * 1.666);
+  --radius-3xl: calc(var(--radius) * 2);
+  --radius-4xl: calc(var(--radius) * 2.333);
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #111827;
-  --card: #f9fafb;
-  --card-foreground: #111827;
+  --foreground: #0d253d;
+  --card: #ffffff;
+  --card-foreground: #273951;
   --popover: #ffffff;
-  --popover-foreground: #111827;
+  --popover-foreground: #0d253d;
 
-  /* Primary Blue */
-  --primary: #2563eb;
+  /* Stripe Indigo */
+  --primary: #533afd;
   --primary-foreground: #ffffff;
-  --primary-dark: #1d4ed8;
-  --primary-light: #dbeafe;
+  --primary-deep: #4434d4;
+  --primary-soft: #665efd;
+  --primary-press: #2e2b8c;
+  --primary-subdued: #b9b9f9;
 
-  --secondary: #f3f4f6;
-  --secondary-foreground: #111827;
-  --muted: #f3f4f6;
-  --muted-foreground: #6b7280;
-  --accent: #f3f4f6;
-  --accent-foreground: #111827;
-  --destructive: #dc2626;
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #2563eb;
-  --radius: 0.5rem;
+  --secondary: #f6f9fc;
+  --secondary-foreground: #0d253d;
+  --muted: #f6f9fc;
+  --muted-foreground: #64748d;
+  --accent: #f6f9fc;
+  --accent-foreground: #0d253d;
+  --destructive: #ea2261;
+  --border: #e3e8ee;
+  --input: #e3e8ee;
+  --ring: #533afd;
+  --radius: 0.75rem;
 
-  /* Safety Status */
-  --status-safe: #166534;
-  --status-safe-bg: #dcfce7;
-  --status-safe-border: #86efac;
-  --status-limited: #854d0e;
-  --status-limited-bg: #fef9c3;
-  --status-limited-border: #fde047;
-  --status-toxic: #991b1b;
-  --status-toxic-bg: #fee2e2;
-  --status-toxic-border: #fca5a5;
-  --status-unknown: #374151;
-  --status-unknown-bg: #f3f4f6;
-  --status-unknown-border: #d1d5db;
+  /* Stripe surfaces */
+  --canvas-soft: #f6f9fc;
+  --canvas-cream: #f5e9d4;
+  --hairline-input: #a8c3de;
+  --brand-dark-900: #1c1e54;
+  --ruby: #ea2261;
+  --magenta: #f96bee;
+  --lemon: #9b6829;
+  --shadow-blue: #003770;
+
+  /* Safety Status — harmonized with Stripe palette */
+  --status-safe: #146c3a;
+  --status-safe-bg: #e3f9e8;
+  --status-safe-border: #8ee0a1;
+  --status-limited: #7c4f0c;
+  --status-limited-bg: #fff5cf;
+  --status-limited-border: #f5d76e;
+  --status-toxic: #9e1c1c;
+  --status-toxic-bg: #ffeaed;
+  --status-toxic-border: #f5a0a8;
+  --status-unknown: #3d4b5f;
+  --status-unknown-bg: #f6f9fc;
+  --status-unknown-border: #e3e8ee;
 
   /* Emergency */
-  --emergency: #dc2626;
-  --emergency-light: #fef2f2;
+  --emergency: #ea2261;
+  --emergency-light: #fff1f2;
 
   /* shadcn sidebar defaults */
-  --sidebar: #f9fafb;
-  --sidebar-foreground: #111827;
-  --sidebar-primary: #111827;
-  --sidebar-primary-foreground: #f9fafb;
-  --sidebar-accent: #f3f4f6;
-  --sidebar-accent-foreground: #111827;
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #2563eb;
-  --chart-1: #2563eb;
-  --chart-2: #16a34a;
-  --chart-3: #ca8a04;
-  --chart-4: #dc2626;
-  --chart-5: #6b7280;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0d253d;
+  --sidebar-primary: #0d253d;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f6f9fc;
+  --sidebar-accent-foreground: #0d253d;
+  --sidebar-border: #e3e8ee;
+  --sidebar-ring: #533afd;
+  --chart-1: #533afd;
+  --chart-2: #146c3a;
+  --chart-3: #7c4f0c;
+  --chart-4: #9e1c1c;
+  --chart-5: #64748d;
 }
 
 @layer base {
@@ -141,10 +170,22 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01";
   }
   html {
     @apply font-sans;
   }
+}
+
+/* Tabular figures for numeric data */
+.font-tabular {
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stripe-style display headings */
+.display-heading {
+  @apply font-light tracking-tight text-foreground;
 }
 
 /* Typography for content pages */
@@ -153,15 +194,15 @@
 }
 
 .prose-pet h1 {
-  @apply text-3xl font-bold tracking-tight text-foreground mb-5;
+  @apply text-3xl font-light tracking-tight text-foreground mb-5 sm:text-4xl;
 }
 
 .prose-pet h2 {
-  @apply text-xl font-semibold tracking-tight text-foreground mt-8 mb-3;
+  @apply text-xl font-normal tracking-tight text-foreground mt-8 mb-3;
 }
 
 .prose-pet h3 {
-  @apply text-lg font-semibold tracking-tight text-foreground mt-6 mb-2;
+  @apply text-lg font-medium tracking-tight text-foreground mt-6 mb-2;
 }
 
 .prose-pet p {
@@ -181,7 +222,7 @@
 }
 
 .prose-pet a {
-  @apply text-primary hover:text-primary-dark underline underline-offset-2;
+  @apply text-primary hover:text-primary-deep underline underline-offset-2;
 }
 
 .prose-pet strong {

@@ -5,6 +5,8 @@ import { getFoodBySlug, getFoodSlugs, getSiteConfig } from "@/lib/content";
 import { buildFoodMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/i18n";
 
+export const dynamic = "force-static";
+
 interface FoodPageProps {
   params: Promise<{ locale: Locale; slug: string }>;
 }

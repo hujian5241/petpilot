@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { HazardDetail } from "@/components/hazard/HazardDetail";
+import { buildHouseholdChemicalFaqSchema } from "@/lib/jsonld";
 import type { Locale } from "@/lib/i18n";
 import type { HouseholdChemicalEntry } from "@/lib/types";
 
@@ -10,8 +11,8 @@ interface HouseholdChemicalDetailProps {
 }
 
 export async function HouseholdChemicalDetail({ chemical, locale }: HouseholdChemicalDetailProps) {
-  const t = await getTranslations("HouseholdChemicalDetail");
-  const tNav = await getTranslations("Header");
+  const t = await getTranslations({ locale, namespace: "HouseholdChemicalDetail" });
+  const tNav = await getTranslations({ locale, namespace: "Header" });
 
   return (
     <HazardDetail
@@ -25,6 +26,7 @@ export async function HouseholdChemicalDetail({ chemical, locale }: HouseholdChe
       safeForDogsTitle={t("safeForDogs", { name: chemical.name })}
       safeForCatsTitle={t("safeForCats", { name: chemical.name })}
       alternativesPrefix="household-chemicals"
+      faqJsonLd={buildHouseholdChemicalFaqSchema(chemical)}
     >
       <>
         {chemical.active_ingredients && chemical.active_ingredients.length > 0 && (

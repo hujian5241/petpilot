@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { HazardDetail } from "@/components/hazard/HazardDetail";
+import { buildMedicationFaqSchema } from "@/lib/jsonld";
 import type { Locale } from "@/lib/i18n";
 import type { MedicationEntry } from "@/lib/types";
 
@@ -10,8 +11,8 @@ interface MedicationDetailProps {
 }
 
 export async function MedicationDetail({ medication, locale }: MedicationDetailProps) {
-  const t = await getTranslations("MedicationDetail");
-  const tNav = await getTranslations("Header");
+  const t = await getTranslations({ locale, namespace: "MedicationDetail" });
+  const tNav = await getTranslations({ locale, namespace: "Header" });
 
   return (
     <HazardDetail
@@ -25,6 +26,7 @@ export async function MedicationDetail({ medication, locale }: MedicationDetailP
       safeForDogsTitle={t("safeForDogs", { name: medication.name })}
       safeForCatsTitle={t("safeForCats", { name: medication.name })}
       alternativesPrefix="medications"
+      faqJsonLd={buildMedicationFaqSchema(medication)}
     >
       <>
         <h2>{t("activeIngredients")}</h2>

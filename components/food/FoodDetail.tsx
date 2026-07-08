@@ -2,13 +2,17 @@ import Image from "next/image";
 import { ExternalLink, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
-import { SafetyBadge, CompactSafetyBadge } from "./SafetyBadge";
+import { CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
+import { RelatedItems } from "@/components/detail/RelatedItems";
+import { ToxicityCalculator } from "@/components/calculator/ToxicityCalculator";
+import { FoodFaqSection } from "@/components/food/FoodFaqSection";
+import { findRelatedEntries, getEmergencyInfo } from "@/lib/content";
 import { buildFoodFaqSchema } from "@/lib/jsonld";
-import { getEmergencyInfo } from "@/lib/content";
 import type { FoodEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
 
@@ -19,29 +23,21 @@ interface FoodDetailProps {
 
 export async function FoodDetail({ food, locale }: FoodDetailProps) {
   const isUrgent =
+    food.requires_emergency_visit ||
     food.safety.dogs.status === "toxic" ||
     food.safety.cats.status === "toxic" ||
     food.safety.dogs.status === "limited" ||
     food.safety.cats.status === "limited";
 
-  const jsonLd = buildFoodFaqSchema(food);
-  const dogWarnings =
-    food.condition_warnings?.filter((w) => w.appliesTo.includes("dogs")) ?? [];
-  const catWarnings =
-    food.condition_warnings?.filter((w) => w.appliesTo.includes("cats")) ?? [];
-
   const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
+  const related = await findRelatedEntries(food, locale, 6);
+  const isBeverage = food.categories.includes("beverages");
 
   const pageUrl = `/${locale}/foods/${food.slug}`;
-  const t = await getTranslations("FoodDetail");
-  const tNav = await getTranslations("Header");
-
-  const recommendationLabel = (value: string) => {
-    if (value === "avoid") return t("avoid");
-    if (value === "limit") return t("limit");
-    return t("consultVet");
-  };
+  const t = await getTranslations({ locale, namespace: "FoodDetail" });
+  const tNav = await getTranslations({ locale, namespace: "Header" });
+  const jsonLd = buildFoodFaqSchema(food);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -72,11 +68,14 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
             />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              {t("canDogsEat", { name: food.name })}
+            <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">
+              {isBeverage ? t("canDogsDrink", { name: food.name }) : t("canDogsEat", { name: food.name })}
             </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              {t("subtitle", { name: food.name.toLowerCase() })}
+            {food.scientific_name && (
+              <p className="mt-2 text-lg font-light italic text-muted-foreground">{food.scientific_name}</p>
+            )}
+            <p className="mt-2 text-lg font-light text-muted-foreground">
+              {isBeverage ? t("drinkSubtitle", { name: food.name }) : t("subtitle", { name: food.name })}
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
               <CompactSafetyBadge species="dogs" status={food.safety.dogs.status} locale={locale} />
@@ -95,10 +94,60 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
       <div className="prose-pet mt-8">
         <div dangerouslySetInnerHTML={{ __html: food.content ?? "" }} />
 
-        <h2>{t("safeForDogs", { name: food.name })}</h2>
+        {food.why_it_matters && (
+          <>
+            <h2>{t("whyItMatters")}</h2>
+            <p>{food.why_it_matters}</p>
+          </>
+        )}
+
+        {food.how_it_works && (
+          <>
+            <h2>{t("howItWorks")}</h2>
+            <p>{food.how_it_works}</p>
+          </>
+        )}
+
+        {food.species_differences && (
+          <>
+            <h2>{t("speciesDifferences")}</h2>
+            <p>{food.species_differences}</p>
+          </>
+        )}
+
+        {food.common_scenarios && food.common_scenarios.length > 0 && (
+          <>
+            <h2>{t("commonScenarios")}</h2>
+            <ul>
+              {food.common_scenarios.map((scenario, idx) => (
+                <li key={idx}>{scenario}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {food.timeline && (
+          <>
+            <h2>{t("timeline")}</h2>
+            <p>{food.timeline}</p>
+          </>
+        )}
+
+        {food.quick_facts && food.quick_facts.length > 0 && (
+          <>
+            <h2>{t("quickFacts")}</h2>
+            <ul>
+              {food.quick_facts.map((fact, idx) => (
+                <li key={idx}>{fact}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <h2>{isBeverage ? t("safeForDogsDrink", { name: food.name }) : t("safeForDogs", { name: food.name })}</h2>
         <p>{food.safety.dogs.summary}</p>
 
-        <h2>{t("safeForCats", { name: food.name })}</h2>
+        <h2>{isBeverage ? t("safeForCatsDrink", { name: food.name }) : t("safeForCats", { name: food.name })}</h2>
         <p>{food.safety.cats.summary}</p>
 
         {food.preparation_notes && (
@@ -108,17 +157,20 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
           </>
         )}
 
-        {food.safe_amount && (
+        {(food.safe_amount || food.frequency || food.dosage_per_weight) && (
           <>
-            <h2>{t("recommendedAmount")}</h2>
-            <p>{food.safe_amount}</p>
-          </>
-        )}
-
-        {food.frequency && (
-          <>
-            <h2>{t("howOften")}</h2>
-            <p>{food.frequency}</p>
+            {food.safe_amount && (
+              <>
+                <h2>{t("recommendedAmount")}</h2>
+                <p>{food.safe_amount}</p>
+              </>
+            )}
+            {food.frequency && (
+              <>
+                <h2>{t("howOften")}</h2>
+                <p>{food.frequency}</p>
+              </>
+            )}
           </>
         )}
 
@@ -133,67 +185,47 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
           </>
         )}
 
-        <h2>{t("whatIfAte", { name: food.name })}</h2>
+        <h2>{isBeverage ? t("whatIfDrank", { name: food.name }) : t("whatIfAte", { name: food.name })}</h2>
         <p>{food.what_to_do}</p>
         <div className="not-prose my-4 flex flex-wrap gap-3">
           {aspca && (
-            <a
-              href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {t("call", { name: aspca.name })}
-            </a>
+            <Button variant="emergency" asChild>
+              <a href={`tel:${aspca.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {t("call", { name: aspca.name })}
+              </a>
+            </Button>
           )}
           {pph && (
-            <a
-              href={`tel:${pph.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-emergency bg-white px-4 py-2 text-emergency hover:bg-emergency-light"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {pph.name}
-            </a>
+            <Button variant="emergency-outline" asChild>
+              <a href={`tel:${pph.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {pph.name}
+              </a>
+            </Button>
           )}
         </div>
 
-        {(dogWarnings.length > 0 || catWarnings.length > 0) && (
+        {food.toxicity_profiles && food.toxicity_profiles.length > 0 && (
+          <ToxicityCalculator entry={food} locale={locale} />
+        )}
+
+        {food.condition_warnings && food.condition_warnings.length > 0 && (
           <>
             <h2>{t("healthConditions")}</h2>
-            <p>{t("healthConditionsIntro", { name: food.name.toLowerCase() })}</p>
-            {dogWarnings.length > 0 && (
-              <>
-                <h3>{t("forDogs")}</h3>
-                <ul>
-                  {dogWarnings.map((w) => (
-                    <li key={w.condition}>
-                      <strong>{w.condition}</strong>{" "}
-                      —{" "}
-                      {recommendationLabel(w.recommendation)}: {w.reason}
-                      {w.notes && (
-                        <span className="mt-1 block text-sm text-muted-foreground">{w.notes}</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {catWarnings.length > 0 && (
-              <>
-                <h3>{t("forCats")}</h3>
-                <ul>
-                  {catWarnings.map((w) => (
-                    <li key={w.condition}>
-                      <strong>{w.condition}</strong>{" "}
-                      —{" "}
-                      {recommendationLabel(w.recommendation)}: {w.reason}
-                      {w.notes && (
-                        <span className="mt-1 block text-sm text-muted-foreground">{w.notes}</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
+            <p>{t("healthConditionsIntro", { name: food.name })}</p>
+            <div className="not-prose mt-4 space-y-4">
+              {food.condition_warnings.map((warning) => (
+                <div key={warning.condition} className="rounded-xl border border-border bg-card p-4">
+                  <h3 className="font-medium">{warning.condition}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {t("forDogs")}: {warning.appliesTo.includes("dogs") ? t(warning.recommendation === "consult_vet" ? "consultVet" : warning.recommendation) : t("consultVet")} · {" "}
+                    {t("forCats")}: {warning.appliesTo.includes("cats") ? t(warning.recommendation === "consult_vet" ? "consultVet" : warning.recommendation) : t("consultVet")}
+                  </p>
+                  <p className="mt-1 text-sm">{warning.reason}</p>
+                </div>
+              ))}
+            </div>
           </>
         )}
 
@@ -239,19 +271,24 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
             </ul>
           </>
         )}
-
-        <h2>{t("vetsNote")}</h2>
-        <p>{t("vetsNoteText")}</p>
       </div>
+
+      <FoodFaqSection food={food} locale={locale} />
+
+      <RelatedItems items={related} locale={locale} />
 
       <div className="mt-8 space-y-4">
         <ReportIssue itemName={food.name} pageUrl={pageUrl} locale={locale} />
-        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+          <strong className="block text-amber-950">{t("vetsNote")}</strong>
+          {t("vetsNoteText")}
+        </div>
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
           {t.rich("medicalDisclaimerText", {
             aspca: (chunks) =>
               aspca ? (
-                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-semibold underline">
+                <a href={`tel:${aspca.phone.replace(/\D/g, "")}`} className="font-medium underline">
                   {chunks}
                 </a>
               ) : (
@@ -259,7 +296,7 @@ export async function FoodDetail({ food, locale }: FoodDetailProps) {
               ),
             pph: (chunks) =>
               pph ? (
-                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-semibold underline">
+                <a href={`tel:${pph.phone.replace(/\D/g, "")}`} className="font-medium underline">
                   {chunks}
                 </a>
               ) : (

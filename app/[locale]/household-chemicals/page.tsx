@@ -6,6 +6,8 @@ import { HazardCard } from "@/components/hazard/HazardCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { CollapsibleGridSection } from "@/components/layout/CollapsibleGridSection";
 import { getAllCategories, getAllHouseholdChemicals, getSiteConfig } from "@/lib/content";
+import { buildItemListSchema } from "@/lib/jsonld";
+import { buildAlternates } from "@/lib/metadata";
 import type { HouseholdChemicalEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
 
@@ -25,6 +27,8 @@ interface HouseholdChemicalsPageProps {
   params: Promise<{ locale: Locale }>;
 }
 
+export const dynamic = "force-static";
+
 export async function generateMetadata({ params }: HouseholdChemicalsPageProps): Promise<Metadata> {
   const { locale } = await params;
   const config = await getSiteConfig(locale);
@@ -37,33 +41,15 @@ export async function generateMetadata({ params }: HouseholdChemicalsPageProps):
   };
 }
 
-function buildAlternates(
-  path: string,
-  config: Awaited<ReturnType<typeof getSiteConfig>>,
-  locale: Locale
-) {
-  const baseUrl = config.base_url.endsWith("/")
-    ? config.base_url.slice(0, -1)
-    : config.base_url;
-  const languages: Record<string, string> = {};
-  for (const loc of ["en", "de", "fr", "ja"] as const) {
-    languages[loc] = `${baseUrl}/${loc}${path}`;
-  }
-  languages["x-default"] = `${baseUrl}/en${path}`;
-  return {
-    canonical: `${baseUrl}/${locale}${path}`,
-    languages,
-  };
-}
-
 export default async function HouseholdChemicalsPage({ params }: HouseholdChemicalsPageProps) {
   const { locale } = await params;
-  const [chemicals, categories] = await Promise.all([
+  const [chemicals, categories, config] = await Promise.all([
     getAllHouseholdChemicals(locale),
     getAllCategories(locale),
+    getSiteConfig(locale),
   ]);
-  const t = await getTranslations("HouseholdChemicalsPage");
-  const tBadge = await getTranslations("SafetyBadge");
+  const t = await getTranslations({ locale, namespace: "HouseholdChemicalsPage" });
+  const tBadge = await getTranslations({ locale, namespace: "SafetyBadge" });
 
   const statusLabels: Record<StatusGroup, string> = {
     safe: tBadge("safe"),
@@ -86,26 +72,43 @@ export default async function HouseholdChemicalsPage({ params }: HouseholdChemic
     }
   );
 
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+
+  const itemListJsonLd = buildItemListSchema(
+    chemicals.map((chemical) => ({
+      name: chemical.name,
+      url: `${baseUrl}/${locale}/household-chemicals/${chemical.slug}`,
+    }))
+  );
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Breadcrumb locale={locale} items={[{ label: t("householdChemicals") }]} />
 
       <header className="mt-6">
-        <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
-        <p className="mt-2 text-lg text-muted-foreground">{t("description")}</p>
+        <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{t("title")}</h1>
+        <p className="mt-2 text-lg font-light text-muted-foreground">{t("description")}</p>
       </header>
 
       <section className="mt-10">
-        <h2 className="text-2xl font-semibold text-foreground">{t("quickSafetyOverview")}</h2>
+        <h2 className="text-2xl font-normal tracking-tight text-foreground">{t("quickSafetyOverview")}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {statusOrder.map((status) => (
             <Link
               key={status}
               href={`#${status}`}
-              className="rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm"
+              className="rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-card"
             >
               <p className="text-sm text-muted-foreground">{statusLabels[status]}</p>
-              <p className="mt-1 text-3xl font-bold text-foreground">{chemicalsByStatus[status].length}</p>
+              <p className="mt-1 text-3xl font-light text-foreground">{chemicalsByStatus[status].length}</p>
               <p className="mt-1 text-xs text-muted-foreground">{t("householdChemicals")}</p>
             </Link>
           ))}
@@ -113,7 +116,7 @@ export default async function HouseholdChemicalsPage({ params }: HouseholdChemic
       </section>
 
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold text-foreground">{t("browseByCategory")}</h2>
+        <h2 className="text-2xl font-normal tracking-tight text-foreground">{t("browseByCategory")}</h2>
         <div className="mt-4 flex flex-wrap gap-2">
           {categories.map((category) => (
             <Link

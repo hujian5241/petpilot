@@ -20,6 +20,6 @@ PetPilot provides educational information only and is not a substitute for profe
 
 ## Contact Us
 
-Have feedback or a suggestion? Email us at [hello@petpilot.io](mailto:hello@petpilot.io).
+Have feedback or a suggestion? Email us at [contact@petpilot.top](mailto:contact@petpilot.top).
 
 <a href="/emergency" class="inline-flex items-center rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90 no-underline">View Emergency Guide</a>

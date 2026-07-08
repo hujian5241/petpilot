@@ -3,100 +3,126 @@ id: walnuts
 name: クルミ
 slug: walnuts
 aliases:
-  - english-walnuts
+  - 胡桃
 categories:
   - nuts
 tags:
-  - high-fat
-  - mold-risk
+  - omega-3
+  - fatty-acids
+  - healthy-fats
 safety:
   dogs:
-    status: limited
-    severity: moderate
-    summary: 普通のクルミは強い毒性はありませんが、カビの生えたクルミを食べると発作を起こす可能性があります。
+    status: safe
+    summary: 適量なら安全です。殻と塩は避けてください。
   cats:
-    status: limited
-    severity: low
-    summary: 推奨されません。高脂肪で、カビのリスクがあります。
+    status: safe
+    summary: ごく少量なら安全です。
 symptoms:
-  - 嘔吐
+  - 消化器障害
   - 下痢
-  - 振戦
-  - 発作
-  - 脱力・虚弱
-what_to_do: カビの生えたクルミを食べた場合、または振戦が現れた場合は、直ちに獣医師に連絡してください。
+what_to_do: >-
+  摂取量を減らすか、食事を中止してください。症状が続く場合は獣医に相談してください。
 alternatives:
-  - carrots
-  - apple-slices
-  - blueberries
+  - almonds
+  - pumpkin-seeds
+  - flaxseed
 sources:
-  - name: Pet Poison Helpline
-    url: 'https://www.petpoisonhelpline.com/'
+  - name: American Kennel Club
+    url: 'https://www.akc.org/'
   - name: ASPCA
     url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
 requires_emergency_visit: false
-preparation_notes: 無調味の新鮮なむき身クルミのみ。カビの生えたクルミやブラッククルミは決して与えないでください。
-safe_amount: 可能な限りクルミは与えない。まれに小さな1かけらを少量。
-frequency: 避ける
+preparation_notes: >-
+  殻を取り除きます。砕くか小さく切って与えてください。
+safe_amount: 1個程度；猫はごく少量。
+frequency: 時々。
 related_foods:
-  - walnut-butter
-  - black-walnuts
+  - almonds
+  - pumpkin-seeds
 condition_warnings:
-  - condition: 慢性腎臓病
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: リンとタンパク質を含み、慢性腎臓病では通常制限されます。
   - condition: 膵炎
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: 高脂肪の摂取は膵炎を引き起こしたり悪化させたりする可能性があります。
-  - condition: 肥満
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: カロリーが高く、過剰摂取は体重増加につながる可能性があります。
-  - condition: 食物アレルギー
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: consult_vet
-    reason: ナッツ類・種子類は一般的なアレルゲンであり、個体差による反応があります。
-  - condition: 肝臓病
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: 高脂肪分は機能が低下した肝臓に負担をかける可能性があります。
-  - condition: 炎症性腸疾患（IBD）
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: 高脂肪は消化管の炎症を悪化させる可能性があります。
+    reason: 脂肪含有量が高いです。
   - condition: 高脂血症
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: 高脂肪分は高脂血症を悪化させます。
-  - condition: 胃腸の過敏症
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: 高脂肪は敏感な消化管を刺激する可能性があります。
-meta_title: 犬はクルミを食べてもいい？安全性、リスク、獣医師のアドバイス
-meta_description: クルミは犬や猫にとって安全でしょうか？犬、猫ともに制限付きです。症状、対処法、獣医師が推奨する代替品をご確認ください。
+    reason: トリグリセリド値を上昇させる可能性があります。
+meta_title: >-
+  犬はクルミを食べても大丈夫？安全性、リスク、獣医のアドバイス
+meta_description: >-
+  クルミは犬や猫に安全ですか？クルミは犬と猫に安全です。症状、対処法、獣医が推奨する代替品をご覧ください。
+faq_extras:
+  - question: 犬は殻付きのクルミを食べても大丈夫ですか？
+    answer: >-
+      いいえ。殻は硬く、消化障害や窒息のリスクがあります。必ず殻を取り除いてから与えてください。
+  - question: 塩漬けのクルミは犬に安全ですか？
+    answer: >-
+      いいえ。塩漬けやスパイス入りのクルミにはナトリウムと有害な成分が含まれています。
+  - question: 猫はクルミを食べても大丈夫ですか？
+    answer: >-
+      ごく少量の砕いたクルミは安全ですが、必要ありません。ほとんどの猫は興味を示さないでしょう。
+  - question: クルミは犬の心臓に良いですか？
+    answer: >-
+      はい、オメガ-3脂肪酸が心臓の健康を維持するのに役立ちます。ただし、適量のみ与えてください。
+  - question: クルミは犬に有害ですか？
+    answer: >-
+      過剰摂取は高脂肪含有量のため膵炎を引き起こす可能性があります。
+  - question: 犬がたくさんのクルミを食べたらどうなりますか？
+    answer: >-
+      犬がたくさん食べた場合は、腹痛、嘔吐、下痢などの膵炎の兆候に注意してください。
+why_it_matters: >-
+  クルミはペットにとってオメガ-3脂肪酸の健康的な供給源です。ただし、高脂肪含有量のため適量のみ与えてください。過剰摂取は消化障害や膵炎を引き起こす可能性があります。
+how_it_works: >-
+  クルミのオメガ-3脂肪酸は心臓の健康と被毛の健康に有益です。ただし、高脂肪含有量は膵臓を過負荷にする可能性があります。
+species_differences: >-
+  犬はクルミを時々1個程度摂取できます。猫は必要ありませんが、ごく少量は安全です。
+common_scenarios:
+  - クルミをおやつとして与える
+  - 犬がボウルからクルミを盗む
+  - クルミ入りのクッキーやバーを与える
+  - 動物が殻付きのクルミを食べる
+  - 猫が砕いたクルミを嗅ぐ
+timeline: >-
+  症状が現れる場合は、摂取後6-12時間以内に現れる可能性があります。膵炎は深刻で、即時の獣医の診察が必要です。
+quick_facts:
+  - オメガ-3脂肪酸が豊富
+  - 殻を取り除く
+  - 砕くか小さく切る
+  - 大量摂取は膵炎のリスクがある
+  - 塩漬けやスパイス入りは避ける
 ---
 # クルミ
 
-普通のクルミはブラッククルミほど危険ではありませんが、高脂肪で、胃腸の不調を引き起こすことがあります。最大の懸念はカビで、振戦を引き起こすマイコトキシンを産生し、発作を起こす可能性があります。
+クルミは犬にとってオメガ-3脂肪酸の健康的な供給源です。殻と塩が含まれていない限り適量与えても安全です。猫はごく少量のクルミを食べることができますが、クルミは彼らの食事に必要ありません。
 
-猫は高脂肪とカビのリスクのため、クルミを避けるべきです。安全なおやつには、にんじんやブルーベリーなどがあります。
+クルミを与える前に必ず殻を取り除き、砕くか小さく切ってください。塩漬けやスパイス入りのクルミは避けてください。ナトリウムと有害な成分が含まれています。
+
+## クルミがペットに重要な理由
+
+クルミは心臓の特性とオメガ-3含有量でよく知られています。犬にとっては、時々1個程度のクルミは心臓の健康と被毛の健康を維持するのに役立ちます。
+
+## クルミが犬と猫に与える影響
+
+適度な量ではクルミは簡単に消化され、健康的な脂肪を提供します。ただし、過剰摂取は高脂肪含有量のため膵臓を過負荷にし、膵炎を引き起こす可能性があります。猫は絶対肉食動物でクルミを必要としません。
+
+## よくあるシナリオ
+
+- 犬にクルミをご褒美として与える。
+- 動物がテーブルのボウルからクルミを盗む。
+- 犬がクルミ入りのクッキーを食べる。
+- 猫が砕いたクルミを調べる。
+
+## 注意点
+
+犬がたくさん食べた場合は、腹痛、嘔吐、下痢などの膵炎の兆候に注意してください。膵炎の歴史があるペットはクルミを完全に避けてください。塩漬けやスパイス入りのクルミは常に避けてください。
+
+## より安全な代替品
+
+アーモンド、カボチャの種、亜麻仁は健康的な脂肪も提供する同様の選択肢です。これらも適量与えてください。

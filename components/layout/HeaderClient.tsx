@@ -26,6 +26,12 @@ const FOCUSABLE_SELECTOR = [
   '[tabindex]:not([tabindex="-1"])',
 ].join(",");
 
+function useMounted() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted;
+}
+
 function useFocusTrap(
   containerRef: React.RefObject<HTMLElement | null>,
   enabled: boolean,
@@ -114,6 +120,7 @@ export function LocaleSwitcher({ locale }: LocaleSwitcherProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const mounted = useMounted();
 
   useClickOutside(ref, () => setOpen(false), open);
 
@@ -122,7 +129,7 @@ export function LocaleSwitcher({ locale }: LocaleSwitcherProps) {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+        className="flex items-center gap-1.5 rounded-md p-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -136,7 +143,7 @@ export function LocaleSwitcher({ locale }: LocaleSwitcherProps) {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-2 w-36 origin-top-right rounded-md border border-border bg-background py-1 shadow-lg"
+          className="absolute right-0 z-50 mt-2 w-36 origin-top-right rounded-lg border border-border bg-background py-1 shadow-panel"
         >
           {locales.map((l) => (
             <li key={l} role="option" aria-selected={l === locale}>
@@ -172,10 +179,12 @@ export function NavDropdown({ label, items, active }: NavDropdownProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const mounted = useMounted();
 
   useClickOutside(ref, () => setOpen(false), open);
 
   function isActive(href: string): boolean {
+    if (!mounted) return false;
     return href === pathname;
   }
 
@@ -206,7 +215,7 @@ export function NavDropdown({ label, items, active }: NavDropdownProps) {
       {open && (
         <ul
           role="menu"
-          className="absolute left-0 top-full z-50 w-48 rounded-md border border-border bg-background py-1 shadow-lg"
+          className="absolute left-0 top-full z-50 w-48 rounded-lg border border-border bg-background py-1 shadow-panel"
         >
           {items.map((item) => (
             <li key={item.href} role="none">
@@ -239,6 +248,7 @@ export function MobileMenu({ locale, navItems, categoryItems }: MobileMenuProps)
   const menuRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const t = useTranslations("Header");
+  const mounted = useMounted();
 
   useClickOutside(ref, () => setOpen(false), open);
   useFocusTrap(menuRef, open, () => setOpen(false));
@@ -255,6 +265,7 @@ export function MobileMenu({ locale, navItems, categoryItems }: MobileMenuProps)
   }, [open]);
 
   function isActive(href: string): boolean {
+    if (!mounted) return false;
     return href === pathname;
   }
 
@@ -274,7 +285,7 @@ export function MobileMenu({ locale, navItems, categoryItems }: MobileMenuProps)
       {open && (
         <div
           ref={menuRef}
-          className="fixed inset-0 top-16 z-40 bg-background px-4 py-6 shadow-lg"
+          className="fixed inset-0 top-16 z-40 bg-background px-4 py-6 shadow-panel"
         >
           <nav aria-label="Mobile" className="space-y-4">
             <div className="space-y-2">

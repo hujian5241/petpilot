@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2025-11-24-rcl-foods-recalls-pet-food-over-elevated-toxin-levels---ewn
 title: RCL Foods recalls pet food over elevated toxin levels - EWN
 date: '2025-11-24'
@@ -14,9 +15,11 @@ status: confirmed
 summary: >-
   RCL Foods recalls pet food over elevated toxin levels EWN Pet owners should be
   aware of this incident and take precautions. Affected animals: other.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: recall
+clusterId: 92791206a9689892
+updatedAt: '2026-07-08T06:02:41.312Z'
 ---
 RCL Foods recalls pet food over elevated toxin levels EWN Pet owners should be aware of this incident and take precautions. Affected animals: other.
 

@@ -1,0 +1,27 @@
+---
+body: ''
+slug: 2026-06-11-safety-alert-go-raw-pet-food-recall-explanded---fox19
+title: 'Safety Alert: ''Go Raw'' pet food recall explanded - FOX19 | Cincinnati'
+date: '2026-06-11'
+month: 2026-06
+source: Google News
+sourceUrl: >-
+  https://news.google.com/rss/articles/CBMijgFBVV95cUxNaHJ1VkhhWVd5bUpyczZxaHFvSkV3S1Zkc3U1MjJiaWtCYm9WUEFnYXg0OFNTOUc4Y1RxOXhnWm5rX0ZjeE5zZEE5angwcVhlN3BvX200MFZ2QlRtQVVGc3NDRHdQdHhSSW82LUJaUUJvV0dHWGd0VVExcXF0NXRrRWJfUU1iSFhBdnp2Q0V3?oc=5
+species:
+  - other
+substances: []
+severity: high
+status: confirmed
+type: recall
+summary: >-
+  Safety Alert: 'Go Raw' pet food recall explanded FOX19 | Cincinnati Pet owners
+  should be aware of this incident and take precautions. Affected animals:
+  other.
+relatedSlugs: {}
+updatedAt: '2026-07-07T20:30:55.303Z'
+reviewed: false
+clusterId: 412984ad17aec0cb
+---
+Safety Alert: 'Go Raw' pet food recall explanded FOX19 | Cincinnati Pet owners should be aware of this incident and take precautions. Affected animals: other.
+
+[Read the full report on Google News →](https://news.google.com/rss/articles/CBMijgFBVV95cUxNaHJ1VkhhWVd5bUpyczZxaHFvSkV3S1Zkc3U1MjJiaWtCYm9WUEFnYXg0OFNTOUc4Y1RxOXhnWm5rX0ZjeE5zZEE5angwcVhlN3BvX200MFZ2QlRtQVVGc3NDRHdQdHhSSW82LUJaUUJvV0dHWGd0VVExcXF0NXRrRWJfUU1iSFhBdnp2Q0V3?oc=5)

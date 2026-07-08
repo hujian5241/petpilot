@@ -1,0 +1,26 @@
+---
+body: ''
+slug: 2026-07-04-mars-recalls-pedigree-canned-dog-food-for-fmc---petfoodindus
+title: Mars recalls Pedigree canned dog food for FMC - PetfoodIndustry
+date: '2026-07-04'
+month: 2026-07
+source: PetfoodIndustry
+sourceUrl: >-
+  https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVzhlRkc3cVEzb3JJZm9EVHVZN0VyOWdpODUzZFRqa0ZrYTVDMzVRVWlBZmVBVFNSaFNzOTBuZlhYbHBYYXk2LVFqMm5aejZXZmJlbHluZXdrLTBRM1h2a2dWQVJ3OUlaN3NORjdIN3Bmc3dycWlrUTItTUM4Y01UbDZJNHZmRGV5cERTVnZLTGJpdzRhcXEyUkpkWWphcXp6STFvdGFXRVdySGgzT3Y5Y2plMU55OHlyV3dPSkRDS0w?oc=5
+species:
+  - dogs
+substances: []
+severity: high
+status: confirmed
+summary: >-
+  Mars recalls Pedigree canned dog food for FMC PetfoodIndustry Pet owners
+  should be aware of this incident and take precautions. Affected animals: dogs.
+relatedSlugs: {}
+reviewed: false
+clusterId: b63b19f9e93c21e4
+updatedAt: '2026-07-07T20:31:23.304Z'
+type: recall
+---
+Mars recalls Pedigree canned dog food for FMC PetfoodIndustry Pet owners should be aware of this incident and take precautions. Affected animals: dogs.
+
+[Read the full report on PetfoodIndustry →](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVzhlRkc3cVEzb3JJZm9EVHVZN0VyOWdpODUzZFRqa0ZrYTVDMzVRVWlBZmVBVFNSaFNzOTBuZlhYbHBYYXk2LVFqMm5aejZXZmJlbHluZXdrLTBRM1h2a2dWQVJ3OUlaN3NORjdIN3Bmc3dycWlrUTItTUM4Y01UbDZJNHZmRGV5cERTVnZLTGJpdzRhcXEyUkpkWWphcXp6STFvdGFXRVdySGgzT3Y5Y2plMU55OHlyV3dPSkRDS0w?oc=5)

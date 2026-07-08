@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-04-04-vets-warn-dog-and-cat-owners-about-toxic-cleaning-products-c
 title: >-
   Vets warn dog and cat owners about toxic cleaning products causing chemical
@@ -18,9 +19,11 @@ summary: >-
   Vets warn dog and cat owners about toxic cleaning products causing chemical
   burns Liverpool Echo This report may be useful for pet owners monitoring
   potential risks. Affected animals: dogs, cats.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: incident
+clusterId: f8e4a744bae411ae
+updatedAt: '2026-07-08T08:39:54.154Z'
 ---
 Vets warn dog and cat owners about toxic cleaning products causing chemical burns Liverpool Echo This report may be useful for pet owners monitoring potential risks. Affected animals: dogs, cats.
 

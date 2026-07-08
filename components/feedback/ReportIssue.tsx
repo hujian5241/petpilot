@@ -81,7 +81,7 @@ function useFocusTrap(
 export function ReportIssue({
   pageUrl,
   itemName,
-  contactEmail = "hello@petpilot.io",
+  contactEmail = "contact@petpilot.top",
   siteName = "PetPilot",
   locale = "en",
 }: ReportIssueProps) {
@@ -120,7 +120,7 @@ export function ReportIssue({
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen(true)}
-        className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm text-muted-foreground hover:bg-muted"
+        className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted"
       >
         <Flag className="h-4 w-4" aria-hidden="true" />
         {t("button")}
@@ -138,19 +138,19 @@ export function ReportIssue({
         >
           <div
             ref={dialogRef}
-            className="w-full max-w-md rounded-xl bg-card p-6 shadow-lg"
+            className="w-full max-w-md rounded-xl bg-card p-6 shadow-panel"
           >
             <div className="flex items-center justify-between">
               <h3
                 id="report-issue-title"
-                className="text-lg font-semibold text-foreground"
+                className="text-lg font-medium tracking-tight text-foreground"
               >
                 {t("title")}
               </h3>
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="rounded-sm p-1 text-muted-foreground transition-colors hover:text-foreground"
                 aria-label={t("close")}
               >
                 <X className="h-5 w-5" aria-hidden="true" />
@@ -171,7 +171,7 @@ export function ReportIssue({
                     key={option.label}
                     href={`mailto:${contactEmail}?subject=${subject}&body=${body}`}
                     onClick={() => setIsOpen(false)}
-                    className="block rounded-lg border border-border p-3 hover:bg-muted"
+                    className="block rounded-xl border border-border p-3 transition-colors hover:bg-muted"
                   >
                     <span className="block font-medium text-foreground">{option.label}</span>
                     <span className="block text-sm text-muted-foreground">{option.detail}</span>

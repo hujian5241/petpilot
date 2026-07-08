@@ -22,22 +22,9 @@ summary: >-
 relatedSlugs: {}
 reviewed: false
 clusterId: 108d3384def23ae0
-updatedAt: '2026-07-05T22:01:03.145Z'
+updatedAt: '2026-07-08T08:53:24.808Z'
+type: incident
 ---
-## What happened
-FarmersAlmanac.com published an A-to-Z guide on 30 common houseplants that are toxic to cats, dogs, and birds.
+30 Common Houseplants Toxic to Pets (A to Z): Cat, Dog, and Bird Safety Guide farmersalmanac.com This report may be useful for pet owners monitoring potential risks. Affected animals: dogs, cats.
 
-## Key facts
-- Affected animals: dogs, cats, and birds.
-- The guide lists popular indoor plants such as pothos, philodendron, and sago palm.
-- Symptoms can include vomiting, drooling, breathing trouble, and organ failure.
-
-## What pet owners should do
-- Identify every plant in your home and compare it to a pet-toxicity list.
-- Move or remove risky plants; choose pet-safe alternatives like spider plants or Boston ferns.
-- Get immediate veterinary help if ingestion occurs.
-
-## Related coverage
-- [Read the report on farmersalmanac.com →](https://news.google.com/rss/articles/CBMiXEFVX3lxTE94VzAxb1RDY0tYbnRGX0ZGSkh1U2JIQXpRR0R3ZHh5Q1RJMnhFWUtxXzBoS2RwSDhOYXBNWjVhQXdZem5MOUM2Nm9feHBCY0RBTEZ0dVJPNFlBUVpH?oc=5)
-- [Read PetPilot's coverage from USA Today →](/news/2026-06-03-planting-a-garden-skip-these-plants-toxic-to-cats---usa-toda)
-- [Read PetPilot's coverage from Encyclopedia Britannica →](/news/2026-06-24-why-are-lilies-toxic-to-cats---encyclopedia-britannica)
+[Read the full report on farmersalmanac.com →](https://news.google.com/rss/articles/CBMiXEFVX3lxTE94VzAxb1RDY0tYbnRGX0ZGSkh1U2JIQXpRR0R3ZHh5Q1RJMnhFWUtxXzBoS2RwSDhOYXBNWjVhQXdZem5MOUM2Nm9feHBCY0RBTEZ0dVJPNFlBUVpH?oc=5)

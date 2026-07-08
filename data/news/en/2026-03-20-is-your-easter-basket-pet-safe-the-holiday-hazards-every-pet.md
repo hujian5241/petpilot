@@ -33,21 +33,18 @@ relatedSlugs:
     - white-chocolate
 reviewed: false
 clusterId: 9a6148704d2bf948
-updatedAt: '2026-07-05T21:58:14.190Z'
+updatedAt: '2026-07-08T08:38:19.671Z'
+type: alert
 ---
 ## What happened
-Pet Poison Helpline issued a warning about Easter holiday hazards that can endanger pets, including toxic flowers and basket treats.
+The Pet Poison Helpline issued a holiday alert warning that Easter baskets and decorations can contain serious hazards for pets, especially as celebrations bring new items into the home.
 
 ## Key facts
-- Lilies are highly toxic to cats and can cause kidney failure.
-- Chocolate and candy containing xylitol are dangerous to dogs.
-- Holiday decorations and colorful items can attract curious pets.
+- Lilies are highly toxic to cats and can cause life-threatening kidney failure even in small amounts.
+- Chocolate and xylitol-containing sweets are dangerous to dogs and can cause vomiting, seizures, or worse.
+- Plastic Easter grass and small toys can cause intestinal blockages if swallowed.
 
 ## What pet owners should do
-- Keep lilies, chocolate, and xylitol products out of reach.
-- Use pet-safe alternatives in Easter baskets.
-- Contact a veterinarian or poison helpline immediately if exposure occurs.
-
-## Related coverage
-[Read the report on Pet Poison Helpline →](https://www.petpoisonhelpline.com/uncategorized/is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know/?utm_source=rss&utm_medium=rss&utm_campaign=is-your-easter-basket-pet-safe-the-holiday-hazards-every-pet-owner-should-know)
-[Read PetPilot's coverage from Google News →](/news/2026-03-20-hidden-killers-in-your-home-common-toxins-poisoning-pets-eve)
+- Keep Easter baskets, candy, and floral arrangements away from pets.
+- Avoid lilies in homes with cats; choose pet-safe flowers instead.
+- Monitor pets closely during gatherings and contact a veterinarian or poison helpline if any suspect item is eaten.

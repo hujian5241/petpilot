@@ -1,4 +1,5 @@
 ---
+body: ''
 slug: 2026-05-29-weekly-vet-report-cat-to-human-bird-flu-transmission-a-new-i
 title: >-
   Weekly Vet Report: Cat-to-human bird flu transmission, a new injectable for
@@ -18,9 +19,11 @@ summary: >-
   Weekly Vet Report: Cat-to-human bird flu transmission, a new injectable for
   itchy dogs, and a major pet food recall DVM360 Pet owners should be aware of
   this incident and take precautions. Affected animals: dogs, cats.
-body: ''
 relatedSlugs: {}
 reviewed: false
+type: recall
+clusterId: 8a71b6b41f11fd76
+updatedAt: '2026-07-08T08:46:42.354Z'
 ---
 Weekly Vet Report: Cat-to-human bird flu transmission, a new injectable for itchy dogs, and a major pet food recall DVM360 Pet owners should be aware of this incident and take precautions. Affected animals: dogs, cats.
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "@/components/IntlProvider";
 
 import "../globals.css";
 import { Header } from "@/components/layout/Header";
@@ -9,6 +9,17 @@ import { Footer } from "@/components/layout/Footer";
 import { getSiteConfig } from "@/lib/content";
 import { buildSiteMetadata } from "@/lib/metadata";
 import { locales, type Locale } from "@/lib/i18n";
+import enMessages from "../../messages/en.json";
+import deMessages from "../../messages/de.json";
+import frMessages from "../../messages/fr.json";
+import jaMessages from "../../messages/ja.json";
+
+const messagesByLocale: Record<Locale, any> = {
+  en: enMessages,
+  de: deMessages,
+  fr: frMessages,
+  ja: jaMessages,
+};
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
 const GOOGLE_SITE_VERIFICATION =
@@ -30,10 +41,12 @@ export async function generateMetadata({
     },
     verification: {
       google: GOOGLE_SITE_VERIFICATION,
+      other: {
+        "msvalidate.01": "8FB2653FC3F9F0D9500DFE6193F39281",
+      },
     },
   };
 }
-
 
 function buildSiteJsonLd(config: Awaited<ReturnType<typeof getSiteConfig>>, locale: Locale) {
   const baseUrl = config.base_url.endsWith("/")
@@ -68,7 +81,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
@@ -77,7 +90,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = messagesByLocale[locale as Locale];
   const isJapanese = locale === "ja";
   const config = await getSiteConfig(locale as Locale);
   const siteJsonLd = buildSiteJsonLd(config, locale as Locale);
@@ -91,7 +104,7 @@ export default async function LocaleLayout({
             __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"

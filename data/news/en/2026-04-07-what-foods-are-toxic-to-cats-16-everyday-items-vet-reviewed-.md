@@ -18,22 +18,10 @@ summary: >-
   animals: cats.
 relatedSlugs: {}
 reviewed: false
-clusterId: b200d6a3ca9ddc5e
-updatedAt: '2026-07-05T21:59:58.733Z'
+clusterId: f8e4a744bae411ae
+updatedAt: '2026-07-08T08:39:54.154Z'
+type: incident
 ---
-## What happened
-Catster published a vet-reviewed guide listing 16 everyday foods that are toxic to cats, reminding owners that common human foods can be dangerous.
+What Foods Are Toxic to Cats? 16 Everyday Items (Vet Reviewed) Catster This report may be useful for pet owners monitoring potential risks. Affected animals: cats.
 
-## Key facts
-- Onions, garlic, chocolate, caffeine, alcohol, grapes, raisins, and xylitol are among the listed toxins.
-- Raw bread dough, certain dairy, and bones can also cause serious illness.
-- Affected species: cats.
-
-## What pet owners should do
-Keep human food out of reach, avoid feeding table scraps, and read labels for xylitol. Contact a veterinarian or poison hotline immediately if a cat eats something suspicious.
-
-## Related coverage
-- [Read the report on Catster →](https://news.google.com/rss/articles/CBMieEFVX3lxTE9CWW83TkJYb0dLMnNwY29PVzlLdDk0ZlZnUGVRSVNGM25Tb3lRSDBQdGQ3VXpOb3d1Q0xYLU5pMEZFRHpGUVBjcFpyWXdGUl94MGQxWTVaUnlRQTM3WVRDWkZmaUtOVDY5clM5MnFzQjduWFJlNGcyMA?oc=5)
-- [Read PetPilot's coverage from Yahoo Lifestyle Canada →](/news/2026-04-11-these-spring-flowers-may-be-toxic-to-cats-and-dogs-pet-paren)
-- [Read PetPilot's coverage from The Spruce Pets →](/news/2026-04-19-are-tulips-toxic-to-cats---the-spruce-pets)
-- [Read PetPilot's coverage from Daily Paws →](/news/2026-04-20-these-5-flowers-are-toxic-to-cats-so-be-aware-as-spring-arri)
+[Read the full report on Catster →](https://news.google.com/rss/articles/CBMieEFVX3lxTE9CWW83TkJYb0dLMnNwY29PVzlLdDk0ZlZnUGVRSVNGM25Tb3lRSDBQdGQ3VXpOb3d1Q0xYLU5pMEZFRHpGUVBjcFpyWXdGUl94MGQxWTVaUnlRQTM3WVRDWkZmaUtOVDY5clM5MnFzQjduWFJlNGcyMA?oc=5)

@@ -74,7 +74,7 @@ export function SafetyBadge({ species, status, locale = "en", className }: Safet
       <Icon className="h-5 w-5 shrink-0" />
       <div className="flex flex-col">
         <span className="text-xs font-medium opacity-80">{speciesLabel}</span>
-        <span className="font-semibold">{statusLabel}</span>
+        <span className="font-medium">{statusLabel}</span>
       </div>
     </div>
   );

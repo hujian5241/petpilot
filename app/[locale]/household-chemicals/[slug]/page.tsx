@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
 import { HouseholdChemicalDetail } from "@/components/household-chemical/HouseholdChemicalDetail";
+
+export const dynamic = "force-static";
 import { getHouseholdChemicalBySlug, getHouseholdChemicalSlugs, getSiteConfig } from "@/lib/content";
 import { buildHouseholdChemicalMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/i18n";

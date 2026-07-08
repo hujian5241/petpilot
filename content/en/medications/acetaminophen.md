@@ -25,6 +25,17 @@ safety:
     summary: >-
       Even small doses can be life-threatening in cats, causing
       methemoglobinemia, hemolysis, facial/paw edema, and acute liver failure.
+toxicity_profiles:
+  - species: dogs
+    toxic_dose_mg_per_kg: 75
+    lethal_dose_mg_per_kg: 600
+    tablet_mg: 500
+    note: Dogs can develop liver injury and methemoglobinemia at higher doses. Extended-release formulations prolong risk.
+  - species: cats
+    toxic_dose_mg_per_kg: 10
+    lethal_dose_mg_per_kg: 50
+    tablet_mg: 500
+    note: Cats lack efficient glucuronidation and are extremely sensitive. A single tablet can be fatal.
 symptoms:
   - vomiting
   - lethargy

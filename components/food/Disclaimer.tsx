@@ -9,12 +9,12 @@ interface DisclaimerProps {
 }
 
 export async function Disclaimer({ locale = "en", className }: DisclaimerProps) {
-  const t = await getTranslations("Disclaimer");
+  const t = await getTranslations({ locale, namespace: "Disclaimer" });
 
   return (
     <div
       className={cn(
-        "rounded-lg bg-muted p-4 text-sm text-muted-foreground",
+        "rounded-xl bg-muted p-4 text-sm text-muted-foreground",
         className
       )}
     >

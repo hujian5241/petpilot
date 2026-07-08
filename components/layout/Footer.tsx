@@ -12,19 +12,18 @@ export async function Footer({ locale }: FooterProps) {
   const config = await getSiteConfig(locale);
   const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
-  const t = await getTranslations("Footer");
-  const d = await getTranslations("Disclaimer");
+  const t = await getTranslations({ locale, namespace: "Footer" });
 
   return (
-    <footer className="border-t border-border bg-muted">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="border-t border-border bg-background">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-semibold">{config.name}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{config.tagline}</p>
+            <h3 className="text-lg font-medium tracking-tight">{config.name}</h3>
+            <p className="mt-2 text-sm text-muted-foreground" suppressHydrationWarning>{config.tagline}</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold">{t("quickLinks")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{t("quickLinks")}</h4>
             <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
               <Link href="/search" className="text-muted-foreground hover:text-foreground">
                 {t("search")}
@@ -46,7 +45,7 @@ export async function Footer({ locale }: FooterProps) {
               </Link>
             </div>
             <details className="group mt-4">
-              <summary className="flex cursor-pointer list-none items-center gap-1 text-sm font-semibold text-muted-foreground hover:text-foreground">
+              <summary className="flex cursor-pointer list-none items-center gap-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground hover:text-foreground">
                 {t("categories")}
                 <ChevronDown className="h-3.5 w-3.5 transition-transform group-open:rotate-180" aria-hidden="true" />
               </summary>
@@ -80,14 +79,14 @@ export async function Footer({ locale }: FooterProps) {
             </details>
           </div>
           <div>
-            <h4 className="text-sm font-semibold">{t("emergency")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{t("emergency")}</h4>
             <div className="mt-2 space-y-2 text-sm text-muted-foreground">
               {aspca && (
                 <p>
                   {aspca.name}:{" "}
                   <a
                     href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-                    className="text-emergency hover:underline"
+                    className="font-medium text-emergency hover:underline"
                   >
                     {aspca.phone}
                   </a>
@@ -98,7 +97,7 @@ export async function Footer({ locale }: FooterProps) {
                   {pph.name}:{" "}
                   <a
                     href={`tel:${pph.phone.replace(/\D/g, "")}`}
-                    className="text-emergency hover:underline"
+                    className="font-medium text-emergency hover:underline"
                   >
                     {pph.phone}
                   </a>
@@ -107,12 +106,8 @@ export async function Footer({ locale }: FooterProps) {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-8">
-          <div className="rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
-            {d("text")}
-          </div>
-          <p className="mt-4 text-xs text-muted-foreground">
+        <div className="mt-10 border-t border-border pt-8">
+          <p className="text-xs text-muted-foreground" suppressHydrationWarning>
             © {new Date().getFullYear()} {config.name}. {t("allRightsReserved")}
           </p>
         </div>

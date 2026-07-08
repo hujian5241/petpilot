@@ -49,7 +49,7 @@ function buildTwitter(
   };
 }
 
-function buildAlternates(
+export function buildAlternates(
   path: string,
   config: SiteConfig,
   locale: Locale

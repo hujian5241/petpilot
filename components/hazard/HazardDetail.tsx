@@ -2,20 +2,37 @@ import Image from "next/image";
 import { ExternalLink, Phone } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/routing";
 import { SafetyBadge, CompactSafetyBadge } from "@/components/food/SafetyBadge";
 import { EmergencyBanner } from "@/components/emergency/EmergencyBanner";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ReportIssue } from "@/components/feedback/ReportIssue";
-import { getEmergencyInfo } from "@/lib/content";
-import { buildGuideFaqSchema } from "@/lib/jsonld";
+import { RelatedItems } from "@/components/detail/RelatedItems";
+import { ToxicityCalculator } from "@/components/calculator/ToxicityCalculator";
+import { findRelatedEntries, getEmergencyInfo } from "@/lib/content";
+import {
+  buildMedicationFaqSchema,
+  buildHouseholdChemicalFaqSchema,
+  buildPesticideFaqSchema,
+  buildGuideFaqSchema,
+} from "@/lib/jsonld";
 import type { Locale } from "@/lib/i18n";
-import type { SearchIndexItem } from "@/lib/types";
+import type {
+  SearchIndexItem,
+  MedicationEntry,
+  HouseholdChemicalEntry,
+  PesticideEntry,
+  FoodImage,
+  ToxicityProfile,
+} from "@/lib/types";
 
 interface HazardDetailEntry {
   slug: string;
   name: string;
-  images?: { src: string; alt?: string }[];
+  images?: FoodImage[];
+  categories: string[];
+  tags: string[];
   safety: {
     dogs: { status: "safe" | "limited" | "toxic" | "unknown"; summary: string };
     cats: { status: "safe" | "limited" | "toxic" | "unknown"; summary: string };
@@ -24,6 +41,7 @@ interface HazardDetailEntry {
   what_to_do: string;
   alternatives: string[];
   sources: { name: string; url?: string }[];
+  toxicity_profiles?: ToxicityProfile[];
   content?: string;
 }
 
@@ -38,6 +56,7 @@ interface HazardDetailProps {
   safeForDogsTitle: string;
   safeForCatsTitle: string;
   alternativesPrefix: string;
+  faqJsonLd?: object;
   children?: React.ReactNode;
 }
 
@@ -68,6 +87,7 @@ export async function HazardDetail({
   safeForDogsTitle,
   safeForCatsTitle,
   alternativesPrefix,
+  faqJsonLd,
   children,
 }: HazardDetailProps) {
   const isUrgent =
@@ -78,12 +98,13 @@ export async function HazardDetail({
 
   const info = await getEmergencyInfo(locale);
   const [aspca, pph] = info.hotlines;
+  const related = await findRelatedEntries(entry, locale, 6);
 
   const prefix = routePrefix[type];
   const imgPrefix = imagePrefix[type];
   const pageUrl = `/${locale}/${prefix}/${entry.slug}`;
-  const t = await getTranslations("HazardDetail");
-  const jsonLd = buildGuideFaqSchema(entry);
+  const t = await getTranslations({ locale, namespace: "HazardDetail" });
+  const jsonLd = faqJsonLd ?? buildGuideFaqSchema(entry);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -114,8 +135,8 @@ export async function HazardDetail({
             />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">{title}</h1>
-            <p className="mt-2 text-lg text-muted-foreground">{subtitle}</p>
+            <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{title}</h1>
+            <p className="mt-2 text-lg font-light text-muted-foreground">{subtitle}</p>
             <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
               <CompactSafetyBadge species="dogs" status={entry.safety.dogs.status} locale={locale} />
               <CompactSafetyBadge species="cats" status={entry.safety.cats.status} locale={locale} />
@@ -156,24 +177,26 @@ export async function HazardDetail({
         <p>{entry.what_to_do}</p>
         <div className="not-prose my-4 flex flex-wrap gap-3">
           {aspca && (
-            <a
-              href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-emergency px-4 py-2 text-white hover:bg-emergency/90"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {t("call", { name: aspca.name })}
-            </a>
+            <Button variant="emergency" asChild>
+              <a href={`tel:${aspca.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {t("call", { name: aspca.name })}
+              </a>
+            </Button>
           )}
           {pph && (
-            <a
-              href={`tel:${pph.phone.replace(/\D/g, "")}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-emergency bg-white px-4 py-2 text-emergency hover:bg-emergency-light"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {pph.name}
-            </a>
+            <Button variant="emergency-outline" asChild>
+              <a href={`tel:${pph.phone.replace(/\D/g, "")}`}>
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                {pph.name}
+              </a>
+            </Button>
           )}
         </div>
+
+        {entry.toxicity_profiles && entry.toxicity_profiles.length > 0 && (
+          <ToxicityCalculator entry={entry as MedicationEntry} locale={locale} />
+        )}
 
         {entry.alternatives.length > 0 && (
           <>
@@ -225,16 +248,18 @@ export async function HazardDetail({
         <p>{t("vetsNoteText")}</p>
       </div>
 
+      <RelatedItems items={related} locale={locale} />
+
       <div className="mt-8 space-y-4">
         <ReportIssue itemName={entry.name} pageUrl={pageUrl} locale={locale} />
-        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <strong className="block text-amber-950">{t("medicalDisclaimer")}</strong>
           {t.rich("medicalDisclaimerText", {
             aspca: (chunks) =>
               aspca ? (
                 <a
                   href={`tel:${aspca.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
+                  className="font-medium underline"
                 >
                   {chunks}
                 </a>
@@ -245,7 +270,7 @@ export async function HazardDetail({
               pph ? (
                 <a
                   href={`tel:${pph.phone.replace(/\D/g, "")}`}
-                  className="font-semibold underline"
+                  className="font-medium underline"
                 >
                   {chunks}
                 </a>

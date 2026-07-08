@@ -3,6 +3,11 @@ import path from "path";
 import matter from "gray-matter";
 import Anthropic from "@anthropic-ai/sdk";
 import { createHash } from "crypto";
+import { remark } from "remark";
+import gfm from "remark-gfm";
+import sanitize from "rehype-sanitize";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
 
 import type { NewsCluster, NewsEntry, NewsSeverity } from "../lib/news";
 
@@ -160,6 +165,188 @@ const STOP_WORDS = new Set([
   "go",
 ]);
 
+const EXTRA_SUBSTANCES = [
+  "xylitol",
+  "chocolate",
+  "grapes",
+  "raisins",
+  "onions",
+  "garlic",
+  "macadamia nuts",
+  "alcohol",
+  "caffeine",
+  "ibuprofen",
+  "acetaminophen",
+  "antifreeze",
+  "lily",
+  "sago palm",
+  "rodenticide",
+  "slug bait",
+  "essential oils",
+  "pesticide",
+  "melamine",
+  "aflatoxin",
+  "salmonella",
+  "listeria",
+  "e. coli",
+  "pentobarbital",
+  "vitamin d",
+  "vitamin b1",
+  "thiamine",
+  "mycotoxin",
+  "mold",
+  "metal",
+  "plastic",
+  "foreign material",
+  "glass",
+  "sharp",
+  "choking",
+  "debris",
+  "fraud",
+  "diverted",
+  "pfas",
+  "ethylene glycol",
+  "kidney failure",
+  "liver failure",
+  "renal failure",
+];
+
+const NON_BRAND_TERMS = new Set([
+  // Media / sources
+  "abc",
+  "abc27",
+  "cbs",
+  "nbc",
+  "fox",
+  "cnn",
+  "bbc",
+  "npr",
+  "nyt",
+  "new york times",
+  "washington post",
+  "guardian",
+  "reuters",
+  "ap",
+  "associated press",
+  "pr newswire",
+  "google news",
+  "yahoo",
+  "yahoo news",
+  "msn",
+  "usa today",
+  "wkrc",
+  "wbrc",
+  "wstm",
+  "pix11",
+  "kolb",
+  "klkn",
+  "koln",
+  "41nbc",
+  "nbc chicago",
+  "food poison journal",
+  "petfoodindustry",
+  "pet food processing",
+  "tapinto",
+  "houston chronicle",
+  "derry journal",
+  "wales online",
+  "vet times",
+  "catster",
+  "daily paws",
+  "spruce pets",
+  "the spruce pets",
+  "marthastewart",
+  "pennlive",
+  "irish mirror",
+  "mamavation",
+  "mainichi shimbun",
+  "dvm360",
+  "avma",
+  "aspca",
+  "fda",
+  "cdc",
+  "usda",
+  "doh",
+  "nbc",
+  "cbs news",
+  "abc news",
+  "google",
+  "usa",
+  "today",
+  "times",
+  "journal",
+  "online",
+  "mirror",
+  "chronicle",
+  "paws",
+  "spruce",
+  "mainichi",
+  "shimbun",
+  "processing",
+  // Generic / non-event terms
+  "q&a",
+  "how",
+  "what",
+  "are",
+  "these",
+  "this",
+  "that",
+  "with",
+  "for",
+  "over",
+  "after",
+  "from",
+  "due",
+  "can",
+  "you",
+  "have",
+  "your",
+  "about",
+  "possible",
+  "potential",
+  "select",
+  "two",
+  "lots",
+  "canned",
+  "wet",
+  "dry",
+  "high",
+  "protein",
+  "flavor",
+  "may",
+  "contain",
+  "foreign",
+  "material",
+  "sold",
+  "nationwide",
+  "voluntary",
+  "recall",
+  "recalled",
+  "recalls",
+  "dog",
+  "cat",
+  "food",
+  "treats",
+  "pet",
+  "animal",
+  "health",
+  "news",
+  "report",
+  "reports",
+  "article",
+  "articles",
+  "watch list",
+  "owners",
+  "some",
+  "being",
+  "those",
+  "one",
+  "new",
+  "product",
+  "products",
+  "popular",
+]);
+
 function jaccard(a: string[], b: string[]): number {
   const setA = new Set(a);
   const setB = new Set(b);
@@ -168,20 +355,139 @@ function jaccard(a: string[], b: string[]): number {
   return union.size === 0 ? 0 : intersection.size / union.size;
 }
 
-function similarity(a: NewsEntry, b: NewsEntry): number {
-  const textA = normalizeText(`${a.title} ${a.summary}`);
-  const textB = normalizeText(`${b.title} ${b.summary}`);
-  let score = jaccard(textA, textB);
+function jaccardSets(a: Set<string>, b: Set<string>): number {
+  const intersection = new Set([...a].filter((x) => b.has(x)));
+  const union = new Set([...a, ...b]);
+  return union.size === 0 ? 0 : intersection.size / union.size;
+}
 
-  const sharedSubstances = a.substances.filter((s) => b.substances.includes(s));
-  if (sharedSubstances.length > 0) score += 0.3;
+function inferSubstancesFromText(text: string): string[] {
+  const lower = text.toLowerCase();
+  return EXTRA_SUBSTANCES.filter((s) => lower.includes(s));
+}
 
-  const sharedSpecies = a.species.filter((s) => b.species.includes(s));
-  if (sharedSpecies.length > 0) score += 0.1;
+function extractCapitalizedPhrases(title: string): string[] {
+  const matches = title.match(/\b[A-Z][a-zA-Z&]+(?:\s+[A-Z][a-zA-Z&]+){0,2}\b/g) || [];
+  const set = new Set<string>();
+  for (const m of matches) {
+    const lower = m.toLowerCase();
+    // Add the full phrase (e.g. "pedigree can high") and, crucially, each
+    // individual word in it. Greedy phrase matching alone swallows single-word
+    // event markers like "pedigree", so we surface them explicitly.
+    if (lower.length >= 3 && !NON_BRAND_TERMS.has(lower)) {
+      set.add(lower);
+    }
+    for (const word of lower.split(/\s+/)) {
+      if (word.length >= 3 && !NON_BRAND_TERMS.has(word)) {
+        set.add(word);
+      }
+    }
+  }
+  return [...set];
+}
 
-  if (a.date === b.date) score += 0.2;
+function getFrequentTerms(items: ParsedNews[], minFreq = 3): Set<string> {
+  const counts = new Map<string, number>();
+  for (const item of items) {
+    for (const term of extractCapitalizedPhrases(item.entry.title)) {
+      counts.set(term, (counts.get(term) ?? 0) + 1);
+    }
+  }
+  return new Set([...counts.entries()].filter(([, c]) => c >= minFreq).map(([t]) => t));
+}
+
+function isFallbackText(summary: string): boolean {
+  // Articles that failed extraction use a generic fallback summary.
+  // Treating them as title-only prevents generic boilerplate from creating false clusters.
+  return summary.includes("Pet owners should be aware of this incident and take precautions");
+}
+
+function allText(item: ParsedNews): string {
+  // For fallback articles, rely almost entirely on the title to avoid generic summary pollution.
+  if (isFallbackText(item.entry.summary)) {
+    return item.entry.title;
+  }
+  return `${item.entry.title} ${item.entry.summary} ${item.content}`;
+}
+
+function similarity(a: ParsedNews, b: ParsedNews, frequentTerms: Set<string>): number {
+  // Use the full article text (title + summary + original body) so articles about the
+  // same event but with thin summaries can still match via shared structured details.
+  const wordsA = normalizeText(allText(a));
+  const wordsB = normalizeText(allText(b));
+  const wordScore = jaccard(wordsA, wordsB);
+
+  // Title bigrams catch brand + product phrasing that bag-of-words misses.
+  const titleTokensA = normalizeText(a.entry.title);
+  const titleTokensB = normalizeText(b.entry.title);
+  const bigramsA = new Set<string>();
+  const bigramsB = new Set<string>();
+  for (let i = 0; i <= titleTokensA.length - 2; i++) {
+    bigramsA.add(titleTokensA.slice(i, i + 2).join(" "));
+  }
+  for (let i = 0; i <= titleTokensB.length - 2; i++) {
+    bigramsB.add(titleTokensB.slice(i, i + 2).join(" "));
+  }
+  const bigramScore = jaccardSets(bigramsA, bigramsB);
+
+  let score = Math.max(wordScore, bigramScore);
+
+  // Substance overlap: fall back to inferring from full text when frontmatter is empty.
+  const substancesA =
+    a.entry.substances.length > 0
+      ? a.entry.substances
+      : inferSubstancesFromText(allText(a));
+  const substancesB =
+    b.entry.substances.length > 0
+      ? b.entry.substances
+      : inferSubstancesFromText(allText(b));
+  const sharedSubstances = substancesA.filter((s) => substancesB.includes(s));
+  if (sharedSubstances.length > 0) score += 0.25;
+
+  // Frequent capitalized phrases (brand / product names that appear in 3+ titles this
+  // month) are strong event markers. Give them a large boost.
+  const termsA = extractCapitalizedPhrases(a.entry.title);
+  const termsB = extractCapitalizedPhrases(b.entry.title);
+  const sharedFrequent = termsA.filter((t) => termsB.includes(t) && frequentTerms.has(t));
+  if (sharedFrequent.length > 0) score += 0.4;
+
+  const nonOtherSpeciesA = a.entry.species.filter((s) => s !== "other");
+  const nonOtherSpeciesB = b.entry.species.filter((s) => s !== "other");
+  const sharedSpecies = nonOtherSpeciesA.filter((s) => nonOtherSpeciesB.includes(s));
+
+  // Hard constraint: entries with explicit, conflicting species should not cluster.
+  if (nonOtherSpeciesA.length > 0 && nonOtherSpeciesB.length > 0 && sharedSpecies.length === 0) {
+    return 0;
+  }
+
+  if (sharedSpecies.length > 0) score += 0.05;
+
+  if (a.entry.date === b.entry.date) score += 0.1;
 
   return Math.min(score, 1);
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]+/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .slice(0, 90)
+    .replace(/-+$/, "");
+}
+
+function uniqueSlug(base: string, used: Set<string>): string {
+  let candidate = base;
+  let suffix = 2;
+  while (used.has(candidate)) {
+    const suffixStr = `-${suffix}`;
+    candidate = `${base.slice(0, 90 - suffixStr.length)}${suffixStr}`;
+    suffix++;
+  }
+  used.add(candidate);
+  return candidate;
 }
 
 function findClusters(news: ParsedNews[]): NewsCluster[] {
@@ -193,8 +499,11 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
   }
 
   const clusters: NewsCluster[] = [];
+  const usedSlugs = new Set<string>();
 
   for (const [, monthItems] of byMonth) {
+    const frequentTerms = getFrequentTerms(monthItems, 3);
+
     const parent: Record<number, number> = {};
     function find(i: number): number {
       if (parent[i] === undefined) parent[i] = i;
@@ -207,7 +516,7 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
 
     for (let i = 0; i < monthItems.length; i++) {
       for (let j = i + 1; j < monthItems.length; j++) {
-        const score = similarity(monthItems[i]!.entry, monthItems[j]!.entry);
+        const score = similarity(monthItems[i]!, monthItems[j]!, frequentTerms);
         if (score >= SIMILARITY_THRESHOLD) {
           union(i, j);
         }
@@ -226,7 +535,6 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
 
       const slugs = group.map((g) => g.slug).sort();
       const id = createHash("sha256").update(slugs.join("|")).digest("hex").slice(0, 16);
-      const canonicalSlug = slugs[0]!;
 
       const title =
         group
@@ -237,6 +545,7 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
         name: g.entry.source,
         url: g.entry.sourceUrl,
         slug: g.slug,
+        date: g.entry.date,
       }));
 
       const dates = group.map((g) => g.entry.date).sort();
@@ -246,18 +555,37 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
         (a, b) => severityOrder.indexOf(b) - severityOrder.indexOf(a)
       )[0]!;
 
+      const explicitSpecies = group
+        .flatMap((g) => g.entry.species)
+        .filter((s) => s !== "other");
+      const speciesCounts = new Map<string, number>();
+      for (const s of explicitSpecies) {
+        speciesCounts.set(s, (speciesCounts.get(s) ?? 0) + 1);
+      }
+      const speciesThreshold = Math.max(1, Math.floor(group.length / 2));
+      const species = Array.from(speciesCounts.entries())
+        .filter(([, count]) => count >= speciesThreshold)
+        .map(([s]) => s);
+
+      const typeOrder: Array<NonNullable<NewsEntry["type"]>> = ["recall", "alert", "incident"];
+      const clusterType = group
+        .map((g) => g.entry.type)
+        .filter(Boolean)
+        .sort((a, b) => typeOrder.indexOf(a!) - typeOrder.indexOf(b!))[0];
+
       clusters.push({
         id,
-        canonicalSlug,
+        canonicalSlug: uniqueSlug(slugify(title), usedSlugs),
         slugs,
         title,
         summary: "", // filled by LLM
         sources,
         dateRange: { start: dates[0]!, end: dates[dates.length - 1]! },
         month: group[0]!.entry.month,
-        species: Array.from(new Set(group.flatMap((g) => g.entry.species))),
+        species: species as ("other" | "dogs" | "cats")[],
         substances: Array.from(new Set(group.flatMap((g) => g.entry.substances))),
         severity,
+        type: clusterType,
       });
     }
   }
@@ -266,8 +594,21 @@ function findClusters(news: ParsedNews[]): NewsCluster[] {
 }
 
 interface EnrichmentResult {
+  clusterTitle: string;
   clusterSummary: string;
-  bodies: Record<string, string>;
+  clusterBody: string;
+  sharedBody?: string;
+  bodies?: Record<string, string>;
+}
+
+async function renderMarkdownToHtml(markdown: string): Promise<string> {
+  const processed = await remark()
+    .use(gfm)
+    .use(remarkRehype)
+    .use(sanitize)
+    .use(rehypeStringify)
+    .process(markdown);
+  return processed.toString();
 }
 
 async function callClaude(
@@ -278,22 +619,33 @@ async function callClaude(
   const memberDescriptions = members
     .map(
       (m) =>
-        `Title: ${m.entry.title}\nSource: ${m.entry.source}\nDate: ${m.entry.date}\nSummary: ${m.entry.summary}\nURL: ${m.entry.sourceUrl}\nSlug: ${m.slug}`
+        `Title: ${m.entry.title}\nSource: ${m.entry.source}\nDate: ${m.entry.date}\nURL: ${m.entry.sourceUrl}\nSummary: ${m.entry.summary}\nFull article text:\n${m.content}`
     )
     .join("\n\n---\n\n");
 
-  const largeCluster = members.length > 15;
-  const maxTokens = largeCluster ? 6000 : 8000;
+  const prompt = `You are a senior pet-safety news editor for PetPilot. Your task is to synthesize multiple news reports about the same pet-safety event into one authoritative, detailed cluster page. Read the reports carefully and extract concrete facts.
 
-  const prompt = largeCluster
-    ? `You are a pet safety news editor for PetPilot. Synthesize the following news reports about the same pet-safety event into one coherent summary and a shared article body.\n\nReports:\n${memberDescriptions}\n\nReturn ONLY a raw JSON object with no markdown code fences, no commentary, and no text outside the JSON. Use exactly these keys:\n- clusterSummary: a factual 120-180 word summary suitable for a news card. Include what happened, which pets are affected, and why it matters.\n- sharedBody: a concise Markdown body (under 300 words) with sections: ## What happened, ## Key facts, ## What pet owners should do. Do NOT include a Related coverage section.`
-    : `You are a pet safety news editor for PetPilot. Synthesize the following news reports about the same pet-safety event into one coherent summary and per-source article bodies.\n\nReports:\n${memberDescriptions}\n\nReturn ONLY a raw JSON object with no markdown code fences, no commentary, and no text outside the JSON. Use exactly these keys:\n- clusterSummary: a factual 120-180 word summary suitable for a news card. Include what happened, which pets are affected, and why it matters.\n- bodies: an object mapping each source slug (${members.map((m) => m.slug).join(", ")}) to a concise Markdown body (under 150 words each) with sections: ## What happened, ## Key facts, ## What pet owners should do, ## Related coverage.\n\nFor Related coverage, link to the other sources like: [Read the report on {source name} →]({source url}) and [Read PetPilot's coverage from {other source name} →](/news/{other slug}).`;
+Reports:
+${memberDescriptions}
+
+Most reports should describe the same core event. If any report is clearly about a different incident, ignore it and do not mention it in the output.
+
+Return ONLY a raw JSON object with no markdown code fences, no commentary, and no text outside the JSON. Use exactly these keys:
+- clusterTitle: a concise, informative headline (max 90 characters). Prefer "Brand product recalled over issue" format. Include brand name if known.
+- clusterSummary: a factual 150-220 word summary suitable for a news card. Include: brand/company, specific product(s), affected animals, what happened, reason for recall/incident, geographic scope, and what pet owners should do.
+- clusterBody: a detailed Markdown body (under 500 words) with these sections:
+  ## What happened
+  ## Affected products (include brand, product names, lot/UPC if available)
+  ## Which pets are at risk
+  ## Why it matters
+  ## What pet owners should do (include recall contact / refund info if known)
+  Do NOT include a Related coverage section; related links will be rendered by the page template.`;
 
   const client = new Anthropic();
   try {
     const response = await client.messages.create({
       model: MODEL,
-      max_tokens: maxTokens,
+      max_tokens: 4000,
       messages: [{ role: "user", content: prompt }],
     });
 
@@ -303,33 +655,10 @@ async function callClaude(
       .join("")
       .trim();
 
-    const parsed = parseLLMJson(text) as unknown as EnrichmentResult & { sharedBody?: string };
+    const parsed = parseLLMJson(text) as unknown as EnrichmentResult & { sharedBody?: string; bodies?: Record<string, string> };
 
-    if (!parsed.clusterSummary) {
-      throw new Error("LLM response missing clusterSummary");
-    }
-
-    if (largeCluster) {
-      if (!parsed.sharedBody) {
-        throw new Error("LLM response missing sharedBody for large cluster");
-      }
-      const bodies: Record<string, string> = {};
-      for (const member of members) {
-        const relatedLines = cluster.sources.map((source) => {
-          if (source.slug === member.slug) {
-            return `- [Read the full report on ${source.name} →](${source.url})`;
-          }
-          return `- [Read PetPilot's coverage from ${source.name} →](/news/${source.slug})`;
-        });
-        bodies[member.slug] = `${parsed.sharedBody}\n\n## Related coverage\n\n${relatedLines.join(
-          "\n"
-        )}`;
-      }
-      return { clusterSummary: parsed.clusterSummary, bodies };
-    }
-
-    if (typeof parsed.bodies !== "object") {
-      throw new Error("LLM response missing bodies");
+    if (!parsed.clusterSummary || !parsed.clusterBody) {
+      throw new Error("LLM response missing clusterSummary or clusterBody");
     }
 
     return parsed;
@@ -420,7 +749,7 @@ function generateLocalSummary(cluster: NewsCluster, members: ParsedNews[]): stri
   return summary;
 }
 
-function generateLocalBody(entry: NewsEntry, cluster: NewsCluster, members: ParsedNews[]): string {
+function generateLocalClusterBody(cluster: NewsCluster, members: ParsedNews[]): string {
   const allSummaries = members.map((m) => m.entry.summary).join(" ");
   const sentences = Array.from(
     new Set(
@@ -432,36 +761,25 @@ function generateLocalBody(entry: NewsEntry, cluster: NewsCluster, members: Pars
     )
   );
   const synthesized = sentences.slice(0, 4).join(" ");
+  const canonical = members.find((m) => m.slug === cluster.canonicalSlug)?.entry ?? members[0]!.entry;
 
   const lines = [
     "## What happened",
-    synthesized || entry.summary,
+    synthesized || canonical.summary,
     "",
     "## Key facts",
-    `- **Date:** ${entry.date}`,
-    entry.location ? `- **Location:** ${entry.location}` : null,
-    `- **Affected pets:** ${entry.species.join(", ") || "Unknown"}`,
-    entry.substances.length > 0
-      ? `- **Substances or products involved:** ${entry.substances.join(", ")}`
+    `- **Date:** ${cluster.dateRange.start}${cluster.dateRange.start !== cluster.dateRange.end ? ` to ${cluster.dateRange.end}` : ""}`,
+    canonical.location ? `- **Location:** ${canonical.location}` : null,
+    `- **Affected pets:** ${cluster.species.join(", ") || "Unknown"}`,
+    cluster.substances.length > 0
+      ? `- **Substances or products involved:** ${cluster.substances.join(", ")}`
       : null,
-    `- **Severity:** ${entry.severity}`,
-    `- **Status:** ${entry.status}`,
+    `- **Severity:** ${cluster.severity}`,
+    `- **Status:** ${canonical.status}`,
     "",
     "## What pet owners should do",
     "Monitor your pet closely for any symptoms described in the reports. Keep potentially dangerous foods, plants, medications, and chemicals out of reach. If you suspect your pet has been exposed to something harmful, contact your veterinarian or an animal poison control center right away. Early intervention can make a significant difference.",
-    "",
-    "## Related coverage",
   ];
-
-  for (const source of cluster.sources) {
-    if (source.slug === entry.slug) {
-      lines.push(`- [Read the full report on ${source.name} →](${source.url})`);
-    } else {
-      lines.push(
-        `- [Read PetPilot's coverage from ${source.name} →](/news/${source.slug})`
-      );
-    }
-  }
 
   return lines.filter(Boolean).join("\n");
 }
@@ -527,22 +845,26 @@ async function main() {
 
     if (!result) {
       const summary = generateLocalSummary(cluster, members);
-      const bodies: Record<string, string> = {};
-      for (const member of members) {
-        bodies[member.slug] = generateLocalBody(member.entry, cluster, members);
-      }
-      result = { clusterSummary: summary, bodies };
+      const body = generateLocalClusterBody(cluster, members);
+      const bodyHtml = await renderMarkdownToHtml(body);
+      result = { clusterTitle: cluster.title, clusterSummary: summary, clusterBody: body };
+      cluster.bodyHtml = bodyHtml;
+    } else {
+      cluster.bodyHtml = await renderMarkdownToHtml(result.clusterBody);
     }
 
+    cluster.title = result.clusterTitle ?? cluster.title;
     cluster.summary = result.clusterSummary;
 
     if (!dryRun) {
       const now = new Date().toISOString();
       for (const member of members) {
+        // Keep the member's original structured body so each source detail page remains
+        // useful. Only update cluster linkage metadata; do not overwrite the body with the
+        // synthesized cluster content.
         const body =
-          result.bodies[member.slug] ||
-          generateLocalBody(member.entry, cluster, members) ||
-          "";
+          member.content.trim() ||
+          `${member.entry.summary}\n\n[Read the full report on ${member.entry.source} →](${member.entry.sourceUrl})`;
         const updatedEntry: NewsEntry = {
           ...member.entry,
           clusterId: cluster.id,

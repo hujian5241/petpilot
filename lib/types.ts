@@ -71,9 +71,22 @@ export interface FoodEntry {
   notes_for_puppies?: string
   notes_for_kittens?: string
   condition_warnings?: ConditionWarning[]
+  toxicity_profiles?: ToxicityProfile[]
+  faq_extras?: FaqItem[]
+  why_it_matters?: string
+  how_it_works?: string
+  common_scenarios?: string[]
+  species_differences?: string
+  quick_facts?: string[]
+  timeline?: string
   meta_title?: string
   meta_description?: string
   content?: string
+}
+
+export interface FaqItem {
+  question: string
+  answer: string
 }
 
 export interface PlantEntry {
@@ -185,6 +198,7 @@ export interface MedicationEntry {
   next_review?: string
   notes_for_puppies?: string
   notes_for_kittens?: string
+  toxicity_profiles?: ToxicityProfile[]
   meta_title?: string
   meta_description?: string
   content?: string
@@ -224,6 +238,42 @@ export interface HouseholdChemicalEntry {
   content?: string
 }
 
+export interface RelatedEntry {
+  slug: string
+  name: string
+  categories: string[]
+  tags: string[]
+  safety: Record<Species, SafetyInfo>
+  images?: FoodImage[]
+}
+
+export type AnyEntry =
+  | FoodEntry
+  | PlantEntry
+  | MedicationEntry
+  | HouseholdChemicalEntry
+  | PesticideEntry
+
+export interface RelatedItem {
+  slug: string
+  name: string
+  type: "food" | "plant" | "medication" | "household-chemical" | "pesticide"
+  summary: string
+  safetyDogs: SafetyStatus
+  safetyCats: SafetyStatus
+  image?: FoodImage
+}
+
+export interface ToxicityProfile {
+  species: Species
+  toxic_dose_mg_per_kg?: number
+  lethal_dose_mg_per_kg?: number
+  toxic_dose_g_per_kg?: number
+  concentration_mg_per_g?: number
+  tablet_mg?: number
+  note?: string
+}
+
 export interface PesticideEntry {
   id: string
   name: string
@@ -254,4 +304,29 @@ export interface PesticideEntry {
   meta_title?: string
   meta_description?: string
   content?: string
+}
+
+export interface GuideEntry {
+  id: string
+  slug: string
+  title: string
+  description: string
+  category: string
+  tags: string[]
+  author?: string
+  published_at: string
+  updated_at?: string
+  read_time_minutes?: number
+  featured?: boolean
+  image?: FoodImage
+  meta_title?: string
+  meta_description?: string
+  content?: string
+}
+
+export interface GuideCategory {
+  id: string
+  slug: string
+  name: string
+  description: string
 }

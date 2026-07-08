@@ -38,4 +38,4 @@ Wir können diese Nutzungsbedingungen von Zeit zu Zeit aktualisieren. Die weiter
 
 ## 9. Kontakt
 
-Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns unter [hello@petpilot.io](mailto:hello@petpilot.io).
+Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns unter [contact@petpilot.top](mailto:contact@petpilot.top).

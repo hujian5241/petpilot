@@ -50,9 +50,7 @@ export function MonthSection({
   function toggle() {
     const next = !expanded;
     setExpanded(next);
-    if (!next && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // Do not scroll; let the user stay in place.
   }
 
   return (
@@ -64,7 +62,7 @@ export function MonthSection({
         className="group flex w-full items-center justify-between text-left disabled:cursor-default"
         aria-expanded={expanded}
       >
-        <h3 className="text-lg font-semibold text-primary">
+        <h3 className="text-lg font-medium text-primary">
           {monthLabel}{" "}
           <span className="text-sm font-normal text-muted-foreground">({items.length})</span>
         </h3>

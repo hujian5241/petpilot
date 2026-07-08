@@ -7,6 +7,8 @@ import { PlantCard } from "@/components/plant/PlantCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { CollapsibleGridSection } from "@/components/layout/CollapsibleGridSection";
 import { getAllPlants, getSiteConfig } from "@/lib/content";
+import { buildItemListSchema } from "@/lib/jsonld";
+import { buildAlternates } from "@/lib/metadata";
 import type { PlantEntry } from "@/lib/types";
 import type { Locale } from "@/lib/i18n";
 
@@ -26,6 +28,8 @@ interface PlantsPageProps {
   params: Promise<{ locale: Locale }>;
 }
 
+export const dynamic = "force-static";
+
 export async function generateMetadata({ params }: PlantsPageProps): Promise<Metadata> {
   const { locale } = await params;
   const config = await getSiteConfig(locale);
@@ -38,30 +42,14 @@ export async function generateMetadata({ params }: PlantsPageProps): Promise<Met
   };
 }
 
-function buildAlternates(
-  path: string,
-  config: Awaited<ReturnType<typeof getSiteConfig>>,
-  locale: Locale
-) {
-  const baseUrl = config.base_url.endsWith("/")
-    ? config.base_url.slice(0, -1)
-    : config.base_url;
-  const languages: Record<string, string> = {};
-  for (const loc of ["en", "de", "fr", "ja"] as const) {
-    languages[loc] = `${baseUrl}/${loc}${path}`;
-  }
-  languages["x-default"] = `${baseUrl}/en${path}`;
-  return {
-    canonical: `${baseUrl}/${locale}${path}`,
-    languages,
-  };
-}
-
 export default async function PlantsPage({ params }: PlantsPageProps) {
   const { locale } = await params;
-  const plants = await getAllPlants(locale);
-  const t = await getTranslations("PlantsPage");
-  const tBadge = await getTranslations("SafetyBadge");
+  const [plants, config] = await Promise.all([
+    getAllPlants(locale),
+    getSiteConfig(locale),
+  ]);
+  const t = await getTranslations({ locale, namespace: "PlantsPage" });
+  const tBadge = await getTranslations({ locale, namespace: "SafetyBadge" });
 
   const statusLabels: Record<StatusGroup, string> = {
     safe: tBadge("safe"),
@@ -84,28 +72,45 @@ export default async function PlantsPage({ params }: PlantsPageProps) {
     }
   );
 
+  const baseUrl = config.base_url.endsWith("/")
+    ? config.base_url.slice(0, -1)
+    : config.base_url;
+
+  const itemListJsonLd = buildItemListSchema(
+    plants.map((plant) => ({
+      name: plant.name,
+      url: `${baseUrl}/${locale}/plants/${plant.slug}`,
+    }))
+  );
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <Breadcrumb locale={locale} items={[{ label: t("plants") }]} />
       <header className="mt-6">
         <div className="flex items-center gap-3">
           <Leaf className="h-8 w-8 text-primary" />
-          <h1 className="text-3xl font-bold text-foreground">{t("title")}</h1>
+          <h1 className="text-3xl font-light tracking-tight text-foreground sm:text-4xl">{t("title")}</h1>
         </div>
-        <p className="mt-2 text-lg text-muted-foreground">{t("description")}</p>
+        <p className="mt-2 text-lg font-light text-muted-foreground">{t("description")}</p>
       </header>
 
       <section className="mt-10">
-        <h2 className="text-2xl font-semibold text-foreground">{t("quickSafetyOverview")}</h2>
+        <h2 className="text-2xl font-normal tracking-tight text-foreground">{t("quickSafetyOverview")}</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {statusOrder.map((status) => (
             <Link
               key={status}
               href={`#${status}`}
-              className="rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-sm"
+              className="rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-card"
             >
               <p className="text-sm text-muted-foreground">{statusLabels[status]}</p>
-              <p className="mt-1 text-3xl font-bold text-foreground">{plantsByStatus[status].length}</p>
+              <p className="mt-1 text-3xl font-light text-foreground">{plantsByStatus[status].length}</p>
               <p className="mt-1 text-xs text-muted-foreground">{t("plants")}</p>
             </Link>
           ))}

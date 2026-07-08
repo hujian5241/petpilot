@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
 import { PlantDetail } from "@/components/plant/PlantDetail";
+
+export const dynamic = "force-static";
 import { getPlantBySlug, getPlantSlugs, getSiteConfig } from "@/lib/content";
 import { buildPlantMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/i18n";

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#e)" />
+  <circle cx="640" cy="90" r="120" fill="#16a34a" opacity="0.08" />
+  <circle cx="120" cy="340" r="100" fill="#ef4444" opacity="0.08" />
+
+  <g transform="translate(200,80)">
+    <!-- safe plant -->
+    <rect x="90" y="200" width="50" height="60" rx="6" fill="#fde68a" stroke="#d97706" stroke-width="3" />
+    <ellipse cx="115" cy="120" rx="40" ry="70" fill="#22c55e" opacity="0.2" />
+    <path d="M115,170 Q80,130 90,90 Q115,120 115,170" fill="#22c55e" />
+    <path d="M115,170 Q150,130 140,90 Q115,120 115,170" fill="#16a34a" />
+    <path d="M115,150 Q90,120 95,80 Q115,110 115,150" fill="#4ade80" />
+
+    <!-- warning plant -->
+    <rect x="260" y="200" width="50" height="60" rx="6" fill="#fecaca" stroke="#dc2626" stroke-width="3" />
+    <path d="M285,180 L300,120 L270,120 Z" fill="#ef4444" />
+    <text x="285" y="158" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" fill="#ffffff" font-weight="700">!</text>
+
+    <text x="200" y="310" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" fill="#0f172a" font-weight="500">Pet-Safe vs. Toxic Houseplants</text>
+  </g>
+</svg>

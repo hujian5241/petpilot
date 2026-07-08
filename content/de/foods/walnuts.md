@@ -3,116 +3,153 @@ id: walnuts
 name: Walnüsse
 slug: walnuts
 aliases:
-  - english-walnuts
-  - englische-walnuss
+  - Walnussschalen
 categories:
   - nuts
 tags:
-  - high-fat
-  - mold-risk
+  - omega-3
+  - fatty-acids
+  - choking-risk
 safety:
   dogs:
-    status: limited
-    severity: moderate
+    status: unsafe
+    severity: medium
     summary: >-
-      Englische Walnüsse sind nicht stark giftig, aber schimmelige Walnüsse
-      können Krampfanfälle verursachen.
+      Walnüsse sind für Hunde schädlich. Sie können Magen-Darm-Probleme,
+      Pankreatitis und neurologische Symptome verursachen.
   cats:
-    status: limited
-    severity: low
-    summary: Nicht empfohlen; hoher Fettgehalt und mögliches Schimmelrisiko.
+    status: unsafe
+    summary: Walnüsse sind für Katzen schädlich und können Magen-Darm-Probleme verursachen.
 symptoms:
-  - Erbrechen
+  - Magenverstimmung
   - Durchfall
-  - Zittern
-  - Krampfanfälle
-  - Schwäche
+  - Erbrechen
+  - Pankreatitis
+  - Koordinationsstörungen
 what_to_do: >-
-  Kontaktieren Sie Ihren Tierarzt sofort, wenn schimmelige Walnüsse gefressen
-  wurden oder Zittern auftritt.
+  Wenden Sie sich sofort an einen Tierarzt, wenn Ihr Haustier Walnüsse gegessen
+  hat.
 alternatives:
+  - unsalted-peanut-butter
+  - pumpkin-seeds
   - carrots
-  - apple-slices
-  - blueberries
 sources:
-  - name: Pet Poison Helpline
-    url: 'https://www.petpoisonhelpline.com/'
+  - name: American Kennel Club
+    url: 'https://www.akc.org/'
   - name: ASPCA
     url: 'https://www.aspca.org/pet-care/animal-poison-control'
 vet_reviewed: true
 last_reviewed: '2026-07-01'
-requires_emergency_visit: false
+requires_emergency_visit: true
 preparation_notes: >-
-  Nur einfache, frische, geschälte Walnüsse. Füttern Sie niemals schimmelige
-  oder schwarze Walnüsse.
-safe_amount: >-
-  Vermeiden Sie es, Walnüsse zu füttern; höchstens ein kleines Stück sehr
-  selten.
-frequency: Vermeiden.
+  Vermeiden Sie Walnüsse vollständig.
+safe_amount: Keine Menge ist sicher.
+frequency: Nie.
 related_foods:
-  - walnut-butter
-  - black-walnuts
+  - almonds
+  - peanuts
 condition_warnings:
-  - condition: Chronische Nierenerkrankung
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: >-
-      Enthält Phosphor und Protein, die bei chronischer Nierenerkrankung
-      normalerweise eingeschränkt werden.
-  - condition: Pankreatitis
+  - condition: Pankreatitis-Geschichte
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Hohe Fettaufnahme kann Pankreatitis auslösen oder verschlimmern.
-  - condition: Adipositas
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Kalorienreich; ein Überschuss kann zu Gewichtszunahme führen.
-  - condition: Lebensmittelallergien
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: consult_vet
-    reason: >-
-      Nuss- und Samen-Zutaten sind häufige Allergene; Reaktionen sind
-      individuell.
-  - condition: Lebererkrankung
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Hoher Fettgehalt kann eine geschwächte Leber belasten.
-  - condition: Chronisch-entzündliche Darmerkrankung (CED)
-    appliesTo:
-      - dogs
-      - cats
-    recommendation: limit
-    reason: Hoher Fettgehalt kann gastrointestinale Entzündungen verschlimmern.
-  - condition: Hyperlipidämie
+    reason: Hoher Fettgehalt kann Pankreatitis auslösen.
+  - condition: Magen-Darm-Krankheit
     appliesTo:
       - dogs
       - cats
     recommendation: avoid
-    reason: Hoher Fettgehalt verschlimmert Hyperlipidämie.
-  - condition: Gastrointestinale Sensibilität
+    reason: Walnüsse können den Magen-Darm-Trakt reizen.
+  - condition: Diabetes
     appliesTo:
       - dogs
       - cats
-    recommendation: limit
-    reason: Hoher Fettgehalt kann einen empfindlichen Magen-Darm-Trakt reizen.
-meta_title: 'Können Hunde Walnüsse essen? Sicherheit, Risiken & tierärztlicher Rat'
+    recommendation: avoid
+    reason: Hoher Fett- und Kohlenhydratgehalt.
+meta_title: 'Dürfen Hunde Walnüsse essen? Sicherheit, Risiken und tierärztlicher Rat'
 meta_description: >-
-  Sind Walnüsse für Hunde und Katzen sicher? Walnüsse sind für Hunde limitiert
-  und für Katzen limitiert. Erfahren Sie Symptome, was zu tun ist, und
-  tierärztlich geprüfte Alternativen.
+  Sind Walnüsse sicher für Hunde und Katzen? Walnüsse sind für Hunde und
+  Katzen schädlich. Erfahren Sie mehr zu Symptomen, dem richtigen Verhalten
+  und tierärztlich geprüften Alternativen.
+faq_extras:
+  - question: Sind Walnüsse für Hunde giftig?
+    answer: >-
+      Ja, Walnüsse sind für Hunde schädlich und können Magen-Darm-Probleme,
+      Pankreatitis und neurologische Symptome verursachen.
+  - question: Können Katzen Walnüsse essen?
+    answer: >-
+      Nein, Walnüsse sind für Katzen schädlich und können Magen-Darm-Probleme
+      verursachen.
+  - question: Ist eine Walnuss für einen Hund sicher?
+    answer: >-
+      Auch eine einzelne Walnuss kann Probleme verursachen, besonders bei
+      kleinen Hunden. Vermeiden Sie sie vollständig.
+  - question: Was passiert, wenn mein Hund eine Walnuss isst?
+    answer: >-
+      Er könnte Magenverstimmung, Durchfall, Erbrechen oder schlimmer noch
+      Pankreatitis entwickeln. Wenden Sie sich sofort an einen Tierarzt.
+  - question: Sind Walnusskerne für Hunde sicher?
+    answer: >-
+      Nein, sowohl Walnusskerne als auch Walnuss-Schalen sind für Hunde
+      schädlich.
+  - question: Kann Walnuss Pankreatitis bei Hunden verursachen?
+    answer: >-
+      Ja, der hohe Fettgehalt in Walnüssen kann Pankreatitis auslösen,
+      besonders bei Hunden mit Vorbelastung.
+why_it_matters: >-
+  Walnüsse sind für Haustiere schädlich und sollten vollständig vermieden
+  werden. Sie enthalten Stoffe, die den Magen-Darm-Trakt reizen können, und
+  ihr hoher Fettgehalt kann Pankreatitis auslösen.
+how_it_works: >-
+  Walnüsse enthalten Tannine und andere Stoffe, die den Magen-Darm-Trakt
+  reizen können. Ihr hoher Fettgehalt kann Pankreatitis auslösen, besonders
+  bei Hunden.
+species_differences: >-
+  Sowohl Hunde als auch Katzen sollten Walnüsse vollständig meiden. Hunde sind
+  anfälliger für Pankreatitis durch den hohen Fettgehalt.
+common_scenarios:
+  - Ein Hund stiehlt Walnüsse aus einem Snackbehälter
+  - Füttern von Walnuss-Keksen oder -Kuchen
+  - Ein Haustier isst eine Walnuss aus einem Obstkorb
+  - Anbieten von Walnüssen als Leckerbissen
+  - Eine Katze knabbert an einer Walnuss
+timeline: >-
+  Symptome können innerhalb einiger Stunden auftreten. Pankreatitis kann
+  länger dauern, um sich zu entwickeln. Wenden Sie sich sofort an einen
+  Tierarzt.
+quick_facts:
+  - Für Hunde und Katzen schädlich
+  - Hoher Fettgehalt kann Pankreatitis auslösen
+  - Kann Magen-Darm-Probleme verursachen
+  - Vermeiden Sie vollständig
+  - Sofortige tierärztliche Hilfe erforderlich
 ---
 # Walnüsse
 
-Einfache englische Walnüsse sind nicht so gefährlich wie schwarze Walnüsse, aber sie sind fettreich und können Magen-Darm-Beschwerden verursachen. Die größte Sorge bereitet Schimmel, der tremorgene Mykotoxine bilden kann, die zu Krampfanfällen führen.
+Walnüsse sind für Hunde und Katzen schädlich und sollten vollständig vermieden werden. Sie enthalten Stoffe, die den Magen-Darm-Trakt reizen können, und ihr hoher Fettgehalt kann Pankreatitis auslösen.
 
-Katzen sollten Walnüsse aufgrund des hohen Fettgehalts und des Schimmelrisikos vermeiden. Sicherere Leckerlies sind beispielsweise Karotten und Heidelbeeren.
+Selbst eine einzelne Walnuss kann Probleme verursachen, besonders bei kleinen Hunden. Vermeiden Sie Walnüsse in jeglicher Form, einschließlich Walnuss-Keksen, -Kuchen und -Öl.
+
+## Warum Walnüsse für Haustiere gefährlich sind
+
+Walnüsse sind eine der schädlichsten Nüsse für Haustiere. Sie enthalten Tannine, die den Magen-Darm-Trakt reizen können, und einen hohen Fettgehalt, der Pankreatitis auslösen kann. Hunde sind besonders anfällig für diese Probleme.
+
+## Wie Walnüsse Hunde und Katzen beeinflussen
+
+Walnüsse können bei Hunden und Katzen Magenverstimmung, Durchfall und Erbrechen verursachen. Bei Hunden kann der hohe Fettgehalt Pankreatitis auslösen, eine lebensbedrohliche Erkrankung. Katzen können ebenfalls unter Magen-Darm-Problemen leiden.
+
+## Häufige Szenarien
+
+- Ein Hund stiehlt Walnüsse aus einem Snackbehälter.
+- Ein Haustier isst Walnuss-Kekse oder -Kuchen.
+- Ein Hund isst eine Walnuss aus einem Obstkorb.
+- Eine Katze knabbert an einer Walnuss.
+
+## Was zu beachten ist
+
+Achten Sie auf Anzeichen von Magenverstimmung wie Übelkeit, Erbrechen oder Durchfall. Bei Hunden können zudem Symptome von Pankreatitis auftreten, wie z.B. Bauchschmerzen, Fieber und Appetitlosigkeit. Wenn Ihr Haustier Walnüsse gegessen hat, wenden Sie sich sofort an einen Tierarzt.
+
+## Sicherere Alternativen
+
+Ungekochte, ungesalzene Erdnussbutter, Kürbiskerne oder Karotten sind sicherere Leckerlie-Optionen. Sie sollten in Maßen und ohne Zusatzstoffe serviert werden.

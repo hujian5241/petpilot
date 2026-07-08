@@ -32,14 +32,14 @@ export function YearSection({
   }
 
   return (
-    <section ref={sectionRef} className="scroll-mt-24 rounded-lg border border-border bg-card p-4">
+    <section ref={sectionRef} className="scroll-mt-24 rounded-xl border border-border bg-card p-4">
       <button
         type="button"
         onClick={toggle}
         className="group flex w-full items-center justify-between text-left"
         aria-expanded={expanded}
       >
-        <h2 className="text-2xl font-bold text-foreground">{year}</h2>
+        <h2 className="text-2xl font-light tracking-tight text-foreground">{year}</h2>
         <span className="flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-sm font-medium text-foreground transition-colors group-hover:border-primary group-hover:text-primary">
           {expanded ? showLessLabel : `${showAllLabel} ${monthCount}`}
           <ChevronDown

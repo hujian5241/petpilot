@@ -14,9 +14,9 @@ export function PlantCard({ plant, locale }: PlantCardProps) {
   return (
     <Link
       href={`/plants/${plant.slug}`}
-      className="group flex flex-col rounded-lg border border-border bg-card p-3 transition-shadow hover:shadow-sm"
+      className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-shadow hover:shadow-card"
     >
-      <div className="mb-2 aspect-[4/3] overflow-hidden rounded-md bg-muted">
+      <div className="mb-3 aspect-[4/3] overflow-hidden rounded-xl bg-muted">
         <Image
           src={plant.images?.[0]?.src ?? `/images/plants/${plant.slug}.svg`}
           alt={plant.images?.[0]?.alt ?? plant.name}
@@ -25,7 +25,7 @@ export function PlantCard({ plant, locale }: PlantCardProps) {
           className="h-full w-full object-cover transition-transform group-hover:scale-105"
         />
       </div>
-      <h2 className="text-base font-semibold text-foreground">{plant.name}</h2>
+      <h2 className="text-base font-medium text-foreground">{plant.name}</h2>
       {plant.scientific_name && (
         <p className="text-xs italic text-muted-foreground">{plant.scientific_name}</p>
       )}

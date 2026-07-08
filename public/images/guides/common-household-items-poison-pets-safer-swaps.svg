@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#eef2ff" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)" />
+  <circle cx="680" cy="90" r="120" fill="#533afd" opacity="0.08" />
+  <circle cx="120" cy="360" r="90" fill="#22c55e" opacity="0.08" />
+
+  <g transform="translate(180,100)">
+    <!-- house outline -->
+    <path d="M120,220 L120,120 L215,60 L310,120 L310,220 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="3" />
+    <rect x="190" y="160" width="50" height="60" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" />
+    <circle cx="215" cy="190" r="5" fill="#94a3b8" />
+
+    <!-- warning bottle -->
+    <rect x="260" y="150" width="45" height="70" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="3" />
+    <rect x="272" y="140" width="22" height="12" rx="2" fill="#ef4444" />
+    <text x="282" y="195" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="20" fill="#991b1b" font-weight="600">!</text>
+
+    <!-- safe leaf -->
+    <ellipse cx="105" cy="180" rx="25" ry="40" fill="#dcfce7" stroke="#22c55e" stroke-width="3" transform="rotate(-30,105,180)" />
+    <line x1="105" y1="150" x2="105" y2="220" stroke="#22c55e" stroke-width="3" />
+
+    <!-- title -->
+    <text x="215" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="22" fill="#0f172a" font-weight="500">Household Toxins &amp; Safer Swaps</text>
+  </g>
+</svg>
